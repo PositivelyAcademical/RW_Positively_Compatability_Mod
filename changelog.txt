@@ -1,4 +1,11 @@
 2021-Dec-07
+  Add EPOE MedicalRib Penoxycyline effects
+------------------------------------------
++ ./1.3/Patches/EPOE/mod_EPOE_ribs_medical.xml
+~ ./changelog.txt
+
+======================================
+2021-Dec-07
   Fix GS isBad_false duplication issue
 --------------------------------------
 + ./1.3/Patches/GS/bug_GS_isBad_false.xml
@@ -8,7 +15,7 @@
     New signle instance added by patch
 ~ ./changelog.txt
 
-
+=========================
 2021-Dec-07
   Initialise Rimworld Mod
 -------------------------
