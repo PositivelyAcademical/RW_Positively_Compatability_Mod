@@ -1,4 +1,15 @@
 2021-Dec-07
+  Fix GS isBad_false duplication issue
+--------------------------------------
++ ./1.3/Patches/GS/bug_GS_isBad_false.xml
+    Fixes error in Ogliss.AliceTries.GeneSeed/1.3/Defs/GeneSeed.xml:[102,104]
+      "<isBad>false</isBad>" occurs twice [102] and [104]
+    Both instances removed by patch
+    New signle instance added by patch
+~ ./changelog.txt
+
+
+2021-Dec-07
   Initialise Rimworld Mod
 -------------------------
 + ./changelog.txt
