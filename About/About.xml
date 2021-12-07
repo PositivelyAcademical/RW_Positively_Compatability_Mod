@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>PositivelyCompatability</name>
+  <author>PositivelyAcademical</author>
+  <url></url>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <packageId>rimworld.positively.compatability</packageId>
+  <modDependencies></modDependencies>
+  <loadAfter>
+    <li>Ykara.EPOE</li>
+    <li>Ogliss.AliceTries.GeneSeed</li>
+    <li>Ogliss.AdMech.Armoury</li>
+    <li>Archaon.Primarch</li>
+    <li>rim.job.world</li>
+    <li>rimworld.ekss.rjwex</li>
+  </loadAfter>
+  <description>
+u/PositivelyAcademical's RimWorld cross-compatability mod. A work in progress.
+  </description>
+</ModMetaData>

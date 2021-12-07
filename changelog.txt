@@ -1,0 +1,17 @@
+2021-Dec-07
+  Initialise Rimworld Mod
+-------------------------
++ ./changelog.txt
+    Created this changelog
++ ./About/About.xml
+    Contains basic mod details for mod manager
+~ ./README.md
+    Added simple description
+
+================
+2021-Dec-07
+  Initial commit
+----------------
++ ./LICENSE
+    GNU Lesser GPL v2.1
++ ./README.md
