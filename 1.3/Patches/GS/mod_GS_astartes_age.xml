@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  Patch acts on [WarHammer 40k] GeneSeed...                                                                       -->
+<!--  ==============================================================================================================  -->
+<Operation Class = "PatchOperationFindMod">
+    <mods>
+        <li>[WarHammer 40k] GeneSeed</li>
+    </mods>
+    <match Class = "PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  For 'AstarteAdaptusCore', delete 'lifeStageAges' and add alternate.                                             -->
+<!--  The effect of this is to decrease adult age from 1400 to 16.                                                    -->
+<!--  ==============================================================================================================  -->
+<li Class = "PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+</li>
+
+<li Class = "PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]</xpath>
+    <value>
+        <minAge>16</minAge>
+    </value>
+</li>
+
+<!--  ==============================================================================================================  -->
+<!--  Close mod                                                                                                       -->
+<!--  ==============================================================================================================  -->
+        </operations>
+    </match>
+</Operation>
+
+<!--  ==============================================================================================================  -->
+<!--  Done                                                                                                            -->
+<!--  ==============================================================================================================  -->
+</Patch>
