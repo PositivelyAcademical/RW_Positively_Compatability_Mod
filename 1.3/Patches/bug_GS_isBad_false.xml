@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  Patch acts on '[WarHammer 40k] GeneSeed'...                                                                     -->
+<!--  ==============================================================================================================  -->
+    <Operation Class = "PatchOperationFindMod">
+        <mods>
+            <li>[WarHammer 40k] GeneSeed</li>
+        </mods>
+        <match Class = "PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  For 'GeenSeedAdaption', deleted duplicated 'isBad' and add only one.                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationRemove">
+                    <xpath>/Defs/HediffDef[defName = "GeenSeedAdaption"]/isBad</xpath>
+                </li>
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/HediffDef[defName = "GeenSeedAdaption"]</xpath>
+                    <value>
+                        <isBad>false</isBad>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

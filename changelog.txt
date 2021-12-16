@@ -1,7 +1,23 @@
+2021-Dec-16
+  Rewrite of GS adult age changes and reordering of Patches dir
+---------------------------------------------------------------
+~ ./1.3/Patches/GS/mod_GS_astartes_age.xml
+	merged remove / add opperations as replace
+	duplicated patch for erdelf.HumanoidAlienRaces being present
+		same fix, different xpath
+	mv --> ./1.3/Patches/mod_GS_HAR_astartes_age.xml
+. ./1.3/Patches/EPOE/mod_EPOE_ribs_medical.xml
+	mv --> ./1.3/Patches/mod_EPOE_ribs_medical
+. ./1.3/Patches/GS/bug_GS_isBad_false.xml
+	mv --> ./1.3/Patches/bug_GS_isBad_false.xml
+~ ./changelog.txt
+
+==========================
 2021-Dec-11
   Add GS adult age changes
 --------------------------
 + ./1.3/Patches/GS/mod_GS_astartes_age.xml
+	Reduces Astartes and Custodes adult life stage age from 1400 to 16
 ~ ./changelog.txt
 
 ==========================================

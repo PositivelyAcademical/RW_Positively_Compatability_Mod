@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  Patch acts on '[WarHammer 40k] GeneSeed'...                                                                     -->
+<!--      Has different behaviour if 'Humanoid Alien Races' is present                                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class = "PatchOperationFindMod">
+        <mods>
+            <li>[WarHammer 40k] GeneSeed</li>
+        </mods>
+        <match Class = "PatchOperationFindMod">
+            <mods>
+                <li>Humanoid Alien Races</li>
+            </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  Lower adulthood age from 1400 to 16                                                                             -->
+<!--  ==============================================================================================================  -->
+        <nomatch Class = "PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+            <value>
+                <minAge>16</minAge>
+            </value>
+        </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  Same again for 'Humanoid Alien Races' just different xpath                                                      -->
+<!--      Lowers adulthood age from 1400 to 16                                                                        -->
+<!--  ==============================================================================================================  -->
+        <match Class = "PatchOperationReplace">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+            <value>
+                <minAge>16</minAge>
+            </value>
+        </match>
+    </Operation>
+</Patch>
