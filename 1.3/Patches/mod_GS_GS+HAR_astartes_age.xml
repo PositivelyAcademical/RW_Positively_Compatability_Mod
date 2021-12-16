@@ -17,22 +17,23 @@
 <!--  ==============================================================================================================  -->
 <!--  Lower adulthood age from 1400 to 16                                                                             -->
 <!--  ==============================================================================================================  -->
-        <nomatch Class = "PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
-            <value>
-                <minAge>16</minAge>
-            </value>
-        </nomatch>
+            <nomatch Class = "PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+                <value>
+                    <minAge>16</minAge>
+                </value>
+            </nomatch>
 
 <!--  ==============================================================================================================  -->
 <!--  Same again for 'Humanoid Alien Races' just different xpath                                                      -->
 <!--      Lowers adulthood age from 1400 to 16                                                                        -->
 <!--  ==============================================================================================================  -->
-        <match Class = "PatchOperationReplace">
-        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
-            <value>
-                <minAge>16</minAge>
-            </value>
+            <match Class = "PatchOperationReplace">
+            <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+                <value>
+                    <minAge>16</minAge>
+                </value>
+            </match>
         </match>
     </Operation>
 </Patch>
