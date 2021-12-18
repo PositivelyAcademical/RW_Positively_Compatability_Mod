@@ -1,3 +1,10 @@
+==================
+2021-Dec-18
+  GS+HAR age patch
+------------------
+~ ./1.3/Patches/mod_GS_GS+HAR_astartes_age.xml
+~ ./changelog.txt
+
 ====================
 2021-Dec-18
   Description update

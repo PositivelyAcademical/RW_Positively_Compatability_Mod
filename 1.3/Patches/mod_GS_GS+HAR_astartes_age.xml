@@ -25,14 +25,28 @@
             </nomatch>
 
 <!--  ==============================================================================================================  -->
-<!--  Same again for 'Humanoid Alien Races' just different xpath                                                      -->
-<!--      Lowers adulthood age from 1400 to 16                                                                        -->
+<!--  For 'Humanoid Alien Races'                                                                                      -->
+<!--      Lower adulthood age from 1400 to 16                                                                         -->
+<!--      And make immune from age effects                                                                            -->
 <!--  ==============================================================================================================  -->
-            <match Class = "PatchOperationReplace">
-            <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
-                <value>
-                    <minAge>16</minAge>
-                </value>
+            <match Class = "PatchOperationSequence">
+                <operations>
+
+                    <li Class = "PatchOperationReplace">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/race/lifeStageAges/li[5]/minAge</xpath>
+                        <value>
+                            <minAge>16</minAge>
+                        </value>
+                    </li>
+
+
+                    <li Class = "PatchOperationAdd">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteAdaptusCore"]/alienRace/generalSettings</xpath>
+                        <value>
+                            <immuneToAge>True</immuneToAge>
+                        </value>
+                    </li>
+                </operations>
             </match>
         </match>
     </Operation>
