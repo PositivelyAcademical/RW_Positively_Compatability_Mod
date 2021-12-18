@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  Patch acts on 'Expanded Prosthetics and Organ Engineering'                                                      -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class = "PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering</li>
+        </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  Remove 'BrainWiring' (it's the non-functioning "Have fun playing EOPE" node                                     -->
+<!--  ==============================================================================================================  -->
+        <match Class = "PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+        </match>
+    </Operation>
+</Patch>

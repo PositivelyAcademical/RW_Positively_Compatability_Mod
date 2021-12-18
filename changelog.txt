@@ -1,5 +1,13 @@
+==============================
+2021-Dec-18
+  EPOE remove useless research
+------------------------------
++ ./1.3/Patches/mod_EPOE_remove_useless_research.xml
+	removes 'BrainWiring' ResearchProjectDef
+~ ./changelog
+
 =========================
-2021-Dec-21
+2021-Dec-16
   Premature commit bugfix
 -------------------------
 ~ ./1.3/Patches/mod_GS_GS+HAR_astartes_age.xml
