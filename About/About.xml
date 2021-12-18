@@ -19,5 +19,7 @@
   </loadAfter>
   <description>
 u/PositivelyAcademical's RimWorld cross-compatability mod. A work in progress.
+
+The main purpose of this project is for me to experiment with git version control. Not all commits to main will be functional / free from errors. Updating to the latest commit not guaranteed to be savegame compatible.
   </description>
 </ModMetaData>
