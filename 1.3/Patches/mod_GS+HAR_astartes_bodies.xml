@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  Patch acts on '[WarHammer 40k] GeneSeed'...                                                                     -->
+<!--      Has different behaviour if 'Humanoid Alien Races' is present                                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class = "PatchOperationFindMod">
+        <mods>
+            <li>[WarHammer 40k] GeneSeed</li>
+        </mods>
+        <match Class = "PatchOperationFindMod">
+            <mods>
+                <li>Humanoid Alien Races</li>
+            </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  For '[WarHammer 40] GeneSeed' only                                                                              -->
+<!--      Reduce 'baseBodySize'                                                                                       -->
+<!--  ==============================================================================================================  -->
+            <nomatch Class = "PatchOperationSequence">
+                <operations>
+
+                    <li Class = "PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName = "AstarteSpaceMarine"]/race/baseBodySize</xpath>
+                        <value>
+                            <baseBodySize>1.25</baseBodySize>
+                        </value>
+                    </li>
+
+                    <li Class = "PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName = "AdaptusCustodes"</xpath>
+                        <value>
+                            <baseBodySize>1.5</baseBodySize>
+                        </value>
+                    </li>
+                </operations>
+            </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  For '[WarHammer 40] GeneSeed' and 'Humanoid Alien Races'                                                        -->
+<!--      Reduce 'baseBodySize' set graphicspath and drawsize                                                         -->
+<!--  ==============================================================================================================  -->
+            <match Class = "PatchOperationSequence">
+                <operations>
+
+                    <li Class = "PatchOperationReplace">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteSpaceMarine"]/race/baseBodySize</xpath>
+                        <value>
+                            <baseBodySize>1.25</baseBodySize>
+                        </value>
+                    </li>
+
+                    <li Class = "PatchOperationReplace">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AdaptusCustodes"]/race/baseBodySize</xpath>
+                        <value>
+                            <baseBodySize>1.5</baseBodySize>
+                        </value>
+                    </li>
+
+                    <li Class = "PatchOperationAdd">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AstarteSpaceMarine"]</xpath>
+                        <value>
+                            <alienRace>
+                                <generalSettings>
+                                    <alienPartGenerator>
+                                        <customDrawSize>(1.15, 1.15)</customDrawSize>
+                                        <customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+                                        <customPortraitDrawSize>(1.05, 1.05)</customPortraitDrawSize>
+                                        <customPortraitHeadDrawSize>(1.05, 1.05)</customPortraitHeadDrawSize>
+                                        <headOffset>(0.00, 0.00)</headOffset>
+                                    </alienPartGenerator>
+                                </generalSettings>
+                            </alienRace>
+                        </value>
+                    </li>
+
+                    <li Class = "PatchOperationAdd">
+                        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "AdaptusCustodes"]</xpath>
+                        <value>
+                            <alienRace>
+                                <generalSettings>
+                                    <alienPartGenerator>
+                                        <customDrawSize>(1.3, 1.3)</customDrawSize>
+                                        <customHeadDrawSize>(1.3, 1.3)</customHeadDrawSize>
+                                        <customPortraitDrawSize>(1.1, 1.1)</customPortraitDrawSize>
+                                        <customPortraitHeadDrawSize>(1.1, 1.1)</customPortraitHeadDrawSize>
+                                        <headOffset>(0.00, 0.00)</headOffset>
+                                    </alienPartGenerator>
+                                </generalSettings>
+                            </alienRace>
+                        </value>
+                    </li>
+
+                    <!-- Astartes Body  Hulk * 1.2
+                         Custodes Body  Male * 1.7 -->
+
+                </operations>
+            </match>
+        </match>
+    </Operation>
+</Patch>
+

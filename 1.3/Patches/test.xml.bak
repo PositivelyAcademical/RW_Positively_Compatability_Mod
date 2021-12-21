@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class = "PatchOperationTest">
+        <xpath>/Defs/rjw.bondage_gear_def[defName="Blindfold"]/label</xpath>
+    </Operation>
+</Patch>
+
