@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames Apparel_PlateArmor from plate armor to plate armour                                                 -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Adjusts description of Apparel_FlakVest                                                                     -->
+<!--    + Adjusts description of Apparel_FlakPants                                                                    -->
+<!--    + Adjusts description of Apparel_FlakJacket                                                                   -->
+<!--    + Renames Apparel_PowerArmor from marine armor to marine armour                                               -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_VestRoyal from formal vest to formal waistcoat                                              -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_PlateArmor"]/label</xpath>
+        <value>
+            <label>plate armour</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_PlateArmor"]/description</xpath>
+        <value>
+            <description>Overlapping solid plates of armour covering the entire body from neck to feet.</description>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_FlakVest                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_FlakVest"]/description</xpath>
+                    <value>
+                        <description>A vest with armour plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_FlakPants                                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_FlakPants"]/description</xpath>
+                    <value>
+                        <description>A pair of pants with armour plates sewn in. While it's not as good as solid armour, it offers effective protection against all manner of attacks while remaining quite comfortable.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_FlakJacket                                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_FlakJacket"]/description</xpath>
+                    <value>
+                        <description>A tough fabric jacket with armor plates sewn in. While it's not as good as solid armor, it offers effective protection against all manner of attacks while remaining quite comfortable.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_PowerArmor from marine armor to marine armour                                               -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_PowerArmor"]/label</xpath>
+        <value>
+            <label>marine armour</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_PowerArmor"]/description</xpath>
+        <value>
+            <description>A suit of powered armor. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nArmor like this is often used by rapid-incursion space marines.</description>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorRecon from recon armor to recon armour                                                 -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_ArmorRecon"]/label</xpath>
+        <value>
+            <label>recon armour</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_ArmorRecon"]/description</xpath>
+        <value>
+            <description>A suit of light partially-powered armor, designed to permit quick movement. Lightweight plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nArmor like this is often used by imperial scout troops and glitterworld police forces.</description>
+        </value>
+    </Operation>
+
+</Patch>

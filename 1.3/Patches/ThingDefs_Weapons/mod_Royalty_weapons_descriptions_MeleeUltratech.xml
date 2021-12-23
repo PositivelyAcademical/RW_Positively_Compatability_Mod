@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Adjusts descriptions of MeleeWeapon_MonoSword                                                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/description</xpath>
+            <value>
+                <description>A crystal-metallic longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.</description>
+            </value>
+        </match>
+
+    </Operation>
+</Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Adjusts description of Apparel_PowerArmorHelmet                                                             -->
+<!--    + Adjusts description of Apparel_ArmorHelmetRecon                                                             -->
+<!--    + Adjusts description of Apparel_FlakJacket                                                                   -->
+<!--    + Renames Apparel_PowerArmor from marine armor to marine armour                                               -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_PowerArmorHelmet                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_PowerArmorHelmet"/description</xpath>
+        <value>
+            <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by rapid-incursion space marines.</description>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetRecon                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"/description</xpath>
+        <value>
+            <description>A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nArmor like this is often used by imperial scout troops or glitterworld police forces.</description>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames Apparel_Blindfold from blindfold to simple blindfold                                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="Apparel_Blindfold"]/label</xpath>
+            <value>
+                <label>simple blindfold</label>
+            </value>
+        </match>
+
+    </Operation>
+</Patch>

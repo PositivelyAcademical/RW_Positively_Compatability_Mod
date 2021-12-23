@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames VAE_Headgear_Hardhat from Hardhat to hardhat                                                        -->
+<!--    + Renames VAE_Headgear_SurgicalMask from Surgical Mask to surgical mask                                       -->
+<!--    + Renames VAE_Headgear_GasMask from Gas Mask to gas mask                                                      -->
+<!--    + Renames VAE_Headgear_Sunglasses from Sunglasses to sunglasses                                               -->
+<!--    + Renames VAE_Headgear_Glasses from Glasses to glasses                                                        -->
+<!--    + Renames VAE_Headgear_ChefsToque from Chef's Toque to chef's toque                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apperal Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Hardhat from Hardhat to hardhat                                                        -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hardhat"]/label</xpath>
+                            <value>
+                                <label>hardhat</label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_SurgicalMask from Surgical Mask to surgical mask                                       -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/label</xpath>
+                            <value>
+                                <label>surgical mask </label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_GasMask from Gas Mask to gas mask                                                      -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/label</xpath>
+                            <value>
+                                <label>gas mask</label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_BaseballCap from Baseball Cap to baseball cap                                          -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_BaseballCap"]/label</xpath>
+                            <value>
+                                <label>baseball cap</label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Sunglasses from Sunglasses to sunglasses                                               -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_Sunglasses"]/label</xpath>
+                            <value>
+                                <label>sunglasses</label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Glasses from Glasses to glasses                                                        -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_Glasses"]/label</xpath>
+                            <value>
+                                <label>glasses</label>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_ChefsToque"]/label</xpath>
+                            <value>
+                                <label>chef's toque</label>
+                            </value>
+                        </li>
+
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
+

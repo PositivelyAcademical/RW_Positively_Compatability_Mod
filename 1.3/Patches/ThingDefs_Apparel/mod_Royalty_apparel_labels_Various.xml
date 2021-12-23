@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames Apparel_ArmorReconPrestige from prestige recon armor to prestige recon armour                       -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
+<!--    + Renames Apparel_ArmorMarinePrestige from prestige marine armor to prestige marine armour                    -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
+<!--    + Renames Apparel_ArmorCataphract from cataphract armor to cataphract armour                                  -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
+<!--    + Renames Apparel_ArmorCataphractPrestige prestige cataphract armor to prestige cataphract armour             -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
+<!--    + Renames Apparel_ArmorLocust from locust armor to locust armour                                              -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Renames Apparel_ArmorMarineGrenadier from grenadier armor to grenadier armour                               -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--    + Renames Apparel_ArmorCataphractPhoenix from phoenix armor to phoenix armour                                 -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorReconPrestige from prestige recon armor to prestige recon armour                       -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorReconPrestige"]/label</xpath>
+                    <value>
+                        <label>prestige recon armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorReconPrestige"]/description</xpath>
+                    <value>
+                        <description>A suit of light partially-powered armour, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armour and still move easily.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]/description</xpath>
+                    <value>
+                        <description>A high-tech armoured helmet with a built-in status computer and a protective plasteel-weave plate.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorMarinePrestige from prestige marine armor to prestige marine armour                    -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarinePrestige"]/label</xpath>
+                    <value>
+                        <label>prestige marine armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarinePrestige"]/description</xpath>
+                    <value>
+                        <description>A suit of powered armour. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armour and still move easily.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/description</xpath>
+                    <value>
+                        <description>A marine armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorCataphract from cataphract armor to cataphract armour                                  -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphract"]/label</xpath>
+                    <value>
+                        <label>cataphract armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphract"]/description</xpath>
+                        <description>A suit of heavy powered armour, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+                    <value>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphract"]/description</xpath>
+                    <value>
+                        <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorCataphractPrestige prestige cataphract armor to prestige cataphract armour             -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphractPrestige"]/label</xpath>
+                    <value>
+                        <label>prestige cataphract armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphractPrestige"]/description</xpath>
+                    <value>
+                        <description>A suit of heavy powered armour, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphractPrestige"]/description</xpath>
+                    <value>
+                    <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorLocust from locust armor to locust armour                                              -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorLocust"]/label</xpath>
+                    <value>
+                        <label>locust armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorLocust"]/description</xpath>
+                    <value>
+                        <description>A variant of recon armour with an integrated burst rocket for short-ranged flight. Locust armour is slightly less protective than standard recon armour. Each jump consumes a burst of fuel, so the armour must be reloaded after several uses.\n\nUnlike most ultratech military units, locusts train primarily with melee weapons. They usually avoid static shootouts, preferring to jump straight into enemy fortifications and fight hand-to-hand. They do poorly in static defense or confined quarters, but excel in mixed cover or shipcracking operations.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorMarineGrenadier from grenadier armor to grenadier armour                               -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarineGrenadier"]/label</xpath>
+                    <value>
+                        <label>grenadier armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarineGrenadier"]/description</xpath>
+                    <value>
+                    <description>A variant of marine armour with an integrated frag launcher on the shoulder. The armour is slightly less protective than standard marine armour. The launcher can only hold a limited amount of ammo and must be reloaded after use.\n\nGrenadiers usually specialize in breaching buildings or internal ship bulkheads. While not effective at very long range, grenadiers can be surprisingly deadly in confined quarters.</description>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames Apparel_ArmorCataphractPhoenix from phoenix armor to phoenix armour                                 -->
+<!--      +  Adjusts description to match                                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphractPhoenix"]/label</xpath>
+                    <value>
+                        <label>phoenix armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphractPhoenix"]/description</xpath>
+                    <value>
+                    <description>A variant of cataphract armour with a shoulder-mounted flamebolt launcher. This armour is slightly less protective than standard cataphract armour against normal damage, but is especially flame-resistant. The flamebolt launcher has very limited ammo and must be reloaded after use.\n\nPhoenixes specialize in clearing out very confined spaces full of enemies, as in underground or shipborne operations. They can absorb hits while moving down a corridor, fill rooms with flame, and emerge from the smoke unscathed.</description>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

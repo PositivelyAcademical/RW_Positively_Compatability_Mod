@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames UnderWhere_Tanktop from tanktop to vest                                                             -->
+<!--      + Adjusts description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>UnderWhere</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="UnderWhere_Tanktop"]/label</xpath>
+                    <value>
+                        <label>vest</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="UnderWhere_Tanktop"]/description</xpath>
+                    <value>
+                        <description>Vest, tank top, wifebeater, A-Shirt, singlet. Whatever you call it, its an undershirt for both sexes.</description>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+

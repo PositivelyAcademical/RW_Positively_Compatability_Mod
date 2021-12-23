@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Renames Blindfold (RJW-toys) from blindfold to locking blindfold                                            -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimJobWorld - Extension</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/rjw.bondage_gear_def[defName="Blindfold"]/label</xpath>
+            <value>
+                <label>locking blindfold</label>
+            </value>
+        </match>
+
+    </Operation>
+</Patch>
+
