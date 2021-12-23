@@ -18,47 +18,44 @@
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_PeltCoat from Pelt Coat to pelt coat                                                    -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Apparel_PeltCoat"]/label</xpath>
-                            <value>
-                                <label>pelt coat</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_PeltCoat"]/label</xpath>
+                    <value>
+                        <label>pelt coat</label>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_TribalPoncho from Tribal Poncho to tribal poncho                                        -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalPoncho"]/label</xpath>
-                            <value>
-                                <label>tribal poncho</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalPoncho"]/label</xpath>
+                    <value>
+                        <label>tribal poncho</label>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_TribalKilt from Tribal Kilt to tribal kilt                                              -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalKilt"]/label</xpath>
-                            <value>
-                                <label>tribal kilt</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalKilt"]/label</xpath>
+                    <value>
+                        <label>tribal kilt</label>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Headgear_Hood from hood to simple hood                                                          -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hood"]/label</xpath>
-                            <value>
-                                <label>simple hood</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hood"]/label</xpath>
+                    <value>
+                        <label>simple hood</label>
+                    </value>
+                </li>
 
-                    </operations>
-                </match>
-            </li>
-        </operations>
+            </operations>
+        </match>
     </Operation>
 </Patch>
-

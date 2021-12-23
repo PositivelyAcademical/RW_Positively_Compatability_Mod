@@ -98,8 +98,8 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphract"]/description</xpath>
-                        <description>A suit of heavy powered armour, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
                     <value>
+                        <description>A suit of heavy powered armour, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
                     </value>
                 </li>
 

@@ -23,7 +23,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="UnderWhere_Tanktop"]/description</xpath>
                     <value>
-                        <description>Vest, tank top, wifebeater, A-Shirt, singlet. Whatever you call it, its an undershirt for both sexes.</description>
+                        <description>Vest, tank top, wifebeater, A-shirt, singlet. Whatever you call it, its an undershirt for both sexes.</description>
                     </value>
                 </li>
 
@@ -31,4 +31,3 @@
         </match>
     </Operation>
 </Patch>
-

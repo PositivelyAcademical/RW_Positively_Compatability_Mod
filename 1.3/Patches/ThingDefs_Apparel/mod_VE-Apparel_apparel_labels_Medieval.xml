@@ -17,37 +17,34 @@
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_Cape from cloak to formal cloak                                                         -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/label</xpath>
-                            <value>
-                                <label>formal cloak</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/label</xpath>
+                    <value>
+                        <label>formal cloak</label>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Headgear_TrapperHat from Trapper Hat to trapper hat                                             -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_TrapperHat"]/label</xpath>
-                            <value>
-                                <label>trapper hat</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_TrapperHat"]/label</xpath>
+                    <value>
+                        <label>trapper hat</label>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Headgear_SummerHat from Summer Hat to summer hat                                                -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="VAE_Headgear_SummerHat"]/label</xpath>
-                            <value>
-                                <label>summer hat</label>
-                            </value>
-                        </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SummerHat"]/label</xpath>
+                    <value>
+                        <label>summer hat</label>
+                    </value>
+                </li>
 
-                    </operations>
-                </match>
-            </li>
-        </operations>
+            </operations>
+        </match>
     </Operation>
 </Patch>
-
