@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Sets new labels and draw orders for Core apparel layer defs                                                 -->
+<!--      + Change drawOrder for Underwear from -25 to 101                                                            -->
+<!--      + Change drawOrder for UnderwearTop from -10 to 110                                                         -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>UnderWhere</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--      + Sets drawOrder for Underwear from -25 to 101                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Underwear"]/drawOrder</xpath>
+        <value>
+            <drawOrder>101</drawOrder>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--      + Sets drawOrder for UnderwearTop from -10 to 110                                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="UnderwearTop"]/drawOrder</xpath>
+        <value>
+            <drawOrder>110</drawOrder>
+        </value>
+    </Operation>
+
+</Patch>
