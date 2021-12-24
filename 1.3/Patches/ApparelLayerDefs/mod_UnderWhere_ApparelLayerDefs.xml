@@ -17,21 +17,24 @@
 <!--  ==============================================================================================================  -->
 <!--      + Sets drawOrder for Underwear from -25 to 101                                                              -->
 <!--  ==============================================================================================================  -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ApparelLayerDef[defName="Underwear"]/drawOrder</xpath>
-        <value>
-            <drawOrder>101</drawOrder>
-        </value>
-    </Operation>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="Underwear"]/drawOrder</xpath>
+                    <value>
+                        <drawOrder>101</drawOrder>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--      + Sets drawOrder for UnderwearTop from -10 to 110                                                           -->
 <!--  ==============================================================================================================  -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ApparelLayerDef[defName="UnderwearTop"]/drawOrder</xpath>
-        <value>
-            <drawOrder>110</drawOrder>
-        </value>
-    </Operation>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="UnderwearTop"]/drawOrder</xpath>
+                    <value>
+                        <drawOrder>110</drawOrder>
+                    </value>
+                </li>
 
+            </operations>
+        </match>
+    </Operation>
 </Patch>
