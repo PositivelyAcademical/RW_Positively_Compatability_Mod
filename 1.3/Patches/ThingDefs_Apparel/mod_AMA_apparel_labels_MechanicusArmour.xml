@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Sets label for OGAM_Apparel_EnginseerHood from Enginseer Hood to Enginseer hood                             -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireArmour from Skitarii Legionnaire Armour to Skitarii          -->
+<!--       Legionnaire armour                                                                                         -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireHelmet from Skitarii Legionnaire Helmet to Skitarii          -->
+<!--       Legionnaire helmet                                                                                         -->
+<!--    + Sets label for OGAM_Apparel_SkitariiRangerHelmet from Skitarii Ranger Helmet to Skitarii Ranger helmet      -->
+<!--    + Sets label for OGAM_Apparel_SkitariiVanguardHelmet from Skitarii Vanguard Helmet Skitarii Vanguard helmet   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_EnginseerHood from Enginseer Hood to Enginseer hood                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerHood"]/label</xpath>
+                    <value>
+                        <label>Enginseer hood</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireArmour from Skitarii Legionnaire Armour to Skitarii          -->
+<!--       Legionnaire armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiLegionnaireArmour"]/label</xpath>
+                    <value>
+                        <label>Skitarii Legionnaire armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireHelmet from Skitarii Legionnaire Helmet to Skitarii          -->
+<!--       Legionnaire helmet                                                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="OGAM_Apparel_SkitariiLegionnaireHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Legionnaire helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiRangerHelmet from Skitarii Ranger Helmet to Skitarii Ranger helmet      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiRangerHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Ranger helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiVanguardHelmet from Skitarii Vanguard Helmet Skitarii Vanguard helmet   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiVanguardHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Vanguard helmet</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
