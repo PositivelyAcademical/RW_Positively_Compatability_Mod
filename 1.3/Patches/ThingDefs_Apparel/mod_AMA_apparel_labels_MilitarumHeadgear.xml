@@ -32,6 +32,8 @@
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_GasMask from imperial guard gas mask to Cadian pattern rebreather               -->
 <!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_CommissarCap from commissar cap to Commissar's cap                              -->
+<!--      + Updates description to match                                                                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -196,6 +198,61 @@
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/description</xpath>
                     <value>
                         <description>A standard issue Militarum gas mask in Cadian pattern. Lightweight and combat effective.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_CommissarCap from commissar cap to Commissar's cap                              -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/label</xpath>
+                    <value>
+                        <label>Commissar's cap</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/description</xpath>
+                    <value>
+                        <description>The peaked cap of officers of the Departmento Munitorum's Officio Prefectus, the Commissariat.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_Gasmask from armageddon pattern rebreather to Armageddon pattern     -->
+<!--    rebreather                                                                                                    -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/label</xpath>
+                    <value>
+                        <label>Armageddon pattern rebreather</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/description</xpath>
+                    <value>
+                        <description>A standard issue Militarum gas mask in Armageddon pattern. Lightweight and combat effective.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_Krieg_Gasmask from krieg pattern rebreather to Krieg pattern rebreather         -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/label</xpath>
+                    <value>
+                        <label>Krieg pattern rebreather</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/description</xpath>
+                    <value>
+                        <description>A standard issue Militarum gas mask in Krieg pattern. Lightweight and combat effective.</description>
                     </value>
                 </li>
 
