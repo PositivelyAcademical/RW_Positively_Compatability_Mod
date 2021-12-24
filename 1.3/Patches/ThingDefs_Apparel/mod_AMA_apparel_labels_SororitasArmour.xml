@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Sets label for OGIG_Apparel_FlakHelmetLight from light flak helmet to Militarum light helmet                -->
+<!--    + Sets label for OGIG_Apparel_Cadia_FlakHelmet from cadian pattern helmet to Cadian pattern helmet            -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets OGIG_Apparel_Cadia_FlakHelmet_TOGGLEDEF_GogglesUp from cadian pattern helmet to Cadian pattern helmet  -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets OGIG_Apparel_Cadia_FlakHelmet_TOGGLEDEF_GogglesDown from cadian pattern helmet (Goggled) to Cadian     -->
+<!--    pattern helmet (goggled)                                                                                      -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet from armageddon pattern helmet to Armageddon pattern      -->
+<!--    helmet                                                                                                        -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesUp from armageddon pattern helmet to     -->
+<!--    Armageddon pattern helmet                                                                                     -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown from armageddon pattern helmet      -->
+<!--    (Goggled) to Armageddon pattern helmet (goggled)                                                              -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet from krieg pattern helmet to Krieg pattern helmet              -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet_TOGGLEDEF_A from krieg pattern helmet to Krieg pattern helmet  -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet_TOGGLEDEF_B from krieg pattern helmet (spiked) to Krieg        -->
+<!--    pattern helmet (spiked)                                                                                       -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceHelmet from Tempestus Scion Omnishield Helmet to         -->
+<!--    Tempestus Scion Omnishield Helm                                                                               -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_GasMask from imperial guard gas mask to Cadian pattern rebreather               -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--    + Updates description of OGAS_Apparel_PowerArmourHelmet                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAS_Apparel_PowerArmourHelmet"]/description</xpath>
+                    <value>
+                        <description>A Power Armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmour like this is often used by the Adeptus Sororitas, the Sisters of Battle.</description>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
