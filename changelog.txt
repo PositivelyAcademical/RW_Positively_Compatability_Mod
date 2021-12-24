@@ -3,6 +3,16 @@
   Premature commit bugfix
 -------------------------
 
+~ ./1.3/Patches/ThingDefs_Apparel/mod_Core_apparel_labels_Various.xml
+~ ./1.3/Patches/ThingDefs_Apparel/mod_VE-Apparel_apparel_labels_Industrial.xml
+~ ./changelog.txt
+
+
+=========================
+2021-Dec-23
+  Premature commit bugfix
+-------------------------
+
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_Core_apparel_labels_Headgear.xml
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_Core_apparel_labels_Various.xml
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_Royalty_apparel_labels_Various.xml
@@ -10,6 +20,7 @@
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_VE-Apparel_apparel_labels_IndustrialHeadgear.xml
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_VE-Apparel_apparel_labels_Medieval.xml
 ~ ./1.3/Patches/ThingDefs_Apparel/mod_VE-Apparel_apparel_labels_Neolithic.xml
+~ ./changelog.txt
 
 =============================================
 2021-Dec-23
@@ -41,6 +52,7 @@
 + ./1.3/Patches/ThingDefs_Weapons/mod_Royalty_weapons_descriptions_MeleeBladelink.xml
 + ./1.3/Patches/ThingDefs_Weapons/mod_Royalty_weapons_descriptions_MeleeMedieval.xml
 + ./1.3/Patches/ThingDefs_Weapons/mod_Royalty_weapons_descriptions_MeleeUltratech.xml
+~ ./changelog.txt
 
 ====================================================================
 2021-Dec-21

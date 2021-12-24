@@ -9,7 +9,7 @@
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Vanilla Apperal Expanded</li>
+            <li>Vanilla Apparel Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>

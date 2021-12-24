@@ -17,7 +17,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/description</xpath>
         <value>
-            <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by rapid-incursion space marines.</description>
+            <description>A marine armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmour like this is often used by rapid-incursion space marines.</description>
         </value>
     </Operation>
 
@@ -27,7 +27,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"]/description</xpath>
         <value>
-            <description>A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nArmor like this is often used by imperial scout troops or glitterworld police forces.</description>
+            <description>A high-tech armoured helmet with a built-in status computer and a protective plasteel-weave plate.\n\nArmour like this is often used by imperial scout troops or glitterworld police forces.</description>
         </value>
     </Operation>
 

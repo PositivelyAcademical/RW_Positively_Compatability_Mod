@@ -20,7 +20,7 @@
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Vanilla Apperal Expanded</li>
+            <li>Vanilla Apparel Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
@@ -117,7 +117,7 @@
 <!--    + Renames VAE_Apparel_DoctorScrubs from Doctor Scrubs to medical scrubs                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_DoctorsScrubs"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_DoctorScrubs"]/label</xpath>
                     <value>
                         <label>medical scrubs</label>
                     </value>
