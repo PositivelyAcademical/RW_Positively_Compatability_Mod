@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Sets new labels and draw orders for Core apparel layer defs                                                 -->
+<!--      + Change drawOrder for OnSkin from 0 to 200                                                                 -->
+<!--        + Change label for OnSkin from skin to inner                                                              -->
+<!--      + Change drawOrder for Middle from 100 to 230                                                               -->
+<!--        + Change label for Middle from middle to armour                                                           -->
+<!--      + Change drawOrder for Shell from 200 to 300                                                                -->
+<!--      + Change drawOrder for Belt from 300 to 311                                                                 -->
+<!--        + Change label for Belt from utility to utility slot                                                      -->
+<!--      + Change drawOrder for EyeCover from 500 to 410                                                             -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--      + Change drawOrder for OnSkin from 0 to 200                                                                 -->
+<!--        + Change label for OnSkin from skin to inner                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="OnSkin"]/drawOrder</xpath>
+        <value>
+            <drawOrder>200</drawOrder>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="OnSkin"]/label</xpath>
+        <value>
+            <label>inner</label>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--      + Change drawOrder for Middle from 100 to 230                                                               -->
+<!--        + Change label for Middle from middle to armour                                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Middle"]/drawOrder</xpath>
+        <value>
+            <drawOrder>230</drawOrder>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Middle"]/label</xpath>
+        <value>
+            <label>armour</label>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--      + Change drawOrder for Shell from 200 to 300                                                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Shell"]/drawOrder</xpath>
+        <value>
+            <drawOrder>300</drawOrder>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--      + Change drawOrder for Belt from 300 to 311                                                                 -->
+<!--        + Change label for Belt from utility to utility slot                                                      -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Belt"]/drawOrder</xpath>
+        <value>
+            <drawOrder>311</drawOrder>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="Belt"]/label</xpath>
+        <value>
+            <label>utility slot</label>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--      + Change drawOrder for EyeCover from 500 to 410                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ApparelLayerDef[defName="EyeCover"]/drawOrder</xpath>
+        <value>
+            <drawOrder>410</drawOrder>
+        </value>
+    </Operation>
+
+</Patch>
