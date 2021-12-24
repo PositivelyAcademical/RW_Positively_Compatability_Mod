@@ -5,7 +5,7 @@
     <ApparelLayerDef>
         <defName>MiddleClothes</defName>
         <label>middle</label>
-        <drawOrder>60</drawOrder>
+        <drawOrder>220</drawOrder>
     </ApparelLayerDef>
 
 </Defs>
