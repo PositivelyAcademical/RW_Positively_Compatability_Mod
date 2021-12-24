@@ -9,7 +9,9 @@
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Updates description for OGIG_Apparel_TempestusScion_CarapaceArmour                                          -->
+<!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceArmour from Tempestus Scion Carapace Armor to Tempestus  -->
+<!--    Scion Carapace Armour                                                                                         -->
+<!--      + Updates description to match                                                                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -73,8 +75,17 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Updates description for OGIG_Apparel_TempestusScion_CarapaceArmour                                          -->
+<!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceArmour from Tempestus Scion Carapace Armor to Tempestus  -->
+<!--    Scion Carapace Armour                                                                                         -->
+<!--      + Updates description to match                                                                              -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceArmour"]/label</xpath>
+                    <value>
+                        <label>Tempestus Scion Carapace Armour</label>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceArmour"]/description</xpath>
                     <value>
