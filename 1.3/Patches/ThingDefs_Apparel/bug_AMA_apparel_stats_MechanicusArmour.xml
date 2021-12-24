@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Fixes error in skitarii helmets cold insulation.  Should be +10 not -10                                     -->
+<!--      +  Sets Insulation_Cold for OGAM_Apparel_SkitariiLegionnaireHelmet from -10 to 10                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="OGAM_Apparel_SkitariiLegionnaireHelmet"]/statBases/Insulation_Cold</xpath>
+                    <value>
+                        <Insulation_Cold>10</Insulation_Cold>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
