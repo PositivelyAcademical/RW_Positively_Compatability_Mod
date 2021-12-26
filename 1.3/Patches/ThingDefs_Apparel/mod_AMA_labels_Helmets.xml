@@ -3,26 +3,26 @@
 
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
-<!--    + Sets label for OGIG_Apparel_FlakHelmetLight from light flak helmet to Militarum light helmet                -->
-<!--    + Sets label for OGIG_Apparel_Cadia_FlakHelmet from cadian pattern helmet to Cadian pattern helmet            -->
-<!--      + Updates description to match                                                                              -->
-<!--    + Sets OGIG_Apparel_Cadia_FlakHelmet_TOGGLEDEF_GogglesUp from cadian pattern helmet to Cadian pattern helmet  -->
-<!--      + Updates description to match                                                                              -->
-<!--    + Sets OGIG_Apparel_Cadia_FlakHelmet_TOGGLEDEF_GogglesDown from cadian pattern helmet (Goggled) to Cadian     -->
-<!--    pattern helmet (goggled)                                                                                      -->
-<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_EnginseerHood from Enginseer Hood to Enginseer hood                             -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireHelmet from Skitarii Legionnaire Helmet to Skitarii          -->
+<!--       Legionnaire helmet                                                                                         -->
+<!--    + Sets label for OGAM_Apparel_SkitariiRangerHelmet from Skitarii Ranger Helmet to Skitarii Ranger helmet      -->
+<!--    + Sets label for OGAM_Apparel_SkitariiVanguardHelmet from Skitarii Vanguard Helmet Skitarii Vanguard helmet   -->
+<!--  ==============================================================================================================  -->
 <!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet from armageddon pattern helmet to Armageddon pattern      -->
 <!--    helmet                                                                                                        -->
-<!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesUp from armageddon pattern helmet to     -->
-<!--    Armageddon pattern helmet                                                                                     -->
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown from armageddon pattern helmet      -->
 <!--    (Goggled) to Armageddon pattern helmet (goggled)                                                              -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet from krieg pattern helmet to Krieg pattern helmet              -->
+<!--    + Sets label for OGIG_Apparel_Cadia_FlakHelmet from cadian pattern helmet to Cadian pattern helmet            -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet_TOGGLEDEF_A from krieg pattern helmet to Krieg pattern helmet  -->
+<!--    + Sets OGIG_Apparel_Cadia_FlakHelmet_TOGGLEDEF_GogglesDown from cadian pattern helmet (Goggled) to Cadian     -->
+<!--    pattern helmet (goggled)                                                                                      -->
+<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_FlakHelmetLight from light flak helmet to Militarum light helmet                -->
+<!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet from krieg pattern helmet to Krieg pattern helmet              -->
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_Krieg_FlakHelmet_TOGGLEDEF_B from krieg pattern helmet (spiked) to Krieg        -->
 <!--    pattern helmet (spiked)                                                                                       -->
@@ -30,10 +30,8 @@
 <!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceHelmet from Tempestus Scion Omnishield Helmet to         -->
 <!--    Tempestus Scion Omnishield Helm                                                                               -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_GasMask from imperial guard gas mask to Cadian pattern rebreather               -->
-<!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_CommissarCap from commissar cap to Commissar's cap                              -->
-<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + Updates description of OGAS_Apparel_PowerArmourHelmet                                                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -43,12 +41,85 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_FlakHelmetLight from light flak helmet to Militarum light helmet                -->
+<!--        MECHANICUS HELMETS                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_EnginseerHood from Enginseer Hood to Enginseer hood                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakHelmetLight"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerHood"]/label</xpath>
                     <value>
-                        <label>Militarum light helmet</label>
+                        <label>Enginseer hood</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireHelmet from Skitarii Legionnaire Helmet to Skitarii          -->
+<!--       Legionnaire helmet                                                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="OGAM_Apparel_SkitariiLegionnaireHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Legionnaire helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiRangerHelmet from Skitarii Ranger Helmet to Skitarii Ranger helmet      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiRangerHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Ranger helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiVanguardHelmet from Skitarii Vanguard Helmet Skitarii Vanguard helmet   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiVanguardHelmet"]/label</xpath>
+                    <value>
+                        <label>Skitarii Vanguard helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        MILITARUM HELMETS                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet from armageddon pattern helmet to Armageddon pattern      -->
+<!--    helmet                                                                                                        -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/label</xpath>
+                    <value>
+                        <label>Armageddon pattern helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/description</xpath>
+                    <value>
+                        <description>A standard issue Militarum Flak helmet in Armageddon pattern. It is a good lightweight combat helmet.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown from armageddon pattern helmet      -->
+<!--    (Goggled) to Armageddon pattern helmet (goggled)                                                              -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown"]/label</xpath>
+                    <value>
+                        <label>Armageddon pattern helmet (goggled)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown"]/description</xpath>
+                    <value>
+                        <description>A standard issue Militarum Flak helmet in Armageddon pattern. It is a good lightweight combat helmet with eye protection.</description>
                     </value>
                 </li>
 
@@ -90,40 +161,12 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet from armageddon pattern helmet to Armageddon pattern      -->
-<!--    helmet                                                                                                        -->
-<!--      + Updates description to match                                                                              -->
+<!--    + Sets label for OGIG_Apparel_FlakHelmetLight from light flak helmet to Militarum light helmet                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakHelmetLight"]/label</xpath>
                     <value>
-                        <label>Armageddon pattern helmet</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/description</xpath>
-                    <value>
-                        <description>A standard issue Militarum Flak helmet in Armageddon pattern. It is a good lightweight combat helmet.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown from armageddon pattern helmet      -->
-<!--    (Goggled) to Armageddon pattern helmet (goggled)                                                              -->
-<!--      + Updates description to match                                                                              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown"]/label</xpath>
-                    <value>
-                        <label>Armageddon pattern helmet (goggled)</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet_TOGGLEDEF_GogglesDown"]/description</xpath>
-                    <value>
-                        <description>A standard issue Militarum Flak helmet in Armageddon pattern. It is a good lightweight combat helmet with eye protection.</description>
+                        <label>Militarum light helmet</label>
                     </value>
                 </li>
 
@@ -184,75 +227,14 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_GasMask from imperial guard gas mask to Cadian pattern rebreather               -->
-<!--      + Updates description to match                                                                              -->
+<!--        SORORITAS HELMETS                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + Updates description of OGAS_Apparel_PowerArmourHelmet                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGAS_Apparel_PowerArmourHelmet"]/description</xpath>
                     <value>
-                        <label>Cadian pattern rebreather</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/description</xpath>
-                    <value>
-                        <description>A standard issue Militarum gas mask in Cadian pattern. Lightweight and combat effective.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_CommissarCap from commissar cap to Commissar's cap                              -->
-<!--      + Updates description to match                                                                              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/label</xpath>
-                    <value>
-                        <label>Commissar's cap</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/description</xpath>
-                    <value>
-                        <description>The peaked cap of officers of the Departmento Munitorum's Officio Prefectus, the Commissariat.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_Armageddon_Gasmask from armageddon pattern rebreather to Armageddon pattern     -->
-<!--    rebreather                                                                                                    -->
-<!--      + Updates description to match                                                                              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/label</xpath>
-                    <value>
-                        <label>Armageddon pattern rebreather</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/description</xpath>
-                    <value>
-                        <description>A standard issue Militarum gas mask in Armageddon pattern. Lightweight and combat effective.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_Krieg_Gasmask from krieg pattern rebreather to Krieg pattern rebreather         -->
-<!--      + Updates description to match                                                                              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/label</xpath>
-                    <value>
-                        <label>Krieg pattern rebreather</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/description</xpath>
-                    <value>
-                        <description>A standard issue Militarum gas mask in Krieg pattern. Lightweight and combat effective.</description>
+                        <description>A Power Armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmour like this is often used by the Adeptus Sororitas, the Sisters of Battle.</description>
                     </value>
                 </li>
 

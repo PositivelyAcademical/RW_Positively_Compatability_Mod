@@ -5,16 +5,12 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--    + Renames Apparel_ArmorReconPrestige from prestige recon armor to prestige recon armour                       -->
 <!--      +  Adjusts description to match                                                                             -->
-<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
 <!--    + Renames Apparel_ArmorMarinePrestige from prestige marine armor to prestige marine armour                    -->
 <!--      +  Adjusts description to match                                                                             -->
-<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
 <!--    + Renames Apparel_ArmorCataphract from cataphract armor to cataphract armour                                  -->
 <!--      +  Adjusts description to match                                                                             -->
-<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
 <!--    + Renames Apparel_ArmorCataphractPrestige prestige cataphract armor to prestige cataphract armour             -->
 <!--      +  Adjusts description to match                                                                             -->
-<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
 <!--    + Renames Apparel_ArmorLocust from locust armor to locust armour                                              -->
 <!--      +  Adjusts description to match                                                                             -->
 <!--    + Renames Apparel_ArmorMarineGrenadier from grenadier armor to grenadier armour                               -->
@@ -48,16 +44,6 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]/description</xpath>
-                    <value>
-                        <description>A high-tech armoured helmet with a built-in status computer and a protective plasteel-weave plate.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--    + Renames Apparel_ArmorMarinePrestige from prestige marine armor to prestige marine armour                    -->
 <!--      +  Adjusts description to match                                                                             -->
 <!--  ==============================================================================================================  -->
@@ -72,16 +58,6 @@
                     <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarinePrestige"]/description</xpath>
                     <value>
                         <description>A suit of powered armour. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armour and still move easily.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/description</xpath>
-                    <value>
-                        <description>A marine armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
                     </value>
                 </li>
 
@@ -104,16 +80,6 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphract"]/description</xpath>
-                    <value>
-                        <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--    + Renames Apparel_ArmorCataphractPrestige prestige cataphract armor to prestige cataphract armour             -->
 <!--      +  Adjusts description to match                                                                             -->
 <!--  ==============================================================================================================  -->
@@ -128,16 +94,6 @@
                     <xpath>/Defs/ThingDef[defName="Apparel_ArmorCataphractPrestige"]/description</xpath>
                     <value>
                         <description>A suit of heavy powered armour, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphractPrestige"]/description</xpath>
-                    <value>
-                    <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
                     </value>
                 </li>
 

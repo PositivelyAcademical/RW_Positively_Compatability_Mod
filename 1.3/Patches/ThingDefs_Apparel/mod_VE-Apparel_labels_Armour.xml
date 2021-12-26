@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_PeltCoat from Pelt Coat to pelt coat                                                    -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--        TRIBAL ARMOUR                                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_PeltCoat from Pelt Coat to pelt coat                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_PeltCoat"]/label</xpath>
+                    <value>
+                        <label>Pelt Coat</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -3,20 +3,30 @@
 
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_TribalKilt from Tribal Kilt to tribal kilt                                              -->
+<!--    + Renames VAE_Apparel_TribalPoncho from Tribal Poncho to tribal poncho                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_Cape from cloak to formal cloak                                                         -->
+<!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_CasualTShirt from Casual T-Shirt to casual T-shirt                                      -->
 <!--      + Adjusts description to match                                                                              -->
+<!--    + Renames VAE_Apparel_TankTop from Tank Top to tank top                                                       -->
+<!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_ShirtandTie from Shirt and Tie to shirt and tie                                         -->
 <!--    + Renames VAE_Apparel_SuitJackete from Suit jacket to suit jacket                                             -->
-<!--    + Renames VAE_Apparel_FleeceShirt from Fleece Shirt to fleece shirt                                           -->
-<!--    + Renames VAE_Apparel_ChefsUniform from Chef's Uniform to chef's uniform                                      -->
-<!--    + Renames VAE_Apparel_MilitaryJacket from Military Jacket to military jacket                                  -->
-<!--    + Renames VAE_Apparel_MilitaryUniform from Military Uniform to military uniform                               -->
+<!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_BuildersJacket from Builder's Jacket to builder's jacket                                -->
+<!--    + Renames VAE_Apparel_ChefsUniform from Chef's Uniform to chef's uniform                                      -->
+<!--    + Renames VAE_Apparel_FleeceShirt from Fleece Shirt to fleece shirt                                           -->
+<!--    + Renames VAE_Apparel_Jumpsuit from Jumpsuit to jumpsuit                                                      -->
+<!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_DoctorScrubs from Doctor Scrubs to medical scrubs                                       -->
 <!--    + Renames VAE_Apparel_LabCoat from Lab Coat to lab coat                                                       -->
-<!--    + Renames VAE_Apparel_TankTop from Tank Top to tank top                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_MilitaryJacket from Military Jacket to military jacket                                  -->
+<!--    + Renames VAE_Apparel_MilitaryUniform from Military Uniform to military uniform                               -->
 <!--    + Renames VAE_Apparel_SheriffShirt from Sheriff Shirt to sheriff's shirt                                      -->
-<!--    + Renames VAE_Apparel_Jumpsuit from Jumpsuit to jumpsuit                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -25,6 +35,42 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--        TRIBAL APPAREL                                                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_TribalKilt from Tribal Kilt to tribal kilt                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalKilt"]/label</xpath>
+                    <value>
+                        <label>tribal kilt</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_TribalPoncho from Tribal Poncho to tribal poncho                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalPoncho"]/label</xpath>
+                    <value>
+                        <label>tribal poncho</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        MEDIEVAL APPAREL                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_Cape from cloak to formal cloak                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/label</xpath>
+                    <value>
+                        <label>formal cloak</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        CASUAL APPAREL                                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_CasualTShirt from Casual T-Shirt to casual T-shirt                                      -->
 <!--      + Adjusts description to match                                                                              -->
@@ -43,6 +89,18 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_TankTop from Tank Top to tank top                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TankTop"]/label</xpath>
+                    <value>
+                        <label>tank top</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        FORMAL APPAREL                                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_ShirtandTie from Shirt and Tie to shirt and tie                                         -->
 <!--  ==============================================================================================================  -->
@@ -64,12 +122,14 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_FleeceShirt from Fleece Shirt to fleece shirt                                           -->
+<!--        WORK APPAREL                                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_BuildersJacket from Builder's Jacket to builder's jacket                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_FleeceShirt"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_BuildersJacket"]/label</xpath>
                     <value>
-                        <label>fleece shirt</label>
+                        <label>builder's jacket</label>
                     </value>
                 </li>
 
@@ -84,35 +144,27 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_MilitaryJacket from Military Jacket to military jacket                                  -->
+<!--    + Renames VAE_Apparel_FleeceShirt from Fleece Shirt to fleece shirt                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_MilitaryJacket"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_FleeceShirt"]/label</xpath>
                     <value>
-                        <label>military jacket</label>
+                        <label>fleece shirt</label>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_MilitaryUniform from Military Uniform to military uniform                               -->
+<!--    + Renames VAE_Apparel_Jumpsuit from Jumpsuit to jumpsuit                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_MilitaryUniform"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Jumpsuit"]/label</xpath>
                     <value>
-                        <label>military uniform</label>
+                        <label>jumpsuit</label>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_BuildersJacket from Builder's Jacket to builder's jacket                                -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_BuildersJacket"]/label</xpath>
-                    <value>
-                        <label>builder's jacket</label>
-                    </value>
-                </li>
-
+<!--        STERILE APPAREL                                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--    + Renames VAE_Apparel_DoctorScrubs from Doctor Scrubs to medical scrubs                                       -->
 <!--  ==============================================================================================================  -->
@@ -134,12 +186,24 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_TankTop from Tank Top to tank top                                                       -->
+<!--        MILITARY APPAREL                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_MilitaryJacket from Military Jacket to military jacket                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_TankTop"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_MilitaryJacket"]/label</xpath>
                     <value>
-                        <label>tank top</label>
+                        <label>military jacket</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Apparel_MilitaryUniform from Military Uniform to military uniform                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_MilitaryUniform"]/label</xpath>
+                    <value>
+                        <label>military uniform</label>
                     </value>
                 </li>
 
@@ -150,16 +214,6 @@
                     <xpath>/Defs/ThingDef[defName="VAE_Apparel_SheriffShirt"]/label</xpath>
                     <value>
                         <label>sheriff's shirt</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_Jumpsuit from Jumpsuit to jumpsuit                                                      -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Jumpsuit"]/label</xpath>
-                    <value>
-                        <label>jumpsuit</label>
                     </value>
                 </li>
 

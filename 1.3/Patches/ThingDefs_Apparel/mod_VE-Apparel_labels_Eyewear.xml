@@ -3,9 +3,9 @@
 
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
-<!--    + Renames VAE_Apparel_Cape from cloak to formal cloak                                                         -->
-<!--    + Renames VAE_Headgear_TrapperHat from Trapper Hat to trapper hat                                             -->
-<!--    + Renames VAE_Headgear_SummerHat from Summer Hat to summer hat                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Sunglasses from Sunglasses to sunglasses                                               -->
+<!--    + Renames VAE_Headgear_Glasses from Glasses to glasses                                                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -15,32 +15,24 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Apparel_Cape from cloak to formal cloak                                                         -->
+<!--        INDUSTRIAL EYEWEAR                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Glasses from Glasses to glasses                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Glasses"]/label</xpath>
                     <value>
-                        <label>formal cloak</label>
+                        <label>glasses</label>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Headgear_TrapperHat from Trapper Hat to trapper hat                                             -->
+<!--    + Renames VAE_Headgear_Sunglasses from Sunglasses to sunglasses                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_TrapperHat"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Sunglasses"]/label</xpath>
                     <value>
-                        <label>trapper hat</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--    + Renames VAE_Headgear_SummerHat from Summer Hat to summer hat                                                -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SummerHat"]/label</xpath>
-                    <value>
-                        <label>summer hat</label>
+                        <label>sunglasses</label>
                     </value>
                 </li>
 

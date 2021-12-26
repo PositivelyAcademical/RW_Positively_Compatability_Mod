@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Hood from hood to simple hood                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_SummerHat from Summer Hat to summer hat                                                -->
+<!--    + Renames VAE_Headgear_TrapperHat from Trapper Hat to trapper hat                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_BaseballCap from Baseball Cap to baseball cap                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_ChefsToque from Chef's Toque to chef's toque                                           -->
+<!--    + Renames VAE_Headgear_GasMask from Gas Mask to gas mask                                                      -->
+<!--    + Renames VAE_Headgear_Hardhat from Hardhat to hardhat                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_SurgicalMask from Surgical Mask to surgical mask                                       -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--        TRIBAL HEADGEAR                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Hood from hood to simple hood                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hood"]/label</xpath>
+                    <value>
+                        <label>simple hood</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        MEDIEVAL HEADGEAR                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_SummerHat from Summer Hat to summer hat                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SummerHat"]/label</xpath>
+                    <value>
+                        <label>summer hat</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_TrapperHat from Trapper Hat to trapper hat                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_TrapperHat"]/label</xpath>
+                    <value>
+                        <label>trapper hat</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        CASUAL HEADGEAR                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_BaseballCap from Baseball Cap to baseball cap                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_BaseballCap"]/label</xpath>
+                    <value>
+                        <label>baseball cap</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        WORK HEADGEAR                                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_ChefsToque from Chef's Toque to chef's toque                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_ChefsToque"]/label</xpath>
+                    <value>
+                        <label>chef's toque</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_GasMask from Gas Mask to gas mask                                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/label</xpath>
+                    <value>
+                        <label>gas mask</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_Hardhat from Hardhat to hardhat                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hardhat"]/label</xpath>
+                    <value>
+                        <label>hardhat</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        STERILE HEADGEAR                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Renames VAE_Headgear_SurgicalMask from Surgical Mask to surgical mask                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/label</xpath>
+                    <value>
+                        <label>surgical mask </label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
