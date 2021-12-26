@@ -1,5 +1,5 @@
 =========================================
-2021-Dec-23
+2021-Dec-26
   Restructuring of apparel labels patches
 -----------------------------------------
 + ./1.3/Patches/ThingDefs_Apparel/bug_AMA_stats_Helmets.xml
