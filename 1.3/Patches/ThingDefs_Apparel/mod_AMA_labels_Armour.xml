@@ -3,11 +3,15 @@
 
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireArmour from Skitarii Legionnaire Armour to Skitarii          -->
+<!--       Legionnaire armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
+<!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light flak vest             -->
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_FlakArmourLightGreaves from light flak greaves to Militarum light flak pants    -->
-<!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceArmour from Tempestus Scion Carapace Armor to Tempestus  -->
 <!--    Scion Carapace Armour                                                                                         -->
@@ -19,6 +23,40 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+<!--  ==============================================================================================================  -->
+<!--        MECHANICUS APPAREL                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGAM_Apparel_SkitariiLegionnaireArmour from Skitarii Legionnaire Armour to Skitarii          -->
+<!--       Legionnaire armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiLegionnaireArmour"]/label</xpath>
+                    <value>
+                        <label>Skitarii Legionnaire armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--        MILITARUM APPAREL                                                                                         -->
+            </operations>
+<!--  ==============================================================================================================  -->
+<!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
+<!--      + Updates description to match                                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/label</xpath>
+                    <value>
+                        <label>Militarum Flak armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/description</xpath>
+                    <value>
+                        <description>Standard issue Flak armour for the Regiments of the Astra Militarum. It offers effective protection against all manner of attacks while remaining quite light.</description>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light flak vest             -->
@@ -57,24 +95,6 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
-<!--      + Updates description to match                                                                              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/label</xpath>
-                    <value>
-                        <label>Militarum Flak armour</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/description</xpath>
-                    <value>
-                        <description>Standard issue Flak armour for the Regiments of the Astra Militarum. It offers effective protection against all manner of attacks while remaining quite light.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceArmour from Tempestus Scion Carapace Armor to Tempestus  -->
 <!--    Scion Carapace Armour                                                                                         -->
 <!--      + Updates description to match                                                                              -->
@@ -93,7 +113,6 @@
                     </value>
                 </li>
 
-            </operations>
         </match>
     </Operation>
 </Patch>

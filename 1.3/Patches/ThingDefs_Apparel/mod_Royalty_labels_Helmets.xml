@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
+<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetReconPrestige                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetReconPrestige"]/description</xpath>
+                    <value>
+                        <description>A high-tech armoured helmet with a built-in status computer and a protective plasteel-weave plate.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorMarineHelmetPrestige                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/description</xpath>
+                    <value>
+                        <description>A marine armour helmet, with a built-in status computer and layered plasteel-weave plates.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphract                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphract"]/description</xpath>
+                    <value>
+                        <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmour like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--    + Adjusts description of Apparel_ArmorHelmetCataphractPrestige                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_ArmorHelmetCataphractPrestige"]/description</xpath>
+                    <value>
+                    <description>A heavily-armoured high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armour like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
