@@ -6,8 +6,11 @@
 <!--    + Sets new labels and draw orders for Core apparel layer defs                                                 -->
 <!--      + Change drawOrder for Underwear from -25 to 101                                                            -->
 <!--      + Change drawOrder for OverSkin from 50 to 210                                                              -->
+<!--        + Change label for OverSkin from overskin to overskin (dev)                                               -->
 <!--      + Change drawOrder for MiddleEquipment from 150 to 240                                                      -->
+<!--        + Change label for MiddleEquipment from middle slot to middle slot dev                                    -->
 <!--      + Change drawOrder for ShellEquipment from 250 to 310                                                       -->
+<!--        + Change label for ShellEquipment from outer slot to outer slot dev                                       -->
 <!--      + Change drawOrder for BeltWargear1 from 325 to 312                                                         -->
 <!--        + Change label for BeltWargear1 from Wargear slot 1 to wargear slot 1                                     -->
 <!--      + Change drawOrder for BeltWargear2 from 350 to 313                                                         -->
@@ -15,6 +18,7 @@
 <!--      + Change drawOrder for BeltWargear3 from 375 to 314                                                         -->
 <!--        + Change label for BeltWargear3 from Wargear slot 3 to wargear slot 3                                     -->
 <!--      + Change drawOrder for OverheadUnder from 399 to 320                                                        -->
+<!--        + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                -->
 <!--      + Change drawOrder for ShellExtra from 425 to 340                                                           -->
 <!--        + Change label for ShellExtra from Shell extras to cloaks                                                 -->
 <!--  ==============================================================================================================  -->
@@ -37,6 +41,7 @@
 
 <!--  ==============================================================================================================  -->
 <!--      + Change drawOrder for OverSkin from 50 to 210                                                              -->
+<!--        + Change label for OverSkin from overskin to overskin (dev)                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="OverSkin"]/drawOrder</xpath>
@@ -45,8 +50,16 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="OverSkin"]/label</xpath>
+                    <value>
+                        <label>overskin (dev)</label>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--      + Sets drawOrder for MiddleEquipment from 150 to 240                                                        -->
+<!--        + Change label for MiddleEquipment from middle slot to middle slot dev                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="MiddleEquipment"]/drawOrder</xpath>
@@ -55,13 +68,28 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="MiddleEquipment"]/label</xpath>
+                    <value>
+                        <label>middle slot (dev)</label>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--      + Sets drawOrder for ShellEquipment from 250 to 310                                                         -->
+<!--        + Change label for ShellEquipment from outer slot to outer slot dev                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="ShellEquipment"]/drawOrder</xpath>
                     <value>
                         <drawOrder>310</drawOrder>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="ShellEquipment"]/label</xpath>
+                    <value>
+                        <label>outer slot (dev)</label>
                     </value>
                 </li>
 
@@ -121,11 +149,19 @@
 
 <!--  ==============================================================================================================  -->
 <!--      + Change drawOrder for OverheadUnder from 399 to 320                                                        -->
+<!--        + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="OverheadUnder"]/drawOrder</xpath>
                     <value>
                         <drawOrder>320</drawOrder>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="OverheadUnder"]/label</xpath>
+                    <value>
+                        <label>headgear slot (dev)</label>
                     </value>
                 </li>
 
