@@ -5,10 +5,10 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + Requires RJW Apparel and Sextoys Extension // RJW Apparel and Sextoys Extension (continued)                -->
-<!--     --+ For UnderWhere_Boxers ADD layer S16_Underwear                                                            -->
-<!--     --+ For UnderWhere_Loincloth REPLACE layer Underwear with S16_Underwear                                      -->
-<!--     --+ For UnderWhere_Panties REPLACE layer Underwear with S16_Underwear                                        -->
-<!--     --+ For UnderWhere_LongJohns ADD layer S16_Underwear                                                         -->
+<!--       + For UnderWhere_Boxers ADD layer S16_Underwear                                                            -->
+<!--       + For UnderWhere_Loincloth REPLACE layer Underwear with S16_Underwear                                      -->
+<!--       + For UnderWhere_Panties REPLACE layer Underwear with S16_Underwear                                        -->
+<!--       + For UnderWhere_LongJohns ADD layer S16_Underwear                                                         -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -29,7 +29,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     --+ For UnderWhere_Boxers ADD layer S16_Underwear                                                            -->
+<!--       + For UnderWhere_Boxers ADD layer S16_Underwear                                                            -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="UnderWhere_Boxers"]/apparel/layers</xpath>
@@ -39,7 +39,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     --+ For UnderWhere_Loincloth REPLACE layer Underwear with S16_Underwear                                      -->
+<!--       + For UnderWhere_Loincloth REPLACE layer Underwear with S16_Underwear                                      -->
 <!--  ==============================================================================================================  -->
                          <li Class="PatchOperationReplace">
                             <xpath>/Defs/ThingDef[defName="UnderWhere_Loincloth"]/apparel/layers/li[1]</xpath>
@@ -49,7 +49,7 @@
                         </li>
 
 <!--  ==============================================================================================================  -->
-<!--     --+ For UnderWhere_Panties REPLACE layer Underwear with S16_Underwear                                        -->
+<!--       + For UnderWhere_Panties REPLACE layer Underwear with S16_Underwear                                        -->
 <!--  ==============================================================================================================  -->
                         <li Class="PatchOperationReplace">
                             <xpath>/Defs/ThingDef[defName="UnderWhere_Panties"]/apparel/layers/li[1]</xpath>
@@ -59,7 +59,7 @@
                         </li>
 
 <!--  ==============================================================================================================  -->
-<!--     --+ For UnderWhere_LongJohns ADD layer S16_Underwear                                                         -->
+<!--       + For UnderWhere_LongJohns ADD layer S16_Underwear                                                         -->
 <!--  ==============================================================================================================  -->
                         <li Class="PatchOperationAdd">
                             <xpath>/Defs/ThingDef[defName="UnderWhere_LongJohns"]/apparel/layers</xpath>
@@ -69,7 +69,7 @@
                         </li>
 
                     </operations>
-                </match>
+                </li>
             </operations>
         </match>
     </Operation>
