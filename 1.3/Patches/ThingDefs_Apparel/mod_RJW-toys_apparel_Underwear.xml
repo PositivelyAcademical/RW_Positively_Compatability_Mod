@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + For @AnalPlugBase ADD layer S16_Vibrator2                                                                  -->
+<!--     + For ChastityBelt ADD layer S16_Vibrator                                                                    -->
+<!--     + For ChastityBelt ADD layer S16_Vibrator2                                                                   -->
+<!--     + For ChastityBelt ADD layer S16_Underwear                                                                   -->
+<!--     + For ChastityBeltO ADD layer S16_Vibrator                                                                   -->
+<!--     + For ChastityBeltO ADD layer S16_Underwear                                                                  -->
+<!--     + For ChastityCage ADD countsAsClothingForNudity == false                                                    -->
+<!--     + For ChastityCageMicro ADD countsAsClothingForNudity == false                                               -->
+<!--     + For ChastityCageSmall ADD countsAsClothingForNudity == false                                               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimJobWorld - Extension</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + For @AnalPlugBase ADD layer S16_Vibrator2                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjwex.anal_plug_def[@Name="AnalPlugBase"]/apparel/layers</xpath>
+                    <value>
+                        <li>S16_Vibrator2</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + For ChastityBelt ADD layer S16_Vibrator                                                                    -->
+<!--     + For ChastityBelt ADD layer S16_Vibrator2                                                                   -->
+<!--     + For ChastityBelt ADD layer S16_Underwear                                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBelt"]/apparel/layers</xpath>
+                    <value>
+                        <li>S16_Vibrator</li>
+                        <li>S16_Vibrator2</li>
+                        <li>S16_Underwear</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + For ChastityBeltO ADD layer S16_Vibrator                                                                   -->
+<!--     + For ChastityBeltO ADD layer S16_Underwear                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBelt"]/apparel/layers</xpath>
+                    <value>
+                        <li>S16_Vibrator</li>
+                        <li>S16_Underwear</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + For ChastityCage ADD countsAsClothingForNudity == false                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityCage"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + For ChastityCageMicro ADD countsAsClothingForNudity == false                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityCageMicro"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + For ChastityCageSmall ADD countsAsClothingForNudity == false                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityCageSmall"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
