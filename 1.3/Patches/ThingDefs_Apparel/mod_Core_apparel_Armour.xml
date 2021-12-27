@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_FlakVest ADD layer MiddleClothes                                                             -->
+<!--       + For Apparel_FlakPants REPLACE layer OnSkin with MiddleClothes                                            -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_FlakVest"]/apparel/layers</xpath>
+        <value>
+           <li>MiddleClothes</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/layers/li[1]</xpath>
+        <value>
+           <li>MiddleClothes</li>
+        </value>
+    </Operation>
+
+</Patch>
