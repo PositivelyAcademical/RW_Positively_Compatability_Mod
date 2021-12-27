@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--       + For S16_CarbonA ADD layer UnderwearTop                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere // Adeptus Mechanicus: Armoury                                                   -->
+<!--       + For S16_CarbonA ADD layer Underwear                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For S16_CarbonA REMOVE layers Shell                                                                      -->
+<!--       + For S16_CarbonA ADD layers MiddleClothes                                                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>UnderWhere</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UnderWhere</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_CarbonA ADD layer UnderwearTop                                                                   -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_CarbonA"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UnderWhere</li>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere // Adeptus Mechanicus: Armoury                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_CarbonA ADD layer Underwear                                                                      -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_CarbonA"]/apparel/layers</xpath>
+                                <value>
+                                    <li>Underwear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_CarbonA REMOVE layers Shell                                                                      -->
+<!--       + For S16_CarbonA ADD layers MiddleClothes                                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="S16_CarbonA"]/apparel/layers/li[3]</xpath>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="S16_CarbonA"]/apparel/layers</xpath>
+                    <value>
+                       <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
