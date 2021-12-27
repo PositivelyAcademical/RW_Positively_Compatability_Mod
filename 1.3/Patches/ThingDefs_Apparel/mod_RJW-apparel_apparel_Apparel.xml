@@ -20,9 +20,9 @@
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For S16_DiscoTop REMOVE countsAsClothingForNudity (false)                                                -->
 <!--       + For S16_MaidA ADD layers MiddleClothes                                                                   -->
-<!--       + For S16_ServantGirlDress ADD layers MiddleClothes                                                        -->
-<!--       + For S16_ServantGirlDress REMOVE layers Middle                                                            -->
 <!--       + For S16_ServantGirlDress REMOVE layers Shell                                                             -->
+<!--       + For S16_ServantGirlDress REMOVE layers Middle                                                            -->
+<!--       + For S16_ServantGirlDress ADD layers MiddleClothes                                                        -->
 <!--       + For S16_TransparentSkirt REMOVE countsAsClothingForNudity (false)                                        -->
 <!--       + For S16_ZDress ADD layers MiddleClothes                                                                  -->
 <!--  ==============================================================================================================  -->
