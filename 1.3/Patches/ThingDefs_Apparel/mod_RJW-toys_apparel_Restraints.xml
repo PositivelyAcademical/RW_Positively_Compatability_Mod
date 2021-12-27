@@ -4,8 +4,8 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + For GagBall ADD countsAsClothingForNudity == false                                                         -->
-<!--     + For GagRing ADD countsAsClothingForNudity == false                                                         -->
+<!--     + For Armbinder ADD countsAsClothingForNudity == false                                                       -->
+<!--     + For Legbinder ADD countsAsClothingForNudity == false                                                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -15,20 +15,20 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + For GagBall ADD countsAsClothingForNudity == false                                                         -->
+<!--     + For Armbinder ADD countsAsClothingForNudity == false                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/rjw.bondage_gear_def[defName="GagBall"]/apparel</xpath>
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="Armbinder"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + For GagRing ADD countsAsClothingForNudity == false                                                         -->
+<!--     + For Legbinder ADD countsAsClothingForNudity == false                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/rjw.bondage_gear_def[defName="GagRing"]/apparel</xpath>
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="Legbinder"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
                     </value>
