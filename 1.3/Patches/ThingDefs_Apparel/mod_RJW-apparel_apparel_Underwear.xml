@@ -17,6 +17,7 @@
 <!--       + For S16_Thong ADD layers BeltsOnSkinBondage                                                              -->
 <!--       + For S16_Thong ADD bodyPartGroups AnusBPG                                                                 -->
 <!--       + For S16_Thong ADD bodyPartGroups GenitalsBPG                                                             -->
+<!--       + For S16_BlackTape ADD countsAsClothingForNudity (false)                                                  -->
 <!--       + For S16_BlackTape ADD layers AnalInsertableBondage                                                       -->
 <!--       + For S16_BlackTape ADD layers BeltsOnSkinBondage                                                          -->
 <!--       + For S16_BlackTape ADD layers S16_Vibrator                                                                -->
@@ -137,6 +138,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--       + For S16_BlackTape ADD countsAsClothingForNudity (false)                                                  -->
 <!--       + For S16_BlackTape ADD layers AnalInsertableBondage                                                       -->
 <!--       + For S16_BlackTape ADD layers BeltsOnSkinBondage                                                          -->
 <!--       + For S16_BlackTape ADD layers S16_Vibrator                                                                -->
@@ -145,6 +147,13 @@
 <!--       + For S16_BlackTape ADD bodyPartGroups AnusBPG                                                             -->
 <!--       + For S16_BlackTape ADD bodyPartGroups GenitalsBPG                                                         -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="S16_BlackTape"]/apparel</xpath>
+                    <value>
+                       <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="S16_BlackTape"]/apparel/layers</xpath>
                     <value>
