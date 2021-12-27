@@ -41,34 +41,35 @@
 <!--  ==============================================================================================================  -->
 <!--       + For UnderWhere_Loincloth REPLACE layer Underwear with S16_Underwear                                      -->
 <!--  ==============================================================================================================  -->
-                         <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="UnderWhere_Loincloth"]/apparel/layers/li[1]</xpath>
-                            <value>
-                                <li>S16_Underwear</li>
-                            </value>
-                        </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="UnderWhere_Loincloth"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>S16_Underwear</li>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--       + For UnderWhere_Panties REPLACE layer Underwear with S16_Underwear                                        -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="UnderWhere_Panties"]/apparel/layers/li[1]</xpath>
-                            <value>
-                                <li>S16_Underwear</li>
-                            </value>
-                        </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="UnderWhere_Panties"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>S16_Underwear</li>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--       + For UnderWhere_LongJohns ADD layer S16_Underwear                                                         -->
 <!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="UnderWhere_LongJohns"]/apparel/layers</xpath>
-                            <value>
-                                <li>S16_Underwear</li>
-                            </value>
-                        </li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="UnderWhere_LongJohns"]/apparel/layers</xpath>
+                                <value>
+                                    <li>S16_Underwear</li>
+                                </value>
+                            </li>
 
-                    </operations>
+                        </operations>
+                    </match>
                 </li>
             </operations>
         </match>
