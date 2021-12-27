@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--       + For S16_HeavyNippleRings ADD layer UnderwearTop                                                          -->
+<!--       + For S16_HeavyNippleRings REPLACE bodyPartGroups Shoulders with Torso                                     -->
+<!--       + For S16_NCA ADD layer UnderwearTop                                                                       -->
+<!--       + For S16_NCA REPLACE bodyPartGroups Shoulders with Torso                                                  -->
+<!--       + For S16_NCB ADD layer UnderwearTop                                                                       -->
+<!--       + For S16_NCB REPLACE bodyPartGroups Shoulders with Torso                                                  -->
+<!--       + For S16_WiredNippleVibrators ADD layer UnderwearTop                                                      -->
+<!--       + For S16_WiredNippleVibrators REPLACE bodyPartGroups Shoulders with Torso                                 -->
+<!--       + For S16_WoodenPins ADD layer UnderwearTop                                                                -->
+<!--       + For S16_WoodenPins REPLACE bodyPartGroups Shoulders with Torso                                           -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires NOMATCH UnderWhere                                                                                -->
+<!--       + For S16_HeavyNippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                  -->
+<!--       + For S16_NCA REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
+<!--       + For S16_NCB REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
+<!--       + For S16_WiredNippleVibrators REPLACE bodyPartGroups Shoulders with ChestBPG                              -->
+<!--       + For S16_WoodenPins REPLACE bodyPartGroups Shoulders with ChestBPG                                        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_BlackStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
+<!--       + For S16_NippleBarbells REPLACE bodyPartGroups Shoulders with ChestBPG                                    -->
+<!--       + For S16_NippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                       -->
+<!--       + For S16_RoundStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
+<!--       + For S16_StickersC REPLACE bodyPartGroups Shoulders with ChestBPG                                         -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>UnderWhere</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UnderWhere</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_HeavyNippleRings ADD layer UnderwearTop                                                          -->
+<!--       + For S16_HeavyNippleRings REPLACE bodyPartGroups Shoulders with Torso                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_HeavyNippleRings"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_HeavyNippleRings"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Torso</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NCA ADD layer UnderwearTop                                                                       -->
+<!--       + For S16_NCA REPLACE bodyPartGroups Shoulders with Torso                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_NCA"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCA"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                       <li>Torso</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NCB ADD layer UnderwearTop                                                                       -->
+<!--       + For S16_NCB REPLACE bodyPartGroups Shoulders with Torso                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_NCB"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCB"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Torso</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_WiredNippleVibrators ADD layer UnderwearTop                                                      -->
+<!--       + For S16_WiredNippleVibrators REPLACE bodyPartGroups Shoulders with Torso                                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_WiredNippleVibrators"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WiredNippleVibrators"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Torso</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_WoodenPins ADD layer UnderwearTop                                                                -->
+<!--       + For S16_WoodenPins REPLACE bodyPartGroups Shoulders with Torso                                           -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="S16_WoodenPins"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WoodenPins"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Torso</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires NOMATCH UnderWhere                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_HeavyNippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_HeavyNippleRings"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>ChestBPG</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NCA REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCA"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>ChestBPG</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NCB REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCB"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>ChestBPG</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_WiredNippleVibrators REPLACE bodyPartGroups Shoulders with ChestBPG                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WiredNippleVibrators"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>ChestBPG</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_WoodenPins REPLACE bodyPartGroups Shoulders with ChestBPG                                        -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WoodenPins"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>ChestBPG</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For S16_BlackStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="S16_BlackStickers"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <bodyPartGroups>
+                           <li>ChestBPG</li>
+                        </bodyPartGroups>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NippleBarbells REPLACE bodyPartGroups Shoulders with ChestBPG                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="S16_NippleBarbells"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <bodyPartGroups>
+                           <li>ChestBPG</li>
+                        </bodyPartGroups>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_NippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="S16_NippleRings"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <bodyPartGroups>
+                           <li>ChestBPG</li>
+                        </bodyPartGroups>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_RoundStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="S16_RoundStickers"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <bodyPartGroups>
+                           <li>ChestBPG</li>
+                        </bodyPartGroups>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For S16_StickersC REPLACE bodyPartGroups Shoulders with ChestBPG                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="S16_StickersC"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <bodyPartGroups>
+                           <li>ChestBPG</li>
+                        </bodyPartGroups>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
