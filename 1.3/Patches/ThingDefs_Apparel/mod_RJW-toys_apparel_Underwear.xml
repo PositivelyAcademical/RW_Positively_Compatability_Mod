@@ -35,6 +35,8 @@
 <!--     + For ChastityBelt ADD layer S16_Vibrator                                                                    -->
 <!--     + For ChastityBelt ADD layer S16_Vibrator2                                                                   -->
 <!--     + For ChastityBelt ADD layer S16_Underwear                                                                   -->
+<!--     + For ChastityBelt ADD bodyPartGroup AnusBPG                                                                 -->
+<!--     + For ChastityBelt ADD bodyPartGroup GenitalsBPG                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBelt"]/apparel/layers</xpath>
@@ -45,15 +47,31 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBelt"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>AnusBPG</li>
+                        <li>GenitalsBPG</li>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--     + For ChastityBeltO ADD layer S16_Vibrator                                                                   -->
 <!--     + For ChastityBeltO ADD layer S16_Underwear                                                                  -->
+<!--     + For ChastityBelt ADD bodyPartGroup GenitalsBPG                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBelt"]/apparel/layers</xpath>
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBeltO"]/apparel/layers</xpath>
                     <value>
                         <li>S16_Vibrator</li>
                         <li>S16_Underwear</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/rjw.bondage_gear_def[defName="ChastityBeltO"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>GenitalsBPG</li>
                     </value>
                 </li>
 
