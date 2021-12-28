@@ -95,7 +95,6 @@
 <!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
 <!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
-<!--       + For VAE_Headgear_Beret ADD tags PrestigeCombatGear                                                       -->
 <!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
 <!--  ==============================================================================================================  -->
