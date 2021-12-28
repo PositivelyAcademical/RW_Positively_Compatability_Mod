@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For VAE_Footwear_Boots REPLACE layers Middle with OnSkin                                                 -->
+<!--       + For VAE_Footwear_Shoes REPLACE layers Middle with OnSkin                                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Footwear_Boots REPLACE layers Middle with OnSkin                                                 -->
+<!--       + For VAE_Footwear_Shoes REPLACE layers Middle with OnSkin                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Footwear_Boots"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>OnSkin</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Footwear_Shoes"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>OnSkin</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
