@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For VAE_Headgear_Scarf REPLACE layers Overhead with OverheadEquipment                                    -->
+<!--       + For VAE_Headgear_GasMask REPLACE layers Overhead with OverheadEquipment                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For VAE_Headgear_SummerHat ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For VAE_Headgear_TrapperHat ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For VAE_Headgear_BaseballCap ADD countsAsClothingForNudity (false)                                       -->
+<!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For VAE_Headgear_Fedora ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
+<!--       + For VAE_Headgear_Beret ADD PrestigeCombatGear                                                            -->
+<!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Headgear_Scarf REPLACE layers Overhead with OverheadEquipment                                    -->
+<!--       + For VAE_Headgear_GasMask REPLACE layers Overhead with OverheadEquipment                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>OverheadEquipment</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>OverheadEquipment</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Headgear_SummerHat ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For VAE_Headgear_TrapperHat ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For VAE_Headgear_BaseballCap ADD countsAsClothingForNudity (false)                                       -->
+<!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For VAE_Headgear_Fedora ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
+<!--       + For VAE_Headgear_Beret ADD tags PrestigeCombatGear                                                       -->
+<!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SummerHat"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_TrapperHat"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_BaseballCap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Fedora"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_ChefsToque"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Hardhat"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Beret"]/apparel/tags</xpath>
+                    <value>
+                        <li>PrestigeCombatGear</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Beret"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
