@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For Apparel_Broadwrap Add layer ShellExtra                                                               -->
+<!--       + For Apparel_VisageMask ADD layer OverheadEquipment                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_Broadwrap ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For Apparel_VisageMask ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For Apparel_Slicecap ADD countsAsClothingForNudity (false)                                               -->
+<!--       + For Apparel_Collar ADD countsAsClothingForNudity (false)                                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_Broadwrap Add layer ShellExtra                                                               -->
+<!--       + For Apparel_VisageMask ADD layer OverheadEquipment                                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel/layers</xpath>
+                                <value>
+                                    <li>OverheadEquipment</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_Broadwrap ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For Apparel_VisageMask ADD countsAsClothingForNudity (false)                                             -->
+<!--       + For Apparel_Slicecap ADD countsAsClothingForNudity (false)                                               -->
+<!--       + For Apparel_Collar ADD countsAsClothingForNudity (false)                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Slicecap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Collar"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
