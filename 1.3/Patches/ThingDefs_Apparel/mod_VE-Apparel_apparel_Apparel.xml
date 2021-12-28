@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For VAE_Apparel_SuitJacket REPLACE tags RoyalTier2 with RoyalTier5                                       -->
+<!--       + For VAE_Apparel_MilitaryJacket ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--       + For VAE_Apparel_TankTop ADD layers UnderwearTop                                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere or Adeptus Mechanicus: Armoury                                                   -->
+<!--       + For VAE_Apparel_TribalKilt ADD layers Underwear                                                          -->
+<!--       + For VAE_Apparel_Shorts ADD layers Underwear                                                              -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
+<!--       + For VAE_Apparel_Cape REPLACE layers Shell with ShellExtra                                                -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For VAE_Apparel_Cape ADD countsAsClothingForNudity (false)                                               -->
+<!--       + For VAE_Apparel_Hoodie REPLACE layers OnSkin with MiddleClothes                                          -->
+<!--       + For VAE_Apparel_Skirt ADD gender Female                                                                  -->
+<!--       + For VAE_Apparel_Apron ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For VAE_Apparel_Apron ADD layers MiddleClothes                                                           -->
+<!--       + For VAE_Apparel_Overalls REPLACE layers Middle with MiddleClothes                                        -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_SuitJacket REPLACE tags RoyalTier2 with RoyalTier5                                       -->
+<!--       + For VAE_Apparel_MilitaryJacket ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_SuitJacket"]/apparel/tags/li[3]</xpath>
+                                <value>
+                                    <li>RoyalTier5</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_MilitaryJacket"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UnderWhere</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_TankTop ADD layers UnderwearTop                                                          -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_TankTop"]/apparel/layers</xpath>
+                                <value>
+                                    <li>UnderwearTop</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UnderWhere</li>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH UnderWhere or Adeptus Mechanicus: Armoury                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_TribalKilt ADD layers Underwear                                                          -->
+<!--       + For VAE_Apparel_Shorts ADD layers Underwear                                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_TribalKilt"]/apparel/layers</xpath>
+                                <value>
+                                    <li>Underwear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_Shorts"]/apparel/layers</xpath>
+                                <value>
+                                    <li>Underwear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_Cape REPLACE layers Shell with ShellExtra                                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_Cape ADD countsAsClothingForNudity (false)                                               -->
+<!--       + For VAE_Apparel_Hoodie REPLACE layers OnSkin with MiddleClothes                                          -->
+<!--       + For VAE_Apparel_Skirt ADD gender Female                                                                  -->
+<!--       + For VAE_Apparel_Apron ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For VAE_Apparel_Apron ADD layers MiddleClothes                                                           -->
+<!--       + For VAE_Apparel_Overalls REPLACE layers Middle with MiddleClothes                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Cape"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Hoodie"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/apparel</xpath>
+                    <value>
+                        <gender>Female</gender>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Apron"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Apron"]/apparel/layers</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Overalls"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
