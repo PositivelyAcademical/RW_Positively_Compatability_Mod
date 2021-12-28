@@ -9,7 +9,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--       + For VAE_Headgear_Scarf REPLACE layers Overhead with OverheadEquipment                                    -->
+<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups Teeth with Neck                                            -->
 <!--       + For VAE_Headgear_GasMask REPLACE layers Overhead with OverheadEquipment                                  -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups Teeth with Neck                                          -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For VAE_Headgear_SummerHat ADD countsAsClothingForNudity (false)                                         -->
@@ -64,7 +66,9 @@
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--       + For VAE_Headgear_Scarf REPLACE layers Overhead with OverheadEquipment                                    -->
+<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups Teeth with Neck                                            -->
 <!--       + For VAE_Headgear_GasMask REPLACE layers Overhead with OverheadEquipment                                  -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups Teeth with Neck                                          -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel/layers/li[1]</xpath>
@@ -74,9 +78,27 @@
                             </li>
 
                             <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Neck</li>
+                                    </bodyPartGroups>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/layers/li[1]</xpath>
                                 <value>
                                     <li>OverheadEquipment</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/bodyPartGroups</xpath>
+                                <value>
+                                    <bodyPartGroups>
+                                        <li>Neck</li>
+                                    </bodyPartGroups>
                                 </value>
                             </li>
 
