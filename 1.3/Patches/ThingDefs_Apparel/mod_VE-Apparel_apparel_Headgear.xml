@@ -4,6 +4,9 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For VAE_Headgear_Beret ADD PrestigeCombatGear                                                            -->
+<!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--       + For VAE_Headgear_Scarf REPLACE layers Overhead with OverheadEquipment                                    -->
 <!--       + For VAE_Headgear_GasMask REPLACE layers Overhead with OverheadEquipment                                  -->
@@ -17,7 +20,6 @@
 <!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
 <!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
-<!--       + For VAE_Headgear_Beret ADD PrestigeCombatGear                                                            -->
 <!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
 <!--  ==============================================================================================================  -->
@@ -27,6 +29,29 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Headgear_Beret ADD PrestigeCombatGear                                                            -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_Beret"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
 
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -127,13 +152,6 @@
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Beret"]/apparel/tags</xpath>
-                    <value>
-                        <li>PrestigeCombatGear</li>
                     </value>
                 </li>
 
