@@ -23,14 +23,14 @@
 <!--       + For Sunglasses ADD countsAsClothingForNudity (false)                                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Glasses"]/apparel</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Glasses"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
                     </value>
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Sunglasses"]/apparel</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Sunglasses"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
                     </value>
