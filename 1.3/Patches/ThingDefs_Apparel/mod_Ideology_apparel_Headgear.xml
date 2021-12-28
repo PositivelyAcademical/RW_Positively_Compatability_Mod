@@ -4,6 +4,9 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For Apparel_AuthorityCap ADD tags Royal RoyalTier2                                                       -->
+<!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--       + For Apparel_Broadwrap Add layer ShellExtra                                                               -->
 <!--       + For Apparel_VisageMask ADD layer OverheadEquipment                                                       -->
@@ -13,7 +16,6 @@
 <!--       + For Apparel_VisageMask ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For Apparel_Slicecap ADD countsAsClothingForNudity (false)                                               -->
 <!--       + For Apparel_Collar ADD countsAsClothingForNudity (false)                                                 -->
-<!--       + For Apparel_AuthorityCap ADD tags Royal RoyalTier2                                                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -21,6 +23,32 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_AuthorityCap ADD tags Royal RoyalTier2                                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_AuthorityCap"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>Royal</li>
+                                        <li>RoyalTier2</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
 
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -60,7 +88,6 @@
 <!--       + For Apparel_VisageMask ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For Apparel_Slicecap ADD countsAsClothingForNudity (false)                                               -->
 <!--       + For Apparel_Collar ADD countsAsClothingForNudity (false)                                                 -->
-<!--       + For Apparel_AuthorityCap ADD tags Royal RoyalTier2                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel</xpath>
@@ -87,16 +114,6 @@
                     <xpath>/Defs/ThingDef[defName="Apparel_Collar"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Apparel_AuthorityCap"]/apparel</xpath>
-                    <value>
-                        <tags>
-                            <li>Royal</li>
-                            <li>RoyalTier2</li>
-                        </tags>
                     </value>
                 </li>
 
