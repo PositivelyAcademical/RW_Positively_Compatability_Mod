@@ -102,6 +102,16 @@
                                 </value>
                             </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/graphicData</xpath>
+                                <value>
+                                    <graphicData>
+                                        <texPath>Things/Headgear/GasMask/GasMask</texPath>
+                                        <graphicClass>Graphic_Single</graphicClass>
+                                    </graphicData>
+                                </value>
+                            </li>
+
                         </operations>
                     </match>
                 </li>
