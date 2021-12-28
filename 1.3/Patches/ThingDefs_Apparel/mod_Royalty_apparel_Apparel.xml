@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For Apparel_PsyfocusRobe ADD layer ShellExtra                                                            -->
+<!--       + For Apparel_RobeRoyal ADD layer ShellExtra                                                               -->
+<!--       + For Apparel_Cape REPLACE layer Shell with ShellExtra                                                     -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_PsyfocusVest REPLACE layer Middle with MiddleClothes                                         -->
+<!--       + For @ApparelVestRoyalTier5Base REPLACE layer Middle with MiddleClothes                                   -->
+<!--       + For Apparel_Cape ADD countsAsClothingForNudity (false)                                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_PsyfocusRobe ADD layer ShellExtra                                                            -->
+<!--       + For Apparel_RobeRoyal ADD layer ShellExtra                                                               -->
+<!--       + For Apparel_Cape REPLACE layer Shell with ShellExtra                                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_PsyfocusRobe"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_RobeRoyal"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Apparel_Cape"]/apparel/layers/li[1]</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_PsyfocusVest REPLACE layer Middle with MiddleClothes                                         -->
+<!--       + For @ApparelVestRoyalTier5Base REPLACE layer Middle with MiddleClothes                                   -->
+<!--       + For Apparel_Cape ADD countsAsClothingForNudity (false)                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_PsyfocusVest"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="ApparelVestRoyalTier5Base"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_PsyfocusRobe"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
