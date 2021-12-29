@@ -32,8 +32,8 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Apparel_Baby_Onesie"]/apparel/layers</xpath>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Baby_Onesie"]/apparel/layers/li</xpath>
                     <value>
                         <li>Middle</li>
                     </value>
@@ -46,8 +46,8 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Apparel_Newborn_Onesie"]/apparel/layers</xpath>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Newborn_Onesie"]/apparel/layers/li</xpath>
                     <value>
                         <li>Middle</li>
                     </value>
