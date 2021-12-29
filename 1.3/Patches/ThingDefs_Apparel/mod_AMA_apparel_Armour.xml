@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For OGAM_Apparel_EnginseerRobe ADD tags PrestigeCombatGear                                               -->
+<!--       + For OGAM_Apparel_SkitariiLegionnaireArmour ADD tags PrestigeCombatGear                                   -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD tags PrestigeCombatGear                               -->
+<!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base ADD tags PrestigeCombatGear                             -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGAM_Apparel_SkitariiLegionnaireArmour ADD layers MiddleClothes                                      -->
+<!--       + For OGIG_Apparel_FlakArmourLight ADD layers MiddleClothes                                                -->
+<!--       + For OGIG_Apparel_FlakArmourLightGreaves ADD layers MiddleClothes                                         -->
+<!--       + For OGIG_Apparel_FlakArmour ADD layers MiddleClothes                                                     -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD layers Shell                                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGAM_Apparel_EnginseerRobe ADD tags PrestigeCombatGear                                               -->
+<!--       + For OGAM_Apparel_SkitariiLegionnaireArmour ADD tags PrestigeCombatGear                                   -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD tags PrestigeCombatGear                               -->
+<!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base ADD tags PrestigeCombatGear                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerRobe"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiLegionnaireArmour"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceArmour"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_PowerArmour_Base"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGAM_Apparel_SkitariiLegionnaireArmour ADD layers MiddleClothes                                      -->
+<!--       + For OGIG_Apparel_FlakArmourLight ADD layers MiddleClothes                                                -->
+<!--       + For OGIG_Apparel_FlakArmourLightGreaves ADD layers MiddleClothes                                         -->
+<!--       + For OGIG_Apparel_FlakArmour ADD layers MiddleClothes                                                     -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD layers Shell                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiLegionnaireArmour"]/apparel/layers</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLight"]/apparel/layers</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLightGreaves"]/apparel/layers</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/apparel/layers</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceArmour"]/apparel/layers</xpath>
+                    <value>
+                        <li>Shell</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
