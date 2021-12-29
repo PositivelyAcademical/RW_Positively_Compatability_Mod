@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For OGIG_Apparel_FieldCap ADD tags PrestigeCombatGear                                                    -->
+<!--       + For OGIG_Apparel_OfficerCap ADD tags PrestigeCombatGear                                                  -->
+<!--       + For OGIG_Apparel_CommissarCap ADD tags PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGIG_Apparel_FieldCap ADD countsAsClothingForNudity (false)                                          -->
+<!--       + For OGIG_Apparel_OfficerCap ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OGIG_Apparel_CommissarCap ADD countsAsClothingForNudity (false)                                      -->
+<!--       + For OGIG_Apparel_GasMask ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask ADD countsAsClothingForNudity (false)                                -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask ADD countsAsClothingForNudity (false)                                     -->
+<!--       + For OGIG_Apparel_ValhallanUshanhka ADD countsAsClothingForNudity (false)                                 -->
+<!--       + For OGIG_Apparel_ValhallanPilotka ADD countsAsClothingForNudity (false)                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--       + For OGIG_Apparel_GasMask REMOVE bodyPartGroups @Inherit (false)                                          -->
+<!--       + For OGIG_Apparel_GasMask REPLACE bodyPartGroups Mouth with Teeth                                         -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REPLACE layers OverheadEquipment with Overhead                       -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REMOVE bodyPartGroups @Inherit (false)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REPLACE bodyPartGroups Mouth with Teeth                              -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REPLACE layers OverheadEquipment with Overhead                            -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REMOVE bodyPartGroups @Inherit (false)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REPLACE bodyPartGroups Mouth with Teeth                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_FieldCap ADD tags PrestigeCombatGear                                                    -->
+<!--       + For OGIG_Apparel_OfficerCap ADD tags PrestigeCombatGear                                                  -->
+<!--       + For OGIG_Apparel_CommissarCap ADD tags PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FieldCap"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_OfficerCap"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_FieldCap ADD countsAsClothingForNudity (false)                                          -->
+<!--       + For OGIG_Apparel_OfficerCap ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OGIG_Apparel_CommissarCap ADD countsAsClothingForNudity (false)                                      -->
+<!--       + For OGIG_Apparel_GasMask ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask ADD countsAsClothingForNudity (false)                                -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask ADD countsAsClothingForNudity (false)                                     -->
+<!--       + For OGIG_Apparel_ValhallanUshanhka ADD countsAsClothingForNudity (false)                                 -->
+<!--       + For OGIG_Apparel_ValhallanPilotka ADD countsAsClothingForNudity (false)                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FieldCap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_OfficerCap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarCap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_ValhallanUshanhka"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_ValhallanPilotka"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_GasMask REMOVE bodyPartGroups @Inherit (false)                                          -->
+<!--       + For OGIG_Apparel_GasMask REPLACE bodyPartGroups Mouth with Teeth                                         -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REPLACE layers OverheadEquipment with Overhead                       -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REMOVE bodyPartGroups @Inherit (false)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask REPLACE bodyPartGroups Mouth with Teeth                              -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REPLACE layers OverheadEquipment with Overhead                            -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REMOVE bodyPartGroups @Inherit (false)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask REPLACE bodyPartGroups Mouth with Teeth                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAttributeRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/apparel/bodyPartGroups</xpath>
+                    <attribute>Inherit</attribute>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/apparel/bodyPartGroups/li[1]</xpath>
+                    <value>
+                        <li>Teeth</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/apparel/layers/li[4]</xpath>
+                    <value>
+                        <li>Overhead</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAttributeRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/apparel/bodyPartGroups</xpath>
+                    <attribute>Inherit</attribute>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/apparel/bodyPartGroups/li[1]</xpath>
+                    <value>
+                        <li>Teeth</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/apparel/layers/li[4]</xpath>
+                    <value>
+                        <li>Overhead</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAttributeRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/apparel/bodyPartGroups</xpath>
+                    <attribute>Inherit</attribute>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/apparel/bodyPartGroups/li[1]</xpath>
+                    <value>
+                        <li>Teeth</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
