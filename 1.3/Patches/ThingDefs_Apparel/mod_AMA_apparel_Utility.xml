@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_GrenadePack_Blind ADD countsAsClothingForNudity (false)                                          -->
+<!--       + For OGI_GrenadePack_Frag ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_GrenadePack_Krak ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_GrenadePack_Rad ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For OGI_GrenadePack_Melta ADD countsAsClothingForNudity (false)                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--       + For OGI_Wargear_Rosarius ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_Wargear_IronHalo ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_Wargear_CombatShield ADD countsAsClothingForNudity (false)                                       -->
+<!--       + For OGI_Wargear_StormShield ADD countsAsClothingForNudity (false)                                        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--       + For OGI_Wargear_PuritySealA ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OGI_Apparel_ServoSkull ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For OGI_Wargear_ServoArm ADD countsAsClothingForNudity (false)                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_GrenadePack_Blind ADD countsAsClothingForNudity (false)                                          -->
+<!--       + For OGI_GrenadePack_Frag ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_GrenadePack_Krak ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_GrenadePack_Rad ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For OGI_GrenadePack_Melta ADD countsAsClothingForNudity (false)                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Blind"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Frag"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Krak"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Rad"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Melta"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Wargear_Rosarius ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_Wargear_IronHalo ADD countsAsClothingForNudity (false)                                           -->
+<!--       + For OGI_Wargear_CombatShield ADD countsAsClothingForNudity (false)                                       -->
+<!--       + For OGI_Wargear_StormShield ADD countsAsClothingForNudity (false)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_Rosarius"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_IronHalo"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_CombatShield"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_StormShield"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Wargear_PuritySealA ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OGI_Apparel_ServoSkull ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For OGI_Wargear_ServoArm ADD countsAsClothingForNudity (false)                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_PuritySealA"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Apparel_ServoSkull"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Wargear_ServoArm"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
