@@ -171,6 +171,7 @@
 <!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
 <!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
+<!--       + For VAE_Headgear_SurgicalMask ADD bodyPartGroups Teeth and Neck                                          -->
 <!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
@@ -198,6 +199,14 @@
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel</xpath>
                     <value>
                         <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel/layers</xpath>
+                    <value>
+                        <li>Teeth</li>
+                        <li>Neck</li>
                     </value>
                 </li>
 
