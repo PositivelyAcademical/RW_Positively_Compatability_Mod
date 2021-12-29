@@ -11,6 +11,7 @@
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For Apparel_BodyStrap ADD countsAsClothingForNudity (false)                                              -->
 <!--       + For Apparel_BodyStrap REPLACE layer Middle with MiddleClothes                                            -->
+<!--       + For Apparel_Burka ADD layer Overhead                                                                     -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -55,6 +56,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For Apparel_BodyStrap ADD countsAsClothingForNudity (false)                                              -->
 <!--       + For Apparel_BodyStrap REPLACE layer Shell with MiddleClothes                                             -->
+<!--       + For Apparel_Burka ADD layer Overhead                                                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Apparel_BodyStrap"]/apparel</xpath>
@@ -67,6 +69,13 @@
                     <xpath>/Defs/ThingDef[defName="Apparel_BodyStrap"]/apparel/layers/li[1]</xpath>
                     <value>
                         <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Burka"]/apparel/layers</xpath>
+                    <value>
+                        <li>Overhead</li>
                     </value>
                 </li>
 
