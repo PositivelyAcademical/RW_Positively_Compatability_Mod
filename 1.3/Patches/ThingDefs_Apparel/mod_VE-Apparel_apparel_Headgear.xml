@@ -12,14 +12,14 @@
 <!--       + For VAE_Headgear_TrapperHat ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_BaseballCap ADD countsAsClothingForNudity (false)                                       -->
 <!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
-<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Jaw, Neck)                    -->
+<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Teeth, Neck)                  -->
 <!--       + For VAE_Headgear_Fedora ADD countsAsClothingForNudity (false)                                            -->
 <!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
 <!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
 <!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
-<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Eyes, Jaw, Neck)      -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Teeth, Neck)          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -44,6 +44,70 @@
                                 <xpath>/Defs/ThingDef[defName="VAE_Headgear_Beret"]/apparel/tags</xpath>
                                 <value>
                                     <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Headgear_GasMask REMOVE wornGraphicPath                                                          -->
+<!--       + For VAE_Headgear_GasMask ADD thingClass AdeptusMechanicus.ApparelComposite                               -->
+<!--       + For VAE_Headgear_GasMask ADD comp AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/wornGraphicPath</xpath>
+                            </li>
+
+                            <li Class="PatchOperationInsert">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/description</xpath>
+                                <value>
+                                    <thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
+                                </value>
+                            </li>
+
+                            <!-- li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]</xpath>
+                                <value>
+                                    <comps />
+                                </value>
+                            </li -->
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="AdeptusMechanicus.CompProperties_Wargear"></li>
+                                        <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+                                            <ExtrasEntries>
+                                                <li>
+                                                    <graphicData>
+                                                        <texPath>Things/Headgear/GasMask/GasMask</texPath>
+                                                        <shaderType>Cutout</shaderType>
+                                                    </graphicData>
+                                                    <UseBodytypeTextures>false</UseBodytypeTextures>
+                                                    <commonality>10</commonality>
+                                                </li>
+                                            </ExtrasEntries>
+                                            <NorthOffset>0,-0.05,0</NorthOffset>
+                                            <SouthOffset>0,0.00,0</SouthOffset>
+                                            <EastOffset>0,0.00,0</EastOffset>
+                                            <WestOffset>0,0.00,0</WestOffset>
+                                        </li>
+                                        <li Class="AdeptusMechanicus.CompProperties_LungProtectionApparel">
+                                            <Chance>1</Chance>
+                                        </li>
+                                    </comps>
                                 </value>
                             </li>
 
@@ -81,7 +145,7 @@
 
 <!--  ==============================================================================================================  -->
 <!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
-<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Jaw, Neck)                    -->
+<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Teeth, Neck)                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel</xpath>
@@ -94,7 +158,7 @@
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel/bodyPartGroups</xpath>
                     <value>
                         <bodyPartGroups>
-                            <li>Jaw</li>
+                            <li>Teeth</li>
                             <li>Neck</li>
                         </bodyPartGroups>
                     </value>
@@ -144,7 +208,7 @@
 
 <!--  ==============================================================================================================  -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
-<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Eyes, Jaw, Neck)      -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Teeth, Neck)          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel</xpath>
@@ -157,8 +221,7 @@
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/bodyPartGroups</xpath>
                     <value>
                         <bodyPartGroups>
-                            <li>Eyes</li>
-                            <li>Jaw</li>
+                            <li>Teeth</li>
                             <li>Neck</li>
                         </bodyPartGroups>
                     </value>
