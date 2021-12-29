@@ -4,6 +4,11 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
+<!--       + For VAE_Headgear_GasMask REMOVE wornGraphicPath                                                          -->
+<!--       + For VAE_Headgear_GasMask ADD thingClass AdeptusMechanicus.ApparelComposite                               -->
+<!--       + For VAE_Headgear_GasMask ADD comp AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer                -->
+<!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Royalty                                                                                     -->
 <!--       + For VAE_Headgear_Beret ADD PrestigeCombatGear                                                            -->
 <!--  ==============================================================================================================  -->
@@ -12,14 +17,14 @@
 <!--       + For VAE_Headgear_TrapperHat ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_BaseballCap ADD countsAsClothingForNudity (false)                                       -->
 <!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
-<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Teeth, Neck)                  -->
+<!--       + For VAE_Headgear_Scarf ADD bodyPartGroups Neck                                                           -->
 <!--       + For VAE_Headgear_Fedora ADD countsAsClothingForNudity (false)                                            -->
 <!--       + For VAE_Headgear_ChefsToque ADD countsAsClothingForNudity (false)                                        -->
 <!--       + For VAE_Headgear_Hardhat ADD countsAsClothingForNudity (false)                                           -->
 <!--       + For VAE_Headgear_SurgicalMask ADD countsAsClothingForNudity (false)                                      -->
 <!--       + For VAE_Headgear_Beret ADD countsAsClothingForNudity (false)                                             -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
-<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Teeth, Neck)          -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups Eyes with Neck                                           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -145,7 +150,7 @@
 
 <!--  ==============================================================================================================  -->
 <!--       + For VAE_Headgear_Scarf ADD countsAsClothingForNudity (false)                                             -->
-<!--       + For VAE_Headgear_Scarf REPLACE bodyPartGroups (Teeth) with bodyPartGroups (Teeth, Neck)                  -->
+<!--       + For VAE_Headgear_Scarf ADD bodyPartGroups Neck                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel</xpath>
@@ -154,13 +159,10 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_Scarf"]/apparel/bodyPartGroups</xpath>
                     <value>
-                        <bodyPartGroups>
-                            <li>Teeth</li>
-                            <li>Neck</li>
-                        </bodyPartGroups>
+                        <li>Neck</li>
                     </value>
                 </li>
 
@@ -208,7 +210,7 @@
 
 <!--  ==============================================================================================================  -->
 <!--       + For VAE_Headgear_GasMask ADD countsAsClothingForNudity (false)                                           -->
-<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups (Teeth, Eyes) with bodyPartGroups (Teeth, Neck)          -->
+<!--       + For VAE_Headgear_GasMask REPLACE bodyPartGroups Eyes with Neck                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel</xpath>
@@ -218,12 +220,9 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/bodyPartGroups</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/apparel/bodyPartGroups/li[2]</xpath>
                     <value>
-                        <bodyPartGroups>
-                            <li>Teeth</li>
-                            <li>Neck</li>
-                        </bodyPartGroups>
+                        <li>Neck</li>
                     </value>
                 </li>
 
