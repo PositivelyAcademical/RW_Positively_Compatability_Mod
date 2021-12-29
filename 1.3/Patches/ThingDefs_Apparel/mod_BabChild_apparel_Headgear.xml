@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_Baby_Beanie ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For Apparel_Baby_Beanie REPLACE layers OnSkin with Overhead                                              -->
+<!--       + For Apparel_Newborn_Beanie ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For Apparel_Newborn_Beanie REPLACE layers OnSkin with Overhead                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_Baby_Beanie ADD countsAsClothingForNudity (false)                                            -->
+<!--       + For Apparel_Baby_Beanie REPLACE layers OnSkin with Overhead                                              -->
+<!--       + For Apparel_Newborn_Beanie ADD countsAsClothingForNudity (false)                                         -->
+<!--       + For Apparel_Newborn_Beanie REPLACE layers OnSkin with Overhead                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Baby_Onesie"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Baby_Onesie"]/apparel/layers</xpath>
+                    <value>
+                        <li>Middle</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Newborn_Onesie"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Newborn_Onesie"]/apparel/layers</xpath>
+                    <value>
+                        <li>Middle</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
