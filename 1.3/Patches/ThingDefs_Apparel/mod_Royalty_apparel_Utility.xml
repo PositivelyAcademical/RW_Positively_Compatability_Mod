@@ -5,7 +5,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + Reqyures MATCH Adaptus Mechanicus: Armoury                                                                 -->
-<!--       + For Apparel_PackBroadshield REPLACE layer Belt with BeltWargear2                                         -->
+<!--       + For Apparel_PackBroadshield REPLACE layers (Belt) with layers (BeltWargear1)                             -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -24,12 +24,14 @@
 <!--  ==============================================================================================================  -->
 <!--     + Reqyures MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--       + For Apparel_PackBroadshield REPLACE layer Belt with BeltWargear2                                         -->
+<!--       + For Apparel_PackBroadshield REPLACE layers (Belt) with layers (BeltWargear1)                             -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="Apparel_PackBroadshield"]/apparel/layers/li[1]</xpath>
+                                <xpath>/Defs/ThingDef[defName="Apparel_PackBroadshield"]/apparel/layers</xpath>
                                 <value>
-                                    <li>BeltWargear2</li>
+                                    <layers>
+                                        <li>BeltWargear1</li>
+                                    </layers>
                                 </value>
                             </li>
 
