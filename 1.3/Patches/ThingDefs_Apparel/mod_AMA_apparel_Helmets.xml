@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For OGAM_Apparel_EnginseerHood ADD tags PrestigeCombatGear                                               -->
+<!--       + For @OGAM_Apparel_SkitariiLegionnaireHelmet ADD tags PrestigeCombatGear                                  -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceHelmet ADD tags PrestigeCombatGear                               -->
+<!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base ADD tags PrestigeCombatGear              -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGAM_Apparel_EnginseerHood ADD tags PrestigeCombatGear                                               -->
+<!--       + For @OGAM_Apparel_SkitariiLegionnaireHelmet ADD tags PrestigeCombatGear                                  -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceHelmet ADD tags PrestigeCombatGear                               -->
+<!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base ADD tags PrestigeCombatGear              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerHood"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[@Name="OGAM_Apparel_SkitariiLegionnaireHelmet"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceHelmet"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
