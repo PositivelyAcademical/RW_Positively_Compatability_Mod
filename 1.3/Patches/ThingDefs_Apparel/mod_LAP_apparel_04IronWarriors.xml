@@ -102,14 +102,14 @@
 <!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Royalty (cont)                                                                              -->
 <!--  ==============================================================================================================  -->
-<!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
+<!--       + For LAP_Armour_IronWarriors_Helmet ADD tags PrestigeCombatGear                                           -->
 <!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet ADD tags PrestigeCombatGear                                -->
 <!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet ADD tags PrestigeCombatGear                                -->
 <!--       + For LAP_Armour_IronWarriors_Terminator_Helmet ADD tags PrestigeCombatGear                                -->
 <!--       + For LAP_Armour_Perturabo_Head ADD tags PrestigeCombatGear                                                -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/apparel</xpath>
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/apparel</xpath>
                                 <value>
                                     <tags>
                                         <li>PrestigeCombatGear</li>

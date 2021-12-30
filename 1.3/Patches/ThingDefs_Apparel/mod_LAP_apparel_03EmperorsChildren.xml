@@ -39,7 +39,7 @@
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                              -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"g]/apparel</xpath>
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/apparel</xpath>
                                 <value>
                                     <tags>
                                         <li>PrestigeCombatGear</li>
@@ -93,7 +93,7 @@
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD bodyPartGroups Waist                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"g]/apparel/layers</xpath>
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/apparel/layers</xpath>
                     <value>
                         <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
                         <li>Belt</li>
@@ -101,7 +101,7 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"g]/apparel/bodyPartGroups</xpath>
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/apparel/bodyPartGroups</xpath>
                     <value>
                         <li>Waist</li>
                     </value>
