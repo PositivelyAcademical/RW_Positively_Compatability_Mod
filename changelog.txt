@@ -1,3 +1,11 @@
+==========================================
+2021-Dec-30
+  Patches to LegionesAstartes descriptions
+------------------------------------------
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_labels_01DarkAngels.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_labels_09BloodAngels.xml
+~ ./changelog.txt
+
 ==============================================
 2021-Dec-30
   Patches to apparel layers merged into master
