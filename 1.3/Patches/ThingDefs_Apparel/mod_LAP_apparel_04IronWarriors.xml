@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_IronWarriors_JumpPack ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD tags PrestigeCombatGear                                 -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD tags PrestigeCombatGear                                 -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD tags PrestigeCombatGear                                       -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--       + For LAP_Armour_IronWarriors_Helmet ADD tags PrestigeCombatGear                                           -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_Perturabo_Head ADD tags PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD layers ShellExtra, Belt                                            -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD bodyPartGroups Waist                                               -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD layers ShellExtra, Belt                                 -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD bodyPartGroups Waist                                    -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD layers ShellExtra, Belt                                 -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD bodyPartGroups Waist                                    -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD layers ShellExtra, Belt                                       -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD bodyPartGroups Waist                                          -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD layers ShellExtra, Belt                                               -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD bodyPartGroups Waist                                                  -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD tags PrestigeCombatGear                                 -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD tags PrestigeCombatGear                                 -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD tags PrestigeCombatGear                                       -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet ADD tags PrestigeCombatGear                                -->
+<!--       + For LAP_Armour_Perturabo_Head ADD tags PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD layers ShellExtra, Belt                                            -->
+<!--       + For LAP_Armour_IronWarriors_Armor ADD bodyPartGroups Waist                                               -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD layers ShellExtra, Belt                                 -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor ADD bodyPartGroups Waist                                    -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD layers ShellExtra, Belt                                 -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor ADD bodyPartGroups Waist                                    -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD layers ShellExtra, Belt                                       -->
+<!--       + For LAP_Armour_IronWarriors_Terminator ADD bodyPartGroups Waist                                          -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD layers ShellExtra, Belt                                               -->
+<!--       + For LAP_Armour_Perturabo_Armor ADD bodyPartGroups Waist                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
