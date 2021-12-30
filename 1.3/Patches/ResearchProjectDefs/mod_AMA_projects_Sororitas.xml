@@ -18,12 +18,12 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For OG_Sororitas_Tech_Base_T2 ADD prerequisites OG_Imperial_Tech_Apparel_Armour_T3                       -->
+<!--       + For OG_Sororitas_Tech_Base_T2 ADD prerequisites PoweredArmor                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T2"]/prerequisites</xpath>
                     <value>
-                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        <li>PoweredArmor</li>
                     </value>
                 </li>
 
