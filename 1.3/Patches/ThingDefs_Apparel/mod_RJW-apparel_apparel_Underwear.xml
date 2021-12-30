@@ -110,8 +110,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_BlackStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_BlackStickers"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_BlackStickers"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -122,8 +122,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_HeavyNippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                  -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_HeavyNippleRings"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_HeavyNippleRings"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -134,8 +134,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_NCA REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_NCA"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCA"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -146,8 +146,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_NCB REPLACE bodyPartGroups Shoulders with ChestBPG                                               -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_NCB"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NCB"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -158,8 +158,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_NippleBarbells REPLACE bodyPartGroups Shoulders with ChestBPG                                    -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_NippleBarbells"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NippleBarbells"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -170,8 +170,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_NippleRings REPLACE bodyPartGroups Shoulders with ChestBPG                                       -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_NippleRings"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_NippleRings"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -182,8 +182,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_RoundStickers REPLACE bodyPartGroups Shoulders with ChestBPG                                     -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_RoundStickers"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_RoundStickers"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -194,8 +194,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_StickersC REPLACE bodyPartGroups Shoulders with ChestBPG                                         -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_StickersC"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_StickersC"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -206,8 +206,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_WiredNippleVibrators REPLACE bodyPartGroups Shoulders with ChestBPG                              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_WiredNippleVibrators"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WiredNippleVibrators"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
@@ -218,8 +218,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For S16_WoodenPins REPLACE bodyPartGroups Shoulders with ChestBPG                                        -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="S16_WoodenPins"]/apparel/bodyPartGroups</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="S16_WoodenPins"]/apparel/bodyPartGroups/li</xpath>
                                 <value>
                                     <li>ChestBPG</li>
                                 </value>
