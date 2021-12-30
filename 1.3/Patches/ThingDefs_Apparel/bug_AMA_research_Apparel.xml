@@ -4,9 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
-<!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites (ComplexClothing)                   -->
-<!--  ==============================================================================================================  -->
 <!--       + For @OG_Imperial_Trenchcoat_Base REMOVE researchPrerequisite (ComplexClothing)                           -->
 <!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE researchPrerequisite (ComplexClothing)             -->
 <!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE researchPrerequisite (ComplexClothing)                  -->
@@ -18,19 +15,12 @@
         <match Class="PatchOperationSequence">
             <operations>
 
-
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites (ComplexClothing)                   -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Armor_Makeable"]/recipeMaker/researchPrerequisites</xpath>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
-<!--  ==============================================================================================================  -->
+<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE researchPrerequisite (ComplexClothing)                           -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE researchPrerequisite (ComplexClothing)             -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE researchPrerequisite (ComplexClothing)                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Trenchcoat_Base"]/recipeMaker/researchPrerequisite</xpath>
@@ -39,6 +29,15 @@
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker/researchPrerequisite</xpath>
                 </li>
+
+                <!-- li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker</xpath>
+                    <value>
+                        <recipeMaker>
+                            <useIngredientsForColor>false</useIngredientsForColor>
+                        </recipeMaker>
+                    </value>
+                </li  -->
 
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Uniform_Trenchcoat"]/recipeMaker/researchPrerequisite</xpath>
