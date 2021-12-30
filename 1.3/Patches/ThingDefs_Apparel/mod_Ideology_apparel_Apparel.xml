@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For Apparel_Burka ADD layer ShellExtra                                                                   -->
+<!--       + For Apparel_Robe ADD layer ShellExtra                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_BodyStrap ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For Apparel_BodyStrap REPLACE layer Middle with MiddleClothes                                            -->
+<!--       + For Apparel_Burka ADD layer Overhead                                                                     -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_Burka ADD layer ShellExtra                                                                   -->
+<!--       + For Apparel_Robe ADD layer ShellExtra                                                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_Burka"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Apparel_Robe"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_BodyStrap ADD countsAsClothingForNudity (false)                                              -->
+<!--       + For Apparel_BodyStrap REPLACE layer Shell with MiddleClothes                                             -->
+<!--       + For Apparel_Burka ADD layer Overhead                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_BodyStrap"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Apparel_BodyStrap"]/apparel/layers/li[1]</xpath>
+                    <value>
+                        <li>MiddleClothes</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Burka"]/apparel/layers</xpath>
+                    <value>
+                        <li>Overhead</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_WarMask ADD countsAsClothingForNudity (false)                                                -->
+<!--       + For Apparel_WarVeil ADD countsAsClothingForNudity (false)                                                -->
+<!--       + For Apparel_PsychicFoilHelmet ADD countsAsClothingForNudity (false)                                      -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarMask"]/apparel</xpath>
+        <value>
+           <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarVeil"]/apparel</xpath>
+        <value>
+           <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/apparel</xpath>
+        <value>
+           <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        </value>
+    </Operation>
+
+</Patch>

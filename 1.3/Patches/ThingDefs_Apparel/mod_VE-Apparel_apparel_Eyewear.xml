@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Glasses ADD countsAsClothingForNudity (false)                                                        -->
+<!--       + For Sunglasses ADD countsAsClothingForNudity (false)                                                     -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Glasses ADD countsAsClothingForNudity (false)                                                        -->
+<!--       + For Sunglasses ADD countsAsClothingForNudity (false)                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Glasses"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Sunglasses"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

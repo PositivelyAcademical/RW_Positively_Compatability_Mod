@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For LAP_Armour_SOH_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--       + For LAP_Armour_SOH_Raptor ADD tags PrestigeCombatGear                                                    -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD tags PrestigeCombatGear                                          -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD tags PrestigeCombatGear                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--       + For LAP_Armour_SOH_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--       + For LAP_Armour_SOH_Apothecary_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_SOH_Techmarine_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_SOH_Terminator_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_Horus_Helmet ADD tags PrestigeCombatGear                                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For LAP_Armour_SOH_Armor ADD layers ShellExtra, Belt                                                     -->
+<!--       + For LAP_Armour_SOH_Armor ADD bodyPartGroups Waist                                                        -->
+<!--       + For LAP_Armour_SOH_Raptor ADD layers ShellExtra, Belt                                                    -->
+<!--       + For LAP_Armour_SOH_Raptor ADD bodyPartGroups Waist                                                       -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD layers ShellExtra, Belt                                          -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD bodyPartGroups Waist                                             -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD layers ShellExtra, Belt                                          -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD bodyPartGroups Waist                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_SOH_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--       + For LAP_Armour_SOH_Raptor ADD tags PrestigeCombatGear                                                    -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD tags PrestigeCombatGear                                          -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD tags PrestigeCombatGear                                          -->
+<!--       + For LAP_Armour_SOH_Terminator ADD tags PrestigeCombatGear                                                -->
+<!--       + For LAP_Armour_Horus_Armor ADD tags PrestigeCombatGear                                                   -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_SOH_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--       + For LAP_Armour_SOH_Apothecary_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_SOH_Techmarine_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_SOH_Terminator_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--       + For LAP_Armour_Horus_Helmet ADD tags PrestigeCombatGear                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_SOH_Armor ADD layers ShellExtra, Belt                                                     -->
+<!--       + For LAP_Armour_SOH_Armor ADD bodyPartGroups Waist                                                        -->
+<!--       + For LAP_Armour_SOH_Raptor ADD layers ShellExtra, Belt                                                    -->
+<!--       + For LAP_Armour_SOH_Raptor ADD bodyPartGroups Waist                                                       -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD layers ShellExtra, Belt                                          -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor ADD bodyPartGroups Waist                                             -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD layers ShellExtra, Belt                                          -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD bodyPartGroups Waist                                             -->
+<!--       + For LAP_Armour_SOH_Terminator ADD layers ShellExtra, Belt                                                -->
+<!--       + For LAP_Armour_SOH_Terminator ADD bodyPartGroups Waist                                                   -->
+<!--       + For LAP_Armour_Horus_Armor ADD layers ShellExtra, Belt                                                   -->
+<!--       + For LAP_Armour_Horus_Armor ADD bodyPartGroups Waist                                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For OGIG_Apparel_CommissarJacket ADD tags PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OG_Apparel_Tribal_Cloak ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OG_Apparel_Cloak ADD countsAsClothingForNudity (false)                                               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_CommissarJacket ADD tags PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarJacket"]/apparel/tags</xpath>
+                                <value>
+                                    <li>PrestigeCombatGear</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Apparel_Tribal_Cloak ADD countsAsClothingForNudity (false)                                        -->
+<!--       + For OG_Apparel_Cloak ADD countsAsClothingForNudity (false)                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OG_Apparel_Tribal_Cloak"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OG_Apparel_Cloak"]/apparel</xpath>
+                    <value>
+                        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

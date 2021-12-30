@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
+<!--       + For Apparel_Parka ADD layer ShellExtra                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Apparel_TribalA ADD layer MiddleClothes                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_Parka ADD layer ShellExtra                                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Apparel_Parka"]/apparel/layers</xpath>
+                    <value>
+                       <li>ShellExtra</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_TribalA ADD layer MiddleClothes                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_TribalA"]/apparel/layers</xpath>
+        <value>
+           <li>MiddleClothes</li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For VAE_Apparel_PeltCoat ADD layer ShellExtra                                                            -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Apparel_PeltCoat ADD layer ShellExtra                                                            -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VAE_Apparel_PeltCoat"]/apparel/layers</xpath>
+                                <value>
+                                    <li>ShellExtra</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

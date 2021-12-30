@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For Custodian_Armor ADD tags PrestigeCombatGear                                                          -->
+<!--       + For Custodian_Terminator ADD tags PrestigeCombatGear                                                     -->
+<!--       + For Emperor_Armor ADD tags PrestigeCombatGear                                                            -->
+<!--       + For Golden_General_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
+<!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
+<!--       + For Emperor_Crown ADD tags PrestigeCombatGear                                                            -->
+<!--       + For Golden_General_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For Custodian_Armor ADD layers ShellExtra, Belt                                                          -->
+<!--       + For Custodian_Armor ADD bodyPartGroups Waist                                                             -->
+<!--       + For Custodian_Terminator ADD layers ShellExtra, Belt                                                     -->
+<!--       + For Custodian_Terminator ADD bodyPartGroups Waist                                                        -->
+<!--       + For Emperor_Armor ADD layers ShellExtra, Belt                                                            -->
+<!--       + For Emperor_Armor ADD bodyPartGroups Waist                                                               -->
+<!--       + For Golden_General_Armor ADD layers ShellExtra, Belt                                                     -->
+<!--       + For Golden_General_Armor ADD bodyPartGroups Waist                                                        -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Armor ADD tags PrestigeCombatGear                                                          -->
+<!--       + For Custodian_Terminator ADD tags PrestigeCombatGear                                                     -->
+<!--       + For Emperor_Armor ADD tags PrestigeCombatGear                                                            -->
+<!--       + For Golden_General_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
+<!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
+<!--       + For Emperor_Crown ADD tags PrestigeCombatGear                                                            -->
+<!--       + For Golden_General_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Armor ADD layers ShellExtra, Belt                                                          -->
+<!--       + For Custodian_Armor ADD bodyPartGroups Waist                                                             -->
+<!--       + For Custodian_Terminator ADD layers ShellExtra, Belt                                                     -->
+<!--       + For Custodian_Terminator ADD bodyPartGroups Waist                                                        -->
+<!--       + For Emperor_Armor ADD layers ShellExtra, Belt                                                            -->
+<!--       + For Emperor_Armor ADD bodyPartGroups Waist                                                               -->
+<!--       + For Golden_General_Armor ADD layers ShellExtra, Belt                                                     -->
+<!--       + For Golden_General_Armor ADD bodyPartGroups Waist                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

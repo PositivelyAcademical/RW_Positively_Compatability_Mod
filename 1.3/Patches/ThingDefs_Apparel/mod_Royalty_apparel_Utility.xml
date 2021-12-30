@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Reqyures MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--       + For Apparel_PackBroadshield REPLACE layers (Belt) with layers (BeltWargear1)                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Adeptus Mechanicus: Armoury</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Reqyures MATCH Adaptus Mechanicus: Armoury                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Apparel_PackBroadshield REPLACE layers (Belt) with layers (BeltWargear1)                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Apparel_PackBroadshield"]/apparel/layers</xpath>
+                                <value>
+                                    <layers>
+                                        <li>BeltWargear1</li>
+                                    </layers>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
