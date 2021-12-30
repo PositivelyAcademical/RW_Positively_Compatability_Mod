@@ -14,7 +14,7 @@
 <!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
 <!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
 <!--       + For Emperor_Crown ADD tags PrestigeCombatGear                                                            -->
-<!--       + For Golden_General_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--       + For Golden_General_Helmet ADD tags PrestigeCombatGear                                                    -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For Custodian_Armor ADD layers ShellExtra, Belt                                                          -->
@@ -90,7 +90,7 @@
 <!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
 <!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
 <!--       + For Emperor_Crown ADD tags PrestigeCombatGear                                                            -->
-<!--       + For Golden_General_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--       + For Golden_General_Helmet ADD tags PrestigeCombatGear                                                    -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/apparel</xpath>
@@ -120,7 +120,7 @@
                             </li>
 
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/apparel</xpath>
+                                <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/apparel</xpath>
                                 <value>
                                     <tags>
                                         <li>PrestigeCombatGear</li>
