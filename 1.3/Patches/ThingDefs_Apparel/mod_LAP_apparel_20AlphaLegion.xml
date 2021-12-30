@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For LAP_Armour_Alpharius_Armor ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--       + For LAP_Armour_Alpharius_Helmet ADD tags PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For LAP_Armour_Alpharius_Armor ADD layers ShellExtra, Belt                                               -->
+<!--       + For LAP_Armour_Alpharius_ArmorADD bodyPartGroups Waist                                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Alpharius_Armor ADD tags PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Alpharius_Helmet ADD tags PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Alpharius_Armor ADD layers ShellExtra, Belt                                               -->
+<!--       + For LAP_Armour_Alpharius_Armor ADD bodyPartGroups Waist                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/apparel/layers</xpath>
+                    <value>
+                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
+                        <li>Belt</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/apparel/bodyPartGroups</xpath>
+                    <value>
+                        <li>Waist</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
