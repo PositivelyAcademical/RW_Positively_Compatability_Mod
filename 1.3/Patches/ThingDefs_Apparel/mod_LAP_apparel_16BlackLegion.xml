@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-<!--  ==============================================================================================================
-<!--  What this xml patch does:
-<!--  ==============================================================================================================
-<!--     + Requires MATCH Royalty
-<!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Terminator ADD tags PrestigeCombatGear
-<!--  ==============================================================================================================
-<!--     + Requires MATCH Royalty (cont)
-<!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear
-<!--  ==============================================================================================================
-<!--     + ALL CASES
-<!--       + For LAP_Armour_BlackLegion_Armor ADD layers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Armor ADD bodyPartGroups Waist
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD layers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD bodyPartGroups Waist
-<!--       + For LAP_Armour_BlackLegion_Terminator ayers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Terminator ADD bodyPartGroups Waist
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear                                             -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD tags PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear                                 -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD layers ShellExtra, Belt                                             -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD bodyPartGroups Waist                                                -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD layers ShellExtra, Belt                                            -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD bodyPartGroups Waist                                               -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD layers ShellExtra, Belt                                        -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD bodyPartGroups Waist                                           -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
@@ -35,13 +35,13 @@
                     <match Class="PatchOperationSequence">
                         <operations>
 
-<!--  ==============================================================================================================
-<!--     + Requires MATCH Royalty
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Terminator ADD tags PrestigeCombatGear
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear                                             -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD tags PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Armor"]/apparel</xpath>
                                 <value>
@@ -69,12 +69,12 @@
                                 </value>
                             </li>
 
-<!--  ==============================================================================================================
-<!--     + Requires MATCH Royalty (cont)
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear
-<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear                                            -->
+<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear                                 -->
+<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Helmet"]/apparel</xpath>
                                 <value>
@@ -97,16 +97,16 @@
                     </match>
                 </li>
 
-<!--  ==============================================================================================================
-<!--     + ALL CASES
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_BlackLegion_Armor ADD layers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Armor ADD bodyPartGroups Waist
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD layers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Raptor ADD bodyPartGroups Waist
-<!--       + For LAP_Armour_BlackLegion_Terminator ayers ShellExtra, Belt
-<!--       + For LAP_Armour_BlackLegion_Terminator ADD bodyPartGroups Waist
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD layers ShellExtra, Belt                                             -->
+<!--       + For LAP_Armour_BlackLegion_Armor ADD bodyPartGroups Waist                                                -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD layers ShellExtra, Belt                                            -->
+<!--       + For LAP_Armour_BlackLegion_Raptor ADD bodyPartGroups Waist                                               -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD layers ShellExtra, Belt                                        -->
+<!--       + For LAP_Armour_BlackLegion_Terminator ADD bodyPartGroups Waist                                           -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Armor"]/apparel/layers</xpath>
                     <value>

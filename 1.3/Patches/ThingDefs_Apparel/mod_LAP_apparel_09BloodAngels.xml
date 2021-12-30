@@ -21,7 +21,7 @@
 <!--       + For LAP_Armour_BloodAngels_JumpPack ADD bodyPartGroups Waist                                             -->
 <!--       + For LAP_Armour_BloodAngels_Terminator ADD layers ShellExtra, Belt                                        -->
 <!--       + For LAP_Armour_BloodAngels_Terminator ADD bodyPartGroups Waist                                           -->
-<!--       + For LAP_Armour_Sanguinius_Armor ayers ShellExtra, Belt                                                   -->
+<!--       + For LAP_Armour_Sanguinius_Armor ADD layers ShellExtra, Belt                                              -->
 <!--       + For LAP_Armour_Sanguinius_Armor ADD bodyPartGroups Waist                                                 -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -119,7 +119,7 @@
 <!--       + For LAP_Armour_BloodAngels_JumpPack ADD bodyPartGroups Waist                                             -->
 <!--       + For LAP_Armour_BloodAngels_Terminator ADD layers ShellExtra, Belt                                        -->
 <!--       + For LAP_Armour_BloodAngels_Terminator ADD bodyPartGroups Waist                                           -->
-<!--       + For LAP_Armour_Sanguinius_Armor ayers ShellExtra, Belt                                                   -->
+<!--       + For LAP_Armour_Sanguinius_Armor ADD layers ShellExtra, Belt                                              -->
 <!--       + For LAP_Armour_Sanguinius_Armor ADD bodyPartGroups Waist                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">

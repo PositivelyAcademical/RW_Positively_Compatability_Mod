@@ -21,7 +21,7 @@
 <!--       + For LAP_Armour_NightLords_Raptor ADD bodyPartGroups Waist                                                -->
 <!--       + For LAP_Armour_NightLords_Terminator ADD layers ShellExtra, Belt                                         -->
 <!--       + For LAP_Armour_NightLords_Terminator ADD bodyPartGroups Waist                                            -->
-<!--       + For LAP_Armour_Curze_Armor ayers ShellExtra, Belt                                                        -->
+<!--       + For LAP_Armour_Curze_Armor ADD layers ShellExtra, Belt                                                   -->
 <!--       + For LAP_Armour_Curze_Armor ADD bodyPartGroups Waist                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -119,7 +119,7 @@
 <!--       + For LAP_Armour_NightLords_Raptor ADD bodyPartGroups Waist                                                -->
 <!--       + For LAP_Armour_NightLords_Terminator ADD layers ShellExtra, Belt                                         -->
 <!--       + For LAP_Armour_NightLords_Terminator ADD bodyPartGroups Waist                                            -->
-<!--       + For LAP_Armour_Curze_Armor ayers ShellExtra, Belt                                                        -->
+<!--       + For LAP_Armour_Curze_Armor ADD layers ShellExtra, Belt                                                   -->
 <!--       + For LAP_Armour_Curze_Armor ADD bodyPartGroups Waist                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">

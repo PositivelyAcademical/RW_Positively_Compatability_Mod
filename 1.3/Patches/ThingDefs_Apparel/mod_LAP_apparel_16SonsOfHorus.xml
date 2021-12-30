@@ -24,7 +24,7 @@
 <!--       + For LAP_Armour_SOH_Raptor ADD bodyPartGroups Waist                                                       -->
 <!--       + For LAP_Armour_SOH_Apothecary_Armor ADD layers ShellExtra, Belt                                          -->
 <!--       + For LAP_Armour_SOH_Apothecary_Armor ADD bodyPartGroups Waist                                             -->
-<!--       + For LAP_Armour_SOH_Techmarine_Armor ayers ShellExtra, Belt                                               -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor ADD layers ShellExtra, Belt                                          -->
 <!--       + For LAP_Armour_SOH_Techmarine_Armor ADD bodyPartGroups Waist                                             -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">

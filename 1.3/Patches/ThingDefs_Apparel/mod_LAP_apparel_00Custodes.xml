@@ -23,7 +23,7 @@
 <!--       + For Custodian_Terminator ADD bodyPartGroups Waist                                                        -->
 <!--       + For Emperor_Armor ADD layers ShellExtra, Belt                                                            -->
 <!--       + For Emperor_Armor ADD bodyPartGroups Waist                                                               -->
-<!--       + For Golden_General_Armor ayers ShellExtra, Belt                                                          -->
+<!--       + For Golden_General_Armor ADD layers ShellExtra, Belt                                                     -->
 <!--       + For Golden_General_Armor ADD bodyPartGroups Waist                                                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -141,7 +141,7 @@
 <!--       + For Custodian_Terminator ADD bodyPartGroups Waist                                                        -->
 <!--       + For Emperor_Armor ADD layers ShellExtra, Belt                                                            -->
 <!--       + For Emperor_Armor ADD bodyPartGroups Waist                                                               -->
-<!--       + For Golden_General_Armor ayers ShellExtra, Belt                                                          -->
+<!--       + For Golden_General_Armor ADD layers ShellExtra, Belt                                                     -->
 <!--       + For Golden_General_Armor ADD bodyPartGroups Waist                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
