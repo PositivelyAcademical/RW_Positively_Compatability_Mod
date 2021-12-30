@@ -203,7 +203,7 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel/layers</xpath>
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]/apparel/bodyPartGroups</xpath>
                     <value>
                         <li>Teeth</li>
                         <li>Neck</li>
