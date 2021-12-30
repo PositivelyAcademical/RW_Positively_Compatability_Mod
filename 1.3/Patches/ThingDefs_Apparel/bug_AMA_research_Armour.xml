@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - SororitasArmour                                                                                -->
+<!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base REPLACE researchPrerequisites PoweredArmor with         -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T3                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - MilitarumArmour                                                                                -->
+<!--       + For ROGIG_Apparel_FlakArmourLight REPLACE researchPrerequisites FlakArmor with                           -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T1                                                                     -->
+<!--       + For OGIG_Apparel_FlakArmourLightGreaves REPLACE researchPrerequisites FlakArmor with                     -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T1                                                                     -->
+<!--       + For OG_Imperial_Apparel_Armor INSERT researchPrerequisites (FlakArmor) below equippedStatOffsets         -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - SororitasArmour                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base REPLACE researchPrerequisites PoweredArmor with         -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T3                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_PowerArmour_Base"]/recipeMaker/researchPrerequisites/li[1]</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - MilitarumArmour                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For ROGIG_Apparel_FlakArmourLight REPLACE researchPrerequisites FlakArmor with                           -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T1                                                                     -->
+<!--       + For OGIG_Apparel_FlakArmourLightGreaves REPLACE researchPrerequisites FlakArmor with                     -->
+<!--           OG_Imperial_Tech_Apparel_Armour_T1                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="ROGIG_Apparel_FlakArmourLight"]/recipeMaker/researchPrerequisites/li</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLightGreaves"]/recipeMaker/researchPrerequisites/li</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - MilitarumArmour (cont)                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Apparel_Armor INSERT researchPrerequisites (OG_Imperial_Tech_Apparel_Armour_T1) below    -->
+<!--           equippedStatOffsets                                                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="OG_Imperial_Apparel_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

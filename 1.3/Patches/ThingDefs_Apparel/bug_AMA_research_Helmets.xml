@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - SororitasHelmets                                                                               -->
+<!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base REMOVE researchPrerequisites             -->
+<!--           PoweredArmor                                                                                           -->
+<!--       + For OGAS_Apparel_PowerArmourHelmet REMOVE researchPrerequisites (PoweredArmor)                           -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - MilitarumArmour                                                                                -->
+<!--       + For OGIG_Apparel_FlakHelmetLight INSERT researchPrerequisites (OG_Imperial_Tech_Apparel_Armour_T1)       -->
+<!--           below equippedStatOffsets                                                                              -->
+<!--       + For OGIG_Apparel_Cadia_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--       + For OGIG_Apparel_Armageddon_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1      -->
+<!--       + For OGIG_Apparel_Krieg_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - SororitasArmour                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base REMOVE researchPrerequisites             -->
+<!--           PoweredArmor                                                                                           -->
+<!--       + For OGAS_Apparel_PowerArmourHelmet REMOVE researchPrerequisites (PoweredArmor)                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base"]/recipeMaker/researchPrerequisites/li[1]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGAS_Apparel_PowerArmourHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - MilitarumArmour                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_FlakHelmetLight INSERT researchPrerequisites (OG_Imperial_Tech_Apparel_Armour_T1)       -->
+<!--           below equippedStatOffsets                                                                              -->
+<!--       + For OGIG_Apparel_Cadia_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--       + For OGIG_Apparel_Armageddon_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1      -->
+<!--       + For OGIG_Apparel_Krieg_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakHelmetLight"]/equippedStatOffsets</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Cadia_FlakHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_FlakHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                    </value>
+                </li>
+
+
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

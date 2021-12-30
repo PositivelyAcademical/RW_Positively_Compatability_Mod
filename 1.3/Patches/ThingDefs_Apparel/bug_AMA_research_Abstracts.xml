@@ -5,8 +5,8 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For OGIG_Apparel_FlakArmourLightGreaves REMOVE researchPrerequisites FlakArmor                           -->
-<!--       + For OGIG_Apparel_FlakArmourLight REMOVE researchPrerequisites FlakArmor                                  -->
+<!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites                                     -->
+<!--           (OG_Imperial_Tech_Apparel_Armour_T1)                                                                   -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -19,15 +19,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_FlakArmourLightGreaves REMOVE researchPrerequisites FlakArmor                           -->
-<!--       + For OGIG_Apparel_FlakArmourLight REMOVE researchPrerequisites FlakArmor                                  -->
+<!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites                                     -->
+<!--           (OG_Imperial_Tech_Apparel_Armour_T1)                                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLightGreaves"]/recipeMaker/researchPrerequisites/li</xpath>
-                </li>
-
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLight"]/recipeMaker/researchPrerequisites/li</xpath>
+                    <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Armor_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
 
             </operations>
