@@ -65,7 +65,7 @@
 <!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Cold (4)                                    -->
 <!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Heat (2)                                    -->
 <!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (equippedStatOffsets) ShootingAccuracyPawn -0.05 with -0.10  -->
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
