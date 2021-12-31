@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--  Tier 1h  -  stand alone gase masks - standardised values                                                        -->
+<!--        costList        20  Steel                                                                                 -->
+<!--                        10  Plasteel                                                                              -->
+<!--                        1   ComponentIndustrial                                                                   -->
+<!--        statBases       ArmorRating_Blunt       0.12                                                              -->
+<!--                        ArmorRating_Sharp       0.20                                                              -->
+<!--                        ArmorRating_Heat        0.68                                                              -->
+<!--                        Insulation_Cold         4                                                                 -->
+<!--                        Insulation_Heat         2                                                                 -->
+<!--        equippedStatOffsets     WorkSpeedGlobal             -0.05                                                 -->
+<!--                                ShootingAccuracyPawn        -0.10                                                 -->
+<!--                                ToxicSensitivity            -0.70                                                 -->
+<!--                                MoveSpeed                   -0.01                                                 -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD costList ComponentIndustrial (1)                            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68             -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD statBases Insulation_Cold (4)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD statBases Insulation_Heat (2)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (equippedStatOffsets) ShootingAccuracyPawn -0.05 with   -->
+<!--           -0.10                                                                                                  -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD costList ComponentIndustrial (1)                                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68                        -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD statBases Insulation_Cold (4)                                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD statBases Insulation_Heat (2)                                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) REMOVE equippedStatOffsets PsychicSensitivity                              -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (equippedStatOffsets) MoveSpeed -0.05 with -0.01                   -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD (equippedStatOffsets) WorkSpeedGlobal (-0.05)                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD (equippedStatOffsets) ShootingAccuracyPawn (-0.10)                     -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD costList ComponentIndustrial (1)                                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68                  -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Cold (4)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Heat (2)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (equippedStatOffsets) ShootingAccuracyPawn -0.05 with -0.10  -->
+<!--  ==============================================================================================================
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD costList ComponentIndustrial (1)                            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20            -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68             -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD statBases Insulation_Cold (4)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) ADD statBases Insulation_Heat (2)                               -->
+<!--       + For OGIG_Apparel_Armageddon_Gasmask (1h) REPLACE (equippedStatOffsets) ShootingAccuracyPawn -0.05 with   -->
+<!--           -0.10                                                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/costList</xpath>
+                    <value>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases/ArmorRating_Heat</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Cold>4</Insulation_Cold>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Heat>2</Insulation_Heat>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+                    <value>
+                        <ShootingAccuracyPawn>-0.10</ShootingAccuracyPawn>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD costList ComponentIndustrial (1)                                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20                       -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68                        -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD statBases Insulation_Cold (4)                                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD statBases Insulation_Heat (2)                                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) REMOVE equippedStatOffsets PsychicSensitivity                              -->
+<!--       + For OGIG_Apparel_GasMask (1h) REPLACE (equippedStatOffsets) MoveSpeed -0.05 with -0.01                   -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD (equippedStatOffsets) WorkSpeedGlobal (-0.05)                          -->
+<!--       + For OGIG_Apparel_GasMask (1h) ADD (equippedStatOffsets) ShootingAccuracyPawn (-0.10)                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/costList</xpath>
+                    <value>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/statBases/ArmorRating_Heat</xpath>
+                    <value>
+                        <ArmorRating_Heat>0.68</ArmorRating_Heat>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Cold>4</Insulation_Cold>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Heat>2</Insulation_Heat>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/equippedStatOffsets/PsychicSensitivity</xpath>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/equippedStatOffsets/MoveSpeed</xpath>
+                    <value>
+                        <MoveSpeed>-0.01</MoveSpeed>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/equippedStatOffsets</xpath>
+                    <value>
+                        <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_GasMask"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ShootingAccuracyPawn>-0.10</ShootingAccuracyPawn>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD costList ComponentIndustrial (1)                                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Blunt 0.05 with 0.12                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Sharp 0.05 with 0.20                 -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (statBases) ArmorRating_Heat 0.05 with 0.68                  -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Cold (4)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) ADD statBases Insulation_Heat (2)                                    -->
+<!--       + For OGIG_Apparel_Krieg_Gasmask (1h) REPLACE (equippedStatOffsets) ShootingAccuracyPawn -0.05 with -0.10  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/costList</xpath>
+                    <value>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases/ArmorRating_Heat</xpath>
+                    <value>
+                        <ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Cold>4</Insulation_Cold>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases</xpath>
+                    <value>
+                        <Insulation_Heat>2</Insulation_Heat>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+                    <value>
+                        <ShootingAccuracyPawn>-0.10</ShootingAccuracyPawn>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
