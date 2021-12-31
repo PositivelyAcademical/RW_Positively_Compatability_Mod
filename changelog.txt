@@ -1,3 +1,10 @@
+=====================================================================
+2021-Dec-31
+  master accepts all research.main CentralClimateControl visual patch
+---------------------------------------------------------------------
++ ./1.3/Patches/ResearchProjectDefs/mod_CCCc_display_research.xml
+~ ./changelog.txt
+
 =============================================
 2021-Dec-31
   master accepts all gasmask standardisations
