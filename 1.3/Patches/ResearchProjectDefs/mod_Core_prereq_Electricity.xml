@@ -9,7 +9,7 @@
 <!--       + For Gunsmithing ADD prerequisites VWE_Gunpowder                                                          -->
 <!--  ==============================================================================================================  -->
 
-    <match Class="PatchOperationSequence">
+    <Operation Class="PatchOperationSequence">
         <operations>
 
             <li Class="PatchOperationFindMod">
