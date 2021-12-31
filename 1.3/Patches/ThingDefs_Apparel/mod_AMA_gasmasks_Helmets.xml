@@ -22,6 +22,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
+<!--       + For OGAM_Apparel_EnginseerHood (2b) ADD (equippedStatOffsets) ToxicSensitivity (-0.35)                   -->
 <!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base (3b) ADD (equippedStatOffsets)           -->
 <!--           ToxicSensitivity (-0.35)                                                                               -->
 <!--  ==============================================================================================================  -->
@@ -31,6 +32,18 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGAM_Apparel_EnginseerHood (2b) ADD (equippedStatOffsets) ToxicSensitivity (-0.35)                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerHood"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.45</ToxicSensitivity>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
