@@ -102,14 +102,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases/ArmorRating_Sharp</xpath>
                     <value>
-                        <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Gasmask"]/statBases/ArmorRating_Heat</xpath>
                     <value>
-                        <ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+                        <ArmorRating_Heat>0.68</ArmorRating_Heat>
                     </value>
                 </li>
 
@@ -243,14 +243,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases/ArmorRating_Sharp</xpath>
                     <value>
-                        <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Gasmask"]/statBases/ArmorRating_Heat</xpath>
                     <value>
-                        <ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+                        <ArmorRating_Heat>0.68</ArmorRating_Heat>
                     </value>
                 </li>
 
