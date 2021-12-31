@@ -138,14 +138,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
-                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
-                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
                     </value>
                 </li>
 
