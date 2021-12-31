@@ -9,6 +9,8 @@
 <!--       + For LAP_Armour_SOH_Raptor ADD tags PrestigeCombatGear                                                    -->
 <!--       + For LAP_Armour_SOH_Apothecary_Armor ADD tags PrestigeCombatGear                                          -->
 <!--       + For LAP_Armour_SOH_Techmarine_Armor ADD tags PrestigeCombatGear                                          -->
+<!--       + For LAP_Armour_SOH_Terminator ADD tags PrestigeCombatGear                                                -->
+<!--       + For LAP_Armour_Horus_Armor ADD tags PrestigeCombatGear                                                   -->
 <!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Royalty (cont)                                                                              -->
 <!--       + For LAP_Armour_SOH_Helmet ADD tags PrestigeCombatGear                                                    -->
@@ -26,6 +28,10 @@
 <!--       + For LAP_Armour_SOH_Apothecary_Armor ADD bodyPartGroups Waist                                             -->
 <!--       + For LAP_Armour_SOH_Techmarine_Armor ADD layers ShellExtra, Belt                                          -->
 <!--       + For LAP_Armour_SOH_Techmarine_Armor ADD bodyPartGroups Waist                                             -->
+<!--       + For LAP_Armour_SOH_Terminator ADD layers ShellExtra, Belt                                                -->
+<!--       + For LAP_Armour_SOH_Terminator ADD bodyPartGroups Waist                                                   -->
+<!--       + For LAP_Armour_Horus_Armor ADD layers ShellExtra, Belt                                                   -->
+<!--       + For LAP_Armour_Horus_Armor ADD bodyPartGroups Waist                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
