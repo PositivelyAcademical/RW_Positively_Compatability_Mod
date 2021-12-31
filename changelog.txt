@@ -1,3 +1,19 @@
+=============================================
+2021-Dec-30
+  master accepts LAP gasmask standardisations
+---------------------------------------------
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_00Custodes.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_01DarkAngels.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_03EmperorsChildren.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_04IronWarriors.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_08NightLords.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_09BloodAngels.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_12WorldEaters.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_16BlackLegion.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_16SonsOfHorus.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_20AlphaLegion.xml
+~ ./changelog.txt
+
 ==============================================
 2021-Dec-30
   Renamed EPOE research patch - bugfix not mod
