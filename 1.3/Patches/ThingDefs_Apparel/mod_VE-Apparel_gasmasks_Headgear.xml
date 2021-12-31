@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--  Tier 1h  -  stand alone gase masks - standardised values                                                        -->
+<!--        costList        20  Steel                                                                                 -->
+<!--                        10  Plasteel                                                                              -->
+<!--                        1   ComponentIndustrial                                                                   -->
+<!--        statBases       ArmorRating_Blunt       0.12                                                              -->
+<!--                        ArmorRating_Sharp       0.20                                                              -->
+<!--                        ArmorRating_Heat        0.68                                                              -->
+<!--                        Insulation_Cold         4                                                                 -->
+<!--                        Insulation_Heat         2                                                                 -->
+<!--        equippedStatOffsets     WorkSpeedGlobal             -0.05                                                 -->
+<!--                                ShootingAccuracyPawn        -0.10                                                 -->
+<!--                                ToxicSensitivity            -0.70                                                 -->
+<!--                                MoveSpeed                   -0.01                                                 -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For VAE_Headgear_GasMask (1h) REPLACE (costList) Steel 35 with 20                                        -->
+<!--       + For VAE_Headgear_GasMask (1h) INSERT after (costlist) Steel Plasteel (10)                                -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) WorkSpeedGlobal (-0.05)                          -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) ShootingAccuracyPawn (-0.10)                     -->
+<!--       + For VAE_Headgear_GasMask (1h) REPLACE (equippedStatOffsets) ToxicSensitivity -0.80 with -0.70            -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) MoveSpeed (-0.01)                                -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VAE_Headgear_GasMask (1h) REPLACE (costList) Steel 35 with 20                                        -->
+<!--       + For VAE_Headgear_GasMask (1h) INSERT after (costlist) Steel Plasteel (10)                                -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) WorkSpeedGlobal (-0.05)                          -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) ShootingAccuracyPawn (-0.10)                     -->
+<!--       + For VAE_Headgear_GasMask (1h) REPLACE (equippedStatOffsets) ToxicSensitivity -0.80 with -0.70            -->
+<!--       + For VAE_Headgear_GasMask (1h) ADD (equippedStatOffsets) MoveSpeed (-0.01)                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/costList/Steel</xpath>
+                    <value>
+                        <Steel>20</Steel>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/costList/Steel</xpath>
+                    <value>
+                        <Plasteel>20</Plasteel>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/equippedStatOffsets</xpath>
+                    <value>
+                        <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ShootingAccuracyPawn>-0.10</ShootingAccuracyPawn>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.70</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/equippedStatOffsets</xpath>
+                    <value>
+                        <MoveSpeed>-0.01</MoveSpeed>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
