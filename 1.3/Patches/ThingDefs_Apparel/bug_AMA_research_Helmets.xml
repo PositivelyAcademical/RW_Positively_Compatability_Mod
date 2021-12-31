@@ -53,6 +53,7 @@
                     <value>
                         <recipeMaker>
                             <researchPrerequisites>
+                                <li>FlackArmor</li>
                                 <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
                             </researchPrerequisites>
                         </recipeMaker>
@@ -79,8 +80,6 @@
                         <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
                     </value>
                 </li>
-
-
 
             </operations>
         </match>

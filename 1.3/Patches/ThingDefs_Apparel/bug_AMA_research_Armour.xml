@@ -6,10 +6,13 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - SororitasArmour                                                                                -->
 <!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base REMOVE researchPrerequisites PoweredArmor               -->
+<!--       + For OGAS_Apparel_PowerArmour REMOVE researchPrerequisites                                                -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - MilitarumArmour                                                                                -->
 <!--       + For OGIG_Apparel_FlakArmourLight ADD researchPrerequisites OG_Imperial_Tech_Apparel                      -->
 <!--       + For OGIG_Apparel_FlakArmourLightGreaves ADD researchPrerequisites OG_Imperial_Tech_Apparel               -->
+<!--       + For OGIG_Apparel_FlakArmour INSERT researchPrerequisites (OG_Imperial_Tech_Apparel_Armour_T1) below      -->
+<!--           generateCommonality                                                                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -23,9 +26,14 @@
 <!--     + ALL CASES - SororitasArmour                                                                                -->
 <!--  ==============================================================================================================  -->
 <!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base REMOVE researchPrerequisites PoweredArmor               -->
+<!--       + For OGAS_Apparel_PowerArmour REMOVE researchPrerequisites                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_PowerArmour_Base"]/recipeMaker/researchPrerequisites/li[1]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGAS_Apparel_PowerArmour"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
 
 <!--  ==============================================================================================================  -->
@@ -69,4 +77,3 @@
         </match>
     </Operation>
 </Patch>
-
