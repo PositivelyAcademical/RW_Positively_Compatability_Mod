@@ -102,7 +102,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VAE_Headgear_GasMask"]/equippedStatOffsets</xpath>
                     <value>
-                        <MoveSpeed>-0.01</WorkSpeedGlobal>
+                        <MoveSpeed>-0.01</MoveSpeed>
                     </value>
                 </li>
 
