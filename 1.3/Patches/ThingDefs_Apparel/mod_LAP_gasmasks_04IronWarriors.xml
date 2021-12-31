@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-<!--  ==============================================================================================================
-<!--    STANDARDISATION OF GAS MASKS ETC
-<!--  Tier 0b  -  <.05  -  tough body clothes
-<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)
-<!--  Tier 1h  -  0.70  -  stand alone gas masks
-<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)
-<!--  Tier 2h  -  0.45  -  helmets for sealed armours
-<!--  Tier 3b  -  0.65  -  power armour
-<!--  Tier 3h  -  0.35  -  power armour helmets
-<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)
-<!--  Tier 4h  -  0.20  -  terminator helmets
-<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)
-<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
 
 
 
-<!--  ==============================================================================================================
-<!--  What this xml patch does:
-<!--  ==============================================================================================================
-<!--     + ALL CASES
-<!--       + For LAP_Armour_IronWarriors_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
-<!--       + For LAP_Armour_Perturabo_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
-<!--       + For LAP_Armour_Perturabo_Head (4h) ToxicSensitivity ToxicSensitivity -0.20
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For LAP_Armour_IronWarriors_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets               -->
+<!--       + For LAP_Armour_IronWarriors_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets            -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
+<!--       + For LAP_Armour_IronWarriors_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets          -->
+<!--       + For LAP_Armour_Perturabo_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                  -->
+<!--       + For LAP_Armour_IronWarriors_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                          -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35               -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35               -->
+<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20               -->
+<!--       + For LAP_Armour_Perturabo_Head (4h) ToxicSensitivity ToxicSensitivity -0.20                               -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
@@ -41,14 +41,14 @@
         <match Class="PatchOperationSequence">
             <operations>
 
-<!--  ==============================================================================================================
-<!--     + ALL CASES
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_IronWarriors_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets               -->
+<!--       + For LAP_Armour_IronWarriors_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets            -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/equippedStatOffsets</xpath>
                     <value>
@@ -77,12 +77,12 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================
-<!--     + ALL CASES (cont)
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_IronWarriors_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
-<!--       + For LAP_Armour_Perturabo_Armor (4b) ADD ToxicSensitivity (-8.00) to equippedStatOffsets
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets          -->
+<!--       + For LAP_Armour_Perturabo_Armor (4b) ADD ToxicSensitivity (-8.00) to equippedStatOffsets                  -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/equippedStatOffsets</xpath>
                     <value>
@@ -97,13 +97,13 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================
-<!--     + ALL CASES (cont)
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_IronWarriors_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                          -->
+<!--       + For LAP_Armour_IronWarriors_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35               -->
+<!--       + For LAP_Armour_IronWarriors_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35               -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
@@ -125,12 +125,12 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================
-<!--     + ALL CASES (cont)
-<!--  ==============================================================================================================
-<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
-<!--       + For LAP_Armour_Perturabo_Head (4h) ToxicSensitivity ToxicSensitivity -0.20
-<!--  ==============================================================================================================
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_IronWarriors_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20               -->
+<!--       + For LAP_Armour_Perturabo_Head (4h) ToxicSensitivity ToxicSensitivity -0.20                               -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
