@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================
+<!--    STANDARDISATION OF GAS MASKS ETC
+<!--  Tier 0b  -  <.05  -  tough body clothes
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)
+<!--  Tier 1h  -  0.70  -  stand alone gas masks
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours
+<!--  Tier 3b  -  0.65  -  power armour
+<!--  Tier 3h  -  0.35  -  power armour helmets
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)
+<!--  Tier 4h  -  0.20  -  terminator helmets
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)
+<!--  ==============================================================================================================
+
+
+
+<!--  ==============================================================================================================
+<!--  What this xml patch does:
+<!--  ==============================================================================================================
+<!--     + ALL CASES
+<!--       + For WorldEaters_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
+<!--       + For WorldEaters_Kharn_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
+<!--       + For Angron_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets
+<!--       + For WorldEaters_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--       + For WorldEaters_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--       + For WorldEaters_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--       + For WorldEaters_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--       + For Butcher_Nail_Replica_Masked (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--       + For WorldEaters_Kharn_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--  ==============================================================================================================
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================
+<!--     + ALL CASES
+<!--  ==============================================================================================================
+<!--       + For WorldEaters_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_JumpPack (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_Apothecary_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--       + For WorldEaters_Techmarine_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets
+<!--  ==============================================================================================================
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_JumpPack"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Apothecary_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Techmarine_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================
+<!--     + ALL CASES (cont)
+<!--  ==============================================================================================================
+<!--       + For WorldEaters_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
+<!--       + For WorldEaters_Kharn_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets
+<!--  ==============================================================================================================
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================
+<!--     + ALL CASES (cont)
+<!--  ==============================================================================================================
+<!--       + For Angron_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets
+<!--  ==============================================================================================================
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Angron_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================
+<!--     + ALL CASES (cont)
+<!--  ==============================================================================================================
+<!--       + For WorldEaters_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--       + For WorldEaters_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--       + For WorldEaters_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35
+<!--  ==============================================================================================================
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Apothecary_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Techmarine_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================
+<!--     + ALL CASES (cont)
+<!--  ==============================================================================================================
+<!--       + For WorldEaters_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--       + For Butcher_Nail_Replica_Masked (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--       + For WorldEaters_Kharn_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20
+<!--  ==============================================================================================================
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica_Masked"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
