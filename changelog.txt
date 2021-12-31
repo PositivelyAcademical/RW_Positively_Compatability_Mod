@@ -1,5 +1,14 @@
 =============================================
 2021-Dec-30
+  master accepts AMA gasmask standardisations
+---------------------------------------------
++ ./1.3/Patches/ThingDefs_Apparel/mod_AMA_gasmasks_Armour.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_AMA_gasmasks_Headgear.xml
++ ./1.3/Patches/ThingDefs_Apparel/mod_AMA_gasmasks_Helmets.xml
+~ ./changelog.txt
+
+=============================================
+2021-Dec-30
   master accepts LAP gasmask standardisations
 ---------------------------------------------
 + ./1.3/Patches/ThingDefs_Apparel/mod_LAP_gasmasks_00Custodes.xml
