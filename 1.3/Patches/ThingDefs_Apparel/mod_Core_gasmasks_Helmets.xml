@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For @ApparelArmorHelmetReconBase INSERT equippedStatOffsets after statBases                              -->
+<!--       + For @ApparelArmorHelmetReconBase (2h) ADD (equippedStatOffsets) ToxicSensitivity (-0.45)                 -->
+<!--       + For @ApparelArmorHelmetPowerBase (3b) ADD (equippedStatOffsets) ToxicSensitivity (-0.65)                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For @ApparelArmorHelmetReconBase INSERT equippedStatOffsets after statBases                              -->
+<!--       + For @ApparelArmorHelmetReconBase (2b) ADD (equippedStatOffsets) ToxicSensitivity (-0.45)                 -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationInsert">
+                <xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetReconBase"]/statBases</xpath>
+                <value>
+                    <equippedStatOffsets />
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetReconBase"]/equippedStatOffsets</xpath>
+                <value>
+                    <ToxicSensitivity>-0.45</ToxicSensitivity>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For @ApparelArmorHelmetPowerBase (3b) ADD (equippedStatOffsets) ToxicSensitivity (-0.65)                 -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"]/equippedStatOffsets</xpath>
+                <value>
+                    <ToxicSensitivity>-0.65</ToxicSensitivity>
+                </value>
+            </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
