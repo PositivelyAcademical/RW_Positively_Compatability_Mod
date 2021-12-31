@@ -29,12 +29,12 @@
 <!--       + For WorldEaters_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                      -->
 <!--       + For WorldEaters_Kharn_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                     -->
 <!--       + For Angron_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                                -->
-<!--       + For WorldEaters_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                                      -->
-<!--       + For WorldEaters_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                           -->
-<!--       + For WorldEaters_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                           -->
-<!--       + For WorldEaters_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                           -->
-<!--       + For Butcher_Nail_Replica_Masked (4h) ToxicSensitivity ToxicSensitivity -0.20                             -->
-<!--       + For WorldEaters_Kharn_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                                -->
+<!--       + For WorldEaters_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                                    -->
+<!--       + For WorldEaters_Apothecary_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
+<!--       + For WorldEaters_Techmarine_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
+<!--       + For WorldEaters_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                         -->
+<!--       + For Butcher_Nail_Replica_Masked (4h) REPLACE ToxicSensitivity -1.00 with -0.20                           -->
+<!--       + For WorldEaters_Kharn_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -114,9 +114,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For WorldEaters_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                                      -->
-<!--       + For WorldEaters_Apothecary_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                           -->
-<!--       + For WorldEaters_Techmarine_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                           -->
+<!--       + For WorldEaters_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                                    -->
+<!--       + For WorldEaters_Apothecary_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
+<!--       + For WorldEaters_Techmarine_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
@@ -142,9 +142,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For WorldEaters_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                           -->
-<!--       + For Butcher_Nail_Replica_Masked (4h) ToxicSensitivity ToxicSensitivity -0.20                             -->
-<!--       + For WorldEaters_Kharn_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                                -->
+<!--       + For WorldEaters_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                         -->
+<!--       + For Butcher_Nail_Replica_Masked (4h) REPLACE ToxicSensitivity -1.00 with -0.20                           -->
+<!--       + For WorldEaters_Kharn_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>

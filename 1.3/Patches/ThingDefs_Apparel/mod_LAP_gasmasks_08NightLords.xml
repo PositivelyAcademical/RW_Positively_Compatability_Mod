@@ -26,8 +26,8 @@
 <!--       + For LAP_Armour_NightLords_Raptor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets                -->
 <!--       + For LAP_Armour_NightLords_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets            -->
 <!--       + For LAP_Armour_Curze_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                      -->
-<!--       + For LAP_Armour_NightLords_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                            -->
-<!--       + For LAP_Armour_NightLords_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                 -->
+<!--       + For LAP_Armour_NightLords_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                          -->
+<!--       + For LAP_Armour_NightLords_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20               -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -83,7 +83,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_NightLords_Helmet (3h) ToxicSensitivity ToxicSensitivity -0.35                            -->
+<!--       + For LAP_Armour_NightLords_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
@@ -95,7 +95,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_NightLords_Terminator_Helmet (4h) ToxicSensitivity ToxicSensitivity -0.20                 -->
+<!--       + For LAP_Armour_NightLords_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
