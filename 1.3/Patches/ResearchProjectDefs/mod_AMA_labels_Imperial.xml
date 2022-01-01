@@ -4,8 +4,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL CASES - Militarum                                                                                      -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label Flakk Armour with label Imperial Flak Armour        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE label Adeptus Sororitas with Adeptus Sororitas I                   -->
+<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE label Adeptus Sororitas with Adeptus Sororitas II                  -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -16,7 +20,7 @@
 
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL CASES - Militarum                                                                                      -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label Flakk Armour with label Imperial Flak Armour        -->
 <!--  ==============================================================================================================  -->
@@ -24,6 +28,26 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
                     <value>
                         <label>Imperial Flak Armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE label Adeptus Sororitas with Adeptus Sororitas I                   -->
+<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE label Adeptus Sororitas with Adeptus Sororitas II                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T1"]/label</xpath>
+                    <value>
+                        <label>Adeptus Sororitas I</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T2"]/label</xpath>
+                    <value>
+                        <label>Adeptus Sororitas II</label>
                     </value>
                 </li>
 
