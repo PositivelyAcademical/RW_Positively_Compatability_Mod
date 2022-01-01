@@ -2,6 +2,15 @@
 2021-Dec-31
   master accepts new research.main tested patches
 -------------------------------------------------
+updated labels for light flak armour and light flak greaves
+
+~ ./1.3/Patches/ThingDefs_Apparel/mod_AMA_labels_Armour.xml
+~ ./changelog.txt
+
+=================================================
+2021-Dec-31
+  master accepts new research.main tested patches
+-------------------------------------------------
 + ./1.3/Patches/ResearchProjectDefs/mod_AMA_prereq_ImperialMain.xml
 + ./1.3/Patches/ResearchProjectDefs/mod_AMA_prereq_ImperialMechanicus.xml
 ~ ./1.3/Patches/ResearchProjectDefs/mod_AMA_labels_Imperial.xml

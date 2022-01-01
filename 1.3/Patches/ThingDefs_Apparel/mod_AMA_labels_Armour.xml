@@ -9,9 +9,9 @@
 <!--  ==============================================================================================================  -->
 <!--    + Sets label for OGIG_Apparel_FlakArmour from imperial guard Flak Armor to Militarum Flak armour              -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light flak vest             -->
+<!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light vest                  -->
 <!--      + Updates description to match                                                                              -->
-<!--    + Sets label for OGIG_Apparel_FlakArmourLightGreaves from light flak greaves to Militarum light flak pants    -->
+<!--    + Sets label for OGIG_Apparel_FlakArmourLightGreaves from light flak greaves to Militarum light greaves       -->
 <!--      + Updates description to match                                                                              -->
 <!--    + Sets label for OGIG_Apparel_TempestusScion_CarapaceArmour from Tempestus Scion Carapace Armor to Tempestus  -->
 <!--    Scion Carapace Armour                                                                                         -->
@@ -58,13 +58,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light flak vest             -->
+<!--    + Sets label for OGIG_Apparel_FlakArmourLight from light flak armour to Militarum light vest                  -->
 <!--      + Updates description to match                                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLight"]/label</xpath>
                     <value>
-                        <label>Militarum light flak vest</label>
+                        <label>Militarum light vest</label>
                     </value>
                 </li>
 
@@ -76,13 +76,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--    + Sets label for OGIG_Apparel_FlakArmourLightGreaves from light flak greaves to Militarum light flak pants    -->
+<!--    + Sets label for OGIG_Apparel_FlakArmourLightGreaves from light flak greaves to Militarum light greaves       -->
 <!--      + Updates description to match                                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmourLightGreaves"]/label</xpath>
                     <value>
-                        <label>Militarum light flak pants</label>
+                        <label>Militarum light greaves</label>
                     </value>
                 </li>
 
