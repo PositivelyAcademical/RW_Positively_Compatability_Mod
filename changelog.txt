@@ -1,3 +1,18 @@
+=================================================
+2021-Dec-31
+  master accepts new research.main tested patches
+-------------------------------------------------
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialAssassinorum.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialChaos.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialMain.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialMechanicus.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialMilitarum.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_display_ImperialSororitas.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_AMA_labels_Imperial.xmll
++ ./1.3/Patches/ResearchProjectDefs/mod_CCCc_prereq_research.xml
++ ./1.3/Patches/ResearchProjectDefs/mod_Core_prereq_Electricity.xml
+~ ./changelog.txt
+
 =====================================================================
 2021-Dec-31
   master accepts all research.main CentralClimateControl visual patch
