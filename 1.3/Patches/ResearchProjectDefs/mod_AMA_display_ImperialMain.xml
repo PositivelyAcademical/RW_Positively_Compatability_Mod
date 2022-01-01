@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Imperial                                                                                       -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX 3.00 with 2                                 -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX 4.50 with 3                                 -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX 6.00 with 4                                 -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY 4.75 with 1.50                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Imperial                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX 3.00 with 2                                 -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX 4.50 with 3                                 -->
+<!--       + For OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX 6.00 with 4                                 -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY 4.75 with 1.50                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.50</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

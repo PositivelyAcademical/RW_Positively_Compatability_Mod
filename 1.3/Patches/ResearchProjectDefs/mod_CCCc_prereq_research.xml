@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Furniture Expanded                                                                  -->
+<!--       + For BasicClimateControl ADD prerequisites TubeTelevision                                                 -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Centralized Climate Control (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Furniture Expanded                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For BasicClimateControl ADD prerequisites TubeTelevision                                                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/prerequisites</xpath>
+                                <value>
+                                    <li>TubeTelevision</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
