@@ -5,11 +5,14 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For OGIG_Apparel_UniformShirt ADD recipeMaker                                                            -->
-<!--       + For OGIG_Apparel_UniformShirt ADD researchPrerequisites (OG_Militarum_Tech_Base_T1)                      -->
+<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE (recipeMaker) researchPrerequisite                               -->
+<!--       + For OGIG_Apparel_UniformShirt ADD recipeMaker researchPrerequisites OG_Imperial_Tech_Apparel             -->
+<!--                                                                             OG_Militarum_Tech_Base_T1            -->
 <!--       + For OGIG_Apparel_CommissarJacket ADD recipeMaker                                                         -->
 <!--       + For OGIG_Apparel_CommissarJacket ADD researchPrerequisites (OG_Militarum_Tech_Base_T3)                   -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                 -->
 <!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)     -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                      -->
 <!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -22,56 +25,63 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_UniformShirt ADD recipeMaker                                                            -->
-<!--       + For OGIG_Apparel_UniformShirt ADD researchPrerequisites (OG_Militarum_Tech_Base_T1)                      -->
+<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE (recipeMaker) researchPrerequisite                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[@Name="OG_Imperial_Trenchcoat_Base"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_UniformShirt ADD recipeMaker researchPrerequisites OG_Imperial_Tech_Apparel             -->
+<!--                                                                             OG_Militarum_Tech_Base_T1            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_UniformShirt"]</xpath>
                     <value>
-                        <recipeMaker />
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_UniformShirt"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T1</li>
-                        </researchPrerequisites>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel</li>
+                                <li>OG_Militarum_Tech_Base_T1</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_CommissarJacket ADD recipeMaker                                                         -->
-<!--       + For OGIG_Apparel_CommissarJacket ADD researchPrerequisites (OG_Militarum_Tech_Base_T3)                   -->
+<!--       + For OGIG_Apparel_CommissarJacket ADD recipeMaker researchPrerequisites OG_Imperial_Tech_Apparel          -->
+<!--                                                                                OG_Militarum_Tech_Base_T3         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarJacket"]</xpath>
                     <value>
-                        <recipeMaker />
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarJacket"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                        </researchPrerequisites>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Militarum_Tech_Base_T3</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)     -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                 -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel        -->
+<!--                                                                                  OG_Militarum_Tech_Base_T2       -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel</li>
                             <li>OG_Militarum_Tech_Base_T2</li>
                         </researchPrerequisites>
                     </value>
@@ -80,12 +90,19 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)          -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                      -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel             -->
+<!--                                                                             OG_Militarum_Tech_Base_T2            -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Uniform_Trenchcoat"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_Uniform_Trenchcoat"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel</li>
                             <li>OG_Militarum_Tech_Base_T2</li>
                         </researchPrerequisites>
                     </value>

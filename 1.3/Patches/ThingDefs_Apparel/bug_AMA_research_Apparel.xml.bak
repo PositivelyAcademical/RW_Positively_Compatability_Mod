@@ -26,11 +26,11 @@
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Trenchcoat_Base"]/recipeMaker/researchPrerequisite</xpath>
                 </li>
 
+                <!-- li Class="PatchOperationReplace">
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker/researchPrerequisite</xpath>
                 </li>
 
-                <!-- li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_Uniform_Trenchcoat"]/recipeMaker</xpath>
                     <value>
                         <recipeMaker>
