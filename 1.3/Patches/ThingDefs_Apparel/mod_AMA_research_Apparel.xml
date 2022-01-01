@@ -28,7 +28,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_UniformShirt"]</xpath>
                     <value>
-                        <recipeMaker \>
+                        <recipeMaker />
                     </value>
                 </li>
 
@@ -50,7 +50,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_CommissarJacket"]</xpath>
                     <value>
-                        <recipeMaker \>
+                        <recipeMaker />
                     </value>
                 </li>
 
