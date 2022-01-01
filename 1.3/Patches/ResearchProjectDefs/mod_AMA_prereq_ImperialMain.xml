@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Apparel Expanded                                                                    -->
+<!--       + For OG_Imperial_Tech_Apparel ADD prerequisites VAE_MilitaryClothing                                      -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Apparel Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Apparel Expanded                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Apparel ADD prerequisites VAE_MilitaryClothing                                      -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/prerequisites</xpath>
+                                <value>
+                                    <li>VAE_MilitaryClothing</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
+                    <value>
+                        <li>PrecisionRifling</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
