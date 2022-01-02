@@ -14,7 +14,7 @@
 <!--       + For @OG_Imperial_Apparel_Makeable_NoStuffColour REMOVE researchPrerequisites                             -->
 <!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites                                     -->
 <!--       + For @OG_Imperial_Apparel_PowerArmor_Makeable REMOVE researchPrerequisites                                -->
-<!--       - For @OG_Imperial_Apparel_Wargear_Makeable REMOVE researchPrerequisites                                   -->
+<!--       + For @OG_Imperial_Apparel_Wargear_Makeable REMOVE researchPrerequisites                                   -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -51,7 +51,7 @@
 <!--       + For @OG_Imperial_Apparel_Makeable_NoStuffColour REMOVE researchPrerequisites                             -->
 <!--       + For @OG_Imperial_Apparel_Armor_Makeable REMOVE researchPrerequisites                                     -->
 <!--       + For @OG_Imperial_Apparel_PowerArmor_Makeable REMOVE researchPrerequisites                                -->
-<!--       - For @OG_Imperial_Apparel_Wargear_Makeable REMOVE researchPrerequisites                                   -->
+<!--       + For @OG_Imperial_Apparel_Wargear_Makeable REMOVE researchPrerequisites                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Makeable"]/recipeMaker/researchPrerequisites</xpath>
@@ -66,11 +66,9 @@
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_PowerArmor_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--            <li Class="PatchOperationRemove">
+                <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Wargear_Makeable"]/recipeMaker/researchPrerequisites</xpath>
-                </li>                                                                                                 -->
-<!--  ==============================================================================================================  -->
+                </li>
 
             </operations>
         </match>
