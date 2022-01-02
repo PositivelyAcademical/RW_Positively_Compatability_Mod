@@ -5,15 +5,17 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE (recipeMaker) researchPrerequisite                               -->
+<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE researchPrerequisite                                             -->
 <!--       + For OGIG_Apparel_UniformShirt ADD recipeMaker researchPrerequisites OG_Imperial_Tech_Apparel             -->
 <!--                                                                             OG_Militarum_Tech_Base_T1            -->
-<!--       + For OGIG_Apparel_CommissarJacket ADD recipeMaker                                                         -->
-<!--       + For OGIG_Apparel_CommissarJacket ADD researchPrerequisites (OG_Militarum_Tech_Base_T3)                   -->
-<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                 -->
-<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)     -->
-<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                      -->
-<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites (OG_Militarum_Tech_Base_T2)          -->
+<!--       + For OGIG_Apparel_CommissarJacket ADD recipeMaker researchPrerequisites OG_Imperial_Tech_Apparel          -->
+<!--                                                                                OG_Militarum_Tech_Base_T3         -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE researchPrerequisite                               -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel        -->
+<!--                                                                                  OG_Militarum_Tech_Base_T2       -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE researchPrerequisite                                    -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel             -->
+<!--                                                                             OG_Militarum_Tech_Base_T2            -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -25,7 +27,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE (recipeMaker) researchPrerequisite                               -->
+<!--       + For @OG_Imperial_Trenchcoat_Base REMOVE researchPrerequisite                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Trenchcoat_Base"]/recipeMaker/researchPrerequisite</xpath>
@@ -60,6 +62,7 @@
                     <value>
                         <recipeMaker>
                             <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel</li>
                                 <li>OG_Militarum_Tech_Base_T3</li>
                             </researchPrerequisites>
                         </recipeMaker>
@@ -69,7 +72,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                 -->
+<!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat REMOVE researchPrerequisite                               -->
 <!--       + For OGIG_Apparel_Armageddon_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel        -->
 <!--                                                                                  OG_Militarum_Tech_Base_T2       -->
 <!--  ==============================================================================================================  -->
@@ -90,7 +93,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE (recipeMaker) researchPrerequisite                      -->
+<!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat REMOVE researchPrerequisite                                    -->
 <!--       + For OGIG_Apparel_Krieg_Uniform_Trenchcoat ADD researchPrerequisites OG_Imperial_Tech_Apparel             -->
 <!--                                                                             OG_Militarum_Tech_Base_T2            -->
 <!--  ==============================================================================================================  -->
