@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH EPOE - Servo Arm                                                                            -->
+<!--       + For OGI_Wargear_ServoArm researchPrerequisites ADD BionicSpine                                           -->
+<!--                                                        ADD Fabrication                                           -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires NOmatch EPOE - Servo Arm                                                                          -->
+<!--       + For OGI_Wargear_ServoArm researchPrerequisites ADD Bionics                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Servo Skulls                                                                                   -->
+<!--       + For OGI_Apparel_ServoSkullB researchPrerequisites ADD OG_Militarum_Tech_Base_T3                          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Shields (none)                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Grenades                                                                                       -->
+<!--       + For OGI_GrenadePack_Blind researchPrerequisites ADD OG_Common_Tech_Weapons_Special                       -->
+<!--       + For OGI_GrenadePack_Frag researchPrerequisites ADD OG_Imperial_Tech_Base_T0                              -->
+<!--       + For OGI_GrenadePack_Krak researchPrerequisites ADD OG_Imperial_Tech_Base_T0                              -->
+<!--       + For OGI_GrenadePack_Rad researchPrerequisites ADD OG_Common_Tech_Weapons_Special                         -->
+<!--       + For OGI_GrenadePack_Melta researchPrerequisites ADD OG_Common_Tech_Weapons_Special                       -->
+<!--                                                             OG_Common_Tech_Weapons_Melta                         -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH EPOE - Servo Arm                                                                            -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Wargear_ServoArm researchPrerequisites ADD BionicSpine                                           -->
+<!--                                                            Fabrication                                           -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGI_Wargear_ServoArm"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>BionicSpine</li>
+                                    <li>Fabrication</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires NOmatch EPOE - Servo Arm                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Wargear_ServoArm researchPrerequisites ADD Bionics                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGI_Wargear_ServoArm"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>Bionics</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Servo Skulls                                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Apparel_ServoSkullB researchPrerequisites ADD OG_Militarum_Tech_Base_T3                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Apparel_ServoSkullB"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Militarum_Tech_Base_T3</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Grenades                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_GrenadePack_Blind researchPrerequisites ADD OG_Common_Tech_Weapons_Special                       -->
+<!--       + For OGI_GrenadePack_Frag researchPrerequisites ADD OG_Imperial_Tech_Base_T0                              -->
+<!--       + For OGI_GrenadePack_Krak researchPrerequisites ADD OG_Imperial_Tech_Base_T0                              -->
+<!--       + For OGI_GrenadePack_Rad researchPrerequisites ADD OG_Common_Tech_Weapons_Special                         -->
+<!--       + For OGI_GrenadePack_Melta researchPrerequisites ADD OG_Imperial_Tech_Base_T0                             -->
+<!--                                                             OG_Common_Tech_Weapons_Melta                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Blind"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Common_Tech_Weapons_Special</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Frag"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Base_T0</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Krak"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Base_T0</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Rad"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Common_Tech_Weapons_Special</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_GrenadePack_Melta"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <li>OG_Imperial_Tech_Base_T0</li>
+                        <li>OG_Common_Tech_Weapons_Melta</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
