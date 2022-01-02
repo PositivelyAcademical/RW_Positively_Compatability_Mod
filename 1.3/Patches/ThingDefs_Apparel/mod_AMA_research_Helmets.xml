@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Mechanicus                                                                                     -->
+<!--       + For OGAM_Apparel_EnginseerHood ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1              -->
+<!--                                                                  OG_Mechanicus_Tech_Base_T1                      -->
+<!--       + For @OGAM_Apparel_SkitariiLegionnaireHelmet . . .                                                        -->
+<!--                                              . . . ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T2  -->
+<!--                                                                              OG_Mechanicus_Tech_Base_T2          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Militarum                                                                                      -->
+<!--       + For OGIG_Apparel_FlakHelmetLight ADD recipeMaker researchPrerequisites FlakArmor                         -->
+<!--                                                                                OG_Imperial_Tech_Apparel          -->
+<!--                                                                                OG_Militarum_Tech_Base_T1         -->
+<!--       + For OGIG_Apparel_Cadia_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--                                                                     OG_Militarum_Tech_Base_T2                    -->
+<!--       + For OGIG_Apparel_Armageddon_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1      -->
+<!--                                                                          OG_Militarum_Tech_Base_T2               -->
+<!--       + For OGIG_Apparel_Krieg_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--                                                                     OG_Militarum_Tech_Base_T2                    -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceHelmet . . .                                                     -->
+<!--               . . . REPLACE researchPrerequisites with researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T2  -->
+<!--                                                                              OG_Militarum_Tech_Base_T3           -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--       + For @OG_Sororitas_Apparel_Armor_PowerArmour_Base . . .                                                   -->
+<!--               . . . REPLACE researchPrerequisites with researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                              OG_Sororitas_Tech_Base_T2           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Mechanicus                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGAM_Apparel_EnginseerHood ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1              -->
+<!--                                                                  OG_Mechanicus_Tech_Base_T1                      -->
+<!--       + For @OGAM_Apparel_SkitariiLegionnaireHelmet . . .                                                        -->
+<!--                                              . . . ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T2  -->
+<!--                                                                              OG_Mechanicus_Tech_Base_T2          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Apparel_EnginseerHood"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                            <li>OG_Mechanicus_Tech_Base_T1</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[@Name="OGAM_Apparel_SkitariiLegionnaireHelmet"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T2</li>
+                            <li>OG_Mechanicus_Tech_Base_T2</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Militarum                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGIG_Apparel_FlakHelmetLight ADD recipeMaker researchPrerequisites FlakArmor                         -->
+<!--                                                                                OG_Imperial_Tech_Apparel          -->
+<!--                                                                                OG_Militarum_Tech_Base_T1         -->
+<!--       + For OGIG_Apparel_Cadia_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--                                                                     OG_Militarum_Tech_Base_T2                    -->
+<!--       + For OGIG_Apparel_Armageddon_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1      -->
+<!--                                                                          OG_Militarum_Tech_Base_T2               -->
+<!--       + For OGIG_Apparel_Krieg_FlakHelmet ADD researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T1           -->
+<!--                                                                     OG_Militarum_Tech_Base_T2                    -->
+<!--       + For OGIG_Apparel_TempestusScion_CarapaceHelmet . . .                                                     -->
+<!--               . . . REPLACE researchPrerequisites with researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T2  -->
+<!--                                                                              OG_Militarum_Tech_Base_T3           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakHelmetLight"]</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>FlakArmor</li>
+                                <li>OG_Imperial_Tech_Apparel</li>
+                                <li>OG_Militarum_Tech_Base_T1</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Cadia_FlakHelmet"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                                <li>OG_Militarum_Tech_Base_T2</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/recipeMaker</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                                <li>OG_Militarum_Tech_Base_T2</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_FlakHelmet"]/recipeMaker</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                                <li>OG_Militarum_Tech_Base_T2</li>
+                            </researchPrerequisites>
+                        </recipeMaker>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T2</li>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For @OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base REMOVE researchPrerequisites             -->
+<!--       + For OGAS_Apparel_PowerArmourHelmet . . .                                                                 -->
+<!--               . . . REPLACE researchPrerequisites with researchPrerequisites OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                              OG_Sororitas_Tech_Base_T2           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[@Name="OG_Sororitas_Apparel_Armor_Headgear_PowerArmourHelmet_Base"]/recipeMaker/researchPrerequisites</xpath>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAS_Apparel_PowerArmourHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>OG_Sororitas_Tech_Base_T2</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
