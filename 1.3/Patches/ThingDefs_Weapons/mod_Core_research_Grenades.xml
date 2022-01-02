@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (preamble)                                                                                       -->
+<!--       + For Weapon_GrenadeFrag REPLACE researchPrerequisite with researchPrerequisites Machining                 -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--       + For Weapon_GrenadeFrag researchPrerequisites ADD VWE_Gunpowder                                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (preamble)                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + For Weapon_GrenadeFrag REPLACE researchPrerequisite with researchPrerequisites Machining                 -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Weapon_GrenadeFrag"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>Machining</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For Weapon_GrenadeFrag researchPrerequisites ADD VWE_Gunpowder                                           -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Weapons Expanded</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="Weapon_GrenadeFrag"]/recipeMaker/researchPrerequisites</xpath>
+                            <value>
+                                <li>VWE_Gunpowder</li>
+                            </value>
+                        </li>
+
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
