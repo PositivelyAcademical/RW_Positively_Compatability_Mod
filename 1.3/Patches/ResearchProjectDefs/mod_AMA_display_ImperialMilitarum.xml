@@ -7,7 +7,6 @@
 <!--     + ALL CASES - Militarum                                                                                      -->
 <!--       + For OG_Militarum_Tech_Base_T0 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--       + For OG_Militarum_Tech_Base_T1 REPLACE researchViewY 2.00 with 2.50                                       -->
-<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 2.25                             -->
 <!--       + For OG_Militarum_Tech_Base_T2 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -22,7 +21,6 @@
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Militarum_Tech_Base_T1 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--       + For OG_Militarum_Tech_Base_T2 REPLACE researchViewY 2.00 with 2.50                                       -->
-<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 2.25                             -->
 <!--       + For OG_Militarum_Tech_Base_T3 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -36,13 +34,6 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Militarum_Tech_Base_T2"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2.50</researchViewY>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2.25</researchViewY>
                     </value>
                 </li>
 
