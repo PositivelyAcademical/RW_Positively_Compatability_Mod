@@ -108,24 +108,20 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Armageddon_FlakHelmet"]/recipeMaker</xpath>
                     <value>
-                        <recipeMaker>
-                            <researchPrerequisites>
-                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
-                                <li>OG_Militarum_Tech_Base_T2</li>
-                            </researchPrerequisites>
-                        </recipeMaker>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                        </researchPrerequisites>
                     </value>
                 </li>
 
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_Krieg_FlakHelmet"]/recipeMaker</xpath>
                     <value>
-                        <recipeMaker>
-                            <researchPrerequisites>
-                                <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
-                                <li>OG_Militarum_Tech_Base_T2</li>
-                            </researchPrerequisites>
-                        </recipeMaker>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T1</li>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                        </researchPrerequisites>
                     </value>
                 </li>
 
