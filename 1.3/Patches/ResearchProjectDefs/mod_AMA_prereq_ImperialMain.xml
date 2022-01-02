@@ -10,6 +10,10 @@
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
 <!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull prerequisites REPLACE with OG_Imperial_Tech_Base_T0              -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD Militarum                           -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
@@ -48,6 +52,28 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
                     <value>
                         <li>PrecisionRifling</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull prerequisites REPLACE with OG_Imperial_Tech_Base_T0              -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD Militarum                           -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/modExtensions/li/Include</xpath>
+                    <value>
+                        <li>Militarum</li>
                     </value>
                 </li>
 
