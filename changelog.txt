@@ -1,5 +1,12 @@
+===================================================
+2022-Jan-02
+  correct WorkToMake values for AMA Wargear shields
+---------------------------------------------------
+~ ./1.3/Patches/ThingDefs_Apparel/bug_AMA_stats_Utility.xml
+~ ./changelog.txt
+
 =================================================
-2022-Dec-31
+2022-Jan-01
   master accepts new research.main tested patches
 -------------------------------------------------
 removed ComplexClothing from AMA trenchcoats
