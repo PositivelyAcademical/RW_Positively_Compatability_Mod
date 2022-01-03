@@ -4,76 +4,10 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
-<!--       + For Apparel_Parka REMOVE wornGraphicPath                                                                 -->
-<!--       + For Apparel_Parka ADD thingClass AdeptusMechanicus.ApparelComposite                                      -->
-<!--       + For Apparel_Parka ADD layer ShellExtra                                                                   -->
-<!--       + For Apparel_Parka ADD comp AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer                       -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For Apparel_TribalA ADD layer MiddleClothes                                                              -->
 <!--  ==============================================================================================================  -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
 
-<!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Adeptus Mechanicus: Armoury                                                                 -->
-<!--  ==============================================================================================================  -->
-<!--       + For Apparel_Parka REMOVE wornGraphicPath                                                                 -->
-<!--       + For Apparel_Parka ADD thingClass AdeptusMechanicus.ApparelComposite                                      -->
-<!--       + For Apparel_Parka ADD layer ShellExtra                                                                   -->
-<!--       + For Apparel_Parka ADD comp AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer                       -->
-<!--  ==============================================================================================================  -->
-<!--            <li Class="PatchOperationRemove">                                                                     -->
-<!--                <xpath>/Defs/ThingDef[defName="Apparel_Parka"]/apparel/wornGraphicPath</xpath>                    -->
-<!--            </li>                                                                                                 -->
-
-<!--            <li Class="PatchOperationInsert">                                                                     -->
-<!--                <xpath>/Defs/ThingDef[defName="Apparel_Parka"]/description</xpath>                                -->
-<!--                <value>                                                                                           -->
-<!--                    <thingClass>AdeptusMechanicus.ApparelComposite</thingClass>                                   -->
-<!--                </value>                                                                                          -->
-<!--            </li>                                                                                                 -->
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Apparel_Parka"]/apparel/layers</xpath>
-                    <value>
-                       <li>ShellExtra</li>
-                    </value>
-                </li>
-
-<!--            <li Class="PatchOperationAdd">                                                                        -->
-<!--                <xpath>/Defs/ThingDef[defName="Apparel_Parka"]</xpath>                                            -->
-<!--                <value>                                                                                           -->
-<!--                    <comps>                                                                                       -->
-<!--                        <li Class="AdeptusMechanicus.CompProperties_Wargear"></li>                                -->
-<!--                        <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">                      -->
-<!--                            <ExtrasEntries>                                                                       -->
-<!--                                <li>                                                                              -->
-<!--                                    <graphicData>                                                                 -->
-<!--                                        <texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>              -->
-<!--                                        <shaderType>Cutout</shaderType>                                           -->
-<!--                                    </graphicData>                                                                -->
-<!--                                    <UseBodytypeTextures>true</UseBodytypeTextures>                               -->
-<!--                                    <commonality>10</commonality>                                                 -->
-<!--                                </li>                                                                             -->
-<!--                            </ExtrasEntries>                                                                      -->
-<!--                            <NorthOffset>0,-0.003,0</NorthOffset>                                                 -->
-<!--                            <SouthOffset>0,-0.003,0</SouthOffset>                                                 -->
-<!--                            <EastOffset>0,-0.003,0</EastOffset>                                                   -->
-<!--                            <WestOffset>0,-0.003,0</WestOffset>                                                   -->
-<!--                        </li>                                                                                     -->
-<!--                    </comps>                                                                                      -->
-<!--                </value>                                                                                          -->
-<!--            </li>                                                                                                 -->
-
-            </operations>
-        </match>
-    </Operation>
 
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
