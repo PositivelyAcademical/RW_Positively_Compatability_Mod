@@ -4,23 +4,22 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--    + Sets new labels and draw orders for Core apparel layer defs                                                 -->
-<!--      + Change drawOrder for Underwear from -25 to 101                                                            -->
-<!--      + Change drawOrder for OverSkin from 50 to 210                                                              -->
+<!--      + Change drawOrder for Underwear from -25 to -20                                                            -->
+<!--      + Change drawOrder for OverSkin from 50 to 10                                                               -->
 <!--        + Change label for OverSkin from overskin to overskin (dev)                                               -->
-<!--      + Change drawOrder for MiddleEquipment from 150 to 240                                                      -->
+<!--      + Change drawOrder for MiddleEquipment from 150 to 110                                                      -->
 <!--        + Change label for MiddleEquipment from middle slot to middle slot dev                                    -->
-<!--      + Change drawOrder for ShellEquipment from 250 to 310                                                       -->
+<!--      + Change drawOrder for ShellEquipment from 250 to 210                                                       -->
 <!--        + Change label for ShellEquipment from outer slot to outer slot dev                                       -->
-<!--      + Change drawOrder for BeltWargear1 from 325 to 312                                                         -->
+<!--      + Change drawOrder for BeltWargear1 from 325 to 221                                                         -->
 <!--        + Change label for BeltWargear1 from Wargear slot 1 to wargear slot 1                                     -->
-<!--      + Change drawOrder for BeltWargear2 from 350 to 313                                                         -->
+<!--      + Change drawOrder for BeltWargear2 from 350 to 222                                                         -->
 <!--        + Change label for BeltWargear2 from Wargear slot 2 to wargear slot 2                                     -->
-<!--      + Change drawOrder for BeltWargear3 from 375 to 314                                                         -->
+<!--      + Change drawOrder for BeltWargear3 from 375 to 223                                                         -->
 <!--        + Change label for BeltWargear3 from Wargear slot 3 to wargear slot 3                                     -->
-<!--      + Change drawOrder for OverheadUnder from 399 to 320                                                        -->
-<!--        + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                -->
-<!--      + Change drawOrder for ShellExtra from 425 to 340                                                           -->
+<!--      + Change drawOrder for ShellExtra from 425 to 240                                                           -->
 <!--        + Change label for ShellExtra from Shell extras to cloaks                                                 -->
+<!--      + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                  -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -30,23 +29,23 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--      + Sets drawOrder for Underwear from -25 to 101                                                              -->
+<!--      + Sets drawOrder for Underwear from -25 to -20                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="Underwear"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>101</drawOrder>
+                        <drawOrder>-20</drawOrder>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for OverSkin from 50 to 210                                                              -->
+<!--      + Change drawOrder for OverSkin from 50 to 10                                                               -->
 <!--        + Change label for OverSkin from overskin to overskin (dev)                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="OverSkin"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>210</drawOrder>
+                        <drawOrder>10</drawOrder>
                     </value>
                 </li>
 
@@ -58,13 +57,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Sets drawOrder for MiddleEquipment from 150 to 240                                                        -->
+<!--      + Sets drawOrder for MiddleEquipment from 150 to 110                                                        -->
 <!--        + Change label for MiddleEquipment from middle slot to middle slot dev                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="MiddleEquipment"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>240</drawOrder>
+                        <drawOrder>110</drawOrder>
                     </value>
                 </li>
 
@@ -76,13 +75,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Sets drawOrder for ShellEquipment from 250 to 310                                                         -->
+<!--      + Sets drawOrder for ShellEquipment from 250 to 210                                                         -->
 <!--        + Change label for ShellEquipment from outer slot to outer slot dev                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="ShellEquipment"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>310</drawOrder>
+                        <drawOrder>210</drawOrder>
                     </value>
                 </li>
 
@@ -94,13 +93,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for BeltWargear1 from 325 to 312                                                         -->
+<!--      + Change drawOrder for BeltWargear1 from 325 to 221                                                         -->
 <!--        + Change label for BeltWargear1 from Wargear slot 1 to wargear slot 1                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="BeltWargear1"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>312</drawOrder>
+                        <drawOrder>221</drawOrder>
                     </value>
                 </li>
 
@@ -112,13 +111,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for BeltWargear2 from 350 to 313                                                         -->
+<!--      + Change drawOrder for BeltWargear2 from 350 to 222                                                         -->
 <!--        + Change label for BeltWargear2 from Wargear slot 2 to wargear slot 2                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="BeltWargear2"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>313</drawOrder>
+                        <drawOrder>222</drawOrder>
                     </value>
                 </li>
 
@@ -130,13 +129,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for BeltWargear3 from 375 to 314                                                         -->
+<!--      + Change drawOrder for BeltWargear3 from 375 to 223                                                         -->
 <!--        + Change label for BeltWargear3 from Wargear slot 3 to wargear slot 3                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="BeltWargear3"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>314</drawOrder>
+                        <drawOrder>223</drawOrder>
                     </value>
                 </li>
 
@@ -148,31 +147,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for OverheadUnder from 399 to 320                                                        -->
-<!--        + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ApparelLayerDef[defName="OverheadUnder"]/drawOrder</xpath>
-                    <value>
-                        <drawOrder>320</drawOrder>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ApparelLayerDef[defName="OverheadUnder"]/label</xpath>
-                    <value>
-                        <label>headgear slot (dev)</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for ShellExtra from 425 to 340                                                           -->
+<!--      + Change drawOrder for ShellExtra from 425 to 240                                                           -->
 <!--        + Change label for ShellExtra from Shell extras to cloaks                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="ShellExtra"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>340</drawOrder>
+                        <drawOrder>240</drawOrder>
                     </value>
                 </li>
 
@@ -180,6 +161,16 @@
                     <xpath>/Defs/ApparelLayerDef[defName="ShellExtra"]/label</xpath>
                     <value>
                         <label>cloaks</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--      + Change label for OverheadUnder from headgear slot to headgear slot (dev)                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ApparelLayerDef[defName="OverheadUnder"]/label</xpath>
+                    <value>
+                        <label>headgear slot (dev)</label>
                     </value>
                 </li>
 
