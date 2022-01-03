@@ -1,3 +1,10 @@
+========================================
+2022-Jan-02
+  master accepts bugfix.layers.broadwrap
+----------------------------------------
+~ ./1.3/Patches/ThingDefs_Apparel/mod_Ideology_apparel_Headgear.xml
+~ ./changelog.txt
+
 ======================================================
 2022-Jan-02
   master accepts bugfix.urgent.broadwrap.apparelLayers
