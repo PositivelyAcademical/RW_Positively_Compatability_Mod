@@ -16,6 +16,8 @@
     <li>Archaon.Primarch</li>
     <li>rim.job.world</li>
     <li>rimworld.ekss.rjwex</li>
+    <li>s16.core</li>
+    <li>rimworld.positively.rjw.apparel</li>
   </loadAfter>
   <description>
 u/PositivelyAcademical's RimWorld cross-compatability mod. A work in progress.
