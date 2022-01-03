@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Melee_CatachanFang REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T2                       -->
+<!--       + For OGI_Melee_NightReaper REPLACE researchPrerequisite                                                   -->
+<!--                                      WITH researchPrerequisites OG_Militarum_Tech_Base_T2                        -->
+<!--       + OGI_Melee_DevilsClaw REPLACE researchPrerequisite                                                        -->
+<!--                                 WITH researchPrerequisites OG_Militarum_Tech_Base_T2                             -->
+<!--                                                            LongBlades                                            -->
+<!--       + OGI_Melee_ChainSword ADD researchPrerequisites OG_Imperial_Tech_Base_T0                                  -->
+<!--                                                        OG_Common_Tech_Weapons_Special                            -->
+<!--       + OGI_Melee_Eviscerator REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                            -->
+<!--                                  WITH researchPrerequisites OG_Common_Tech_Weapons_Special                       -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Melee_CatachanFang REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T2                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_CatachanFang"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Melee_NightReaper REPLACE researchPrerequisite                                                   -->
+<!--                                      WITH researchPrerequisites OG_Militarum_Tech_Base_T2                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_NightReaper"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OGI_Melee_DevilsClaw REPLACE researchPrerequisite                                                        -->
+<!--                                 WITH researchPrerequisites OG_Militarum_Tech_Base_T2                             -->
+<!--                                                            LongBlades                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_DevilsClaw"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>LongBlades</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OGI_Melee_ChainSword ADD researchPrerequisites OG_Imperial_Tech_Base_T0                                  -->
+<!--                                                        OG_Common_Tech_Weapons_Special                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainSword"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OGI_Melee_Eviscerator REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                            -->
+<!--                                  WITH researchPrerequisites OG_Common_Tech_Weapons_Special                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_Eviscerator"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T1</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
