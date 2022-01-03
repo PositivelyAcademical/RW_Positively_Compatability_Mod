@@ -8,9 +8,9 @@
 <!--      + Change drawOrder for VaginalInsertableBondage from 2 to -51                                               -->
 <!--      + Change drawOrder for BeltsOnSkinBondage from 2 to -40                                                     -->
 <!--        + Change label for BeltsOnSkinBondage from Over Skin to on skin                                           -->
-<!--      + Change drawOrder for LegsOuterBondage from 501 to 230                                                     -->
+<!--      + Change drawOrder for LegsOuterBondage from 501 to 190                                                     -->
 <!--        + Change label for LegsOuterBondage from outer to external                                                -->
-<!--      + Change drawOrder for ArmsOuterBondage from 502 to 231                                                     -->
+<!--      + Change drawOrder for ArmsOuterBondage from 502 to 191                                                     -->
 <!--        + Change label for ArmsOuterBondage from outer to external                                                -->
 <!--      + Change drawOrder for GagOuterBondage from 401 to 402                                                      -->
 <!--        + Change label for GagOuterBondage from headgear to headgear (dev)                                        -->
@@ -61,13 +61,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for LegsOuterBondage from 501 to 230                                                     -->
+<!--      + Change drawOrder for LegsOuterBondage from 501 to 190                                                     -->
 <!--        + Change label for LegsOuterBondage from outer to external (legs)                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="LegsOuterBondage"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>230</drawOrder>
+                        <drawOrder>190</drawOrder>
                     </value>
                 </li>
 
@@ -79,13 +79,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for ArmsOuterBondage from 502 to 231                                                     -->
+<!--      + Change drawOrder for ArmsOuterBondage from 502 to 191                                                     -->
 <!--        + Change label for ArmsOuterBondage from outer to external (arms)                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="ArmsOuterBondage"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>231</drawOrder>
+                        <drawOrder>191</drawOrder>
                     </value>
                 </li>
 
