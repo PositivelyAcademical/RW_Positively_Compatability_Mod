@@ -6,7 +6,6 @@
 <!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--       + For Apparel_Burka ADD layer ShellExtra                                                                   -->
-<!--       + For Apparel_Robe ADD layer ShellExtra                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For Apparel_BodyStrap ADD countsAsClothingForNudity (false)                                              -->
@@ -31,17 +30,9 @@
 <!--     + Requires MATCH Adaptus Mechanicus: Armoury                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--       + For Apparel_Burka ADD layer ShellExtra                                                                   -->
-<!--       + For Apparel_Robe ADD layer ShellExtra                                                                    -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="Apparel_Burka"]/apparel/layers</xpath>
-                                <value>
-                                    <li>ShellExtra</li>
-                                </value>
-                            </li>
-
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="Apparel_Robe"]/apparel/layers</xpath>
                                 <value>
                                     <li>ShellExtra</li>
                                 </value>

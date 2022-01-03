@@ -15,7 +15,6 @@
 <!--       + For OGIG_Apparel_FlakArmourLight ADD layers MiddleClothes                                                -->
 <!--       + For OGIG_Apparel_FlakArmourLightGreaves ADD layers MiddleClothes                                         -->
 <!--       + For OGIG_Apparel_FlakArmour ADD layers MiddleClothes                                                     -->
-<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD layers Shell                                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -78,7 +77,6 @@
 <!--       + For OGIG_Apparel_FlakArmourLight ADD layers MiddleClothes                                                -->
 <!--       + For OGIG_Apparel_FlakArmourLightGreaves ADD layers MiddleClothes                                         -->
 <!--       + For OGIG_Apparel_FlakArmour ADD layers MiddleClothes                                                     -->
-<!--       + For OGIG_Apparel_TempestusScion_CarapaceArmour ADD layers Shell                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGAM_Apparel_SkitariiLegionnaireArmour"]/apparel/layers</xpath>
@@ -105,13 +103,6 @@
                     <xpath>/Defs/ThingDef[defName="OGIG_Apparel_FlakArmour"]/apparel/layers</xpath>
                     <value>
                         <li>MiddleClothes</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGIG_Apparel_TempestusScion_CarapaceArmour"]/apparel/layers</xpath>
-                    <value>
-                        <li>Shell</li>
                     </value>
                 </li>
 

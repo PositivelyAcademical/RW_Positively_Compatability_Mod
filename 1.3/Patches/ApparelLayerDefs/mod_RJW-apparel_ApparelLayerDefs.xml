@@ -4,12 +4,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--    + Sets new labels and draw orders for Core apparel layer defs                                                 -->
-<!--      + Change drawOrder for S16_Vibrator2 from -10 to 1                                                          -->
+<!--      + Change drawOrder for S16_Vibrator2 from -10 to -60                                                        -->
 <!--        +  Change label for S16_Vibrator2 from vibrator to internal                                               -->
-<!--      + Change drawOrder for S16_Vibrator from -25 to 11                                                          -->
+<!--      + Change drawOrder for S16_Vibrator from -25 to -50                                                         -->
 <!--        +  Change label for S16_Vibrator from vibrator to internal                                                -->
-<!--      + Change drawOrder for S16_OnSkin from -100 to 30                                                           -->
-<!--      + Change drawOrder for S16_Underwear from -50 to 100                                                        -->
+<!--      + Change drawOrder for S16_OnSkin from -100 to -30                                                          -->
+<!--      + Change drawOrder for S16_Underwear from -50 to -21                                                        -->
 <!--        + Change label for S16_Underwear from underwear to panties                                                -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -21,13 +21,13 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for S16_Vibrator2 from -10 to 1                                                          -->
+<!--      + Change drawOrder for S16_Vibrator2 from -10 to -60                                                        -->
 <!--        +  Change label for S16_Vibrator2 from vibrator to internal                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="S16_Vibrator2"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>1</drawOrder>
+                        <drawOrder>-60</drawOrder>
                     </value>
                 </li>
 
@@ -39,13 +39,13 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for S16_Vibrator from -25 to 11                                                          -->
+<!--      + Change drawOrder for S16_Vibrator from -25 to -50                                                         -->
 <!--        +  Change label for S16_Vibrator from vibrator to internal                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="S16_Vibrator"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>11</drawOrder>
+                        <drawOrder>-50</drawOrder>
                     </value>
                 </li>
 
@@ -57,23 +57,23 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for S16_OnSkin from -100 to 30                                                           -->
+<!--      + Change drawOrder for S16_OnSkin from -100 to -30                                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="S16_OnSkin"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>30</drawOrder>
+                        <drawOrder>-30</drawOrder>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--      + Change drawOrder for S16_Underwear from -50 to 100                                                        -->
+<!--      + Change drawOrder for S16_Underwear from -50 to -21                                                        -->
 <!--        + Change label for S16_Underwear from underwear to panties                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="S16_Underwear"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>100</drawOrder>
+                        <drawOrder>-21</drawOrder>
                     </value>
                 </li>
 

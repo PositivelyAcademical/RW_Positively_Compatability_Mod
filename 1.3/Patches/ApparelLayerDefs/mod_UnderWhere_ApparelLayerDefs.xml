@@ -15,22 +15,12 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--      + Sets drawOrder for Underwear from -25 to 101                                                              -->
+<!--      + Sets drawOrder for Underwear from -25 to -20                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ApparelLayerDef[defName="Underwear"]/drawOrder</xpath>
                     <value>
-                        <drawOrder>101</drawOrder>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--      + Sets drawOrder for UnderwearTop from -10 to 110                                                           -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ApparelLayerDef[defName="UnderwearTop"]/drawOrder</xpath>
-                    <value>
-                        <drawOrder>110</drawOrder>
+                        <drawOrder>-20</drawOrder>
                     </value>
                 </li>
 
