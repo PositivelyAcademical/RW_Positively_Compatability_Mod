@@ -15,16 +15,6 @@
 <!--       + For LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
 <!--       + For LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                   -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD layers ShellExtra, Belt                                              -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD bodyPartGroups Waist                                                 -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD layers ShellExtra, Belt                                           -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD bodyPartGroups Waist                                              -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD layers ShellExtra, Belt                                         -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD bodyPartGroups Waist                                            -->
-<!--       + For LAP_Armour_Lion_Armor ADD layers ShellExtra, Belt                                                    -->
-<!--       + For LAP_Armour_Lion_Armor ADD bodyPartGroups Waist                                                       -->
-<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
@@ -119,78 +109,6 @@
 
                         </operations>
                     </match>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD layers ShellExtra, Belt                                              -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD bodyPartGroups Waist                                                 -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD layers ShellExtra, Belt                                           -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD bodyPartGroups Waist                                              -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD layers ShellExtra, Belt                                         -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD bodyPartGroups Waist                                            -->
-<!--       + For LAP_Armour_Lion_Armor ADD layers ShellExtra, Belt                                                    -->
-<!--       + For LAP_Armour_Lion_Armor ADD bodyPartGroups Waist                                                       -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/apparel/layers</xpath>
-                    <value>
-                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
-                        <li>Belt</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/apparel/bodyPartGroups</xpath>
-                    <value>
-                        <li>Waist</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/apparel/layers</xpath>
-                    <value>
-                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
-                        <li>Belt</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/apparel/bodyPartGroups</xpath>
-                    <value>
-                        <li>Waist</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/apparel/layers</xpath>
-                    <value>
-                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
-                        <li>Belt</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/apparel/bodyPartGroups</xpath>
-                    <value>
-                        <li>Waist</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/apparel/layers</xpath>
-                    <value>
-                        <li MayRequire="Ogliss.AdMech.Armoury">ShellExtra</li>
-                        <li>Belt</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/apparel/bodyPartGroups</xpath>
-                    <value>
-                        <li>Waist</li>
-                    </value>
                 </li>
 
             </operations>
