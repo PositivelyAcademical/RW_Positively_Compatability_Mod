@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - Imperial                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + Create placeholder research of Astartes - to be used to lock Astartes only equipment                     -->
+<!--  ==============================================================================================================  -->
+
+    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+        <defName>Pos_AMA_Astartes_Placeholder</defName>
+        <label>Adeptus Astartes</label>
+        <description>Grants you access to STC templates used by the Adeptus Astartes</description>
+        <baseCost>8000</baseCost>
+        <prerequisites>
+            <li>OG_Imperial_Tech_Base_T0</li>
+        </prerequisites>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>
