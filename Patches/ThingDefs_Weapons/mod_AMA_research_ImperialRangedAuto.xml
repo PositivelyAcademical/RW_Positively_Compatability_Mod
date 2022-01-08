@@ -17,11 +17,9 @@
 <!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
 <!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
 <!--                                                              HeavyTurrets                                        -->
-<!--                                                              PrecisionRifling                                    -->
 <!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
 <!--                                      WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                     -->
 <!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
-<!--                                                                 PrecisionRifling                                 -->
 <!--                                                                 MultibarrelWeapons                               -->
 <!--       + For OGI_Gun_ArbitesShotgun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1               -->
 <!--                                                                          GasOperation                            -->
@@ -98,11 +96,9 @@
 <!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
 <!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
 <!--                                                              HeavyTurrets                                        -->
-<!--                                                              PrecisionRifling                                    -->
 <!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
 <!--                                      WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                     -->
 <!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
-<!--                                                                 PrecisionRifling                                 -->
 <!--                                                                 MultibarrelWeapons                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -112,7 +108,6 @@
                             <li>Pos_AMA_Astartes_Placeholder</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                             <li>HeavyTurrets</li>
-                            <li>PrecisionRifling</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -123,7 +118,6 @@
                         <researchPrerequisites>
                             <li>Pos_AMA_Astartes_Placeholder</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>PrecisionRifling</li>
                             <li>MultibarrelWeapons</li>
                         </researchPrerequisites>
                     </value>
