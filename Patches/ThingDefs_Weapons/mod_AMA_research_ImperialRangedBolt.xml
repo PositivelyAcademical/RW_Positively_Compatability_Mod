@@ -242,7 +242,7 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Sororitas_Tech_Base_T2</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
