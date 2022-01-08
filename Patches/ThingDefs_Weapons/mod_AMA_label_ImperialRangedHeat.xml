@@ -32,7 +32,7 @@
 <!--                                   WITH label hand flamer (Sororitas pattern)                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHand"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHand"]/label</xpath>
                     <value>
                         <label>hand flamer (Sororitas pattern)</label>
                     </value>
@@ -45,7 +45,7 @@
 <!--                               WITH label flamer (Sororitas pattern)                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Flamer"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Flamer"]/label</xpath>
                     <value>
                         <label>flamer (Sororitas pattern)</label>
                     </value>
@@ -58,7 +58,7 @@
 <!--                                    WITH label heavy flamer (Sororitas pattern)                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHeavy"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHeavy"]/label</xpath>
                     <value>
                         <label>heavy flamer (Sororitas pattern)</label>
                     </value>
@@ -71,7 +71,7 @@
 <!--                                                  WITH label inferno pistol                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_InfernoPistol_Inquisition"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_InfernoPistol_Inquisition"]/label</xpath>
                     <value>
                         <label>inferno pistol</label>
                     </value>
@@ -84,7 +84,7 @@
 <!--                                 WITH label meltagun (Sororitas pattern)                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
                     <value>
                         <label>meltagun (Sororitas pattern)</label>
                     </value>
@@ -97,7 +97,7 @@
 <!--                                   WITH label muli-melta (Sororitas pattern)                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/label</xpath>
                     <value>
                         <label>multi-melta (Sororitas pattern)</label>
                     </value>
