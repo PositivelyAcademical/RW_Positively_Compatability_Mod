@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_FlamerHand REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                           -->
+<!--                                                              OG_Common_Tech_Weapons_Flame                        -->
+<!--       + For OGI_Gun_Flamer REPLACE researchPrerequisites                                                         -->
+<!--                               WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                               -->
+<!--                                                          OG_Common_Tech_Weapons_Flame                            -->
+<!--       + For OGI_Gun_FlamerHeavy REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
+<!--                                                               OG_Common_Tech_Weapons_Flame                       -->
+<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
+<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE researchPrerequisites                                      -->
+<!--                                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T2            -->
+<!--                                                                             OG_Common_Tech_Weapons_Melta         -->
+<!--       + For OGI_Gun_MeltaGun REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                             -->
+<!--                                                            OG_Common_Tech_Weapons_Melta                          -->
+<!--       + For OGI_Gun_MultiMelta REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                           -->
+<!--                                                              OG_Common_Tech_Weapons_Melta                        -->
+<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_FlamerHand REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                           -->
+<!--                                                              OG_Common_Tech_Weapons_Flame                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHand"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T1</li>
+                            <li>OG_Common_Tech_Weapons_Flame</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
