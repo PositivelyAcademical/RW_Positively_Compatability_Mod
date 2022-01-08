@@ -13,6 +13,11 @@
 <!--       + For OGI_Gun_BoltPistolD UPDATE description                                                               -->
 <!--       + For OGI_Gun_BoltGun REPLACE label                                                                        -->
 <!--                                WITH label bolter (Locke pattern)                                                 -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE label                                                             -->
+<!--                                           WITH label bolter (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz UPDATE description                                                        -->
+<!--       + For OGI_Gun_StormBolter REPLACE label                                                                    -->
+<!--                                    WITH label storm bolter (Mars pattern)                                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -73,6 +78,40 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun"]/label</xpath>
                     <value>
                         <label>bolter (Locke pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE label                                                             -->
+<!--                                           WITH label bolter (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz UPDATE description                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun_GodwynDeaz"]/label</xpath>
+                    <value>
+                        <label>bolter (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun_GodwynDeaz"]/description</xpath>
+                    <value>
+                        <description>The Bolter, also called a Boltgun, and its variants are some of the most powerful hand-held ballistic anti-personnel weaponry in use by the military forces of the Imperium of Man. It is a powerful assault weapon that fires explosive kinetic rounds colloquially referred to as bolts capable of ripping through or blowing apart a foe. The Locke Pattern is a variant of an older pattern used by the Adeptus Arbites, and is now the most common pattern of Bolter in use in the Rim.\n\nThe Godwyn-De'az Pattern boltgun has been the standard-issue weapon for the Battle Sisters since their first formation, and is unchanged due to its superiority to nearly all other boltgun-type weapons. The sisters can also make use of a Sarissa as a blade attachment for their bolters.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_StormBolter REPLACE label                                                                    -->
+<!--                                    WITH label storm bolter (Mars pattern)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_StormBolter"]/label</xpath>
+                    <value>
+                        <label>storm bolter (Mars pattern)</label>
                     </value>
                 </li>
 
