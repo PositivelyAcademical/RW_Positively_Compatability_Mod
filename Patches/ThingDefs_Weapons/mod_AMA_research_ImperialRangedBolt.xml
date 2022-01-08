@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Militarum_Tech_Base_T3                           -->
+<!--                                                              OG_Imperial_Tech_Weapons_Bolt                       -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--       + For OGI_Gun_BoltGun ADD recipeMaker researchPrerequisites OG_Militarum_Tech_Base_T3                      -->
+<!--                                                                   OG_Imperial_Tech_Weapons_Bolt                  -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                   -->
+<!--                                                                      OG_Imperial_Tech_Weapons_Bolt               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Militarum_Tech_Base_T3                           -->
+<!--                                                              OG_Imperial_Tech_Weapons_Bolt                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T1</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T1</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun ADD recipeMaker researchPrerequisites OG_Militarum_Tech_Base_T3                      -->
+<!--                                                                   OG_Imperial_Tech_Weapons_Bolt                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun"]</xpath>
+                    <value>
+                        <recipeMaker>
+                            <researchPrerequisites>
+                                <li>OG_Militarum_Tech_Base_T3</li>
+                                <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            </researchPrerequisites>
+                        <recipeMaker>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                   -->
+<!--                                                                      OG_Imperial_Tech_Weapons_Bolt               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun_GodwynDeaz"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T1</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
