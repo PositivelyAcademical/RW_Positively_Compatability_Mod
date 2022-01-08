@@ -19,12 +19,14 @@
 <!--       + For OGI_Gun_StormBolter REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T3                          -->
 <!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
-<!--                                                               OG_Common_Tech_Weapons_Special                     -->
 <!--       + For OGI_Gun_CombiFlamer REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
 <!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
-<!--                                                               OG_Common_Tech_Weapons_Special                     -->
 <!--                                                               OG_Common_Tech_Weapons_Flame                       -->
+<!--       + For OGI_Gun_CombiMelta REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                           -->
+<!--                                                              OG_Imperial_Tech_Weapons_Bolt                       -->
+<!--                                                              OG_Common_Tech_Weapons_Melta                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -109,7 +111,6 @@
 <!--       + For OGI_Gun_StormBolter REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T3                          -->
 <!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
-<!--                                                               OG_Common_Tech_Weapons_Special                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_StormBolter"]/recipeMaker/researchPrerequisites</xpath>
@@ -117,7 +118,6 @@
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T3</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                            <li>OG_Common_Tech_Weapons_Special</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -128,7 +128,6 @@
 <!--       + For OGI_Gun_CombiFlamer REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
 <!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
-<!--                                                               OG_Common_Tech_Weapons_Special                     -->
 <!--                                                               OG_Common_Tech_Weapons_Flame                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -137,7 +136,6 @@
                         <researchPrerequisites>
                             <li>OG_Sororitas_Tech_Base_T2</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                            <li>OG_Common_Tech_Weapons_Special</li>
                             <li>OG_Common_Tech_Weapons_Flame</li>
                         </researchPrerequisites>
                     </value>
