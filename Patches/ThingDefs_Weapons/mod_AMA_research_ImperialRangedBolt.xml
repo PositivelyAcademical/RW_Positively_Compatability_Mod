@@ -16,6 +16,10 @@
 <!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE researchPrerequisites                                             -->
 <!--                                           WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                   -->
 <!--                                                                      OG_Imperial_Tech_Weapons_Bolt               -->
+<!--       + For OGI_Gun_StormBolter REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T3                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--                                                               OG_Common_Tech_Weapons_Special                     -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -90,6 +94,25 @@
                         <researchPrerequisites>
                             <li>OG_Sororitas_Tech_Base_T1</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_StormBolter REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T3                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--                                                               OG_Common_Tech_Weapons_Special                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_StormBolter"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
                         </researchPrerequisites>
                     </value>
                 </li>
