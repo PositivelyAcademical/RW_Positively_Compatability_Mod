@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
+
 
 	<!-- =============== Garm Pattern Bolt Pistol =============== -->
 	<ThingDef ParentName="OG_Imperial_Gun">
@@ -95,5 +97,60 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+
+	<!-- ================= Militarum Heavy Bolter ================ -->
+	<ThingDef ParentName="OG_Imperial_Gun_Heavy">
+		<defName>OGI_Gun_HeavyBolter_Militarum</defName>
+		<label>heavy bolter (Accatran pattern)</label>
+		<description>A Heavy Bolter is a powerful Bolt Weapon that is used for anti-infantry and fire support roles, and is also known as the "Backbreaker" or the "Bruiser" because of its great weight and the amount of damage it can deal. Unlike the Boltgun, it is relatively common in Imperial Guard armies and is also often used by the Space Marines. Heavy Bolters have a high rate of fire and are relatively cheap to field. A Heavy Bolter can also be mounted on the cupola pintle-mounts of a wide variety of Imperial armoured vehicles, as well as act as an anti-personnel weapon by Imperial fixed defences, including strongholds and other fortifications.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/Bolter_Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.286,0.286,0.286)</color>
+			<drawSize>1.250</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<reliability>1</reliability>
+			<WorkToMake>77500</WorkToMake>
+			<!--MarketValue>6500</MarketValue-->
+			<Mass>15</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>OG_Militarum_Tech_Base_T3</li>
+				<li>OG_Common_Tech_Weapons_Heavy</li>
+				<li>OG_Imperial_Tech_Weapons_Bolt</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>ImperialGunHeavy</li>
+			<li>HeavyBolter</li>
+			<li>ImperialHeavyBolter</li>
+			<li>OgsWeaponTestBolt</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+		<generateCommonality>1.0</generateCommonality>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+
 
 </Defs>
