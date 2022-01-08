@@ -196,7 +196,7 @@
 <!--                                                                        PrecisionRifling                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/recipeMaker</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_RipperPistol"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T3</li>
