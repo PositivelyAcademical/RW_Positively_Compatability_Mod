@@ -28,6 +28,8 @@
 <!--                                  WITH label combi-grav gun (Godwyn-De'az pattern)                                -->
 <!--       + For OGI_Gun_StalkerBolter REPLACE label                                                                  -->
 <!--                                      WITH label Stalker bolter                                                   -->
+<!--       + For OGI_Gun_HeavyBolter REPLACE label                                                                    -->
+<!--                                    WITH label heavy bolter (Jove pattern)                                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -178,7 +180,18 @@
                     </value>
                 </li>
 
-
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_HeavyBolter REPLACE label                                                                    -->
+<!--                                    WITH label heavy bolter (Jove pattern)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyBolter"]/label</xpath>
+                    <value>
+                        <label>heavy bolter (Jove pattern)</label>
+                    </value>
+                </li>
 
             </operations>
         </match>
