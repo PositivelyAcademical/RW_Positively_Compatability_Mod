@@ -69,7 +69,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/label</xpath>
                     <value>
-                        <label>dual bolt pistol (Godwyn-De'az pattern)</label>
+                        <label>dual bolt pistols (Godwyn-De'az pattern)</label>
                     </value>
                 </li>
 
