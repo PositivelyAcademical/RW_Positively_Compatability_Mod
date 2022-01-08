@@ -86,6 +86,23 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE researchPrerequisites                                      -->
+<!--                                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T2            -->
+<!--                                                                             OG_Common_Tech_Weapons_Melta         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_InfernoPistol_Inquisition"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
 
             </operations>
         </match>
