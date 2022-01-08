@@ -133,8 +133,8 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
                             <li>Pos_AMA_Astartes_Placeholder</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -150,8 +150,8 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerMaul"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                            <li>Pos_AMA_Astartes_Placeholder</li>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>OG_Common_Tech_Weapons_Powered</li>
                         </researchPrerequisites>
                     </value>
                 </li>
