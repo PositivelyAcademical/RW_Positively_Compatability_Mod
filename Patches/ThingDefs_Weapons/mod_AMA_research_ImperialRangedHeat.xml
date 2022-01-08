@@ -121,7 +121,23 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_MultiMelta REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                           -->
+<!--                                                              OG_Common_Tech_Weapons_Melta                        -->
+<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
             </operations>
         </match>
