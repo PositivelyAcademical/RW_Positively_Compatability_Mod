@@ -73,7 +73,7 @@
                                 <li>OG_Militarum_Tech_Base_T3</li>
                                 <li>OG_Imperial_Tech_Weapons_Bolt</li>
                             </researchPrerequisites>
-                        <recipeMaker>
+                        </recipeMaker>
                     </value>
                 </li>
 
