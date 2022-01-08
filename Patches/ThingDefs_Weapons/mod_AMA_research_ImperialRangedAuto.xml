@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                   -->
+<!--                                                                      GasOperation                                -->
+<!--       + For OGI_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                      -->
+<!--                                                                   PrecisionRifling                               -->
+<!--       + For OGI_Gun_HeavyStubber REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites OG_Militarum_Tech_Base_T2                         -->
+<!--                                                                OG_Common_Tech_Weapons_Special                    -->
+<!--                                                                PrecisionRifling                                  -->
+<!--       + For OGI_Gun_AutoCannon REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
+<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
+<!--                                                              HeavyTurrets                                        -->
+<!--                                                              PrecisionRifling                                    -->
+<!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                     -->
+<!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
+<!--                                                                 PrecisionRifling                                 -->
+<!--                                                                 MultibarrelWeapons                               -->
+<!--       + For OGI_Gun_ArbitesShotgun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1               -->
+<!--                                                                          GasOperation                            -->
+<!--       + For OGI_Gun_Vanaheim recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                     -->
+<!--                                                                    GasOperation                                  -->
+<!--       + For OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites Pos_AMA_Astartes_Placeholder           -->
+<!--                                                                           GasOperation                           -->
+<!--       + For OGI_Gun_OgrynRipperGun REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T3                       -->
+<!--                                                                  OG_Common_Tech_Weapons_Special                  -->
+<!--                                                                  PrecisionRifling                                -->
+<!--       + For OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T3                 -->
+<!--                                                                        OG_Common_Tech_Weapons_Special            -->
+<!--                                                                        PrecisionRifling                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                   -->
+<!--                                                                      GasOperation                                -->
+<!--       + For OGI_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                      -->
+<!--                                                                   PrecisionRifling                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoPistol"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_HeavyStubber REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites OG_Militarum_Tech_Base_T2                         -->
+<!--                                                                OG_Common_Tech_Weapons_Special                    -->
+<!--                                                                PrecisionRifling                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyStubber"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_AutoCannon REPLACE researchPrerequisites                                                     -->
+<!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
+<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
+<!--                                                              HeavyTurrets                                        -->
+<!--                                                              PrecisionRifling                                    -->
+<!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                     -->
+<!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
+<!--                                                                 PrecisionRifling                                 -->
+<!--                                                                 MultibarrelWeapons                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Pos_AMA_Astartes_Placeholder</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Pos_AMA_Astartes_Placeholder</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>PrecisionRifling</li>
+                            <li>MultibarrelWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_ArbitesShotgun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1               -->
+<!--                                                                          GasOperation                            -->
+<!--       + For OGI_Gun_Vanaheim recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                     -->
+<!--                                                                    GasOperation                                  -->
+<!--       + For OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites Pos_AMA_Astartes_Placeholder           -->
+<!--                                                                           GasOperation                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Pos_AMA_Astartes_Placeholder</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_OgrynRipperGun REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T3                       -->
+<!--                                                                  OG_Common_Tech_Weapons_Special                  -->
+<!--                                                                  PrecisionRifling                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_OgrynRipperGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T3                 -->
+<!--                                                                        OG_Common_Tech_Weapons_Special            -->
+<!--                                                                        PrecisionRifling                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
