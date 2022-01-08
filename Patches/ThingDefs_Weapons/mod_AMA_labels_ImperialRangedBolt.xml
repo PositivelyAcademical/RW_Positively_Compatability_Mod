@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE label                                                                     -->
+<!--                                   WITH label bolt pistol (Godwyn-De'az pattern)                                  -->
+<!--       + For OGI_Gun_BoltPistol UPDATE description                                                                -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE label                                                                    -->
+<!--                                    WITH label dual bolt pistols (Godwyn-De'az pattern)                           -->
+<!--       + For OGI_Gun_BoltPistolD UPDATE description                                                               -->
+<!--       + For OGI_Gun_BoltGun REPLACE label                                                                        -->
+<!--                                WITH label bolter (Locke pattern)                                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE label                                                                     -->
+<!--                                   WITH label bolt pistol (Godwyn-De'az pattern)                                  -->
+<!--       + For OGI_Gun_BoltPistol UPDATE description                                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistol"]/label</xpath>
+                    <value>
+                        <label>bolt pistol (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistol"]/description</xpath>
+                    <value>
+                        <description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium. The current standard pattern in use amongst the Space Marines is the Mark III. Bolt Pistols are also used by many other Imperial forces as well as the Chaos Space Marines. A Bolt Pistol is commonly used in conjunction with a close combat weapon by Space Marine officers, Veterans and Assault Squads to make them into melee combat specialists.\n\nThe Godwyn-De'az Pattern Bolt Pistol is the standard model for the Adepta Sororitas.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE label                                                                    -->
+<!--                                    WITH label dual bolt pistols (Godwyn-De'az pattern)                           -->
+<!--       + For OGI_Gun_BoltPistolD UPDATE description                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/label</xpath>
+                    <value>
+                        <label>dual bolt pistol (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/description</xpath>
+                    <value>
+                        <description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium. The current standard pattern in use amongst the Space Marines is the Mark III. Bolt Pistols are also used by many other Imperial forces as well as the Chaos Space Marines. A Bolt Pistol is commonly used in conjunction with a close combat weapon by Space Marine officers, Veterans and Assault Squads to make them into melee combat specialists.\n\nThe Godwyn-De'az Pattern Bolt Pistol is the standard model for the Adepta Sororitas.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun REPLACE label                                                                        -->
+<!--                                WITH label bolter (Locke pattern)                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun"]/label</xpath>
+                    <value>
+                        <label>bolter (Locke pattern)</label>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
