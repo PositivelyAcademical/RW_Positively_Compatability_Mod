@@ -18,6 +18,16 @@
 <!--       + For OGI_Gun_BoltGun_GodwynDeaz UPDATE description                                                        -->
 <!--       + For OGI_Gun_StormBolter REPLACE label                                                                    -->
 <!--                                    WITH label storm bolter (Mars pattern)                                        -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE label                                                                    -->
+<!--                                    WITH label combi-flamer (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_CombiMelta REPLACE label                                                                     -->
+<!--                                   WITH label combi-meltagun (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_CombiPlasma REPLACE label                                                                    -->
+<!--                                    WITH label combi-plasma gun (Godwyn-De'az pattern)                            -->
+<!--       + For OGI_Gun_CombiGrav REPLACE label                                                                      -->
+<!--                                  WITH label combi-grav gun (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_StalkerBolter REPLACE label                                                                  -->
+<!--                                      WITH label Stalker bolter                                                   -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -114,6 +124,60 @@
                         <label>storm bolter (Mars pattern)</label>
                     </value>
                 </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE label                                                                    -->
+<!--                                    WITH label combi-flamer (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_CombiMelta REPLACE label                                                                     -->
+<!--                                   WITH label combi-meltagun (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_CombiPlasma REPLACE label                                                                    -->
+<!--                                    WITH label combi-plasma gun (Godwyn-De'az pattern)                            -->
+<!--       + For OGI_Gun_CombiGrav REPLACE label                                                                      -->
+<!--                                  WITH label combi-grav gun (Godwyn-De'az pattern)                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiFlamer"]/label</xpath>
+                    <value>
+                        <label>combi-flamer (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiMelta"]/label</xpath>
+                    <value>
+                        <label>combi-meltagun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiPlasma"]/label</xpath>
+                    <value>
+                        <label>combi-plasma gun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiGrav"]/label</xpath>
+                    <value>
+                        <label>combi-grav gun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_StalkerBolter REPLACE label                                                                  -->
+<!--                                      WITH label Stalker bolter                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_StalkerBolter"]/label</xpath>
+                    <value>
+                        <label>Stalker bolter</label>
+                    </value>
+                </li>
+
 
 
             </operations>
