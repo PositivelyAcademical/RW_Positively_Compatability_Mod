@@ -20,6 +20,11 @@
 <!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T3                          -->
 <!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
 <!--                                                               OG_Common_Tech_Weapons_Special                     -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--                                                               OG_Common_Tech_Weapons_Special                     -->
+<!--                                                               OG_Common_Tech_Weapons_Flame                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -117,6 +122,26 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
+<!--                                                               OG_Imperial_Tech_Weapons_Bolt                      -->
+<!--                                                               OG_Common_Tech_Weapons_Special                     -->
+<!--                                                               OG_Common_Tech_Weapons_Flame                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiFlamer"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Sororitas_Tech_Base_T2</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>OG_Common_Tech_Weapons_Flame</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
             </operations>
         </match>
