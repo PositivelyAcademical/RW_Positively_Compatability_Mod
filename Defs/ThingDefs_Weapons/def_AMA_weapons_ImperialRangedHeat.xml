@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ====================== Flamers ===================== -->
+    <!-- ====================== Flamer ===================== -->
+	<ThingDef ParentName="OG_Imperial_Gun_Special">
+		<defName>OGI_Gun_Flamer_Militarum</defName>
+		<label>flamer (Militarum pattern)</label>
+		<description>Flamers, also known as "Flame Guns", are Flamer Weapons that come in a wide variety of designs and patterns, but all are ideal for flushing out enemies in cover and putting groups of foes to the torch with projected flame. The two most common variants of Flamers either have a detachable fuel canister under the barrel, or a hose connecting to a backpack canister. Flamers are most commonly used by Imperial assault forces such as Space Marine Assault Squads, though xenos races such as the Eldar, Orks and the Tau are also known to make use of similar weapons.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/Flamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.286,0.286,0.286)</color>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>3.2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Militarum_Tech_Base_T2</li>
+					<li>OG_Common_Tech_Weapons_Flame</li>
+				</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>ImperialEliteGun</li>
+			<li>KrootGun</li>
+			<li>ImperialFlamer</li>
+			<li>Flamer</li>
+			<li>OGIGFlamer</li>
+			<li>GuevesaSpecialGun</li>
+			<li>OgsWeaponTestFlamer</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+			<generateCommonality>0.10</generateCommonality>
+		<verbs>
+			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_Flamer</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>14</range>
+				<burstShotCount>12</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<soundCast>OG_Flamer_Sound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<barrelLength>0.6</barrelLength>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+				<northOffset>0.0,0.0,0.0</northOffset>
+				<eastOffset>0.0,1.0,0.0</eastOffset>
+				<westOffset>0.0,0.0,0.0</westOffset>
+				<southOffset>0.0,1.0,0.0</southOffset>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+				<compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+				<gizmosOnEquip>false</gizmosOnEquip>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>TransparentPostLight</shaderType>
+					<color>(143,075,0)</color>
+				</graphicData>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_DefaultSettings">
+				<dualWield>false</dualWield>
+				<twoHand>true</twoHand>
+			</li>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_CustomRotation">
+				<extraRotation>0</extraRotation>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ====================== Heavy Flamer ===================== -->
+	<ThingDef ParentName="OG_Imperial_Gun_Special">
+		<defName>OGI_Gun_FlamerHeavy_Militarum</defName>
+		<label>heavy flamer (Militarum pattern)</label>
+		<description>A Heavy Flamer is a larger, more powerful version of the standard Flamer, capable of projecting hotter and denser flames. This means that Heavy Flamers possess better armour-piercing capabilities than standard Flamers.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/FlamerHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.286,0.286,0.286)</color>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>3.2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Militarum_Tech_Base_T3</li>
+					<li>OG_Common_Tech_Weapons_Flame</li>
+					<li>OG_Common_Tech_Weapons_Heavy</li>
+				</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>ImperialHeavyGun</li>
+			<li>ImperialHeavyFlamer</li>
+			<li>HeavyFlamer</li>
+			<li>IHeavyFlamer</li>
+			<li>GuevesaHeavyGun</li>
+			<li>OgsWeaponTestFlamer</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+			<generateCommonality>0.20</generateCommonality>
+		<verbs>
+			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_FlamerHeavy</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>16</range>
+				<burstShotCount>24</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<soundCast>OG_Flamer_Sound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<barrelLength>0.8</barrelLength>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+				<northOffset>0.0,0.0,0.0</northOffset>
+				<eastOffset>0.0,1.0,0.0</eastOffset>
+				<westOffset>0.0,0.0,0.0</westOffset>
+				<southOffset>0.0,1.0,0.0</southOffset>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+				<compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+				<gizmosOnEquip>false</gizmosOnEquip>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>TransparentPostLight</shaderType>
+					<color>(143,075,0)</color>
+				</graphicData>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_DefaultSettings">
+				<dualWield>false</dualWield>
+				<twoHand>true</twoHand>
+			</li>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_CustomRotation">
+				<extraRotation>0</extraRotation>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ====================== Metla Weapons ===================== -->
+	<!-- ====================== Metla Gun ===================== -->
+	<ThingDef ParentName="OG_Imperial_Gun_Special" Class="AdeptusMechanicus.Lasers.LaserGunDef">
+		<defName>OGI_Gun_MeltaGun_Militarum</defName>
+		<label>meltagun (Militarum pattern)</label>
+		<description>The Meltagun, also called a "Fusion Gun," "Melter," or "Cooker," is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade. The Melta Gun is used by the Space Marines, the troops of the Imperial Guard and other military forces of the Imperium of Man such as the Orders Militant of the Adepta Sororitas. Melta Weapons emit devastatingly intense but short-ranged blasts of heat which can melt through almost any material. Most types of Melta Weapon like the Meltagun function by inducing highly pressurised gases from an ammunition canister into an unstable sub-molecular state which produces nuclear fusion and directing the resulting energies down the barrel. Melta Weapon usage is always accompanied by a distinctive hissing sound as the Melta beam boils away the water in the air, then a roaring blast as the beam reduces the target to charred scraps or molten slag. Meltaguns are the premier Imperial anti-armour weapons, and few if any vehicles can withstand their power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/MeltaGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.286,0.286,0.286)</color>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Militarum_Tech_Base_T3</li>
+					<li>OG_Common_Tech_Weapons_Melta</li>
+				</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gold>4</Gold>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>KrootGun</li>
+			<li>ImperialAdvancedGun</li>
+			<li>ImperialMetlaGun</li>
+			<li>MetlaGun</li>
+			<li>OGIGMetlaGun</li>
+			<li>GuevesaSpecialGun</li>
+			<li>OgsWeaponTestMelta</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+			<generateCommonality>0.10</generateCommonality>
+		<verbs>
+			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_Melta</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>16</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>OG_Melta_Sound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<barrelLength>0.6</barrelLength>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_DefaultSettings">
+				<dualWield>false</dualWield>
+				<twoHand>true</twoHand>
+			</li>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_CustomRotation">
+				<extraRotation>0</extraRotation>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ====================== Multi Metla ===================== -->
+	<ThingDef ParentName="OG_Imperial_Gun_Heavy" Class="AdeptusMechanicus.Lasers.LaserGunDef">
+		<defName>OGI_Gun_MultiMelta_Militarum</defName>
+		<label>multimelta (Militarum pattern)</label>
+		<description>The Meltagun, also called a "Fusion Gun," "Melter," or "Cooker," is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade. The Melta Gun is used by the Space Marines, the troops of the Imperial Guard and other military forces of the Imperium of Man such as the Orders Militant of the Adepta Sororitas. Melta Weapons emit devastatingly intense but short-ranged blasts of heat which can melt through almost any material. Most types of Melta Weapon like the Meltagun function by inducing highly pressurised gases from an ammunition canister into an unstable sub-molecular state which produces nuclear fusion and directing the resulting energies down the barrel. Melta Weapon usage is always accompanied by a distinctive hissing sound as the Melta beam boils away the water in the air, then a roaring blast as the beam reduces the target to charred scraps or molten slag. Meltaguns are the premier Imperial anti-armour weapons, and few if any vehicles can withstand their power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.286,0.286,0.286)</color>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Militarum_Tech_Base_T3</li>
+					<li>OG_Common_Tech_Weapons_Melta</li>
+					<li>OG_Common_Tech_Weapons_Heavy</li>
+				</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gold>4</Gold>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>ImperialHeavyGun</li>
+			<li>MultiMetla</li>
+			<li>ImperialMultiMetla</li>
+			<li>GuevesaHeavyGun</li>
+			<li>OgsWeaponTestMelta</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+			<generateCommonality>0.05</generateCommonality>
+		<verbs>
+			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_MultiMelta</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>28</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>OG_Melta_Sound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<barrelLength>0.8</barrelLength>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules">
+			<VerbEntries>
+				<li>
+					<Multishot>true</Multishot>
+					<ScattershotCount>1</ScattershotCount>
+				</li>
+			</VerbEntries>
+			</li>
+			<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+				<northOffset>0.0,0.0,0.0</northOffset>
+				<eastOffset>0.0,1.0,0.0</eastOffset>
+				<westOffset>0.0,0.0,0.0</westOffset>
+				<southOffset>0.0,1.0,0.0</southOffset>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_DefaultSettings">
+				<dualWield>false</dualWield>
+				<twoHand>true</twoHand>
+			</li>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_CustomRotation">
+				<extraRotation>0</extraRotation>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

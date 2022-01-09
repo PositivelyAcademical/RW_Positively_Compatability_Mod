@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE label                                                                     -->
+<!--                                   WITH label bolt pistol (Godwyn-De'az pattern)                                  -->
+<!--       + For OGI_Gun_BoltPistol UPDATE description                                                                -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE label                                                                    -->
+<!--                                    WITH label dual bolt pistols (Godwyn-De'az pattern)                           -->
+<!--       + For OGI_Gun_BoltPistolD UPDATE description                                                               -->
+<!--       + For OGI_Gun_BoltGun REPLACE label                                                                        -->
+<!--                                WITH label bolter (Locke pattern)                                                 -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE label                                                             -->
+<!--                                           WITH label bolter (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz UPDATE description                                                        -->
+<!--       + For OGI_Gun_StormBolter REPLACE label                                                                    -->
+<!--                                    WITH label storm bolter (Mars pattern)                                        -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE label                                                                    -->
+<!--                                    WITH label combi-flamer (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_CombiMelta REPLACE label                                                                     -->
+<!--                                   WITH label combi-meltagun (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_CombiPlasma REPLACE label                                                                    -->
+<!--                                    WITH label combi-plasma gun (Godwyn-De'az pattern)                            -->
+<!--       + For OGI_Gun_CombiGrav REPLACE label                                                                      -->
+<!--                                  WITH label combi-grav gun (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_StalkerBolter REPLACE label                                                                  -->
+<!--                                      WITH label Stalker bolter                                                   -->
+<!--       + For OGI_Gun_HeavyBolter REPLACE label                                                                    -->
+<!--                                    WITH label heavy bolter (Jove pattern)                                        -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltPistol REPLACE label                                                                     -->
+<!--                                   WITH label bolt pistol (Godwyn-De'az pattern)                                  -->
+<!--       + For OGI_Gun_BoltPistol UPDATE description                                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistol"]/label</xpath>
+                    <value>
+                        <label>bolt pistol (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistol"]/description</xpath>
+                    <value>
+                        <description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium. The current standard pattern in use amongst the Space Marines is the Mark III. Bolt Pistols are also used by many other Imperial forces as well as the Chaos Space Marines. A Bolt Pistol is commonly used in conjunction with a close combat weapon by Space Marine officers, Veterans and Assault Squads to make them into melee combat specialists.\n\nThe Godwyn-De'az Pattern Bolt Pistol is the standard model for the Adepta Sororitas.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltPistolD REPLACE label                                                                    -->
+<!--                                    WITH label dual bolt pistols (Godwyn-De'az pattern)                           -->
+<!--       + For OGI_Gun_BoltPistolD UPDATE description                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/label</xpath>
+                    <value>
+                        <label>dual bolt pistols (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltPistolD"]/description</xpath>
+                    <value>
+                        <description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium. The current standard pattern in use amongst the Space Marines is the Mark III. Bolt Pistols are also used by many other Imperial forces as well as the Chaos Space Marines. A Bolt Pistol is commonly used in conjunction with a close combat weapon by Space Marine officers, Veterans and Assault Squads to make them into melee combat specialists.\n\nThe Godwyn-De'az Pattern Bolt Pistol is the standard model for the Adepta Sororitas.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun REPLACE label                                                                        -->
+<!--                                WITH label bolter (Locke pattern)                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun"]/label</xpath>
+                    <value>
+                        <label>bolter (Locke pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz REPLACE label                                                             -->
+<!--                                           WITH label bolter (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_BoltGun_GodwynDeaz UPDATE description                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun_GodwynDeaz"]/label</xpath>
+                    <value>
+                        <label>bolter (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_BoltGun_GodwynDeaz"]/description</xpath>
+                    <value>
+                        <description>The Bolter, also called a Boltgun, and its variants are some of the most powerful hand-held ballistic anti-personnel weaponry in use by the military forces of the Imperium of Man. It is a powerful assault weapon that fires explosive kinetic rounds colloquially referred to as bolts capable of ripping through or blowing apart a foe. The Locke Pattern is a variant of an older pattern used by the Adeptus Arbites, and is now the most common pattern of Bolter in use in the Rim.\n\nThe Godwyn-De'az Pattern boltgun has been the standard-issue weapon for the Battle Sisters since their first formation, and is unchanged due to its superiority to nearly all other boltgun-type weapons. The sisters can also make use of a Sarissa as a blade attachment for their bolters.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_StormBolter REPLACE label                                                                    -->
+<!--                                    WITH label storm bolter (Mars pattern)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_StormBolter"]/label</xpath>
+                    <value>
+                        <label>storm bolter (Mars pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_CombiFlamer REPLACE label                                                                    -->
+<!--                                    WITH label combi-flamer (Godwyn-De'az pattern)                                -->
+<!--       + For OGI_Gun_CombiMelta REPLACE label                                                                     -->
+<!--                                   WITH label combi-meltagun (Godwyn-De'az pattern)                               -->
+<!--       + For OGI_Gun_CombiPlasma REPLACE label                                                                    -->
+<!--                                    WITH label combi-plasma gun (Godwyn-De'az pattern)                            -->
+<!--       + For OGI_Gun_CombiGrav REPLACE label                                                                      -->
+<!--                                  WITH label combi-grav gun (Godwyn-De'az pattern)                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiFlamer"]/label</xpath>
+                    <value>
+                        <label>combi-flamer (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiMelta"]/label</xpath>
+                    <value>
+                        <label>combi-meltagun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiPlasma"]/label</xpath>
+                    <value>
+                        <label>combi-plasma gun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_CombiGrav"]/label</xpath>
+                    <value>
+                        <label>combi-grav gun (Godwyn-De'az pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_StalkerBolter REPLACE label                                                                  -->
+<!--                                      WITH label Stalker bolter                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_StalkerBolter"]/label</xpath>
+                    <value>
+                        <label>Stalker bolter</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_HeavyBolter REPLACE label                                                                    -->
+<!--                                    WITH label heavy bolter (Jove pattern)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyBolter"]/label</xpath>
+                    <value>
+                        <label>heavy bolter (Jove pattern)</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
