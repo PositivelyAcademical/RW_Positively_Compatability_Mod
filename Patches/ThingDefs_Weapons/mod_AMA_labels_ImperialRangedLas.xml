@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For OGI_Gun_LasPistol REPLACE label                                                                      -->
+<!--                                  WITH label las pistol (Defender pattern)                                        -->
+<!--       + For OGI_Gun_LasGun_Galaxy REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (M-Galaxy pattern)                                        -->
+<!--       + For OGI_Gun_LasGun_Galaxy UPDATE description                                                             -->
+<!--       + For OGI_Gun_LasGun_Kantrael REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Kantrael pattern)                                      -->
+<!--       + For OGI_Gun_LasGun_Kantrael UPDATE description                                                           -->
+<!--       + For OGI_Gun_LasGun_Triplex REPLACE label                                                                 -->
+<!--                                       WITH label lasgun (Triplex pattern)                                        -->
+<!--       + For OGI_Gun_LasGun_Triplex UPDATE description                                                            -->
+<!--       + For OGI_Gun_LasGun_Locke REPLACE label                                                                   -->
+<!--                                     WITH label lasgun (Locke pattern carbine)                                    -->
+<!--       + For OGI_Gun_LasGun_Locke UPDATE description                                                              -->
+<!--       + For OGI_Gun_LasGun_Catachan REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Catachan pattern carbine)                              -->
+<!--       + For OGI_Gun_LasGun_Catachan UPDATE description                                                           -->
+<!--       + For OGI_Gun_LasGun_Voss REPLACE label                                                                    -->
+<!--                                    WITH label lasgun (Voss pattern carbine)                                      -->
+<!--       + For OGI_Gun_LasGun_Voss UPDATE description                                                               -->
+<!--       + For OGI_Gun_LasGun_Lucius REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (Lucius pattern)                                          -->
+<!--       + For OGI_Gun_LasGun_Lucius UPDATE description                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasPistol REPLACE label                                                                      -->
+<!--                                  WITH label las pistol (Defender pattern)                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasPistol"]/label</xpath>
+                    <value>
+                        <label>las pistol (Defender pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Galaxy REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (M-Galaxy pattern)                                        -->
+<!--       + For OGI_Gun_LasGun_Galaxy UPDATE description                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Galaxy"]/label</xpath>
+                    <value>
+                        <label>lasgun (M-Galaxy pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Galaxy"]/description</xpath>
+                    <value>
+                        <description>The Lasgun, also sometimes referred to as a Lasrifle, is a directed-energy antipersonnel weapon used by the military forces of the Imperium of Man, and it is the most common and widely-used type of laser weapon in the galaxy. Lasguns are reliable, easy to maintain and to produce, and are readily available on most Imperial worlds. The Lasgun is strong enough to take an ordinary human arm off with one shot but is not as effective against the more durable alien bodies and stronger types of personal armour. A Lasgun's beam also cauterizes the wounds it inflicts due to the immense heat given off by the shot.\n\nAlthough thousands of variant models, marks and patterns exist the standard Lasgun pattern used by the Imperial Guard is the M35 "M-Galaxy" Lasgun, first put into use in M35.789.2546</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Kantrael REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Kantrael pattern)                                      -->
+<!--       + For OGI_Gun_LasGun_Kantrael UPDATE description                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Kantrael"]/label</xpath>
+                    <value>
+                        <label>lasgun (Kantrael pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Kantrael"]/description</xpath>
+                    <value>
+                        <description>The Lasgun, also sometimes referred to as a Lasrifle, is a directed-energy antipersonnel weapon used by the military forces of the Imperium of Man, and it is the most common and widely-used type of laser weapon in the galaxy. Lasguns are reliable, easy to maintain and to produce, and are readily available on most Imperial worlds. The Lasgun is strong enough to take an ordinary human arm off with one shot but is not as effective against the more durable alien bodies and stronger types of personal armour. A Lasgun's beam also cauterizes the wounds it inflicts due to the immense heat given off by the shot.\n\nThe M36 Kantrael Pattern Lasrifle is the standard variant for the Cadian Shock Troopers and the other regiments of the Astra Militarum that follow the martial traditions of the Cadian Gate.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Triplex REPLACE label                                                                 -->
+<!--                                       WITH label lasgun (Triplex pattern)                                        -->
+<!--       + For OGI_Gun_LasGun_Locke UPDATE description                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Triplex"]/label</xpath>
+                    <value>
+                        <label>lasgun (Triplex pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Triplex"]/description</xpath>
+                    <value>
+                        <description>The Lasgun, also sometimes referred to as a Lasrifle, is a directed-energy antipersonnel weapon used by the military forces of the Imperium of Man, and it is the most common and widely-used type of laser weapon in the galaxy. Lasguns are reliable, easy to maintain and to produce, and are readily available on most Imperial worlds. The Lasgun is strong enough to take an ordinary human arm off with one shot but is not as effective against the more durable alien bodies and stronger types of personal armour. A Lasgun's beam also cauterizes the wounds it inflicts due to the immense heat given off by the shot.\n\nThe Triplex Pattern Lasgun is a highly refined variant of the standard lasgun, offering alternative firing modes that make the weapon more versatile on the battlefield, alternating between a "standard" mode, a "precision" mode for increased accuracy, and an "incineration" mode for sheer destructive power.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Locke REPLACE label                                                                   -->
+<!--                                     WITH label lasgun (Locke pattern carbine)                                    -->
+<!--       + For OGI_Gun_LasGun_Locke UPDATE description                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Locke"]/label</xpath>
+                    <value>
+                        <label>lasgun (Locke pattern carbine)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Locke"]/description</xpath>
+                    <value>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nThe Locke Pattern Lascarbine is a lighter, cut down variant of the Lascarbie which is commonly issued to Planetary Defence Force regimets and local militias of the Astra Militarum.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Catachan REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Catachan pattern carbine)                              -->
+<!--       + For OGI_Gun_LasGun_Catachan UPDATE description                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Catachan"]/label</xpath>
+                    <value>
+                        <label>lasgun (Catachan pattern carbine)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Catachan"]/description</xpath>
+                    <value>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nThe Mark IV "Catachan" Lascarbine has less cowling that the M36 Pattern, and therefore is lighter and easier to carry. It also has a slightly reduced effective range offset against an increased rate of fire, hence it being favoured in dense jungle environs frequented by the Catachan regigments.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Voss REPLACE label                                                                    -->
+<!--                                    WITH label lasgun (Voss pattern carbine)                                      -->
+<!--       + For OGI_Gun_LasGun_Voss UPDATE description                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/label</xpath>
+                    <value>
+                        <label>lasgun (Voss pattern carbine)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/description</xpath>
+                    <value>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nWhile technically a Lascarbine, the Voss Pattern Lasgun is the standard weapon issued to the Steel Legion regiments of the Astra Militrarum raised from Armageddon (known during the Heresy-era, and prior to its relocation, as Ullanor).</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Lucius REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (Lucius pattern)                                          -->
+<!--       + For OGI_Gun_LasGun_Lucius UPDATE description                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Lucius"]/label</xpath>
+                    <value>
+                        <label>lasgun (Lucius pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Lucius"]/description</xpath>
+                    <value>
+                        <description>While the term Lasrifle is often used interchangeably to mean Lasgun, weapons designated as such can be larger and more cumbersome than the more typical patterns of Imperial Lasguns. As a result of these differences, a true Lasrifle has a longer range and hits harder than the standard Lasgun, though this also means it can fire fewer shots before depleting its power pack.\n\nThe Lucius No.28 Pattern Lasgun is is the signature weapon of the Death Korps of Krieg. It operates in the 21 megathoule range, but is designed to draw from a standard Munitorum-issue power pack. Consequently, the Lucius lasgun discharges a more powerful shot, but drains the power pack at a correspondingly increased rate. This also puts a great strain on the weapon, limiting the rate of fire and requiring such features as additional heat sink rings lining the exterior of the barrel. Even with such considerations, an over-taxed Lucius lasgun can quickly overheat.</description>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
