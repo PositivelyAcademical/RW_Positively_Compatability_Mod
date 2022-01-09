@@ -25,6 +25,9 @@
 <!--       + For OGI_Gun_LasGun_Voss REPLACE label                                                                    -->
 <!--                                    WITH label lasgun (Voss pattern carbine)                                      -->
 <!--       + For OGI_Gun_LasGun_Voss UPDATE description                                                               -->
+<!--       + For OGI_Gun_LasGun_Lucius REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (Lucius pattern)                                          -->
+<!--       + For OGI_Gun_LasGun_Lucius UPDATE description                                                             -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -169,6 +172,27 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/description</xpath>
                     <value>
                         <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nWhile technically a Lascarbine, the Voss Pattern Lasgun is the standard weapon issued to the Steel Legion regiments of the Astra Militrarum raised from Armageddon (known during the Heresy-era, and prior to its relocation, as Ullanor).</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Lucius REPLACE label                                                                  -->
+<!--                                      WITH label lasgun (Lucius pattern)                                          -->
+<!--       + For OGI_Gun_LasGun_Lucius UPDATE description                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Lucius"]/label</xpath>
+                    <value>
+                        <label>lasgun (Lucius pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Lucius"]/description</xpath>
+                    <value>
+                        <description>While the term Lasrifle is often used interchangeably to mean Lasgun, weapons designated as such can be larger and more cumbersome than the more typical patterns of Imperial Lasguns. As a result of these differences, a true Lasrifle has a longer range and hits harder than the standard Lasgun, though this also means it can fire fewer shots before depleting its power pack.\n\nThe Lucius No.28 Pattern Lasgun is is the signature weapon of the Death Korps of Krieg. It operates in the 21 megathoule range, but is designed to draw from a standard Munitorum-issue power pack. Consequently, the Lucius lasgun discharges a more powerful shot, but drains the power pack at a correspondingly increased rate. This also puts a great strain on the weapon, limiting the rate of fire and requiring such features as additional heat sink rings lining the exterior of the barrel. Even with such considerations, an over-taxed Lucius lasgun can quickly overheat.</description>
                     </value>
                 </li>
 
