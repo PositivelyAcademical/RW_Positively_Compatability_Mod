@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites VWE_Flamethrower                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
+<!--                                           WITH prerequisites Fabrication                                         -->
+<!--                                                              LongBlades                                          -->
+<!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites MicroelectronicsBasics                                -->
+<!--                                                            Gunsmithing                                           -->
+<!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
+<!--                                          WITH prerequisites AdvancedFabrication                                  -->
+<!--                                                             ChargedShot                                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites VWE_Flamethrower                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/prerequisites</xpath>
+                                <value>
+                                    <prerequisites>
+                                       <li>VWE_Flamethrower</li>
+                                    </prerequisites>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
+<!--                                           WITH prerequisites Fabrication                                         -->
+<!--                                                              LongBlades                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Fabrication</li>
+                            <li>LongBlades</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites MicroelectronicsBasics                                -->
+<!--                                                            Gunsmithing                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>MicroelectronicsBasics</li>
+                            <li>Gunsmithing</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
+<!--                                          WITH prerequisites AdvancedFabrication                                  -->
+<!--                                                             ChargedShot                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Plasma"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>AdvancedFabrication</li>
+                            <li>ChargedShot</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
