@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
+<!--                                     WITH researchViewX 6                                                         -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY 4.8                                                       -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[WD] Simple Concrete</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
+<!--                                     WITH researchViewX 6                                                         -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY 4.8                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.5</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
