@@ -19,6 +19,9 @@
 <!--       + For OGI_Gun_LasGun_Locke REPLACE label                                                                   -->
 <!--                                     WITH label lasgun (Locke pattern carbine)                                    -->
 <!--       + For OGI_Gun_LasGun_Locke UPDATE description                                                              -->
+<!--       + For OGI_Gun_LasGun_Catachan REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Catachan pattern carbine)                              -->
+<!--       + For OGI_Gun_LasGun_Catachan UPDATE description                                                           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -120,7 +123,28 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Locke"]/description</xpath>
                     <value>
-                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\n The Locke Pattern Lascarbine is a lighter, cut down variant of the Lascarbie which is commonly issued to Planetary Defence Force regimets and local militias of the Astra Militarum.</description>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nThe Locke Pattern Lascarbine is a lighter, cut down variant of the Lascarbie which is commonly issued to Planetary Defence Force regimets and local militias of the Astra Militarum.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Catachan REPLACE label                                                                -->
+<!--                                        WITH label lasgun (Catachan pattern carbine)                              -->
+<!--       + For OGI_Gun_LasGun_Catachan UPDATE description                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Catachan"]/label</xpath>
+                    <value>
+                        <label>lasgun (Catachan pattern carbine)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Catachan"]/description</xpath>
+                    <value>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nThe Mark IV "Catachan" Lascarbine has less cowling that the M36 Pattern, and therefore is lighter and easier to carry. It also has a slightly reduced effective range offset against an increased rate of fire, hence it being favoured in dense jungle environs frequented by the Catachan regigments.</description>
                     </value>
                 </li>
 
