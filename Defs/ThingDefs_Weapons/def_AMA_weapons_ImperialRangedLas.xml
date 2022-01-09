@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ====================== Las Weapons ===================== -->
+	<!-- ====================== LasPistol ===================== -->
+	<ThingDef ParentName="OG_Imperial_Gun" Class="AdeptusMechanicus.Lasers.LaserGunDef">
+		<defName>OGI_Gun_LasPistol_mechanicus</defName>
+		<label>laspistol (Vostroyan pattern)</label>
+		<thingClass>AdeptusMechanicus.Lasers.LaserGun</thingClass>
+		<description>The Laspistol is the pistol version of the Lasgun and like that weapon fires a coherent beam of energetic photons that can burn through most materials. The Laspistol is powered by a miniature power pack that is usually placed within the grip. The Laspistol is used most often by officers or Commissars of the Imperial Guard in conjunction with a close combat weapon, often a Chainsword or Power Sword. The Laspistol was specifically intended to allow the user to fire one-handed and wield a melee weapon in the other hand. The Laspistol is also a favoured weapon of Tech-priest Enginseers and Sanctioned Psykers.\n\nThe Laspistol is capable of producing the same amount of damage in a skilled user's hands as the Lasgun, yet it has drastically reduced range as compared to its variant rifle form. The Laspistol lacks the Lasgun's selective fire options, having only the ability to fire single shots.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/LasPistol</texPath>
+			<graphicClass>AdvancedGraphics.Graphic_SingleRandomized</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(0.208,0.286,0.176)</color>
+		</graphicData>
+		<barrelLength>0.45</barrelLength>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>6750</WorkToMake>
+			<!--MarketValue>250</MarketValue-->
+			<Mass>0.8</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Mechanicus_Tech_Base_T1</li>
+					<li>OG_Common_Tech_Weapons_Laser</li>
+				</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>45</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>Pistol</li>
+			<li>ImperialPistol</li>
+			<li>ImperialGun</li>
+			<li>Laspistol</li>
+			<li>LasPistol</li>
+			<li>GuevesaPistol</li>
+			<li>OgsWeaponTestLaser</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+		<generateCommonality>1.0</generateCommonality>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_LasPistolStd</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>OG_Las_Pistol_Sound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<barrelLength>0.45</barrelLength>
+				<bulletOffset>-0.3</bulletOffset>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_DefaultSettings">
+				<dualWield>true</dualWield>
+				<twoHand>false</twoHand>
+			</li>
+			<li MayRequire="Roolo.DualWield" Class="DualWield.DefModextension_CustomRotation">
+				<extraRotation>0</extraRotation>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>
