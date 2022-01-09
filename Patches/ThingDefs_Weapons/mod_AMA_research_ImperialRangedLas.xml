@@ -42,6 +42,12 @@
 <!--                                WITH researchPrerequisites OG_Militarum_Tech_Base_T3                              -->
 <!--                                                           OG_Common_Tech_Weapons_Laser                           -->
 <!--  ==============================================================================================================  -->
+<!--     + ALL CASES - other weapons                                                                                  -->
+<!--       + For OGI_Gun_LongLas REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites OG_Militarum_Tech_Base_T2                              -->
+<!--                                                           OG_Common_Tech_Weapons_Laser                           -->
+<!--                                                           PrecisionRifling                                       -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
@@ -245,6 +251,25 @@
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T3</li>
                             <li>OG_Common_Tech_Weapons_Laser</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - other weapons                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LongLas REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites OG_Militarum_Tech_Base_T2                              -->
+<!--                                                           OG_Common_Tech_Weapons_Laser                           -->
+<!--                                                           PrecisionRifling                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LongLas"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Laser</li>
+                            <li>PrecisionRifling</li>
                         </researchPrerequisites>
                     </value>
                 </li>
