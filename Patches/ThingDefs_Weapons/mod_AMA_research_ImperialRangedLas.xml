@@ -23,9 +23,8 @@
 <!--                                                                        OG_Common_Tech_Weapons_Laser              -->
 <!--       + For OGI_Gun_LasGun_Catachan recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2              -->
 <!--                                                                           OG_Common_Tech_Weapons_Laser           -->
-<!--       + For OGI_Gun_LasGun_Voss REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T2                          -->
-<!--                                                               OG_Common_Tech_Weapons_Laser                       -->
+<!--       + For OGI_Gun_LasGun_Voss recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2                  -->
+<!--                                                                       OG_Common_Tech_Weapons_Laser               -->
 <!--       + For OGI_Gun_LasGun_Lucius REPLACE researchPrerequisites                                                  -->
 <!--                                      WITH researchPrerequisites OG_Militarum_Tech_Base_T2                        -->
 <!--                                                                 OG_Common_Tech_Weapons_Laser                     -->
@@ -162,12 +161,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - lasguns (cont)                                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_LasGun_Voss REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T2                          -->
-<!--                                                               OG_Common_Tech_Weapons_Laser                       -->
+<!--       + For OGI_Gun_LasGun_Voss recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2                  -->
+<!--                                                                       OG_Common_Tech_Weapons_Laser               -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/recipeMaker/researchPrerequisites</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T2</li>
