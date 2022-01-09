@@ -4,6 +4,10 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites VWE_Flamethrower                                  -->
+<!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
 <!--                                           WITH prerequisites Fabrication                                         -->
@@ -16,6 +20,32 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites VWE_Flamethrower                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/prerequisites</xpath>
+                                <value>
+                                    <prerequisites>
+                                       <li>VWE_Flamethrower</li>
+                                    </prerequisites>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
