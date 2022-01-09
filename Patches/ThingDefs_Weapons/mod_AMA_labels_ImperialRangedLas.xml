@@ -212,7 +212,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Mars"]/label</xpath>
                     <value>
-                        <label>lasgun (Lucius pattern)</label>
+                        <label>lasgun (Mars pattern)</label>
                     </value>
                 </li>
 
