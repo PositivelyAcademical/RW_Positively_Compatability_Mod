@@ -6,7 +6,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--       + For OGI_Gun_LasPistol REPLACE label                                                                      -->
-<!--                                  WITH label las pistol (Defender pattern)                                        -->
+<!--                                  WITH label laspistol (Defender pattern)                                         -->
 <!--       + For OGI_Gun_LasGun_Galaxy REPLACE label                                                                  -->
 <!--                                      WITH label lasgun (M-Galaxy pattern)                                        -->
 <!--       + For OGI_Gun_LasGun_Galaxy UPDATE description                                                             -->
@@ -51,7 +51,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasPistol"]/label</xpath>
                     <value>
-                        <label>las pistol (Defender pattern)</label>
+                        <label>laspistol (Defender pattern)</label>
                     </value>
                 </li>
 
