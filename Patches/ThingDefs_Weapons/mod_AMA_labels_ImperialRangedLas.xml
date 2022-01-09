@@ -87,7 +87,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Triplex"]/label</xpath>
                     <value>
-                        <label>lasgun (Kantrael pattern)</label>
+                        <label>lasgun (Triplex pattern)</label>
                     </value>
                 </li>
 
