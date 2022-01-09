@@ -5,7 +5,9 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For WDReinforcedConcrete REPLACE researchViewY (5.3)                                                     -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
+<!--                                     WITH researchViewX 6                                                         -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY 4.8                                                       -->
 <!--  ==============================================================================================================  -->
 
@@ -19,10 +21,19 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For WDReinforcedConcrete REPLACE researchViewY (5.3)                                                     -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
+<!--                                     WITH researchViewX 6                                                         -->
+<!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY 4.8                                                       -->
 <!--  ==============================================================================================================  -->
-                <li Class = "PatchOperationReplace">
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewY</xpath>
                     <value>
                         <researchViewY>4.8</researchViewY>
