@@ -29,9 +29,8 @@
 <!--       + For OGI_Gun_LasGun_Lucius REPLACE researchPrerequisites                                                  -->
 <!--                                      WITH researchPrerequisites OG_Militarum_Tech_Base_T2                        -->
 <!--                                                                 OG_Common_Tech_Weapons_Laser                     -->
-<!--       + For OGI_Gun_LasGun_Mars REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T2                          -->
-<!--                                                               OG_Common_Tech_Weapons_Laser                       -->
+<!--       + For OGI_Gun_LasGun_Mars recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2                  -->
+<!--                                                                       OG_Common_Tech_Weapons_Laser               -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -177,12 +176,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - lasguns (cont)                                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_LasGun_Mars REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T2                          -->
-<!--                                                               OG_Common_Tech_Weapons_Laser                       -->
+<!--       + For OGI_Gun_LasGun_Mars recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2                  -->
+<!--                                                                       OG_Common_Tech_Weapons_Laser               -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Mars"]/recipeMaker/researchPrerequisites</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Mars"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T2</li>
