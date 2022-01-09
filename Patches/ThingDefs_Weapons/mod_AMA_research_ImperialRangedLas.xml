@@ -13,6 +13,9 @@
 <!--       + For OGI_Gun_LasGun_Galaxy REPLACE researchPrerequisites                                                  -->
 <!--                                      WITH researchPrerequisites OG_Militarum_Tech_Base_T2                        -->
 <!--                                                                 OG_Common_Tech_Weapons_Laser                     -->
+<!--       + For OGI_Gun_LasGun_Kantrael REPLACE researchPrerequisites                                                -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T2                       -->
+<!--                                                                  OG_Common_Tech_Weapons_Laser                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -47,6 +50,23 @@
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Galaxy"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Laser</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - lasguns (cont)                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Kantrael REPLACE researchPrerequisites                                                -->
+<!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T2                       -->
+<!--                                                                  OG_Common_Tech_Weapons_Laser                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Kantrael"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T2</li>
