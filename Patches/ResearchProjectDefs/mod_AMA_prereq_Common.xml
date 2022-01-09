@@ -13,6 +13,9 @@
 <!--                                           WITH prerequisites Fabrication                                         -->
 <!--                                                              Machining                                           -->
 <!--                                                              LongBlades                                          -->
+<!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites MicroelectronicsBasics                                -->
+<!--                                                            Gunsmithing                                           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -62,6 +65,23 @@
                             <li>Fabrication</li>
                             <li>Machining</li>
                             <li>LongBlades</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites MicroelectronicsBasics                                -->
+<!--                                                            Gunsmithing                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>MicroelectronicsBasics</li>
+                            <li>Gunsmithing</li>
                         </prerequisites>
                     </value>
                 </li>
