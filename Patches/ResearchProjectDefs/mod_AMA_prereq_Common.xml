@@ -16,6 +16,9 @@
 <!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
 <!--                                         WITH prerequisites MicroelectronicsBasics                                -->
 <!--                                                            Gunsmithing                                           -->
+<!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
+<!--                                          WITH prerequisites AdvancedFabrication                                  -->
+<!--                                                             ChargedShot                                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -82,6 +85,23 @@
                         <prerequisites>
                             <li>MicroelectronicsBasics</li>
                             <li>Gunsmithing</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
+<!--                                          WITH prerequisites AdvancedFabrication                                  -->
+<!--                                                             ChargedShot                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Plasma"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>AdvancedFabrication</li>
+                            <li>ChargedShot</li>
                         </prerequisites>
                     </value>
                 </li>
