@@ -31,6 +31,8 @@
 <!--                                                                 OG_Common_Tech_Weapons_Laser                     -->
 <!--       + For OGI_Gun_LasGun_Mars recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T2                  -->
 <!--                                                                       OG_Common_Tech_Weapons_Laser               -->
+<!--       + For OGI_Gun_LasGun_Vostroya recipeMaker ADD researchPrerequisites OG_Mechanicus_Tech_Base_T1             -->
+<!--                                                                           OG_Common_Tech_Weapons_Laser           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -184,6 +186,22 @@
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Laser</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - lasguns (cont)                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Vostroya recipeMaker ADD researchPrerequisites OG_Mechanicus_Tech_Base_T1             -->
+<!--                                                                           OG_Common_Tech_Weapons_Laser           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Vostroya"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Mechanicus_Tech_Base_T1</li>
                             <li>OG_Common_Tech_Weapons_Laser</li>
                         </researchPrerequisites>
                     </value>
