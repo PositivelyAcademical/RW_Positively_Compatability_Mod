@@ -22,6 +22,9 @@
 <!--       + For OGI_Gun_LasGun_Catachan REPLACE label                                                                -->
 <!--                                        WITH label lasgun (Catachan pattern carbine)                              -->
 <!--       + For OGI_Gun_LasGun_Catachan UPDATE description                                                           -->
+<!--       + For OGI_Gun_LasGun_Voss REPLACE label                                                                    -->
+<!--                                    WITH label lasgun (Voss pattern carbine)                                      -->
+<!--       + For OGI_Gun_LasGun_Voss UPDATE description                                                               -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -145,6 +148,27 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Catachan"]/description</xpath>
                     <value>
                         <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nThe Mark IV "Catachan" Lascarbine has less cowling that the M36 Pattern, and therefore is lighter and easier to carry. It also has a slightly reduced effective range offset against an increased rate of fire, hence it being favoured in dense jungle environs frequented by the Catachan regigments.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OGI_Gun_LasGun_Voss REPLACE label                                                                    -->
+<!--                                    WITH label lasgun (Voss pattern carbine)                                      -->
+<!--       + For OGI_Gun_LasGun_Voss UPDATE description                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/label</xpath>
+                    <value>
+                        <label>lasgun (Voss pattern carbine)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_LasGun_Voss"]/description</xpath>
+                    <value>
+                        <description>The Lascarbine is a carbine form of the standard Imperial Lasgun that is easier to carry and to aim that its larger counterpart. It will often possess a folding stock to further optimise its size. However, as a result of these modificatios, a Lascarbine has a shorter effective range and will fire fewer shots before depleting its power pack when compared to the standard Lasgun.\n\nWhile technically a Lascarbine, the Voss Pattern Lasgun is the standard weapon issued to the Steel Legion regiments of the Astra Militrarum raised from Armageddon (known during the Heresy-era, and prior to its relocation, as Ullanor).</description>
                     </value>
                 </li>
 
