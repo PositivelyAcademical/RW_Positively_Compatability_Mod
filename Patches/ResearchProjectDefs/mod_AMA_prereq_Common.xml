@@ -11,7 +11,6 @@
 <!--     + ALL CASES                                                                                                  -->
 <!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
 <!--                                           WITH prerequisites Fabrication                                         -->
-<!--                                                              Machining                                           -->
 <!--                                                              LongBlades                                          -->
 <!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
 <!--                                         WITH prerequisites MicroelectronicsBasics                                -->
@@ -58,7 +57,6 @@
 <!--  ==============================================================================================================  -->
 <!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
 <!--                                           WITH prerequisites Fabrication                                         -->
-<!--                                                              Machining                                           -->
 <!--                                                              LongBlades                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationReplace">
@@ -66,7 +64,6 @@
                     <value>
                         <prerequisites>
                             <li>Fabrication</li>
-                            <li>Machining</li>
                             <li>LongBlades</li>
                         </prerequisites>
                     </value>
