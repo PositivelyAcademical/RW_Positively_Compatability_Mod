@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - slug and auto weapons                                                                          -->
+<!--       + For LAP_WEAP_AutoCannon REPLACE label                                                                    -->
+<!--                                    WITH label autocannon (Sol Militaris pattern)                                 -->
+<!--       + For LAP_WEAP_RAutocannon REPLACE label                                                                   -->
+<!--                                     WITH label Reaper autocannon                                                 -->
+<!--       + For LAP_WEAP_AssaultCannon REPLACE label                                                                 -->
+<!--                                       WITH label rotor cannon                                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - las weapons                                                                                    -->
+<!--       + For LAP_WEAP_LasCannon REPLACE label                                                                     -->
+<!--                                   WITH label lascannon (Sol Militaris pattern)                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - flame weapons                                                                                  -->
+<!--       + For LAP_WEAP_HandFlamer REPLACE label                                                                    -->
+<!--                                    WITH label hand flamer (Phaestos pattern)                                     -->
+<!--       + For LAP_WEAP_Flamer REPLACE label                                                                        -->
+<!--                                WITH label flamer (Phaestos pattern)                                              -->
+<!--       + For LAP_WEAP_HeavyFlamer REPLACE label                                                                   -->
+<!--                                     WITH label heavy flamer (Phaestos pattern)                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - bolt weapons                                                                                   -->
+<!--       + For LAP_WEAP_BoltPistol REPLACE label                                                                    -->
+<!--                                    WITH label bolt pistol (Phobos pattern)                                       -->
+<!--       + For LAP_WEAP_BoltGun REPLACE label                                                                       -->
+<!--                                 WITH label boltgun (Phobos pattern)                                              -->
+<!--       + For LAP_WEAP_CombiBolter REPLACE label                                                                   -->
+<!--                                     WITH label combi-bolter (Phobos pattern)                                     -->
+<!--       + For LAP_WEAP_HeavyBolter REPLACE label                                                                   -->
+<!--                                     WITH label heavy bolter (Sol Militaris pattern)                              -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - melta weapons                                                                                  -->
+<!--       + For LAP_WEAP_MeltaGun REPLACE label                                                                      -->
+<!--                                  WITH label meltagun (Ryza pattern)                                              -->
+<!--       + For LAP_WEAP_MultiMelta REPLACE label                                                                    -->
+<!--                                    WITH label multi-melta (Sol Militaris pattern)                                -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - plasma weapons                                                                                 -->
+<!--       + For LAP_WEAP_PlasmaPistol REPLACE label                                                                  -->
+<!--                                      WITH label plasma pistol (Ryza pattern)                                     -->
+<!--       + For LAP_WEAP_PlasmaGun REPLACE label                                                                     -->
+<!--                                   WITH label plasma gun (Ryza pattern)                                           -->
+<!--       + For LAP_WEAP_PlasmaCannon REPLACE label                                                                  -->
+<!--                                      WITH label plasma cannon (Sol Militaris pattern)                            -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - volkite weapons                                                                                -->
+<!--       + For LAP_WEAP_VolkiteSerpenta REPLACE label                                                               -->
+<!--                                         WITH label volkite serpenta (Sol Militaris pattern)                      -->
+<!--       + For LAP_WEAP_VolkiteCaliver REPLACE label                                                                -->
+<!--                                        WITH label volkite caliver (Sol Militaris pattern)                        -->
+<!--       + For LAP_WEAP_VolkiteCulverin REPLACE label                                                               -->
+<!--                                         WITH label volkite culverin (Sol Militaris pattern)                      -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - suis generis weapons                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_RocketLaucher REPLACE label                                                                 -->
+<!--                                       WITH label missile launcher (Sol Militaris pattern)                        -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - slug and auto weapons                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_AutoCannon REPLACE label                                                                    -->
+<!--                                    WITH label autocannon (Sol Militaris pattern)                                 -->
+<!--       + For LAP_WEAP_RAutocannon REPLACE label                                                                   -->
+<!--                                     WITH label Reaper autocannon                                                 -->
+<!--       + For LAP_WEAP_AssaultCannon REPLACE label                                                                 -->
+<!--                                       WITH label rotor cannon (Sol Militaris pattern)                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/label</xpath>
+                    <value>
+                        <label>autocannon (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/label</xpath>
+                    <value>
+                        <label>Reaper autocannon</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/label</xpath>
+                    <value>
+                        <label>rotor cannon</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - las weapons                                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_LasCannon REPLACE label                                                                     -->
+<!--                                   WITH label lascannon (Sol Militaris pattern)                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LasCannon"]/label</xpath>
+                    <value>
+                        <label>lascannon (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - flame weapons                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_HandFlamer REPLACE label                                                                    -->
+<!--                                    WITH label hand flamer (Phaestos pattern)                                     -->
+<!--       + For LAP_WEAP_Flamer REPLACE label                                                                        -->
+<!--                                WITH label flamer (Phaestos pattern)                                              -->
+<!--       + For LAP_WEAP_HeavyFlamer REPLACE label                                                                   -->
+<!--                                     WITH label heavy flamer (Phaestos pattern)                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HandFlamer"]/label</xpath>
+                    <value>
+                        <label>hand flamer (Phaestos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Flamer"]/label</xpath>
+                    <value>
+                        <label>flamer (Phaestos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HeavyFlamer"]/label</xpath>
+                    <value>
+                        <label>heavy flamer (Phaestos pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - bolt weapons                                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_BoltPistol REPLACE label                                                                    -->
+<!--                                    WITH label bolt pistol (Phobos pattern)                                       -->
+<!--       + For LAP_WEAP_BoltGun REPLACE label                                                                       -->
+<!--                                 WITH label boltgun (Phobos pattern)                                              -->
+<!--       + For LAP_WEAP_CombiBolter REPLACE label                                                                   -->
+<!--                                     WITH label combi-bolter (Phobos pattern)                                     -->
+<!--       + For LAP_WEAP_HeavyBolter REPLACE label                                                                   -->
+<!--                                     WITH label heavy bolter (Sol Militaris pattern)                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/label</xpath>
+                    <value>
+                        <label>bolt pistol (Phobos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltGun"]/label</xpath>
+                    <value>
+                        <label>boltgun (Phobos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_CombiBolter"]/label</xpath>
+                    <value>
+                        <label>combi-bolter (Phobos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HeavyBolter"]/label</xpath>
+                    <value>
+                        <label>heavy bolter (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - melta weapons                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_MeltaGun REPLACE label                                                                      -->
+<!--                                  WITH label meltagun (Ryza pattern)                                              -->
+<!--       + For LAP_WEAP_MultiMelta REPLACE label                                                                    -->
+<!--                                    WITH label multi-melta (Sol Militaris pattern)                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/label</xpath>
+                    <value>
+                        <label>meltagun (Ryza pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MultiMelta"]/label</xpath>
+                    <value>
+                        <label>multi-melta (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - plasma weapons                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_PlasmaPistol REPLACE label                                                                  -->
+<!--                                      WITH label plasma pistol (Ryza pattern)                                     -->
+<!--       + For LAP_WEAP_PlasmaGun REPLACE label                                                                     -->
+<!--                                   WITH label plasma gun (Ryza pattern)                                           -->
+<!--       + For LAP_WEAP_PlasmaCannon REPLACE label                                                                  -->
+<!--                                      WITH label plasma cannon (Sol Militaris pattern)                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaPistol"]/label</xpath>
+                    <value>
+                        <label>plasma pistol (Ryza pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaGun"]/label</xpath>
+                    <value>
+                        <label>plasma gun (Ryza patern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaCannon"]/label</xpath>
+                    <value>
+                        <label>plasma cannon (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - volkite weapons                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_VolkiteSerpenta REPLACE label                                                               -->
+<!--                                         WITH label volkite serpenta (Sol Militaris pattern)                      -->
+<!--       + For LAP_WEAP_VolkiteCaliver REPLACE label                                                                -->
+<!--                                        WITH label volkite caliver (Sol Militaris pattern)                        -->
+<!--       + For LAP_WEAP_VolkiteCulverin REPLACE label                                                               -->
+<!--                                         WITH label volkite culverin (Sol Militaris pattern)                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteSerpenta"]/label</xpath>
+                    <value>
+                        <label>volkite serpenta (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCaliver"]/label</xpath>
+                    <value>
+                        <label>volkite caliver (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCulverin"]/label</xpath>
+                    <value>
+                        <label>volkite culverin (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - suis generis weapons                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_RocketLaucher REPLACE label                                                                 -->
+<!--                                       WITH label missile launcher (Sol Militaris pattern)                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RocketLaucher"]/label</xpath>
+                    <value>
+                        <label>missile launcher (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
