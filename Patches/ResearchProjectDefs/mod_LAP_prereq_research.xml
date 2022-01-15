@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes                                                                               -->
+<!--       + For ImperialMetals IGNORE                                                                                -->
+<!--       + For LAP_Tech_Basic IGNORE                                                                                -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--       + For LAP_Tech_DarkAngels REPLACE prerequisites                                                            -->
+<!--                                    WITH hiddenPrerequisites LAP_Tech_Basic                                       -->
+<!--       + For LAP_Tech_Emperors_Children REPLACE prerequisites                                                     -->
+<!--                                           WITH hiddenPrerequisites LAP_Tech_Basic                                -->
+<!--       + For LAP_Tech_Iron_Warriors REPLACE prerequisites                                                         -->
+<!--                                       WITH hiddenPrerequisites LAP_Tech_Basic                                    -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--       + For LAP_Tech_Night_Lords REPLACE prerequisites                                                           -->
+<!--                                     WITH hiddenPrerequisites LAP_Tech_Basic                                      -->
+<!--       + For LAP_Tech_BloodAngels REPLACE prerequisites                                                           -->
+<!--                                     WITH hiddenPrerequisites LAP_Tech_Basic                                      -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--       + For LAP_Tech_World_Eaters REPLACE prerequisites                                                          -->
+<!--                                      WITH hiddenPrerequisites LAP_Tech_Basic                                     -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--       + For LAP_Tech_SOH REPLACE prerequisites                                                                   -->
+<!--                             WITH hiddenPrerequisites LAP_Tech_Basic                                              -->
+<!--       + For LAP_Tech_Alpha_Legion REPLACE prerequisites                                                          -->
+<!--                                      WITH hiddenPrerequisites LAP_Tech_Basic                                     -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--       + For LAP_Tech_Emperor REPLACE prerequisites                                                               -->
+<!--                                 WITH hiddenPrerequisites LAP_Tech_Basic                                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_DarkAngels REPLACE prerequisites                                                            -->
+<!--                                    WITH hiddenPrerequisites LAP_Tech_Basic                                       -->
+<!--       + For LAP_Tech_Emperors_Children REPLACE prerequisites                                                     -->
+<!--                                           WITH hiddenPrerequisites LAP_Tech_Basic                                -->
+<!--       + For LAP_Tech_Iron_Warriors REPLACE prerequisites                                                         -->
+<!--                                       WITH hiddenPrerequisites LAP_Tech_Basic                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_DarkAngels"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperors_Children"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Iron_Warriors"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_Night_Lords REPLACE prerequisites                                                           -->
+<!--                                     WITH hiddenPrerequisites LAP_Tech_Basic                                      -->
+<!--       + For LAP_Tech_BloodAngels REPLACE prerequisites                                                           -->
+<!--                                     WITH hiddenPrerequisites LAP_Tech_Basic                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_BloodAngels"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_World_Eaters REPLACE prerequisites                                                          -->
+<!--                                      WITH hiddenPrerequisites LAP_Tech_Basic                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_World_Eaters"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_SOH REPLACE prerequisites                                                                   -->
+<!--                             WITH hiddenPrerequisites LAP_Tech_Basic                                              -->
+<!--       + For LAP_Tech_Alpha_Legion REPLACE prerequisites                                                          -->
+<!--                                      WITH hiddenPrerequisites LAP_Tech_Basic                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Alpha_Legion"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - LegionesAstartes (cont)                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_Emperor REPLACE prerequisites                                                               -->
+<!--                                 WITH hiddenPrerequisites LAP_Tech_Basic                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperor"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
