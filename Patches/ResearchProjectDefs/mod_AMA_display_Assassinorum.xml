@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Assassinorum                                                                                   -->
+<!--     + ALL_CASES - Assassinorum                                                                                   -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewX 7.00 with 6                                          -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewY 2.00 with 3.00                                       -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX 7.75 with 7                             -->
@@ -24,7 +24,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Assassinorum                                                                                   -->
+<!--     + ALL_CASES - Assassinorum                                                                                   -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewX 7.00 with 6                                          -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewY 2.00 with 3.00                                       -->
