@@ -77,7 +77,7 @@
 <!--       + For LAP_WEAP_RAutocannon REPLACE label                                                                   -->
 <!--                                     WITH label Reaper autocannon                                                 -->
 <!--       + For LAP_WEAP_AssaultCannon REPLACE label                                                                 -->
-<!--                                       WITH label rotor cannon (Sol Militaris pattern)                            -->
+<!--                                       WITH label rotor cannon                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/label</xpath>
