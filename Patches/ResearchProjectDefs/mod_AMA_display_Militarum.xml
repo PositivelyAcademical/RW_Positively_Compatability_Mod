@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Militarum                                                                                      -->
+<!--     + ALL_CASES - Militarum                                                                                      -->
 <!--       + For OG_Militarum_Tech_Base_T0 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--       + For OG_Militarum_Tech_Base_T1 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--       + For OG_Militarum_Tech_Base_T2 REPLACE researchViewY 2.00 with 2.50                                       -->
@@ -17,7 +17,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Militarum                                                                                      -->
+<!--     + ALL_CASES - Militarum                                                                                      -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Militarum_Tech_Base_T1 REPLACE researchViewY 2.00 with 2.50                                       -->
 <!--       + For OG_Militarum_Tech_Base_T2 REPLACE researchViewY 2.00 with 2.50                                       -->

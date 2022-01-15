@@ -4,16 +4,20 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial                                                                                       -->
+<!--     + ALL_CASES - Imperial                                                                                       -->
+<!--       + For OG_Imperial_Tech_Base_T0 REPLACE researchViewY 3.00 with 2.80                                        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX 3.00 with 2                                 -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX 4.50 with 3                                 -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX 6.00 with 4                                 -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial (cont)                                                                                -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX 6.00 with 5                                    -->
 <!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY 4.75 with 1.50                                 -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial (cont)                                                                                -->
-<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 3.00                             -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 2.80                             -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -23,7 +27,19 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial                                                                                       -->
+<!--     + ALL_CASES - Imperial                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Base_T0 REPLACE researchViewY 3.00 with 2.80                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.80</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX 3.00 with 2                                 -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX 4.50 with 3                                 -->
@@ -51,10 +67,18 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial (cont)                                                                                -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
 <!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX 6.00 with 5                                    -->
 <!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY 4.75 with 1.50                                 -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5</researchViewX>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
                     <value>
@@ -63,17 +87,18 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Imperial (cont)                                                                                -->
+<!--     + ALL_CASES - Imperial (cont)                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 3.00                             -->
+<!--       + For OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY 1.75 with 2.80                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.00</researchViewY>
+                        <researchViewY>2.80</researchViewY>
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>

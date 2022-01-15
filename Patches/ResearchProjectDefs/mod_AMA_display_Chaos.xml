@@ -4,10 +4,10 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Chaos                                                                                          -->
-<!--       + For OG_Chaos_Tech_Base_T1 REPLACE researchViewY 3.00 with 6.50                                           -->
-<!--       + For OG_Chaos_Tech_Base_T2 REPLACE researchViewY 3.00 with 6.50                                           -->
-<!--       + For OG_Chaos_Tech_Base_T3 REPLACE researchViewY 3.00 with 6.50                                           -->
+<!--     + ALL_CASES - Chaos                                                                                          -->
+<!--       + For OG_Chaos_Tech_Base_T1 REPLACE researchViewY 3.00 with 5.85                                           -->
+<!--       + For OG_Chaos_Tech_Base_T2 REPLACE researchViewY 3.00 with 5.85                                           -->
+<!--       + For OG_Chaos_Tech_Base_T3 REPLACE researchViewY 3.00 with 5.85                                           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -17,30 +17,30 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Chaos                                                                                          -->
+<!--     + ALL_CASES - Chaos                                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For OG_Chaos_Tech_Base_T1 REPLACE researchViewY 3.00 with 6.50                                           -->
-<!--       + For OG_Chaos_Tech_Base_T2 REPLACE researchViewY 3.00 with 6.50                                           -->
-<!--       + For OG_Chaos_Tech_Base_T3 REPLACE researchViewY 3.00 with 6.50                                           -->
+<!--       + For OG_Chaos_Tech_Base_T1 REPLACE researchViewY 3.00 with 5.85                                           -->
+<!--       + For OG_Chaos_Tech_Base_T2 REPLACE researchViewY 3.00 with 5.85                                           -->
+<!--       + For OG_Chaos_Tech_Base_T3 REPLACE researchViewY 3.00 with 5.85                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.50</researchViewY>
+                        <researchViewY>5.85</researchViewY>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.50</researchViewY>
+                        <researchViewY>5.85</researchViewY>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>6.50</researchViewY>
+                        <researchViewY>5.85</researchViewY>
                     </value>
                 </li>
 

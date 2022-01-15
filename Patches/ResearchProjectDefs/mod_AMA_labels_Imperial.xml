@@ -4,10 +4,10 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Militarum                                                                                      -->
+<!--     + ALL_CASES - Militarum                                                                                      -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label Flakk Armour with label Imperial Flak Armour        -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--     + ALL_CASES - Sororitas                                                                                      -->
 <!--       + For OG_Sororitas_Tech_Base_T1 REPLACE label Adeptus Sororitas with Adeptus Sororitas I                   -->
 <!--       + For OG_Sororitas_Tech_Base_T2 REPLACE label Adeptus Sororitas with Adeptus Sororitas II                  -->
 <!--  ==============================================================================================================  -->
@@ -20,7 +20,7 @@
 
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Militarum                                                                                      -->
+<!--     + ALL_CASES - Militarum                                                                                      -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label Flakk Armour with label Imperial Flak Armour        -->
 <!--  ==============================================================================================================  -->
@@ -32,7 +32,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Sororitas                                                                                      -->
+<!--     + ALL_CASES - Sororitas                                                                                      -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Sororitas_Tech_Base_T1 REPLACE label Adeptus Sororitas with Adeptus Sororitas I                   -->
 <!--       + For OG_Sororitas_Tech_Base_T2 REPLACE label Adeptus Sororitas with Adeptus Sororitas II                  -->

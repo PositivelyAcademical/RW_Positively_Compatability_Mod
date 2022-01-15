@@ -19,7 +19,7 @@
         <techLevel>Industrial</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1.00</researchViewX>
-        <researchViewY>5.50</researchViewY>
+        <researchViewY>4.85</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

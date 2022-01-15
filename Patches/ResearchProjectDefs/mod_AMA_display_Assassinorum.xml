@@ -4,17 +4,17 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Assassinorum                                                                                   -->
+<!--     + ALL_CASES - Assassinorum                                                                                   -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewX 7.00 with 6                                          -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewY 2.00 with 3.00                                       -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX 7.75 with 7                             -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY 1.00 with 2.75                          -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY 1.00 with 2.25                          -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX 7.725 with 7                             -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY 1.50 with 3.25                           -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY 1.50 with 2.75                           -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX 7.725 with 7                              -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY 2.50 with 3.75                            -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY 2.50 with 3.25                            -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX 7.75 with 7                               -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY 3.0 with 4.25                             -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY 3.0 with 3.75                             -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -24,18 +24,18 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - Assassinorum                                                                                   -->
+<!--     + ALL_CASES - Assassinorum                                                                                   -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewX 7.00 with 6                                          -->
 <!--       + For OG_Assassinorum_Tech_Base REPLACE researchViewY 2.00 with 3.00                                       -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX 7.75 with 7                             -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY 1.00 with 2.75                          -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY 1.00 with 2.25                          -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX 7.725 with 8                             -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY 1.50 with 3.25                           -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY 1.50 with 2.75                           -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX 7.725 with 8                              -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY 2.50 with 3.75                            -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY 2.50 with 3.25                            -->
 <!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX 7.75 with 7                               -->
-<!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY 3.0 with 4.25                             -->
+<!--       + For OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY 3.0 with 3.75                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/researchViewX</xpath>
@@ -61,7 +61,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2.75</researchViewY>
+                        <researchViewY>2.25</researchViewY>
                     </value>
                 </li>
 
@@ -75,7 +75,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.25</researchViewY>
+                        <researchViewY>2.75</researchViewY>
                     </value>
                 </li>
 
@@ -89,7 +89,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.75</researchViewY>
+                        <researchViewY>3.25</researchViewY>
                     </value>
                 </li>
 
@@ -103,7 +103,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.25</researchViewY>
+                        <researchViewY>3.75</researchViewY>
                     </value>
                 </li>
 

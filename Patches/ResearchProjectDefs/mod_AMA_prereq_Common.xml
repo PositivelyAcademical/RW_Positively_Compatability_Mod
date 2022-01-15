@@ -8,7 +8,7 @@
 <!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
 <!--                                             WITH prerequisites VWE_Flamethrower                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES                                                                                                  -->
 <!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
 <!--                                           WITH prerequisites Fabrication                                         -->
 <!--                                                              LongBlades                                          -->
@@ -53,7 +53,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--       + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                     -->
 <!--                                           WITH prerequisites Fabrication                                         -->
@@ -70,7 +70,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                       -->
 <!--                                         WITH prerequisites MicroelectronicsBasics                                -->
@@ -87,7 +87,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
 <!--                                          WITH prerequisites AdvancedFabrication                                  -->
