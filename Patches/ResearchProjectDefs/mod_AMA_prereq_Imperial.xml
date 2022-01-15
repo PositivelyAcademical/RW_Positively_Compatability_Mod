@@ -19,6 +19,9 @@
 <!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
 <!--       + For OG_Imperial_Tech_Wargear_ServoSkull prerequisites REPLACE with OG_Imperial_Tech_Base_T0              -->
 <!--       + For OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD Militarum                           -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                -->
+<!--                                                WITH prerequisites OG_Imperial_Tech_Apparel_Armour_T3             -->
+<!--                                                                   ShieldBelt                                     -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -138,6 +141,24 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (cont)                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                -->
+<!--                                                WITH prerequisites OG_Imperial_Tech_Apparel_Armour_T3             -->
+<!--                                                                   ShieldBelt                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>ShieldBelt</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
