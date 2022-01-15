@@ -7,7 +7,7 @@
 <!--     + ALL_CASES - Mechanicus                                                                                     -->
 <!--       + For OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY 2.50 with 3.50                                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX 1.75 with 2                                  -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY 2.25 with 3.25                               -->
+<!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY 2.25 with 3.10                               -->
 <!--       + For OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY 2.50 with 3.50                                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX 2.25 with 2                                -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY 2.75 with 3.75                             -->
@@ -29,7 +29,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY 2.50 with 3.50                                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX 1.75 with 2                                  -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY 2.25 with 3.25                               -->
+<!--       + For OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY 2.25 with 3.10                               -->
 <!--       + For OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY 2.50 with 3.50                                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX 2.25 with 2                                -->
 <!--       + For OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY 2.75 with 3.75                             -->
@@ -56,7 +56,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.25</researchViewY>
+                        <researchViewY>3.10</researchViewY>
                     </value>
                 </li>
 
