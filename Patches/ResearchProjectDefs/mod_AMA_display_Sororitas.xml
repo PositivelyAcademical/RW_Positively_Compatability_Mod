@@ -5,8 +5,8 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - Sororitas                                                                                      -->
-<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE researchViewY 3.00 with 4.50                                       -->
-<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE researchViewY 3.00 with 4.50                                       -->
+<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE researchViewY 3.00 with 4.10                                       -->
+<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE researchViewY 3.00 with 4.10                                       -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -18,23 +18,24 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - Sororitas                                                                                      -->
 <!--  ==============================================================================================================  -->
-<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE researchViewY 3.00 with 4.50                                       -->
-<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE researchViewY 3.00 with 4.50                                       -->
+<!--       + For OG_Sororitas_Tech_Base_T1 REPLACE researchViewY 3.00 with 4.10                                       -->
+<!--       + For OG_Sororitas_Tech_Base_T2 REPLACE researchViewY 3.00 with 4.10                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T1"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.50</researchViewY>
+                        <researchViewY>4.10</researchViewY>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T2"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.50</researchViewY>
+                        <researchViewY>4.10</researchViewY>
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
