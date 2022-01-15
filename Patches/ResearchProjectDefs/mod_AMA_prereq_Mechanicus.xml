@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES                                                                                                  -->
+<!--       + For OG_Mechanicus_Tech_Weapons_Radium AFTER prerequisites                                                -->
+<!--                                               INSERT hiddenPrerequisites OG_Common_Tech_Weapons_Special          -->
+<!--       + For OG_Mechanicus_Tech_Base_T3 prerequisites ADD Fabrication                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Mechanicus_Tech_Weapons_Radium AFTER prerequisites                                                -->
+<!--                                               INSERT hiddenPrerequisites OG_Common_Tech_Weapons_Special          -->
+<!--       + For OG_Mechanicus_Tech_Base_T3 prerequisites ADD Fabrication                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationInsert">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/prerequisites</xpath>
+                    <value>
+                        <li>Fabrication</li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
