@@ -18,7 +18,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - helmets                                                                                        -->
 <!--       + For LAP_Armour_Perturabo_Head REPLACE label                                                              -->
-<!--                                          WITH label the Logos Support System                                     -->
+<!--                                          WITH label the Logos' Support System                                    -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -81,12 +81,12 @@
 <!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_Perturabo_Head REPLACE label                                                              -->
-<!--                                          WITH label the Logos Support System                                     -->
+<!--                                          WITH label the Logos' Support System                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/label</xpath>
                     <value>
-                        <label>the Logos Support System</label>
+                        <label>the Logos' Support System</label>
                     </value>
                 </li>
 
