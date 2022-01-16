@@ -20,7 +20,6 @@
 <!--       + For Golden_General_Helmet REPLACE label                                                                  -->
 <!--                                      WITH label Captain-General's Helm                                           -->
 <!--  ==============================================================================================================  -->
-
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
