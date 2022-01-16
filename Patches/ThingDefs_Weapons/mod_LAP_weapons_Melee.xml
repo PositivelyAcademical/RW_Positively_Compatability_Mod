@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - mechanised weapons                                                                             -->
+<!--       + For LAP_WEAP_ChainSword REPLACE label                                                                    -->
+<!--                                    WITH label chainsword (Thunder Edge pattern)                                  -->
+<!--       + For LAP_WEAP_ChainAxe REPLACE label                                                                      -->
+<!--                                  WITH label chainaxe (Charatran pattern)                                         -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - power weapons                                                                                  -->
+<!--       + For LAP_WEAP_PowerSword REPLACE label                                                                    -->
+<!--                                    WITH label power sword (Proteus pattern)                                      -->
+<!--       + For LAP_WEAP_PowerSword UPDATE description                                                               -->
+<!--       + For LAP_WEAP_PowerAxe REPLACE label                                                                      -->
+<!--                                  WITH label power axe (Mars-Proteus pattern)                                     -->
+<!--       + For LAP_WEAP_PowerAxe UPDATE description                                                                 -->
+<!--       + For LAP_WEAP_LightningClaw REPLACE label                                                                 -->
+<!--                                       WITH label lightning claws (Crusade pattern)                               -->
+<!--       + For LAP_WEAP_LightningClaw UPDATE description                                                            -->
+<!--       + For LAP_WEAP_PowerFist REPLACE label                                                                     -->
+<!--                                   WITH label power fist (Solarite pattern)                                       -->
+<!--       + For LAP_WEAP_ChainFist REPLACE label                                                                     -->
+<!--                                   WITH label chain fist                                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - special weapons                                                                                -->
+<!--       + For LAP_WEAP_GuardianSpear REPLACE label                                                                 -->
+<!--                                       WITH label guardian spear (bolt caster)                                    -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - mechanised weapons                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_ChainSword REPLACE label                                                                    -->
+<!--                                    WITH label chainsword (Thunder Edge pattern)                                  -->
+<!--       + For LAP_WEAP_ChainAxe REPLACE label                                                                      -->
+<!--                                  WITH label chainaxe (Charatran pattern)                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/label</xpath>
+                    <value>
+                        <label>chainsword (Thunder Edge pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/label</xpath>
+                    <value>
+                        <label>chainaxe (Charatran pattern)</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - power weapons                                                                                  -->
+<!--       + For LAP_WEAP_PowerSword REPLACE label                                                                    -->
+<!--                                    WITH label power sword (Proteus pattern)                                      -->
+<!--       + For LAP_WEAP_PowerSword UPDATE description                                                               -->
+<!--       + For LAP_WEAP_PowerAxe REPLACE label                                                                      -->
+<!--                                  WITH label power axe (Mars-Proteus pattern)                                     -->
+<!--       + For LAP_WEAP_LightningClaw REPLACE label                                                                 -->
+<!--                                       WITH label lightning claws (Crusade pattern)                               -->
+<!--       + For LAP_WEAP_LightningClaw UPDATE description                                                            -->
+<!--       + For LAP_WEAP_PowerFist REPLACE label                                                                     -->
+<!--                                   WITH label power fist (Solarite pattern)                                       -->
+<!--       + For LAP_WEAP_ChainFist REPLACE label                                                                     -->
+<!--                                   WITH label chain fist                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/label</xpath>
+                    <value>
+                        <label>power sword (Proteus pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/description</xpath>
+                    <value>
+                        <description>A Power Sword is a Power Weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though usually Adamantium. When its power cell is activated, often by touching a control located on the hilt, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh, bone and most forms of armour plate alike, making a Power Sword a highly effective close combat weapon.\n\nThe Proteus Pattern Power Sword was the most common in use by the Legiones Astartes throughout the Crusade and Heresy eras.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/label</xpath>
+                    <value>
+                        <label>power axe (Mars-Proteus pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/label</xpath>
+                    <value>
+                        <label>lightning claws (Crusade pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/label</xpath>
+                    <value>
+                        <label>power fist (Solarite pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainFist"]/label</xpath>
+                    <value>
+                        <label>chain fist</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - special weapons                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_GuardianSpear REPLACE label                                                                 -->
+<!--                                       WITH label guardian spear (bolt caster)                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/label</xpath>
+                    <value>
+                        <label>guardian spear (bolt caster)</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
