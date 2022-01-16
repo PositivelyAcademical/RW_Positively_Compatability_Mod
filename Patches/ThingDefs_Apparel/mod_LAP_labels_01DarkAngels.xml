@@ -5,8 +5,12 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For LAP_Armour_DarkAngels_Armor update description                                                       -->
+<!--       + For LAP_Armour_DarkAngels_Armor REPLACE label                                                            -->
+<!--                                            WITH label Dark Angels Power Armour                                   -->
+<!--       + For LAP_Armour_DarkAngels_Armor UPDATE description                                                       -->
 <!--       + For LAP_Armour_DarkAngels_JumpPack update description                                                    -->
+<!--       + For LAP_Armour_DarkAngels_JumpPack REPLACE label                                                         -->
+<!--                                               WITH label Dark Angels Assault Armour                              -->
 <!--       + For LAP_Armour_DarkAngels_Terminator update description                                                  -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
@@ -24,14 +28,32 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_DarkAngels_Armor REPLACE label                                                            -->
+<!--                                            WITH label Dark Angels Power Armour                                   -->
 <!--       + For LAP_Armour_DarkAngels_Armor update description                                                       -->
+<!--       + For LAP_Armour_DarkAngels_JumpPack REPLACE label                                                         -->
+<!--                                               WITH label Dark Angels Assault Armour                              -->
 <!--       + For LAP_Armour_DarkAngels_JumpPack update description                                                    -->
 <!--       + For LAP_Armour_DarkAngels_Terminator update description                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/label</xpath>
+                    <value>
+                        <label>Dark Angels Power Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/description</xpath>
                     <value>
                         <description>Standard pattern Astartes Power Armour in the livery of the I Legion Dark Angels.\n\nThe Dark Angels are considered amongst the most powerful and secretive of the Loyalist Space Marine Chapters. They were the First Legion of the original 20 Space Marine Legions to be created during the First Founding of the 30th Millennium.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/label</xpath>
+                    <value>
+                        <label>Dark Angels Assault Armour</label>
                     </value>
                 </li>
 
