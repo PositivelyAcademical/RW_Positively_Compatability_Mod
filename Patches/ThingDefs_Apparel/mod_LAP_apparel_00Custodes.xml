@@ -4,13 +4,13 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For Custodian_Armor ADD tags PrestigeCombatGear                                                          -->
 <!--       + For Custodian_Terminator ADD tags PrestigeCombatGear                                                     -->
 <!--       + For Emperor_Armor ADD tags PrestigeCombatGear                                                            -->
 <!--       + For Golden_General_Armor ADD tags PrestigeCombatGear                                                     -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
 <!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
 <!--       + For Emperor_Crown ADD tags PrestigeCombatGear                                                            -->
@@ -31,7 +31,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For Custodian_Armor ADD tags PrestigeCombatGear                                                          -->
 <!--       + For Custodian_Terminator ADD tags PrestigeCombatGear                                                     -->
@@ -75,7 +75,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For Custodian_Helmet ADD tags PrestigeCombatGear                                                         -->
 <!--       + For Custodian_Terminator_Helmet ADD tags PrestigeCombatGear                                              -->
@@ -118,6 +118,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>
