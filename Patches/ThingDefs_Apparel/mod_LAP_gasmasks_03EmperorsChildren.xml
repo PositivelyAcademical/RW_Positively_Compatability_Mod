@@ -21,9 +21,10 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES - armour                                                                                         -->
 <!--       + For LAP_Armour_Emperors_Children_Power_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--       + For LAP_Armour_Emperors_Children_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                   -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35          -->
 <!--  ==============================================================================================================  -->
@@ -35,7 +36,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_Emperors_Children_Power_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets    -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets -->
@@ -55,7 +56,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_Emperors_Children_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                   -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35          -->
@@ -74,6 +75,7 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
