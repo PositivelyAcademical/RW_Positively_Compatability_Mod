@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--       + For LAP_Armour_BlackLegion_Armor REPLACE label                                                           -->
+<!--                                             WITH label Black Legion Power Armour                                 -->
+<!--       + For LAP_Armour_BlackLegion_Raptor REPLACE label                                                          -->
+<!--                                              WITH label Black Legion Assault Armour                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_BlackLegion_Armor REPLACE label                                                           -->
+<!--                                             WITH label Black Legion Power Armour                                 -->
+<!--       + For LAP_Armour_BlackLegion_Raptor REPLACE label                                                          -->
+<!--                                              WITH label Black Legion Assault Armour                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Armor"]/label</xpath>
+                    <value>
+                        <label>Black Legion Power Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Raptor"]/label</xpath>
+                    <value>
+                        <label>Black Legion Assault Armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>

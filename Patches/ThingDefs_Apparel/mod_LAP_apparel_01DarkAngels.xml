@@ -4,13 +4,13 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                              -->
 <!--       + For LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                           -->
 <!--       + For LAP_Armour_DarkAngels_Terminator ADD tags PrestigeCombatGear                                         -->
 <!--       + For LAP_Armour_Lion_Armor ADD tags PrestigeCombatGear                                                    -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
 <!--       + For LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                   -->
@@ -30,7 +30,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                              -->
 <!--       + For LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                           -->
@@ -74,7 +74,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
@@ -107,6 +107,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>

@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For WorldEaters_Armor ADD tags PrestigeCombatGear                                                        -->
 <!--       + For WorldEaters_JumpPack ADD tags PrestigeCombatGear                                                     -->
 <!--       + For WorldEaters_Apothecary_Armor ADD tags PrestigeCombatGear                                             -->
@@ -13,7 +13,7 @@
 <!--       + For Angron_Armor ADD tags PrestigeCombatGear                                                             -->
 <!--       + For WorldEaters_Kharn_Armor ADD tags PrestigeCombatGear                                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For WorldEaters_Helmet ADD tags PrestigeCombatGear                                                       -->
 <!--       + For WorldEaters_Apothecary_Helmet ADD tags PrestigeCombatGear                                            -->
 <!--       + For WorldEaters_Techmarine_Helmet ADD tags PrestigeCombatGear                                            -->
@@ -38,7 +38,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For WorldEaters_Armor ADD tags PrestigeCombatGear                                                        -->
 <!--       + For WorldEaters_JumpPack ADD tags PrestigeCombatGear                                                     -->
@@ -112,7 +112,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For WorldEaters_Helmet ADD tags PrestigeCombatGear                                                       -->
 <!--       + For WorldEaters_Apothecary_Helmet ADD tags PrestigeCombatGear                                            -->
@@ -195,6 +195,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>

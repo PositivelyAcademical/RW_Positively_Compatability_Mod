@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--       + For LAP_Armour_Emperors_Children_Power_Armor REPLACE label                                               -->
+<!--                                                         WITH label Emperor's Children Power Armour               -->
+<!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE label                                            -->
+<!--                                                            WITH label Emperor's Children Sergeants' Armour       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--       + For LAP_Armour_Emperors_Children_Helmet REPLACE label                                                    -->
+<!--                                                    WITH label Emperor's Children Helmet                          -->
+<!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                           -->
+<!--                                                             WITH label Emperor's Children Sergeants' Helmet      -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Emperors_Children_Power_Armor REPLACE label                                               -->
+<!--                                                         WITH label Emperor's Children Power Armour               -->
+<!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE label                                            -->
+<!--                                                            WITH label Emperor's Children Sergeants' Armour       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/label</xpath>
+                    <value>
+                        <label>Emperor's Children Power Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/label</xpath>
+                    <value>
+                        <label>Emperor's Children Sergeants' Armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Emperors_Children_Helmet REPLACE label                                                    -->
+<!--                                                    WITH label Emperor's Children Helmet                          -->
+<!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                           -->
+<!--                                                             WITH label Emperor's Children Sergeants' Helmet      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Helmet"]/label</xpath>
+                    <value>
+                        <label>Emperor's Children Helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/label</xpath>
+                    <value>
+                        <label>Emperor's Children Sergeants' Helmet</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>

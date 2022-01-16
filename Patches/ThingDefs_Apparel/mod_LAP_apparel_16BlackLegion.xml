@@ -4,12 +4,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear                                            -->
 <!--       + For LAP_Armour_BlackLegion_Terminator ADD tags PrestigeCombatGear                                        -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear                                            -->
 <!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear                                 -->
 <!--  ==============================================================================================================  -->
@@ -28,7 +28,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_BlackLegion_Armor ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_BlackLegion_Raptor ADD tags PrestigeCombatGear                                            -->
@@ -62,7 +62,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_BlackLegion_Helmet ADD tags PrestigeCombatGear                                            -->
 <!--       + For LAP_Armour_BlackLegion_Terminator_Helmet ADD tags PrestigeCombatGear                                 -->
@@ -85,6 +85,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>

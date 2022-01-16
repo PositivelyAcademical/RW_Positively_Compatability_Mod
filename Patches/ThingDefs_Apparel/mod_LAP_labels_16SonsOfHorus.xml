@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--       + For LAP_Armour_SOH_Armor REPLACE label                                                                   -->
+<!--                                     WITH label Sons of Horus Power Armour                                        -->
+<!--       + For LAP_Armour_SOH_Raptor REPLACE label                                                                  -->
+<!--                                      WITH label Sons of Horus Assault Armour                                     -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor REPLACE label                                                        -->
+<!--                                                WITH label Sons of Horus Apothecary Armour                        -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor REPLACE label                                                        -->
+<!--                                                WITH label Sons of Horus Techmarine Armour                        -->
+<!--       + For LAP_Armour_Horus_Armor REPLACE label                                                                 -->
+<!--                                       WITH label the Serpent's Scales                                            -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--       + For LAP_Armour_Horus_Helmet REPLACE label                                                                -->
+<!--                                        WITH label the Serpent's Head                                             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_SOH_Armor REPLACE label                                                                   -->
+<!--                                     WITH label Sons of Horus Power Armour                                        -->
+<!--       + For LAP_Armour_SOH_Raptor REPLACE label                                                                  -->
+<!--                                      WITH label Sons of Horus Assault Armour                                     -->
+<!--       + For LAP_Armour_SOH_Apothecary_Armor REPLACE label                                                        -->
+<!--                                                WITH label Sons of Horus Apothecary Armour                        -->
+<!--       + For LAP_Armour_SOH_Techmarine_Armor REPLACE label                                                        -->
+<!--                                                WITH label Sons of Horus Techmarine Armour                        -->
+<!--       + For LAP_Armour_Horus_Armor REPLACE label                                                                 -->
+<!--                                       WITH label the Serpent's Scales                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Power Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Assault Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Apothecary Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Techmarine Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/label</xpath>
+                    <value>
+                        <label>the Serpent's Scales</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Armour_Horus_Helmet REPLACE label                                                                -->
+<!--                                        WITH label the Serpent's Head                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/label</xpath>
+                    <value>
+                        <label>the Serpent's Head</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>

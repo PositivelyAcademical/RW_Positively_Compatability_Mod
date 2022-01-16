@@ -21,10 +21,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES - armour                                                                                         -->
 <!--       + For LAP_Armour_BlackLegion_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets                -->
 <!--       + For LAP_Armour_BlackLegion_Raptor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets               -->
 <!--       + For LAP_Armour_BlackLegion_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets           -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--       + For LAP_Armour_BlackLegion_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
 <!--       + For LAP_Armour_BlackLegion_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20              -->
 <!--  ==============================================================================================================  -->
@@ -36,10 +38,11 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_BlackLegion_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets                -->
 <!--       + For LAP_Armour_BlackLegion_Raptor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets               -->
+<!--       + For LAP_Armour_BlackLegion_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Armor"]/equippedStatOffsets</xpath>
@@ -55,11 +58,6 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_BlackLegion_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets           -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Terminator"]/equippedStatOffsets</xpath>
                     <value>
@@ -68,9 +66,10 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_BlackLegion_Helmet (3h) REPLACE ToxicSensitivity -1.00 with -0.35                         -->
+<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
@@ -79,11 +78,6 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_BlackLegion_Terminator_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20              -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
@@ -91,6 +85,7 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>

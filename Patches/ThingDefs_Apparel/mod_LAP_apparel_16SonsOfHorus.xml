@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For LAP_Armour_SOH_Armor ADD tags PrestigeCombatGear                                                     -->
 <!--       + For LAP_Armour_SOH_Raptor ADD tags PrestigeCombatGear                                                    -->
 <!--       + For LAP_Armour_SOH_Apothecary_Armor ADD tags PrestigeCombatGear                                          -->
@@ -12,7 +12,7 @@
 <!--       + For LAP_Armour_SOH_Terminator ADD tags PrestigeCombatGear                                                -->
 <!--       + For LAP_Armour_Horus_Armor ADD tags PrestigeCombatGear                                                   -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For LAP_Armour_SOH_Helmet ADD tags PrestigeCombatGear                                                    -->
 <!--       + For LAP_Armour_SOH_Apothecary_Helmet ADD tags PrestigeCombatGear                                         -->
 <!--       + For LAP_Armour_SOH_Techmarine_Helmet ADD tags PrestigeCombatGear                                         -->
@@ -34,7 +34,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_SOH_Armor ADD tags PrestigeCombatGear                                                     -->
 <!--       + For LAP_Armour_SOH_Raptor ADD tags PrestigeCombatGear                                                    -->
@@ -98,7 +98,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_SOH_Helmet ADD tags PrestigeCombatGear                                                    -->
 <!--       + For LAP_Armour_SOH_Apothecary_Helmet ADD tags PrestigeCombatGear                                         -->
@@ -151,6 +151,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>
