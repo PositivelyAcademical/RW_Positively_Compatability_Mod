@@ -5,13 +5,17 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
-<!--       + For LAP_Armour_BloodAngels_Armor update description                                                      -->
-<!--       + For LAP_Armour_BloodAngels_JumpPack update description                                                   -->
-<!--       + For LAP_Armour_BloodAngels_Terminator update description                                                 -->
+<!--       + For LAP_Armour_BloodAngels_Armor REPLACE label                                                           -->
+<!--                                             WITH label Blood Angels Power Armour                                 -->
+<!--       + For LAP_Armour_BloodAngels_Armor UPDATE description                                                      -->
+<!--       + For LAP_Armour_BloodAngels_JumpPack REPLACE label                                                        -->
+<!--                                                WITH label Blood Angels Assault Armour                            -->
+<!--       + For LAP_Armour_BloodAngels_JumpPack UPDATE description                                                   -->
+<!--       + For LAP_Armour_BloodAngels_Terminator UPDATE description                                                 -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
-<!--       + For LAP_Armour_BloodAngels_Helmet update description                                                     -->
-<!--       + For LAP_Armour_BloodAngels_Terminator_Helmet update description                                          -->
+<!--       + For LAP_Armour_BloodAngels_Helmet UPDATE description                                                     -->
+<!--       + For LAP_Armour_BloodAngels_Terminator_Helmet UPDATE description                                          -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -24,14 +28,32 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_BloodAngels_Armor update description                                                      -->
-<!--       + For LAP_Armour_BloodAngels_JumpPack update description                                                   -->
-<!--       + For LAP_Armour_BloodAngels_Terminator update description                                                 -->
+<!--       + For LAP_Armour_BloodAngels_Armor REPLACE label                                                           -->
+<!--                                             WITH label Blood Angels Power Armour                                 -->
+<!--       + For LAP_Armour_BloodAngels_Armor UPDATE description                                                      -->
+<!--       + For LAP_Armour_BloodAngels_JumpPack REPLACE label                                                        -->
+<!--                                                WITH label Blood Angels Assault Armour                            -->
+<!--       + For LAP_Armour_BloodAngels_JumpPack UPDATE description                                                   -->
+<!--       + For LAP_Armour_BloodAngels_Terminator UPDATE description                                                 -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Armor"]/label</xpath>
+                    <value>
+                        <label>Blood Angels Power Armour</label>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Armor"]/description</xpath>
                     <value>
                         <description>Standard pattern Astartes Power Armour in the livery of the IX Legion Blood Angels.\n\nThe Blood Angels are one of the 20 First Founding Legions of the Space Marines and were originally the IXth Legion before the Second Founding broke the Legiones Astartes up into separate Chapters of 1000 Space Marines. They are well-known across the galaxy for their bloodthirsty nature in battle, and feared for the curse of flawed gene-seed they carry. The Blood Angels are amongst the longest-living of the Adeptus Astartes, with some of the Chapter's Space Marines having served the Emperor of Mankind for over a thousand standard years.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_JumpPack"]/label</xpath>
+                    <value>
+                        <label>Blood Angels Assault Armour</label>
                     </value>
                 </li>
 
@@ -52,8 +74,8 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_BloodAngels_Helmet update description                                                     -->
-<!--       + For LAP_Armour_BloodAngels_Terminator_Helmet update description                                          -->
+<!--       + For LAP_Armour_BloodAngels_Helmet UPDATE description                                                     -->
+<!--       + For LAP_Armour_BloodAngels_Terminator_Helmet UPDATE description                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Helmet"]/description</xpath>
@@ -69,6 +91,7 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
