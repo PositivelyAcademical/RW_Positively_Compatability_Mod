@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--       + For Custodian_Armor REPLACE label                                                                        -->
+<!--                                WITH label Custodes Power Armour                                                  -->
+<!--       + For Custodian_Terminator REPLACE label                                                                   -->
+<!--                                     WITH label Custodes Allarus Terminator Armour                                -->
+<!--       + For Golden_General_Armor REPLACE label                                                                   -->
+<!--                                     WITH label Captain-General's Power Armour                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--       + For Custodian_Helmet REPLACE label                                                                       -->
+<!--                                 WITH label Custodes Helmet                                                       -->
+<!--       + For Custodian_Terminator_Helmet REPLACE label                                                            -->
+<!--                                            WITH label Custodes Allarus Terminator Helmet                         -->
+<!--       + For Golden_General_Helmet REPLACE label                                                                  -->
+<!--                                      WITH label Captain-General's Helm                                           -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armour                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Armor REPLACE label                                                                        -->
+<!--                                WITH label Custodes Power Armour                                                  -->
+<!--       + For Custodian_Terminator REPLACE label                                                                   -->
+<!--                                     WITH label Custodes Allarus Terminator Armour                                -->
+<!--       + For Golden_General_Armor REPLACE label                                                                   -->
+<!--                                     WITH label Captain-General's Power Armour                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/label</xpath>
+                    <value>
+                        <label>Custodes Power Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/label</xpath>
+                    <value>
+                        <label>Custodes Allarus Terminator Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/label</xpath>
+                    <value>
+                        <label>Captain-General's Power Armour</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - helmets                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--       + For Custodian_Helmet REPLACE label                                                                       -->
+<!--                                 WITH label Custodes Helmet                                                       -->
+<!--       + For Custodian_Terminator_Helmet REPLACE label                                                            -->
+<!--                                            WITH label Custodes Allarus Terminator Helmet                         -->
+<!--       + For Golden_General_Helmet REPLACE label                                                                  -->
+<!--                                      WITH label Captain-General's Helm                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/label</xpath>
+                    <value>
+                        <label>Custodes Helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/label</xpath>
+                    <value>
+                        <label>Custodes Allarus Terminator Helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/label</xpath>
+                    <value>
+                        <label>Captain-General's Helm</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
