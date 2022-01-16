@@ -6,28 +6,31 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - mechanised weapons                                                                             -->
 <!--       + For LAP_WEAP_ChainSword REPLACE label                                                                    -->
-<!--                                    WITH label chainsword (Thunder Edge pattern)                                  -->
+<!--                                    WITH label chainsword (Proteus pattern)                                       -->
 <!--       + For LAP_WEAP_ChainAxe REPLACE label                                                                      -->
-<!--                                  WITH label chainaxe (Charatran pattern)                                         -->
+<!--                                  WITH label chainaxe                                                             -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - power weapons                                                                                  -->
 <!--       + For LAP_WEAP_PowerSword REPLACE label                                                                    -->
 <!--                                    WITH label power sword (Proteus pattern)                                      -->
 <!--       + For LAP_WEAP_PowerSword UPDATE description                                                               -->
 <!--       + For LAP_WEAP_PowerAxe REPLACE label                                                                      -->
-<!--                                  WITH label power axe (Mars-Proteus pattern)                                     -->
+<!--                                  WITH label power axe (Proteus pattern)                                          -->
 <!--       + For LAP_WEAP_PowerAxe UPDATE description                                                                 -->
 <!--       + For LAP_WEAP_LightningClaw REPLACE label                                                                 -->
-<!--                                       WITH label lightning claws (Crusade pattern)                               -->
+<!--                                       WITH label lightning claws (Proteus pattern)                               -->
 <!--       + For LAP_WEAP_LightningClaw UPDATE description                                                            -->
 <!--       + For LAP_WEAP_PowerFist REPLACE label                                                                     -->
-<!--                                   WITH label power fist (Solarite pattern)                                       -->
+<!--                                   WITH label power fist (Proteus pattern)                                        -->
 <!--       + For LAP_WEAP_ChainFist REPLACE label                                                                     -->
 <!--                                   WITH label chain fist                                                          -->
+<!--       + For LAP_WEAP_ThunderHammer REPLACE label                                                                 -->
+<!--                                       WITH label thunder hammer                                                  -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL CASES - special weapons                                                                                -->
-<!--       + For LAP_WEAP_GuardianSpear REPLACE label                                                                 -->
-<!--                                       WITH label guardian spear (bolt caster)                                    -->
+<!--       + For LAP_WEAP_GuardianSpear IGNORE label (guardian spear)                                                 -->
+<!--       + For LAP_WEAP_SentinelBlade REPLACE label                                                                 -->
+<!--                                       WITH label sentinel blade                                                  -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -40,21 +43,21 @@
 <!--     + ALL CASES - mechanised weapons                                                                             -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_WEAP_ChainSword REPLACE label                                                                    -->
-<!--                                    WITH label chainsword (Thunder Edge pattern)                                  -->
+<!--                                    WITH label chainsword (Proteus pattern)                                       -->
 <!--       + For LAP_WEAP_ChainAxe REPLACE label                                                                      -->
-<!--                                  WITH label chainaxe (Charatran pattern)                                         -->
+<!--                                  WITH label chainaxe                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/label</xpath>
                     <value>
-                        <label>chainsword (Thunder Edge pattern)</label>
+                        <label>chainsword (Proteus pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/label</xpath>
                     <value>
-                        <label>chainaxe (Charatran pattern)</label>
+                        <label>chainaxe</label>
                     </value>
                 </li>
 
@@ -64,14 +67,17 @@
 <!--                                    WITH label power sword (Proteus pattern)                                      -->
 <!--       + For LAP_WEAP_PowerSword UPDATE description                                                               -->
 <!--       + For LAP_WEAP_PowerAxe REPLACE label                                                                      -->
-<!--                                  WITH label power axe (Mars-Proteus pattern)                                     -->
+<!--                                  WITH label power axe (Proteus pattern)                                          -->
+<!--       + For LAP_WEAP_PowerAxe UPDATE description                                                                 -->
 <!--       + For LAP_WEAP_LightningClaw REPLACE label                                                                 -->
-<!--                                       WITH label lightning claws (Crusade pattern)                               -->
+<!--                                       WITH label lightning claws (Proteus pattern)                               -->
 <!--       + For LAP_WEAP_LightningClaw UPDATE description                                                            -->
 <!--       + For LAP_WEAP_PowerFist REPLACE label                                                                     -->
-<!--                                   WITH label power fist (Solarite pattern)                                       -->
+<!--                                   WITH label power fist (Proteus pattern)                                        -->
 <!--       + For LAP_WEAP_ChainFist REPLACE label                                                                     -->
 <!--                                   WITH label chain fist                                                          -->
+<!--       + For LAP_WEAP_ThunderHammer REPLACE label                                                                 -->
+<!--                                       WITH label thunder hammer                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/label</xpath>
@@ -90,21 +96,21 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/label</xpath>
                     <value>
-                        <label>power axe (Mars-Proteus pattern)</label>
+                        <label>power axe (Proteus pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/label</xpath>
                     <value>
-                        <label>lightning claws (Crusade pattern)</label>
+                        <label>lightning claws (Proteus pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/label</xpath>
                     <value>
-                        <label>power fist (Solarite pattern)</label>
+                        <label>power fist (Proteus pattern)</label>
                     </value>
                 </li>
 
@@ -115,19 +121,27 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES - special weapons                                                                                -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_GuardianSpear REPLACE label                                                                 -->
-<!--                                       WITH label guardian spear (bolt caster)                                    -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/label</xpath>
                     <value>
-                        <label>guardian spear (bolt caster)</label>
+                        <label>thunder hammer</label>
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL CASES - special weapons                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_SentinelBlade REPLACE label                                                                 -->
+<!--                                       WITH label sentinel blade                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/label</xpath>
+                    <value>
+                        <label>sentinel blade</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
