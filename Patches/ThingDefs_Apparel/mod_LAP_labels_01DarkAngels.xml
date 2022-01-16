@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES - armour                                                                                         -->
 <!--       + For LAP_Armour_DarkAngels_Armor REPLACE label                                                            -->
 <!--                                            WITH label Dark Angels Power Armour                                   -->
 <!--       + For LAP_Armour_DarkAngels_Armor UPDATE description                                                       -->
@@ -13,7 +13,7 @@
 <!--                                               WITH label Dark Angels Assault Armour                              -->
 <!--       + For LAP_Armour_DarkAngels_Terminator update description                                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--       + For LAP_Armour_DarkAngels_Helmet update description                                                      -->
 <!--       + For LAP_Armour_DarkAngels_Terminator_Helmet update description                                           -->
 <!--  ==============================================================================================================  -->
@@ -26,7 +26,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
+<!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_DarkAngels_Armor REPLACE label                                                            -->
 <!--                                            WITH label Dark Angels Power Armour                                   -->
@@ -72,7 +72,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
+<!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_DarkAngels_Helmet update description                                                      -->
 <!--       + For LAP_Armour_DarkAngels_Terminator_Helmet update description                                           -->
@@ -91,6 +91,7 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
