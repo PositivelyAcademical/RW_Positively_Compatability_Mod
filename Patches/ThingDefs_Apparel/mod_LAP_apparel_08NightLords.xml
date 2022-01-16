@@ -4,13 +4,13 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For LAP_Armour_NightLords_Armor ADD tags PrestigeCombatGear                                              -->
 <!--       + For LAP_Armour_NightLords_Raptor ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_NightLords_Terminator ADD tags PrestigeCombatGear                                         -->
 <!--       + For LAP_Armour_Curze_Armor ADD tags PrestigeCombatGear                                                   -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For LAP_Armour_NightLords_Helmet ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_NightLords_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
 <!--  ==============================================================================================================  -->
@@ -29,7 +29,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_NightLords_Armor ADD tags PrestigeCombatGear                                              -->
 <!--       + For LAP_Armour_NightLords_Raptor ADD tags PrestigeCombatGear                                             -->
@@ -73,7 +73,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_NightLords_Helmet ADD tags PrestigeCombatGear                                             -->
 <!--       + For LAP_Armour_NightLords_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
@@ -96,6 +96,7 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>
