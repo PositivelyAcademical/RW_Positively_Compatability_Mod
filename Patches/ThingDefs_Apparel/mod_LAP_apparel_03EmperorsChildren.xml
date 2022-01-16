@@ -4,11 +4,11 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--       + For LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                 -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                              -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--       + For LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                      -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                             -->
 <!--  ==============================================================================================================  -->
@@ -27,7 +27,7 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty                                                                                     -->
+<!--     + Requires MATCH Royalty - armour                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                 -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                              -->
@@ -51,7 +51,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty (cont)                                                                              -->
+<!--     + Requires MATCH Royalty - helmets                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                      -->
 <!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                             -->
@@ -78,6 +78,7 @@
                     </match>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
