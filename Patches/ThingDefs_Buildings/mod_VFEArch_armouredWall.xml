@@ -19,6 +19,21 @@
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
 <!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armoured door                                                                                  -->
+<!--       + For VFEArch_ArmoredDoor REPLACE label                                                                    -->
+<!--                                    WITH label armoured door                                                      -->
+<!--       + For VFEArch_ArmoredDoor REPLACE description                                                              -->
+<!--                                    WITH description s/{a|A}rmor/{a|A}rmour/g                                     -->
+<!--       + For VFEArch_ArmoredDoor AFTER statBases                                                                  -->
+<!--                                INSERT costList Steel 50                                                          -->
+<!--       + For VFEArch_ArmoredDoor IN stuffCategories                                                               -->
+<!--                                ADD li Stony                                                                      -->
+<!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
+<!--                                    WITH costStuffCount 25                                                        -->
+<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Furniture Expanded - Architect</li>
@@ -82,6 +97,70 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Machining</li>
+                            <li>MicroelectronicsBasics</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armoured door                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_ArmoredDoor REPLACE label                                                                    -->
+<!--                                    WITH label armoured door                                                      -->
+<!--       + For VFEArch_ArmoredDoor REPLACE description                                                              -->
+<!--                                    WITH description s/{a|A}rmor/{a|A}rmour/g                                     -->
+<!--       + For VFEArch_ArmoredDoor AFTER statBases                                                                  -->
+<!--                                INSERT costList Steel 50                                                          -->
+<!--       + For VFEArch_ArmoredDoor IN stuffCategories                                                               -->
+<!--                                ADD li Stony                                                                      -->
+<!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
+<!--                                    WITH costStuffCount 25                                                        -->
+<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/label</xpath>
+                    <value>
+                        <label>armoured door</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/description</xpath>
+                    <value>
+                        <description>Divides rooms. Armoured doors must be manually opened, which slows people down. Armoured doors are nearly entirely blast resistant and barely take damage from breaching methods.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/statBases</xpath>
+                    <value>
+                        <costList>
+                            <Steel>50</Steel>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/stuffCategories</xpath>
+                    <value>
+                        <li>Stony</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>25</costStuffCount>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Machining</li>
