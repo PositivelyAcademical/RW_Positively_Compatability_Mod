@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - reinforced wall                                                                                -->
+<!--       + For Reinforced_WallAT REPLACE description                                                                -->
+<!--                                  WITH description ... apend: Reinforced walls are neary entirely blast           -->
+<!--                                                            resistant and barely take damage from breaching       -->
+<!--                                                            methods.                                              -->
+<!--       + For Reinforced_WallAT statBases REPLACE MaxHitPoints                                                     -->
+<!--                                            WITH MaxHitPoints 2000                                                -->
+<!--       + For Reinforced_WallAT statBases REPLACE Flammability                                                     -->
+<!--                                            WITH Flammability 0                                                   -->
+<!--       + For Reinforced_WallAT IN .                                                                               -->
+<!--                              ADD damageMultipliers li damageDef Bomb                                             -->
+<!--                                                       multiplier 0.05                                            -->
+<!--                                                    li damageDef Thump                                            -->
+<!--                                                       multiplier 0.05                                            -->
+<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites li Machining                                         -->
+<!--                                                             li SpacerFurniture                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH SimpleConcrete - reinforced wall                                                                     -->
+<!--       + For Reinforced_WallAT AFTER statBases                                                                    -->
+<!--                                INSERT costList WDBlocksConcrete 10                                               -->
+<!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
+<!--                                    WITH costStuffCount 5                                                         -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - reinforced wall                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_WallAT REPLACE description                                                                -->
+<!--                                  WITH description ... apend: Reinforced walls are neary entirely blast           -->
+<!--                                                            resistant and barely take damage from breaching       -->
+<!--                                                            methods.                                              -->
+<!--       + For Reinforced_WallAT statBases REPLACE MaxHitPoints                                                     -->
+<!--                                            WITH MaxHitPoints 2000                                                -->
+<!--       + For Reinforced_WallAT statBases REPLACE Flammability                                                     -->
+<!--                                            WITH Flammability 0                                                   -->
+<!--       + For Reinforced_WallAT IN .                                                                               -->
+<!--                              ADD damageMultipliers li damageDef Bomb                                             -->
+<!--                                                       multiplier 0.05                                            -->
+<!--                                                    li damageDef Thump                                            -->
+<!--                                                       multiplier 0.05                                            -->
+<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites li Machining                                         -->
+<!--                                                             li SpacerFurniture                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/description</xpath>
+                    <value>
+                        <description>A reinforced impassable wall, created by layering materials over eachother. Capable of holding up a roof. Reinforced walls are neary entirely blast resistant and barely take damage from breaching methods.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/statBases/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>2000</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/statBases/Flammability</xpath>
+                    <value>
+                        <Flammability>0</Flammability>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]</xpath>
+                    <value>
+                        <damageMultipliers>
+                            <li>
+                                <damageDef>Bomb</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                            <li>
+                                <damageDef>Thump</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                        </damageMultipliers>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Machining</li>
+                            <li>SpacerFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
