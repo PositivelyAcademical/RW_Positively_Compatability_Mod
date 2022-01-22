@@ -31,7 +31,12 @@
 <!--     + NO_MATCH SimpleConcrete - reinforced wall                                                                  -->
 <!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
 <!--                                    WITH costStuffCount 20                                                        -->
-<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH Vanilla Embrasures - reinforced embrasures                                                           -->
+<!--       + For Reinforced_Embrasure statBases REPLACE MaxHitPoints                                                  -->
+<!--                                               WITH MaxHitPoints 1600                                             -->
+<!--       + For Reinforced_Embrasure statBases REPLACE Beauty                                                        -->
+<!--                                               WITH Beauty -2                                                     -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -161,6 +166,40 @@
 <!--  ==============================================================================================================  -->
                         </operations>
                     </nomatch>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Embrasures</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH Vanilla Embrasures - reinforced embrasures                                                           -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_Embrasure statBases REPLACE MaxHitPoints                                                  -->
+<!--                                               WITH MaxHitPoints 1600                                             -->
+<!--       + For Reinforced_Embrasure statBases REPLACE Beauty                                                        -->
+<!--                                               WITH Beauty -2                                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_Embrasure"]/statBases/MaxHitPoints</xpath>
+                                <value>
+                                    <MaxHitPoints>1600</MaxHitPoints>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_Embrasure"]/statBases/Beauty</xpath>
+                                <value>
+                                    <Beauty>-2</Beauty>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
                 </li>
 
             </operations>
