@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - rockcrete                                                                                      -->
+<!--       + For WDBlocksConcrete REPLACE label                                                                       -->
+<!--                                 WITH label rockcrete blocks                                                      -->
+<!--       + For WDBlocksConcrete REPLACE description                                                                 -->
+<!--                                 WITH description Blocks of reinforced concrete, also known as rockcrete. A very  -->
+<!--                                                    strong and durable material.                                  -->
+<!--       + For WDBlocksConcrete stuffProps REPLACE stuffAdjective                                                   -->
+<!--                                            WITH stuffAdjective rockcrete                                         -->
+<!--       + For WDBlocksConcrete stuffProps statFactors REPLACE MaxHitPoints                                         -->
+<!--                                                         WITH MaxHitPoints 2.25                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[WD] Simple Concrete</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - rockcrete                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For WDBlocksConcrete REPLACE label                                                                       -->
+<!--                                 WITH label rockcrete blocks                                                      -->
+<!--       + For WDBlocksConcrete REPLACE description                                                                 -->
+<!--                                 WITH description Blocks of reinforced concrete, also known as rockcrete. A very  -->
+<!--                                                    strong and durable material.                                  -->
+<!--       + For WDBlocksConcrete stuffProps REPLACE stuffAdjective                                                   -->
+<!--                                            WITH stuffAdjective rockcrete                                         -->
+<!--       + For WDBlocksConcrete stuffProps statFactors REPLACE MaxHitPoints                                         -->
+<!--                                                         WITH MaxHitPoints 2.25                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/label</xpath>
+                    <value>
+                        <label>rockcrete</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/description</xpath>
+                    <value>
+                        <description>Blocks of reinforced concrete, also known as rockcrete. A very strong and durable material.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps/stuffAdjective</xpath>
+                    <value>
+                        <stuffAdjective>rockcrete</stuffAdjective>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>2.25</MaxHitPoints>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
