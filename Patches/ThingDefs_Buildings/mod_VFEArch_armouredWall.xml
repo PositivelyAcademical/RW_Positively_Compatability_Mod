@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armoured wall                                                                                  -->
+<!--       + For VFEArch_ArmoredWall REPLACE label                                                                    -->
+<!--                                    WITH label armoured wall                                                      -->
+<!--       + For VFEArch_ArmoredWall REPLACE description                                                              -->
+<!--                                    WITH description s/{a|A}rmor/{a|A}rmour/g                                     -->
+<!--       + For VFEArch_ArmoredWall AFTER statBases                                                                  -->
+<!--                                INSERT costList Steel 10                                                          -->
+<!--       + For VFEArch_ArmoredWall IN stuffCategories                                                               -->
+<!--                                ADD li Stony                                                                      -->
+<!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
+<!--                                    WITH costStuffCount 5                                                         -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - armoured wall                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_ArmoredWall REPLACE label                                                                    -->
+<!--                                    WITH label armoured wall                                                      -->
+<!--       + For VFEArch_ArmoredWall REPLACE description                                                              -->
+<!--                                    WITH description s/{a|A}rmor/{a|A}rmour/g                                     -->
+<!--       + For VFEArch_ArmoredWall AFTER statBases                                                                  -->
+<!--                                INSERT costList Steel 10                                                          -->
+<!--       + For VFEArch_ArmoredWall IN stuffCategories                                                               -->
+<!--                                ADD li Stony                                                                      -->
+<!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
+<!--                                    WITH costStuffCount 5                                                         -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/label</xpath>
+                    <value>
+                        <label>armoured wall</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/description</xpath>
+                    <value>
+                        <description>An impassable, heavy wall with multiple layers of armour. Nearly completely resistant to explosives and any breaching tools.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/statBases</xpath>
+                    <value>
+                        <costList>
+                            <Steel>10</Steel>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/stuffCategories</xpath>
+                    <value>
+                        <li>Stony</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>5</costStuffCount>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Machining</li>
+                            <li>MicroelectronicsBasics</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
