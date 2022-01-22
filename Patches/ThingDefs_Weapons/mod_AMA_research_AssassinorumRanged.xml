@@ -4,11 +4,11 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - slug and auto weapons                                                                          -->
+<!--     + ALL_CASES - slug and auto weapons                                                                          -->
 <!--       + For OGI_Gun_ExitusPistol NO_CHANGE                                                                       -->
 <!--       + For OGI_Gun_ExitusRifle NO_CHANGE                                                                        -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - bolt weapons                                                                                   -->
+<!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--       + For OGI_Gun_ExecutionerPistol REPLACE researchPrerequisites                                              -->
 <!--                                          WITH researchPrerequisites OG_Assassinorum_Tech_Weapons_Eversor         -->
 <!--  ==============================================================================================================  -->
@@ -20,7 +20,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - bolt weapons                                                                                   -->
+<!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--  ==============================================================================================================  -->
 <!--       + For OGI_Gun_ExecutionerPistol REPLACE researchPrerequisites                                              -->
 <!--                                          WITH researchPrerequisites OG_Assassinorum_Tech_Weapons_Eversor         -->
