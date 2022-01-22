@@ -26,7 +26,11 @@
 <!--       + For Reinforced_WallAT AFTER statBases                                                                    -->
 <!--                                INSERT costList WDBlocksConcrete 10                                               -->
 <!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
-<!--                                    WITH costStuffCount 5                                                         -->
+<!--                                    WITH costStuffCount 10                                                        -->
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH SimpleConcrete - reinforced wall                                                                  -->
+<!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
+<!--                                    WITH costStuffCount 20                                                        -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -103,8 +107,62 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[WD] Simple Concrete</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
 
 <!--  ==============================================================================================================  -->
+<!--     + MATCH SimpleConcrete - reinforced wall                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_WallAT AFTER statBases                                                                    -->
+<!--                                INSERT costList WDBlocksConcrete 10                                               -->
+<!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
+<!--                                    WITH costStuffCount 10                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/statBases</xpath>
+                    <value>
+                        <costList>
+                            <WDBlocksConcrete>10</WDBlocksConcrete>
+                        </costList>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>10</costStuffCount>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH SimpleConcrete - reinforced wall                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
+<!--                                    WITH costStuffCount 20                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>20</costStuffCount>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </nomatch>
+                </li>
+
             </operations>
         </match>
     </Operation>
