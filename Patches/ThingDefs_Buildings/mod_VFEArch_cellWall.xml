@@ -24,6 +24,12 @@
 <!--                                                        li damageDef Thump                                        -->
 <!--                                                           multiplier 0.2                                         -->
 <!--  ==============================================================================================================  -->
+<!--     + MATCH Doors Expanded - all things                                                                          -->
+<!--       + For VFEArch_CellWall REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--       + For VFEArch_CellDoor REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Furniture Expanded - Architect</li>
@@ -109,6 +115,44 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Doors Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH Doors Expanded - all things                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_CellWall REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--       + For VFEArch_CellDoor REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_PrisonDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_PrisonDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
             </operations>
         </match>
     </Operation>
