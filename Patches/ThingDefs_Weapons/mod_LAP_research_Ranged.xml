@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - slug and auto weapons                                                                          -->
+<!--       + For LAP_WEAP_AutoCannon REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites LAP_Tech_Basic                                     -->
+<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
+<!--                                                               HeavyTurrets                                       -->
+<!--       + For LAP_WEAP_RAutocannon REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites LAP_Tech_Basic                                    -->
+<!--                                                                OG_Common_Tech_Weapons_Heavy                      -->
+<!--                                                                HeavyTurrets                                      -->
+<!--       + For LAP_WEAP_AssaultCannon REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites LAP_Tech_Basic                                  -->
+<!--                                                                  OG_Common_Tech_Weapons_Heavy                    -->
+<!--                                                                  MultibarrelWeapons                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - slug and auto weapons                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_AutoCannon REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites LAP_Tech_Basic                                     -->
+<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
+<!--                                                               HeavyTurrets                                       -->
+<!--       + For LAP_WEAP_RAutocannon REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites LAP_Tech_Basic                                    -->
+<!--                                                                OG_Common_Tech_Weapons_Heavy                      -->
+<!--                                                                HeavyTurrets                                      -->
+<!--       + For LAP_WEAP_AssaultCannon REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites LAP_Tech_Basic                                  -->
+<!--                                                                  OG_Common_Tech_Weapons_Heavy                    -->
+<!--                                                                  MultibarrelWeapons                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>MultibarrelWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
