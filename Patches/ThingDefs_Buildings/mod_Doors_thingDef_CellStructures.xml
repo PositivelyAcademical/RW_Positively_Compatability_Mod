@@ -47,9 +47,9 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="PH_DoorJail"]/costStuffCount</xpath>
+                    <xpath>/Defs/ThingDef[defName="PH_DoorJail"]/label</xpath>
                     <value>
-                        <costStuffCount>10</costStuffCount>
+                        <label>cell autodoor</label>
                     </value>
                 </li>
 
