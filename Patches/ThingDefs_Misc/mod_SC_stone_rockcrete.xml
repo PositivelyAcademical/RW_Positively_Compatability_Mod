@@ -38,7 +38,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/label</xpath>
                     <value>
-                        <label>rockcrete</label>
+                        <label>rockcrete blocks</label>
                     </value>
                 </li>
 
