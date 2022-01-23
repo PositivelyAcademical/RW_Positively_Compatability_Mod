@@ -52,7 +52,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VFEArch_CellWallg"]/costStuffCount</xpath>
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/costStuffCount</xpath>
                     <value>
                         <costStuffCount>10</costStuffCount>
                     </value>
