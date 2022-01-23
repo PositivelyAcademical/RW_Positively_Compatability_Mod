@@ -131,7 +131,7 @@
 <!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]researchPrerequisites</xpath>
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/researchPrerequisites</xpath>
                                 <value>
                                     <researchPrerequisites>
                                         <li>ProjectHeron_PrisonDoors</li>
@@ -140,7 +140,7 @@
                             </li>
 
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]researchPrerequisites</xpath>
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]/researchPrerequisites</xpath>
                                 <value>
                                     <researchPrerequisites>
                                         <li>ProjectHeron_PrisonDoors</li>
