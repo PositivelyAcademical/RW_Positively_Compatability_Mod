@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - cell wall                                                                                      -->
+<!--       + For VFEArch_CellWall statBases REPLACE MaxHitPoints                                                      -->
+<!--                                           WITH MaxHitPoints 550                                                  -->
+<!--       + For VFEArch_CellWall REPLACE costStuffCount                                                              -->
+<!--                                 WITH costStuffCount 10                                                           -->
+<!--       + For VFEArch_CellWall REPLACE damageMultipliers                                                           -->
+<!--                                 WITH damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.5                                         -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.2                                         -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - cell door                                                                                      -->
+<!--       + For VFEArch_CellDoor statBases REPLACE MaxHitPoints                                                      -->
+<!--                                           WITH MaxHitPoints 200                                                  -->
+<!--       + For VFEArch_CellDoor REPLACE damageMultipliers                                                           -->
+<!--                                 WITH damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.5                                         -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.2                                         -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH Doors Expanded - all things                                                                          -->
+<!--       + For VFEArch_CellWall REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--       + For VFEArch_CellDoor REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - cell wall                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_CellWall statBases REPLACE MaxHitPoints                                                      -->
+<!--                                           WITH MaxHitPoints 550                                                  -->
+<!--       + For VFEArch_CellWall REPLACE costStuffCount                                                              -->
+<!--                                 WITH costStuffCount 10                                                           -->
+<!--       + For VFEArch_CellWall REPLACE damageMultipliers                                                           -->
+<!--                                 WITH damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.5                                         -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.2                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/statBases/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>550</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>10</costStuffCount>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/damageMultipliers</xpath>
+                    <value>
+                        <damageMultipliers>
+                            <li>
+                                <damageDef>Bomb</damageDef>
+                                <multiplier>0.5</multiplier>
+                            </li>
+                            <li>
+                                <damageDef>Thump</damageDef>
+                                <multiplier>0.2</multiplier>
+                            </li>
+                        </damageMultipliers>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - cell door                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_CellDoor statBases REPLACE MaxHitPoints                                                      -->
+<!--                                           WITH MaxHitPoints 200                                                  -->
+<!--       + For VFEArch_CellDoor REPLACE damageMultipliers                                                           -->
+<!--                                 WITH damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.5                                         -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.2                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]/statBases/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>200</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]/damageMultipliers</xpath>
+                    <value>
+                        <damageMultipliers>
+                            <li>
+                                <damageDef>Bomb</damageDef>
+                                <multiplier>0.5</multiplier>
+                            </li>
+                            <li>
+                                <damageDef>Thump</damageDef>
+                                <multiplier>0.2</multiplier>
+                            </li>
+                        </damageMultipliers>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Doors Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH Doors Expanded - all things                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_CellWall REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--       + For VFEArch_CellDoor REPLACE researchPrerequisites                                                       -->
+<!--                                 WITH li ProjectHeron_PrisonDoors                                                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_PrisonDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_PrisonDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

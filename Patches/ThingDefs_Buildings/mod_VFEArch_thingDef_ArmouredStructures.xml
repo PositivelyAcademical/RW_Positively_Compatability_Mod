@@ -18,6 +18,8 @@
 <!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
+<!--       + For VFEArch_ArmoredWall IN .                                                                             -->
+<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armoured door                                                                                  -->
 <!--       + For VFEArch_ArmoredDoor REPLACE label                                                                    -->
@@ -33,6 +35,8 @@
 <!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
+<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
+<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -57,6 +61,8 @@
 <!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
+<!--       + For VFEArch_ArmoredWall IN .                                                                             -->
+<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/label</xpath>
@@ -105,6 +111,15 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]</xpath>
+                    <value>
+                        <modExtensions>
+                            <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+                        </modExtensions>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armoured door                                                                                  -->
 <!--  ==============================================================================================================  -->
@@ -121,6 +136,8 @@
 <!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
+<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
+<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/label</xpath>
@@ -166,6 +183,15 @@
                             <li>Machining</li>
                             <li>MicroelectronicsBasics</li>
                         </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]</xpath>
+                    <value>
+                        <modExtensions>
+                            <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+                        </modExtensions>
                     </value>
                 </li>
 
