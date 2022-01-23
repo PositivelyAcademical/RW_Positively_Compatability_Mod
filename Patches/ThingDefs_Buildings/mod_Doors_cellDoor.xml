@@ -42,7 +42,7 @@
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAttributeSet">
                     <xpath>/Defs/ThingDef[defName="PH_DoorJail"]</xpath>
-                    <attribute>ParentName</attirbute>
+                    <attribute>ParentName</attribute>
                     <value>HeronMetalDoorBase</value>
                 </li>
 
