@@ -18,9 +18,25 @@
 <!--                                                     li damageDef Thump                                           -->
 <!--                                                        multiplier 0.05                                           -->
 <!--  ==============================================================================================================  -->
-<!--     + MATCH SimpleConcrete - blast door                                                                          -->
+<!--     + ALL_CASES - double blast door                                                                              -->
+<!--       + For PH_DoorBlastDoor statBases REPLACE MaxHitPoints                                                      -->
+<!--                                             WITH MaxHitPoints 1600                                               -->
+<!--       + For PH_DoorBlastDoor statBases REPLACE Flammability                                                      -->
+<!--                                             WITH Flammability 0                                                  -->
+<!--       + For PH_DoorBlastDoor IN researchPrerequisites                                                            -->
+<!--                               ADD li Autodoors                                                                   -->
+<!--                               ADD li Fabrication                                                                 -->
+<!--       + For PH_DoorBlastDoor IN .                                                                                -->
+<!--                               ADD damageMultipliers li damageDef Bomb                                            -->
+<!--                                                        multiplier 0.05                                           -->
+<!--                                                     li damageDef Thump                                           -->
+<!--                                                        multiplier 0.05                                           -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH SimpleConcrete                                                                                       -->
 <!--       + For PH_DoorBlastSingle costList REPLACE Steel                                                            -->
 <!--                                            WITH WDBlocksConcrete 40                                              -->
+<!--       + For PH_DoorBlastDoor costList REPLACE Steel                                                              -->
+<!--                                            WITH WDBlocksConcrete 80                                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -84,6 +100,60 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - double blast door                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--       + For PH_DoorBlastDoor statBases REPLACE MaxHitPoints                                                      -->
+<!--                                             WITH MaxHitPoints 1600                                               -->
+<!--       + For PH_DoorBlastDoor statBases REPLACE Flammability                                                      -->
+<!--                                             WITH Flammability 0                                                  -->
+<!--       + For PH_DoorBlastDoor IN researchPrerequisites                                                            -->
+<!--                               ADD li Autodoors                                                                   -->
+<!--                               ADD li Fabrication                                                                 -->
+<!--       + For PH_DoorBlastDoor IN .                                                                                -->
+<!--                               ADD damageMultipliers li damageDef Bomb                                            -->
+<!--                                                        multiplier 0.05                                           -->
+<!--                                                     li damageDef Thump                                           -->
+<!--                                                        multiplier 0.05                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]/statBases/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>1600</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]/statBases/Flammability</xpath>
+                    <value>
+                        <Flammability>0</Flammability>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]/researchPrerequisites</xpath>
+                    <value>
+                        <li>Autodoors</li>
+                        <li>Fabrication</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]</xpath>
+                    <value>
+                        <damageMultipliers>
+                            <li>
+                                <damageDef>Bomb</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                            <li>
+                                <damageDef>Thump</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                        </damageMultipliers>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>[WD] Simple Concrete</li>
@@ -92,15 +162,24 @@
                         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + MATCH SimpleConcrete - blast door                                                                          -->
+<!--     + MATCH SimpleConcrete                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--       + For PH_DoorBlastSingle costList REPLACE Steel                                                            -->
 <!--                                            WITH WDBlocksConcrete 40                                              -->
+<!--       + For PH_DoorBlastDoor costList REPLACE Steel                                                              -->
+<!--                                            WITH WDBlocksConcrete 80                                              -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="PH_DoorBlastSingle"]/costList/Steel</xpath>
                                 <value>
                                     <WDBlocksConcrete>40</WDBlocksConcrete>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]/costList/Steel</xpath>
+                                <value>
+                                    <WDBlocksConcrete>80</WDBlocksConcrete>
                                 </value>
                             </li>
 
