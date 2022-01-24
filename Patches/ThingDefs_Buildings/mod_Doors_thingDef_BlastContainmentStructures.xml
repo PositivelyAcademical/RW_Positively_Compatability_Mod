@@ -11,6 +11,7 @@
 <!--                                             WITH Flammability 0                                                  -->
 <!--       + For PH_DoorBlastSingle IN researchPrerequisites                                                          -->
 <!--                               ADD li Autodoors                                                                   -->
+<!--                               ADD li Fabrication                                                                 -->
 <!--       + For PH_DoorBlastSingle IN .                                                                              -->
 <!--                               ADD damageMultipliers li damageDef Bomb                                            -->
 <!--                                                        multiplier 0.05                                           -->
@@ -37,6 +38,7 @@
 <!--                                             WITH Flammability 0                                                  -->
 <!--       + For PH_DoorBlastSingle IN researchPrerequisites                                                          -->
 <!--                               ADD li Autodoors                                                                   -->
+<!--                               ADD li Fabrication                                                                 -->
 <!--       + For PH_DoorBlastSingle IN .                                                                              -->
 <!--                               ADD damageMultipliers li damageDef Bomb                                            -->
 <!--                                                        multiplier 0.05                                           -->
@@ -61,6 +63,7 @@
                     <xpath>/Defs/ThingDef[defName="PH_DoorBlastSingle"]/researchPrerequisites</xpath>
                     <value>
                         <li>Autodoors</li>
+                        <li>Fabrication</li>
                     </value>
                 </li>
 
