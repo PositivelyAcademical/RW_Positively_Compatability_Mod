@@ -90,11 +90,21 @@
 <!--       + For LAP_Tech_Night_Lords REPLACE description                                                             -->
 <!--                                     WITH description  Allows you to create the wargear of the Night Lords        -->
 <!--                                                        Legion.                                                   -->
+<!--       + For LAP_Tech_BloodAngels REPLACE description                                                             -->
+<!--                                     WITH description  Allows you to create the wargear of the Blood Angels       -->
+<!--                                                        Legion.                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/description</xpath>
                     <value>
                         <description>Allows you to create the wargear of the Night Lords Legion.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_BloodAngels"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Blood Angels Legion.</description>
                     </value>
                 </li>
 
