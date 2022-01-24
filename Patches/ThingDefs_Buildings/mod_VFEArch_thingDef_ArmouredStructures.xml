@@ -15,9 +15,6 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 5                                                         -->
-<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites li Machining                                       -->
-<!--                                                               li MicroelectronicsBasics                          -->
 <!--       + For VFEArch_ArmoredWall IN .                                                                             -->
 <!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
@@ -32,11 +29,22 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 25                                                        -->
+<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
+<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH 'Doors Expanded'                                                                                  -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
 <!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li Machining                                       -->
 <!--                                                               li MicroelectronicsBasics                          -->
-<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
-<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH 'Doors Expanded'                                                                                     -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li ProjectHeron_BlastDoors                         -->
+<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li ProjectHeron_BlastDoors                         -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -58,9 +66,6 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 5                                                         -->
-<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites li Machining                                       -->
-<!--                                                               li MicroelectronicsBasics                          -->
 <!--       + For VFEArch_ArmoredWall IN .                                                                             -->
 <!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
@@ -101,16 +106,6 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>Machining</li>
-                            <li>MicroelectronicsBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]</xpath>
                     <value>
@@ -133,9 +128,6 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 25                                                        -->
-<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites li Machining                                       -->
-<!--                                                               li MicroelectronicsBasics                          -->
 <!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
 <!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
 <!--  ==============================================================================================================  -->
@@ -176,16 +168,6 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>Machining</li>
-                            <li>MicroelectronicsBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]</xpath>
                     <value>
@@ -196,6 +178,81 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Doors Expanded</li>
+                    </mods>
+                    <nomatch Class="PatchOperationSequence">
+                         <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH 'Doors Expanded'                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li Machining                                       -->
+<!--                                                               li MicroelectronicsBasics                          -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>Machining</li>
+                                        <li>MicroelectronicsBasics</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>Machining</li>
+                                        <li>MicroelectronicsBasics</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH 'Doors Expanded'                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li ProjectHeron_BlastDoors                         -->
+<!--       + For VFEArch_ArmoredDoor REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li ProjectHeron_BlastDoors                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_BlastDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_BlastDoors</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
             </operations>
         </match>
     </Operation>
