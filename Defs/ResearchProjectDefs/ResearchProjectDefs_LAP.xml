@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line one                                                                                       -->
+<!--       + Create ResearchProjectDef LAP_Tech_DarkAngels                                                            -->
+<!--       + Create ResearchProjectDef LAP_Tech_Unknown_II                                                            -->
+<!--       + Create ResearchProjectDef LAP_Tech_Emperors_Children                                                     -->
+<!--       + Create ResearchProjectDef LAP_Tech_Iron_Warriors                                                         -->
+<!--       + Create ResearchProjectDef LAP_Tech_White_Scars                                                           -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line two                                                                                       -->
+<!--       + Create ResearchProjectDef LAP_Tech_Space_Wolves                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Imperial_Fists                                                        -->
+<!--       + Create ResearchProjectDef LAP_Tech_BloodAngels                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Night_Lords                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Iron_Hands                                                            -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line three                                                                                     -->
+<!--       + Create ResearchProjectDef LAP_Tech_Unknown_XI                                                            -->
+<!--       + Create ResearchProjectDef LAP_Tech_World_Eaters                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Ultramarines                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Death_Guard                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Thousand_Sons                                                         -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line four                                                                                      -->
+<!--       + Create ResearchProjectDef LAP_Tech_SOH                                                                   -->
+<!--       + Create ResearchProjectDef LAP_Tech_Word_Bearers                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Salamanders                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Raven_Guard                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Alpha_Legion                                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line four                                                                                      -->
+<!--       + Create ResearchProjectDef LAP_Tech_Emperor                                                               -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line one                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + Create ResearchProjectDef LAP_Tech_Unknown_II                                                            -->
+<!--       + Create ResearchProjectDef LAP_Tech_White_Scars                                                           -->
+<!--  ==============================================================================================================  -->
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Unknown_II</defName>
+        <label>+++DELETED+++</label>
+        <description>All records expunged from the library.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Unknown_II</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_White_Scars</defName>
+        <label>White Scars</label>
+        <description>Allows you to create the wargear of the White Scars Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_White_Scars</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line two                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + Create ResearchProjectDef LAP_Tech_Space_Wolves                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Imperial_Fists                                                        -->
+<!--       + Create ResearchProjectDef LAP_Tech_Iron_Hands                                                            -->
+<!--  ==============================================================================================================  -->
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Space_Wolves</defName>
+        <label>The Rout</label>
+        <description>Allows you to create the wargear of the Space Wolves Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Space_Wolves</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0.75</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Imperial_Fists</defName>
+        <label>Imperial Fists</label>
+        <description>Allows you to create the wargear of the Imperial Fists Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Imperial_Fists</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0.75</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Iron_Hands</defName>
+        <label>Iron Hands</label>
+        <description>Allows you to create the wargear of the Iron Hands Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Iron_Hands</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0.75</researchViewY>
+    </ResearchProjectDef>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line three                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--       + Create ResearchProjectDef LAP_Tech_Unknown_XI                                                            -->
+<!--       + Create ResearchProjectDef LAP_Tech_Ultramarines                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Death_Guard                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Thousand_Sons                                                         -->
+<!--  ==============================================================================================================  -->
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Unknown_XI</defName>
+        <label>+++DELETED+++</label>
+        <description>All records expunged from the library.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Unknown_XI</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Ultramarines</defName>
+        <label>Ultramarines</label>
+        <description>Allows you to create the wargear of the Ultramarines Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Ultramarines</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Death_Guard</defName>
+        <label>Death Guard</label>
+        <description>Allows you to create the wargear of the Death Guard Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Death_Guard</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Thousand_Sons</defName>
+        <label>Thousand Sons</label>
+        <description>Allows you to create the wargear of the Thousand Sons Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Thousand_Sons</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>6</researchViewX>
+        <researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line four                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + Create ResearchProjectDef LAP_Tech_Word_Bearers                                                          -->
+<!--       + Create ResearchProjectDef LAP_Tech_Salamanders                                                           -->
+<!--       + Create ResearchProjectDef LAP_Tech_Raven_Guard                                                           -->
+<!--  ==============================================================================================================  -->
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Word_Bearers</defName>
+        <label>Word Bearers</label>
+        <description>Allows you to create the wargear of the Word Bearers Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Word_Bearers</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Salamanders</defName>
+        <label>Salamanders</label>
+        <description>Allows you to create the wargear of the Salamanders Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Salamanders</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <tab>LAP_RTab</tab>
+        <defName>LAP_Tech_Raven_Guard</defName>
+        <label>Raven Guard</label>
+        <description>Allows you to create the wargear of the Raven Guard Legion.</description>
+        <baseCost>10000</baseCost>
+        <hiddenPrerequisites>
+            <li>LAP_Tech_Basic</li>
+            <li>LAP_Tech_Raven_Guard</li>
+        </hiddenPrerequisites>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+
+
+
+
+
+</Defs>
