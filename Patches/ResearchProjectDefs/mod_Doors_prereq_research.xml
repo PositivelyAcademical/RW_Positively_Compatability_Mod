@@ -29,6 +29,8 @@
 <!--       + For ProjectHeron_PrisonDoors ADD prerequisites li Smithing                                               -->
 <!--       + For ProjectHeron_RemoteDoors ADD prerequisites li Autodoors                                              -->
 <!--                                                        li MicroelectronicsBasics                                 -->
+<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
+<!--                                                       li MicroelectronicsBasics                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
@@ -44,6 +46,16 @@
                     <value>
                         <prerequisites>
                             <li>Autodoors</li>
+                            <li>MicroelectronicsBasics</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Machining</li>
                             <li>MicroelectronicsBasics</li>
                         </prerequisites>
                     </value>
