@@ -5,7 +5,16 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES                                                                                                  -->
+<!--       + For ProjectHeron_Curtains DO_NOTHING                                                                     -->
+<!--       + For ProjectHeron_Gates DO_NOTHING                                                                        -->
 <!--       + For ProjectHeron_PrisonDoors ADD prerequisites li Smithing                                               -->
+<!--       + For ProjectHeron_RemoteDoors ADD prerequisites li Autodoors                                              -->
+<!--                                                        li MicroelectronicsBasics                                 -->
+<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
+<!--                                                       li MicroelectronicsBasics                                  -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH '[WD] Simple Concrete'                                                                               -->
+<!--       + For ProjectHeron_BlastDoors prerequisites ADD li WDReinforcedConcrete                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
