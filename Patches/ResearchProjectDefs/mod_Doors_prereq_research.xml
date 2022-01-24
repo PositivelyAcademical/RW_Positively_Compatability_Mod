@@ -10,11 +10,15 @@
 <!--       + For ProjectHeron_PrisonDoors ADD prerequisites li Smithing                                               -->
 <!--       + For ProjectHeron_RemoteDoors ADD prerequisites li Autodoors                                              -->
 <!--                                                        li MicroelectronicsBasics                                 -->
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH '[WD] Simple Concrete'                                                                            -->
 <!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
 <!--                                                       li MicroelectronicsBasics                                  -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH '[WD] Simple Concrete'                                                                               -->
-<!--       + For ProjectHeron_BlastDoors prerequisites ADD li WDReinforcedConcrete                                    -->
+<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
+<!--                                                       li MicroelectronicsBasics                                  -->
+<!--                                                       li WDReinforcedConcrete                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -29,8 +33,6 @@
 <!--       + For ProjectHeron_PrisonDoors ADD prerequisites li Smithing                                               -->
 <!--       + For ProjectHeron_RemoteDoors ADD prerequisites li Autodoors                                              -->
 <!--                                                        li MicroelectronicsBasics                                 -->
-<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
-<!--                                                       li MicroelectronicsBasics                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
@@ -51,18 +53,62 @@
                     </value>
                 </li>
 
-                <li Class = "PatchOperationAdd">
-                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]</xpath>
-                    <value>
-                        <prerequisites>
-                            <li>Machining</li>
-                            <li>MicroelectronicsBasics</li>
-                        </prerequisites>
-                    </value>
-                </li>
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[WD] Simple Concrete</li>
+                    </mods>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
 
 <!--  ==============================================================================================================  -->
+<!--     + NO_MATCH '[WD] Simple Concrete'                                                                            -->
+<!--  ==============================================================================================================  -->
+<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
+<!--                                                       li MicroelectronicsBasics                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]</xpath>
+                                <value>
+                                    <prerequisites>
+                                        <li>Machining</li>
+                                        <li>MicroelectronicsBasics</li>
+                                    </prerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH '[WD] Simple Concrete'                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--       + For ProjectHeron_BlastDoors ADD prerequisites li Machining                                               -->
+<!--                                                       li MicroelectronicsBasics                                  -->
+<!--                                                       li WDReinforcedConcrete                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]</xpath>
+                                <value>
+                                    <prerequisites>
+                                        <li>Machining</li>
+                                        <li>MicroelectronicsBasics</li>
+                                        <li>WDReinforcedConcrete</li>
+                                    </prerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
             </operations>
         </match>
     </Operation>
+
 </Patch>
