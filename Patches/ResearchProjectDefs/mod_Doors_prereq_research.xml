@@ -27,12 +27,24 @@
 <!--     + ALL_CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--       + For ProjectHeron_PrisonDoors ADD prerequisites li Smithing                                               -->
+<!--       + For ProjectHeron_RemoteDoors ADD prerequisites li Autodoors                                              -->
+<!--                                                        li MicroelectronicsBasics                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
                     <value>
                         <prerequisites>
                             <li>Smithing</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Autodoors</li>
+                            <li>MicroelectronicsBasics</li>
                         </prerequisites>
                     </value>
                 </li>
