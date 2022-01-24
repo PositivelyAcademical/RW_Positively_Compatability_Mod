@@ -56,11 +56,21 @@
 <!--       + For LAP_Tech_DarkAngels REPLACE description                                                              -->
 <!--                                    WITH description  Allows you to create the wargear of the Dark Angels         -->
 <!--                                                       Legion.                                                    -->
+<!--       + For LAP_Tech_Emperors_Children REPLACE description                                                       -->
+<!--                                           WITH description  Allows you to create the wargear of the Emperor's    -->
+<!--                                                              Children Legion.                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_DarkAngels"]/description</xpath>
                     <value>
                         <description>Allows you to create the wargear of the Dark Angels Legion.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperors_Children"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Emperor's Children Legion.</description>
                     </value>
                 </li>
 
