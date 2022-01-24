@@ -20,23 +20,39 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - double blast door                                                                              -->
 <!--       + For PH_DoorBlastDoor statBases REPLACE MaxHitPoints                                                      -->
-<!--                                             WITH MaxHitPoints 1600                                               -->
+<!--                                           WITH MaxHitPoints 1600                                                 -->
 <!--       + For PH_DoorBlastDoor statBases REPLACE Flammability                                                      -->
-<!--                                             WITH Flammability 0                                                  -->
+<!--                                           WITH Flammability 0                                                    -->
 <!--       + For PH_DoorBlastDoor IN researchPrerequisites                                                            -->
-<!--                               ADD li Autodoors                                                                   -->
-<!--                               ADD li Fabrication                                                                 -->
+<!--                             ADD li Autodoors                                                                     -->
+<!--                             ADD li Fabrication                                                                   -->
 <!--       + For PH_DoorBlastDoor IN .                                                                                -->
-<!--                               ADD damageMultipliers li damageDef Bomb                                            -->
-<!--                                                        multiplier 0.05                                           -->
-<!--                                                     li damageDef Thump                                           -->
-<!--                                                        multiplier 0.05                                           -->
+<!--                             ADD damageMultipliers li damageDef Bomb                                              -->
+<!--                                                      multiplier 0.05                                             -->
+<!--                                                   li damageDef Thump                                             -->
+<!--                                                      multiplier 0.05                                             -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - thick blast door                                                                               -->
+<!--       + For PH_DoorThickBlastDoor statBases REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints 3200                                            -->
+<!--       + For PH_DoorThickBlastDoor statBases REPLACE Flammability                                                 -->
+<!--                                                WITH Flammability 0                                               -->
+<!--       + For PH_DoorThickBlastDoor IN researchPrerequisites                                                       -->
+<!--                                  ADD li Autodoors                                                                -->
+<!--                                  ADD li Fabrication                                                              -->
+<!--       + For PH_DoorThickBlastDoor IN .                                                                           -->
+<!--                                  ADD damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.05                                        -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.05                                        -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH SimpleConcrete                                                                                       -->
 <!--       + For PH_DoorBlastSingle costList REPLACE Steel                                                            -->
 <!--                                            WITH WDBlocksConcrete 40                                              -->
 <!--       + For PH_DoorBlastDoor costList REPLACE Steel                                                              -->
-<!--                                            WITH WDBlocksConcrete 80                                              -->
+<!--                                          WITH WDBlocksConcrete 80                                                -->
+<!--       + For PH_DoorThickBlastDoor costList REPLACE Steel                                                         -->
+<!--                                               WITH WDBlocksConcrete 160                                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
