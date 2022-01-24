@@ -85,6 +85,21 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 2                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_Night_Lords REPLACE description                                                             -->
+<!--                                     WITH description  Allows you to create the wargear of the Night Lords        -->
+<!--                                                        Legion.                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Night Lords Legion.</description>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
