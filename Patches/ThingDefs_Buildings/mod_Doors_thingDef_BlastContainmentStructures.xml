@@ -170,6 +170,60 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - thick blast door                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--       + For PH_DoorThickBlastDoor statBases REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints 3200                                            -->
+<!--       + For PH_DoorThickBlastDoor statBases REPLACE Flammability                                                 -->
+<!--                                                WITH Flammability 0                                               -->
+<!--       + For PH_DoorThickBlastDoor IN researchPrerequisites                                                       -->
+<!--                                  ADD li Autodoors                                                                -->
+<!--                                  ADD li Fabrication                                                              -->
+<!--       + For PH_DoorThickBlastDoor IN .                                                                           -->
+<!--                                  ADD damageMultipliers li damageDef Bomb                                         -->
+<!--                                                           multiplier 0.05                                        -->
+<!--                                                        li damageDef Thump                                        -->
+<!--                                                           multiplier 0.05                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorThickBlastDoor"]/statBases/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>3200</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorThickBlastDoor"]/statBases/Flammability</xpath>
+                    <value>
+                        <Flammability>0</Flammability>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorThickBlastDoor"]/researchPrerequisites</xpath>
+                    <value>
+                        <li>Autodoors</li>
+                        <li>Fabrication</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PH_DoorThickBlastDoor"]</xpath>
+                    <value>
+                        <damageMultipliers>
+                            <li>
+                                <damageDef>Bomb</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                            <li>
+                                <damageDef>Thump</damageDef>
+                                <multiplier>0.05</multiplier>
+                            </li>
+                        </damageMultipliers>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>[WD] Simple Concrete</li>
@@ -184,6 +238,8 @@
 <!--                                            WITH WDBlocksConcrete 40                                              -->
 <!--       + For PH_DoorBlastDoor costList REPLACE Steel                                                              -->
 <!--                                            WITH WDBlocksConcrete 80                                              -->
+<!--       + For PH_DoorThickBlastDoor costList REPLACE Steel                                                         -->
+<!--                                               WITH WDBlocksConcrete 160                                          -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="PH_DoorBlastSingle"]/costList/Steel</xpath>
@@ -196,6 +252,13 @@
                                 <xpath>/Defs/ThingDef[defName="PH_DoorBlastDoor"]/costList/Steel</xpath>
                                 <value>
                                     <WDBlocksConcrete>80</WDBlocksConcrete>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="PH_DoorThickBlastDoor"]/costList/Steel</xpath>
+                                <value>
+                                    <WDBlocksConcrete>160</WDBlocksConcrete>
                                 </value>
                             </li>
 
