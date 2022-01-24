@@ -18,9 +18,16 @@
 <!--                                                       multiplier 0.05                                            -->
 <!--                                                    li damageDef Thump                                            -->
 <!--                                                       multiplier 0.05                                            -->
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH DoorsExpanded - reinforced wall                                                                   -->
 <!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
-<!--                                  WITH researchPrerequisites li Machining                                         -->
-<!--                                                             li SpacerFurniture                                   -->
+<!--                                  WITH researchPrerequisites li Fabrication                                       -->
+<!--                                                             li Machining                                         -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH DoorsExpanded - reinforced wall                                                                      -->
+<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites li ProjectHeron_BlastDoors                           -->
+<!--                                                             li Fabrication                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH SimpleConcrete - reinforced wall                                                                     -->
 <!--       + For Reinforced_WallAT AFTER statBases                                                                    -->
@@ -61,9 +68,6 @@
 <!--                                                       multiplier 0.05                                            -->
 <!--                                                    li damageDef Thump                                            -->
 <!--                                                       multiplier 0.05                                            -->
-<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
-<!--                                  WITH researchPrerequisites li Machining                                         -->
-<!--                                                             li SpacerFurniture                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/description</xpath>
@@ -102,17 +106,60 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>Machining</li>
-                            <li>SpacerFurniture</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Doors Expanded</li>
+                    </mods>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
 
 <!--  ==============================================================================================================  -->
+<!--     + NO_MATCH DoorsExpanded - reinforced wall                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites li Fabrication                                       -->
+<!--                                                             li Machining                                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>Fabrication</li>
+                                        <li>Machining</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH DoorsExpanded - reinforced wall                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For Reinforced_WallAT REPLACE researchPrerequisites                                                      -->
+<!--                                  WITH researchPrerequisites li ProjectHeron_BlastDoors                           -->
+<!--                                                             li Fabrication                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>ProjectHeron_BlastDoors</li>
+                                        <li>Fabrication</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>[WD] Simple Concrete</li>
@@ -128,21 +175,21 @@
 <!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
 <!--                                    WITH costStuffCount 10                                                        -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationInsert">
-                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/statBases</xpath>
-                    <value>
-                        <costList>
-                            <WDBlocksConcrete>10</WDBlocksConcrete>
-                        </costList>
-                    </value>
-                </li>
+                            <li Class="PatchOperationInsert">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/statBases</xpath>
+                                <value>
+                                    <costList>
+                                        <WDBlocksConcrete>10</WDBlocksConcrete>
+                                    </costList>
+                                </value>
+                            </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
-                    <value>
-                        <costStuffCount>10</costStuffCount>
-                    </value>
-                </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
+                                <value>
+                                    <costStuffCount>10</costStuffCount>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
                         </operations>
@@ -156,12 +203,12 @@
 <!--       + For Reinforced_WallAT REPLACE costStuffCount                                                             -->
 <!--                                    WITH costStuffCount 20                                                        -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
-                    <value>
-                        <costStuffCount>20</costStuffCount>
-                    </value>
-                </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Reinforced_WallAT"]/costStuffCount</xpath>
+                                <value>
+                                    <costStuffCount>20</costStuffCount>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
                         </operations>
