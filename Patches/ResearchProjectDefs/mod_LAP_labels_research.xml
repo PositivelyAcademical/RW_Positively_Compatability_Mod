@@ -122,6 +122,19 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 4                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_SOH REPLACE description                                                                     -->
+<!--                             WITH description  Allows you to create the wargear of the Sons of Horus Legion.      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Sons of Horus Legion.</description>
+                    </value>
+                </li>
+
 
 <!--  ==============================================================================================================  -->
             </operations>
