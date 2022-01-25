@@ -279,6 +279,23 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - melta weapons                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Melta         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
 
 
 
