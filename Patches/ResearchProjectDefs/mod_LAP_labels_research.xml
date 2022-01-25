@@ -108,6 +108,20 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 3                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_Tech_World_Eaters REPLACE description                                                            -->
+<!--                                      WITH description  Allows you to create the wargear of the World Eaters      -->
+<!--                                                         Legion.                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_World_Eaters"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the World Eaters Legion.</description>
+                    </value>
+                </li>
+
 
 <!--  ==============================================================================================================  -->
             </operations>
