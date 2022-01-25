@@ -320,6 +320,10 @@
 <!--       + For LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                         -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
 <!--                                                                          li  OG_Common_Tech_Weapons_Plasma       -->
+<!--       + For LAP_WEAP_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                      -->
+<!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
+<!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
+<!--                                                                             li  OG_Common_Tech_Weapons_Heavy     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaPistol"]/recipeMaker/researchPrerequisites</xpath>
@@ -337,6 +341,17 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
                             <li>OG_Common_Tech_Weapons_Plasma</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Plasma</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
                     </value>
                 </li>
