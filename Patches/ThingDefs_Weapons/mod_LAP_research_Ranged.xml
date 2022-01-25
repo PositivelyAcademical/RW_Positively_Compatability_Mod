@@ -356,6 +356,23 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - volkite weapons                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_VolkiteSerpenta recipeMaker REPLACE researchPrerequisites                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Mechanicus_Tech_Weapons_Volkite  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteSerpenta"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Mechanicus_Tech_Weapons_Volkite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
 
 
 
