@@ -156,7 +156,32 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - flamer weapons                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_HandFlamer recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Flame       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HandFlamer"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Flame</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+
+
+
+
+
+
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
+
 </Patch>
