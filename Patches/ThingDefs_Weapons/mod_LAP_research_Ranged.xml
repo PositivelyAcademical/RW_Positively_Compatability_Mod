@@ -5,20 +5,100 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
-<!--       + For LAP_WEAP_AutoCannon REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites LAP_Tech_Basic                                     -->
-<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
-<!--                                                               HeavyTurrets                                       -->
-<!--       + For LAP_WEAP_RAutocannon REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites LAP_Tech_Basic                                    -->
-<!--                                                                OG_Common_Tech_Weapons_Heavy                      -->
-<!--                                                                HeavyTurrets                                      -->
-<!--       + For LAP_WEAP_AssaultCannon REPLACE researchPrerequisites                                                 -->
-<!--                                       WITH researchPrerequisites LAP_Tech_Basic                                  -->
-<!--                                                                  OG_Common_Tech_Weapons_Heavy                    -->
-<!--                                                                  MultibarrelWeapons                              -->
+<!--       + For LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
+<!--                                                                           li  HeavyTurrets                       -->
+<!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
+<!--                                                                            li  HeavyTurrets                      -->
+<!--       + For LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                     -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
+<!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
+<!--                                                                              li  MultibarrelWeapons              -->
 <!--  ==============================================================================================================  -->
-
+<!--     + ALL_CASES - flamer weapons                                                                                 -->
+<!--       + For LAP_WEAP_HandFlamer recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Flame       -->
+<!--       + For LAP_WEAP_Flamer recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Basic                         -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Flame           -->
+<!--       + For LAP_WEAP_HeavyFlamer recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Flame      -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - las weapons                                                                                    -->
+<!--       + For LAP_WEAP_LasCannon recipeMaker REPLACE researchPrerequisites                                         -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Laser        -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - bolt weapons                                                                                   -->
+<!--       + For LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Imperial_Tech_Weapons_Bolt      -->
+<!--       + For @LAP_Bolter_Base recipeMaker REPLACE researchPrerequisites                                           -->
+<!--                                             WITH researchPrerequisites li  LAP_Tech_Basic                        -->
+<!--                                                                        li  OG_Imperial_Tech_Weapons_Bolt         -->
+<!--       + For LAP_WEAP_CombiBolter recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Special    -->
+<!--       + For LAP_WEAP_HeavyBolter recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - melta weapons                                                                                  -->
+<!--       + For LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Melta         -->
+<!--       + For LAP_WEAP_MultiMelta recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Melta       -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - plasma weapons                                                                                 -->
+<!--       + For LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                      -->
+<!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
+<!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
+<!--       + For LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                         -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Plasma       -->
+<!--       + For LAP_WEAP_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                      -->
+<!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
+<!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
+<!--                                                                             li  OG_Common_Tech_Weapons_Heavy     -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - volkite weapons                                                                                -->
+<!--       + For LAP_WEAP_VolkiteSerpenta recipeMaker REPLACE researchPrerequisites                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Mechanicus_Tech_Weapons_Volkite  -->
+<!--       + For LAP_WEAP_VolkiteCaliver recipeMaker REPLACE researchPrerequisites                                    -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Mechanicus_Tech_Weapons_Volkite  -->
+<!--       + For LAP_WEAP_VolkiteCulverin recipeMaker REPLACE researchPrerequisites                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
+<!--                                                                          li  OG_Mechanicus_Tech_Weapons_Volkite  -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - suis generis weapons                                                                           -->
+<!--       + For LAP_WEAP_RocketLaucher recipeMaker REPLACE researchPrerequisites                                     -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
+<!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
+<!--       + For LAP_WEAP_Talon_Horus recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--       + For LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_Iron_Warriors          -->
+<!--                                                                              li  OG_Imperial_Tech_Weapons_Bolt   -->
+<!--                                                                              li  OG_Common_Tech_Weapons_Special  -->
+<!--                                                                              li  MultibarrelWeapons              -->
+<!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
@@ -29,18 +109,18 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_AutoCannon REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites LAP_Tech_Basic                                     -->
-<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
-<!--                                                               HeavyTurrets                                       -->
-<!--       + For LAP_WEAP_RAutocannon REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites LAP_Tech_Basic                                    -->
-<!--                                                                OG_Common_Tech_Weapons_Heavy                      -->
-<!--                                                                HeavyTurrets                                      -->
-<!--       + For LAP_WEAP_AssaultCannon REPLACE researchPrerequisites                                                 -->
-<!--                                       WITH researchPrerequisites LAP_Tech_Basic                                  -->
-<!--                                                                  OG_Common_Tech_Weapons_Heavy                    -->
-<!--                                                                  MultibarrelWeapons                              -->
+<!--       + For LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                        -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
+<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
+<!--                                                                           li  HeavyTurrets                       -->
+<!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
+<!--                                                                            li  HeavyTurrets                      -->
+<!--       + For LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                     -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
+<!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
+<!--                                                                              li  MultibarrelWeapons              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
