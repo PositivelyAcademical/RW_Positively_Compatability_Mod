@@ -411,6 +411,11 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--       + For LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_Iron_Warriors          -->
+<!--                                                                              li  OG_Imperial_Tech_Weapons_Bolt   -->
+<!--                                                                              li  OG_Common_Tech_Weapons_Special  -->
+<!--                                                                              li  MultibarrelWeapons              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_RocketLaucher"]/recipeMaker/researchPrerequisites</xpath>
@@ -433,10 +438,17 @@
                     </value>
                 </li>
 
-
-
-
-
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Perturabo_Weapon"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>MultibarrelWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
             </operations>
