@@ -127,6 +127,8 @@
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_Tech_SOH REPLACE description                                                                     -->
 <!--                             WITH description  Allows you to create the wargear of the Sons of Horus Legion.      -->
+<!--       + For LAP_Tech_Alpha_Legion REPLACE description                                                            -->
+<!--                                      WITH description  Allows you to create the wargear of the Alpha Legion.     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/description</xpath>
@@ -135,6 +137,12 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Alpha_Legion"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Alpha Legion.</description>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
             </operations>
