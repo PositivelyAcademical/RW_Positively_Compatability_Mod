@@ -11,10 +11,7 @@
 
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - Ranged_Weapons                                                                                 -->
-<!--  ==============================================================================================================  -->
 <!--       + Create ThingDef @POS_LAP_Gun_Makeable_Base                                                               -->
-<!--       + Create ThingDef @POS_LAP_Gun_Makeable_Crusade                                                            -->
 <!--  ==============================================================================================================  -->
     <ThingDef Name="POS_LAP_Gun_Makeable_Base" ParentName="LAP_Gun_Base" Abstract="True">
         <recipeMaker>
@@ -26,10 +23,12 @@
                 <li>Legiones_Bench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-            <researchPrerequisites />
         </recipeMaker>
     </ThingDef>
 
+<!--  ==============================================================================================================  -->
+<!--       + Create ThingDef @POS_LAP_Gun_Makeable_Crusade                                                            -->
+<!--  ==============================================================================================================  -->
     <ThingDef Name="POS_LAP_Gun_Makeable_Crusade" ParentName="LAP_Gun_Base" Abstract="True">
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

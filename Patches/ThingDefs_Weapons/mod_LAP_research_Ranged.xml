@@ -5,10 +5,10 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
-<!--       + For LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                        -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
-<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
-<!--                                                                           li  HeavyTurrets                       -->
+<!--       + For LAP_WEAP_AutoCannon @SET @ParentName  POS_LAP_Gun_Makeable_Crusade                                   -->
+<!--       + For LAP_WEAP_AutoCannon IN recipeMaker researchPrerequisites                                             -->
+<!--                                ADD li  OG_Common_Tech_Weapons_Heavy                                              -->
+<!--                                    li  HeavyTurrets                                                              -->
 <!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
 <!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
 <!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
@@ -109,9 +109,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
 <!--  ==============================================================================================================  -->
+<!--       + For LAP_WEAP_AutoCannon @SET @ParentName  POS_LAP_Gun_Makeable_Crusade                                   -->
 <!--       + For LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                        -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
-<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
+<!--                                                WITH researchPrerequisites li  OG_Common_Tech_Weapons_Heavy       -->
 <!--                                                                           li  HeavyTurrets                       -->
 <!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
 <!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
@@ -122,14 +122,17 @@
 <!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
 <!--                                                                              li  MultibarrelWeapons              -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>POS_LAP_Gun_Makeable_Crusade</value>
+                </li>
+
+                <li Class="PatchOperationADD">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>HeavyTurrets</li>
-                        </researchPrerequisites>
+                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                        <li>HeavyTurrets</li>
                     </value>
                 </li>
 
