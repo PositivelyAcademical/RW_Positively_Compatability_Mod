@@ -232,6 +232,10 @@
 <!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
 <!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
 <!--                                                                            li  OG_Common_Tech_Weapons_Special    -->
+<!--       + For LAP_WEAP_HeavyBolter recipeMaker REPLACE researchPrerequisites                                       -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
+<!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
+<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
@@ -260,6 +264,17 @@
                             <li>LAP_Tech_Basic</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
                             <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
                     </value>
                 </li>
