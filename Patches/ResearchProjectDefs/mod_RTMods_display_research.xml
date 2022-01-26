@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse RTPowerSwitch RTSolarFlareShield - ResearchTabDef                                             -->
+<!--       + For RTMods REMOVE ./                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
+<!--                                              WITH tab  POS_ResearchTab                                           -->
+<!--       +  For ResearchProject_RTBasicFuses IGNORE researchViewX  0                                                -->
+<!--       +  For ResearchProject_RTBasicFuses IGNORE researchViewY  0                                                -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
+<!--                                                   WITH tab  POS_ResearchTab                                      -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
+<!--                                                   WITH researchViewX  0.8                                        -->
+<!--       +  For ResearchProject_RTCircuitBreakers IGNORE researchViewY  0                                           -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
+<!--                                                 WITH tab  POS_ResearchTab                                        -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
+<!--                                                 WITH researchViewX  0                                            -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
+<!--                                                 WITH researchViewY  0.6                                          -->
+<!--  ==============================================================================================================  -->
+<!--     MATCH RTSolarFlareShield - ResearchProjectDef                                                                -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE tab                                                         -->
+<!--                                                 WITH tab  POS_ResearchTab                                        -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE researchViewX                                               -->
+<!--                                                 WITH researchViewX  0.8                                          -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE researchViewY                                               -->
+<!--                                                 WITH researchViewY  0.6                                          -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse RTPowerSwitch RTSolarFlareShield - ResearchTabDef                                             -->
+<!--  ==============================================================================================================  -->
+<!--       + For RTMods REMOVE ./                                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>RT Fuse</li>
+                        <li>RT Power Switch</li>
+                        <li>RT Solar Flare Shield</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ResearchTabDef[defName="RTMods"]</xpath>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
+<!--                                              WITH tab  POS_ResearchTab                                           -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
+<!--                                                   WITH tab  POS_ResearchTab                                      -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
+<!--                                                   WITH researchViewX  0.8                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>RT Fuse</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/tab</xpath>
+                                <value>
+                                    <tab>POS_ResearchTab</tab>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTCircuitBreakers"]/tab</xpath>
+                                <value>
+                                    <tab>POS_ResearchTab</tab>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTCircuitBreakers"]/researchViewX</xpath>
+                                <value>
+                                    <researchViewX>0.8</researchViewX>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
+<!--                                                 WITH tab  POS_ResearchTab                                        -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
+<!--                                                 WITH researchViewX  0                                            -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
+<!--                                                 WITH researchViewY  0.6                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>RT Power Switch</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/tab</xpath>
+                                <value>
+                                    <tab>POS_ResearchTab</tab>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewX</xpath>
+                                <value>
+                                    <researchViewX>0</researchViewX>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>0.6</researchViewY>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     MATCH RTSolarFlareShield - ResearchProjectDef                                                                -->
+<!--  ==============================================================================================================  -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE tab                                                         -->
+<!--                                                 WITH tab  POS_ResearchTab                                        -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE researchViewX                                               -->
+<!--                                                 WITH researchViewX  0.8                                          -->
+<!--       + For ResearchProject_RTMagneticShield REPLACE researchViewY                                               -->
+<!--                                                 WITH researchViewY  0.6                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>RT Solar Flare Shield</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/tab</xpath>
+                                <value>
+                                    <tab>POS_ResearchTab</tab>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/researchViewX</xpath>
+                                <value>
+                                    <researchViewX>0.8</researchViewX>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>0.6</researchViewY>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
