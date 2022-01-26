@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 5                                                                                          -->
+<!--       + For PlateArmor REPLACE label                                                                             -->
+<!--                           WITH label  plate armour                                                               -->
+<!--       + For PlateArmor REPLACE description                                                                       -->
+<!--                           WITH description  Smith suits of plate armour from metal or wood. This heavy armour    -->
+<!--                                              noticeably slowes movement, but protects effectively.               -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 5                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For PlateArmor REPLACE label                                                                             -->
+<!--                           WITH label  plate armour                                                               -->
+<!--       + For PlateArmor REPLACE description                                                                       -->
+<!--                           WITH description  Smith suits of plate armour from metal or wood. This heavy armour    -->
+<!--                                              noticeably slowes movement, but protects effectively.               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="PlateArmor"]/label</xpath>
+        <value>
+            <label>plate armour</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="PlateArmor"]/description</xpath>
+        <value>
+            <description>Smith suits of plate armour from metal or wood. This heavy armour noticeably slowes movement, but protects effectively.</description>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+</Patch>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Defs>
+
+    <ResearchTabDef>
+        <defName>POS_ResearchTab</defName>
+        <label>Assorted Mods</label>
+    </ResearchTabDef>
+
+    <ResearchTabDef>
+        <defName>POS_ResearchTab_Dev</defName>
+        <label>Dev</label>
+    </ResearchTabDef>
+
+</Defs>
