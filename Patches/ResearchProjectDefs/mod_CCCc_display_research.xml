@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
+<!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  1.2                                                       -->
+<!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  4.8                                                       -->
+<!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
+<!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  2                                                    -->
+<!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  4.8                                                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Centralized Climate Control (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
+<!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  1.2                                                       -->
+<!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  4.8                                                       -->
+<!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
+<!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  2                                                    -->
+<!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  4.8                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>1.2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.8</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.8</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
