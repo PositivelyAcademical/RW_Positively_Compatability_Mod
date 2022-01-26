@@ -4,14 +4,8 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + If MATCH 'Vanilla Furniture Expanded'                                                                      -->
-<!--       + For BasicClimateControl REPLACE prerequisites                                                            -->
-<!--                                    WITH hiddenPrerequisites li  AirConditioning                                  -->
-<!--                                                             li  TubeTelevision                                   -->
-<!--  ==============================================================================================================  -->
-<!--     + If NO_MATCH 'Vanilla Furniture Expanded'                                                                   -->
-<!--       + For BasicClimateControl REPLACE prerequisites                                                            -->
-<!--                                    WITH hiddenPrerequisites li  AirConditioning                                  -->
+<!--     + Requires MATCH Vanilla Furniture Expanded                                                                  -->
+<!--       + For BasicClimateControl ADD prerequisites TubeTelevision                                                 -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -27,53 +21,22 @@
                     </mods>
                     <match Class="PatchOperationSequence">
                         <operations>
-
 <!--  ==============================================================================================================  -->
-<!--     + If MATCH 'Vanilla Furniture Expanded'                                                                      -->
+<!--     + Requires MATCH Vanilla Furniture Expanded                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For BasicClimateControl REPLACE prerequisites                                                            -->
-<!--                                    WITH hiddenPrerequisites li  AirConditioning                                  -->
-<!--                                                             li  TubeTelevision                                   -->
+<!--       + For BasicClimateControl ADD prerequisites TubeTelevision                                                 -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
+                            <li Class = "PatchOperationAdd">
                                 <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/prerequisites</xpath>
                                 <value>
-                                    <hiddenPrerequisites>
-                                        <li>AirConditioning</li>
-                                        <li>TubeTelevision</li>
-                                    </hiddenPrerequisites>
+                                    <li>TubeTelevision</li>
                                 </value>
                             </li>
 
-<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
-
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-
-<!--  ==============================================================================================================  -->
-<!--     + If NO_MATCH 'Vanilla Furniture Expanded'                                                                   -->
-<!--  ==============================================================================================================  -->
-<!--       + For BasicClimateControl REPLACE prerequisites                                                            -->
-<!--                                    WITH hiddenPrerequisites li  AirConditioning                                  -->
-<!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/prerequisites</xpath>
-                                <value>
-                                    <hiddenPrerequisites>
-                                        <li>AirConditioning</li>
-                                    </hiddenPrerequisites>
-                                </value>
-                            </li>
-
-<!--  ==============================================================================================================  -->
-                        </operations>
-                    </nomatch>
-
                 </li>
             </operations>
         </match>
     </Operation>
-
 </Patch>
