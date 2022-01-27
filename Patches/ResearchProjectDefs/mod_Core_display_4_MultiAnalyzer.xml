@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH ExtendedProstheticsAndOrganEngineering - row 1                                                    -->
+<!--       + For Bionics REPLACE researchViewX                                                                        -->
+<!--                        WITH researchViewX  18                                                                    -->
+<!--       + For Bionics REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  0.7                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 2                                                                                          -->
+<!--       + For VitalsMonitor REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  16                                                              -->
+<!--       + For VitalsMonitor REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  1.4                                                             -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 3                                                                                          -->
+<!--       + For Cryptosleep REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  16                                                                -->
+<!--       + For Cryptosleep REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  2.1                                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 4                                                                                          -->
+<!--       + For MultiAnalyzer REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  15                                                              -->
+<!--       + For MultiAnalyzer REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.8                                                             -->
+<!--       + For Fabrication REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  17                                                                -->
+<!--       + For Fabrication REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  2.8                                                               -->
+<!--       + For AdvancedFabrication REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  20                                                        -->
+<!--       + For AdvancedFabrication REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  2.8                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 5                                                                                          -->
+<!--       + For SniperTurret REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  16                                                               -->
+<!--       + For SniperTurret REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  3.2                                                              -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 6                                                                                          -->
+<!--       + For ChargedShot REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  18                                                                -->
+<!--       + For ChargedShot REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  3.5                                                               -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 7                                                                                          -->
+<!--       + For ReconArmor REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  18                                                                 -->
+<!--       + For ReconArmor REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.2                                                                -->
+<!--       + For PoweredArmor REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  19                                                               -->
+<!--       + For PoweredArmor REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  4.2                                                              -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--     + NO_MATCH ExtendedProstheticsAndOrganEngineering - row 1                                                    -->
+<!--  ==============================================================================================================  -->
+<!--       + For Bionics REPLACE researchViewX                                                                        -->
+<!--                        WITH researchViewX  18                                                                    -->
+<!--       + For Bionics REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  0.7                                                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering</li>
+        </mods>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Bionics"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>18</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Bionics"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.7</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </nomatch>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 2                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For VitalsMonitor REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  16                                                              -->
+<!--       + For VitalsMonitor REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  1.4                                                             -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="VitalsMonitor"]/researchViewX</xpath>
+        <value>
+            <researchViewX>16</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="VitalsMonitor"]/researchViewY</xpath>
+        <value>
+            <researchViewY>1.4</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 3                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For Cryptosleep REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  16                                                                -->
+<!--       + For Cryptosleep REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  2.1                                                               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="Cryptosleep"]/researchViewX</xpath>
+        <value>
+            <researchViewX>16</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="Cryptosleep"]/researchViewY</xpath>
+        <value>
+            <researchViewY>2.1</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 4                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For MultiAnalyzer REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  15                                                              -->
+<!--       + For MultiAnalyzer REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.8                                                             -->
+<!--       + For Fabrication REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  17                                                                -->
+<!--       + For Fabrication REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  2.8                                                               -->
+<!--       + For AdvancedFabrication REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  20                                                        -->
+<!--       + For AdvancedFabrication REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  2.8                                                       -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="MultiAnalyzer"]/researchViewX</xpath>
+        <value>
+            <researchViewX>15</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="MultiAnalyzer"]/researchViewY</xpath>
+        <value>
+            <researchViewY>2.8</researchViewY>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="Fabrication"]/researchViewX</xpath>
+        <value>
+            <researchViewX>17</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="Fabrication"]/researchViewY</xpath>
+        <value>
+            <researchViewY>2.8</researchViewY>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="AdvancedFabrication"]/researchViewX</xpath>
+        <value>
+            <researchViewX>20</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="AdvancedFabrication"]/researchViewY</xpath>
+        <value>
+            <researchViewY>2.8</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 5                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For SniperTurret REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  16                                                               -->
+<!--       + For SniperTurret REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  3.2                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewX</xpath>
+        <value>
+            <researchViewX>16</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="SniperTurret"]/researchViewY</xpath>
+        <value>
+            <researchViewY>3.2</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 6                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For ChargedShot REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  18                                                                -->
+<!--       + For ChargedShot REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  3.5                                                               -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewX</xpath>
+        <value>
+            <researchViewX>18</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="ChargedShot"]/researchViewY</xpath>
+        <value>
+            <researchViewY>3.5</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - row 7                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       + For ReconArmor REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  18                                                                 -->
+<!--       + For ReconArmor REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.2                                                                -->
+<!--       + For PoweredArmor REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  19                                                               -->
+<!--       + For PoweredArmor REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  4.2                                                              -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="ReconArmor"]/researchViewX</xpath>
+        <value>
+            <researchViewX>18</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="ReconArmor"]/researchViewY</xpath>
+        <value>
+            <researchViewY>4.2</researchViewY>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="PoweredArmor"]/researchViewX</xpath>
+        <value>
+            <researchViewX>19</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="PoweredArmor"]/researchViewY</xpath>
+        <value>
+            <researchViewY>4.2</researchViewY>
+        </value>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+</Patch>
