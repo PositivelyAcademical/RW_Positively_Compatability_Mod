@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 6                                                                                         -->
+<!--       + For NobleApparel IGNORE researchViewX                                                                    -->
+<!--       + For NobleApparel REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2.1                                                              -->
+<!--       + For RoyalApparel IGNORE researchViewX                                                                    -->
+<!--       + For RoyalApparel REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2.1                                                              -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 9                                                                                         -->
+<!--       + For Harp IGNORE researchViewX                                                                            -->
+<!--       + For Harp REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  4.2                                                                      -->
+<!--       + For Harpsichord IGNORE researchViewX                                                                     -->
+<!--       + For Harpsichord REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4.2                                                               -->
+<!--       + For Piano IGNORE researchViewX                                                                           -->
+<!--       + For Piano REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  4.2                                                                     -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 6                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For NobleApparel REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2.1                                                              -->
+<!--       + For RoyalApparel REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2.1                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.1</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - line 9                                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--       + For Harp REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  4.2                                                                      -->
+<!--       + For Harpsichord REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4.2                                                               -->
+<!--       + For Piano REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  4.2                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.2</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
