@@ -9,7 +9,7 @@
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  0                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  4.8                                                      -->
+<!--                                     WITH researchViewY  3.6                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -25,7 +25,7 @@
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  0                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  4.8                                                      -->
+<!--                                     WITH researchViewY  3.6                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]</xpath>
@@ -44,7 +44,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.8</researchViewY>
+                        <researchViewY>3.6</researchViewY>
                     </value>
                 </li>
 
