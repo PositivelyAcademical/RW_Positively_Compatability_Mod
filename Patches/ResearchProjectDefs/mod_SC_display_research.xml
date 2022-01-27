@@ -4,13 +4,13 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES                                                                                                  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--       + For WDReinforcedConcrete ADD tab  POS_ResearchTab                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX 6                                                         -->
+<!--                                     WITH researchViewX  0                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY 4.8                                                       -->
+<!--                                     WITH researchViewY  3.6                                                      -->
 <!--  ==============================================================================================================  -->
-
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>[WD] Simple Concrete</li>
@@ -19,28 +19,38 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES                                                                                                  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--  ==============================================================================================================  -->
+<!--       + For WDReinforcedConcrete ADD tab  POS_ResearchTab                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX 6                                                         -->
+<!--                                     WITH researchViewX  0                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY 4.8                                                       -->
+<!--                                     WITH researchViewY  3.6                                                      -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>6</researchViewX>
+                        <researchViewX>0</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5.5</researchViewY>
+                        <researchViewY>3.6</researchViewY>
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
+
 </Patch>

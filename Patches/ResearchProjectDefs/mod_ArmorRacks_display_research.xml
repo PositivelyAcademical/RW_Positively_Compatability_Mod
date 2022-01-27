@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab                                      -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                         -->
+<!--                                                       WITH researchViewX  2                                      -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                         -->
+<!--                                                       WITH researchViewY  3                                      -->
+<!--       + For ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab                                         -->
+<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                            -->
+<!--                                                    WITH researchViewX  2.8                                       -->
+<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                            -->
+<!--                                                    WITH researchViewY  3                                         -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Armor Racks</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab                                      -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                         -->
+<!--                                                       WITH researchViewX  2                                      -->
+<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                         -->
+<!--                                                       WITH researchViewY  3                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab                                         -->
+<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                            -->
+<!--                                                    WITH researchViewX  2.8                                       -->
+<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                            -->
+<!--                                                    WITH researchViewY  3                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2.8</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
