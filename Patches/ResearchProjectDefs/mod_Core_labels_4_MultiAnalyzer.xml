@@ -64,7 +64,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="PoweredArmor"]/label</xpath>
         <value>
-            <label>recon armour</label>
+            <label>marine armour</label>
         </value>
     </Operation>
 
