@@ -7,14 +7,14 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
-<!--                                    WITH researchViewX  1.2                                                       -->
+<!--                                    WITH researchViewX  2                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  4.8                                                       -->
+<!--                                    WITH researchViewY  0                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  2                                                    -->
+<!--                                         WITH researchViewX  2.8                                                  -->
 <!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  4.8                                                  -->
+<!--                                         WITH researchViewY  0                                                    -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -29,14 +29,14 @@
 <!--  ==============================================================================================================  -->
 <!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
-<!--                                    WITH researchViewX  1.2                                                       -->
+<!--                                    WITH researchViewX  2                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  4.8                                                       -->
+<!--                                    WITH researchViewY  0                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  2                                                    -->
+<!--                                         WITH researchViewX  2.8                                                  -->
 <!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  4.8                                                  -->
+<!--                                         WITH researchViewY  0                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]</xpath>
@@ -48,14 +48,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>1.2</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.8</researchViewY>
+                        <researchViewY>0</researchViewY>
                     </value>
                 </li>
 
@@ -69,14 +69,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>2.8</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.8</researchViewY>
+                        <researchViewY>0</researchViewY>
                     </value>
                 </li>
 
