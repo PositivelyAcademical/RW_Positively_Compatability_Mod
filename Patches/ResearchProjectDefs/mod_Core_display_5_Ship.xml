@@ -6,36 +6,36 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 1                                                                                          -->
 <!--       + For ShipSensorCluster REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  23                                                          -->
+<!--                                  WITH researchViewX  24                                                          -->
 <!--       + For ShipSensorCluster  IGNORE researchViewY  0                                                           -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 2                                                                                          -->
 <!--       + For ShipComputerCore REPLACE researchViewX                                                               -->
-<!--                                 WITH researchViewX  23                                                           -->
+<!--                                 WITH researchViewX  24                                                           -->
 <!--       + For ShipComputerCore REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  1.05                                                         -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 3                                                                                          -->
 <!--       + For ShipCryptosleep REPLACE researchViewX                                                                -->
-<!--                                WITH researchViewX  23                                                            -->
+<!--                                WITH researchViewX  24                                                            -->
 <!--       + For ShipCryptosleep REPLACE researchViewY                                                                -->
 <!--                                WITH researchViewY  2.1                                                           -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 4                                                                                          -->
 <!--       + For ShipBasics REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  22                                                                 -->
+<!--                           WITH researchViewX  23                                                                 -->
 <!--       + For ShipBasics REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  2.8                                                                -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 5                                                                                          -->
 <!--       + For ShipReactor REPLACE researchViewX                                                                    -->
-<!--                            WITH researchViewX  23                                                                -->
+<!--                            WITH researchViewX  24                                                                -->
 <!--       + For ShipReactor REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  3.85                                                              -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - row 6                                                                                          -->
 <!--       + For ShipEngine REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  23                                                                 -->
+<!--                           WITH researchViewX  24                                                                 -->
 <!--       + For ShipEngine REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  4.9                                                                -->
 <!--  ==============================================================================================================  -->
@@ -45,12 +45,12 @@
 <!--     + ALL_CASES - row 1                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipSensorCluster REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  23                                                          -->
+<!--                                  WITH researchViewX  24                                                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewX</xpath>
         <value>
-            <researchViewX>23</researchViewX>
+            <researchViewX>24</researchViewX>
         </value>
     </Operation>
 
@@ -58,14 +58,14 @@
 <!--     + ALL_CASES - row 2                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipComputerCore REPLACE researchViewX                                                               -->
-<!--                                 WITH researchViewX  23                                                           -->
+<!--                                 WITH researchViewX  24                                                           -->
 <!--       + For ShipComputerCore REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  1.05                                                         -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipComputerCore"]/researchViewX</xpath>
         <value>
-            <researchViewX>23</researchViewX>
+            <researchViewX>24</researchViewX>
         </value>
     </Operation>
 
@@ -80,14 +80,14 @@
 <!--     + ALL_CASES - row 3                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipCryptosleep REPLACE researchViewX                                                                -->
-<!--                                WITH researchViewX  23                                                            -->
+<!--                                WITH researchViewX  24                                                            -->
 <!--       + For ShipCryptosleep REPLACE researchViewY                                                                -->
 <!--                                WITH researchViewY  2.1                                                           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipCryptosleep"]/researchViewX</xpath>
         <value>
-            <researchViewX>23</researchViewX>
+            <researchViewX>24</researchViewX>
         </value>
     </Operation>
 
@@ -102,14 +102,14 @@
 <!--     + ALL_CASES - row 4                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipBasics REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  22                                                                 -->
+<!--                           WITH researchViewX  23                                                                 -->
 <!--       + For ShipBasics REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  2.8                                                                -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewX</xpath>
         <value>
-            <researchViewX>22</researchViewX>
+            <researchViewX>23</researchViewX>
         </value>
     </Operation>
 
@@ -124,14 +124,14 @@
 <!--     + ALL_CASES - row 5                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipReactor REPLACE researchViewX                                                                    -->
-<!--                            WITH researchViewX  23                                                                -->
+<!--                            WITH researchViewX  24                                                                -->
 <!--       + For ShipReactor REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  3.85                                                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipReactor"]/researchViewX</xpath>
         <value>
-            <researchViewX>23</researchViewX>
+            <researchViewX>24</researchViewX>
         </value>
     </Operation>
 
@@ -146,14 +146,14 @@
 <!--     + ALL_CASES - row 6                                                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ShipEngine REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  23                                                                 -->
+<!--                           WITH researchViewX  24                                                                 -->
 <!--       + For ShipEngine REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  4.9                                                                -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="ShipEngine"]/researchViewX</xpath>
         <value>
-            <researchViewX>23</researchViewX>
+            <researchViewX>24</researchViewX>
         </value>
     </Operation>
 
