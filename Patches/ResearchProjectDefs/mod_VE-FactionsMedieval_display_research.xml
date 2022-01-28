@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - move from Main                                                               -->
+<!--    + For VFEM_HeavyCrossbow ADD tab  VanillaExpanded                                                             -->
+<!--    + For VFEM_HeavyCrossbow REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  2                                                             -->
+<!--    + For VFEM_HeavyCrossbow REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0                                                             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Medieval</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - move from Main                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFEM_HeavyCrossbow ADD tab  VanillaExpanded                                                             -->
+<!--    + For VFEM_HeavyCrossbow REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  2                                                             -->
+<!--    + For VFEM_HeavyCrossbow REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                <xpath>/Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]</xpath>
+                    <value>
+                        <tab>VanillaExpanded</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
