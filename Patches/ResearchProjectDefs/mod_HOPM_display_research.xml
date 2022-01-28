@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchTabDef)                                                                                 -->
+<!--       + For Autopsy REPLACE label                                                                                -->
+<!--                        WITH label  Medical                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef)                                                                             -->
+<!--       + For BasicAutopsy REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--       + For AdvancedAutopsy REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  1                                                             -->
+<!--       + For GlitterworldAutopsy REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  1                                                         -->
+<!--       + For AnimalAutopsy REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2                                                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Harvest Organs Post Mortem</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchTabDef)                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--       + For Autopsy REPLACE label                                                                                -->
+<!--                        WITH label  Medical                                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchTabDef[defName="Autopsy"]/label</xpath>
+                    <value>
+                        <label>Medical</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef)                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--       + For BasicAutopsy REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--       + For AdvancedAutopsy REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  1                                                             -->
+<!--       + For GlitterworldAutopsy REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  1                                                         -->
+<!--       + For AnimalAutopsy REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AnimalAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
