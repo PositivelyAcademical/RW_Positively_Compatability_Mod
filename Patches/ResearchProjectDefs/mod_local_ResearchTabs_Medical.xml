@@ -23,8 +23,8 @@
                     <defName>POS_Medical</defName>
                     <label>Medical</label>
                 </ResearchTabDef>
-            <value>
-        <match>
+            </value>
+        </match>
 
     </Operation>
 
