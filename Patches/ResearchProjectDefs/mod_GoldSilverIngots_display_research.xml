@@ -22,6 +22,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--  ==============================================================================================================  -->
+<!--       + For IngotResearch ADD tab  POS_ResearchTab                                                               -->
+<!--       + For IngotResearch REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  0                                                               -->
+<!--       + For IngotResearch REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  5.4                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]</xpath>
