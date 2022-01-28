@@ -17,7 +17,7 @@
         </mods>
 
         <match Class="PatchOperationInsert">
-            <xpath>/Defs/ResearchTabDef[defName"Main"]</xpath>
+            <xpath>/Defs/ResearchTabDef[defName="Main"]</xpath>
             <value>
                 <ResearchTabDef>
                     <defName>POS_Medical</defName>
