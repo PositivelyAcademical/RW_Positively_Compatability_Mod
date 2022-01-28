@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
+<!--    + For OGAMA_RTab REPLACE label                                                                                -->
+<!--                        WITH label  Armoury                                                                       -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchTabDef[defName="OGAMA_RTab"]/label</xpath>
+                <value>
+                       <label>Armoury</label>
+                </value>
+        </match>
+
+    </Operation>
+
+</Patch>
