@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this patch does:                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
+<!--    + For EPOE REMOVE ./                                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1                                                                        -->
+<!--    + For BasicProsthetics REPLACE tab                                                                            -->
+<!--                              WITH  tab  POS_Medical                                                              -->
+<!--    + For Prosthetics REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + For Bionics REPLACE tab                                                                                     -->
+<!--                     WITH tab  POS_Medical                                                                        -->
+<!--    + For AdvancedBionics REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--    + For RibReplacements REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For RibReplacements REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--    + For ExoskeletonSuits REPLACE tab                                                                            -->
+<!--                              WITH tab  POS_Medical                                                               -->
+<!--    + For ExoskeletonSuits REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  1                                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
+<!--    + For SurrogateOrgans REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For SurrogateOrgans REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2                                                                -->
+<!--    + For SyntheticOrgans REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For SyntheticOrgans REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2                                                                -->
+<!--    + For BionicSpine REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + For BionicSpine REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  2                                                                    -->
+<!--    + For AdvancedBionicSpine REPLACE tab                                                                         -->
+<!--                                 WITH tab  POS_Medical                                                            -->
+<!--    + For AdvancedBionicSpine REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  2                                                            -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4                                                                        -->
+<!--    + For BrainSurgery REPLACE tab                                                                                -->
+<!--                          WITH tab  POS_Medical                                                                   -->
+<!--    + For BrainSurgery REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3                                                                   -->
+<!--    + For AdvancedBrainSurgery REPLACE tab                                                                        -->
+<!--                                  WITH tab  POS_Medical                                                           -->
+<!--    + For AdvancedBrainSurgery REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3                                                           -->
+<!--    + For BionicWarfare REPLACE tab                                                                               -->
+<!--                           WITH tab  POS_Medical                                                                  -->
+<!--    + For BionicWarfare REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3                                                                  -->
+<!--    + For AdvancedBionicWarfare REPLACE tab                                                                       -->
+<!--                                   WITH tab  POS_Medical                                                          -->
+<!--    + For AdvancedBionicWarfare REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - Abstracts                                                                -->
+<!--    + For @BaseBodyPartEmpire_TierA REPLACE tab                                                                   -->
+<!--                                       WITH tab  POS_Medical                                                      -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 5                                                                    -->
+<!--    + For SpecializedLimbs REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4                                                               -->
+<!--    + For ArtificialMetabolism REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  4                                                           -->
+<!--    + For NeuralComputation REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  4                                                              -->
+<!--    + For CompactWeaponry REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  4                                                                -->
+<!--    + For VenomSynthesis REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 6                                                                    -->
+<!--    + For FleshShaping REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  5                                                                   -->
+<!--    + For HealingFactors REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  5                                                                 -->
+<!--    + For CircadianInfluence REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  5                                                             -->
+<!--    + For SkinHardening REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  5                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 7                                                                    -->
+<!--    + For MolecularAnalysis REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  6                                                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + For EPOE REMOVE ./                                                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchTabDef[defName="EPOE"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + For BasicProsthetics REPLACE tab                                                                            -->
+<!--                              WITH  tab  POS_Medical                                                              -->
+<!--    + For Prosthetics REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + For Bionics REPLACE tab                                                                                     -->
+<!--                     WITH tab  POS_Medical                                                                        -->
+<!--    + For AdvancedBionics REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicProsthetics"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Prosthetics"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Bionics"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBionics"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + For RibReplacements REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For RibReplacements REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--    + For ExoskeletonSuits REPLACE tab                                                                            -->
+<!--                              WITH tab  POS_Medical                                                               -->
+<!--    + For ExoskeletonSuits REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  1                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="RibReplacements"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="RibReplacements"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ExoskeletonSuits"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ExoskeletonSuits"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + For SurrogateOrgans REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For SurrogateOrgans REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2                                                                -->
+<!--    + For SyntheticOrgans REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + For SyntheticOrgans REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  2                                                                -->
+<!--    + For BionicSpine REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + For BionicSpine REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  2                                                                    -->
+<!--    + For AdvancedBionicSpine REPLACE tab                                                                         -->
+<!--                                 WITH tab  POS_Medical                                                            -->
+<!--    + For AdvancedBionicSpine REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  2                                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="SyntheticOrgans"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="SyntheticOrgans"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BionicSpine"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BionicSpine"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBionicSpine"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBionicSpine"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + For BrainSurgery REPLACE tab                                                                                -->
+<!--                          WITH tab  POS_Medical                                                                   -->
+<!--    + For BrainSurgery REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3                                                                   -->
+<!--    + For AdvancedBrainSurgery REPLACE tab                                                                        -->
+<!--                                  WITH tab  POS_Medical                                                           -->
+<!--    + For AdvancedBrainSurgery REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3                                                           -->
+<!--    + For BionicWarfare REPLACE tab                                                                               -->
+<!--                           WITH tab  POS_Medical                                                                  -->
+<!--    + For BionicWarfare REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3                                                                  -->
+<!--    + For AdvancedBionicWarfare REPLACE tab                                                                       -->
+<!--                                   WITH tab  POS_Medical                                                          -->
+<!--    + For AdvancedBionicWarfare REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BrainSurgery"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBrainSurgery"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBrainSurgery"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BionicWarfare"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BionicWarfare"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBionicWarfare"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedBionicWarfare"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - Abstracts                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + For @BaseBodyPartEmpire_TierA REPLACE tab                                                                   -->
+<!--                                       WITH tab  POS_Medical                                                      -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[@Name="BaseBodyPartEmpire_TierA"]/tab</xpath>
+                                <value>
+                                    <tab>POS_Medical</tab>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 5                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + For SpecializedLimbs REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4                                                               -->
+<!--    + For ArtificialMetabolism REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  4                                                           -->
+<!--    + For NeuralComputation REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  4                                                              -->
+<!--    + For CompactWeaponry REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  4                                                                -->
+<!--    + For VenomSynthesis REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4                                                                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="SpecializedLimbs"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>4</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="ArtificialMetabolism"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>4</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="NeuralComputation"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>4</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="CompactWeaponry"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>4</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="VenomSynthesis"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>4</researchViewY>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 6                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + For FleshShaping REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  5                                                                   -->
+<!--    + For HealingFactors REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  5                                                                 -->
+<!--    + For CircadianInfluence REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  5                                                             -->
+<!--    + For SkinHardening REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  5                                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="FleshShaping"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>5</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="HealingFactors"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>5</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="CircadianInfluence"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>5</researchViewY>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="SkinHardening"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>5</researchViewY>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty (ResearchProjectDef) - row 7                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + For MolecularAnalysis REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  6                                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="MolecularAnalysis"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>6</researchViewY>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
