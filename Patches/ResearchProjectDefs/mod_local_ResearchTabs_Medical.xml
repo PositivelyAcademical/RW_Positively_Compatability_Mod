@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH ExtendedProstheticsAndOrganEngineering                                                               -->
+<!--             HarvestOrgansPostMortem                                                                              -->
+<!--       + AFTER Main                                                                                               -->
+<!--             INSERT POS_Medical WITH label  Medical                                                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering</li>
+            <li>Harvest Organs Post Mortem</li>
+        </mods>
+
+        <match Class="PatchOperationInsert">
+            <xpath>/Defs/ResearchTabDef[defName"Main"]</xpath>
+            <value>
+                <ResearchTabDef>
+                    <defName>POS_Medical</defName>
+                    <label>Medical</label>
+                </ResearchTabDef>
+            <value>
+        <match>
+
+    </Operation>
+
+</Patch>
