@@ -13,7 +13,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Vanilla Weapons Expanded - Makeshift<li>
+            <li>Vanilla Weapons Expanded - Makeshift</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
