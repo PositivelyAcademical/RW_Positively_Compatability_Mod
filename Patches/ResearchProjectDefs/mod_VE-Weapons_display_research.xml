@@ -119,6 +119,43 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + For VWE_CompoundBow REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  0.62                                                             -->
+<!--    + For VWE_Tools REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  0.62                                                                   -->
+<!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  0.62                                                           -->
+<!--    + For VWE_SpecializedFirearms REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY  0.62                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_CompoundBow"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_Tools"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_SpecializedFirearms"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
 
 
 
