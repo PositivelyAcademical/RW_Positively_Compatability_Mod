@@ -23,6 +23,10 @@
 <!--                               WITH researchViewX  3                                                              -->
 <!--    + For MF_RoyalFurniture REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  4.96                                                           -->
+<!--    + For MF_WasteDisposal REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + For MF_WasteDisposal REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4.96                                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--  ==============================================================================================================  -->
@@ -71,6 +75,10 @@
 <!--                               WITH researchViewX  3                                                              -->
 <!--    + For MF_RoyalFurniture REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  4.96                                                           -->
+<!--    + For MF_WasteDisposal REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + For MF_WasteDisposal REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4.96                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewX</xpath>
@@ -109,6 +117,20 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.96</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/researchViewY</xpath>
                     <value>
                         <researchViewY>4.96</researchViewY>
                     </value>
