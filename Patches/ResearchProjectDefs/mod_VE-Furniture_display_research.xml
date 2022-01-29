@@ -9,6 +9,10 @@
 <!--                               WITH researchViewX  1                                                              -->
 <!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  4.96                                                           -->
+<!--    + For ComplexFurniture REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  2                                                               -->
+<!--    + For ComplexFurniture REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4.96                                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--  ==============================================================================================================  -->
@@ -27,6 +31,10 @@
 <!--                               WITH researchViewX  1                                                              -->
 <!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  4.96                                                           -->
+<!--    + For ComplexFurniture REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  2                                                               -->
+<!--    + For ComplexFurniture REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4.96                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewX</xpath>
@@ -37,6 +45,20 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.96</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewY</xpath>
                     <value>
                         <researchViewY>4.96</researchViewY>
                     </value>
