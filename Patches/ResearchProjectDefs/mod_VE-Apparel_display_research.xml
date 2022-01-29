@@ -21,6 +21,9 @@
 <!--                               WITH researchViewX  2                                                              -->
 <!--    + For VAE_SterileAttire REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  1.86                                                           -->
+<!--    + For VAE_MilitaryClothing IGNORE researchViewX                                                               -->
+<!--    + For VAE_MilitaryClothing REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  1.86                                                        -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -77,6 +80,8 @@
 <!--                               WITH researchViewX  2                                                              -->
 <!--    + For VAE_SterileAttire REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  1.86                                                           -->
+<!--    + For VAE_MilitaryClothing REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  1.86                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_SterileAttire"]/researchViewX</xpath>
@@ -87,6 +92,13 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_SterileAttire"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.86</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_MilitaryClothing"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.86</researchViewY>
                     </value>
