@@ -21,6 +21,9 @@
 <!--                                  WITH researchViewY  2.48                                                        -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
+<!--    + For VAE_TrooperArmor IGNORE researchViewX                                                                   -->
+<!--    + For VAE_TrooperArmor REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  3.10                                                            -->
 <!--    + For VAE_SiegebreakerArmor IGNORE researchViewX                                                              -->
 <!--    + For VAE_SiegebreakerArmor REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  3.10                                                       -->
@@ -84,9 +87,18 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + For VAE_TrooperArmor REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  3.10                                                            -->
 <!--    + For VAE_SiegebreakerArmor REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  3.10                                                       -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/researchViewY</xpath>
+                    <value>
+                       <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_SiegebreakerArmor"]/researchViewY</xpath>
                     <value>
