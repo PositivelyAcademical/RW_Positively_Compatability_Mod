@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES                                                                                                  -->
+<!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
+<!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Coal Expanded (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
+<!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class = "PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalPowergen"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
