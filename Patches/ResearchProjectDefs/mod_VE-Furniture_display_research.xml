@@ -4,6 +4,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 4.34)                                                             -->
+<!--    + For MF_ModernFurniture REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  3                                                             -->
+<!--    + For MF_ModernFurniture REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  4.34                                                          -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
 <!--    + For MF_BasicFurniture REPLACE researchViewX                                                                 -->
 <!--                               WITH researchViewX  1                                                              -->
@@ -27,6 +33,28 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 4.34)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For MF_ModernFurniture REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  3                                                             -->
+<!--    + For MF_ModernFurniture REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  4.34                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.34</researchViewY>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
