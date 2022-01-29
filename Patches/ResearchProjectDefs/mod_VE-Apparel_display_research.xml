@@ -11,6 +11,10 @@
 <!--    + For VAE_FormalWear IGNORE researchViewX                                                                     -->
 <!--    + For VAE_FormalWear REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VAE_WorkAttire REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  2                                                                 -->
+<!--    + For VAE_WorkAttire REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -27,6 +31,10 @@
 <!--                            WITH researchViewY  1.24                                                              -->
 <!--    + For VAE_FormalWear REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VAE_WorkAttire REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  2                                                                 -->
+<!--    + For VAE_WorkAttire REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_CasualWear"]/researchViewY</xpath>
@@ -37,6 +45,20 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_FormalWear"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_WorkAttire"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_WorkAttire"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
                     </value>
