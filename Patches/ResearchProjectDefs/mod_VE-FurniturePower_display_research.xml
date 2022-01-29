@@ -15,6 +15,9 @@
 <!--                                      WITH researchViewX  5                                                       -->
 <!--    + For VFE_AdvancedPowerSources REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3.72                                                    -->
+<!--    + For VFE_NuclearPower IGNORE researchViewX                                                                   -->
+<!--    + For VFE_NuclearPower REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  3.72                                                            -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -35,6 +38,8 @@
 <!--                                      WITH researchViewX  5                                                       -->
 <!--    + For VFE_AdvancedPowerSources REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3.72                                                    -->
+<!--    + For VFE_NuclearPower REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  3.72                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_IndustrialGenerators"]/researchViewY</xpath>
@@ -59,6 +64,13 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_AdvancedPowerSources"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.72</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFE_NuclearPower"]/researchViewY</xpath>
                     <value>
                         <researchViewY>3.72</researchViewY>
                     </value>
