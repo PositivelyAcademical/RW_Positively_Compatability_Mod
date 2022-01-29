@@ -5,10 +5,12 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
-<!--    + For VWE_LaserWeapons IGNORE researchViewX                                                                   -->
+<!--    + For VWE_LaserWeapons REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  7                                                               -->
 <!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  0.62                                                            -->
-<!--    + For VWE_UltratechLaserWeapons IGNORE researchViewX                                                          -->
+<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewX                                                         -->
+<!--                                       WITH researchViewX  8                                                      -->
 <!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  0.62                                                   -->
 <!--  ==============================================================================================================  -->
@@ -23,15 +25,33 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + For VWE_LaserWeapons REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  7                                                               -->
 <!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
 <!--                               WITH researchViewY  0.62                                                           -->
+<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewX                                                         -->
+<!--                                       WITH researchViewX  8                                                      -->
 <!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  0.62                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_UltratechLaserWeapons"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>8</researchViewX>
                     </value>
                 </li>
 
