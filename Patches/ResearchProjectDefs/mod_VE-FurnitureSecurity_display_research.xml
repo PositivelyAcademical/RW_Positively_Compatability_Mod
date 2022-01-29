@@ -19,6 +19,10 @@
 <!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
 <!--                                        WITH researchViewY  2.48                                                  -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
+<!--    + For VFES_ConcealedDefenses IGNORE researchViewX                                                             -->
+<!--    + For VFES_ConcealedDefenses IGNORE researchViewY                                                             -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
 <!--    + For VFES_SiegeEquipment IGNORE researchViewX                                                                -->
 <!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
