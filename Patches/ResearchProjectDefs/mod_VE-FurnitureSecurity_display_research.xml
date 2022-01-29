@@ -14,6 +14,11 @@
 <!--    + For VFES_Artillery REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--    + For VFES_EMPCannon IGNORE researchViewX                                                                     -->
+<!--    + For VFES_EMPCannon REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.86                                                              -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--    + For VFES_MetalAlloysBarricades IGNORE researchViewX                                                         -->
 <!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
@@ -73,6 +78,19 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_Artillery"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFES_EMPCannon REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.86                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_EMPCannon"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.86</researchViewY>
                     </value>
                 </li>
 
