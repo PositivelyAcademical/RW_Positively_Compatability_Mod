@@ -4,6 +4,11 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
+<!--    + For VFE_TidalPower IGNORE researchViewX                                                                     -->
+<!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  3.10                                                              -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 7 (Y = 3.72)                                                             -->
 <!--    + For VFE_IndustrialGenerators IGNORE researchViewX                                                           -->
 <!--    + For VFE_IndustrialGenerators REPLACE researchViewY                                                          -->
@@ -26,6 +31,19 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  3.10                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFE_TidalPower"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 7 (Y = 3.72)                                                             -->
