@@ -22,6 +22,11 @@
 <!--    + For VFEM_PlagueMask REPLACE researchViewY                                                                   -->
 <!--                             WITH researchViewY  1.86                                                             -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
+<!--    + For VFEM_TreeHealroot IGNORE researchViewX                                                                  -->
+<!--    + For VFEM_TreeHealroot REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  2.48                                                           -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -95,6 +100,18 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFEM_TreeHealroot REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  2.48                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_TreeHealroot"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.48</researchViewY>
+                    </value>
+                </li>
 
 
 
