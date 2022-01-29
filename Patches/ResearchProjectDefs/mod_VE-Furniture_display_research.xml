@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
+<!--    + For MF_BasicFurniture REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  1                                                              -->
+<!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  4.96                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For MF_BasicFurniture REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  1                                                              -->
+<!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  4.96                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>1</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4.96</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
