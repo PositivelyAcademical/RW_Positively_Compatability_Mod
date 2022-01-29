@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaWeaponsExpandedQuickdraw (ResearchProjectDef) - removals                                      -->
+<!--    + For VWE_Quickdraw REMOVE ./                                                                                 -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Heavy Weapons</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Weapons Expanded - Quickdraw</li>
+            </mods>
+            <nomatch Class="PatchOperationRemove">
+                <xpath>/Defs/ResearchProjectDef[defName="VWE_Quickdraw"]</xpath>
+            </nomatch>
+        </match>
+    </Operation>
+
+</Patch>
