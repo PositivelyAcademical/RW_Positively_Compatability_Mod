@@ -41,6 +41,11 @@
 <!--    + For VWE_SpecializedFirearms REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY  0.62                                                     -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
+<!--    + For VWE_DesignatedMarksmanRifle IGNORE researchViewX                                                        -->
+<!--    + For VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  1.24                                                 -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -156,25 +161,18 @@
                     </value>
                 </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  1.24                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_DesignatedMarksmanRifle"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
             </operations>
