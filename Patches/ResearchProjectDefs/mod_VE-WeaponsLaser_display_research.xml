@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
+<!--    + For VWE_LaserWeapons IGNORE researchViewX                                                                   -->
+<!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.62                                                            -->
+<!--    + For VWE_UltratechLaserWeapons IGNORE researchViewX                                                          -->
+<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  0.62                                                   -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+        <li>Vanilla Weapons Expanded - Laser</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
+<!--                               WITH researchViewY  0.62                                                           -->
+<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  0.62                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_UltratechLaserWeapons"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
