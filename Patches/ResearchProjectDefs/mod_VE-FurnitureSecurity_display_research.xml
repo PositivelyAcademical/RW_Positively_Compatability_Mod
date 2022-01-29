@@ -9,15 +9,15 @@
 <!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
 <!--                             WITH researchViewY  0.62                                                             -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
-<!--    + For VFES_TrenchWarfare IGNORE researchViewX                                                                 -->
-<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  0.62                                                          -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
 <!--    + For VFES_SiegeEquipment IGNORE researchViewX                                                                -->
 <!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  5.58                                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
+<!--    + For VFES_TrenchWarfare IGNORE researchViewX                                                                 -->
+<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0.62                                                          -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -30,13 +30,26 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  0.62                                                           -->
+<!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  0.62                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/researchViewY</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_SentryGuns"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  5.58                                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_SiegeEquipment"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
                     </value>
                 </li>
 
@@ -51,24 +64,11 @@
                         <li>Vanilla Weapons Expanded</li>
                     </mods>
                     <nomatch Class="PatchOperationReplace">
-                        <xpath>/Defs/ResearchProjectDef[defName="VFES_SentryGuns"]/researchViewY</xpath>
+                        <xpath>/Defs/ResearchProjectDef[defName="VFES_TrenchWarfare"]/researchViewY</xpath>
                         <value>
                             <researchViewY>0.62</researchViewY>
                         </value>
                     </nomatch>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
-<!--  ==============================================================================================================  -->
-<!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  5.58                                                         -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="VFES_SiegeEquipment"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>5.58</researchViewY>
-                    </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
