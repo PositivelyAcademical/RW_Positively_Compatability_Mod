@@ -13,6 +13,9 @@
 <!--    + For VFES_Artillery IGNORE researchViewX                                                                     -->
 <!--    + For VFES_Artillery REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VFES_RepulsorTechnology IGNORE researchViewX                                                            -->
+<!--    + For VFES_RepulsorTechnology REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY  1.24                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
 <!--    + For VFES_EMPCannon IGNORE researchViewX                                                                     -->
@@ -73,9 +76,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VFES_Artillery REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VFES_RepulsorTechnology REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY  1.24                                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_Artillery"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_RepulsorTechnology"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
                     </value>
