@@ -8,6 +8,9 @@
 <!--    + For VAE_CasualWear IGNORE researchViewX                                                                     -->
 <!--    + For VAE_CasualWear REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VAE_FormalWear IGNORE researchViewX                                                                     -->
+<!--    + For VAE_FormalWear REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -22,9 +25,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VAE_CasualWear REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  1.24                                                              -->
+<!--    + For VAE_FormalWear REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_CasualWear"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_FormalWear"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
                     </value>
