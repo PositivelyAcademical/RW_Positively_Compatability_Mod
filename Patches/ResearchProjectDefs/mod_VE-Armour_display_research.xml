@@ -9,6 +9,12 @@
 <!--    + For VAE_LeatherTanning REPLACE researchViewY                                                                -->
 <!--                                WITH researchViewY  1.24                                                          -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
+<!--    + For VAE_HazardProtection REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  4                                                           -->
+<!--    + For VAE_HazardProtection REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.48                                                        -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -27,6 +33,28 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VAE_HazardProtection REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  4                                                           -->
+<!--    + For VAE_HazardProtection REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.48                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.48</researchViewY>
                     </value>
                 </li>
 
