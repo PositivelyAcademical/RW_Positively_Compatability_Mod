@@ -5,6 +5,9 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
+<!--    + For VFE_GasExtraction IGNORE researchViewX                                                                  -->
+<!--    + For VFE_GasExtraction REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.10                                                           -->
 <!--    + For VFE_TidalPower IGNORE researchViewX                                                                     -->
 <!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  3.10                                                              -->
@@ -35,9 +38,18 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + For VFE_GasExtraction REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.10                                                           -->
 <!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  3.10                                                              -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFE_GasExtraction"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_TidalPower"]/researchViewY</xpath>
                     <value>
