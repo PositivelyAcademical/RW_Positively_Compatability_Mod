@@ -11,6 +11,12 @@
 <!--    + For VFEM_HeavyCrossbow REPLACE researchViewY                                                                -->
 <!--                                WITH researchViewY  0                                                             -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
+<!--    + For VFEM_NobleMedievalApparel REPLACE researchViewX                                                         -->
+<!--                                       WITH researchViewX  2                                                      -->
+<!--    + For VFEM_NobleMedievalApparel REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  0.62                                                   -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -48,6 +54,49 @@
                         <researchViewY>0</researchViewY>
                     </value>
                 </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFEM_NobleMedievalApparel REPLACE researchViewX                                                         -->
+<!--                                       WITH researchViewX  2                                                      -->
+<!--    + For VFEM_NobleMedievalApparel REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  0.62                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_NobleMedievalApparel"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_NobleMedievalApparel"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--  ==============================================================================================================  -->
             </operations>
