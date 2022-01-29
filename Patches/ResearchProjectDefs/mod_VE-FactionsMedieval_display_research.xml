@@ -17,6 +17,11 @@
 <!--    + For VFEM_NobleMedievalApparel REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  0.62                                                   -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--    + For VFEM_PlagueMask IGNORE researchViewX                                                                    -->
+<!--    + For VFEM_PlagueMask REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1.86                                                             -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -78,6 +83,17 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFEM_PlagueMask REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1.86                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_PlagueMask"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.86</researchViewY>
+                    </value>
+                </li>
 
 
 
