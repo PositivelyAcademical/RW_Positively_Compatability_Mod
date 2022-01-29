@@ -29,6 +29,9 @@
 <!--                              WITH researchViewY  4.96                                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
+<!--    + For TubeTelevision IGNORE researchViewX                                                                     -->
+<!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  5.58                                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -133,6 +136,19 @@
                     <xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/researchViewY</xpath>
                     <value>
                         <researchViewY>4.96</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  5.58                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="TubeTelevision"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
                     </value>
                 </li>
 
