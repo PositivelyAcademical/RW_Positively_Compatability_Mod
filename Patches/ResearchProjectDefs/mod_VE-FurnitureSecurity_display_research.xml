@@ -18,6 +18,9 @@
 <!--    + For VFES_MetalAlloysBarricades IGNORE researchViewX                                                         -->
 <!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
 <!--                                        WITH researchViewY  2.48                                                  -->
+<!--    + For VFES_PulseChargedDefenses IGNORE researchViewX                                                          -->
+<!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  2.48                                                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--    + For VFES_MissileBarrage IGNORE researchViewX                                                                -->
@@ -75,9 +78,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
 <!--                                        WITH researchViewY  2.48                                                  -->
+<!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  2.48                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_MetalAlloysBarricades"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.48</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_PulseChargedDefenses"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2.48</researchViewY>
                     </value>
