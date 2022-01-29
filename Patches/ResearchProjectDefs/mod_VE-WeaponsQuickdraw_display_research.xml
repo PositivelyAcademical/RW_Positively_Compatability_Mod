@@ -12,7 +12,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-        <li>Vanilla Weapons Expanded - Quickdraw</li>
+            <li>Vanilla Weapons Expanded - Quickdraw</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
