@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
+<!--    + For VWE_MakeshiftWeapons REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  2                                                           -->
+<!--    + For VWE_MakeshiftWeapons REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5.58                                                        -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Makeshift<li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWE_MakeshiftWeapons REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  2                                                           -->
+<!--    + For VWE_MakeshiftWeapons REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5.58                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_MakeshiftWeapons"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_MakeshiftWeapons"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
