@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - move from Main                                                               -->
+<!--    + For VWEFT_FrontierWeapons ADD tab  VanillaExpanded                                                          -->
+<!--    + For VWEFT_FrontierWeapons REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  2                                                          -->
+<!--    + For VWEFT_FrontierWeapons REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  5.58                                                       -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - move from Main                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWEFT_FrontierWeapons ADD tab  VanillaExpanded                                                          -->
+<!--    + For VWEFT_FrontierWeapons REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  2                                                          -->
+<!--    + For VWEFT_FrontierWeapons REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  5.58                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                <xpath>/Defs/ResearchProjectDef[defName="VWEFT_FrontierWeapons"]</xpath>
+                    <value>
+                        <tab>VanillaExpanded</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWEFT_FrontierWeapons"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWEFT_FrontierWeapons"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
