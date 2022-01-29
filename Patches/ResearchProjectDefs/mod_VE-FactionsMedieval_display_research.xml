@@ -26,6 +26,9 @@
 <!--    + For VFEM_TreeHealroot IGNORE researchViewX                                                                  -->
 <!--    + For VFEM_TreeHealroot REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  2.48                                                           -->
+<!--    + For VFEM_MeatSmoking IGNORE researchViewX                                                                   -->
+<!--    + For VFEM_MeatSmoking REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.48                                                            -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -105,6 +108,8 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VFEM_TreeHealroot REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  2.48                                                           -->
+<!--    + For VFEM_MeatSmoking REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.48                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFEM_TreeHealroot"]/researchViewY</xpath>
@@ -113,23 +118,12 @@
                     </value>
                 </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFEM_MeatSmoking"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.48</researchViewY>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
             </operations>
