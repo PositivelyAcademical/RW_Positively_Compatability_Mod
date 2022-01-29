@@ -43,9 +43,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For SpacerElectronics REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  5.58                                                           -->
+<!--    + For MechaniteRestoration REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5.58                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="SpacerElectronics"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MechaniteRestoration"]/researchViewY</xpath>
                     <value>
                         <researchViewY>5.58</researchViewY>
                     </value>
