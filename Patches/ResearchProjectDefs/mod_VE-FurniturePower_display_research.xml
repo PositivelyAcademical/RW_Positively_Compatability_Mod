@@ -8,6 +8,9 @@
 <!--    + For VFE_IndustrialGenerators IGNORE researchViewX                                                           -->
 <!--    + For VFE_IndustrialGenerators REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3.72                                                    -->
+<!--    + For VFE_AdvancedBatteries IGNORE researchViewX                                                              -->
+<!--    + For VFE_AdvancedBatteries REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3.72                                                       -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -22,9 +25,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VFE_IndustrialGenerators REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3.72                                                    -->
+<!--    + For VFE_AdvancedBatteries REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3.72                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_IndustrialGenerators"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.72</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFE_AdvancedBatteries"]/researchViewY</xpath>
                     <value>
                         <researchViewY>3.72</researchViewY>
                     </value>
