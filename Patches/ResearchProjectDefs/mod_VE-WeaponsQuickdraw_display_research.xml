@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--    + For VWE_Quickdraw IGNORE researchViewX                                                                      -->
+<!--    + For VWE_Quickdraw REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  1.86                                                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+        <li>Vanilla Weapons Expanded - Quickdraw</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWE_Quickdraw REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  1.86                                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_Quickdraw"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.86</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
