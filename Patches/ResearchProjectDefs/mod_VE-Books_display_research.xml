@@ -9,6 +9,10 @@
 <!--                         WITH researchViewX  2                                                                    -->
 <!--    + For VBE_Writing REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  6.20                                                                 -->
+<!--    + For VBE_Printing REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  3                                                                   -->
+<!--    + For VBE_Printing REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewX  3                                                                   -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -25,6 +29,10 @@
 <!--                         WITH researchViewX  2                                                                    -->
 <!--    + For VBE_Writing REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  6.20                                                                 -->
+<!--    + For VBE_Printing REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  3                                                                   -->
+<!--    + For VBE_Printing REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewX  3                                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VBE_Writing"]/researchViewX</xpath>
@@ -35,6 +43,20 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VBE_Writing"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>6.20</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VBE_Printing"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VBE_Printing"]/researchViewY</xpath>
                     <value>
                         <researchViewY>6.20</researchViewY>
                     </value>
