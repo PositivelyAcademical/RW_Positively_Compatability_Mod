@@ -5,12 +5,14 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
-<!--    + For VWE_TrenchWarfare IGNORE researchViewX                                                                  -->
-<!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  0.62                                                           -->
 <!--    + For VFES_SentryGuns IGNORE researchViewX                                                                    -->
 <!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
 <!--                             WITH researchViewY  0.62                                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
+<!--    + For VFES_TrenchWarfare IGNORE researchViewX                                                                 -->
+<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0.62                                                          -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -25,8 +27,6 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  0.62                                                           -->
-<!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  0.62                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]/researchViewY</xpath>
@@ -35,14 +35,25 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="VFES_SentryGuns"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>0.62</researchViewY>
-                    </value>
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0.62                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="VFES_SentryGuns"]/researchViewY</xpath>
+                        <value>
+                            <researchViewY>0.62</researchViewY>
+                        </value>
+                    </nomatch>
                 </li>
 
-
+<!--  ==============================================================================================================  -->
 
 
 
