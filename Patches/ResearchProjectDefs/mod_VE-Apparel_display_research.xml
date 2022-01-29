@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
+<!--    + For VAE_CasualWear IGNORE researchViewX                                                                     -->
+<!--    + For VAE_CasualWear REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+        <li>Vanilla Apparel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VAE_CasualWear REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_CasualWear"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
