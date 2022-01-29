@@ -9,6 +9,11 @@
 <!--    + For VAE_LeatherTanning REPLACE researchViewY                                                                -->
 <!--                                WITH researchViewY  1.24                                                          -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--    + For VAE_MlitaryCamouflage IGNORE researchViewX                                                              -->
+<!--    + For VAE_MlitaryCamouflage REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  1.86                                                       -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--    + For VAE_HazardProtection REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  4                                                           -->
@@ -33,6 +38,19 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.24</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + For VAE_MlitaryCamouflage REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  1.86                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_MlitaryCamouflage"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.86</researchViewY>
                     </value>
                 </li>
 
