@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
+<!--    + For VWE_MassDrivers IGNORE researchViewX                                                                    -->
+<!--    + For VWE_MassDrivers REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  6.20                                                             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+        <li>Vanilla Weapons Expanded - Coilguns</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + For VWE_MassDrivers REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  6.20                                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_MassDrivers"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>6.20</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
