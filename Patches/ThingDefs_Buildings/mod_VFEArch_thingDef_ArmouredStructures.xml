@@ -15,8 +15,7 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 5                                                         -->
-<!--       + For VFEArch_ArmoredWall IN .                                                                             -->
-<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--       + For VFEArch_ArmoredWall ADDMODEXTENSION li @VFEArchitect.BuildingExtension_PrisonerProof                 -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armoured door                                                                                  -->
 <!--       + For VFEArch_ArmoredDoor REPLACE label                                                                    -->
@@ -29,8 +28,7 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 25                                                        -->
-<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
-<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--       + For VFEArch_ArmoredDoor ADDMODEXTENSION li @VFEArchitect.BuildingExtension_PrisonerProof                 -->
 <!--  ==============================================================================================================  -->
 <!--     + NO_MATCH 'Doors Expanded'                                                                                  -->
 <!--       + For VFEArch_ArmoredWall REPLACE researchPrerequisites                                                    -->
@@ -66,8 +64,7 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredWall REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 5                                                         -->
-<!--       + For VFEArch_ArmoredWall IN .                                                                             -->
-<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--       + For VFEArch_ArmoredWall ADDMODEXTENSION li @VFEArchitect.BuildingExtension_PrisonerProof                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]/label</xpath>
@@ -106,12 +103,10 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationAdd">
+                <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredWall"]</xpath>
                     <value>
-                        <modExtensions>
-                            <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
-                        </modExtensions>
+                        <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
                     </value>
                 </li>
 
@@ -128,8 +123,7 @@
 <!--                                ADD li Stony                                                                      -->
 <!--       + For VFEArch_ArmoredDoor REPLACE costStuffCount                                                           -->
 <!--                                    WITH costStuffCount 25                                                        -->
-<!--       + For VFEArch_ArmoredDoor IN .                                                                             -->
-<!--                                ADD modExtensions li @VFEArchitect.BuildingExtension_PrisonerProof                -->
+<!--       + For VFEArch_ArmoredDoor ADDMODEXTENSION li @VFEArchitect.BuildingExtension_PrisonerProof                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]/label</xpath>
@@ -168,12 +162,10 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationAdd">
+                <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName="VFEArch_ArmoredDoor"]</xpath>
                     <value>
-                        <modExtensions>
-                            <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
-                        </modExtensions>
+                        <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
                     </value>
                 </li>
 
