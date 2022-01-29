@@ -6,7 +6,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--    + For VWE_MakeshiftWeapons REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  2                                                           -->
+<!--                                  WITH researchViewX  1                                                           -->
 <!--    + For VWE_MakeshiftWeapons REPLACE researchViewY                                                              -->
 <!--                                  WITH researchViewY  5.58                                                        -->
 <!--  ==============================================================================================================  -->
@@ -22,14 +22,14 @@
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + For VWE_MakeshiftWeapons REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  2                                                           -->
+<!--                                  WITH researchViewX  1                                                           -->
 <!--    + For VWE_MakeshiftWeapons REPLACE researchViewY                                                              -->
 <!--                                  WITH researchViewY  5.58                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_MakeshiftWeapons"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>1</researchViewX>
                     </value>
                 </li>
 
