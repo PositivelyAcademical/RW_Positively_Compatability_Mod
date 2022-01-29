@@ -32,6 +32,9 @@
 <!--    + For TubeTelevision IGNORE researchViewX                                                                     -->
 <!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  5.58                                                              -->
+<!--    + For FlatscreenTelevision IGNORE researchViewX                                                               -->
+<!--    + For FlatscreenTelevision REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5.58                                                        -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -144,9 +147,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
 <!--                            WITH researchViewY  5.58                                                              -->
+<!--    + For FlatscreenTelevision REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5.58                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TubeTelevision"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5.58</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="FlatscreenTelevision"]/researchViewY</xpath>
                     <value>
                         <researchViewY>5.58</researchViewY>
                     </value>
