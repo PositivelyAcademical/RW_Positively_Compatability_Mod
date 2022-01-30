@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--     + ALL_CASES (ResearchProjectDef) - electricity                                                               -->
 <!--       + For RTR_OverheadMountainRemoval ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  2.8                                               -->
@@ -15,6 +15,8 @@
 <!--                                       WITH researchViewX  2                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  1.2                                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--       + For RTR_SolarRoofing ADD tab  POS_ResearchTab                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewX                                                               -->
 <!--                                 WITH researchViewX  2                                                            -->
@@ -34,13 +36,18 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--     + ALL_CASES (ResearchProjectDef) - electricity                                                               -->
 <!--  ==============================================================================================================  -->
 <!--       + For RTR_OverheadMountainRemoval ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  2.8                                               -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewY                                                    -->
 <!--                                            WITH researchViewY  1.2                                               -->
+<!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
+<!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
+<!--                                       WITH researchViewX  2                                                      -->
+<!--       + For RTR_TransparentRoofing REPLACE researchViewY                                                         -->
+<!--                                       WITH researchViewY  1.2                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]</xpath>
@@ -63,15 +70,6 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
-<!--  ==============================================================================================================  -->
-<!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
-<!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
-<!--                                       WITH researchViewX  2                                                      -->
-<!--       + For RTR_TransparentRoofing REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  1.2                                                    -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentRoofing"]</xpath>
                     <value>
@@ -94,13 +92,18 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
+<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For RTR_SolarRoofing ADD tab  POS_ResearchTab                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewX                                                               -->
 <!--                                 WITH researchViewX  2                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  1.8                                                          -->
+<!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
+<!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  2.8                                               -->
+<!--       + For RTR_TransparentSolarRoofing REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  1.8                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_SolarRoofing"]</xpath>
@@ -123,15 +126,6 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
-<!--  ==============================================================================================================  -->
-<!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
-<!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2.8                                               -->
-<!--       + For RTR_TransparentSolarRoofing REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  1.8                                               -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentSolarRoofing"]</xpath>
                     <value>
