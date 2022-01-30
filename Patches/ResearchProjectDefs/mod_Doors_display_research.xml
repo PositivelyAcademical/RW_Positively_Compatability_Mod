@@ -15,9 +15,9 @@
 <!--       + For ProjectHeron_Curtains REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3                                                       -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewX                                                             -->
-<!--                                   WITH researchViewX  0.8                                                        -->
+<!--                                   WITH researchViewX  0                                                          -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  1.8                                                        -->
+<!--                                   WITH researchViewY  4                                                          -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  0                                                    -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
@@ -57,9 +57,9 @@
 <!--       + For ProjectHeron_Curtains REPLACE researchViewY                                                          -->
 <!--                                      WITH researchViewY  3                                                       -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewX                                                             -->
-<!--                                   WITH researchViewX  0.8                                                        -->
+<!--                                   WITH researchViewX  0                                                          -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  1.8                                                        -->
+<!--                                   WITH researchViewY  4                                                          -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  0                                                    -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
@@ -89,14 +89,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_Gates"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0.8</researchViewX>
+                        <researchViewX>0</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_Gates"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.8</researchViewY>
+                        <researchViewY>4</researchViewY>
                     </value>
                 </li>
 
