@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 1a                                                                      -->
+<!--    + ImperialMetals IGNORE researchViewX 0                                                                       -->
+<!--    + ImperialMetals IGNORE researchViewY 0                                                                       -->
+<!--    + ImperialMetals IGNORE label                                                                                 -->
+<!--    + ImperialMetals IGNORE description                                                                           -->
+<!--    + LAP_Tech_Basic IGNORE researchViewX 1                                                                       -->
+<!--    + LAP_Tech_Basic IGNORE researchViewY 0                                                                       -->
+<!--    + LAP_Tech_Basic IGNORE label                                                                                 -->
+<!--    + LAP_Tech_Basic IGNORE description                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 1b                                                                      -->
+<!--    + LAP_Tech_DarkAngels REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  2                                                                -->
+<!--    + LAP_Tech_DarkAngels REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  0                                                                -->
+<!--    + LAP_Tech_DarkAngels IGNORE  label                                                                           -->
+<!--    + LAP_Tech_DarkAngels REPLACE description                                                                     -->
+<!--                             WITH description  Allows you to create the wargear of the Dark Angels Legion.        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Emperors_Children REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  4                                                         -->
+<!--    + LAP_Tech_Emperors_Children REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  0                                                         -->
+<!--    + LAP_Tech_Emperors_Children IGNORE  label                                                                    -->
+<!--    + LAP_Tech_Emperors_Children REPLACE description                                                              -->
+<!--                                    WITH description  Allows you to create the wargear of the Emperor's Children  -->
+<!--                                                       Legion.                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  5                                                             -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0                                                             -->
+<!--    + LAP_Tech_Iron_Warriors IGNORE  label                                                                        -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE description                                                                  -->
+<!--                                WITH description  Allows you to create the wargear of the Iron Warriors Legion.   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 2                                                                       -->
+<!--    + LAP_Tech_Night_Lords REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + LAP_Tech_Night_Lords REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.8                                                             -->
+<!--    + LAP_Tech_Night_Lords IGNORE  label                                                                          -->
+<!--    + LAP_Tech_Night_Lords REPLACE description                                                                    -->
+<!--                              WITH description  Allows you to create the wargear of the Night Lords Legion.       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_BloodAngels REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  5                                                               -->
+<!--    + LAP_Tech_BloodAngels REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.8                                                             -->
+<!--    + LAP_Tech_BloodAngels IGNORE  label                                                                          -->
+<!--    + LAP_Tech_BloodAngels REPLACE description                                                                    -->
+<!--                              WITH description  Allows you to create the wargear of the Blood Angels Legion.      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 3                                                                       -->
+<!--    + LAP_Tech_World_Eaters REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  3                                                              -->
+<!--    + LAP_Tech_World_Eaters REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  1.6                                                            -->
+<!--    + LAP_Tech_World_Eaters IGNORE  label                                                                         -->
+<!--    + LAP_Tech_World_Eaters REPLACE description                                                                   -->
+<!--                               WITH description  Allows you to create the wargear of the World Eaters Legion.     -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 4                                                                       -->
+<!--    + LAP_Tech_SOH REPLACE researchViewX                                                                          -->
+<!--                      WITH researchViewY  2                                                                       -->
+<!--    + LAP_Tech_SOH REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  2.4                                                                     -->
+<!--    + LAP_Tech_SOH IGNORE  label                                                                                  -->
+<!--    + LAP_Tech_SOH REPLACE description                                                                            -->
+<!--                      WITH description  Allows you to create the wargear of the Sons of Horus Legion.             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  6                                                              -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  2.4                                                            -->
+<!--    + LAP_Tech_Alpha_Legion IGNORE  label                                                                         -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE description                                                                   -->
+<!--                               WITH description  Allows you to create the wargear of the Alpha Legion.            -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 5                                                                       -->
+<!--    + LAP_Tech_Emperor REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  2                                                                   -->
+<!--    + LAP_Tech_Emperor REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.2                                                                 -->
+<!--    + LAP_Tech_Emperor IGNORE  label                                                                              -->
+<!--    + LAP_Tech_Emperor REPLACE description                                                                        -->
+<!--                          WITH description  Allows you to create the wargear of the Legio Custodes and the        -->
+<!--                                             Emperor of Mankind.                                                  -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 1b                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_DarkAngels REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  2                                                                -->
+<!--    + LAP_Tech_DarkAngels REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  0                                                                -->
+<!--    + LAP_Tech_DarkAngels REPLACE description                                                                     -->
+<!--                             WITH description  Allows you to create the wargear of the Dark Angels Legion.        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_DarkAngels"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_DarkAngels"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_DarkAngels"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Dark Angels Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 1b                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Emperors_Children REPLACE researchViewX                                                            -->
+<!--                                    WITH researchViewX  4                                                         -->
+<!--    + LAP_Tech_Emperors_Children REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  0                                                         -->
+<!--    + LAP_Tech_Emperors_Children REPLACE description                                                              -->
+<!--                                    WITH description  Allows you to create the wargear of the Emperor's Children  -->
+<!--                                                       Legion.                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperors_Children"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperors_Children"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperors_Children"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Emperor's Children Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 1b                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE researchViewX                                                                -->
+<!--                                WITH researchViewX  5                                                             -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE researchViewY                                                                -->
+<!--                                WITH researchViewY  0                                                             -->
+<!--    + LAP_Tech_Iron_Warriors IGNORE  label                                                                        -->
+<!--    + LAP_Tech_Iron_Warriors REPLACE description                                                                  -->
+<!--                                WITH description  Allows you to create the wargear of the Iron Warriors Legion.   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Iron_Warriors"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Iron_Warriors"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Iron_Warriors"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Iron Warriors Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 2                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Night_Lords REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + LAP_Tech_Night_Lords REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.8                                                             -->
+<!--    + LAP_Tech_Night_Lords REPLACE description                                                                    -->
+<!--                              WITH description  Allows you to create the wargear of the Night Lords Legion.       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.8</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Night_Lords"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Night Lords Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 2                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_BloodAngels REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  5                                                               -->
+<!--    + LAP_Tech_BloodAngels REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.8                                                             -->
+<!--    + LAP_Tech_BloodAngels IGNORE  label                                                                          -->
+<!--    + LAP_Tech_BloodAngels REPLACE description                                                                    -->
+<!--                              WITH description  Allows you to create the wargear of the Blood Angels Legion.      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_BloodAngels"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_BloodAngels"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.8</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_BloodAngels"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Blood Angels Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 3                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_World_Eaters REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  3                                                              -->
+<!--    + LAP_Tech_World_Eaters REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  1.6                                                            -->
+<!--    + LAP_Tech_World_Eaters REPLACE description                                                                   -->
+<!--                               WITH description  Allows you to create the wargear of the World Eaters Legion.     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_World_Eaters"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_World_Eaters"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.6</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_World_Eaters"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the World Eaters Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 4                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_SOH REPLACE researchViewX                                                                          -->
+<!--                      WITH researchViewY  2                                                                       -->
+<!--    + LAP_Tech_SOH REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  2.4                                                                     -->
+<!--    + LAP_Tech_SOH REPLACE description                                                                            -->
+<!--                      WITH description  Allows you to create the wargear of the Sons of Horus Legion.             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.4</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_SOH"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Sons of Horus Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 4                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE researchViewX                                                                 -->
+<!--                               WITH researchViewX  6                                                              -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  2.4                                                            -->
+<!--    + LAP_Tech_Alpha_Legion REPLACE description                                                                   -->
+<!--                               WITH description  Allows you to create the wargear of the Alpha Legion.            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Alpha_Legion"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Alpha_Legion"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.4</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Alpha_Legion"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Alpha Legion.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - line 5                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Tech_Emperor REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  2                                                                   -->
+<!--    + LAP_Tech_Emperor REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.2                                                                 -->
+<!--    + LAP_Tech_Emperor REPLACE description                                                                        -->
+<!--                          WITH description  Allows you to create the wargear of the Legio Custodes and the        -->
+<!--                                             Emperor of Mankind.                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperor"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperor"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="LAP_Tech_Emperor"]/description</xpath>
+                    <value>
+                        <description>Allows you to create the wargear of the Legio Custodes and the Emperor of Mankind.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+</Patch>
