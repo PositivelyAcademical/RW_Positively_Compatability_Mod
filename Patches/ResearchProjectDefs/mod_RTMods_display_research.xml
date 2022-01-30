@@ -11,7 +11,7 @@
 <!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
 <!--                                              WITH tab  POS_ResearchTab                                           -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX 4                                                -->
+<!--                                              WITH researchViewX 3                                                -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewY                                                  -->
 <!--                                              WITH researchViewY 1                                                -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
@@ -68,7 +68,7 @@
 <!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
 <!--                                              WITH tab  POS_ResearchTab                                           -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX 4                                                -->
+<!--                                              WITH researchViewX 3                                                -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewY                                                  -->
 <!--                                              WITH researchViewY 1                                                -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
@@ -95,7 +95,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
