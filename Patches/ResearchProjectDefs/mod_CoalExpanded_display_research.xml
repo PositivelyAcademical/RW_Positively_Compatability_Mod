@@ -6,6 +6,10 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES                                                                                                  -->
 <!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
+<!--       + For Research_NECCoalProduction REPLACE researchViewX                                                     -->
+<!--                                           WITH researchViewX  2                                                  -->
+<!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
+<!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -19,12 +23,30 @@
 <!--     + ALL_CASES                                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
+<!--       + For Research_NECCoalProduction REPLACE researchViewX                                                     -->
+<!--                                           WITH researchViewX  2                                                  -->
+<!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
+<!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]</xpath>
                     <value>
                         <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
                     </value>
                 </li>
 
