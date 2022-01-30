@@ -33,9 +33,9 @@
 <!--       + For ResearchProject_RTMagneticShield REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTMagneticShield REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  0.8                                          -->
+<!--                                                 WITH researchViewX  5                                            -->
 <!--       + For ResearchProject_RTMagneticShield REPLACE researchViewY                                               -->
-<!--                                                 WITH researchViewY  0.6                                          -->
+<!--                                                 WITH researchViewY  0                                            -->
 <!--  ==============================================================================================================  -->
 
 
@@ -179,9 +179,9 @@
 <!--       + For ResearchProject_RTMagneticShield REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTMagneticShield REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  0.8                                          -->
+<!--                                                 WITH researchViewX  5                                            -->
 <!--       + For ResearchProject_RTMagneticShield REPLACE researchViewY                                               -->
-<!--                                                 WITH researchViewY  0.6                                          -->
+<!--                                                 WITH researchViewY  0                                            -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -200,14 +200,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0.8</researchViewX>
+                        <researchViewX>5</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>0.6</researchViewY>
+                        <researchViewY>0</researchViewY>
                     </value>
                 </li>
 
