@@ -8,9 +8,9 @@
 <!--       + For TechPlasteelCrafting REPLACE tab                                                                     -->
 <!--                                     WITH tab  POS_ResearchTab                                                    -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  0                                                        -->
+<!--                                     WITH researchViewX  4                                                        -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  4.8                                                      -->
+<!--                                     WITH researchViewY  4                                                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -25,9 +25,9 @@
 <!--       + For TechPlasteelCrafting REPLACE tab                                                                     -->
 <!--                                     WITH tab  POS_ResearchTab                                                    -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  0                                                        -->
+<!--                                     WITH researchViewX  4                                                        -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  4.8                                                      -->
+<!--                                     WITH researchViewY  4                                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/tab</xpath>
@@ -39,14 +39,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0</researchViewX>
+                        <researchViewX>4</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.8</researchViewY>
+                        <researchViewY>4</researchViewY>
                     </value>
                 </li>
 
