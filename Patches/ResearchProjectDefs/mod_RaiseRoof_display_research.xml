@@ -24,9 +24,9 @@
 <!--                                 WITH researchViewY  3                                                            -->
 <!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2.8                                               -->
+<!--                                            WITH researchViewX  5                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  1.8                                               -->
+<!--                                            WITH researchViewY  2                                                 -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -101,9 +101,9 @@
 <!--                                 WITH researchViewY  3                                                            -->
 <!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2.8                                               -->
+<!--                                            WITH researchViewX  5                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  1.8                                               -->
+<!--                                            WITH researchViewY  2                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_SolarRoofing"]</xpath>
@@ -136,14 +136,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentSolarRoofing"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2.8</researchViewX>
+                        <researchViewX>5</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentSolarRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.8</researchViewY>
+                        <researchViewY>2</researchViewY>
                     </value>
                 </li>
 
