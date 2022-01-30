@@ -19,9 +19,9 @@
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  4                                                          -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  0                                                    -->
+<!--                                         WITH researchViewX  1                                                    -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  2.4                                                  -->
+<!--                                         WITH researchViewY  4                                                    -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  0.8                                                  -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewY                                                       -->
@@ -60,10 +60,6 @@
 <!--                                   WITH researchViewX  0                                                          -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  4                                                          -->
-<!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  0                                                    -->
-<!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  2.4                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[@Name="ProjectHeronResearch"]/tab</xpath>
@@ -100,17 +96,25 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  1                                                    -->
+<!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  4                                                    -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0</researchViewX>
+                        <researchViewX>1</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2.4</researchViewY>
+                        <researchViewY>4</researchViewY>
                     </value>
                 </li>
 
