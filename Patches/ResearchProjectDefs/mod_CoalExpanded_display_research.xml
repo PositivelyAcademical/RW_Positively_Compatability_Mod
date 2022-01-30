@@ -11,6 +11,10 @@
 <!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
 <!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
+<!--       + For Research_NECCoalPowergen REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  3                                                    -->
+<!--       + For Research_NECCoalPowergen REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  0                                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -28,6 +32,10 @@
 <!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
 <!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
+<!--       + For Research_NECCoalPowergen REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  3                                                    -->
+<!--       + For Research_NECCoalPowergen REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  0                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]</xpath>
@@ -54,6 +62,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalPowergen"]</xpath>
                     <value>
                         <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalPowergen"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalPowergen"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0</researchViewY>
                     </value>
                 </li>
 
