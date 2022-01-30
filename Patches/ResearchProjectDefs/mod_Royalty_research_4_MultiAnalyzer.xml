@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--    + CataphractArmor REPLACE label                                                                               -->
+<!--                         WITH label  cataphract armour                                                            -->
+<!--    + CataphractArmor REPLACE description                                                                         -->
+<!--                         WITH description  Craft cataphract armour, heavy powered armour that slows the user but  -->
+<!--                                            which can absorb extreme punishment. Note that these also require     -->
+<!--                                            advanced components.                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EPOE (ResearchProjectDef)                                                                            -->
+<!--    + SkinHardening REPLACE description                                                                           -->
+<!--                       WITH description  Craft bionic implants which induce the toughening of natural skin,       -->
+<!--                                          producing an armour-like effect.                                        -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + CataphractArmor REPLACE label                                                                               -->
+<!--                         WITH label  cataphract armour                                                            -->
+<!--    + CataphractArmor REPLACE description                                                                         -->
+<!--                         WITH description  Craft cataphract armour, heavy powered armour that slows the user but  -->
+<!--                                            which can absorb extreme punishment. Note that these also require     -->
+<!--                                            advanced components.                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="CataphractArmor"]/label</xpath>
+                    <value>
+                        <label>cataphract armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="CataphractArmor"]/description</xpath>
+                    <value>
+                        <description>Craft cataphract armour, heavy powered armour that slows the user but which can absorb extreme punishment. Note that these also require advanced components.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EPOE (ResearchProjectDef)                                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + SkinHardening REPLACE description                                                                           -->
+<!--                       WITH description  Craft bionic implants which induce the toughening of natural skin,       -->
+<!--                                          producing an armour-like effect.                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering</li>
+                    </mods>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="SkinHardening"]/description</xpath>
+                                <value>
+                                    <description>Craft bionic implants which induce the toughening of natural skin, producing an armour-like effect.</description>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
