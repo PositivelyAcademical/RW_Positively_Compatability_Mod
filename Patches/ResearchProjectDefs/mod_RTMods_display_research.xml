@@ -10,8 +10,10 @@
 <!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
 <!--                                              WITH tab  POS_ResearchTab                                           -->
-<!--       +  For ResearchProject_RTBasicFuses IGNORE researchViewX  0                                                -->
-<!--       +  For ResearchProject_RTBasicFuses IGNORE researchViewY  0                                                -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX 4                                                -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY 1                                                -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
 <!--                                                   WITH tab  POS_ResearchTab                                      -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
@@ -64,6 +66,10 @@
 <!--  ==============================================================================================================  -->
 <!--       +  For ResearchProject_RTBasicFuses REPLACE tab                                                            -->
 <!--                                              WITH tab  POS_ResearchTab                                           -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX 4                                                -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY 1                                                -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
 <!--                                                   WITH tab  POS_ResearchTab                                      -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
@@ -80,6 +86,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/tab</xpath>
                     <value>
                         <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
                     </value>
                 </li>
 
