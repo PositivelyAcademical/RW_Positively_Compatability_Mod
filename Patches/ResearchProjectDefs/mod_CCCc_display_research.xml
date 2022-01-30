@@ -12,9 +12,9 @@
 <!--                                    WITH researchViewY  5                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  2.8                                                  -->
+<!--                                         WITH researchViewX  4                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  0                                                    -->
+<!--                                         WITH researchViewY  5                                                    -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -34,9 +34,9 @@
 <!--                                    WITH researchViewY  5                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  2.8                                                  -->
+<!--                                         WITH researchViewX  4                                                    -->
 <!--       + For IndustrialClimateControl REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  0                                                    -->
+<!--                                         WITH researchViewY  5                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]</xpath>
@@ -69,14 +69,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2.8</researchViewX>
+                        <researchViewX>4</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>0</researchViewY>
+                        <researchViewY>5</researchViewY>
                     </value>
                 </li>
 
