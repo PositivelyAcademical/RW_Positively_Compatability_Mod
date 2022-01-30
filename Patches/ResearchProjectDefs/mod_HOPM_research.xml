@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
+<!--    + Autopsy REMOVE ./                                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--    + BasicAutopsy REPLACE tab                                                                                    -->
+<!--                      WITH tab  POS_Medical                                                                       -->
+<!--    + BasicAutopsy REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  1                                                                       -->
+<!--    + BasicAutopsy REPLACE label                                                                                  -->
+<!--                      WITH label  basic autopsy                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--    + AdvancedAutopsy REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + AdvancedAutopsy REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  1                                                                    -->
+<!--    + AdvancedAutopsy REPLACE label                                                                               -->
+<!--                         WITH label  advanced autopsy                                                             -->
+<!--    + AdvancedAutopsy prerequisites ADD li  MedicineProduction                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + GlitterworldAutopsy REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + GlitterworldAutopsy REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--    + GlitterworldAutopsy REPLACE label                                                                           -->
+<!--                             WITH label  ultratech autopsy                                                        -->
+<!--    + GlitterworldAutopsy ADD requiredResearchFacilities li  MultiAnalyzer                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
+<!--    + AnimalAutopsy REPLACE tab                                                                                   -->
+<!--                       WITH tab  POS_Medical                                                                      -->
+<!--    + AnimalAutopsy REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  2                                                                      -->
+<!--    + AnimalAutopsy REPLACE label                                                                                 -->
+<!--                       WITH label  animal autopsy                                                                 -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Harvest Organs Post Mortem</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + Autopsy REMOVE ./                                                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchTabDef[defName="Autopsy"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + BasicAutopsy REPLACE tab                                                                                    -->
+<!--                      WITH tab  POS_Medical                                                                       -->
+<!--    + BasicAutopsy REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  1                                                                       -->
+<!--    + BasicAutopsy REPLACE label                                                                                  -->
+<!--                      WITH label  basic autopsy                                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicAutopsy"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicAutopsy"]/label</xpath>
+                    <value>
+                        <label>basic autopsy</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + AdvancedAutopsy REPLACE tab                                                                                 -->
+<!--                         WITH tab  POS_Medical                                                                    -->
+<!--    + AdvancedAutopsy REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  1                                                                    -->
+<!--    + AdvancedAutopsy REPLACE label                                                                               -->
+<!--                         WITH label  advanced autopsy                                                             -->
+<!--    + AdvancedAutopsy prerequisites ADD li  MedicineProduction                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/label</xpath>
+                    <value>
+                        <label>advanced autopsy</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>MedicineProduction</prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + GlitterworldAutopsy REPLACE tab                                                                             -->
+<!--                             WITH tab  POS_Medical                                                                -->
+<!--    + GlitterworldAutopsy REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1                                                                -->
+<!--    + GlitterworldAutopsy REPLACE label                                                                           -->
+<!--                             WITH label  ultratech autopsy                                                        -->
+<!--    + GlitterworldAutopsy ADD requiredResearchFacilities li  MultiAnalyzer                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]/label</xpath>
+                    <value>
+                        <label>ultratech autopsy</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]</xpath>
+                    <value>
+                        <requiredResearchFacilities>
+                            <li>MultiAnalyzer</li>
+                        </requiredResearchFacilities>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + AnimalAutopsy REPLACE tab                                                                                   -->
+<!--                       WITH tab  POS_Medical                                                                      -->
+<!--    + AnimalAutopsy REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  2                                                                      -->
+<!--    + AnimalAutopsy REPLACE label                                                                                 -->
+<!--                       WITH label  animal autopsy                                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AnimalAutopsy"]/tab</xpath>
+                    <value>
+                        <tab>POS_Medical</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AnimalAutopsy"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="AnimalAutopsy"]/label</xpath>
+                    <value>
+                        <label>animal autopsy</label>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
