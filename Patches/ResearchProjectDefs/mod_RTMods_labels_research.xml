@@ -5,7 +5,8 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
-<!--       +  For ResearchProject_RTBasicFuses IGNORE label                                                           -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE label                                                          -->
+<!--                                              WITH label  fuses                                                   -->
 <!--       +  For ResearchProject_RTCircuitBreakers IGNORE label                                                      -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
@@ -17,6 +18,30 @@
 <!--  ==============================================================================================================  -->
 
 
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--       +  For ResearchProject_RTBasicFuses REPLACE label                                                          -->
+<!--                                              WITH label  Fuses                                                   -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RT Fuse</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/label</xpath>
+                    <value>
+                        <label>fuses</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
 
 <!--  ==============================================================================================================  -->
 <!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
