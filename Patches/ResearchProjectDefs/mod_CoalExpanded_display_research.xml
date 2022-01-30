@@ -7,7 +7,7 @@
 <!--     + ALL_CASES                                                                                                  -->
 <!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
 <!--       + For Research_NECCoalProduction REPLACE researchViewX                                                     -->
-<!--                                           WITH researchViewX  2                                                  -->
+<!--                                           WITH researchViewX  1                                                  -->
 <!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
 <!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
@@ -28,7 +28,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For Research_NECCoalProduction ADD tab  POS_ResearchTab                                                  -->
 <!--       + For Research_NECCoalProduction REPLACE researchViewX                                                     -->
-<!--                                           WITH researchViewX  2                                                  -->
+<!--                                           WITH researchViewX  1                                                  -->
 <!--       + For Research_NECCoalProduction REPLACE researchViewY                                                     -->
 <!--                                           WITH researchViewX  0                                                  -->
 <!--       + For Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                    -->
@@ -47,7 +47,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>1</researchViewX>
                     </value>
                 </li>
 
