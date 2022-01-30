@@ -19,9 +19,9 @@
 <!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--       + For RTR_SolarRoofing ADD tab  POS_ResearchTab                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewX                                                               -->
-<!--                                 WITH researchViewX  2                                                            -->
+<!--                                 WITH researchViewX  4                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  1.8                                                          -->
+<!--                                 WITH researchViewY  3                                                            -->
 <!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  2.8                                               -->
@@ -96,9 +96,9 @@
 <!--  ==============================================================================================================  -->
 <!--       + For RTR_SolarRoofing ADD tab  POS_ResearchTab                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewX                                                               -->
-<!--                                 WITH researchViewX  2                                                            -->
+<!--                                 WITH researchViewX  4                                                            -->
 <!--       + For RTR_SolarRoofing REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  1.8                                                          -->
+<!--                                 WITH researchViewY  3                                                            -->
 <!--       + For RTR_TransparentSolarRoofing ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_TransparentSolarRoofing REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  2.8                                               -->
@@ -115,14 +115,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_SolarRoofing"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>4</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_SolarRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.8</researchViewY>
+                        <researchViewY>3</researchViewY>
                     </value>
                 </li>
 
