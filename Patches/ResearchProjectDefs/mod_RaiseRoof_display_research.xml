@@ -7,9 +7,9 @@
 <!--     + ALL_CASES (ResearchProjectDef) - electricity                                                               -->
 <!--       + For RTR_OverheadMountainRemoval ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2.8                                               -->
+<!--                                            WITH researchViewX  2                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  1.2                                               -->
+<!--                                            WITH researchViewY  2                                                 -->
 <!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
 <!--                                       WITH researchViewX  2                                                      -->
@@ -40,9 +40,9 @@
 <!--  ==============================================================================================================  -->
 <!--       + For RTR_OverheadMountainRemoval ADD tab  POS_ResearchTab                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2.8                                               -->
+<!--                                            WITH researchViewX  2                                                 -->
 <!--       + For RTR_OverheadMountainRemoval REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  1.2                                               -->
+<!--                                            WITH researchViewY  2                                                 -->
 <!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
 <!--                                       WITH researchViewX  2                                                      -->
@@ -59,14 +59,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2.8</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.2</researchViewY>
+                        <researchViewY>2</researchViewY>
                     </value>
                 </li>
 
