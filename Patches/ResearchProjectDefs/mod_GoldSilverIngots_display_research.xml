@@ -7,7 +7,7 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For IngotResearch ADD tab  POS_ResearchTab                                                               -->
 <!--       + For IngotResearch REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  2                                                               -->
+<!--                              WITH researchViewX  1                                                               -->
 <!--       + For IngotResearch REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  3                                                               -->
 <!--  ==============================================================================================================  -->
@@ -24,7 +24,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For IngotResearch ADD tab  POS_ResearchTab                                                               -->
 <!--       + For IngotResearch REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  2                                                               -->
+<!--                              WITH researchViewX  1                                                               -->
 <!--       + For IngotResearch REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  3                                                               -->
 <!--  ==============================================================================================================  -->
@@ -38,7 +38,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>1</researchViewX>
                     </value>
                 </li>
 
