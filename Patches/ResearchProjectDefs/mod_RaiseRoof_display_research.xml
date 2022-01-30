@@ -12,9 +12,9 @@
 <!--                                            WITH researchViewY  2                                                 -->
 <!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
-<!--                                       WITH researchViewX  2                                                      -->
+<!--                                       WITH researchViewX  3                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  1.2                                                    -->
+<!--                                       WITH researchViewY  2                                                      -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--       + For RTR_SolarRoofing ADD tab  POS_ResearchTab                                                            -->
@@ -45,9 +45,9 @@
 <!--                                            WITH researchViewY  2                                                 -->
 <!--       + For RTR_TransparentRoofing ADD tab  POS_ResearchTab                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewX                                                         -->
-<!--                                       WITH researchViewX  2                                                      -->
+<!--                                       WITH researchViewX  3                                                      -->
 <!--       + For RTR_TransparentRoofing REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  1.2                                                    -->
+<!--                                       WITH researchViewY  2                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]</xpath>
@@ -80,14 +80,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentRoofing"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.2</researchViewY>
+                        <researchViewY>2</researchViewY>
                     </value>
                 </li>
 
