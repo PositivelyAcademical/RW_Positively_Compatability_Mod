@@ -4,12 +4,14 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchTabDef                                                                                 -->
+<!--     + ALL_CASES (ResearchTabDef)                                                                                 -->
 <!--       + For Heron_ResearchTab REMOVE ./                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--     + ALL_CASES (ResearchProjectDef) - abstracts                                                                 -->
 <!--       + For @ProjectHeronResearch REPLACE tab                                                                    -->
 <!--                                      WITH tab  POS_ResearchTab                                                   -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef) - neolithic                                                                 -->
 <!--       + For ProjectHeron_Curtains REPLACE researchViewX                                                          -->
 <!--                                      WITH researchViewX  0                                                       -->
 <!--       + For ProjectHeron_Curtains REPLACE researchViewY                                                          -->
@@ -18,10 +20,14 @@
 <!--                                   WITH researchViewX  0                                                          -->
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  4                                                          -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef) - medieval                                                                  -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  1                                                    -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewY                                                       -->
 <!--                                         WITH researchViewY  4                                                    -->
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  0.8                                                  -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewY                                                       -->
@@ -39,7 +45,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchTabDef                                                                                 -->
+<!--     + ALL_CASES (ResearchTabDef)                                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--       + For Heron_ResearchTab REMOVE ./                                                                          -->
 <!--  ==============================================================================================================  -->
@@ -48,10 +54,21 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef                                                                             -->
+<!--     + ALL_CASES (ResearchProjectDef) - abstracts                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--       + For @ProjectHeronResearch REPLACE tab                                                                    -->
 <!--                                      WITH tab  POS_ResearchTab                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[@Name="ProjectHeronResearch"]/tab</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--     + ALL_CASES (ResearchProjectDef) - neolithic                                                                 -->
+<!--  ==============================================================================================================  -->
 <!--       + For ProjectHeron_Curtains REPLACE researchViewX                                                          -->
 <!--                                      WITH researchViewX  0                                                       -->
 <!--       + For ProjectHeron_Curtains REPLACE researchViewY                                                          -->
@@ -61,13 +78,6 @@
 <!--       + For ProjectHeron_Gates REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  4                                                          -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@Name="ProjectHeronResearch"]/tab</xpath>
-                    <value>
-                        <tab>POS_ResearchTab</tab>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_Curtains"]/researchViewX</xpath>
                     <value>
@@ -97,7 +107,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
+<!--     + ALL_CASES (ResearchProjectDef) - medieval                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--       + For ProjectHeron_PrisonDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  1                                                    -->
@@ -119,7 +129,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - ResearchProjectDef (cont)                                                                      -->
+<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--  ==============================================================================================================  -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  0.8                                                  -->
