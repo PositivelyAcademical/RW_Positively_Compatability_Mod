@@ -122,7 +122,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/prerequisites</xpath>
                     <value>
-                        <prerequisites>MedicineProduction</prerequisites>
+                        <li>MedicineProduction</li>
                     </value>
                 </li>
 
