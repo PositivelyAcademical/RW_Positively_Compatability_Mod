@@ -25,7 +25,7 @@
 <!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  3                                            -->
+<!--                                                 WITH researchViewX  2                                            -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
 <!--                                                 WITH researchViewY  1                                            -->
 <!--  ==============================================================================================================  -->
@@ -137,7 +137,7 @@
 <!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  3                                            -->
+<!--                                                 WITH researchViewX  2                                            -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
 <!--                                                 WITH researchViewY  1                                            -->
 <!--  ==============================================================================================================  -->
@@ -158,7 +158,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>3</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
