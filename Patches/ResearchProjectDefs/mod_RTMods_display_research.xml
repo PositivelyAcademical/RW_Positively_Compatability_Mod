@@ -25,9 +25,9 @@
 <!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  0                                            -->
+<!--                                                 WITH researchViewX  3                                            -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
-<!--                                                 WITH researchViewY  0.6                                          -->
+<!--                                                 WITH researchViewY  1                                            -->
 <!--  ==============================================================================================================  -->
 <!--     MATCH RTSolarFlareShield - ResearchProjectDef                                                                -->
 <!--       + For ResearchProject_RTMagneticShield REPLACE tab                                                         -->
@@ -137,9 +137,9 @@
 <!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
 <!--                                                 WITH tab  POS_ResearchTab                                        -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewX                                               -->
-<!--                                                 WITH researchViewX  0                                            -->
+<!--                                                 WITH researchViewX  3                                            -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE researchViewY                                               -->
-<!--                                                 WITH researchViewY  0.6                                          -->
+<!--                                                 WITH researchViewY  1                                            -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -158,14 +158,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>0.6</researchViewY>
+                        <researchViewY>1</researchViewY>
                     </value>
                 </li>
 
