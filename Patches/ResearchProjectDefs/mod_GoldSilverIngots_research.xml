@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--    + For IngotResearch ADD tab  POS_ResearchTab                                                                  -->
+<!--    + For IngotResearch REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  1                                                                  -->
+<!--    + For IngotResearch REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3                                                                  -->
+<!--    + For IngotResearch REPLACE label                                                                             -->
+<!--                           WITH label  bullion reserve                                                            -->
+<!--    + For IngotResearch REPLACE description                                                                       -->
+<!--                           WITH description  Melt gold and silver into ingots to save sapece and use as more      -->
+<!--                                              valuable royal tribute. Though these are too soft for crafting or   -->
+<!--                                              building, so must be melted back down first.                        -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li><![CDATA[Gold & Silver Ingots]]></li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + For IngotResearch ADD tab  POS_ResearchTab                                                                  -->
+<!--    + For IngotResearch REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  1                                                                  -->
+<!--    + For IngotResearch REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3                                                                  -->
+<!--    + For IngotResearch REPLACE label                                                                             -->
+<!--                           WITH label  bullion reserve                                                            -->
+<!--    + For IngotResearch REPLACE description                                                                       -->
+<!--                           WITH description  Melt gold and silver into ingots to save sapece and use as more      -->
+<!--                                              valuable royal tribute. Though these are too soft for crafting or   -->
+<!--                                              building, so must be melted back down first.                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>1</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/label</xpath>
+                    <value>
+                        <label>bullion reserve</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/description</xpath>
+                    <value>
+                        <description>Melt gold and silver into ingots to save sapece and use as more valuable royal tribute. Though these are too soft for crafting or building, so must be melted back down first.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
