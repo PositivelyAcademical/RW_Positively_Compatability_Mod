@@ -6,7 +6,7 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For IngotResearch REPLACE label                                                                          -->
-<!--                              WITH label  bullion ingots                                                          -->
+<!--                              WITH label  bullion reserve                                                         -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -20,12 +20,12 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--  ==============================================================================================================  -->
 <!--       + For IngotResearch REPLACE label                                                                          -->
-<!--                              WITH label  bullion ingots                                                          -->
+<!--                              WITH label  bullion reserve                                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/label</xpath>
                     <value>
-                        <label>bullion ingots</label>
+                        <label>bullion reserve</label>
                     </value>
                 </li>
 
