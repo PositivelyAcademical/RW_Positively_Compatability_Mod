@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--    + TechPlasteelCrafting REPLACE tab                                                                            -->
+<!--                              WITH tab  POS_ResearchTab                                                           -->
+<!--    + TechPlasteelCrafting REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  3                                                               -->
+<!--    + TechPlasteelCrafting REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  4                                                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Craftable Plasteel</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/tab</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
