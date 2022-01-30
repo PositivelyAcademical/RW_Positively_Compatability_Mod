@@ -8,7 +8,7 @@
 <!--       + For TechPlasteelCrafting REPLACE tab                                                                     -->
 <!--                                     WITH tab  POS_ResearchTab                                                    -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  4                                                        -->
+<!--                                     WITH researchViewX  3                                                        -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY  4                                                        -->
 <!--  ==============================================================================================================  -->
@@ -25,7 +25,7 @@
 <!--       + For TechPlasteelCrafting REPLACE tab                                                                     -->
 <!--                                     WITH tab  POS_ResearchTab                                                    -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  4                                                        -->
+<!--                                     WITH researchViewX  3                                                        -->
 <!--       + For TechPlasteelCrafting REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY  4                                                        -->
 <!--  ==============================================================================================================  -->
@@ -39,7 +39,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
