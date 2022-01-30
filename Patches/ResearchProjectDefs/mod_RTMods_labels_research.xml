@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTFuse - ResearchProjectDef                                                                          -->
+<!--       +  For ResearchProject_RTBasicFuses IGNORE label                                                           -->
+<!--       +  For ResearchProject_RTCircuitBreakers IGNORE label                                                      -->
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE label                                                       -->
+<!--                                                 WITH label  automatic power regulation                           -->
+<!--  ==============================================================================================================  -->
+<!--     MATCH RTSolarFlareShield - ResearchProjectDef                                                                -->
+<!--       + For ResearchProject_RTMagneticShield IGNORE label                                                        -->
+<!--  ==============================================================================================================  -->
+
+
+
+<!--  ==============================================================================================================  -->
+<!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--       + For ResearchProject_RTEmergencyPower REPLACE label                                                       -->
+<!--                                                 WITH label  automatic power regulation                           -->
+<!--  ==============================================================================================================  -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RT Power Switch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/label</xpath>
+                    <value>
+                        <label>automatic power regulation</label>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+
+</Patch>
