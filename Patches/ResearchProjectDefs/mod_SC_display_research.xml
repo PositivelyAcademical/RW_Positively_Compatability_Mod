@@ -7,7 +7,7 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For WDReinforcedConcrete ADD tab  POS_ResearchTab                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  4                                                        -->
+<!--                                     WITH researchViewX  3                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY  3                                                        -->
 <!--  ==============================================================================================================  -->
@@ -23,7 +23,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For WDReinforcedConcrete ADD tab  POS_ResearchTab                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewX                                                           -->
-<!--                                     WITH researchViewX  4                                                        -->
+<!--                                     WITH researchViewX  3                                                        -->
 <!--       + For WDReinforcedConcrete REPLACE researchViewY                                                           -->
 <!--                                     WITH researchViewY  3                                                        -->
 <!--  ==============================================================================================================  -->
@@ -37,7 +37,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
