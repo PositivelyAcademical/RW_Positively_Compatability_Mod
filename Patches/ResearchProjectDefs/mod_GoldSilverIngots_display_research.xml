@@ -7,9 +7,9 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For IngotResearch ADD tab  POS_ResearchTab                                                               -->
 <!--       + For IngotResearch REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  0                                                               -->
+<!--                              WITH researchViewX  2                                                               -->
 <!--       + For IngotResearch REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  5.4                                                             -->
+<!--                              WITH researchViewY  3                                                               -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -24,9 +24,9 @@
 <!--  ==============================================================================================================  -->
 <!--       + For IngotResearch ADD tab  POS_ResearchTab                                                               -->
 <!--       + For IngotResearch REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  0                                                               -->
+<!--                              WITH researchViewX  2                                                               -->
 <!--       + For IngotResearch REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  5.4                                                             -->
+<!--                              WITH researchViewY  3                                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]</xpath>
@@ -38,14 +38,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5.4</researchViewY>
+                        <researchViewY>3</researchViewY>
                     </value>
                 </li>
 
