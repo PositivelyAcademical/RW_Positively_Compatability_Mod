@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--    + BasicClimateControl ADD tab  POS_ResearchTab                                                                -->
+<!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  2                                                                -->
+<!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  5                                                                -->
+<!--    + BasicClimateControl REPLACE label                                                                           -->
+<!--                             WITH label  climate control                                                          -->
+<!--    + BasicClimateControl REPLACE description                                                                     -->
+<!--                             WITH description  Use a centralised heating and cooling system to provide temperate  -->
+<!--                                                ducted air thoughout your colony.                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab                                                           -->
+<!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  3                                                           -->
+<!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5                                                           -->
+<!--    + IndustrialClimateControl REPLACE label                                                                      -->
+<!--                                  WITH label  industrial climate control                                          -->
+<!--    + IndustrialClimateControl REPLACE description                                                                -->
+<!--                                  WITH description  Upgrade your ducted air climate system with multiple          -->
+<!--                                                     multiple networks and larger, more efficient intakes and     -->
+<!--                                                     climate control units.                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpanded                                                                                -->
+<!--    + BasicClimateControl prerequisites ADD li  TubeTelevision                                                    -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Centralized Climate Control (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + BasicClimateControl ADD tab  POS_ResearchTab                                                                -->
+<!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
+<!--                             WITH researchViewX  2                                                                -->
+<!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  5                                                                -->
+<!--    + BasicClimateControl REPLACE label                                                                           -->
+<!--                             WITH label  climate control                                                          -->
+<!--    + BasicClimateControl REPLACE description                                                                     -->
+<!--                             WITH description  Use a centralised heating and cooling system to provide temperate  -->
+<!--                                                ducted air thoughout your colony.                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/label</xpath>
+                    <value>
+                        <label>climate control</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/description</xpath>
+                    <value>
+                        <description>Use a centralised heating and cooling system to provide temperate ducted air thoughout your colony.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab                                                           -->
+<!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  3                                                           -->
+<!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  5                                                           -->
+<!--    + IndustrialClimateControl REPLACE label                                                                      -->
+<!--                                  WITH label  industrial climate control                                          -->
+<!--    + IndustrialClimateControl REPLACE description                                                                -->
+<!--                                  WITH description  Upgrade your ducted air climate system with multiple          -->
+<!--                                                     multiple networks and larger, more efficient intakes and     -->
+<!--                                                     climate control units.                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]</xpath>
+                    <value>
+                        <tab>POS_ResearchTab</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>5</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/label</xpath>
+                    <value>
+                        <label>industrial climate control</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/description</xpath>
+                    <value>
+                        <description>Upgrade your ducted air climate system with multiple networks and larger, more efficient intakes and climate control units.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpanded                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + BasicClimateControl prerequisites ADD li  TubeTelevision                                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/prerequisites</xpath>
+                                <value>
+                                    <li>TubeTelevision</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
