@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 1                                                                     -->
+<!--    + MultiAnalyzer REPLACE label                                                                                 -->
+<!--                       WITH label  multi-analyser                                                                 -->
+<!--    + MultiAnalyzer REPLACE description                                                                           -->
+<!--                       WITH description  Build multi-analysers which increase research speed and allow for        -->
+<!--                                          higher-level research projects.                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 2                                                                     -->
+<!--    + SniperTurret REPLACE description                                                                            -->
+<!--                      WITH description  Produce the armour-penetrating uranium slug turret. It fires uranium      -->
+<!--                                         slugs which tear through plasteel like paper, but it's less effective    -->
+<!--                                         at close range.                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 3                                                                     -->
+<!--    + ReconArmor REPLACE label                                                                                    -->
+<!--                    WITH label  recon armour                                                                      -->
+<!--    + ReconArmor REPLACE description                                                                              -->
+<!--                    WITH description  Craft recon armour, a light powered armour suit used by scout troops who    -->
+<!--                                       need protection on the move. Note that these also require advanced         -->
+<!--                                       components.                                                                -->
+<!--    + Fabrication REPLACE description                                                                             -->
+<!--                     WITH description  Build fabrication benches, capable of high-tech projects ranging from      -->
+<!--                                        component assembly to power armour construction.                          -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 4                                                                     -->
+<!--    + PoweredArmor REPLACE label                                                                                  -->
+<!--                      WITH label  marine armour                                                                   -->
+<!--    + PoweredArmor REPLACE description                                                                            -->
+<!--                      WITH description  Build marine armour, a general-use powered armour suit used by high-tech  -->
+<!--                                         shock troops. Note that these also require advanced components.          -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 1                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + MultiAnalyzer REPLACE label                                                                                 -->
+<!--                       WITH label  multi-analyser                                                                 -->
+<!--    + MultiAnalyzer REPLACE description                                                                           -->
+<!--                       WITH description  Build multi-analysers which increase research speed and allow for        -->
+<!--                                          higher-level research projects.                                         -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="MultiAnalyzer"]/label</xpath>
+                <value>
+                    <label>multi-analyser</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="MultiAnalyzer"]/description</xpath>
+                <value>
+                    <description>Build multi-analysers which increase research speed and allow for higher-level research projects.</description>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 2                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + SniperTurret REPLACE description                                                                            -->
+<!--                      WITH description  Produce the armour-penetrating uranium slug turret. It fires uranium      -->
+<!--                                         slugs which tear through plasteel like paper, but it's less effective    -->
+<!--                                         at close range.                                                          -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="SniperTurret"]/description</xpath>
+                <value>
+                    <description>Produce the armour-penetrating uranium slug turret. It fires uranium slugs which tear through plasteel like paper, but it's less effective at close range.</description>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 3                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + ReconArmor REPLACE label                                                                                    -->
+<!--                    WITH label  recon armour                                                                      -->
+<!--    + ReconArmor REPLACE description                                                                              -->
+<!--                    WITH description  Craft recon armour, a light powered armour suit used by scout troops who    -->
+<!--                                       need protection on the move. Note that these also require advanced         -->
+<!--                                       components.                                                                -->
+<!--    + Fabrication REPLACE description                                                                             -->
+<!--                     WITH description  Build fabrication benches, capable of high-tech projects ranging from      -->
+<!--                                        component assembly to power armour construction.                          -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="ReconArmor"]/label</xpath>
+                <value>
+                    <label>recon armour</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="ReconArmor"]/description</xpath>
+                <value>
+                    <description>Craft recon armour, a light powered armour suit used by scout troops who need protection on the move. Note that these also require advanced components.</description>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="Fabrication"]/description</xpath>
+                <value>
+                    <description>Build fabrication benches, capable of high-tech projects ranging from component assembly to power armour construction.</description>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - column 4                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + PoweredArmor REPLACE label                                                                                  -->
+<!--                      WITH label  marine armour                                                                   -->
+<!--    + PoweredArmor REPLACE description                                                                            -->
+<!--                      WITH description  Build marine armour, a general-use powered armour suit used by high-tech  -->
+<!--                                         shock troops. Note that these also require advanced components.          -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="PoweredArmor"]/label</xpath>
+                <value>
+                    <label>marine armour</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="PoweredArmor"]/description</xpath>
+                <value>
+                    <description>Build marine armour, a general-use powered armour suit used by high-tech shock troops. Note that these also require advanced components.</description>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+        <operations>
+    </Operation>
+
+</Patch>
