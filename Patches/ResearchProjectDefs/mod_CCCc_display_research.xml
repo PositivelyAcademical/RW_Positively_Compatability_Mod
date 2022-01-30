@@ -7,7 +7,7 @@
 <!--     + ALL_CASES - ResearchProjectDef                                                                             -->
 <!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
-<!--                                    WITH researchViewX  3                                                         -->
+<!--                                    WITH researchViewX  2                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
 <!--                                    WITH researchViewY  5                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
@@ -29,7 +29,7 @@
 <!--  ==============================================================================================================  -->
 <!--       + For BasicClimateControl ADD tab  POS_ResearchTab                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewX                                                            -->
-<!--                                    WITH researchViewX  3                                                         -->
+<!--                                    WITH researchViewX  2                                                         -->
 <!--       + For BasicClimateControl REPLACE researchViewY                                                            -->
 <!--                                    WITH researchViewY  5                                                         -->
 <!--       + For IndustrialClimateControl ADD tab  POS_ResearchTab                                                    -->
@@ -48,7 +48,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>3</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
