@@ -28,14 +28,14 @@
 <!--                                         WITH researchViewY  4                                                    -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
+<!--       + For ProjectHeron_BlastDoors REPLACE researchViewX                                                        -->
+<!--                                        WITH researchViewX  4                                                     -->
+<!--       + For ProjectHeron_BlastDoors REPLACE researchViewY                                                        -->
+<!--                                        WITH researchViewY  4                                                     -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  4                                                    -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewY                                                       -->
 <!--                                         WITH researchViewY  5                                                    -->
-<!--       + For ProjectHeron_BlastDoors REPLACE researchViewX                                                        -->
-<!--                                        WITH researchViewX  0.8                                                   -->
-<!--       + For ProjectHeron_BlastDoors REPLACE researchViewY                                                        -->
-<!--                                        WITH researchViewY  3                                                     -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -131,15 +131,29 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
 <!--  ==============================================================================================================  -->
+<!--       + For ProjectHeron_BlastDoors REPLACE researchViewX                                                        -->
+<!--                                        WITH researchViewX  4                                                     -->
+<!--       + For ProjectHeron_BlastDoors REPLACE researchViewY                                                        -->
+<!--                                        WITH researchViewY  4                                                     -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewX                                                       -->
 <!--                                         WITH researchViewX  4                                                    -->
 <!--       + For ProjectHeron_RemoteDoors REPLACE researchViewY                                                       -->
 <!--                                         WITH researchViewY  5                                                    -->
-<!--       + For ProjectHeron_BlastDoors REPLACE researchViewX                                                        -->
-<!--                                        WITH researchViewX  0.8                                                   -->
-<!--       + For ProjectHeron_BlastDoors REPLACE researchViewY                                                        -->
-<!--                                        WITH researchViewY  3                                                     -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>4</researchViewY>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/researchViewX</xpath>
                     <value>
@@ -151,20 +165,6 @@
                     <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/researchViewY</xpath>
                     <value>
                         <researchViewY>5</researchViewY>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>0.8</researchViewX>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>3</researchViewY>
                     </value>
                 </li>
 
