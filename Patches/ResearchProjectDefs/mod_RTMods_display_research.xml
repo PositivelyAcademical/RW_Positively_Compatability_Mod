@@ -17,8 +17,9 @@
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
 <!--                                                   WITH tab  POS_ResearchTab                                      -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
-<!--                                                   WITH researchViewX  0.8                                        -->
-<!--       +  For ResearchProject_RTCircuitBreakers IGNORE researchViewY  0                                           -->
+<!--                                                   WITH researchViewX  6                                          -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewY                                             -->
+<!--                                                   WITH researchViewY  1                                          -->
 <!--  ==============================================================================================================  -->
 <!--     + MATCH RTPowerSwitch - ResearchProjectDef                                                                   -->
 <!--       + For ResearchProject_RTEmergencyPower REPLACE tab                                                         -->
@@ -73,7 +74,9 @@
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE tab                                                       -->
 <!--                                                   WITH tab  POS_ResearchTab                                      -->
 <!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewX                                             -->
-<!--                                                   WITH researchViewX  0.8                                        -->
+<!--                                                   WITH researchViewX  6                                          -->
+<!--       +  For ResearchProject_RTCircuitBreakers REPLACE researchViewY                                             -->
+<!--                                                   WITH researchViewY  1                                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -113,7 +116,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTCircuitBreakers"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>0.8</researchViewX>
+                        <researchViewX>6</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTCircuitBreakers"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1</researchViewY>
                     </value>
                 </li>
 
