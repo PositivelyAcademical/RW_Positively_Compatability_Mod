@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--    + Machining REPLACE description                                                                               -->
+<!--                   WITH description  Build machining tables to craft guns, grenades, armour, and to shred dead    -->
+<!--                                       mechanoids for resources.                                                  -->
+<!--    + FlakArmor REPLACE label                                                                                     -->
+<!--                          WITH label  flak armour                                                                 -->
+<!--    + FlakArmor REPLACE description                                                                               -->
+<!--                   WITH description  Craft clothing with metal armour sewn in to resist bullets and explosions.   -->
+<!--                                             explosions. This weighty armour slows movement slightly.             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpanded (ResearchProjectDef)                                                             -->
+<!--    + Machining prerequisites ADD li  VWE_Tools                                                                   -->
+<!--    + Gunsmithing prerequisites ADD li  VWE_Gunpowder                                                             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + Machining REPLACE description                                                                               -->
+<!--                   WITH description  Build machining tables to craft guns, grenades, armour, and to shred dead    -->
+<!--                                       mechanoids for resources.                                                  -->
+<!--    + FlakArmor REPLACE label                                                                                     -->
+<!--                          WITH label  flak armour                                                                 -->
+<!--    + FlakArmor REPLACE description                                                                               -->
+<!--                   WITH description  Craft clothing with metal armour sewn in to resist bullets and explosions.   -->
+<!--                                             explosions. This weighty armour slows movement slightly.             -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="Machining"]/description</xpath>
+                <value>
+                    <description>Build machining tables to craft guns, grenades, armour, and to shred dead mechanoids for resources.</description>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="FlakArmor"]/label</xpath>
+                <value>
+                    <label>flak armour</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="FlakArmor"]/description</xpath>
+                <value>
+                    <description>Craft clothing with metal armour sewn in to resist bullets and explosions. This weighty armour slows movement slightly.</description>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpanded (ResearchProjectDef)                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + Machining prerequisites ADD li  VWE_Tools                                                                   -->
+<!--    + Gunsmithing prerequisites ADD li  VWE_Gunpowder                                                             -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Weapons Expanded</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class = "PatchOperationAdd">
+                            <xpath>/Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
+                            <value>
+                                <li>VWE_Tools</li>
+                            </value>
+                        </li>
+
+                        <li Class = "PatchOperationAdd">
+                            <xpath>/Defs/ResearchProjectDef[defName="Gunsmithing"]/prerequisites</xpath>
+                            <value>
+                                <li>VWE_Gunpowder</li>
+                            </value>
+                        </li>
+
+                    </operations>
+                </match>
+            </li>
+
+<!--  ==============================================================================================================  -->
+        </operations>
+    </Operation>
+</Patch>
