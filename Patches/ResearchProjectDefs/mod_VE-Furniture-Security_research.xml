@@ -29,6 +29,8 @@
 <!--    + For VFES_PulseChargedDefenses IGNORE researchViewX                                                          -->
 <!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  2.48                                                   -->
+<!--    + For VFES_PulseChargedDefenses REPLACE label                                                                 -->
+<!--                                       WITH label  pulse-charged defences                                         -->
 <!--    + For VFES_Railgun IGNORE researchViewX                                                                       -->
 <!--    + For VFES_Railgun REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  2.48                                                                -->
@@ -113,6 +115,8 @@
 <!--                                        WITH researchViewY  2.48                                                  -->
 <!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
 <!--                                       WITH researchViewY  2.48                                                   -->
+<!--    + For VFES_PulseChargedDefenses REPLACE label                                                                 -->
+<!--                                       WITH label  pulse-charged defences                                         -->
 <!--    + For VFES_Railgun REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  2.48                                                                -->
 <!--  ==============================================================================================================  -->
@@ -127,6 +131,13 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_PulseChargedDefenses"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2.48</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_PulseChargedDefenses"]/label</xpath>
+                    <value>
+                        <label>pulse-charged defences</label>
                     </value>
                 </li>
 
