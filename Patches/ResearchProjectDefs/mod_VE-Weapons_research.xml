@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0)                                                                -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - medieval                                                     -->
 <!--    + VWE_Longbow IGNORE researchViewX                                                                            -->
 <!--    + VWE_Longbow REPLACE researchViewY                                                                           -->
 <!--                     WITH researchViewY  0.00                                                                     -->
@@ -21,15 +21,23 @@
 <!--                       WITH researchViewY  0.00                                                                   -->
 <!--    + VWE_Gunpowder REPLACE description                                                                           -->
 <!--                       WITH description  Synthesise gunpowder, the earliest known chemical explosive.             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - electricity                                                  -->
 <!--    + VWE_Flamethrower IGNORE researchViewX                                                                       -->
 <!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.00                                                                -->
 <!--    + VWE_TacticalGrenades IGNORE researchViewX                                                                   -->
 <!--    + VWE_TacticalGrenades REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  0.00                                                            -->
+<!--    + VWE_TacticalGrenades REPLACE description                                                                    -->
+<!--                              WITH description  Craft specialised grenades, useful in a variety of engagements.   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - microelectronics                                             -->
 <!--    + VWE_HeavyWeapons IGNORE researchViewX                                                                       -->
 <!--    + VWE_HeavyWeapons REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.00                                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - multi_analyzer                                               -->
 <!--    + VWE_LaserTargetingSystems IGNORE researchViewX                                                              -->
 <!--    + VWE_LaserTargetingSystems REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  0.00                                                       -->
@@ -47,6 +55,10 @@
 <!--    + VWE_SpecializedFirearms IGNORE researchViewX                                                                -->
 <!--    + VWE_SpecializedFirearms REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  0.62                                                         -->
+<!--    + VWE_SpecializedFirearms REPLACE label                                                                       -->
+<!--                                 WITH label  specialised firearms                                                 -->
+<!--    + VWE_SpecializedFirearms REPLACE description                                                                 -->
+<!--                                 WITH description  Craft specialised guns for demanding combat scenarios.         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
 <!--    + VWE_DesignatedMarksmanRifle IGNORE researchViewX                                                            -->
@@ -62,7 +74,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0)                                                                -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - medieval                                                     -->
 <!--  ==============================================================================================================  -->
 <!--    + VWE_Longbow REPLACE researchViewY                                                                           -->
 <!--                     WITH researchViewY  0.00                                                                     -->
@@ -77,14 +89,6 @@
 <!--                       WITH researchViewY  0.00                                                                   -->
 <!--    + VWE_Gunpowder REPLACE description                                                                           -->
 <!--                       WITH description  Synthesise gunpowder, the earliest known chemical explosive.             -->
-<!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  0.00                                                                -->
-<!--    + VWE_TacticalGrenades REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  0.00                                                            -->
-<!--    + VWE_HeavyWeapons REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  0.00                                                                -->
-<!--    + VWE_LaserTargetingSystems REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  0.00                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Longbow"]/researchViewY</xpath>
@@ -128,6 +132,20 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0) - medieval                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_TacticalGrenades REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  0.00                                                            -->
+<!--    + VWE_TacticalGrenades REPLACE description                                                                    -->
+<!--                              WITH description  Craft specialised grenades, useful in a variety of engagements.   -->
+<!--    + VWE_HeavyWeapons REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_LaserTargetingSystems REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  0.00                                                       -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Flamethrower"]/researchViewY</xpath>
                     <value>
@@ -139,6 +157,13 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_TacticalGrenades"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.00</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_TacticalGrenades"]/description</xpath>
+                    <value>
+                        <description>Craft specialised grenades, useful in a variety of engagements.</description>
                     </value>
                 </li>
 
@@ -167,6 +192,10 @@
 <!--                           WITH researchViewY  0.62                                                               -->
 <!--    + VWE_SpecializedFirearms REPLACE researchViewY                                                               -->
 <!--                                 WITH researchViewY  0.62                                                         -->
+<!--    + VWE_SpecializedFirearms REPLACE label                                                                       -->
+<!--                                 WITH label  specialised firearms                                                 -->
+<!--    + VWE_SpecializedFirearms REPLACE description                                                                 -->
+<!--                                 WITH description  Craft specialised guns for demanding combat scenarios.         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_CompoundBow"]/researchViewY</xpath>
@@ -193,6 +222,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_SpecializedFirearms"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_SpecializedFirearms"]/label</xpath>
+                    <value>
+                        <label>specialised firearms</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_SpecializedFirearms"]/description</xpath>
+                    <value>
+                        <description>Craft specialised guns for demanding combat scenarios.</description>
                     </value>
                 </li>
 
