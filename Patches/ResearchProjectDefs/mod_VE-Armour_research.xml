@@ -27,6 +27,12 @@
 <!--    + VAE_TrooperArmor IGNORE researchViewX                                                                       -->
 <!--    + VAE_TrooperArmor REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  3.10                                                                -->
+<!--    + VAE_TrooperArmor REPLACE label                                                                              -->
+<!--                          WITH label  trooper armour                                                              -->
+<!--    + VAE_TrooperArmor REPLACE description                                                                        -->
+<!--                          WITH description  Craft trooper armour, a light semi-powered armour that is             -->
+<!--                                             lightweight and relatively cheap to produce. Note that these also    -->
+<!--                                             require advanced components.                                         -->
 <!--    + VAE_SiegebreakerArmor IGNORE researchViewX                                                                  -->
 <!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  3.10                                                           -->
@@ -102,6 +108,12 @@
 <!--  ==============================================================================================================  -->
 <!--    + VAE_TrooperArmor REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  3.10                                                                -->
+<!--    + VAE_TrooperArmor REPLACE label                                                                              -->
+<!--                          WITH label  trooper armour                                                              -->
+<!--    + VAE_TrooperArmor REPLACE description                                                                        -->
+<!--                          WITH description  Craft trooper armour, a light semi-powered armour that is             -->
+<!--                                             lightweight and relatively cheap to produce. Note that these also    -->
+<!--                                             require advanced components.                                         -->
 <!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  3.10                                                           -->
 <!--  ==============================================================================================================  -->
@@ -109,6 +121,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/researchViewY</xpath>
                     <value>
                        <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/label</xpath>
+                    <value>
+                       <label>trooper armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/description</xpath>
+                    <value>
+                       <description>Craft trooper armour, a light semi-powered armour that is lightweight and relatively cheap to produce. Note that these also require advanced components.</description>
                     </value>
                 </li>
 
