@@ -7,6 +7,10 @@
 <!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
 <!--    + EPOE REMOVE ./                                                                                              -->
 <!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_Medical                                               -->
+<!--                                    label  Medical                                                                -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 1                                                                        -->
 <!--    + BasicProsthetics REPLACE tab                                                                                -->
 <!--                          WITH  tab  POS_ResearchTab_Medical                                                      -->
@@ -108,6 +112,27 @@
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ResearchTabDef[defName="EPOE"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_Medical                                               -->
+<!--                                    label  Medical                                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ResearchTabDef[defName="POS_ResearchTab_Medical"]</xpath>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchTabDef>
+                                <defName>POS_ResearchTab_Medical</defName>
+                                <label>Medical</label>
+                            </ResearchTabDef>
+                        </value>
+                    </nomatch>
+
                 </li>
 
 <!--  ==============================================================================================================  -->
