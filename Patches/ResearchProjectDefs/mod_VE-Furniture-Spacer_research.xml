@@ -5,17 +5,17 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
-<!--    + For SpacerFurniture IGNORE researchViewX                                                                    -->
-<!--    + For SpacerFurniture REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  4.96                                                             -->
+<!--    + SpacerFurniture IGNORE researchViewX                                                                        -->
+<!--    + SpacerFurniture REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  4.96                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
-<!--    + For SpacerElectronics IGNORE researchViewX                                                                  -->
-<!--    + For SpacerElectronics REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  5.58                                                           -->
-<!--    + For MechaniteRestoration IGNORE researchViewX                                                               -->
-<!--    + For MechaniteRestoration REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5.58                                                        -->
+<!--    + SpacerElectronics IGNORE researchViewX                                                                      -->
+<!--    + SpacerElectronics REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  5.58                                                               -->
+<!--    + MechaniteRestoration IGNORE researchViewX                                                                   -->
+<!--    + MechaniteRestoration REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  5.58                                                            -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -28,8 +28,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For SpacerFurniture REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  4.96                                                             -->
+<!--    + SpacerFurniture REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  4.96                                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="SpacerFurniture"]/researchViewY</xpath>
@@ -41,10 +41,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + For SpacerElectronics REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  5.58                                                           -->
-<!--    + For MechaniteRestoration REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5.58                                                        -->
+<!--    + SpacerElectronics REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  5.58                                                               -->
+<!--    + MechaniteRestoration REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  5.58                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="SpacerElectronics"]/researchViewY</xpath>
