@@ -5,19 +5,23 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
-<!--    + For VFE_Res_FarmingTechniques IGNORE researchViewX                                                          -->
-<!--    + For VFE_Res_FarmingTechniques REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  1.24                                                   -->
+<!--    + VFE_Res_FarmingTechniques IGNORE researchViewX                                                              -->
+<!--    + VFE_Res_FarmingTechniques REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  1.24                                                       -->
+<!--    + VFE_Res_FarmingTechniques REPLACE description                                                               -->
+<!--                                   WITH description  Develop the theoretical basis for larger-scale farming       -->
+<!--                                                      operations, including centralised feeding, and scarecrows   -->
+<!--                                                      to deter wildlife from eating your crops.                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
-<!--    + For VFE_Res_Sprinkler REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  2                                                              -->
-<!--    + For VFE_Res_Sprinkler REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  2.48                                                           -->
+<!--    + VFE_Res_Sprinkler REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  2                                                                  -->
+<!--    + VFE_Res_Sprinkler REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  2.48                                                               -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
-<!--    + For VFE_Res_AdvancedHydroponics IGNORE researchViewX                                                        -->
-<!--    + For VFE_Res_AdvancedHydroponics IGNORE researchViewY                                                        -->
+<!--    + VFE_Res_AdvancedHydroponics IGNORE researchViewX                                                            -->
+<!--    + VFE_Res_AdvancedHydroponics IGNORE researchViewY                                                            -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -30,8 +34,12 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFE_Res_FarmingTechniques REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  1.24                                                   -->
+<!--    + VFE_Res_FarmingTechniques REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  1.24                                                       -->
+<!--    + VFE_Res_FarmingTechniques REPLACE description                                                               -->
+<!--                                   WITH description  Develop the theoretical basis for larger-scale farming       -->
+<!--                                                      operations, including centralised feeding, and scarecrows   -->
+<!--                                                      to deter wildlife from eating your crops.                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_FarmingTechniques"]/researchViewY</xpath>
@@ -40,13 +48,20 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_FarmingTechniques"]/description</xpath>
+                    <value>
+                        <description>Develop the theoretical basis for larger-scale farming operations, including centralised feeding, and scarecrows to deter wildlife from eating your crops.</description>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFE_Res_Sprinkler REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  2                                                              -->
-<!--    + For VFE_Res_Sprinkler REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  2.48                                                           -->
+<!--    + VFE_Res_Sprinkler REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  2                                                                  -->
+<!--    + VFE_Res_Sprinkler REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  2.48                                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Sprinkler"]/researchViewX</xpath>
