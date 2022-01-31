@@ -5,52 +5,57 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
-<!--    + For VFES_SentryGuns IGNORE researchViewX                                                                    -->
-<!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  0.62                                                             -->
+<!--    + VFES_SentryGuns IGNORE researchViewX                                                                        -->
+<!--    + VFES_SentryGuns REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  0.62                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
-<!--    + For VFES_Artillery IGNORE researchViewX                                                                     -->
-<!--    + For VFES_Artillery REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  1.24                                                              -->
-<!--    + For VFES_RepulsorTechnology IGNORE researchViewX                                                            -->
-<!--    + For VFES_RepulsorTechnology REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  1.24                                                     -->
+<!--    + VFES_Artillery IGNORE researchViewX                                                                         -->
+<!--    + VFES_Artillery REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.24                                                                  -->
+<!--    + VFES_RepulsorTechnology IGNORE researchViewX                                                                -->
+<!--    + VFES_RepulsorTechnology REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  1.24                                                         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
-<!--    + For VFES_EMPCannon IGNORE researchViewX                                                                     -->
-<!--    + For VFES_EMPCannon REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  1.86                                                              -->
+<!--    + VFES_EMPCannon IGNORE researchViewX                                                                         -->
+<!--    + VFES_EMPCannon REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.86                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
-<!--    + For VFES_MetalAlloysBarricades IGNORE researchViewX                                                         -->
-<!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
-<!--                                        WITH researchViewY  2.48                                                  -->
-<!--    + For VFES_PulseChargedDefenses IGNORE researchViewX                                                          -->
-<!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  2.48                                                   -->
-<!--    + For VFES_PulseChargedDefenses REPLACE label                                                                 -->
-<!--                                       WITH label  pulse-charged defences                                         -->
-<!--    + For VFES_Railgun IGNORE researchViewX                                                                       -->
-<!--    + For VFES_Railgun REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  2.48                                                                -->
+<!--    + VFES_MetalAlloysBarricades IGNORE researchViewX                                                             -->
+<!--    + VFES_MetalAlloysBarricades REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  2.48                                                      -->
+<!--    + VFES_PulseChargedDefenses IGNORE researchViewX                                                              -->
+<!--    + VFES_PulseChargedDefenses REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  2.48                                                       -->
+<!--    + VFES_PulseChargedDefenses REPLACE label                                                                     -->
+<!--                                   WITH label  pulse-charged defences                                             -->
+<!--    + VFES_Railgun IGNORE researchViewX                                                                           -->
+<!--    + VFES_Railgun REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  2.48                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
-<!--    + For VFES_MissileBarrage IGNORE researchViewX                                                                -->
-<!--    + For VFES_MissileBarrage REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  3.10                                                         -->
-<!--    + For VFES_ConcealedDefenses IGNORE researchViewX                                                             -->
-<!--    + For VFES_ConcealedDefenses IGNORE researchViewY                                                             -->
+<!--    + VFES_MissileBarrage IGNORE researchViewX                                                                    -->
+<!--    + VFES_MissileBarrage REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  3.10                                                             -->
+<!--    + VFES_ConcealedDefenses IGNORE researchViewX                                                                 -->
+<!--    + VFES_ConcealedDefenses IGNORE researchViewY                                                                 -->
+<!--    + VFES_ConcealedDefenses REPLACE label                                                                        -->
+<!--                                WITH label  concealed defences                                                    -->
+<!--    + VFES_ConcealedDefenses REPLACE description                                                                  -->
+<!--                                WITH description  Construct submersibile barriers and turrets, perfece for        -->
+<!--                                                   indoor defences.                                               -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
-<!--    + For VFES_SiegeEquipment IGNORE researchViewX                                                                -->
-<!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  5.58                                                         -->
+<!--    + VFES_SiegeEquipment IGNORE researchViewX                                                                    -->
+<!--    + VFES_SiegeEquipment REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  5.58                                                             -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
-<!--    + For VFES_TrenchWarfare IGNORE researchViewX                                                                 -->
-<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  0.62                                                          -->
+<!--    + VFES_TrenchWarfare IGNORE researchViewX                                                                     -->
+<!--    + VFES_TrenchWarfare REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  0.62                                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -63,8 +68,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_SentryGuns REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  0.62                                                             -->
+<!--    + VFES_SentryGuns REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  0.62                                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_SentryGuns"]/researchViewY</xpath>
@@ -76,10 +81,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_Artillery REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  1.24                                                              -->
-<!--    + For VFES_RepulsorTechnology REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  1.24                                                     -->
+<!--    + VFES_Artillery REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.24                                                                  -->
+<!--    + VFES_RepulsorTechnology REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  1.24                                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_Artillery"]/researchViewY</xpath>
@@ -98,8 +103,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_EMPCannon REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  1.86                                                              -->
+<!--    + VFES_EMPCannon REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.86                                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_EMPCannon"]/researchViewY</xpath>
@@ -111,14 +116,14 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_MetalAlloysBarricades REPLACE researchViewY                                                        -->
-<!--                                        WITH researchViewY  2.48                                                  -->
-<!--    + For VFES_PulseChargedDefenses REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  2.48                                                   -->
-<!--    + For VFES_PulseChargedDefenses REPLACE label                                                                 -->
-<!--                                       WITH label  pulse-charged defences                                         -->
-<!--    + For VFES_Railgun REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  2.48                                                                -->
+<!--    + VFES_MetalAlloysBarricades REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  2.48                                                      -->
+<!--    + VFES_PulseChargedDefenses REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  2.48                                                       -->
+<!--    + VFES_PulseChargedDefenses REPLACE label                                                                     -->
+<!--                                   WITH label  pulse-charged defences                                             -->
+<!--    + VFES_Railgun REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  2.48                                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_MetalAlloysBarricades"]/researchViewY</xpath>
@@ -151,8 +156,13 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_MissileBarrage REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  3.10                                                         -->
+<!--    + VFES_MissileBarrage REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  3.10                                                             -->
+<!--    + VFES_ConcealedDefenses REPLACE label                                                                        -->
+<!--                                WITH label  concealed defences                                                    -->
+<!--    + VFES_ConcealedDefenses REPLACE description                                                                  -->
+<!--                                WITH description  Construct submersibile barriers and turrets, perfece for        -->
+<!--                                                   indoor defences.                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_MissileBarrage"]/researchViewY</xpath>
@@ -161,11 +171,25 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_ConcealedDefenses"]/label</xpath>
+                    <value>
+                        <label>concealed defences</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VFES_MissileBarrage"]/description</xpath>
+                    <value>
+                        <description>Construct submersibile barriers and turrets, perfece for indoor defences.</description>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 5.58)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_SiegeEquipment REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  5.58                                                         -->
+<!--    + VFES_SiegeEquipment REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  5.58                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFES_SiegeEquipment"]/researchViewY</xpath>
@@ -177,8 +201,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATHCH VanillaWeaponsExpanded (ResearchProjectDef) - row 2 (Y = 0.62)                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFES_TrenchWarfare REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  0.62                                                          -->
+<!--    + VFES_TrenchWarfare REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  0.62                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
