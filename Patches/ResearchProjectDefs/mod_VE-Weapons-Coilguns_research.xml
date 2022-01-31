@@ -5,9 +5,9 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
-<!--    + For VWE_MassDrivers IGNORE researchViewX                                                                    -->
-<!--    + For VWE_MassDrivers REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  6.20                                                             -->
+<!--    + VWE_MassDrivers IGNORE researchViewX                                                                        -->
+<!--    + VWE_MassDrivers REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  6.20                                                                 -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -20,8 +20,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_MassDrivers REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  6.20                                                             -->
+<!--    + VWE_MassDrivers REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  6.20                                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_MassDrivers"]/researchViewY</xpath>
