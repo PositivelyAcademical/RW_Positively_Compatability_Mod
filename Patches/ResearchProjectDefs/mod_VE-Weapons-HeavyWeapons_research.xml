@@ -5,7 +5,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH VanillaWeaponsExpandedQuickdraw (ResearchProjectDef) - removals                                      -->
-<!--    + For VWE_Quickdraw REMOVE ./                                                                                 -->
+<!--    + VWE_Quickdraw REMOVE ./                                                                                     -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
