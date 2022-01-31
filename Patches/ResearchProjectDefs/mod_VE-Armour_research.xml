@@ -5,28 +5,31 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
-<!--    + For VAE_LeatherTanning IGNORE researchViewX                                                                 -->
-<!--    + For VAE_LeatherTanning REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  1.24                                                          -->
+<!--    + VAE_LeatherTanning IGNORE researchViewX                                                                     -->
+<!--    + VAE_LeatherTanning REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
+<!--    + VAE_LeatherTanning REPLACE description                                                                      -->
+<!--                            WITH description  Learn the process of tanning to craft thicker and more durable      -->
+<!--                                               armours.                                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
-<!--    + For VAE_MlitaryCamouflage IGNORE researchViewX                                                              -->
-<!--    + For VAE_MlitaryCamouflage REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  1.86                                                       -->
+<!--    + VAE_MlitaryCamouflage IGNORE researchViewX                                                                  -->
+<!--    + VAE_MlitaryCamouflage REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  1.86                                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
-<!--    + For VAE_HazardProtection REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  4                                                           -->
-<!--    + For VAE_HazardProtection REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  2.48                                                        -->
+<!--    + VAE_HazardProtection REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + VAE_HazardProtection REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.48                                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
-<!--    + For VAE_TrooperArmor IGNORE researchViewX                                                                   -->
-<!--    + For VAE_TrooperArmor REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3.10                                                            -->
-<!--    + For VAE_SiegebreakerArmor IGNORE researchViewX                                                              -->
-<!--    + For VAE_SiegebreakerArmor REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.10                                                       -->
+<!--    + VAE_TrooperArmor IGNORE researchViewX                                                                       -->
+<!--    + VAE_TrooperArmor REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.10                                                                -->
+<!--    + VAE_SiegebreakerArmor IGNORE researchViewX                                                                  -->
+<!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.10                                                           -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -39,8 +42,11 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VAE_LeatherTanning REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  1.24                                                          -->
+<!--    + VAE_LeatherTanning REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  1.24                                                              -->
+<!--    + VAE_LeatherTanning REPLACE description                                                                      -->
+<!--                            WITH description  Learn the process of tanning to craft thicker and more durable      -->
+<!--                                               armours.                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/researchViewY</xpath>
@@ -49,11 +55,18 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_LeatherTanning"]/description</xpath>
+                    <value>
+                        <description>Learn the process of tanning to craft thicker and more durable armours.</description>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VAE_MlitaryCamouflage REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  1.86                                                       -->
+<!--    + VAE_MlitaryCamouflage REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  1.86                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_MlitaryCamouflage"]/researchViewY</xpath>
@@ -65,10 +78,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VAE_HazardProtection REPLACE researchViewX                                                              -->
-<!--                                  WITH researchViewX  4                                                           -->
-<!--    + For VAE_HazardProtection REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  2.48                                                        -->
+<!--    + VAE_HazardProtection REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  4                                                               -->
+<!--    + VAE_HazardProtection REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  2.48                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_HazardProtection"]/researchViewX</xpath>
@@ -87,10 +100,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VAE_TrooperArmor REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3.10                                                            -->
-<!--    + For VAE_SiegebreakerArmor REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.10                                                       -->
+<!--    + VAE_TrooperArmor REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.10                                                                -->
+<!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.10                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/researchViewY</xpath>
