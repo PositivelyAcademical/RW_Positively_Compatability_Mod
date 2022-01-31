@@ -5,18 +5,23 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
-<!--  ==============================================================================================================  -->
 <!--    + WDReinforcedConcrete ADD tab  POS_ResearchTab_General                                                       -->
 <!--    + WDReinforcedConcrete REPLACE researchViewX                                                                  -->
 <!--                              WITH researchViewX  3                                                               -->
 <!--    + WDReinforcedConcrete REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  3                                                               -->
 <!--    + WDReinforcedConcrete REPLACE label                                                                          -->
-<!--                              WITH label rockcrete                                                                -->
+<!--                              WITH label  rockcrete                                                               -->
 <!--    + WDReinforcedConcrete REPLACE description                                                                    -->
 <!--                              WITH description  Smelt hardened rockcrete blocks by reinforcing stone blocks with  -->
 <!--                                                 steel.                                                           -->
+<!--    + WDReinforcedConcrete REPLACE baseCost                                                                       -->
+<!--                              WITH baseCost  1800                                                                 -->
 <!--  ==============================================================================================================  -->
+<!--  + MATCH SmeltedStone (ResearchProjectDef)                                                                       -->
+<!--    + WDReinforcedConcrete prerequisites ADD li  POS_Concrete_Research                                            -->
+<!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>[WD] Simple Concrete</li>
@@ -24,6 +29,22 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + WDReinforcedConcrete ADD tab  POS_ResearchTab_General                                                       -->
+<!--    + WDReinforcedConcrete REPLACE researchViewX                                                                  -->
+<!--                              WITH researchViewX  3                                                               -->
+<!--    + WDReinforcedConcrete REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  3                                                               -->
+<!--    + WDReinforcedConcrete REPLACE label                                                                          -->
+<!--                              WITH label  rockcrete                                                               -->
+<!--    + WDReinforcedConcrete REPLACE description                                                                    -->
+<!--                              WITH description  Smelt hardened rockcrete blocks by reinforcing stone blocks with  -->
+<!--                                                 steel.                                                           -->
+<!--    + WDReinforcedConcrete REPLACE baseCost                                                                       -->
+<!--                              WITH baseCost  1800                                                                 -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]</xpath>
                     <value>
@@ -57,6 +78,32 @@
                     <value>
                         <description>Smelt hardened rockcrete blocks by reinforcing stone blocks with steel.</description>
                     </value>
+                </li>
+
+                <li Class = "PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/baseCost</xpath>
+                    <value>
+                        <baseCost>1800</baseCost>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH SmeltedStone (ResearchProjectDef)                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + WDReinforcedConcrete prerequisites ADD li  POS_Concrete_Research                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Smelted Stone</li>
+                    </mods>
+
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/prerequisites</xpath>
+                        <value>
+                            <li>POS_Concrete_Research</li>
+                        </value>
+                    </match>
+
                 </li>
 
 <!--  ==============================================================================================================  -->
