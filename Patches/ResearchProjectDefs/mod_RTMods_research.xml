@@ -9,6 +9,10 @@
 <!--          RTSolarFlareShield  (ResearchTabDef)                                                                    -->
 <!--    + RTMods REMOVE ./                                                                                            -->
 <!--  ==============================================================================================================  -->
+<!--    + CONDITIONAL (ResearchTabDef)                                                                                -->
+<!--      + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                             -->
+<!--                                      label  Assorted Mods                                                        -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH RTFuse (ResearchProjectDef) - electricity                                                               -->
 <!--    + ResearchProject_RTBasicFuses REPLACE tab                                                                    -->
 <!--                                      WITH tab  POS_ResearchTab_General                                           -->
@@ -47,9 +51,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH RTFuse                                                                                                  -->
 <!--          RTPowerSwitch                                                                                           -->
-<!--          RTSolarFlareShield  (ResearchTabDef)                                                                    -->
-<!--  ==============================================================================================================  -->
-<!--    + RTMods REMOVE ./                                                                                            -->
+<!--          RTSolarFlareShield                                                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -60,8 +62,39 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH RTFuse                                                                                                  -->
+<!--          RTPowerSwitch                                                                                           -->
+<!--          RTSolarFlareShield  (ResearchTabDef)                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + RTMods REMOVE ./                                                                                            -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ResearchTabDef[defName="RTMods"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH RTFuse                                                                                                  -->
+<!--          RTPowerSwitch                                                                                           -->
+<!--          RTSolarFlareShield                                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + CONDITIONAL (ResearchTabDef)                                                                                -->
+<!--      + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                             -->
+<!--                                      label  Assorted Mods                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ResearchTabDef[defName="POS_ResearchTab_General"]</xpath>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchTabDef>
+                                <defName>POS_ResearchTab_General</defName>
+                                <label>Assorted Mods</label>
+                            </ResearchTabDef>
+                        </value>
+                    </nomatch>
+
                 </li>
 
             </operations>
