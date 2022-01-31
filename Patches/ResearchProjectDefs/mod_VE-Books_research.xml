@@ -5,14 +5,14 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
-<!--    + For VBE_Writing REPLACE researchViewX                                                                       -->
-<!--                         WITH researchViewX  2                                                                    -->
-<!--    + For VBE_Writing REPLACE researchViewY                                                                       -->
-<!--                         WITH researchViewY  6.20                                                                 -->
-<!--    + For VBE_Printing REPLACE researchViewX                                                                      -->
-<!--                          WITH researchViewX  3                                                                   -->
-<!--    + For VBE_Printing REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewX  3                                                                   -->
+<!--    + VBE_Writing REPLACE researchViewX                                                                           -->
+<!--                     WITH researchViewX  2                                                                        -->
+<!--    + VBE_Writing REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  6.20                                                                     -->
+<!--    + VBE_Printing REPLACE researchViewX                                                                          -->
+<!--                      WITH researchViewX  3                                                                       -->
+<!--    + VBE_Printing REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewX  3                                                                       -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -25,14 +25,14 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 11 (Y = 6.20)                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + For VBE_Writing REPLACE researchViewX                                                                       -->
-<!--                         WITH researchViewX  2                                                                    -->
-<!--    + For VBE_Writing REPLACE researchViewY                                                                       -->
-<!--                         WITH researchViewY  6.20                                                                 -->
-<!--    + For VBE_Printing REPLACE researchViewX                                                                      -->
-<!--                          WITH researchViewX  3                                                                   -->
-<!--    + For VBE_Printing REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewX  3                                                                   -->
+<!--    + VBE_Writing REPLACE researchViewX                                                                           -->
+<!--                     WITH researchViewX  2                                                                        -->
+<!--    + VBE_Writing REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  6.20                                                                     -->
+<!--    + VBE_Printing REPLACE researchViewX                                                                          -->
+<!--                      WITH researchViewX  3                                                                       -->
+<!--    + VBE_Printing REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewX  3                                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VBE_Writing"]/researchViewX</xpath>
