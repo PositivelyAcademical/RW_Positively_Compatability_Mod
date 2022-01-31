@@ -19,6 +19,8 @@
 <!--    + VWE_Gunpowder IGNORE researchViewX                                                                          -->
 <!--    + VWE_Gunpowder REPLACE researchViewY                                                                         -->
 <!--                       WITH researchViewY  0.00                                                                   -->
+<!--    + VWE_Gunpowder REPLACE description                                                                           -->
+<!--                       WITH description  Synthesise gunpowder, the earliest known chemical explosive.             -->
 <!--    + VWE_Flamethrower IGNORE researchViewX                                                                       -->
 <!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.00                                                                -->
@@ -62,25 +64,27 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0)                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_Longbow REPLACE researchViewY                                                                       -->
-<!--                         WITH researchViewY  0.00                                                                 -->
+<!--    + VWE_Longbow REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  0.00                                                                     -->
 <!--    + VWE_Longbow REPLACE description                                                                             -->
 <!--                     WITH description  Craft longbows, a medieval equivalent to the sniper rifle.                 -->
-<!--    + For VWE_Crossbow REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_Crossbow REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  0.00                                                                    -->
 <!--    + VWE_Crossbow REPLACE description                                                                            -->
 <!--                      WITH description  Construct crossbows, a medieval ranged weapon effective against armoured  -->
 <!--                                         enemies.                                                                 -->
-<!--    + For VWE_Gunpowder REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  0.00                                                               -->
-<!--    + For VWE_Flamethrower REPLACE researchViewY                                                                  -->
+<!--    + VWE_Gunpowder REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  0.00                                                                   -->
+<!--    + VWE_Gunpowder REPLACE description                                                                           -->
+<!--                       WITH description  Synthesise gunpowder, the earliest known chemical explosive.             -->
+<!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_TacticalGrenades REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  0.00                                                            -->
-<!--    + For VWE_TacticalGrenades REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  0.00                                                        -->
-<!--    + For VWE_HeavyWeapons REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  0.00                                                            -->
-<!--    + For VWE_LaserTargetingSystems REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  0.00                                                   -->
+<!--    + VWE_HeavyWeapons REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_LaserTargetingSystems REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  0.00                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Longbow"]/researchViewY</xpath>
@@ -118,6 +122,13 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_Gunpowder"]/description</xpath>
+                    <value>
+                        <description>Synthesise gunpowder, the earliest known chemical explosive.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Flamethrower"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.00</researchViewY>
@@ -148,14 +159,14 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_CompoundBow REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  0.62                                                             -->
-<!--    + For VWE_Tools REPLACE researchViewY                                                                         -->
-<!--                       WITH researchViewY  0.62                                                                   -->
-<!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  0.62                                                           -->
-<!--    + For VWE_SpecializedFirearms REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  0.62                                                     -->
+<!--    + VWE_CompoundBow REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  0.62                                                                 -->
+<!--    + VWE_Tools REPLACE researchViewY                                                                             -->
+<!--                   WITH researchViewY  0.62                                                                       -->
+<!--    + VWE_TrenchWarfare REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  0.62                                                               -->
+<!--    + VWE_SpecializedFirearms REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  0.62                                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_CompoundBow"]/researchViewY</xpath>
@@ -188,8 +199,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  1.24                                                 -->
+<!--    + VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY  1.24                                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_DesignatedMarksmanRifle"]/researchViewY</xpath>
