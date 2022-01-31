@@ -5,14 +5,14 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
-<!--    + For VWE_LaserWeapons REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  7                                                               -->
-<!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  0.62                                                            -->
-<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewX                                                         -->
-<!--                                       WITH researchViewX  8                                                      -->
-<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  0.62                                                   -->
+<!--    + VWE_LaserWeapons REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  7                                                                   -->
+<!--    + VWE_LaserWeapons REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.62                                                                -->
+<!--    + VWE_UltratechLaserWeapons REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  8                                                          -->
+<!--    + VWE_UltratechLaserWeapons REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  0.62                                                       -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -25,14 +25,14 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_LaserWeapons REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  7                                                               -->
-<!--    + For VWE_LaserWeapons REPLACE researchViewY                                                                  -->
-<!--                               WITH researchViewY  0.62                                                           -->
-<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewX                                                         -->
-<!--                                       WITH researchViewX  8                                                      -->
-<!--    + For VWE_UltratechLaserWeapons REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  0.62                                                   -->
+<!--    + VWE_LaserWeapons REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  7                                                                   -->
+<!--    + VWE_LaserWeapons REPLACE researchViewY                                                                      -->
+<!--                           WITH researchViewY  0.62                                                               -->
+<!--    + VWE_UltratechLaserWeapons REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  8                                                          -->
+<!--    + VWE_UltratechLaserWeapons REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  0.62                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewX</xpath>
