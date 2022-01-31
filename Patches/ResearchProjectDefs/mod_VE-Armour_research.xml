@@ -36,6 +36,12 @@
 <!--    + VAE_SiegebreakerArmor IGNORE researchViewX                                                                  -->
 <!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  3.10                                                           -->
+<!--    + VAE_SiegebreakerArmor REPLACE label                                                                         -->
+<!--                               WITH label  siegebreaker armour                                                    -->
+<!--    + VAE_SiegebreakerArmor REPLACE description                                                                   -->
+<!--                               WITH description  Craft siegebreaker armour, heavy powered armour that             -->
+<!--                                                  significantly slows the user but provides advanced protection   -->
+<!--                                                  at range. Note that these also require advanced components.     -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -116,6 +122,12 @@
 <!--                                             require advanced components.                                         -->
 <!--    + VAE_SiegebreakerArmor REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  3.10                                                           -->
+<!--    + VAE_SiegebreakerArmor REPLACE label                                                                         -->
+<!--                               WITH label  siegebreaker armour                                                    -->
+<!--    + VAE_SiegebreakerArmor REPLACE description                                                                   -->
+<!--                               WITH description  Craft siegebreaker armour, heavy powered armour that             -->
+<!--                                                  significantly slows the user but provides advanced protection   -->
+<!--                                                  at range. Note that these also require advanced components.     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_TrooperArmor"]/researchViewY</xpath>
@@ -142,6 +154,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VAE_SiegebreakerArmor"]/researchViewY</xpath>
                     <value>
                        <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_SiegebreakerArmor"]/label</xpath>
+                    <value>
+                       <label>siegebreaker armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VAE_SiegebreakerArmor"]/description</xpath>
+                    <value>
+                       <description>Craft siegebreaker armour, heavy powered armour that significantly slows the user but provides advanced protection at range. Note that these also require advanced components.</description>
                     </value>
                 </li>
 
