@@ -5,9 +5,9 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
-<!--    + For VCE_SucculentSowing IGNORE researchViewX                                                                -->
-<!--    + For VCE_SucculentSowing REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  1.86                                                         -->
+<!--    + VCE_SucculentSowing IGNORE researchViewX                                                                    -->
+<!--    + VCE_SucculentSowing REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1.86                                                             -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -20,8 +20,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VCE_SucculentSowing REPLACE researchViewY                                                               -->
-<!--                                 WITH researchViewY  1.86                                                         -->
+<!--    + VCE_SucculentSowing REPLACE researchViewY                                                                   -->
+<!--                             WITH researchViewY  1.86                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VCE_SucculentSowing"]/researchViewY</xpath>
