@@ -5,27 +5,27 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
-<!--    + For VFE_GasExtraction IGNORE researchViewX                                                                  -->
-<!--    + For VFE_GasExtraction REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  3.10                                                           -->
-<!--    + For VFE_TidalPower IGNORE researchViewX                                                                     -->
-<!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  3.10                                                              -->
+<!--    + VFE_GasExtraction IGNORE researchViewX                                                                      -->
+<!--    + VFE_GasExtraction REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3.10                                                               -->
+<!--    + VFE_TidalPower IGNORE researchViewX                                                                         -->
+<!--    + VFE_TidalPower REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  3.10                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 7 (Y = 3.72)                                                             -->
-<!--    + For VFE_IndustrialGenerators IGNORE researchViewX                                                           -->
-<!--    + For VFE_IndustrialGenerators REPLACE researchViewY                                                          -->
-<!--                                      WITH researchViewY  3.72                                                    -->
-<!--    + For VFE_AdvancedBatteries IGNORE researchViewX                                                              -->
-<!--    + For VFE_AdvancedBatteries REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.72                                                       -->
-<!--    + For VFE_AdvancedPowerSources REPLACE researchViewX                                                          -->
-<!--                                      WITH researchViewX  5                                                       -->
-<!--    + For VFE_AdvancedPowerSources REPLACE researchViewY                                                          -->
-<!--                                      WITH researchViewY  3.72                                                    -->
-<!--    + For VFE_NuclearPower IGNORE researchViewX                                                                   -->
-<!--    + For VFE_NuclearPower REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3.72                                                            -->
+<!--    + VFE_IndustrialGenerators IGNORE researchViewX                                                               -->
+<!--    + VFE_IndustrialGenerators REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3.72                                                        -->
+<!--    + VFE_AdvancedBatteries IGNORE researchViewX                                                                  -->
+<!--    + VFE_AdvancedBatteries REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.72                                                           -->
+<!--    + VFE_AdvancedPowerSources REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  5                                                           -->
+<!--    + VFE_AdvancedPowerSources REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3.72                                                        -->
+<!--    + VFE_NuclearPower IGNORE researchViewX                                                                       -->
+<!--    + VFE_NuclearPower REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.72                                                                -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -38,10 +38,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 6 (Y = 3.10)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFE_GasExtraction REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  3.10                                                           -->
-<!--    + For VFE_TidalPower REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  3.10                                                              -->
+<!--    + VFE_GasExtraction REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  3.10                                                               -->
+<!--    + VFE_TidalPower REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  3.10                                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_GasExtraction"]/researchViewY</xpath>
@@ -60,16 +60,16 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 7 (Y = 3.72)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFE_IndustrialGenerators REPLACE researchViewY                                                          -->
-<!--                                      WITH researchViewY  3.72                                                    -->
-<!--    + For VFE_AdvancedBatteries REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.72                                                       -->
-<!--    + For VFE_AdvancedPowerSources REPLACE researchViewX                                                          -->
-<!--                                      WITH researchViewX  5                                                       -->
-<!--    + For VFE_AdvancedPowerSources REPLACE researchViewY                                                          -->
-<!--                                      WITH researchViewY  3.72                                                    -->
-<!--    + For VFE_NuclearPower REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3.72                                                            -->
+<!--    + VFE_IndustrialGenerators REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3.72                                                        -->
+<!--    + VFE_AdvancedBatteries REPLACE researchViewY                                                                 -->
+<!--                               WITH researchViewY  3.72                                                           -->
+<!--    + VFE_AdvancedPowerSources REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  5                                                           -->
+<!--    + VFE_AdvancedPowerSources REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  3.72                                                        -->
+<!--    + VFE_NuclearPower REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  3.72                                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_IndustrialGenerators"]/researchViewY</xpath>
