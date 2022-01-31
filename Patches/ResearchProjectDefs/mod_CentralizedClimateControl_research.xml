@@ -5,7 +5,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
-<!--    + BasicClimateControl ADD tab  POS_ResearchTab                                                                -->
+<!--    + BasicClimateControl ADD tab  POS_ResearchTab_General                                                        -->
 <!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
 <!--                             WITH researchViewX  2                                                                -->
 <!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
@@ -16,7 +16,7 @@
 <!--                             WITH description  Use a centralised heating and cooling system to provide temperate  -->
 <!--                                                ducted air thoughout your colony.                                 -->
 <!--  ==============================================================================================================  -->
-<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab                                                           -->
+<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab_General                                                   -->
 <!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  3                                                           -->
 <!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
@@ -42,7 +42,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + BasicClimateControl ADD tab  POS_ResearchTab                                                                -->
+<!--    + BasicClimateControl ADD tab  POS_ResearchTab_General                                                        -->
 <!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
 <!--                             WITH researchViewX  2                                                                -->
 <!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
@@ -56,7 +56,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -91,7 +91,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab                                                           -->
+<!--    + IndustrialClimateControl ADD tab  POS_ResearchTab_General                                                   -->
 <!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  3                                                           -->
 <!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
@@ -106,7 +106,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 

@@ -6,7 +6,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
 <!--    + TechPlasteelCrafting REPLACE tab                                                                            -->
-<!--                              WITH tab  POS_ResearchTab                                                           -->
+<!--                              WITH tab  POS_ResearchTab_General                                                   -->
 <!--    + TechPlasteelCrafting REPLACE researchViewX                                                                  -->
 <!--                              WITH researchViewX  3                                                               -->
 <!--    + TechPlasteelCrafting REPLACE researchViewY                                                                  -->
@@ -23,7 +23,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TechPlasteelCrafting"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 

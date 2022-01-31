@@ -6,7 +6,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + WDReinforcedConcrete ADD tab  POS_ResearchTab                                                               -->
+<!--    + WDReinforcedConcrete ADD tab  POS_ResearchTab_General                                                       -->
 <!--    + WDReinforcedConcrete REPLACE researchViewX                                                                  -->
 <!--                              WITH researchViewX  3                                                               -->
 <!--    + WDReinforcedConcrete REPLACE researchViewY                                                                  -->
@@ -27,7 +27,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 

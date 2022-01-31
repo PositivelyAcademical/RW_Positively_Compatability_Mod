@@ -9,7 +9,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - abstracts                                                                    -->
 <!--    + @ProjectHeronResearch REPLACE tab                                                                           -->
-<!--                               WITH tab  POS_ResearchTab                                                          -->
+<!--                               WITH tab  POS_ResearchTab_General                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - neolithic                                                                    -->
 <!--    + ProjectHeron_Curtains REPLACE researchViewX                                                                 -->
@@ -78,12 +78,12 @@
 <!--  + ALL_CASES (ResearchProjectDef) - abstracts                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--    + @ProjectHeronResearch REPLACE tab                                                                           -->
-<!--                               WITH tab  POS_ResearchTab                                                          -->
+<!--                               WITH tab  POS_ResearchTab_General                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[@Name="ProjectHeronResearch"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 

@@ -11,7 +11,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH RTFuse (ResearchProjectDef) - electricity                                                               -->
 <!--    + ResearchProject_RTBasicFuses REPLACE tab                                                                    -->
-<!--                                      WITH tab  POS_ResearchTab                                                   -->
+<!--                                      WITH tab  POS_ResearchTab_General                                           -->
 <!--    + ResearchProject_RTBasicFuses REPLACE researchViewX                                                          -->
 <!--                                      WITH researchViewX 3                                                        -->
 <!--    + ResearchProject_RTBasicFuses REPLACE researchViewY                                                          -->
@@ -19,7 +19,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH RTFuse (ResearchProjectDef) - multi_analyzer                                                            -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE tab                                                               -->
-<!--                                           WITH tab  POS_ResearchTab                                              -->
+<!--                                           WITH tab  POS_ResearchTab_General                                      -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE researchViewX                                                     -->
 <!--                                           WITH researchViewX  6                                                  -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE researchViewY                                                     -->
@@ -27,7 +27,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH RTPowerSwitch (ResearchProjectDef) - electricity                                                        -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE tab                                                                -->
-<!--                                          WITH tab  POS_ResearchTab                                               -->
+<!--                                          WITH tab  POS_ResearchTab_General                                       -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE researchViewX                                                      -->
 <!--                                          WITH researchViewX  2                                                   -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE researchViewY                                                      -->
@@ -35,7 +35,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH RTSolarFlareShield - ResearchProjectDef                                                                 -->
 <!--    + ResearchProject_RTMagneticShield REPLACE tab                                                                -->
-<!--                                          WITH tab  POS_ResearchTab                                               -->
+<!--                                          WITH tab  POS_ResearchTab_General                                       -->
 <!--    + ResearchProject_RTMagneticShield REPLACE researchViewX                                                      -->
 <!--                                          WITH researchViewX  5                                                   -->
 <!--    + ResearchProject_RTMagneticShield REPLACE researchViewY                                                      -->
@@ -82,7 +82,7 @@
 <!--  + MATCH RTFuse (ResearchProjectDef) - electricity                                                               -->
 <!--  ==============================================================================================================  -->
 <!--    + ResearchProject_RTBasicFuses REPLACE tab                                                                    -->
-<!--                                      WITH tab  POS_ResearchTab                                                   -->
+<!--                                      WITH tab  POS_ResearchTab_General                                           -->
 <!--    + ResearchProject_RTBasicFuses REPLACE researchViewX                                                          -->
 <!--                                      WITH researchViewX 3                                                        -->
 <!--    + ResearchProject_RTBasicFuses REPLACE researchViewY                                                          -->
@@ -91,7 +91,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTBasicFuses"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -113,7 +113,7 @@
 <!--  + MATCH RTFuse (ResearchProjectDef) - multi_analyzer                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE tab                                                               -->
-<!--                                           WITH tab  POS_ResearchTab                                              -->
+<!--                                           WITH tab  POS_ResearchTab_General                                      -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE researchViewX                                                     -->
 <!--                                           WITH researchViewX  6                                                  -->
 <!--    + ResearchProject_RTCircuitBreakers REPLACE researchViewY                                                     -->
@@ -122,7 +122,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTCircuitBreakers"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -148,7 +148,7 @@
 <!--  + MATCH RTPowerSwitch (ResearchProjectDef) - electricity                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE tab                                                                -->
-<!--                                          WITH tab  POS_ResearchTab                                               -->
+<!--                                          WITH tab  POS_ResearchTab_General                                       -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE researchViewX                                                      -->
 <!--                                          WITH researchViewX  2                                                   -->
 <!--    + ResearchProject_RTEmergencyPower REPLACE researchViewY                                                      -->
@@ -164,7 +164,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -190,7 +190,7 @@
 <!--  + MATCH RTSolarFlareShield - ResearchProjectDef                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--    + ResearchProject_RTMagneticShield REPLACE tab                                                                -->
-<!--                                          WITH tab  POS_ResearchTab                                               -->
+<!--                                          WITH tab  POS_ResearchTab_General                                       -->
 <!--    + ResearchProject_RTMagneticShield REPLACE researchViewX                                                      -->
 <!--                                          WITH researchViewX  5                                                   -->
 <!--    + ResearchProject_RTMagneticShield REPLACE researchViewY                                                      -->
@@ -206,7 +206,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ResearchProject_RTMagneticShield"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 

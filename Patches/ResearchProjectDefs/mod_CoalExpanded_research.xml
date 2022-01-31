@@ -5,7 +5,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - medieval                                                                     -->
-<!--    + Research_NECCoalProduction ADD tab  POS_ResearchTab                                                         -->
+<!--    + Research_NECCoalProduction ADD tab  POS_ResearchTab_General                                                 -->
 <!--    + Research_NECCoalProduction REPLACE researchViewX                                                            -->
 <!--                                    WITH researchViewX  1                                                         -->
 <!--    + Research_NECCoalProduction REPLACE researchViewY                                                            -->
@@ -14,7 +14,7 @@
 <!--                                    WITH label  coal production                                                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - electricity                                                                  -->
-<!--    + Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                           -->
+<!--    + Research_NECCoalPowergen ADD tab  POS_ResearchTab_General                                                   -->
 <!--    + Research_NECCoalPowergen REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  2                                                           -->
 <!--    + Research_NECCoalPowergen REPLACE researchViewY                                                              -->
@@ -32,7 +32,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - medieval                                                                     -->
 <!--  ==============================================================================================================  -->
-<!--    + Research_NECCoalProduction ADD tab  POS_ResearchTab                                                         -->
+<!--    + Research_NECCoalProduction ADD tab  POS_ResearchTab_General                                                 -->
 <!--    + Research_NECCoalProduction REPLACE researchViewX                                                            -->
 <!--                                    WITH researchViewX  1                                                         -->
 <!--    + Research_NECCoalProduction REPLACE researchViewY                                                            -->
@@ -43,7 +43,7 @@
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalProduction"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -71,7 +71,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - electricity                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--    + Research_NECCoalPowergen ADD tab  POS_ResearchTab                                                           -->
+<!--    + Research_NECCoalPowergen ADD tab  POS_ResearchTab_General                                                   -->
 <!--    + Research_NECCoalPowergen REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  2                                                           -->
 <!--    + Research_NECCoalPowergen REPLACE researchViewY                                                              -->
@@ -82,7 +82,7 @@
                 <li Class = "PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="Research_NECCoalPowergen"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
