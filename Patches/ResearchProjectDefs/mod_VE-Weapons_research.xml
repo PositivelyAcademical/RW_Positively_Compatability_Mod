@@ -5,46 +5,48 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 1 (Y = 0)                                                                -->
-<!--    + For VWE_Longbow IGNORE researchViewX                                                                        -->
-<!--    + For VWE_Longbow REPLACE researchViewY                                                                       -->
-<!--                         WITH researchViewY  0.00                                                                 -->
-<!--    + For VWE_Crossbow IGNORE researchViewX                                                                       -->
-<!--    + For VWE_Crossbow REPLACE researchViewY                                                                      -->
+<!--    + VWE_Longbow IGNORE researchViewX                                                                            -->
+<!--    + VWE_Longbow REPLACE researchViewY                                                                           -->
+<!--                     WITH researchViewY  0.00                                                                     -->
+<!--    + VWE_Longbow REPLACE description                                                                             -->
+<!--                     WITH description  Craft longbows, a medieval equivalent to the sniper rifle.                 -->
+<!--    + VWE_Crossbow IGNORE researchViewX                                                                           -->
+<!--    + VWE_Crossbow REPLACE researchViewY                                                                          -->
+<!--                      WITH researchViewY  0.00                                                                    -->
+<!--    + VWE_Gunpowder IGNORE researchViewX                                                                          -->
+<!--    + VWE_Gunpowder REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  0.00                                                                   -->
+<!--    + VWE_Flamethrower IGNORE researchViewX                                                                       -->
+<!--    + VWE_Flamethrower REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.00                                                                -->
-<!--    + For VWE_Gunpowder IGNORE researchViewX                                                                      -->
-<!--    + For VWE_Gunpowder REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  0.00                                                               -->
-<!--    + For VWE_Flamethrower IGNORE researchViewX                                                                   -->
-<!--    + For VWE_Flamethrower REPLACE researchViewY                                                                  -->
+<!--    + VWE_TacticalGrenades IGNORE researchViewX                                                                   -->
+<!--    + VWE_TacticalGrenades REPLACE researchViewY                                                                  -->
 <!--                              WITH researchViewY  0.00                                                            -->
-<!--    + For VWE_TacticalGrenades IGNORE researchViewX                                                               -->
-<!--    + For VWE_TacticalGrenades REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  0.00                                                        -->
-<!--    + For VWE_HeavyWeapons IGNORE researchViewX                                                                   -->
-<!--    + For VWE_HeavyWeapons REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  0.00                                                            -->
-<!--    + For VWE_LaserTargetingSystems IGNORE researchViewX                                                          -->
-<!--    + For VWE_LaserTargetingSystems REPLACE researchViewY                                                         -->
-<!--                                       WITH researchViewY  0.00                                                   -->
+<!--    + VWE_HeavyWeapons IGNORE researchViewX                                                                       -->
+<!--    + VWE_HeavyWeapons REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  0.00                                                                -->
+<!--    + VWE_LaserTargetingSystems IGNORE researchViewX                                                              -->
+<!--    + VWE_LaserTargetingSystems REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  0.00                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
-<!--    + For VWE_CompoundBow IGNORE researchViewX                                                                    -->
-<!--    + For VWE_CompoundBow REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  0.62                                                             -->
-<!--    + For VWE_Tools IGNORE researchViewX                                                                          -->
-<!--    + For VWE_Tools REPLACE researchViewY                                                                         -->
-<!--                       WITH researchViewY  0.62                                                                   -->
-<!--    + For VWE_TrenchWarfare IGNORE researchViewX                                                                  -->
-<!--    + For VWE_TrenchWarfare REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  0.62                                                           -->
-<!--    + For VWE_SpecializedFirearms IGNORE researchViewX                                                            -->
-<!--    + For VWE_SpecializedFirearms REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  0.62                                                     -->
+<!--    + VWE_CompoundBow IGNORE researchViewX                                                                        -->
+<!--    + VWE_CompoundBow REPLACE researchViewY                                                                       -->
+<!--                         WITH researchViewY  0.62                                                                 -->
+<!--    + VWE_Tools IGNORE researchViewX                                                                              -->
+<!--    + VWE_Tools REPLACE researchViewY                                                                             -->
+<!--                   WITH researchViewY  0.62                                                                       -->
+<!--    + VWE_TrenchWarfare IGNORE researchViewX                                                                      -->
+<!--    + VWE_TrenchWarfare REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  0.62                                                               -->
+<!--    + VWE_SpecializedFirearms IGNORE researchViewX                                                                -->
+<!--    + VWE_SpecializedFirearms REPLACE researchViewY                                                               -->
+<!--                                 WITH researchViewY  0.62                                                         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3 (Y = 1.24)                                                             -->
-<!--    + For VWE_DesignatedMarksmanRifle IGNORE researchViewX                                                        -->
-<!--    + For VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  1.24                                                 -->
+<!--    + VWE_DesignatedMarksmanRifle IGNORE researchViewX                                                            -->
+<!--    + VWE_DesignatedMarksmanRifle REPLACE researchViewY                                                           -->
+<!--                                     WITH researchViewY  1.24                                                     -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -59,6 +61,8 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VWE_Longbow REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  0.00                                                                 -->
+<!--    + VWE_Longbow REPLACE description                                                                             -->
+<!--                     WITH description  Craft longbows, a medieval equivalent to the sniper rifle.                 -->
 <!--    + For VWE_Crossbow REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.00                                                                -->
 <!--    + For VWE_Gunpowder REPLACE researchViewY                                                                     -->
@@ -76,6 +80,13 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Longbow"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.00</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_Longbow"]/description</xpath>
+                    <value>
+                        <description>Craft longbows, a medieval equivalent to the sniper rifle.</description>
                     </value>
                 </li>
 
