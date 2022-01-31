@@ -29,31 +29,6 @@
         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + MATCH ExtendedProstheticsAndOrganEngineering                                                               -->
-<!--             HarvestOrgansPostMortem                                                                              -->
-<!--  ==============================================================================================================  -->
-<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_Medical                                               -->
-<!--                                    label  Medical                                                                -->
-<!--  ==============================================================================================================  -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Expanded Prosthetics and Organ Engineering</li>
-                    <li>Harvest Organs Post Mortem</li>
-                </mods>
-
-                <match Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <ResearchTabDef>
-                            <defName>POS_ResearchTab_Medical</defName>
-                            <label>Medical</label>
-                        </ResearchTabDef>
-                    </value>
-                </match>
-
-            </li>
-
-<!--  ==============================================================================================================  -->
 <!--  + MATCH ArmorRacks                                                                                              -->
 <!--          CentralizedClimateControl                                                                               -->
 <!--          CoalExpanded                                                                                            -->
