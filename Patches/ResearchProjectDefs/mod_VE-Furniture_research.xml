@@ -5,36 +5,36 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 4.34)                                                             -->
-<!--    + For MF_ModernFurniture REPLACE researchViewX                                                                -->
-<!--                                WITH researchViewX  3                                                             -->
-<!--    + For MF_ModernFurniture REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  4.34                                                          -->
+<!--    + MF_ModernFurniture REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  3                                                                 -->
+<!--    + MF_ModernFurniture REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4.34                                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
-<!--    + For MF_BasicFurniture REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  1                                                              -->
-<!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  4.96                                                           -->
-<!--    + For ComplexFurniture REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  2                                                               -->
-<!--    + For ComplexFurniture REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  4.96                                                            -->
-<!--    + For MF_RoyalFurniture REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  3                                                              -->
-<!--    + For MF_RoyalFurniture REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  4.96                                                           -->
-<!--    + For MF_WasteDisposal REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  4                                                               -->
-<!--    + For MF_WasteDisposal REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  4.96                                                            -->
+<!--    + MF_BasicFurniture REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  1                                                                  -->
+<!--    + MF_BasicFurniture REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.96                                                               -->
+<!--    + ComplexFurniture REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  2                                                                   -->
+<!--    + ComplexFurniture REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  4.96                                                                -->
+<!--    + MF_RoyalFurniture REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  3                                                                  -->
+<!--    + MF_RoyalFurniture REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.96                                                               -->
+<!--    + MF_WasteDisposal REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  4                                                                   -->
+<!--    + MF_WasteDisposal REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  4.96                                                                -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
-<!--    + For TubeTelevision IGNORE researchViewX                                                                     -->
-<!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  5.58                                                              -->
-<!--    + For FlatscreenTelevision IGNORE researchViewX                                                               -->
-<!--    + For FlatscreenTelevision REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5.58                                                        -->
+<!--    + TubeTelevision IGNORE researchViewX                                                                         -->
+<!--    + TubeTelevision REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  5.58                                                                  -->
+<!--    + FlatscreenTelevision IGNORE researchViewX                                                                   -->
+<!--    + FlatscreenTelevision REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  5.58                                                            -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -47,10 +47,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 8 (Y = 4.34)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For MF_ModernFurniture REPLACE researchViewX                                                                -->
-<!--                                WITH researchViewX  3                                                             -->
-<!--    + For MF_ModernFurniture REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  4.34                                                          -->
+<!--    + MF_ModernFurniture REPLACE researchViewX                                                                    -->
+<!--                            WITH researchViewX  3                                                                 -->
+<!--    + MF_ModernFurniture REPLACE researchViewY                                                                    -->
+<!--                            WITH researchViewY  4.34                                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/researchViewX</xpath>
@@ -69,22 +69,22 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 9 (Y = 4.96)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For MF_BasicFurniture REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  1                                                              -->
-<!--    + For MF_BasicFurniture REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  4.96                                                           -->
-<!--    + For ComplexFurniture REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  2                                                               -->
-<!--    + For ComplexFurniture REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  4.96                                                            -->
-<!--    + For MF_RoyalFurniture REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  3                                                              -->
-<!--    + For MF_RoyalFurniture REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  4.96                                                           -->
-<!--    + For MF_WasteDisposal REPLACE researchViewX                                                                  -->
-<!--                              WITH researchViewX  4                                                               -->
-<!--    + For MF_WasteDisposal REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  4.96                                                            -->
+<!--    + MF_BasicFurniture REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  1                                                                  -->
+<!--    + MF_BasicFurniture REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.96                                                               -->
+<!--    + ComplexFurniture REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  2                                                                   -->
+<!--    + ComplexFurniture REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  4.96                                                                -->
+<!--    + MF_RoyalFurniture REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  3                                                                  -->
+<!--    + MF_RoyalFurniture REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  4.96                                                               -->
+<!--    + MF_WasteDisposal REPLACE researchViewX                                                                      -->
+<!--                          WITH researchViewX  4                                                                   -->
+<!--    + MF_WasteDisposal REPLACE researchViewY                                                                      -->
+<!--                          WITH researchViewY  4.96                                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/researchViewX</xpath>
@@ -145,10 +145,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 10 (Y = 5.58)                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + For TubeTelevision REPLACE researchViewY                                                                    -->
-<!--                            WITH researchViewY  5.58                                                              -->
-<!--    + For FlatscreenTelevision REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5.58                                                        -->
+<!--    + TubeTelevision REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  5.58                                                                  -->
+<!--    + FlatscreenTelevision REPLACE researchViewY                                                                  -->
+<!--                              WITH researchViewY  5.58                                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="TubeTelevision"]/researchViewY</xpath>
