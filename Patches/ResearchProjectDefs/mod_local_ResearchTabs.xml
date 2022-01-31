@@ -21,7 +21,7 @@
 <!--          RT_SolarFlareShield                                                                                     -->
 <!--          SmeltedStone                                                                                            -->
 <!--          SimpleConcrete                                                                                          -->
-<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab                                                       -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
 <!--                                    label  Assorted Mods                                                          -->
 <!--  ==============================================================================================================  -->
 
@@ -41,8 +41,8 @@
                     <li>Harvest Organs Post Mortem</li>
                 </mods>
 
-                <match Class="PatchOperationInsert">
-                    <xpath>/Defs/ResearchTabDef[defName="Main"]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
                     <value>
                         <ResearchTabDef>
                             <defName>POS_ResearchTab_Medical</defName>
@@ -67,8 +67,8 @@
 <!--          SmeltedStone                                                                                            -->
 <!--          SimpleConcrete                                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--    + AFTER Main                                                                                                  -->
-<!--          INSERT POS_ResearchTab WITH label  Assorted Mods                                                        -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
+<!--                                    label  Assorted Mods                                                          -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationFindMod">
                 <mods>
@@ -86,11 +86,11 @@
                     <li>[WD] Simple Concrete</li>
                 </mods>
 
-                <match Class="PatchOperationInsert">
-                    <xpath>/Defs/ResearchTabDef[defName="Main"]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
                     <value>
                         <ResearchTabDef>
-                            <defName>POS_ResearchTab</defName>
+                            <defName>POS_ResearchTab_General</defName>
                             <label>Assorted Mods</label>
                         </ResearchTabDef>
                     </value>
