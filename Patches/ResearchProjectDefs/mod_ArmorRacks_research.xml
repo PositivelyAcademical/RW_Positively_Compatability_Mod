@@ -4,31 +4,34 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                 -->
-<!--                                                       WITH label  mechanised armour rack                         -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE description                                           -->
-<!--                                                       WITH description  Produce mechanised armour racks that     -->
-<!--                                                                          help your colonists quickly change      -->
-<!--                                                                          apparel to respond to emergencies.      -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab_General_General                              -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                         -->
-<!--                                                       WITH researchViewX  5                                      -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                         -->
-<!--                                                       WITH researchViewY  3                                      -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
+<!--                                    label  Assorted Mods                                                          -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES (ResearchProjectDef) - multi_analyzer                                                            -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE label                                                    -->
-<!--                                                    WITH label  mending armour rack                               -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE description                                              -->
-<!--                                                    WITH description  Produce mending armour racks that repair    -->
-<!--                                                                       stored equipment, in addition to other     -->
-<!--                                                                       benefits.                                  -->
-<!--       + For ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab_General_General                                 -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                            -->
-<!--                                                    WITH researchViewX  6                                         -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                            -->
-<!--                                                    WITH researchViewY  3                                         -->
+<!--  + ALL_CASES (ResearchProjectDef) - microelectronics                                                             -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab_General                                     -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                                -->
+<!--                                                WITH researchViewX  5                                             -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                                -->
+<!--                                                WITH researchViewY  3                                             -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                        -->
+<!--                                                WITH label  mechanised armour rack                                -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE description                                                  -->
+<!--                                                WITH description  Produce mechanised armour racks that help your  -->
+<!--                                                                   colonists quickly change apparel to respond    -->
+<!--                                                                   to emergencies.                                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - multi_analyzer                                                               -->
+<!--    + ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab_General                                        -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                                   -->
+<!--                                             WITH researchViewX  6                                                -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  3                                                -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE label                                                           -->
+<!--                                             WITH label  mending armour rack                                      -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE description                                                     -->
+<!--                                             WITH description  Produce mending armour racks that repair stored    -->
+<!--                                                                equipment, in addition to other benefits.         -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -38,39 +41,45 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES (ResearchProjectDef) - microelectronics                                                          -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                 -->
-<!--                                                       WITH label  mechanised armour rack                         -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE description                                           -->
-<!--                                                       WITH description  Produce mechanised armour racks that     -->
-<!--                                                                          help your colonists quickly change      -->
-<!--                                                                          apparel to respond to emergencies.      -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab_General_General                              -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab_General_General                              -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                         -->
-<!--                                                       WITH researchViewX  5                                      -->
-<!--       + For ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                         -->
-<!--                                                       WITH researchViewY  3                                      -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
+<!--                                    label  Assorted Mods                                                          -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/label</xpath>
-                    <value>
-                        <label>mechanised armour rack</label>
-                    </value>
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ResearchTabDef[defName="POS_ResearchTab_General"]</xpath>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchTabDef>
+                                <defName>POS_ResearchTab_General</defName>
+                                <label>Assorted Mods</label>
+                            </ResearchTabDef>
+                        </value>
+                    </nomatch>
+
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/description</xpath>
-                    <value>
-                        <description>Produce mechanised armour racks that help your colonists quickly change apparel to respond to emergencies.</description>
-                    </value>
-                </li>
-
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - microelectronics                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch ADD tab  POS_ResearchTab_General                                     -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                                -->
+<!--                                                WITH researchViewX  5                                             -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                                -->
+<!--                                                WITH researchViewY  3                                             -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                        -->
+<!--                                                WITH label  mechanised armour rack                                -->
+<!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE description                                                  -->
+<!--                                                WITH description  Produce mechanised armour racks that help your  -->
+<!--                                                                   colonists quickly change apparel to respond    -->
+<!--                                                                   to emergencies.                                -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_General</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -88,40 +97,38 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--     + ALL_CASES (ResearchProjectDef) - multi_analyzer                                                            -->
-<!--  ==============================================================================================================  -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE label                                                    -->
-<!--                                                    WITH label  mending armour rack                               -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE description                                              -->
-<!--                                                    WITH description  Produce mending armour racks that repair    -->
-<!--                                                                       stored equipment, in addition to other     -->
-<!--                                                                       benefits.                                  -->
-<!--       + For ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab_General_General                                 -->
-<!--       + For ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab_General_General                                 -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                            -->
-<!--                                                    WITH researchViewX  6                                         -->
-<!--       + For ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                            -->
-<!--                                                    WITH researchViewY  3                                         -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/label</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/label</xpath>
                     <value>
-                        <label>mending armour rack</label>
+                        <label>mechanised armour rack</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/description</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/description</xpath>
                     <value>
-                        <description>Produce mending armour racks that repair stored equipment, in addition to other benefits.</description>
+                        <description>Produce mechanised armour racks that help your colonists quickly change apparel to respond to emergencies.</description>
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES (ResearchProjectDef) - multi_analyzer                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + ArmorRacks_MendingArmorRackResearch ADD tab  POS_ResearchTab_General                                        -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                                   -->
+<!--                                             WITH researchViewX  6                                                -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  3                                                -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE label                                                           -->
+<!--                                             WITH label  mending armour rack                                      -->
+<!--    + ArmorRacks_MendingArmorRackResearch REPLACE description                                                     -->
+<!--                                             WITH description  Produce mending armour racks that repair stored    -->
+<!--                                                                equipment, in addition to other benefits.         -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_General</tab>
+                        <tab>POS_ResearchTab_General</tab>
                     </value>
                 </li>
 
@@ -136,6 +143,20 @@
                     <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/researchViewY</xpath>
                     <value>
                         <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/label</xpath>
+                    <value>
+                        <label>mending armour rack</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/description</xpath>
+                    <value>
+                        <description>Produce mending armour racks that repair stored equipment, in addition to other benefits.</description>
                     </value>
                 </li>
 
