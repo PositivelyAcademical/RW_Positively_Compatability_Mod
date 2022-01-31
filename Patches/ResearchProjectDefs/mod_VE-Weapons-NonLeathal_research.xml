@@ -8,6 +8,11 @@
 <!--    + For VWE_NonLethal IGNORE researchViewX                                                                      -->
 <!--    + For VWE_NonLethal REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  1.86                                                               -->
+<!--    + For VWE_NonLethal REPLACE label                                                                             -->
+<!--                           WITH label  less-lethal weapons                                                        -->
+<!--    + For VWE_NonLethal REPLACE description                                                                       -->
+<!--                           WITH description  Craft a selection of non— and less-lethal weapons, including tear    -->
+<!--                                              gas launchers and tasers.                                           -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -22,11 +27,30 @@
 <!--  ==============================================================================================================  -->
 <!--    + For VWE_NonLethal REPLACE researchViewY                                                                     -->
 <!--                           WITH researchViewY  1.86                                                               -->
+<!--    + For VWE_NonLethal REPLACE label                                                                             -->
+<!--                           WITH label  less-lethal weapons                                                        -->
+<!--    + For VWE_NonLethal REPLACE description                                                                       -->
+<!--                           WITH description  Craft a selection of non— and less-lethal weapons, including tear    -->
+<!--                                              gas launchers and tasers.                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/researchViewY</xpath>
                     <value>
                         <researchViewY>1.86</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/label</xpath>
+                    <value>
+                        <label>less-lethal weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/description</xpath>
+                    <value>
+                        <description>Craft a selection of non— and less-lethal weapons, including tear gas launchers and tasers.</description>
                     </value>
                 </li>
 
