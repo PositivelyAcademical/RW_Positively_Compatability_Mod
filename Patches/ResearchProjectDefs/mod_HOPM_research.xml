@@ -7,16 +7,20 @@
 <!--  + ALL_CASES (ResearchTabDef)                                                                                    -->
 <!--    + Autopsy REMOVE ./                                                                                           -->
 <!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_Medical                                               -->
+<!--                                    label  Medical                                                                -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
 <!--    + BasicAutopsy REPLACE tab                                                                                    -->
-<!--                      WITH tab  POS_ResearchTab_General_Medical                                                           -->
+<!--                      WITH tab  POS_ResearchTab_Medical                                                           -->
 <!--    + BasicAutopsy REPLACE researchViewY                                                                          -->
 <!--                      WITH researchViewY  1                                                                       -->
 <!--    + BasicAutopsy REPLACE label                                                                                  -->
 <!--                      WITH label  basic autopsy                                                                   -->
 <!--  ==============================================================================================================  -->
 <!--    + AdvancedAutopsy REPLACE tab                                                                                 -->
-<!--                         WITH tab  POS_ResearchTab_General_Medical                                                        -->
+<!--                         WITH tab  POS_ResearchTab_Medical                                                        -->
 <!--    + AdvancedAutopsy REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  1                                                                    -->
 <!--    + AdvancedAutopsy REPLACE label                                                                               -->
@@ -24,7 +28,7 @@
 <!--    + AdvancedAutopsy prerequisites ADD li  MedicineProduction                                                    -->
 <!--  ==============================================================================================================  -->
 <!--    + GlitterworldAutopsy REPLACE tab                                                                             -->
-<!--                             WITH tab  POS_ResearchTab_General_Medical                                                    -->
+<!--                             WITH tab  POS_ResearchTab_Medical                                                    -->
 <!--    + GlitterworldAutopsy REPLACE researchViewY                                                                   -->
 <!--                             WITH researchViewY  1                                                                -->
 <!--    + GlitterworldAutopsy REPLACE label                                                                           -->
@@ -33,7 +37,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
 <!--    + AnimalAutopsy REPLACE tab                                                                                   -->
-<!--                       WITH tab  POS_ResearchTab_General_Medical                                                          -->
+<!--                       WITH tab  POS_ResearchTab_Medical                                                          -->
 <!--    + AnimalAutopsy REPLACE researchViewY                                                                         -->
 <!--                       WITH researchViewY  2                                                                      -->
 <!--    + AnimalAutopsy REPLACE label                                                                                 -->
@@ -57,10 +61,31 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_Medical                                               -->
+<!--                                    label  Medical                                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ResearchTabDef[defName="POS_ResearchTab_Medical"]</xpath>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchTabDef>
+                                <defName>POS_ResearchTab_Medical</defName>
+                                <label>Medical</label>
+                            </ResearchTabDef>
+                        </value>
+                    </nomatch>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + BasicAutopsy REPLACE tab                                                                                    -->
-<!--                      WITH tab  POS_ResearchTab_General_Medical                                                           -->
+<!--                      WITH tab  POS_ResearchTab_Medical                                                           -->
 <!--    + BasicAutopsy REPLACE researchViewY                                                                          -->
 <!--                      WITH researchViewY  1                                                                       -->
 <!--    + BasicAutopsy REPLACE label                                                                                  -->
@@ -69,7 +94,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicAutopsy"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_Medical</tab>
+                        <tab>POS_ResearchTab_Medical</tab>
                     </value>
                 </li>
 
@@ -91,7 +116,7 @@
 <!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + AdvancedAutopsy REPLACE tab                                                                                 -->
-<!--                         WITH tab  POS_ResearchTab_General_Medical                                                        -->
+<!--                         WITH tab  POS_ResearchTab_Medical                                                        -->
 <!--    + AdvancedAutopsy REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  1                                                                    -->
 <!--    + AdvancedAutopsy REPLACE label                                                                               -->
@@ -101,7 +126,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="AdvancedAutopsy"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_Medical</tab>
+                        <tab>POS_ResearchTab_Medical</tab>
                     </value>
                 </li>
 
@@ -130,7 +155,7 @@
 <!--  + ALL_CASES (ResearchProjectDef) - row 2                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + GlitterworldAutopsy REPLACE tab                                                                             -->
-<!--                             WITH tab  POS_ResearchTab_General_Medical                                                    -->
+<!--                             WITH tab  POS_ResearchTab_Medical                                                    -->
 <!--    + GlitterworldAutopsy REPLACE researchViewY                                                                   -->
 <!--                             WITH researchViewY  1                                                                -->
 <!--    + GlitterworldAutopsy REPLACE label                                                                           -->
@@ -140,7 +165,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="GlitterworldAutopsy"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_Medical</tab>
+                        <tab>POS_ResearchTab_Medical</tab>
                     </value>
                 </li>
 
@@ -171,7 +196,7 @@
 <!--  + ALL_CASES (ResearchProjectDef) - row 3                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + AnimalAutopsy REPLACE tab                                                                                   -->
-<!--                       WITH tab  POS_ResearchTab_General_Medical                                                          -->
+<!--                       WITH tab  POS_ResearchTab_Medical                                                          -->
 <!--    + AnimalAutopsy REPLACE researchViewY                                                                         -->
 <!--                       WITH researchViewY  2                                                                      -->
 <!--    + AnimalAutopsy REPLACE label                                                                                 -->
@@ -180,7 +205,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="AnimalAutopsy"]/tab</xpath>
                     <value>
-                        <tab>POS_ResearchTab_General_Medical</tab>
+                        <tab>POS_ResearchTab_Medical</tab>
                     </value>
                 </li>
 
