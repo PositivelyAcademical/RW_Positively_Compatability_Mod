@@ -5,9 +5,9 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
-<!--    + For VWE_Quickdraw IGNORE researchViewX                                                                      -->
-<!--    + For VWE_Quickdraw REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  1.86                                                               -->
+<!--    + VWE_Quickdraw IGNORE researchViewX                                                                          -->
+<!--    + VWE_Quickdraw REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  1.86                                                                   -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -20,8 +20,8 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 4 (Y = 1.86)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VWE_Quickdraw REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  1.86                                                               -->
+<!--    + VWE_Quickdraw REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  1.86                                                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_Quickdraw"]/researchViewY</xpath>
