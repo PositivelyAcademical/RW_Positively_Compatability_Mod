@@ -5,10 +5,10 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
-<!--    + For VFE_Manufacturing REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  3                                                              -->
-<!--    + For VFE_Manufacturing REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  2.48                                                           -->
+<!--    + VFE_Manufacturing REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  3                                                                  -->
+<!--    + VFE_Manufacturing REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  2.48                                                               -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -21,10 +21,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 5 (Y = 2.48)                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + For VFE_Manufacturing REPLACE researchViewX                                                                 -->
-<!--                               WITH researchViewX  3                                                              -->
-<!--    + For VFE_Manufacturing REPLACE researchViewY                                                                 -->
-<!--                               WITH researchViewY  2.48                                                           -->
+<!--    + VFE_Manufacturing REPLACE researchViewX                                                                     -->
+<!--                           WITH researchViewX  3                                                                  -->
+<!--    + VFE_Manufacturing REPLACE researchViewY                                                                     -->
+<!--                           WITH researchViewY  2.48                                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VFE_Manufacturing"]/researchViewX</xpath>
