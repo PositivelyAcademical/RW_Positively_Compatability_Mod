@@ -4,18 +4,22 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
+<!--                                    label  Assorted Mods                                                          -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
-<!--    + For IngotResearch ADD tab  POS_ResearchTab_General                                                          -->
-<!--    + For IngotResearch REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  1                                                                  -->
-<!--    + For IngotResearch REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  3                                                                  -->
-<!--    + For IngotResearch REPLACE label                                                                             -->
-<!--                           WITH label  bullion reserve                                                            -->
-<!--    + For IngotResearch REPLACE description                                                                       -->
-<!--                           WITH description  Melt gold and silver into ingots to save sapece and use as more      -->
-<!--                                              valuable royal tribute. Though these are too soft for crafting or   -->
-<!--                                              building, so must be melted back down first.                        -->
+<!--    + IngotResearch ADD tab  POS_ResearchTab_General                                                              -->
+<!--    + IngotResearch REPLACE researchViewX                                                                         -->
+<!--                       WITH researchViewX  1                                                                      -->
+<!--    + IngotResearch REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  3                                                                      -->
+<!--    + IngotResearch REPLACE label                                                                                 -->
+<!--                       WITH label  bullion reserve                                                                -->
+<!--    + IngotResearch REPLACE description                                                                           -->
+<!--                       WITH description  Melt gold and silver into ingots to save space and use as more valuable  -->
+<!--                                          royal tribute. Though these are too soft for crafting or building, so   -->
+<!--                                          must be melted back down first.                                         -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -26,19 +30,40 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
+<!--  + CONDITIONAL (ResearchTabDef)                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + /Defs ADD ResearchTabDef WITH defName POS_ResearchTab_General                                               -->
+<!--                                    label  Assorted Mods                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ResearchTabDef[defName="POS_ResearchTab_General"]</xpath>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchTabDef>
+                                <defName>POS_ResearchTab_General</defName>
+                                <label>Assorted Mods</label>
+                            </ResearchTabDef>
+                        </value>
+                    </nomatch>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef)                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + For IngotResearch ADD tab  POS_ResearchTab_General                                                          -->
-<!--    + For IngotResearch REPLACE researchViewX                                                                     -->
-<!--                           WITH researchViewX  1                                                                  -->
-<!--    + For IngotResearch REPLACE researchViewY                                                                     -->
-<!--                           WITH researchViewY  3                                                                  -->
-<!--    + For IngotResearch REPLACE label                                                                             -->
-<!--                           WITH label  bullion reserve                                                            -->
-<!--    + For IngotResearch REPLACE description                                                                       -->
-<!--                           WITH description  Melt gold and silver into ingots to save sapece and use as more      -->
-<!--                                              valuable royal tribute. Though these are too soft for crafting or   -->
-<!--                                              building, so must be melted back down first.                        -->
+<!--    + IngotResearch ADD tab  POS_ResearchTab_General                                                              -->
+<!--    + IngotResearch REPLACE researchViewX                                                                         -->
+<!--                       WITH researchViewX  1                                                                      -->
+<!--    + IngotResearch REPLACE researchViewY                                                                         -->
+<!--                       WITH researchViewY  3                                                                      -->
+<!--    + IngotResearch REPLACE label                                                                                 -->
+<!--                       WITH label  bullion reserve                                                                -->
+<!--    + IngotResearch REPLACE description                                                                           -->
+<!--                       WITH description  Melt gold and silver into ingots to save space and use as more valuable  -->
+<!--                                          royal tribute. Though these are too soft for crafting or building, so   -->
+<!--                                          must be melted back down first.                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]</xpath>
@@ -71,7 +96,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/description</xpath>
                     <value>
-                        <description>Melt gold and silver into ingots to save sapece and use as more valuable royal tribute. Though these are too soft for crafting or building, so must be melted back down first.</description>
+                        <description>Melt gold and silver into ingots to save space and use as more valuable royal tribute. Though these are too soft for crafting or building, so must be melted back down first.</description>
                     </value>
                 </li>
 
