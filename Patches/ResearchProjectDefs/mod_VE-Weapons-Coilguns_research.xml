@@ -8,6 +8,10 @@
 <!--    + VWE_MassDrivers IGNORE researchViewX                                                                        -->
 <!--    + VWE_MassDrivers REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  6.20                                                                 -->
+<!--    + VWE_MassDrivers REPLACE description                                                                         -->
+<!--                         WITH description  Assemble weapons which utilise electromagnets to catapult sabots up    -->
+<!--                                            to hypervelocity, penetrating thick armour and piercing through       -->
+<!--                                            targets alike. Note that these also require advanced components.      -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -22,11 +26,22 @@
 <!--  ==============================================================================================================  -->
 <!--    + VWE_MassDrivers REPLACE researchViewY                                                                       -->
 <!--                         WITH researchViewY  6.20                                                                 -->
+<!--    + VWE_MassDrivers REPLACE description                                                                         -->
+<!--                         WITH description  Assemble weapons which utilise electromagnets to catapult sabots up    -->
+<!--                                            to hypervelocity, penetrating thick armour and piercing through       -->
+<!--                                            targets alike. Note that these also require advanced components.      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_MassDrivers"]/researchViewY</xpath>
                     <value>
                         <researchViewY>6.20</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_MassDrivers"]/description</xpath>
+                    <value>
+                        <description>Assemble weapons which utilise electromagnets to catapult sabots up to hypervelocity, penetrating thick armour and piercing through targets alike. Note that these also require advanced components.</description>
                     </value>
                 </li>
 
