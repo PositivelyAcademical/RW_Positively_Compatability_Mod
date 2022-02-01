@@ -2,10 +2,6 @@
 <Patch>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL CASES - slug guns and autoguns                                                                            -->
-<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
-<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->
 <!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
 <!--                           WITH label laspistol (Ghalmek pattern)                                                 -->
@@ -19,19 +15,6 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL CASES - slug guns and autoguns                                                                            -->
-<!--  ==============================================================================================================  -->
-<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
-<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
-                    <value>
-                        <label>autogun (Ghalmek pattern)</label>
-                    </value>
-                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->

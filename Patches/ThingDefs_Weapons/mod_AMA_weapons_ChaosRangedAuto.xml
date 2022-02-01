@@ -90,6 +90,31 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autogun                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
+<!--                                                            GasOperation                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
+                    <value>
+                        <label>autogun (Ghalmek pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Chaos_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
 
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
@@ -102,8 +127,15 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
+<!--    + OGC_Gun_AutoGun REMOVE ./                                                                                   -->
+<!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]</xpath>                           -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]</xpath>                              -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
