@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Patch>
 
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - slug guns and autoguns                                                                         -->
-<!--       + For OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                       -->
-<!--                                                                      BlowbackOperation                           -->
-<!--       + For OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                          -->
-<!--                                                                   GasOperation                                   -->
+<!--  + ALL CASES - slug guns and autoguns                                                                            -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
+<!--                                                               BlowbackOperation                                  -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
+<!--                                                            GasOperation                                          -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - las weapons                                                                                    -->
-<!--       + For OGC_Gun_LasPistol REPLACE researchPrerequisites                                                      -->
-<!--                                  WITH researchPrerequisites OG_Chaos_Tech_Base_T1                                -->
-<!--                                                             OG_Common_Tech_Weapons_Laser                         -->
-<!--       + For OGC_Gun_LasGun REPLACE researchPrerequisites                                                         -->
-<!--                                  WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                -->
-<!--                                                             OG_Common_Tech_Weapons_Laser                         -->
+<!--  + ALL CASES - las weapons                                                                                       -->
+<!--    + OGC_Gun_LasPistol REPLACE researchPrerequisites                                                             -->
+<!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T1                                       -->
+<!--                                                      OG_Common_Tech_Weapons_Laser                                -->
+<!--    + OGC_Gun_LasGun REPLACE researchPrerequisites                                                                -->
+<!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                       -->
+<!--                                                      OG_Common_Tech_Weapons_Laser                                -->
 <!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
@@ -26,12 +28,12 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - slug guns and autoguns                                                                         -->
+<!--  + ALL CASES - slug guns and autoguns                                                                            -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                       -->
-<!--                                                                      BlowbackOperation                           -->
-<!--       + For OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                          -->
-<!--                                                                   GasOperation                                   -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
+<!--                                                               BlowbackOperation                                  -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
+<!--                                                            GasOperation                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/recipeMaker</xpath>
@@ -54,14 +56,14 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - las weapons                                                                                    -->
+<!--  + ALL CASES - las weapons                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGC_Gun_LasPistol REPLACE researchPrerequisites                                                      -->
-<!--                                  WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                -->
-<!--                                                             OG_Common_Tech_Weapons_Laser                         -->
-<!--       + For OGC_Gun_LasGun REPLACE researchPrerequisites                                                         -->
-<!--                                  WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                -->
-<!--                                                             OG_Common_Tech_Weapons_Laser                         -->
+<!--    + OGC_Gun_LasPistol REPLACE researchPrerequisites                                                             -->
+<!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                       -->
+<!--                                                      OG_Common_Tech_Weapons_Laser                                -->
+<!--    + OGC_Gun_LasGun REPLACE researchPrerequisites                                                                -->
+<!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                       -->
+<!--                                                      OG_Common_Tech_Weapons_Laser                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/recipeMaker/researchPrerequisites</xpath>
@@ -87,4 +89,5 @@
             </operations>
         </match>
     </Operation>
+
 </Patch>
