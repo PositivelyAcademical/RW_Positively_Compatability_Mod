@@ -3,8 +3,6 @@
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - slug guns and autoguns                                                                            -->
-<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
-<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
 <!--                         WITH label autogun (Ghalmek pattern)                                                     -->
 <!--  ==============================================================================================================  -->
@@ -25,18 +23,9 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - slug guns and autoguns                                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
-<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
 <!--                         WITH label autogun (Ghalmek pattern)                                                     -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/label</xpath>
-                    <value>
-                        <label>autopistol (Ghalmek pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
                     <value>
