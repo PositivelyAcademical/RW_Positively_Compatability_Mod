@@ -59,8 +59,7 @@
 <!--  + MATCH EssentialsStone - slate                                                                                 -->
 <!--    + BlocksSlate statBases REPLACE Mass                                                                          -->
 <!--                               WITH Mass  0.9                                                                     -->
-<!--    + BlocksSlate stuffProps statOffsets REPLACE Beauty                                                           -->
-<!--                                            WITH Beauty  1                                                        -->
+<!--    + BlocksSlate stuffProps statOffsets ADD Beauty  1                                                            -->
 <!--    + BlocksSlate stuffProps statFactors REPLACE WorkToBuild                                                      -->
 <!--                                            WITH WorkToBuild  5                                                   -->
 <!--    + BlocksSlate stuffProps statFactors REPLACE WorkToMake                                                       -->
@@ -335,8 +334,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + BlocksSlate statBases REPLACE Mass                                                                          -->
 <!--                               WITH Mass  0.9                                                                     -->
-<!--    + BlocksSlate stuffProps statOffsets REPLACE Beauty                                                           -->
-<!--                                            WITH Beauty  1                                                        -->
+<!--    + BlocksSlate stuffProps statOffsets ADD Beauty  1                                                            -->
 <!--    + BlocksSlate stuffProps statFactors REPLACE WorkToBuild                                                      -->
 <!--                                            WITH WorkToBuild  5                                                   -->
 <!--    + BlocksSlate stuffProps statFactors REPLACE WorkToMake                                                       -->
@@ -349,8 +347,8 @@
                             </value>
                         </li>
 
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors/Beauty</xpath>
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors</xpath>
                             <value>
                                 <Beauty>1</Beauty>
                             </value>
@@ -417,6 +415,6 @@
             </li>
 
         </operations>
-    <Operation>
+    </Operation>
 
 </Patch>
