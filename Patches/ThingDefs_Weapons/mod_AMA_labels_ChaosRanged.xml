@@ -2,18 +2,19 @@
 <Patch>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - slug guns and autoguns                                                                         -->
-<!--       + For OGC_Gun_AutoPistol REPLACE label                                                                     -->
-<!--                                   WITH label autopistol (warp tainted)                                           -->
-<!--       + For OGC_Gun_AutoGun REPLACE label                                                                        -->
-<!--                                WITH label autogun (warp tainted)                                                 -->
+<!--  + ALL CASES - slug guns and autoguns                                                                            -->
+<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
+<!--                            WITH label autopistol (Sarum pattern)                                                 -->
+<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label autogun (Sarum pattern)                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - las weapons                                                                                    -->
-<!--       + For OGC_Gun_LasPistol REPLACE label                                                                      -->
-<!--                                  WITH label laspistol (warp tainted)                                             -->
-<!--       + For OGC_Gun_LasGun REPLACE label                                                                         -->
-<!--                               WITH label lasgun (warp tainted)                                                   -->
+<!--  + ALL CASES - las weapons                                                                                       -->
+<!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
+<!--                           WITH label laspistol (Sarum pattern)                                                   -->
+<!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
+<!--                        WITH label lasgun (Sarum pattern)                                                         -->
 <!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
@@ -22,46 +23,46 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - slug guns and autoguns                                                                         -->
+<!--  + ALL CASES - slug guns and autoguns                                                                            -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGC_Gun_AutoPistol REPLACE label                                                                     -->
-<!--                                   WITH label autopistol (warp tainted)                                           -->
-<!--       + For OGC_Gun_AutoGun REPLACE label                                                                        -->
-<!--                                WITH label autogun (warp tainted)                                                 -->
+<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
+<!--                            WITH label autopistol (Sarum pattern)                                                 -->
+<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label autogun (Sarum pattern)                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/label</xpath>
                     <value>
-                        <label>autopistol (warp tainted)</label>
+                        <label>autopistol (Sarum pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
                     <value>
-                        <label>autogun (warp tainted)</label>
+                        <label>autogun (Sarum pattern)</label>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - las weapons                                                                                    -->
+<!--  + ALL CASES - las weapons                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGC_Gun_LasPistol REPLACE label                                                                      -->
-<!--                                  WITH label laspistol (warp tainted)                                             -->
-<!--       + For OGC_Gun_LasGun REPLACE label                                                                         -->
-<!--                               WITH label lasgun (warp tainted)                                                   -->
+<!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
+<!--                           WITH label laspistol (Sarum pattern)                                                   -->
+<!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
+<!--                        WITH label lasgun (Sarum pattern)                                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/label</xpath>
                     <value>
-                        <label>laspistol (warp tainted)</label>
+                        <label>laspistol (Sarum pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
                     <value>
-                        <label>lasgun (warp tainted)</label>
+                        <label>lasgun (Sarum pattern)</label>
                     </value>
                 </li>
 
@@ -69,4 +70,5 @@
             </operations>
         </match>
     </Operation>
+
 </Patch>
