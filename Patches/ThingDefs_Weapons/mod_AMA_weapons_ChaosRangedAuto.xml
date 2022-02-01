@@ -98,22 +98,22 @@
 <!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
 <!--                                                            GasOperation                                          -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
-                    <value>
-                        <label>autogun (Ghalmek pattern)</label>
-                    </value>
-                </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
+                                <value>
+                                    <label>autogun (Ghalmek pattern)</label>
+                                </value>
+                            </li>
 
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Chaos_Tech_Base_T1</li>
-                            <li>GasOperation</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/recipeMaker</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>GasOperation</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autocannon                                                        -->
