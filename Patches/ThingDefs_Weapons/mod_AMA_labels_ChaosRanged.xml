@@ -4,15 +4,15 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - slug guns and autoguns                                                                            -->
 <!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
-<!--                            WITH label autopistol (Sarum pattern)                                                 -->
+<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
-<!--                         WITH label autogun (Sarum pattern)                                                       -->
+<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->
 <!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
-<!--                           WITH label laspistol (Sarum pattern)                                                   -->
+<!--                           WITH label laspistol (Ghalmek pattern)                                                 -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
-<!--                        WITH label lasgun (Sarum pattern)                                                         -->
+<!--                        WITH label lasgun (Ghalmek pattern)                                                       -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -26,21 +26,21 @@
 <!--  + ALL CASES - slug guns and autoguns                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
-<!--                            WITH label autopistol (Sarum pattern)                                                 -->
+<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
-<!--                         WITH label autogun (Sarum pattern)                                                       -->
+<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/label</xpath>
                     <value>
-                        <label>autopistol (Sarum pattern)</label>
+                        <label>autopistol (Ghalmek pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
                     <value>
-                        <label>autogun (Sarum pattern)</label>
+                        <label>autogun (Ghalmek pattern)</label>
                     </value>
                 </li>
 
@@ -48,21 +48,21 @@
 <!--  + ALL CASES - las weapons                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
-<!--                           WITH label laspistol (Sarum pattern)                                                   -->
+<!--                           WITH label laspistol (Ghalmek pattern)                                                 -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
-<!--                        WITH label lasgun (Sarum pattern)                                                         -->
+<!--                        WITH label lasgun (Ghalmek pattern)                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/label</xpath>
                     <value>
-                        <label>laspistol (Sarum pattern)</label>
+                        <label>laspistol (Ghalmek pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
                     <value>
-                        <label>lasgun (Sarum pattern)</label>
+                        <label>lasgun (Ghalmek pattern)</label>
                     </value>
                 </li>
 
