@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - rockcrete                                                                                         -->
+<!--  + ALL_CASES - rockcrete - labels                                                                                -->
 <!--    + WDBlocksConcrete REPLACE label                                                                              -->
 <!--                          WITH label rockcrete blocks                                                             -->
 <!--    + WDBlocksConcrete REPLACE description                                                                        -->
@@ -12,8 +12,18 @@
 <!--                                             and durable material.                                                -->
 <!--    + WDBlocksConcrete stuffProps REPLACE stuffAdjective                                                          -->
 <!--                                     WITH stuffAdjective rockcrete                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - rockcrete - stats                                                                                 -->
+<!--    + WDBlocksConcrete statBases ADD SharpDamageMultiplier  0.65                                                  -->
+<!--    + WDBlocksConcrete statBases REPLACE MarketValue                                                              -->
+<!--                                    WITH MarketValue  0.9                                                         -->
+<!--    + WDBlocksConcrete stuffProps ADD statOffsets WorkToBuild  100                                                -->
 <!--    + WDBlocksConcrete stuffProps statFactors REPLACE MaxHitPoints                                                -->
-<!--                                                  WITH MaxHitPoints 2.25                                          -->
+<!--                                                 WITH MaxHitPoints 2.25                                           -->
+<!--    + WDBlocksConcrete stuffProps statFactors ADD WorkToBuild  2.25                                               -->
+<!--                                                  WorkToMake  1.1                                                 -->
+<!--    + WDBlocksConcrete stuffProps statFactors REPLACE Beauty                                                      -->
+<!--                                                 WITH Beauty  1                                                   -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -23,7 +33,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - rockcrete                                                                                         -->
+<!--  + ALL_CASES - rockcrete - labels                                                                                -->
 <!--  ==============================================================================================================  -->
 <!--    + WDBlocksConcrete REPLACE label                                                                              -->
 <!--                          WITH label rockcrete blocks                                                             -->
@@ -32,8 +42,6 @@
 <!--                                             and durable material.                                                -->
 <!--    + WDBlocksConcrete stuffProps REPLACE stuffAdjective                                                          -->
 <!--                                     WITH stuffAdjective rockcrete                                                -->
-<!--    + WDBlocksConcrete stuffProps statFactors REPLACE MaxHitPoints                                                -->
-<!--                                                  WITH MaxHitPoints 2.25                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/label</xpath>
@@ -56,6 +64,43 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - rockcrete - stats                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + WDBlocksConcrete statBases ADD SharpDamageMultiplier  0.65                                                  -->
+<!--    + WDBlocksConcrete statBases REPLACE MarketValue                                                              -->
+<!--                                    WITH MarketValue  0.9                                                         -->
+<!--    + WDBlocksConcrete stuffProps ADD statOffsets WorkToBuild  100                                                -->
+<!--    + WDBlocksConcrete stuffProps statFactors REPLACE MaxHitPoints                                                -->
+<!--                                                 WITH MaxHitPoints 2.25                                           -->
+<!--    + WDBlocksConcrete stuffProps statFactors ADD WorkToBuild  2.25                                               -->
+<!--                                                  WorkToMake  1.1                                                 -->
+<!--    + WDBlocksConcrete stuffProps statFactors REPLACE Beauty                                                      -->
+<!--                                                 WITH Beauty  1                                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/statBases</xpath>
+                    <value>
+                        <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/statBases/MarketValue</xpath>
+                    <value>
+                        <MarketValue>0.9</MarketValue>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps</xpath>
+                    <value>
+                        <statOffsets>
+                            <WorkToBuild>100</WorkToBuild>
+                        </statOffsets>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps/statFactors/MaxHitPoints</xpath>
                     <value>
@@ -63,8 +108,24 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps/statFactors</xpath>
+                    <value>
+                        <WorkToBuild>2.25</WorkToBuild>
+                        <WorkToMake>1.1</WorkToMake>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="WDBlocksConcrete"]/stuffProps/statFactors/Beauty</xpath>
+                    <value>
+                        <Beauty>1</Beauty>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
+
 </Patch>
