@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - concrete blocks - labels                                                                          -->
+<!--    + BlocksSmeltedStone REPLACE label                                                                            -->
+<!--                            WITH label  concrete blocks                                                           -->
+<!--    + BlocksSmeltedStone REPLACE description                                                                      -->
+<!--                            WITH description  Blocks of crushed stone, smelted together as concrete. Comparable   -->
+<!--                                               to stone in strength, but much easier to work with.                -->
+<!--    + BlocksSmeltedStone stuffProps REPLACE stuffAdjective                                                        -->
+<!--                                       WITH stuffAdjective  concrete                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - concrete blocks - stats                                                                           -->
+<!--    + BlocksSmeltedStone statBases REPLACE SharpDamageMultiplier                                                  -->
+<!--                                      WITH SharpDamageMultiplier  0.65                                            -->
+<!--    + BlocksSmeltedStone stuffProps ADD statOffsets WorkToBuild  70                                               -->
+<!--    + BlocksSmeltedStone stuffProps statFactors REPLACE MaxHitPoints                                              -->
+<!--                                                   WITH MaxHitPoints  1.35                                        -->
+<!--    + BlocksSmeltedStone stuffProps statFactors REPLACE WorkToBuild                                               -->
+<!--                                                   WITH WorkToBuild  1.5                                          -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Smelted Stone</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - concrete blocks - labels                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksSmeltedStone REPLACE label                                                                            -->
+<!--                            WITH label  concrete blocks                                                           -->
+<!--    + BlocksSmeltedStone REPLACE description                                                                      -->
+<!--                            WITH description  Blocks of crushed stone, smelted together as concrete. Comparable   -->
+<!--                                               to stone in strength, but much easier to work with.                -->
+<!--    + BlocksSmeltedStone stuffProps REPLACE stuffAdjective                                                        -->
+<!--                                       WITH stuffAdjective  concrete                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/label</xpath>
+                    <value>
+                        <label>concrete blocks</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/description</xpath>
+                    <value>
+                        <description>Blocks of crushed stone, smelted together as concrete. Comparable to stone in strength, but much easier to work with.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/stuffProps/stuffAdjective</xpath>
+                    <value>
+                        <stuffAdjective>concrete</stuffAdjective>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES - concrete blocks - stats                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksSmeltedStone statBases REPLACE SharpDamageMultiplier                                                  -->
+<!--                                      WITH SharpDamageMultiplier  0.65                                            -->
+<!--    + BlocksSmeltedStone stuffProps ADD statOffsets WorkToBuild  70                                               -->
+<!--    + BlocksSmeltedStone stuffProps statFactors REPLACE MaxHitPoints                                              -->
+<!--                                                   WITH MaxHitPoints  1.35                                        -->
+<!--    + BlocksSmeltedStone stuffProps statFactors REPLACE WorkToBuild                                               -->
+<!--                                                   WITH WorkToBuild  1.5                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/statBases</xpath>
+                    <value>
+                        <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/stuffProps</xpath>
+                    <value>
+                        <statOffsets>
+                            <WorkToBuild>70</WorkToBuild>
+                        </statOffsets>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                    <value>
+                        <MaxHitPoints>1.35</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksSmeltedStone"]/stuffProps/statFactors/WorkToBuild</xpath>
+                    <value>
+                        <WorkToBuild>1.5</WorkToBuild>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
