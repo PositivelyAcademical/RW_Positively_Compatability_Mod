@@ -3,8 +3,6 @@
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->
-<!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
-<!--                           WITH label laspistol (Ghalmek pattern)                                                 -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
 <!--                        WITH label lasgun (Ghalmek pattern)                                                       -->
 <!--  ==============================================================================================================  -->
@@ -19,18 +17,9 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
-<!--                           WITH label laspistol (Ghalmek pattern)                                                 -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
 <!--                        WITH label lasgun (Ghalmek pattern)                                                       -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/label</xpath>
-                    <value>
-                        <label>laspistol (Ghalmek pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
                     <value>

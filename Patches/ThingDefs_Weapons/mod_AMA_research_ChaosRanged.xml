@@ -6,9 +6,6 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL CASES - las weapons                                                                                       -->
-<!--    + OGC_Gun_LasPistol REPLACE researchPrerequisites                                                             -->
-<!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T1                                       -->
-<!--                                                      OG_Common_Tech_Weapons_Laser                                -->
 <!--    + OGC_Gun_LasGun REPLACE researchPrerequisites                                                                -->
 <!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                       -->
 <!--                                                      OG_Common_Tech_Weapons_Laser                                -->
@@ -31,16 +28,6 @@
 <!--                           WITH researchPrerequisites OG_Chaos_Tech_Base_T2                                       -->
 <!--                                                      OG_Common_Tech_Weapons_Laser                                -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Chaos_Tech_Base_T2</li>
-                            <li>OG_Common_Tech_Weapons_Laser</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
