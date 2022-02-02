@@ -104,7 +104,7 @@
                             </li>
 
                             <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster]/researchPrerequisites</xpath>
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/researchPrerequisites</xpath>
                             </li>
 
                             <li Class="PatchOperationAdd">
@@ -138,7 +138,7 @@
                             </li>
 
                             <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster]/researchPrerequisites</xpath>
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]/researchPrerequisites</xpath>
                             </li>
 
                             <li Class="PatchOperationAdd">
