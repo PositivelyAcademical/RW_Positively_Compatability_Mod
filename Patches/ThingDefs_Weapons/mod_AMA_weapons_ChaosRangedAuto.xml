@@ -7,37 +7,37 @@
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autopistol                                                        -->
 <!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
 <!--                            WITH label autopistol (Ghalmek pattern)                                               -->
-<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
-<!--                                                               BlowbackOperation                                  -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T1                          -->
+<!--                                                               li  BlowbackOperation                              -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autogun                                                           -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
 <!--                         WITH label autogun (Ghalmek pattern)                                                     -->
-<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
-<!--                                                            GasOperation                                          -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T1                             -->
+<!--                                                            li  GasOperation                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autocannon                                                        -->
 <!--    + Defs ADD ThingDef WITH defName  POS_AMA_Gun_ChaosAutoCannon                                                 -->
 <!--                             label  autocannon (Ghalmek pattern)                                                  -->
-<!--                             researchPrerequisites  OG_Chaos_Tech_Base_T3                                         -->
-<!--                                                    OG_Common_Tech_Weapons_Heavy                                  -->
-<!--                                                    HeavyTurrets                                                  -->
+<!--                             recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                          -->
+<!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
+<!--                                                               li  HeavyTurrets                                   -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Reaper Autocannon                                                 -->
 <!--    + OGC_Gun_RAutocannon REPLACE label                                                                           -->
 <!--                             WITH label Reaper autocannon                                                         -->
-<!--    + OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                           -->
-<!--                             WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                     -->
-<!--                                                        OG_Common_Tech_Weapons_Heavy                              -->
-<!--                                                        HeavyTurrets                                              -->
+<!--    + OGC_Gun_RAutocannon recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
+<!--                                                                    li  HeavyTurrets                              -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Rotor Cannon                                                      -->
 <!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
 <!--                                WITH label rotor cannon                                                           -->
-<!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
-<!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
-<!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
-<!--                                                           MultibarrelWeapons                                     -->
+<!--    + OGC_Gun_ReaperChaingun recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                  -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--                                                                       li  MultibarrelWeapons                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
@@ -66,8 +66,8 @@
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
 <!--                            WITH label autopistol (Ghalmek pattern)                                               -->
-<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
-<!--                                                               BlowbackOperation                                  -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T1                          -->
+<!--                                                               li  BlowbackOperation                              -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/label</xpath>
@@ -91,8 +91,8 @@
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
 <!--                         WITH label autogun (Ghalmek pattern)                                                     -->
-<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
-<!--                                                            GasOperation                                          -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T1                             -->
+<!--                                                            li  GasOperation                                      -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
@@ -116,9 +116,9 @@
 <!--  ==============================================================================================================  -->
 <!--    + Defs ADD ThingDef WITH defName  POS_AMA_Gun_ChaosAutoCannon                                                 -->
 <!--                             label  autocannon (Ghalmek pattern)                                                  -->
-<!--                             researchPrerequisites  OG_Chaos_Tech_Base_T3                                         -->
-<!--                                                    OG_Common_Tech_Weapons_Heavy                                  -->
-<!--                                                    HeavyTurrets                                                  -->
+<!--                             recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                          -->
+<!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
+<!--                                                               li  HeavyTurrets                                   -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs</xpath>
@@ -275,10 +275,10 @@
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
 <!--                                WITH label rotor cannon                                                           -->
-<!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
-<!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
-<!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
-<!--                                                           MultibarrelWeapons                                     -->
+<!--    + OGC_Gun_ReaperChaingun recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                  -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--                                                                       li  MultibarrelWeapons                     -->
 <!--  ==============================================================================================================  -->
 
                             <li Class="PatchOperationReplace">

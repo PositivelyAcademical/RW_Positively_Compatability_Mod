@@ -39,14 +39,14 @@
         <match Class="PatchOperationSequence">
             <operations>
 
-<!--            <li Class="PatchOperationFindMod">                                                                    -->
-<!--                <mods>                                                                                            -->
-<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
-<!--                </mods>                                                                                           -->
-<!--                                                                                                                  -->
-<!--                <nomatch Class="PatchOperationSequence">                                                          -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaPistol                                                       -->
 <!--  ==============================================================================================================  -->
@@ -127,12 +127,12 @@
                                 </value>
                             </li>
 
-<!--                    </operations>                                                                                 -->
-<!--                </nomatch>                                                                                        -->
-<!--                                                                                                                  -->
-<!--                <match Class="PatchOperationSequence">                                                            -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
@@ -140,22 +140,22 @@
 <!--    + OGC_Gun_PlasmaGun REMOVE ./                                                                                 -->
 <!--    + OGC_Gun_PlasmaCannon REMOVE ./                                                                              -->
 <!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]</xpath>                            -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                    </operations>                                                                                 -->
-<!--                </match>                                                                                          -->
-<!--                                                                                                                  -->
-<!--            </li>                                                                                                 -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]</xpath>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
 
             </operations>
         </match>
