@@ -89,7 +89,36 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSonicBlaster                                                       -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
+<!--                              WITH label  sonic blaster                                                           -->
+<!--    + OGC_Gun_SonicBlaster REMOVE researchPrerequisites                                                           -->
+<!--    + OGC_Gun_SonicBlaster ADD recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                        -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Sonic                 -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Special               -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/label</xpath>
+                                <value>
+                                    <label>sonic blaster</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster]/researchPrerequisites</xpath>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]</xpath>
+                                <value>
+                                    <recipeMaker>
+                                        <researchPrerequisites>
+                                            <li>OG_Chaos_Tech_Base_T3</li>
+                                            <li>OG_Common_Tech_Weapons_Sonic</li>
+                                            <li>OG_Common_Tech_Weapons_Special</li>
+                                        </researchPrerequisites>
+                                    </recipeMaker>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBlastmaster                                                        -->
