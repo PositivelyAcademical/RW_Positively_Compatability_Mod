@@ -139,7 +139,30 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosHeavyBolter                                                        -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_HeavyBolter REPLACE label                                                                           -->
+<!--                             WITH label  heavy bolter (Ghalmek pattern)                                           -->
+<!--    + OGC_Gun_HeavyBolter recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                     -->
+<!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/label</xpath>
+                                <value>
+                                    <label>heavy bolter (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--                    </operations>                                                                                 -->
 <!--                </nomatch>                                                                                        -->
