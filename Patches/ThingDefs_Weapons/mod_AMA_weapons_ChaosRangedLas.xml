@@ -74,8 +74,30 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLasgun                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
+<!--                        WITH label  lasgun (Ghalmek pattern)                                                      -->
+<!--    + OGC_Gun_LasGun recipeMaker REPLACE researchPrerequisites                                                    -->
+<!--                                    WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                          -->
+<!--                                                               li  OG_Common_Tech_Weapons_Laser                   -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
+                    <value>
+                        <label>lasgun (Ghalmek pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Chaos_Tech_Base_T1</li>
+                            <li>OG_Common_Tech_Weapons_Laser</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
@@ -92,9 +114,14 @@
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasPistol REMOVE ./                                                                                 -->
+<!--    + OGC_Gun_LasGun REMOVE ./                                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]</xpath>                            -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]</xpath>                               -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--                    </operations>                                                                                 -->
