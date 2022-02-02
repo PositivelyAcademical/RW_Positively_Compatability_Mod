@@ -85,7 +85,28 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBoltgun                                                            -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_BoltGun REPLACE label                                                                               -->
+<!--                         WITH label  boltgun (Ghalmek pattern)                                                    -->
+<!--    + OGC_Gun_BoltGun recipeMaker REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                         -->
+<!--                                                                li  OG_Imperial_Tech_Weapons_Bolt                 -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/label</xpath>
+                                <value>
+                                    <label>boltgun (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T2</li>
+                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosCombiBolter                                                        -->
