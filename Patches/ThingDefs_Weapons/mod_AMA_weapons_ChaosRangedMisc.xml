@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMissileLauncher                                                    -->
+<!--    + OGC_Gun_RocketLaucher REPLACE label                                                                         -->
+<!--                               WITH label  missile launcher (Ghalmek pattern)                                     -->
+<!--    + OGC_Gun_RocketLaucher recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSonicBlaster                                                       -->
+<!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
+<!--                              WITH label  sonic blaster                                                           -->
+<!--    + OGC_Gun_SonicBlaster REMOVE researchPrerequisites                                                           -->
+<!--    + OGC_Gun_SonicBlaster ADD recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                        -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Sonic                 -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Special               -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBlastmaster                                                        -->
+<!--    + OGC_Gun_Blastmaster REPLACE label                                                                           -->
+<!--                             WITH label  blastmaster                                                              -->
+<!--    + OGC_Gun_Blastmaster REMOVE researchPrerequisites                                                            -->
+<!--    + OGC_Gun_Blastmaster ADD recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                         -->
+<!--                                                                li  OG_Common_Tech_Weapons_Sonic                  -->
+<!--                                                                li  OG_Common_Tech_Weapons_Heavy                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--    + OGC_Gun_RocketLaucher REMOVE ./                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenSonicBlaster                                               -->
+<!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
+<!--                              WITH label  sonic blaster                                                           -->
+<!--    + OGC_Gun_SonicBlaster REMOVE researchPrerequisites                                                           -->
+<!--    + OGC_Gun_SonicBlaster ADD recipeMaker researchPrerequisites li  LAP_Tech_Emperors_Children                   -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Sonic                 -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Special               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenBlastmaster                                                -->
+<!--    + OGC_Gun_Blastmaster REPLACE label                                                                           -->
+<!--                             WITH label  blastmaster                                                              -->
+<!--    + OGC_Gun_Blastmaster REMOVE researchPrerequisites                                                            -->
+<!--    + OGC_Gun_Blastmaster ADD recipeMaker researchPrerequisites li  LAP_Tech_Emperors_Children                    -->
+<!--                                                                li  OG_Common_Tech_Weapons_Sonic                  -->
+<!--                                                                li  OG_Common_Tech_Weapons_Heavy                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--            <li Class="PatchOperationFindMod">                                                                    -->
+<!--                <mods>                                                                                            -->
+<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
+<!--                </mods>                                                                                           -->
+<!--                                                                                                                  -->
+<!--                <nomatch Class="PatchOperationSequence">                                                          -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMissileLauncher                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_RocketLaucher REPLACE label                                                                         -->
+<!--                            WITH label  missile launcher (Ghalmek pattern)                                        -->
+<!--    + OGC_Gun_RocketLaucher recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]/label</xpath>
+                                <value>
+                                    <label>missile launcher (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]/recipeMaker</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T2</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSonicBlaster                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
+<!--                              WITH label  sonic blaster                                                           -->
+<!--    + OGC_Gun_SonicBlaster REMOVE researchPrerequisites                                                           -->
+<!--    + OGC_Gun_SonicBlaster ADD recipeMaker researchPrerequisites li  OG_Chaos_Tech_Base_T3                        -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Sonic                 -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Special               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/label</xpath>
+                                <value>
+                                    <label>sonic blaster</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/researchPrerequisites</xpath>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]</xpath>
+                                <value>
+                                    <recipeMaker>
+                                        <researchPrerequisites>
+                                            <li>OG_Chaos_Tech_Base_T3</li>
+                                            <li>OG_Common_Tech_Weapons_Sonic</li>
+                                            <li>OG_Common_Tech_Weapons_Special</li>
+                                        </researchPrerequisites>
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBlastmaster                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_Blastmaster REPLACE label                                                                           -->
+<!--                             WITH label  blastmaster                                                              -->
+<!--    + OGC_Gun_Blastmaster REMOVE researchPrerequisites                                                            -->
+<!--    + OGC_Gun_Blastmaster ADD recipeMaker researchPrerequisites li  LAP_Tech_Emperors_Children                    -->
+<!--                                                                li  OG_Common_Tech_Weapons_Sonic                  -->
+<!--                                                                li  OG_Common_Tech_Weapons_Heavy                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]/label</xpath>
+                                <value>
+                                    <label>blastmaster</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]/researchPrerequisites</xpath>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]</xpath>
+                                <value>
+                                    <recipeMaker>
+                                        <researchPrerequisites>
+                                            <li>OG_Chaos_Tech_Base_T3</li>
+                                            <li>OG_Common_Tech_Weapons_Sonic</li>
+                                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        </researchPrerequisites>
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+<!--                    </operations>                                                                                 -->
+<!--                </nomatch>                                                                                        -->
+<!--                                                                                                                  -->
+<!--                <match Class="PatchOperationSequence">                                                            -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_RocketLaucher REMOVE ./                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]</xpath>                        -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenSonicBlaster                                               -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenBlastmaster                                                -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+<!--                                                                                                                  -->
+<!--                    </operations>                                                                                 -->
+<!--                </match>                                                                                          -->
+<!--                                                                                                                  -->
+<!--            </li>                                                                                                 -->
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
