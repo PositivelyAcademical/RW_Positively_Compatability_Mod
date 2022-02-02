@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMeltagun                                                           -->
+<!--    + OGC_Gun_MeltaGun REPLACE label                                                                              -->
+<!--                          WITH label  meltagun (Ghalmek pattern)                                                  -->
+<!--    + OGC_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                        -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--    + OGC_Gun_MeltaGun REMOVE ./                                                                                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--            <li Class="PatchOperationFindMod">                                                                    -->
+<!--                <mods>                                                                                            -->
+<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
+<!--                </mods>                                                                                           -->
+<!--                                                                                                                  -->
+<!--                <nomatch Class="PatchOperationSequence">                                                          -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMeltagun                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_MeltaGun REPLACE label                                                                              -->
+<!--                          WITH label  meltagun (Ghalmek pattern)                                                  -->
+<!--    + OGC_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                        -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_MeltaGun"]/label</xpath>
+                                <value>
+                                    <label>meltagun (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T2</li>
+                                        <li>OG_Common_Tech_Weapons_Melta</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--                    </operations>                                                                                 -->
+<!--                </nomatch>                                                                                        -->
+<!--                                                                                                                  -->
+<!--                <match Class="PatchOperationSequence">                                                            -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_MeltaGun REMOVE ./                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_MeltaGun"]</xpath>                             -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                    </operations>                                                                                 -->
+<!--                </match>                                                                                          -->
+<!--                                                                                                                  -->
+<!--            </li>                                                                                                 -->
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
