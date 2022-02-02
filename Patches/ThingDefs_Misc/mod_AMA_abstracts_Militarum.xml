@@ -31,12 +31,15 @@
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
+
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Makeable_NoStuffColour"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
+
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Armor_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
+
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_PowerArmor_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
