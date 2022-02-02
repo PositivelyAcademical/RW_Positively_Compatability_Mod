@@ -53,14 +53,14 @@
         <match Class="PatchOperationSequence">
             <operations>
 
-<!--            <li Class="PatchOperationFindMod">                                                                    -->
-<!--                <mods>                                                                                            -->
-<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
-<!--                </mods>                                                                                           -->
-<!--                                                                                                                  -->
-<!--                <nomatch Class="PatchOperationSequence">                                                          -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMissileLauncher                                                    -->
 <!--  ==============================================================================================================  -->
@@ -154,35 +154,93 @@
                                 </value>
                             </li>
 
-<!--                    </operations>                                                                                 -->
-<!--                </nomatch>                                                                                        -->
-<!--                                                                                                                  -->
-<!--                <match Class="PatchOperationSequence">                                                            -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_RocketLaucher REMOVE ./                                                                             -->
 <!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]</xpath>                        -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]</xpath>
+                            </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenSonicBlaster                                               -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
+<!--                              WITH label  sonic blaster                                                           -->
+<!--    + OGC_Gun_SonicBlaster REMOVE researchPrerequisites                                                           -->
+<!--    + OGC_Gun_SonicBlaster ADD recipeMaker researchPrerequisites li  LAP_Tech_Emperors_Children                   -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Sonic                 -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Special               -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/label</xpath>
+                                <value>
+                                    <label>sonic blaster</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]/researchPrerequisites</xpath>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_SonicBlaster"]</xpath>
+                                <value>
+                                    <recipeMaker>
+                                        <researchPrerequisites>
+                                            <li>LAP_Tech_Emperors_Children</li>
+                                            <li>OG_Common_Tech_Weapons_Sonic</li>
+                                            <li>OG_Common_Tech_Weapons_Special</li>
+                                        </researchPrerequisites>
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenBlastmaster                                                -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_Blastmaster REPLACE label                                                                           -->
+<!--                             WITH label  blastmaster                                                              -->
+<!--    + OGC_Gun_Blastmaster REMOVE researchPrerequisites                                                            -->
+<!--    + OGC_Gun_Blastmaster ADD recipeMaker researchPrerequisites li  LAP_Tech_Emperors_Children                    -->
+<!--                                                                li  OG_Common_Tech_Weapons_Sonic                  -->
+<!--                                                                li  OG_Common_Tech_Weapons_Heavy                  -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
-<!--                    </operations>                                                                                 -->
-<!--                </match>                                                                                          -->
-<!--                                                                                                                  -->
-<!--            </li>                                                                                                 -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]/label</xpath>
+                                <value>
+                                    <label>blastmaster</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]/researchPrerequisites</xpath>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_Blastmaster"]</xpath>
+                                <value>
+                                    <recipeMaker>
+                                        <researchPrerequisites>
+                                            <li>LAP_Tech_Emperors_Children</li>
+                                            <li>OG_Common_Tech_Weapons_Sonic</li>
+                                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        </researchPrerequisites>
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
 
             </operations>
         </match>
