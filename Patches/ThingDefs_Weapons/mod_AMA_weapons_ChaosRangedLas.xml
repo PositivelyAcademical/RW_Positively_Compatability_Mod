@@ -100,9 +100,32 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLascannon                                                          -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_LasCannon REPLACE label                                                                             -->
+<!--                           WITH label  lascannon (Ghalmek pattern)                                                -->
+<!--    + OGC_Gun_LasCannon recipeMaker REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Laser                -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/label</xpath>
+                                <value>
+                                    <label>lascannon (Ghalmek pattern)</label>
+                                </value>
+                            </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Laser</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--                    </operations>                                                                                 -->
 <!--                </nomatch>                                                                                        -->
@@ -115,6 +138,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasPistol REMOVE ./                                                                                 -->
 <!--    + OGC_Gun_LasGun REMOVE ./                                                                                    -->
+<!--    + OGC_Gun_LasCannon REMOVE ./                                                                                 -->
 <!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]</xpath>                            -->
@@ -122,6 +146,10 @@
 <!--                                                                                                                  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]</xpath>                               -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]</xpath>                            -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--                    </operations>                                                                                 -->
