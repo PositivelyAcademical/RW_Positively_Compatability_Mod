@@ -102,7 +102,30 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaCannon                                                       -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_PlasmaCannon REPLACE label                                                                          -->
+<!--                              WITH label  plasma cannon (Ghalmek pattern)                                         -->
+<!--    + OGC_Gun_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                    -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Plasma            -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/label</xpath>
+                                <value>
+                                    <label>plasma cannon (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Plasma</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--                    </operations>                                                                                 -->
 <!--                </nomatch>                                                                                        -->
