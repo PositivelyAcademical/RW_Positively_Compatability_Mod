@@ -33,7 +33,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Rotor Cannon                                                      -->
 <!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
-<!--                                WITH label rotor cannon (Sol Militaris pattern)                                   -->
+<!--                                WITH label rotor cannon                                                           -->
 <!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
 <!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
 <!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
@@ -274,6 +274,35 @@
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Rotor Cannon                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
+<!--                                WITH label rotor cannon                                                           -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
+<!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
+<!--                                                           MultibarrelWeapons                                     -->
+<!--  ==============================================================================================================  -->
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]/label</xpath>
+                                <value>
+                                    <label>rotor cannon</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        <li>MultibarrelWeapons</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
 
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
@@ -289,6 +318,7 @@
 <!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
 <!--    + OGC_Gun_AutoGun REMOVE ./                                                                                   -->
 <!--    + OGC_Gun_RAutocannon REMOVE ./                                                                               -->
+<!--    + OGC_Gun_ReaperChaingun REMOVE ./                                                                            -->
 <!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]</xpath>                           -->
@@ -300,6 +330,10 @@
 <!--                                                                                                                  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]</xpath>                          -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]</xpath>                       -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
