@@ -205,7 +205,7 @@
                                                 <label>barrel</label>
                                                 <capacities>
                                                     <li>Blunt</li>
-                                                </capcities>
+                                                </capacities>
                                                 <power>10</power>
                                                 <cooldownTime>1.9</cooldownTime>
                                             </li>
@@ -222,7 +222,7 @@
                                 <match Class="PatchOperationSequence">
                                     <operations>
 
-                                        <li Class="PatchOperationAddModExtension>
+                                        <li Class="PatchOperationAddModExtension">
                                             <xpath>/Defs/ThingDef[defName="POS_AMA_Gun_ChaosAutoCannon"]</xpath>
                                             <value>
                                                 <li Class="DualWield.DefModextension_DefaultSettings">
@@ -232,11 +232,11 @@
                                             </value>
                                         </li>
 
-                                        <li Class="PatchOperationAddModExtension>
+                                        <li Class="PatchOperationAddModExtension">
                                             <xpath>/Defs/ThingDef[defName="POS_AMA_Gun_ChaosAutoCannon"]</xpath>
                                             <value>
                                                 <li Class="DualWield.DefModextension_CustomRotation">
-                                                    <extraRotation>0</dualWield>
+                                                    <extraRotation>0</extraRotation>
                                                 </li>
                                             </value>
                                         </li>
