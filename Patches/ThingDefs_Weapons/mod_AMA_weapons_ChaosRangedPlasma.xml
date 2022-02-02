@@ -76,7 +76,28 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmagun                                                          -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_PlasmaGun REPLACE label                                                                             -->
+<!--                           WITH label  plasmagun (Ghalmek pattern)                                                -->
+<!--    + OGC_Gun_PlasmaGun recipeMaker REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Plasma               -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/label</xpath>
+                                <value>
+                                    <label>plasmagun (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Plasma</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaCannon                                                       -->
