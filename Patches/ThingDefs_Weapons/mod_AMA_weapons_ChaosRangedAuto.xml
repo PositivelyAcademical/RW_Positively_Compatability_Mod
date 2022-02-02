@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autopistol                                                        -->
+<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
+<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
+<!--                                                               BlowbackOperation                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autogun                                                           -->
+<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
+<!--                                                            GasOperation                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autocannon                                                        -->
+<!--    + Defs ADD ThingDef WITH defName  POS_AMA_Gun_ChaosAutoCannon                                                 -->
+<!--                             label  autocannon (Ghalmek pattern)                                                  -->
+<!--                             researchPrerequisites  OG_Chaos_Tech_Base_T3                                         -->
+<!--                                                    OG_Common_Tech_Weapons_Heavy                                  -->
+<!--                                                    HeavyTurrets                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Reaper Autocannon                                                 -->
+<!--    + OGC_Gun_RAutocannon REPLACE label                                                                           -->
+<!--                             WITH label Reaper autocannon                                                         -->
+<!--    + OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                           -->
+<!--                             WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                     -->
+<!--                                                        OG_Common_Tech_Weapons_Heavy                              -->
+<!--                                                        HeavyTurrets                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Rotor Cannon                                                      -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
+<!--                                WITH label rotor cannon                                                           -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
+<!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
+<!--                                                           MultibarrelWeapons                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
+<!--    + OGC_Gun_AutoGun REMOVE ./                                                                                   -->
+<!--    + OGC_Gun_RAutocannon REMOVE ./                                                                               -->
+<!--    + OGC_Gun_ReaperChaingun REMOVE ./                                                                            -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+<!--            <li Class="PatchOperationFindMod">                                                                    -->
+<!--                <mods>                                                                                            -->
+<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
+<!--                </mods>                                                                                           -->
+<!--                                                                                                                  -->
+<!--                <nomatch Class="PatchOperationSequence">                                                          -->
+<!--                    <operations>                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autopistol                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_AutoPistol REPLACE label                                                                            -->
+<!--                            WITH label autopistol (Ghalmek pattern)                                               -->
+<!--    + OGC_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                              -->
+<!--                                                               BlowbackOperation                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/label</xpath>
+                                <value>
+                                    <label>autopistol (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]/recipeMaker</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>BlowbackOperation</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autogun                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label autogun (Ghalmek pattern)                                                     -->
+<!--    + OGC_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Chaos_Tech_Base_T1                                 -->
+<!--                                                            GasOperation                                          -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/label</xpath>
+                                <value>
+                                    <label>autogun (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]/recipeMaker</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>GasOperation</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Autocannon                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Defs ADD ThingDef WITH defName  POS_AMA_Gun_ChaosAutoCannon                                                 -->
+<!--                             label  autocannon (Ghalmek pattern)                                                  -->
+<!--                             researchPrerequisites  OG_Chaos_Tech_Base_T3                                         -->
+<!--                                                    OG_Common_Tech_Weapons_Heavy                                  -->
+<!--                                                    HeavyTurrets                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
+                                <value>
+                                    <ThingDef ParentName="OG_Chaos_Gun_Heavy">
+                                        <defName>POS_AMA_Gun_ChaosAutoCannon</defName>
+                                        <label>autocannon (Ghalmek pattern)</label>
+                                        <description>An Autocannon is an automatic, self-loading heavy ballistic weapon that fires a high velocity hail of solid shells, and is used by the military forces of the Imperium of Man. It is an ancient weapon, but has nevertheless remained a widely-used piece of wargear throughout the Imperium's history. As such the traitor Astartes and other forces of Chaos have retained access to these weapons for the past 10,000 years.\n\nThese rapid-firing weapons can lay down a burst of fire to cover advancing troops, or strafe enemy-held positions. Autocannons are considered ideally suited for attacking enemy vehicles and fortifications from long range.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponRanged/Imperial/AutoCannon</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                            <color>(0.161,0.133,0.039)</color>
+                                            <drawSize>1.250</drawSize>
+                                        </graphicData>
+                                        <equippedAngleOffset>45</equippedAngleOffset>
+                                        <comps>
+                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                                                <northOffset>0.0,0.0,0.0</northOffset>
+                                                <eastOffset>0.0,1.0,0.0</eastOffset>
+                                                <westOffset>0.0,0.0,0.0</westOffset>
+                                                <southOffset>0.0,1.0,0.0</southOffset>
+                                            </li>
+                                        </comps>
+                                        <soundInteract>Interact_Rifle</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>52000</WorkToMake>
+                                            <Mass>10</Mass>
+                                            <AccuracyTouch>0.91</AccuracyTouch>
+                                            <AccuracyShort>0.81</AccuracyShort>
+                                            <AccuracyMedium>0.70</AccuracyMedium>
+                                            <AccuracyLong>0.62</AccuracyLong>
+                                            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+                                        </statBases>
+                                        <recipeMaker>
+                                            <researchPrerequisites>
+                                                <li>OG_Chaos_Tech_Base_T3</li>
+                                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                                                <li>HeavyTurrets</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costList>
+                                            <Steel>100</Steel>
+                                            <Plasteel>30</Plasteel>
+                                            <ComponentIndustrial>6</ComponentIndustrial>
+                                        </costList>
+                                        <techLevel>Spacer</techLevel>
+                                        <weaponTags>
+                                            <li>ChaosHeavyGun</li>
+                                            <li>CAutoCannon</li>
+                                            <li>OgsWeaponTestAuto</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGCRanged</li>
+                                        </tradeTags>
+                                        <generateCommonality>0.25</generateCommonality>
+                                        <equippedStatOffsets>
+                                            <MoveSpeed>-0.25</MoveSpeed>
+                                        </equippedStatOffsets>
+                                        <verbs>
+                                            <li Class="AdeptusMechanicus.AdvancedVerbProperties">
+                                                <verbClass>Verb_Shoot</verbClass>
+                                                <hasStandardCommand>true</hasStandardCommand>
+                                                <defaultProjectile>OGC_Bullet_RAutocannon</defaultProjectile>
+                                                <warmupTime>1.75</warmupTime>
+                                                <range>45</range>
+                                                <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+                                                <burstShotCount>3</burstShotCount>
+                                                <soundCast>OG_Auto_Cannon_Sound</soundCast>
+                                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                                <muzzleFlashScale>15</muzzleFlashScale>
+                                                <barrelLength>0.9</barrelLength>
+                                                <targetParams>
+                                                    <canTargetLocations>true</canTargetLocations>
+                                                </targetParams>
+                                            </li>
+                                        </verbs>
+                                        <tools>
+                                            <li>
+                                                <label>barrel</label>
+                                                <capacities>
+                                                    <li>Blunt</li>
+                                                </capacities>
+                                                <power>10</power>
+                                                <cooldownTime>1.9</cooldownTime>
+                                            </li>
+                                        </tools>
+                                    </ThingDef>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Dual Wield</li>
+                                </mods>
+
+                                <match Class="PatchOperationSequence">
+                                    <operations>
+
+                                        <li Class="PatchOperationAddModExtension">
+                                            <xpath>/Defs/ThingDef[defName="POS_AMA_Gun_ChaosAutoCannon"]</xpath>
+                                            <value>
+                                                <li Class="DualWield.DefModextension_DefaultSettings">
+                                                    <dualWield>false</dualWield>
+                                                    <twoHand>true</twoHand>
+                                                </li>
+                                            </value>
+                                        </li>
+
+                                        <li Class="PatchOperationAddModExtension">
+                                            <xpath>/Defs/ThingDef[defName="POS_AMA_Gun_ChaosAutoCannon"]</xpath>
+                                            <value>
+                                                <li Class="DualWield.DefModextension_CustomRotation">
+                                                    <extraRotation>0</extraRotation>
+                                                </li>
+                                            </value>
+                                        </li>
+
+                                    </operations>
+                                </match>
+
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Reaper Autocannon                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_RAutocannon REPLACE label                                                                           -->
+<!--                             WITH label Reaper autocannon                                                         -->
+<!--    + OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                           -->
+<!--                             WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                     -->
+<!--                                                        OG_Common_Tech_Weapons_Heavy                              -->
+<!--                                                        HeavyTurrets                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/label</xpath>
+                                <value>
+                                    <label>Reaper autocannon</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        <li>HeavyTurrets</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Rotor Cannon                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE label                                                                        -->
+<!--                                WITH label rotor cannon                                                           -->
+<!--    + OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                  -->
+<!--                                                           OG_Common_Tech_Weapons_Heavy                           -->
+<!--                                                           MultibarrelWeapons                                     -->
+<!--  ==============================================================================================================  -->
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]/label</xpath>
+                                <value>
+                                    <label>rotor cannon</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        <li>MultibarrelWeapons</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+<!--                    </operations>                                                                                 -->
+<!--                </nomatch>                                                                                        -->
+<!--                                                                                                                  -->
+<!--                <match Class="PatchOperationSequence">                                                            -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
+<!--    + OGC_Gun_AutoGun REMOVE ./                                                                                   -->
+<!--    + OGC_Gun_RAutocannon REMOVE ./                                                                               -->
+<!--    + OGC_Gun_ReaperChaingun REMOVE ./                                                                            -->
+<!--  ==============================================================================================================  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]</xpath>                           -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]</xpath>                              -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]</xpath>                          -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]</xpath>                       -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--                    </operations>                                                                                 -->
+<!--                </match>                                                                                          -->
+<!--                                                                                                                  -->
+<!--            </li>                                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
