@@ -34,7 +34,7 @@
 <!--    + @OG_Chaos_Gun_Heavy recipeMaker REMOVE researchPrerequisites                                                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[@Name="OG_Imperial_Apparel_Makeable"]/recipeMaker/researchPrerequisites</xpath>
+                    <xpath>/Defs/ThingDef[@Name="OG_Chaos_Gun_Makeable"]/recipeMaker/researchPrerequisites</xpath>
                 </li>
 
                 <li Class="PatchOperationRemove">
