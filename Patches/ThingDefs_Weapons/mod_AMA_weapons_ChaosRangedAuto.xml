@@ -25,7 +25,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Reaper Autocannon                                                 -->
 <!--    + OGC_Gun_RAutocannon REPLACE label                                                                           -->
-<!--                             WITH label Reaper autocannon (Sol Militaris pattern)                                 -->
+<!--                             WITH label Reaper autocannon                                                         -->
 <!--    + OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                           -->
 <!--                             WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                     -->
 <!--                                                        OG_Common_Tech_Weapons_Heavy                              -->
@@ -246,6 +246,34 @@
 
                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  Chaos Reaper Autocannon                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Gun_RAutocannon REPLACE label                                                                           -->
+<!--                             WITH label Reaper autocannon                                                         -->
+<!--    + OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                           -->
+<!--                             WITH researchPrerequisites OG_Chaos_Tech_Base_T3                                     -->
+<!--                                                        OG_Common_Tech_Weapons_Heavy                              -->
+<!--                                                        HeavyTurrets                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/label</xpath>
+                                <value>
+                                    <label>Reaper autocannon</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Heavy</li>
+                                        <li>HeavyTurrets</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
 
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
@@ -260,6 +288,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_AutoPistol REMOVE ./                                                                                -->
 <!--    + OGC_Gun_AutoGun REMOVE ./                                                                                   -->
+<!--    + OGC_Gun_RAutocannon REMOVE ./                                                                               -->
 <!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoPistol"]</xpath>                           -->
@@ -267,6 +296,10 @@
 <!--                                                                                                                  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
 <!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_AutoGun"]</xpath>                              -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]</xpath>                          -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->

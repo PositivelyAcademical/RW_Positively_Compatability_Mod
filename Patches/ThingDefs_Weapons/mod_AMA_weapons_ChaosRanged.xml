@@ -24,12 +24,6 @@
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
 <!--     + Requires NOMATCH Legiones Astartes: Primarch - slug and auto weapons                                       -->
-<!--       + For OGC_Gun_RAutocannon REPLACE label                                                                    -->
-<!--                                    WITH label Reaper autocannon (Sol Militaris pattern)                          -->
-<!--       + For OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Chaos_Tech_Base_T3                              -->
-<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
-<!--                                                               HeavyTurrets                                       -->
 <!--       + For OGC_Gun_ReaperChaingun REPLACE label                                                                 -->
 <!--                                       WITH label rotor cannon (Sol Militaris pattern)                            -->
 <!--       + For OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                 -->
@@ -67,13 +61,8 @@
 
 <!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Legiones Astartes: Primarch - slug and auto weapons                                         -->
-<!--       + For OGC_Gun_RAutocannon REMOVE ThingDef                                                                  -->
 <!--       + For OGC_Gun_ReaperChaingun REMOVE ThingDef                                                               -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]</xpath>
-                            </li>
-
                             <li Class="PatchOperationRemove">
                                 <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]</xpath>
                             </li>
@@ -89,12 +78,6 @@
 <!--  ==============================================================================================================  -->
 <!--     + Requires NOMATCH Legiones Astartes: Primarch - slug guns and autoguns                                      -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGC_Gun_RAutocannon REPLACE label                                                                    -->
-<!--                                    WITH label Reaper autocannon (Sol Militaris pattern)                          -->
-<!--       + For OGC_Gun_RAutocannon REPLACE researchPrerequisites                                                    -->
-<!--                                    WITH researchPrerequisites OG_Chaos_Tech_Base_T3                              -->
-<!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
-<!--                                                               HeavyTurrets                                       -->
 <!--       + For OGC_Gun_ReaperChaingun REPLACE label                                                                 -->
 <!--                                       WITH label rotor cannon (Sol Militaris pattern)                            -->
 <!--       + For OGC_Gun_ReaperChaingun REPLACE researchPrerequisites                                                 -->
@@ -102,24 +85,6 @@
 <!--                                                                  OG_Common_Tech_Weapons_Heavy                    -->
 <!--                                                                  MultibarrelWeapons                              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/label</xpath>
-                                <value>
-                                    <label>Reaper autocannon (Sol Militaris pattern)</label>
-                                </value>
-                            </li>
-
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Common_Tech_Weapons_Heavy</li>
-                                        <li>HeavyTurrets</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
-
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGC_Gun_ReaperChaingun"]/label</xpath>
                                 <value>
