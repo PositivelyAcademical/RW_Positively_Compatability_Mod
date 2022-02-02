@@ -5,10 +5,10 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMissileLauncher                                                    -->
-<!--    + OG_Chaos_Gun_Heavy REPLACE label                                                                            -->
-<!--                            WITH label  missile launcher (Ghalmek pattern)                                        -->
-<!--    + OG_Chaos_Gun_Heavy recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                          -->
-<!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
+<!--    + OGC_Gun_RocketLaucher REPLACE label                                                                         -->
+<!--                               WITH label  missile launcher (Ghalmek pattern)                                     -->
+<!--    + OGC_Gun_RocketLaucher recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSonicBlaster                                                       -->
 <!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
@@ -27,7 +27,7 @@
 <!--                                                                li  OG_Common_Tech_Weapons_Heavy                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
-<!--    + OG_Chaos_Gun_Heavy REMOVE ./                                                                                -->
+<!--    + OGC_Gun_RocketLaucher REMOVE ./                                                                             -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  EmperorsChildrenSonicBlaster                                               -->
 <!--    + OGC_Gun_SonicBlaster REPLACE label                                                                          -->
@@ -64,20 +64,20 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosMissileLauncher                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + OG_Chaos_Gun_Heavy REPLACE label                                                                            -->
+<!--    + OGC_Gun_RocketLaucher REPLACE label                                                                         -->
 <!--                            WITH label  missile launcher (Ghalmek pattern)                                        -->
-<!--    + OG_Chaos_Gun_Heavy recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                          -->
-<!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
+<!--    + OGC_Gun_RocketLaucher recipeMaker ADD researchPrerequisites li  OG_Chaos_Tech_Base_T2                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OG_Chaos_Gun_Heavy"]/label</xpath>
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]/label</xpath>
                                 <value>
                                     <label>missile launcher (Ghalmek pattern)</label>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OG_Chaos_Gun_Heavy"]/recipeMaker/researchPrerequisites</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]/recipeMaker</xpath>
                                 <value>
                                     <researchPrerequisites>
                                         <li>OG_Chaos_Tech_Base_T2</li>
@@ -163,10 +163,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
-<!--    + OG_Chaos_Gun_Heavy REMOVE ./                                                                                -->
+<!--    + OGC_Gun_RocketLaucher REMOVE ./                                                                             -->
 <!--  ==============================================================================================================  -->
 <!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OG_Chaos_Gun_Heavy"]</xpath>                           -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Gun_RocketLaucher"]</xpath>                        -->
 <!--                        </li>                                                                                     -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
