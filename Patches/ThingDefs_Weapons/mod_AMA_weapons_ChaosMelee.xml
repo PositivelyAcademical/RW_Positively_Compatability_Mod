@@ -129,8 +129,27 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainaxe                                                           -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_ChainAxe REPLACE label                                                                            -->
+<!--                            WITH label  chainaxe (Ghalmek pattern)                                                -->
+<!--    + OGC_Melee_ChainAxe recipeMaker ADD researchPrerequisites  li  OG_Chaos_Tech_Base_T1                         -->
+<!--                                                                li  OG_Common_Tech_Weapons_Special                -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]/label</xpath>
+                                <value>
+                                    <label>chainsword (Ghalmek pattern)</label>
+                                </value>
+                            </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>OG_Common_Tech_Weapons_Special</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerSword                                                         -->
