@@ -41,7 +41,7 @@
 <!--  + ALL_CASES  -  MakeFromBlocks                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE label                                                                    -->
-<!--                                    WITH label  make concrete blocks from blocks                                  -->
+<!--                                    WITH label  make concrete blocks                                              -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE description                                                              -->
 <!--                                    WITH description  Smelt stone into concrete blocks.                           -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE jobString                                                                -->
@@ -51,7 +51,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/label</xpath>
                     <value>
-                        <label>make concrete blocks from blocks</label>
+                        <label>make concrete blocks</label>
                     </value>
                 </li>
 
