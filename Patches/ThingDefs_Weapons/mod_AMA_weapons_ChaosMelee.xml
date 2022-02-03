@@ -312,8 +312,28 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSorcerersStaff                                                     -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_SorcerersStaff REPLACE label                                                                      -->
+<!--                                  WITH label  sorcerer's staff                                                    -->
+<!--    + OGC_Melee_SorcerersStaff recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Force         -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]/label</xpath>
+                                <value>
+                                    <label>sorcerer's staff</label>
+                                </value>
+                            </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T3</li>
+                                        <li>OG_Common_Tech_Weapons_Force</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--                    </operations>                                                                                 -->
 <!--                </nomatch>                                                                                        -->
