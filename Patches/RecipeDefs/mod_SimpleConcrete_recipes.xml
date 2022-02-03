@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  MakeRockcreteBlocks                                                                             -->
+<!--    + WDMakeConcreteBlocks REPLACE label                                                                          -->
+<!--                              WITH label  make rockcrete blocks                                                   -->
+<!--    + WDMakeConcreteBlocks REPLACE jobString                                                                      -->
+<!--                              WITH jobString  Smelting rockcrete blocks.                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH SmeltedStone  -  MakeRockcreteBlocks                                                                 -->
+<!--    + WDMakeConcreteBlocks REPLACE description                                                                    -->
+<!--                              WITH description  Smelt stone and steel to form rockcrete blocks.                   -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH SmeltedStone  -  MakeRockcreteBlocks                                                                    -->
+<!--    + WDMakeConcreteBlocks REPLACE description                                                                    -->
+<!--                              WITH description  Smelt concrete and steel to form rockcrete blocks.                -->
+<!--    + WDMakeConcreteBlocks REPLACE ingredients                                                                    -->
+<!--                              WITH ingredients li filter thingDefs li  BlocksSmeltedStone                         -->
+<!--                                                  count  40                                                       -->
+<!--                                               li filter thingDefs li  Steel                                      -->
+<!--                                                  count  20                                                       -->
+<!--    + WDMakeConcreteBlocks REPLACE fixedIngredientFilter                                                          -->
+<!--                              WITH fixedIngredientFilter thingDefs li  BlocksSmeltedStone                         -->
+<!--                                                                   li  Steel                                      -->
+<!--    + WDMakeConcreteBlocks REPLACE defaultIngredientFilter                                                        -->
+<!--                              WITH defaultIngredientFilter thingDefs li  BlocksSmeltedStone                       -->
+<!--                                                                     li  Steel                                    -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Smelted Stone</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  MakeRockcreteBlocks                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + WDMakeConcreteBlocks REPLACE label                                                                          -->
+<!--                              WITH label  make rockcrete blocks                                                   -->
+<!--    + WDMakeConcreteBlocks REPLACE jobString                                                                      -->
+<!--                              WITH jobString  Smelting rockcrete blocks.                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/label</xpath>
+                    <value>
+                        <label>make rockcrete blocks</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/jobString</xpath>
+                    <value>
+                        <jobString>Smelting rockcrete blocks.</jobString>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Smelted Stone</li>
+                    </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH SmeltedStone  -  MakeRockcreteBlocks                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + WDMakeConcreteBlocks REPLACE description                                                                    -->
+<!--                              WITH description  Smelt stone and steel to form rockcrete blocks.                   -->
+<!--  ==============================================================================================================  -->
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/description</xpath>
+                                <value>
+                                    <description>Smelt stone and steel to form rockcrete blocks.</description>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH SmeltedStone  -  MakeRockcreteBlocks                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + WDMakeConcreteBlocks REPLACE description                                                                    -->
+<!--                              WITH description  Smelt concrete and steel to form rockcrete blocks.                -->
+<!--    + WDMakeConcreteBlocks REPLACE ingredients                                                                    -->
+<!--                              WITH ingredients li filter thingDefs li  BlocksSmeltedStone                         -->
+<!--                                                  count  40                                                       -->
+<!--                                               li filter thingDefs li  Steel                                      -->
+<!--                                                  count  20                                                       -->
+<!--    + WDMakeConcreteBlocks REPLACE fixedIngredientFilter                                                          -->
+<!--                              WITH fixedIngredientFilter thingDefs li  BlocksSmeltedStone                         -->
+<!--                                                                   li  Steel                                      -->
+<!--    + WDMakeConcreteBlocks REPLACE defaultIngredientFilter                                                        -->
+<!--                              WITH defaultIngredientFilter thingDefs li  BlocksSmeltedStone                       -->
+<!--                                                                     li  Steel                                    -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/description</xpath>
+                                <value>
+                                    <description>Smelt concrete and steel to form rockcrete blocks.</description>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/ingredients</xpath>
+                                <value>
+                                    <ingredients>
+                                        <li>
+                                            <filter>
+                                                <thingDefs>
+                                                    <li>BlocksSmeltedStone</li>
+                                                </thingDefs>
+                                            </filter>
+                                            <count>40</count>
+                                        </li>
+                                        <li>
+                                            <filter>
+                                                <thingDefs>
+                                                    <li>Steel</li>
+                                                </thingDefs>
+                                            </filter>
+                                            <count>20</count>
+                                        </li>
+                                    </ingredients>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/fixedIngredientFilter</xpath>
+                                <value>
+                                    <fixedIngredientFilter>
+                                        <thingDefs>
+                                            <li>BlocksSmeltedStone</li>
+                                            <li>Steel</li>
+                                        </thingDefs>
+                                    </fixedIngredientFilter>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[defName="WDMakeConcreteBlocks"]/defaultIngredientFilter</xpath>
+                                <value>
+                                    <defaultIngredientFilter>
+                                        <thingDefs>
+                                            <li>BlocksSmeltedStone</li>
+                                            <li>Steel</li>
+                                        </thingDefs>
+                                    </defaultIngredientFilter>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
