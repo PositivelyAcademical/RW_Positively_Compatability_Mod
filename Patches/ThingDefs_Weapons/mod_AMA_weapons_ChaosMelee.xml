@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainsword                                                         -->
+<!--    + OGC_Melee_ChainSword REPLACE label                                                                          -->
+<!--                              WITH label  chainsword (Ghalmek pattern)                                            -->
+<!--    + OGC_Melee_ChainSword recipeMaker ADD researchPrerequisites  li  OG_Chaos_Tech_Base_T1                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainaxe                                                           -->
+<!--    + OGC_Melee_ChainAxe REPLACE label                                                                            -->
+<!--                            WITH label  chainaxe (Ghalmek pattern)                                                -->
+<!--    + OGC_Melee_ChainAxe recipeMaker ADD researchPrerequisites  li  OG_Chaos_Tech_Base_T1                         -->
+<!--                                                                li  OG_Common_Tech_Weapons_Special                -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerSword                                                         -->
+<!--    + OGC_Melee_PowerSword REPLACE label                                                                          -->
+<!--                              WITH label  power sword (Ghalmek pattern)                                           -->
+<!--    + OGC_Melee_PowerSword recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                    -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered           -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
+<!--    + OGC_Melee_PowerAxe REPLACE label                                                                            -->
+<!--                            WITH label  power axe (Ghalmek pattern)                                               -->
+<!--    + OGC_Melee_PowerAxe recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                      -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Powered             -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerMaul                                                          -->
+<!--    + OGC_Melee_PowerMaul REPLACE label                                                                           -->
+<!--                             WITH label  power maul (Ghalmek pattern)                                             -->
+<!--    + OGC_Melee_PowerMaul recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Powered            -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLightningClaw                                                      -->
+<!--    + OGC_Melee_LightningClawS REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claw (Ghalmek pattern)                                    -->
+<!--    + OGC_Melee_LightningClawS recipeMaker                                                                        -->
+<!--                                        REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                   -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLightningClaws                                                     -->
+<!--    + OGC_Melee_LightningClawD REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claws (Ghalmek pattern)                                   -->
+<!--    + OGC_Melee_LightningClawD recipeMaker                                                                        -->
+<!--                                        REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                   -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerFist                                                          -->
+<!--    + OGC_Melee_PowerFist REPLACE label                                                                           -->
+<!--                             WITH label  power fist (Ghalmek pattern)                                             -->
+<!--    + OGC_Melee_PowerFist recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Powered_Special    -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSorcerersStaff                                                     -->
+<!--    + OGC_Melee_SorcerersStaff REPLACE label                                                                      -->
+<!--                                  WITH label  sorcerer's staff                                                    -->
+<!--    + OGC_Melee_SorcerersStaff recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Force         -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosHellblade                                                          -->
+<!--    +  DO_NOTHING                                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--    + OGC_Melee_ChainSword REMOVE ./                                                                              -->
+<!--    + OGC_Melee_ChainAxe REMOVE ./                                                                                -->
+<!--    + OGC_Melee_PowerSword REMOVE ./                                                                              -->
+<!--    + OGC_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGC_Melee_PowerMaul REMOVE ./                                                                               -->
+<!--    + OGC_Melee_LightningClawS REMOVE ./                                                                          -->
+<!--    + OGC_Melee_LightningClawD REMOVE ./                                                                          -->
+<!--    + OGC_Melee_PowerFist REMOVE ./                                                                               -->
+<!--    + OGC_Melee_SorcerersStaff REMOVE ./                                                                          -->
+<!--    + OGC_Melee_Hellblade REMOVE ./                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  remove defs                                                                                     -->
+<!--    + OGC_Melee_ThunderHammer REMOVE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--            <li Class="PatchOperationFindMod">                                                                    -->
+<!--                <mods>                                                                                            -->
+<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
+<!--                </mods>                                                                                           -->
+<!--                                                                                                                  -->
+<!--                <nomatch Class="PatchOperationSequence">                                                          -->
+<!--                    <operations>                                                                                  -->
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainsword                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_ChainSword REPLACE label                                                                          -->
+<!--                              WITH label  chainsword (Ghalmek pattern)                                            -->
+<!--    + OGC_Melee_ChainSword recipeMaker ADD researchPrerequisites  li  OG_Chaos_Tech_Base_T1                       -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]/label</xpath>
+                                <value>
+                                    <label>chainsword (Ghalmek pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>OG_Common_Tech_Weapons_Special</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainaxe                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerSword                                                         -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerMaul                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLightningClaw                                                      -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLightningClaws                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerFist                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosSorcerersStaff                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  ==============================================================================================================  -->
+
+
+<!--                    </operations>                                                                                 -->
+<!--                </nomatch>                                                                                        -->
+<!--                                                                                                                  -->
+<!--                <match Class="PatchOperationSequence">                                                            -->
+<!--                    <operations>                                                                                  -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_ChainSword REMOVE ./                                                                              -->
+<!--    + OGC_Melee_ChainAxe REMOVE ./                                                                                -->
+<!--    + OGC_Melee_PowerSword REMOVE ./                                                                              -->
+<!--    + OGC_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGC_Melee_PowerMaul REMOVE ./                                                                               -->
+<!--    + OGC_Melee_LightningClawS REMOVE ./                                                                          -->
+<!--    + OGC_Melee_LightningClawD REMOVE ./                                                                          -->
+<!--    + OGC_Melee_PowerFist REMOVE ./                                                                               -->
+<!--    + OGC_Melee_SorcerersStaff REMOVE ./                                                                          -->
+<!--    + OGC_Melee_Hellblade REMOVE ./                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]</xpath>                         -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]</xpath>                           -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerSword"]</xpath>                         -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerAxe"]</xpath>                           -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerMaul"]</xpath>                          -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawS"]</xpath>                     -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawD"]</xpath>                     -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerFist"]</xpath>                          -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]</xpath>                     -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]</xpath>                     -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                    </operations>                                                                                 -->
+<!--                </match>                                                                                          -->
+<!--                                                                                                                  -->
+<!--            </li>                                                                                                 -->
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  remove defs                                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_ThunderHammer REMOVE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--            <li Class="PatchOperationRemove">                                                                     -->
+<!--                <xpath>/Defs/ThingDef[defName="OGC_Melee_ThunderHammer"]</xpath>                                  -->
+<!--            </li>                                                                                                 -->
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
