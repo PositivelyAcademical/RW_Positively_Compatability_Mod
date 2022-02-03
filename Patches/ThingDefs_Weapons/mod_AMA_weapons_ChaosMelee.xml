@@ -204,16 +204,30 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
-<!--  ==============================================================================================================  -->
-<!--  ==============================================================================================================  -->
-
-
-<!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerMaul                                                          -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_PowerMaul REPLACE label                                                                           -->
+<!--                             WITH label  power maul (Ghalmek pattern)                                             -->
+<!--    + OGC_Melee_PowerMaul recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Powered            -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerMaul"]/label</xpath>
+                                <value>
+                                    <label>power maul (Ghalmek pattern)</label>
+                                </value>
+                            </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerMaul"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T1</li>
+                                        <li>OG_Common_Tech_Weapons_Powered</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLightningClaw                                                      -->
