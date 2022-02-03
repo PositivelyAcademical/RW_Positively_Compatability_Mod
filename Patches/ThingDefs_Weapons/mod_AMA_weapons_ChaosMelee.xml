@@ -180,8 +180,28 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
 <!--  ==============================================================================================================  -->
+<!--    + OGC_Melee_PowerAxe REPLACE label                                                                            -->
+<!--                            WITH label  power axe (Ghalmek pattern)                                               -->
+<!--    + OGC_Melee_PowerAxe recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                      -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Powered             -->
 <!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerAxe"]/label</xpath>
+                                <value>
+                                    <label>power axe (Ghalmek pattern)</label>
+                                </value>
+                            </li>
 
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerAxe"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>OG_Chaos_Tech_Base_T2</li>
+                                        <li>OG_Common_Tech_Weapons_Powered</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPowerAxe                                                           -->
