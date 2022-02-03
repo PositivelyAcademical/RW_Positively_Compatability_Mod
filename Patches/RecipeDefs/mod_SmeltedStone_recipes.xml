@@ -9,11 +9,11 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  -  MakeFromBlocks                                                                                  -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE label                                                                    -->
-<!--                                    WITH label  make concrete blocks from blocks                                  -->
+<!--                                    WITH label  make concrete blocks                                              -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE description                                                              -->
-<!--                                    WITH description  Crush and smelt stone into concrete blocks.                 -->
+<!--                                    WITH description  Smelt stone into concrete blocks.                           -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE jobString                                                                -->
-<!--                                    WITH jobString  Smelting concrete blocks from stone blocks.                   -->
+<!--                                    WITH jobString  Smelting concrete blocks.                                     -->
 <!--    + MakeSmeltedStoneFromBlocks ADD researchPrerequisite  POS_Concrete_Research                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH  SimpleConcrete  -  MakeFromBlocks                                                                      -->
@@ -41,31 +41,31 @@
 <!--  + ALL_CASES  -  MakeFromBlocks                                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE label                                                                    -->
-<!--                                    WITH label  make concrete blocks from blocks                                  -->
+<!--                                    WITH label  make concrete blocks                                              -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE description                                                              -->
-<!--                                    WITH description  Crush and smelt stone into concrete blocks.                 -->
+<!--                                    WITH description  Smelt stone into concrete blocks.                           -->
 <!--    + MakeSmeltedStoneFromBlocks REPLACE jobString                                                                -->
-<!--                                    WITH jobString  Smelting concrete blocks from stone blocks.                   -->
+<!--                                    WITH jobString  Smelting concrete blocks.                                     -->
 <!--    + MakeSmeltedStoneFromBlocks ADD researchPrerequisite  POS_Concrete_Research                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/label</xpath>
                     <value>
-                        <label>make concrete blocks from blocks</label>
+                        <label>make concrete blocks</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/description</xpath>
                     <value>
-                        <description>Crush and smelt stone into concrete blocks.</description>
+                        <description>Smelt stone into concrete blocks.</description>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/jobString</xpath>
                     <value>
-                        <jobString>Smelting concrete blocks from stone blocks.</jobString>
+                        <jobString>Smelting concrete blocks.</jobString>
                     </value>
                 </li>
 
