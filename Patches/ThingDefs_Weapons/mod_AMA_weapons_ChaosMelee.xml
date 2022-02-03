@@ -141,8 +141,8 @@
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]/recipeMaker/researchPrerequisites</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]/recipeMaker</xpath>
                                 <value>
                                     <researchPrerequisites>
                                         <li>OG_Chaos_Tech_Base_T1</li>
