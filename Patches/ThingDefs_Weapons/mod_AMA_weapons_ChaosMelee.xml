@@ -93,13 +93,13 @@
         <match Class="PatchOperationSequence">
             <operations>
 
-<!--            <li Class="PatchOperationFindMod">                                                                    -->
-<!--                <mods>                                                                                            -->
-<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
-<!--                </mods>                                                                                           -->
-<!--                                                                                                                  -->
-<!--                <nomatch Class="PatchOperationSequence">                                                          -->
-<!--                    <operations>                                                                                  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainsword                                                         -->
@@ -335,12 +335,12 @@
                                 </value>
                             </li>
 
-<!--                    </operations>                                                                                 -->
-<!--                </nomatch>                                                                                        -->
-<!--                                                                                                                  -->
-<!--                <match Class="PatchOperationSequence">                                                            -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
@@ -355,59 +355,59 @@
 <!--    + OGC_Melee_SorcerersStaff REMOVE ./                                                                          -->
 <!--    + OGC_Melee_Hellblade REMOVE ./                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]</xpath>                           -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerSword"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerAxe"]</xpath>                           -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerMaul"]</xpath>                          -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawS"]</xpath>                     -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawD"]</xpath>                     -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerFist"]</xpath>                          -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]</xpath>                     -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]</xpath>                     -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                    </operations>                                                                                 -->
-<!--                </match>                                                                                          -->
-<!--                                                                                                                  -->
-<!--            </li>                                                                                                 -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainAxe"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerSword"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerAxe"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerMaul"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawS"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_LightningClawD"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_PowerFist"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_SorcerersStaff"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGC_Melee_Hellblade"]</xpath>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  -  remove defs                                                                                     -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Melee_ThunderHammer REMOVE ./                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--            <li Class="PatchOperationRemove">                                                                     -->
-<!--                <xpath>/Defs/ThingDef[defName="OGC_Melee_ThunderHammer"]</xpath>                                  -->
-<!--            </li>                                                                                                 -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGC_Melee_ThunderHammer"]</xpath>
+                </li>
 
             </operations>
         </match>
