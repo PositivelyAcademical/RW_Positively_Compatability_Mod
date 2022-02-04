@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  StoneTiles                                                                        -->
+<!--    + TileSandstone REPLACE color                                                                                 -->
+<!--                       WITH color  (207,184,140)                                                                  -->
+<!--    + TileGranite REPLACE color                                                                                   -->
+<!--                     WITH color  (79,68,63)                                                                       -->
+<!--    + TileLimestone REPLACE color                                                                                 -->
+<!--                       WITH color  (219,217,205)                                                                  -->
+<!--    + TileSlate REPLACE color                                                                                     -->
+<!--                   WITH color  (79,83,88)                                                                         -->
+<!--    + TileMarble REPLACE color                                                                                    -->
+<!--                    WITH color  (250,251,253)                                                                     -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  StoneTiles                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + TileSandstone REPLACE color                                                                                 -->
+<!--                       WITH color  (207,184,140)                                                                  -->
+<!--    + TileGranite REPLACE color                                                                                   -->
+<!--                     WITH color  (79,68,63)                                                                       -->
+<!--    + TileLimestone REPLACE color                                                                                 -->
+<!--                       WITH color  (219,217,205)                                                                  -->
+<!--    + TileSlate REPLACE color                                                                                     -->
+<!--                   WITH color  (79,83,88)                                                                         -->
+<!--    + TileMarble REPLACE color                                                                                    -->
+<!--                    WITH color  (250,251,253)                                                                     -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="TileSandstone"]/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="TileGranite"]/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="TileLimestone"]/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="TileSlate"]/color</xpath>
+                <value>
+                    <color>(79,83,88)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="TileMarble"]/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  end of patch operations                                                                                         -->
+<!--  ==============================================================================================================  -->
+        </operations>
+    </Operation>
+
+</Patch>
