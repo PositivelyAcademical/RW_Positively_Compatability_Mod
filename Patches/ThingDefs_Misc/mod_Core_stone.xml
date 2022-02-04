@@ -19,6 +19,8 @@
 <!--  + ALL_CASES  (ThingDef)  -  Limestone                                                                           -->
 <!--    + Limestone graphicData REPLACE color                                                                         -->
 <!--                               WITH color  (219,217,205)                                                          -->
+<!--    + ChunkLimestone graphicData REPLACE color                                                                    -->
+<!--                                    WITH color  (219,217,205)                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Slate                                                                               -->
 <!--    + Slate graphicData REPLACE color                                                                             -->
@@ -81,9 +83,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + Limestone graphicData REPLACE color                                                                         -->
 <!--                               WITH color  (219,217,205)                                                          -->
+<!--    + ChunkLimestone graphicData REPLACE color                                                                    -->
+<!--                                    WITH color  (219,217,205)                                                     -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Limestone"]/graphicData/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkLimestone"]/graphicData/color</xpath>
                 <value>
                     <color>(219,217,205)</color>
                 </value>
