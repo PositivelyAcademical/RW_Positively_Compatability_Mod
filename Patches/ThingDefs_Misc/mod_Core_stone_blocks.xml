@@ -4,9 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - granite                                                                            -->
-<!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
-<!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - limestone                                                                          -->
 <!--    + BlocksLimestone statBases ADD SharpDamageMultiplier  0.65                                                   -->
 <!--    + BlocksLimestone stuffProps ADD statOffsets WorkToBuild  105                                                 -->
@@ -28,10 +25,6 @@
 <!--                                             WITH WorkToBuild  5                                                  -->
 <!--    + BlocksMarble stuffProps statFactors REPLACE WorkToMake                                                      -->
 <!--                                             WITH WorkToMake  1.2                                                 -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - granite                                                                               -->
-<!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
-<!--                                 WITH Mass  1.25                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - limestone                                                                             -->
 <!--    + BlocksLimestone statBases REPLACE Mass                                                                      -->
@@ -76,18 +69,6 @@
 
                 <nomatch Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - granite                                                                            -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksGranite"]/stuffProps/statFactors</xpath>
-                            <value>
-                                <WorkToMake>1.5</WorkToMake>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - limestone                                                                          -->
@@ -208,19 +189,6 @@
 
                 <match Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - granite                                                                               -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
-<!--                                 WITH Mass  1.25                                                                  -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksGranite"]/statBases/Mass</xpath>
-                            <value>
-                                <Mass>1.25</Mass>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - limestone                                                                             -->

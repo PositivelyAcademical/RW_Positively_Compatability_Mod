@@ -19,6 +19,10 @@
 <!--                             WITH color  (79,68,63)                                                               -->
 <!--    + ChunkGranite graphicData REPLACE color                                                                      -->
 <!--                                  WITH color  (79,68,63)                                                          -->
+<!--    + BlocksGranite graphicData REPLACE color                                                                     -->
+<!--                                   WITH color  (79,68,63)                                                         -->
+<!--    + BlocksGranite stuffProps REPLACE color                                                                      -->
+<!--                                  WITH color  (79,68,63)                                                          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Limestone                                                                           -->
 <!--    + Limestone graphicData REPLACE color                                                                         -->
@@ -43,6 +47,9 @@
 <!--                                   WITH SharpDamageMultiplier  0.65                                               -->
 <!--    + BlocksSandstone stuffProps ADD statOffsets WorkToBuild  70                                                  -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Granite                                                              -->
+<!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                               -->
 <!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
 <!--                                                WITH MaxHitPoints  1.4                                            -->
@@ -50,6 +57,10 @@
 <!--                                                WITH WorkToBuild  5                                               -->
 <!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToMake                                                   -->
 <!--                                                WITH WorkToMake  1.1                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Granite                                                                 -->
+<!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
+<!--                                 WITH Mass  1.25                                                                  -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
@@ -102,6 +113,10 @@
 <!--                             WITH color  (79,68,63)                                                               -->
 <!--    + ChunkGranite graphicData REPLACE color                                                                      -->
 <!--                                  WITH color  (79,68,63)                                                          -->
+<!--    + BlocksGranite graphicData REPLACE color                                                                     -->
+<!--                                   WITH color  (79,68,63)                                                         -->
+<!--    + BlocksGranite stuffProps REPLACE color                                                                      -->
+<!--                                  WITH color  (79,68,63)                                                          -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Granite"]/graphicData/color</xpath>
@@ -112,6 +127,20 @@
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="ChunkGranite"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksGranite"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksGranite"]/stuffProps/color</xpath>
                 <value>
                     <color>(79,68,63)</color>
                 </value>
@@ -218,6 +247,18 @@
                         </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Granite                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksGranite"]/stuffProps/statFactors</xpath>
+                            <value>
+                                <WorkToMake>1.5</WorkToMake>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone                                                                                         -->
 <!--  ==============================================================================================================  -->
                     </operations>
@@ -254,6 +295,19 @@
                             <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/WorkToMake</xpath>
                             <value>
                                 <WorkToMake>1.1</WorkToMake>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Granite                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
+<!--                                 WITH Mass  1.25                                                                  -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksGranite"]/statBases/Mass</xpath>
+                            <value>
+                                <Mass>1.25</Mass>
                             </value>
                         </li>
 
