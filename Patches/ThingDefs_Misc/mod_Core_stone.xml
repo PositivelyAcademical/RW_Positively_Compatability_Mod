@@ -7,6 +7,8 @@
 <!--  + ALL_CASES  (ThingDef)  -  Sandstone                                                                           -->
 <!--    + Sandstone graphicData REPLACE color                                                                         -->
 <!--                               WITH color  (207,184,140)                                                          -->
+<!--    + ChunkSandstone graphicData REPLACE color                                                                    -->
+<!--                                    WITH color  (207,184,140)                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Granite                                                                             -->
 <!--    + Granite graphicData REPLACE color                                                                           -->
@@ -33,9 +35,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + Sandstone graphicData REPLACE color                                                                         -->
 <!--                               WITH color  (207,184,140)                                                          -->
+<!--    + ChunkSandstone graphicData REPLACE color                                                                    -->
+<!--                                    WITH color  (207,184,140)                                                     -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Sandstone"]/graphicData/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkSandstone"]/graphicData/color</xpath>
                 <value>
                     <color>(207,184,140)</color>
                 </value>
