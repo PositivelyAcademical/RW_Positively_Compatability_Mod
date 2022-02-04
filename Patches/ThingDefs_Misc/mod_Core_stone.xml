@@ -25,6 +25,8 @@
 <!--  + ALL_CASES  (ThingDef)  -  Slate                                                                               -->
 <!--    + Slate graphicData REPLACE color                                                                             -->
 <!--                           WITH color  (79,83,88)                                                                 -->
+<!--    + ChunkSlate graphicData REPLACE color                                                                        -->
+<!--                                WITH color  (79,83,88)                                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Marble                                                                              -->
 <!--    + Marble graphicData REPLACE color                                                                            -->
@@ -105,9 +107,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + Slate graphicData REPLACE color                                                                             -->
 <!--                           WITH color  (79,83,88)                                                                 -->
+<!--    + ChunkSlate graphicData REPLACE color                                                                        -->
+<!--                                WITH color  (79,83,88)                                                            -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Slate"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,83,88)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkSlate"]/graphicData/color</xpath>
                 <value>
                     <color>(79,83,88)</color>
                 </value>
