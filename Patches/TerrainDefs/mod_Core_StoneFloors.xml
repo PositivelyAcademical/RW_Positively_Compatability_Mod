@@ -16,6 +16,18 @@
 <!--    + TileMarble REPLACE color                                                                                    -->
 <!--                    WITH color  (250,251,253)                                                                     -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  StoneFlagstones                                                                   -->
+<!--    + FlagstoneSandstone REPLACE color                                                                            -->
+<!--                            WITH color  (207,184,140)                                                             -->
+<!--    + FlagstoneGranite REPLACE color                                                                              -->
+<!--                          WITH color  (79,68,63)                                                                  -->
+<!--    + FlagstoneLimestone REPLACE color                                                                            -->
+<!--                            WITH color  (219,217,205)                                                             -->
+<!--    + FlagstoneSlate REPLACE color                                                                                -->
+<!--                        WITH color  (79,83,88)                                                                    -->
+<!--    + FlagstoneMarble REPLACE color                                                                               -->
+<!--                         WITH color  (250,251,253)                                                                -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
         <operations>
@@ -64,6 +76,55 @@
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/TerrainDef[defName="TileMarble"]/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  StoneFlagstones                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--    + FlagstoneSandstone REPLACE color                                                                            -->
+<!--                            WITH color  (207,184,140)                                                             -->
+<!--    + FlagstoneGranite REPLACE color                                                                              -->
+<!--                          WITH color  (79,68,63)                                                                  -->
+<!--    + FlagstoneLimestone REPLACE color                                                                            -->
+<!--                            WITH color  (219,217,205)                                                             -->
+<!--    + FlagstoneSlate REPLACE color                                                                                -->
+<!--                        WITH color  (79,83,88)                                                                    -->
+<!--    + FlagstoneMarble REPLACE color                                                                               -->
+<!--                         WITH color  (250,251,253)                                                                -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="FlagstoneSandstone"]/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="FlagstoneGranite"]/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="FlagstoneLimestone"]/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="FlagstoneSlate"]/color</xpath>
+                <value>
+                    <color>(79,83,88)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="FlagstoneMarble"]/color</xpath>
                 <value>
                     <color>(250,251,253)</color>
                 </value>
