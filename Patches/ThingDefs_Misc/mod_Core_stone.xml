@@ -49,6 +49,12 @@
 <!--                            WITH color  (250,251,253)                                                             -->
 <!--    + ChunkMarble graphicData REPLACE color                                                                       -->
 <!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble graphicData REPLACE color                                                                      -->
+<!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble stuffProps REPLACE color                                                                       -->
+<!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE WorkToMake                                                      -->
+<!--                                             WITH WorkToMake  1.2                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                            -->
 <!--    + BlocksSandstone statBases REPLACE SharpDamageMultiplier                                                     -->
@@ -69,6 +75,14 @@
 <!--    + BlocksSlate stuffProps ADD statOffsets WorkToBuild  105                                                     -->
 <!--                                             Beauty  1                                                            -->
 <!--    + BlocksSlate stuffProps statFactors ADD WorkToBuild  5                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Marble                                                               -->
+<!--    + BlocksMarble statBases ADD SharpDamageMultiplier  0.65                                                      -->
+<!--    + BlocksMarble stuffProps statOffsets ADD WorkToBuild  120                                                    -->
+<!--    + BlocksMarble stuffProps statOffsets REPLACE Beauty                                                          -->
+<!--                                             WITH Beauty  2                                                       -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE WorkToBuild                                                     -->
+<!--                                             WITH WorkToBuild  5                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                               -->
 <!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
@@ -100,6 +114,14 @@
 <!--                                            WITH WorkToBuild  5                                                   -->
 <!--    + BlocksSlate stuffProps statFactors REPLACE WorkToMake                                                       -->
 <!--                                            WITH WorkToMake  1.3                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Marble                                                                  -->
+<!--    + BlocksMarble statBases REPLACE Mass                                                                         -->
+<!--                                WITH Mass  1.25                                                                   -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE MaxHitPoints                                                    -->
+<!--                                             WITH MaxHitPoints  1.2                                               -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE Beauty                                                          -->
+<!--                                             WITH Beauty  1.35                                                    -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
@@ -272,6 +294,12 @@
 <!--                            WITH color  (250,251,253)                                                             -->
 <!--    + ChunkMarble graphicData REPLACE color                                                                       -->
 <!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble graphicData REPLACE color                                                                      -->
+<!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble stuffProps REPLACE color                                                                       -->
+<!--                                 WITH color  (250,251,253)                                                        -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE WorkToMake                                                      -->
+<!--                                             WITH WorkToMake  1.2                                                 -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Marble"]/graphicData/color</xpath>
@@ -284,6 +312,27 @@
                 <xpath>/Defs/ThingDef[defName="ChunkMarble"]/graphicData/color</xpath>
                 <value>
                     <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksMarble"]/graphicData/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statFactors/WorkToMake</xpath>
+                <value>
+                    <WorkToMake>1.2</WorkToMake>
                 </value>
             </li>
 
@@ -392,6 +441,44 @@
 
                         <li Class="PatchOperationAdd">
                             <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors</xpath>
+                            <value>
+                                <WorkToBuild>5</WorkToBuild>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Marble                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksMarble statBases ADD SharpDamageMultiplier  0.65                                                      -->
+<!--    + BlocksMarble stuffProps statOffsets ADD WorkToBuild  120                                                    -->
+<!--    + BlocksMarble stuffProps statOffsets REPLACE Beauty                                                          -->
+<!--                                             WITH Beauty  2                                                       -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE WorkToBuild                                                     -->
+<!--                                             WITH WorkToBuild  5                                                  -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/statBases</xpath>
+                            <value>
+                                <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statOffsets</xpath>
+                            <value>
+                                <WorkToBuild>120</WorkToBuild>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statOffsets/Beauty</xpath>
+                            <value>
+                                <Beauty>2</Beauty>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statFactors/WorkToBuild</xpath>
                             <value>
                                 <WorkToBuild>5</WorkToBuild>
                             </value>
@@ -526,6 +613,37 @@
                             <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors/WorkToMake</xpath>
                             <value>
                                 <WorkToMake>1.3</WorkToMake>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Marble                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksMarble statBases REPLACE Mass                                                                         -->
+<!--                                WITH Mass  1.25                                                                   -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE MaxHitPoints                                                    -->
+<!--                                             WITH MaxHitPoints  1.2                                               -->
+<!--    + BlocksMarble stuffProps statFactors REPLACE Beauty                                                          -->
+<!--                                             WITH Beauty  1.35                                                    -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/statBases/Mass</xpath>
+                            <value>
+                                <Mass>1.25</Mass>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                            <value>
+                                <MaxHitPoints>1.2</MaxHitPoints>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksMarble"]/stuffProps/statFactors/Beauty</xpath>
+                            <value>
+                                <Beauty>1.35</Beauty>
                             </value>
                         </li>
 
