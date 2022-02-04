@@ -4,12 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - slate                                                                              -->
-<!--    + BlocksSlate statBases ADD SharpDamageMultiplier  0.65                                                       -->
-<!--    + BlocksSlate stuffProps ADD statOffsets WorkToBuild  105                                                     -->
-<!--                                             Beauty  1                                                            -->
-<!--    + BlocksSlate stuffProps statFactors ADD WorkToBuild  5                                                       -->
-<!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - marble                                                                             -->
 <!--    + BlocksMarble statBases ADD SharpDamageMultiplier  0.65                                                      -->
 <!--    + BlocksMarble stuffProps statOffsets ADD WorkToBuild  120                                                    -->
@@ -19,15 +13,6 @@
 <!--                                             WITH WorkToBuild  5                                                  -->
 <!--    + BlocksMarble stuffProps statFactors REPLACE WorkToMake                                                      -->
 <!--                                             WITH WorkToMake  1.2                                                 -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - slate                                                                                 -->
-<!--    + BlocksSlate statBases REPLACE Mass                                                                          -->
-<!--                               WITH Mass  0.9                                                                     -->
-<!--    + BlocksSlate stuffProps statOffsets ADD Beauty  1                                                            -->
-<!--    + BlocksSlate stuffProps statFactors REPLACE WorkToBuild                                                      -->
-<!--                                            WITH WorkToBuild  5                                                   -->
-<!--    + BlocksSlate stuffProps statFactors REPLACE WorkToMake                                                       -->
-<!--                                            WITH WorkToMake  1.3                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - marble                                                                                -->
 <!--    + BlocksMarble statBases REPLACE Mass                                                                         -->
@@ -53,38 +38,6 @@
 
                 <nomatch Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - slate                                                                              -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksSlate statBases ADD SharpDamageMultiplier  0.65                                                       -->
-<!--    + BlocksSlate stuffProps ADD statOffsets WorkToBuild  105                                                     -->
-<!--                                             Beauty  1                                                            -->
-<!--    + BlocksSlate stuffProps statFactors ADD WorkToBuild  5                                                       -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/statBases</xpath>
-                            <value>
-                                <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps</xpath>
-                            <value>
-                                <statOffsets>
-                                    <WorkToBuild>105</WorkToBuild>
-                                    <Beauty>1</Beauty>
-                                </statOffsets>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors</xpath>
-                            <value>
-                                <WorkToBuild>5</WorkToBuild>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - marble                                                                             -->
@@ -141,45 +94,6 @@
 
                 <match Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - slate                                                                                 -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksSlate statBases REPLACE Mass                                                                          -->
-<!--                               WITH Mass  0.9                                                                     -->
-<!--    + BlocksSlate stuffProps statOffsets ADD Beauty  1                                                            -->
-<!--    + BlocksSlate stuffProps statFactors REPLACE WorkToBuild                                                      -->
-<!--                                            WITH WorkToBuild  5                                                   -->
-<!--    + BlocksSlate stuffProps statFactors REPLACE WorkToMake                                                       -->
-<!--                                            WITH WorkToMake  1.3                                                  -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/statBases/Mass</xpath>
-                            <value>
-                                <Mass>0.9</Mass>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors</xpath>
-                            <value>
-                                <Beauty>1</Beauty>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors/WorkToBuild</xpath>
-                            <value>
-                                <WorkToBuild>5</WorkToBuild>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSlate"]/stuffProps/statFactors/WorkToMake</xpath>
-                            <value>
-                                <WorkToMake>1.3</WorkToMake>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - marble                                                                                -->
