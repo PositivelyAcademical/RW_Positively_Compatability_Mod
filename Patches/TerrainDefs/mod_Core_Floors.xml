@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  RockcreteFloor                                                                    -->
+<!--    + Concrete REPLACE label                                                                                      -->
+<!--                  WITH label  rockcrete floor                                                                     -->
+<!--    + Concrete REPLACE description                                                                                -->
+<!--                  WITH decsription  A simple poured rockcrete floor. Cheap and sturdy, but not pretty to look     -->
+<!--                                     at. Once laid, the resources used cannot be recovered.                       -->
+<!--    + Concrete REPLACE texturePath                                                                                -->
+<!--                  WITH texturePath  Terrain/Surfaces/SmoothStone                                                  -->
+<!--    + Concrete ADD color  (210,205,209)                                                                           -->
+<!--    + Concrete statBases REPLACE WorkToBuild                                                                      -->
+<!--                            WITH WorkToBuild 500                                                                  -->
+<!--    + Concrete ADD resourcesFractionWhenDeconstructed  0                                                          -->
+<!--    + Concrete ADD designatorDropdown  Concrete                                                                   -->
+<!--    + Concrete REMOVE designationHotKey                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  PlascreteFloor                                                                    -->
+<!--    + ADD TerrainDef                                                                                              -->
+<!--        WITH @ParentName FloorBase                                                                                -->
+<!--             defName  POS_Floor_Plascrete                                                                         -->
+<!--             label  plascrete floor                                                                               -->
+<!--             description  A poured plascrete floor. More expensive than rockcrete, though more neutral looking.   -->
+<!--                           Once laid, the resources used cannot be recovered.                                     -->
+<!--             texturePath  Terrain/Surfaces/SmoothStone                                                            -->
+<!--             color  (216,224,232)                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH SmeltedStone  (TerrainDef)  -  RockcreteFloor                                                           -->
+<!--    + Concrete costList REPLACE Steel                                                                             -->
+<!--                           WITH  BlocksSmeltedStone  4                                                            -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (TerrainDef)  -  ConcreteFloor                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + Concrete REPLACE label                                                                                      -->
+<!--                  WITH label  concrete floor                                                                      -->
+<!--    + Concrete REPLACE description                                                                                -->
+<!--                  WITH decsription  A simple poured concrete floor. Cheap and sturdy, but not pretty to look at.  -->
+<!--                                     Once laid, the resources used cannot be recovered.                           -->
+<!--    + Concrete ADD resourcesFractionWhenDeconstructed  0                                                          -->
+<!--    + Concrete ADD designatorDropdown  Floor_Flagstone                                                            -->
+<!--    + Concrete REMOVE designationHotKey                                                                           -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="Concrete"]/label</xpath>
+                <value>
+                    <label>concrete floor</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef[defName="Concrete"]/description</xpath>
+                <value>
+                    <description>A simple poured concrete floor. Cheap and sturdy, but not pretty to look at. Once laid, the resources used cannot be recovered.</description>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName="Concrete"]</xpath>
+                <value>
+                    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TerrainDef[defName="Concrete"]</xpath>
+                <value>
+                    <designatorDropdown>Floor_Flagstone</designatorDropdown>
+                </value>
+            </li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/TerrainDef[defName="Concrete"]/designationHotKey</xpath>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

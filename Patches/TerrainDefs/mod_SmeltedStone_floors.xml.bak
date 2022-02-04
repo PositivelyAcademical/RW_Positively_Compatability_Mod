@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  MakeFromBlocks                                                                                  -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE label                                                                    -->
+<!--                                    WITH label  make concrete blocks                                              -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE description                                                              -->
+<!--                                    WITH description  Smelt stone into concrete blocks.                           -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE jobString                                                                -->
+<!--                                    WITH jobString  Smelting concrete blocks.                                     -->
+<!--    + MakeSmeltedStoneFromBlocks ADD researchPrerequisite  POS_Concrete_Research                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH  SimpleConcrete  -  MakeFromBlocks                                                                      -->
+<!--    + MakeSmeltedStoneFromBlocks ingredients li filter disallowedThingDefs ADD li  WDBlocksConcrete               -->
+<!--    + MakeSmeltedStoneFromBlocks fixedIngredientFilter disallowedThingDefs ADD li  WDBlocksConcrete               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Smelted Stone</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  MakeFromChunks                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + MakeSmeltedStoneFromChunks REMOVE ./                                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromChunks"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  -  MakeFromBlocks                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE label                                                                    -->
+<!--                                    WITH label  make concrete blocks                                              -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE description                                                              -->
+<!--                                    WITH description  Smelt stone into concrete blocks.                           -->
+<!--    + MakeSmeltedStoneFromBlocks REPLACE jobString                                                                -->
+<!--                                    WITH jobString  Smelting concrete blocks.                                     -->
+<!--    + MakeSmeltedStoneFromBlocks ADD researchPrerequisite  POS_Concrete_Research                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/label</xpath>
+                    <value>
+                        <label>make concrete blocks</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/description</xpath>
+                    <value>
+                        <description>Smelt stone into concrete blocks.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/jobString</xpath>
+                    <value>
+                        <jobString>Smelting concrete blocks.</jobString>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]</xpath>
+                    <value>
+                        <researchPrerequisite>POS_Concrete_Research</researchPrerequisite>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH  SimpleConcrete  -  MakeFromBlocks                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + MakeSmeltedStoneFromBlocks ingredients li filter disallowedThingDefs ADD li  WDBlocksConcrete               -->
+<!--    + MakeSmeltedStoneFromBlocks fixedIngredientFilter disallowedThingDefs ADD li  WDBlocksConcrete               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[WD] Simple Concrete</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/ingredients/li/filter/disallowedThingDefs</xpath>
+                                <value>
+                                    <li>WDBlocksConcrete</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/RecipeDef[defName="MakeSmeltedStoneFromBlocks"]/fixedIngredientFilter/disallowedThingDefs</xpath>
+                                <value>
+                                    <li>WDBlocksConcrete</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
