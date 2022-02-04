@@ -13,6 +13,8 @@
 <!--  + ALL_CASES  (ThingDef)  -  Granite                                                                             -->
 <!--    + Granite graphicData REPLACE color                                                                           -->
 <!--                             WITH color  (79,68,63)                                                               -->
+<!--    + ChunkGranite graphicData REPLACE color                                                                      -->
+<!--                                  WITH color  (79,68,63)                                                          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Limestone                                                                           -->
 <!--    + Limestone graphicData REPLACE color                                                                         -->
@@ -57,9 +59,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + Granite graphicData REPLACE color                                                                           -->
 <!--                             WITH color  (79,68,63)                                                               -->
+<!--    + ChunkGranite graphicData REPLACE color                                                                      -->
+<!--                                  WITH color  (79,68,63)                                                          -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Granite"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkGranite"]/graphicData/color</xpath>
                 <value>
                     <color>(79,68,63)</color>
                 </value>
