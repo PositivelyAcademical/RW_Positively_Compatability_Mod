@@ -4,11 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - sandstone                                                                          -->
-<!--    + BlocksSandstone statBases REPLACE SharpDamageMultiplier                                                     -->
-<!--                                   WITH SharpDamageMultiplier  0.65                                               -->
-<!--    + BlocksSandstone stuffProps ADD statOffsets WorkToBuild  70                                                  -->
-<!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - granite                                                                            -->
 <!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
 <!--  ==============================================================================================================  -->
@@ -33,14 +28,6 @@
 <!--                                             WITH WorkToBuild  5                                                  -->
 <!--    + BlocksMarble stuffProps statFactors REPLACE WorkToMake                                                      -->
 <!--                                             WITH WorkToMake  1.2                                                 -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - sandstone                                                                             -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
-<!--                                                WITH MaxHitPoints  1.4                                            -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToBuild                                                  -->
-<!--                                                WITH WorkToBuild  5                                               -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToMake                                                   -->
-<!--                                                WITH WorkToMake  1.1                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - granite                                                                               -->
 <!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
@@ -89,29 +76,6 @@
 
                 <nomatch Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + NO_MATCH EssentialsStone - sandstone                                                                          -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksSandstone statBases REPLACE SharpDamageMultiplier                                                     -->
-<!--                                   WITH SharpDamageMultiplier  0.65                                               -->
-<!--    + BlocksSandstone stuffProps ADD statOffsets WorkToBuild  70                                                  -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/statBases/SharpDamageMultiplier</xpath>
-                            <value>
-                                <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps</xpath>
-                            <value>
-                                <statOffsets>
-                                    <WorkToBuild>70</WorkToBuild>
-                                </statOffsets>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH EssentialsStone - granite                                                                            -->
@@ -244,37 +208,6 @@
 
                 <match Class="PatchOperationSequence">
                     <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH EssentialsStone - sandstone                                                                             -->
-<!--  ==============================================================================================================  -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
-<!--                                                WITH MaxHitPoints  1.4                                            -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToBuild                                                  -->
-<!--                                                WITH WorkToBuild  5                                               -->
-<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToMake                                                   -->
-<!--                                                WITH WorkToMake  1.1                                              -->
-<!--  ==============================================================================================================  -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/MaxHitPoints</xpath>
-                            <value>
-                                <MaxHitPoints>1.4</MaxHitPoints>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/WorkToBuild</xpath>
-                            <value>
-                                <WorkToBuild>5</WorkToBuild>
-                            </value>
-                        </li>
-
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/WorkToMake</xpath>
-                            <value>
-                                <WorkToMake>1.1</WorkToMake>
-                            </value>
-                        </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone - granite                                                                               -->

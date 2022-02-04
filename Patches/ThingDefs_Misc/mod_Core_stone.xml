@@ -9,6 +9,10 @@
 <!--                               WITH color  (207,184,140)                                                          -->
 <!--    + ChunkSandstone graphicData REPLACE color                                                                    -->
 <!--                                    WITH color  (207,184,140)                                                     -->
+<!--    + BlocksSandstone graphicData REPLACE color                                                                   -->
+<!--                                     WITH color  (207,184,140)                                                    -->
+<!--    + BlocksSandstone stuffProps REPLACE color                                                                    -->
+<!--                                    WITH color  (207,184,140)                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Granite                                                                             -->
 <!--    + Granite graphicData REPLACE color                                                                           -->
@@ -34,6 +38,19 @@
 <!--    + ChunkMarble graphicData REPLACE color                                                                       -->
 <!--                                 WITH color  (250,251,253)                                                        -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                            -->
+<!--    + BlocksSandstone statBases REPLACE SharpDamageMultiplier                                                     -->
+<!--                                   WITH SharpDamageMultiplier  0.65                                               -->
+<!--    + BlocksSandstone stuffProps ADD statOffsets WorkToBuild  70                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                               -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints  1.4                                            -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToBuild                                                  -->
+<!--                                                WITH WorkToBuild  5                                               -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToMake                                                   -->
+<!--                                                WITH WorkToMake  1.1                                              -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
         <operations>
@@ -45,6 +62,10 @@
 <!--                               WITH color  (207,184,140)                                                          -->
 <!--    + ChunkSandstone graphicData REPLACE color                                                                    -->
 <!--                                    WITH color  (207,184,140)                                                     -->
+<!--    + BlocksSandstone graphicData REPLACE color                                                                   -->
+<!--                                     WITH color  (207,184,140)                                                    -->
+<!--    + BlocksSandstone stuffProps REPLACE color                                                                    -->
+<!--                                    WITH color  (207,184,140)                                                     -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Sandstone"]/graphicData/color</xpath>
@@ -55,6 +76,20 @@
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="ChunkSandstone"]/graphicData/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/graphicData/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/color</xpath>
                 <value>
                     <color>(207,184,140)</color>
                 </value>
@@ -146,6 +181,86 @@
                 <value>
                     <color>(250,251,253)</color>
                 </value>
+            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone                                                                                      -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[SYR] Essentials: Stone</li>
+                </mods>
+
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksSandstone statBases REPLACE SharpDamageMultiplier                                                     -->
+<!--                                   WITH SharpDamageMultiplier  0.65                                               -->
+<!--    + BlocksSandstone stuffProps ADD statOffsets WorkToBuild  70                                                  -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/statBases/SharpDamageMultiplier</xpath>
+                            <value>
+                                <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps</xpath>
+                            <value>
+                                <statOffsets>
+                                    <WorkToBuild>70</WorkToBuild>
+                                </statOffsets>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone                                                                                         -->
+<!--  ==============================================================================================================  -->
+                    </operations>
+                </nomatch>
+
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints  1.4                                            -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToBuild                                                  -->
+<!--                                                WITH WorkToBuild  5                                               -->
+<!--    + BlocksSandstone stuffProps statFactors REPLACE WorkToMake                                                   -->
+<!--                                                WITH WorkToMake  1.1                                              -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                            <value>
+                                <MaxHitPoints>1.4</MaxHitPoints>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/WorkToBuild</xpath>
+                            <value>
+                                <WorkToBuild>5</WorkToBuild>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksSandstone"]/stuffProps/statFactors/WorkToMake</xpath>
+                            <value>
+                                <WorkToMake>1.1</WorkToMake>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+                    </operations>
+                </match>
+
             </li>
 
         </operations>
