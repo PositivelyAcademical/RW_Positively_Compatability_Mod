@@ -29,6 +29,10 @@
 <!--                               WITH color  (219,217,205)                                                          -->
 <!--    + ChunkLimestone graphicData REPLACE color                                                                    -->
 <!--                                    WITH color  (219,217,205)                                                     -->
+<!--    + BlocksLimestone graphicData REPLACE color                                                                   -->
+<!--                                    WITH color  (219,217,205)                                                     -->
+<!--    + BlocksLimestone stuffProps REPLACE color                                                                    -->
+<!--                                    WITH color  (219,217,205)                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Slate                                                                               -->
 <!--    + Slate graphicData REPLACE color                                                                             -->
@@ -50,6 +54,12 @@
 <!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Granite                                                              -->
 <!--    + BlocksGranite stuffProps statFactors ADD WorkToMake  1.5                                                    -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Limestone                                                            -->
+<!--    + BlocksLimestone statBases ADD SharpDamageMultiplier  0.65                                                   -->
+<!--    + BlocksLimestone stuffProps ADD statOffsets WorkToBuild  105                                                 -->
+<!--                                                 Beauty  1                                                        -->
+<!--    + BlocksLimestone stuffProps statFactors ADD WorkToBuild  5.5                                                 -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone  (ThinfDef)  -  Sandstone                                                               -->
 <!--    + BlocksSandstone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
 <!--                                                WITH MaxHitPoints  1.4                                            -->
@@ -61,6 +71,16 @@
 <!--  + MATCH EssentialsStone  (ThinfDef)  -  Granite                                                                 -->
 <!--    + BlocksGranite statBases REPLACE Mass                                                                        -->
 <!--                                 WITH Mass  1.25                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Limestone                                                               -->
+<!--    + BlocksLimestone statBases REPLACE Mass                                                                      -->
+<!--                                   WITH Mass  1.1                                                                 -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints  1.55                                           -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE WorkToBuild                                                  -->
+<!--                                                WITH WorkToBuild  5.5                                             -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE WorkToMake                                                   -->
+<!--                                                WITH WorkToMake  1.3                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
@@ -153,6 +173,10 @@
 <!--                               WITH color  (219,217,205)                                                          -->
 <!--    + ChunkLimestone graphicData REPLACE color                                                                    -->
 <!--                                    WITH color  (219,217,205)                                                     -->
+<!--    + BlocksLimestone graphicData REPLACE color                                                                   -->
+<!--                                    WITH color  (219,217,205)                                                     -->
+<!--    + BlocksLimestone stuffProps REPLACE color                                                                    -->
+<!--                                    WITH color  (219,217,205)                                                     -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Limestone"]/graphicData/color</xpath>
@@ -163,6 +187,20 @@
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="ChunkLimestone"]/graphicData/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/graphicData/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps/color</xpath>
                 <value>
                     <color>(219,217,205)</color>
                 </value>
@@ -259,6 +297,38 @@
                         </li>
 
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH EssentialsStone  (ThinfDef)  -  Limestone                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksLimestone statBases ADD SharpDamageMultiplier  0.65                                                   -->
+<!--    + BlocksLimestone stuffProps ADD statOffsets WorkToBuild  105                                                 -->
+<!--                                                 Beauty  1                                                        -->
+<!--    + BlocksLimestone stuffProps statFactors ADD WorkToBuild  5.5                                                 -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/statBases</xpath>
+                            <value>
+                                <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps</xpath>
+                            <value>
+                                <statOffsets>
+                                    <WorkToBuild>105</WorkToBuild>
+                                    <Beauty>1</Beauty>
+                                </statOffsets>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps/statFactors</xpath>
+                            <value>
+                                <WorkToBuild>5.5</WorkToBuild>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
 <!--  + MATCH EssentialsStone                                                                                         -->
 <!--  ==============================================================================================================  -->
                     </operations>
@@ -308,6 +378,46 @@
                             <xpath>/Defs/ThingDef[defName="BlocksGranite"]/statBases/Mass</xpath>
                             <value>
                                 <Mass>1.25</Mass>
+                            </value>
+                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH EssentialsStone  (ThinfDef)  -  Limestone                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + BlocksLimestone statBases REPLACE Mass                                                                      -->
+<!--                                   WITH Mass  1.1                                                                 -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE MaxHitPoints                                                 -->
+<!--                                                WITH MaxHitPoints  1.55                                           -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE WorkToBuild                                                  -->
+<!--                                                WITH WorkToBuild  5.5                                             -->
+<!--    + BlocksLimestone stuffProps statFactors REPLACE WorkToMake                                                   -->
+<!--                                                WITH WorkToMake  1.3                                              -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/statBases/Mass</xpath>
+                            <value>
+                                <Mass>1.1</Mass>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps/statFactors/MaxHitPoints</xpath>
+                            <value>
+                                <MaxHitPoints>1.55</MaxHitPoints>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps/statFactors/WorkToBuild</xpath>
+                            <value>
+                                <WorkToBuild>5.5</WorkToBuild>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="BlocksLimestone"]/stuffProps/statFactors/WorkToMake</xpath>
+                            <value>
+                                <WorkToMake>1.3</WorkToMake>
                             </value>
                         </li>
 
