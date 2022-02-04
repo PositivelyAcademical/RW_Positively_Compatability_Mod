@@ -31,6 +31,8 @@
 <!--  + ALL_CASES  (ThingDef)  -  Marble                                                                              -->
 <!--    + Marble graphicData REPLACE color                                                                            -->
 <!--                            WITH color  (250,251,253)                                                             -->
+<!--    + ChunkMarble graphicData REPLACE color                                                                       -->
+<!--                                 WITH color  (250,251,253)                                                        -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationSequence">
@@ -129,9 +131,18 @@
 <!--  ==============================================================================================================  -->
 <!--    + Marble graphicData REPLACE color                                                                            -->
 <!--                            WITH color  (250,251,253)                                                             -->
+<!--    + ChunkMarble graphicData REPLACE color                                                                       -->
+<!--                                 WITH color  (250,251,253)                                                        -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Marble"]/graphicData/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkMarble"]/graphicData/color</xpath>
                 <value>
                     <color>(250,251,253)</color>
                 </value>
