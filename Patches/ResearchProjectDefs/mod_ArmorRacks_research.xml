@@ -13,7 +13,7 @@
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                                -->
 <!--                                                WITH researchViewX  5                                             -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                                -->
-<!--                                                WITH researchViewY  3                                             -->
+<!--                                                WITH researchViewY  4.9                                           -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                        -->
 <!--                                                WITH label  mechanised armour rack                                -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE description                                                  -->
@@ -26,7 +26,7 @@
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                                   -->
 <!--                                             WITH researchViewX  6                                                -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  3                                                -->
+<!--                                             WITH researchViewY  4.9                                              -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE label                                                           -->
 <!--                                             WITH label  mending armour rack                                      -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE description                                                     -->
@@ -68,7 +68,7 @@
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewX                                                -->
 <!--                                                WITH researchViewX  5                                             -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE researchViewY                                                -->
-<!--                                                WITH researchViewY  3                                             -->
+<!--                                                WITH researchViewY  4.9                                           -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE label                                                        -->
 <!--                                                WITH label  mechanised armour rack                                -->
 <!--    + ArmorRacks_MechanizedArmorRackResearch REPLACE description                                                  -->
@@ -93,7 +93,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MechanizedArmorRackResearch"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3</researchViewY>
+                        <researchViewY>4.9</researchViewY>
                     </value>
                 </li>
 
@@ -118,7 +118,7 @@
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewX                                                   -->
 <!--                                             WITH researchViewX  6                                                -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  3                                                -->
+<!--                                             WITH researchViewY  4.9                                              -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE label                                                           -->
 <!--                                             WITH label  mending armour rack                                      -->
 <!--    + ArmorRacks_MendingArmorRackResearch REPLACE description                                                     -->
@@ -142,7 +142,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="ArmorRacks_MendingArmorRackResearch"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3</researchViewY>
+                        <researchViewY>4.9</researchViewY>
                     </value>
                 </li>
 

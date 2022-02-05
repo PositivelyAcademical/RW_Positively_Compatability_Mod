@@ -13,7 +13,7 @@
 <!--    + IngotResearch REPLACE researchViewX                                                                         -->
 <!--                       WITH researchViewX  1                                                                      -->
 <!--    + IngotResearch REPLACE researchViewY                                                                         -->
-<!--                       WITH researchViewY  3                                                                      -->
+<!--                       WITH researchViewY  2.1                                                                    -->
 <!--    + IngotResearch REPLACE label                                                                                 -->
 <!--                       WITH label  bullion reserve                                                                -->
 <!--    + IngotResearch REPLACE description                                                                           -->
@@ -57,7 +57,7 @@
 <!--    + IngotResearch REPLACE researchViewX                                                                         -->
 <!--                       WITH researchViewX  1                                                                      -->
 <!--    + IngotResearch REPLACE researchViewY                                                                         -->
-<!--                       WITH researchViewY  3                                                                      -->
+<!--                       WITH researchViewY  2.1                                                                    -->
 <!--    + IngotResearch REPLACE label                                                                                 -->
 <!--                       WITH label  bullion reserve                                                                -->
 <!--    + IngotResearch REPLACE description                                                                           -->
@@ -82,7 +82,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IngotResearch"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3</researchViewY>
+                        <researchViewY>2.1</researchViewY>
                     </value>
                 </li>
 

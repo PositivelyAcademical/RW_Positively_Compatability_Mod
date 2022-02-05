@@ -61,7 +61,7 @@
                                 <li>Electricity</li>
                             </prerequisites>
                             <researchViewX>2</researchViewX>
-                            <researchViewY>3</researchViewY>
+                            <researchViewY>2.1</researchViewY>
                         </ResearchProjectDef>
                     </value>
                 </li>

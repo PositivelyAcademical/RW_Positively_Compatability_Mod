@@ -13,7 +13,7 @@
 <!--    + WDReinforcedConcrete REPLACE researchViewX                                                                  -->
 <!--                              WITH researchViewX  3                                                               -->
 <!--    + WDReinforcedConcrete REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3                                                               -->
+<!--                              WITH researchViewY  2.1                                                             -->
 <!--    + WDReinforcedConcrete REPLACE label                                                                          -->
 <!--                              WITH label  rockcrete                                                               -->
 <!--    + WDReinforcedConcrete REPLACE description                                                                    -->
@@ -61,7 +61,7 @@
 <!--    + WDReinforcedConcrete REPLACE researchViewX                                                                  -->
 <!--                              WITH researchViewX  3                                                               -->
 <!--    + WDReinforcedConcrete REPLACE researchViewY                                                                  -->
-<!--                              WITH researchViewY  3                                                               -->
+<!--                              WITH researchViewY  2.1                                                             -->
 <!--    + WDReinforcedConcrete REPLACE label                                                                          -->
 <!--                              WITH label  rockcrete                                                               -->
 <!--    + WDReinforcedConcrete REPLACE description                                                                    -->
@@ -87,7 +87,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="WDReinforcedConcrete"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3</researchViewY>
+                        <researchViewY>2.1</researchViewY>
                     </value>
                 </li>
 
