@@ -58,6 +58,9 @@
 <!--    + ProjectHeron_RemoteDoors ADD prerequisites li  Autodoors                                                    -->
 <!--                                                 li  MicroelectronicsBasics                                       -->
 <!--  ==============================================================================================================  -->
+<!--  + MATCH PositivelyMetalAndStone  (ResearchProjectDef)  -  microelectronics                                      -->
+<!--    + ProjectHeron_BlastDoors prerequisites ADD li  POS_Research_Concrete_T2                                      -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH SimpleConcrete (ResearchProjectDef) - microelectronics                                                  -->
 <!--    + ProjectHeron_BlastDoors prerequisites ADD li  WDReinforcedConcrete                                          -->
 <!--  ==============================================================================================================  -->
@@ -294,6 +297,28 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH PositivelyMetalAndStone  (ResearchProjectDef)  -  microelectronics                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + ProjectHeron_BlastDoors prerequisites ADD li  POS_Research_Concrete_T2                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Positively: Metal and Stone</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class = "PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]/prerequisites</xpath>
+                                <value>
+                                    <li>POS_Research_Concrete_T2</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
 <!--  ==============================================================================================================  -->
 <!--  + MATCH SimpleConcrete (ResearchProjectDef) - microelectronics                                                  -->
 <!--  ==============================================================================================================  -->
