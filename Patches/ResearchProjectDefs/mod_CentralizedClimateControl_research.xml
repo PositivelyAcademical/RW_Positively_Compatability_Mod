@@ -13,7 +13,7 @@
 <!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
 <!--                             WITH researchViewX  2                                                                -->
 <!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  5                                                                -->
+<!--                             WITH researchViewY  4.9                                                              -->
 <!--    + BasicClimateControl REPLACE label                                                                           -->
 <!--                             WITH label  climate control                                                          -->
 <!--    + BasicClimateControl REPLACE description                                                                     -->
@@ -24,7 +24,7 @@
 <!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  3                                                           -->
 <!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5                                                           -->
+<!--                                  WITH researchViewY  4.9                                                         -->
 <!--    + IndustrialClimateControl REPLACE label                                                                      -->
 <!--                                  WITH label  industrial climate control                                          -->
 <!--    + IndustrialClimateControl REPLACE description                                                                -->
@@ -71,7 +71,7 @@
 <!--    + BasicClimateControl REPLACE researchViewX                                                                   -->
 <!--                             WITH researchViewX  2                                                                -->
 <!--    + BasicClimateControl REPLACE researchViewY                                                                   -->
-<!--                             WITH researchViewY  5                                                                -->
+<!--                             WITH researchViewY  4.9                                                              -->
 <!--    + BasicClimateControl REPLACE label                                                                           -->
 <!--                             WITH label  climate control                                                          -->
 <!--    + BasicClimateControl REPLACE description                                                                     -->
@@ -95,7 +95,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="BasicClimateControl"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5</researchViewY>
+                        <researchViewY>4.9</researchViewY>
                     </value>
                 </li>
 
@@ -120,7 +120,7 @@
 <!--    + IndustrialClimateControl REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  3                                                           -->
 <!--    + IndustrialClimateControl REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  5                                                           -->
+<!--                                  WITH researchViewY  4.9                                                         -->
 <!--    + IndustrialClimateControl REPLACE label                                                                      -->
 <!--                                  WITH label  industrial climate control                                          -->
 <!--    + IndustrialClimateControl REPLACE description                                                                -->
@@ -145,7 +145,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="IndustrialClimateControl"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>5</researchViewY>
+                        <researchViewY>4.9</researchViewY>
                     </value>
                 </li>
 
