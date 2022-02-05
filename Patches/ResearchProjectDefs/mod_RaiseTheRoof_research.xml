@@ -13,20 +13,20 @@
 <!--    + RTR_OverheadMountainRemoval REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  2                                                        -->
 <!--    + RTR_OverheadMountainRemoval REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  2                                                        -->
+<!--                                     WITH researchViewY  4.2                                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + RTR_TransparentRoofing ADD tab  POS_ResearchTab_General                                                     -->
 <!--    + RTR_TransparentRoofing REPLACE researchViewX                                                                -->
 <!--                                WITH researchViewX  3                                                             -->
 <!--    + RTR_TransparentRoofing REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  2                                                             -->
+<!--                                WITH researchViewY  4.2                                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - microelectronics                                                             -->
 <!--    + RTR_SolarRoofing ADD tab  POS_ResearchTab_General                                                           -->
 <!--    + RTR_SolarRoofing REPLACE researchViewX                                                                      -->
 <!--                          WITH researchViewX  4                                                                   -->
 <!--    + RTR_SolarRoofing REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  3                                                                   -->
+<!--                          WITH researchViewY  4.9                                                                 -->
 <!--    + RTR_SolarRoofing REPLACE prerequisites                                                                      -->
 <!--                          WITH prerequisites li  SolarPanels                                                      -->
 <!--                                             li  MicroelectronicsBasics                                           -->
@@ -35,7 +35,7 @@
 <!--    + RTR_TransparentSolarRoofing REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  5                                                        -->
 <!--    + RTR_TransparentSolarRoofing REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  2                                                        -->
+<!--                                     WITH researchViewY  4.2                                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -72,7 +72,7 @@
 <!--    + RTR_OverheadMountainRemoval REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  2                                                        -->
 <!--    + RTR_OverheadMountainRemoval REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  2                                                        -->
+<!--                                     WITH researchViewY  4.2                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]</xpath>
@@ -91,7 +91,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_OverheadMountainRemoval"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2</researchViewY>
+                        <researchViewY>4.2</researchViewY>
                     </value>
                 </li>
 
@@ -102,7 +102,7 @@
 <!--    + RTR_TransparentRoofing REPLACE researchViewX                                                                -->
 <!--                                WITH researchViewX  3                                                             -->
 <!--    + RTR_TransparentRoofing REPLACE researchViewY                                                                -->
-<!--                                WITH researchViewY  2                                                             -->
+<!--                                WITH researchViewY  4.2                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentRoofing"]</xpath>
@@ -121,7 +121,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2</researchViewY>
+                        <researchViewY>4.2</researchViewY>
                     </value>
                 </li>
 
@@ -132,7 +132,7 @@
 <!--    + RTR_SolarRoofing REPLACE researchViewX                                                                      -->
 <!--                          WITH researchViewX  4                                                                   -->
 <!--    + RTR_SolarRoofing REPLACE researchViewY                                                                      -->
-<!--                          WITH researchViewY  3                                                                   -->
+<!--                          WITH researchViewY  4.9                                                                 -->
 <!--    + RTR_SolarRoofing REPLACE prerequisites                                                                      -->
 <!--                          WITH prerequisites li  SolarPanels                                                      -->
 <!--                                             li  MicroelectronicsBasics                                           -->
@@ -154,7 +154,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_SolarRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3</researchViewY>
+                        <researchViewY>4.9</researchViewY>
                     </value>
                 </li>
 
@@ -175,7 +175,7 @@
 <!--    + RTR_TransparentSolarRoofing REPLACE researchViewX                                                           -->
 <!--                                     WITH researchViewX  5                                                        -->
 <!--    + RTR_TransparentSolarRoofing REPLACE researchViewY                                                           -->
-<!--                                     WITH researchViewY  2                                                        -->
+<!--                                     WITH researchViewY  4.2                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentSolarRoofing"]</xpath>
@@ -194,7 +194,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="RTR_TransparentSolarRoofing"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2</researchViewY>
+                        <researchViewY>4.2</researchViewY>
                     </value>
                 </li>
 
