@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH PositivelyMetalAndStone  (ThingDefs)  -  Concrete                                                       -->
+<!--    + POS_BlocksRockcrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  950            -->
+<!--                                                                             conductivity  2.2                    -->
+<!--    + POS_BlocksFerrocrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1400          -->
+<!--                                                                              conductivity  2.8                   -->
+<!--    + POS_BlocksPlascrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1900           -->
+<!--                                                                             conductivity  0.15                   -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Celsius</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Positively: Metal and Stone</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH PositivelyMetalAndStone  (ThingDefs)  -  Concrete                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_BlocksRockcrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  950            -->
+<!--                                                                             conductivity  2.2                    -->
+<!--    + POS_BlocksFerrocrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1400          -->
+<!--                                                                              conductivity  2.8                   -->
+<!--    + POS_BlocksPlascrete ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1900           -->
+<!--                                                                             conductivity  0.15                   -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="POS_BlocksRockcrete"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>950</specificHeatCapacity>
+                                        <conductivity>2.2</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="POS_BlocksFerrocrete"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>1400</specificHeatCapacity>
+                                        <conductivity>2.8</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="POS_BlocksPlascrete"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>1900</specificHeatCapacity>
+                                        <conductivity>0.15</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
