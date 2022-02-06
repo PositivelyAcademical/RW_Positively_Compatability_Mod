@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDefs)  -  vanilla changes                                                                    -->
+<!--    + Uranium modExtensions li REPLACE conductivity                                                               -->
+<!--                                  WITH conductivity  30                                                           -->
+<!--    + Plasteel modExtensions li REPLACE conductivity                                                              -->
+<!--                                   WITH conductivity  0.45                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaIronAndSteel  (ThingDefs)  -  IronOre                                                            -->
+<!--    + NECIron ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  440                        -->
+<!--                                                                 conductivity  85                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDefs)  -  ImperialMetals                                                -->
+<!--    + Ceramite ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1450                      -->
+<!--                                                                  conductivity  1.2                               -->
+<!--    + Adamantium ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  850                     -->
+<!--                                                                    conductivity  2.4                             -->
+<!--    + Auramite ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1250                      -->
+<!--                                                                  conductivity  1.8                               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Celsius</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDefs)  -  vanilla changes                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + Uranium modExtensions li REPLACE conductivity                                                               -->
+<!--                                  WITH conductivity  30                                                           -->
+<!--    + Plasteel modExtensions li REPLACE conductivity                                                              -->
+<!--                                   WITH conductivity  0.45                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Uranium"]/modExtensions/li/conductivity</xpath>
+                    <value>
+                        <conductivity>30</conductivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plasteel"]/modExtensions/li/conductivity</xpath>
+                    <value>
+                        <conductivity>0.45</conductivity>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaIronAndSteel  (ThingDefs)  -  IronOre                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + NECIron ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  440                        -->
+<!--                                                                 conductivity  85                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Iron and Steel (Continued)</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="NECIron"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>440</specificHeatCapacity>
+                                        <conductivity>85</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDefs)  -  ImperialMetals                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + Ceramite ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1450                      -->
+<!--                                                                  conductivity  1.2                               -->
+<!--    + Adamantium ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  850                     -->
+<!--                                                                    conductivity  2.4                             -->
+<!--    + Auramite ADD_MOD_EXTENSION "Celsius.StuffThermalProperties" specificHeatCapacity  1250                      -->
+<!--                                                                  conductivity  1.8                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="Ceramite"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>1450</specificHeatCapacity>
+                                        <conductivity>1.2</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="Adamantium"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>850</specificHeatCapacity>
+                                        <conductivity>2.4</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="Auramite"]</xpath>
+                                <value>
+                                    <li Class="Celsius.StuffThermalProperties">
+                                        <specificHeatCapacity>1250</specificHeatCapacity>
+                                        <conductivity>1.8</conductivity>
+                                    </li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
