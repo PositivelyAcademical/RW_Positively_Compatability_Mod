@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Walls                                                                               -->
+<!--    + Wall                                                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Fences                                                                              -->
+<!--    + Fence REPLACE stuffCategories                                                                               -->
+<!--               WITH stuffCategories li  Woody                                                                     -->
+<!--                                    li  Metallic                                                                  -->
+<!--    + FenceGate REPLACE stuffCategories                                                                           -->
+<!--                   WITH stuffCategories li  Woody                                                                 -->
+<!--                                        li  Metallic                                                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Fences                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + Fence REPLACE stuffCategories                                                                               -->
+<!--               WITH stuffCategories li  Woody                                                                     -->
+<!--                                    li  Metallic                                                                  -->
+<!--    + FenceGate ADD stuffCategories li  Woody                                                                     -->
+<!--                                    li  Metallic                                                                  -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Fence"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Woody</li>
+                        <li>Metallic</li>
+                    </stuffCategories>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="FenceGate"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Woody</li>
+                        <li>Metallic</li>
+                    </stuffCategories>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>
