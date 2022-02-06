@@ -4,75 +4,72 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - mechanised weapons                                            -->
-<!--       + OGI_Melee_ChainSword REMOVE ThingDef                                                                     -->
+<!--  + ALL_CASES  (ThingDef)  -  GuardianSpear                                                                       -->
+<!--    + OGI_Melee_GuardianSpear REMOVE ./                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - power weapons                                                 -->
-<!--       + For OGI_Melee_PowerSword REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_PowerAxe REMOVE ThingDef                                                                   -->
-<!--       + For OGI_Melee_LightningClawS REPLACE label                                                               -->
-<!--                                         WITH label lightning claw (Crusader pattern)                             -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites LAP_Tech_Basic                                -->
-<!--       + For OGI_Melee_LightningClawD REMOVE ThingDef                                                             -->
-<!--       + For OGI_Melee_PowerFistS REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_ChainFistS REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_ThunderHammer REMOVE ThingDef                                                              -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainsword                                          -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesChainsword                                                       -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesChainsword statBases ADD Bulk  3.4                                                        -->
+<!--                                                 MeleeCounterParryBonus  0.25                                     -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - special weapons                                               -->
-<!--       + For OGI_Melee_GuardianSpear REMOVE ThingDef                                                              -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerSword                                          -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesPowerSword                                                       -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesChainsword statBases ADD Bulk  3.0                                                        -->
+<!--                                                 MeleeCounterParryBonus  0.275                                    -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - mechanised weapons                                          -->
-<!--       + For OGI_Melee_ChainSword REPLACE label                                                                   -->
-<!--                                     WITH label chainsword (Hell's Teeth pattern)                                 -->
-<!--       + For OGI_Melee_ChainSword ADD researchPrerequisites Pos_AMA_Astartes_Placeholder                          -->
-<!--       + For OGI_Melee_ChainSword recipeMaker REPLACE recipeUsers                                                 -->
-<!--                                                 WITH recipeUsers TableMachining                                  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerAxe                                            -->
+<!--    + OGI_Melee_PowerAxe REPLACE label                                                                            -->
+<!--                            WITH label  power axe (Mars pattern)                                                  -->
+<!--    + OGI_Melee_PowerAxe REPLACE researchPrerequisites                                                            -->
+<!--                            WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                           -->
+<!--                                                       li  OG_Common_Tech_Weapons_Powered                         -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - power weapons                                               -->
-<!--       + For OGI_Melee_PowerSword REPLACE label                                                                   -->
-<!--                                     WITH label power sword (Ingelldina pattern)                                  -->
-<!--       + For OGI_Melee_PowerSword REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered                    -->
-<!--       + For OGI_Melee_PowerAxe REPLACE label                                                                     -->
-<!--                                   WITH label power axe (Ultra Mk.II pattern)                                     -->
-<!--       + For OGI_Melee_PowerAxe REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
-<!--                                                              OG_Common_Tech_Weapons_Powered                      -->
-<!--       + For OGI_Melee_LightningClawS REPLACE label                                                               -->
-<!--                                         WITH label lightning claw (Angel's Talon pattern)                        -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                  -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_LightningClawD REPLACE label                                                               -->
-<!--                                         WITH label lightning claws (Angel's Talon pattern)                       -->
-<!--       + For OGI_Melee_LightningClawD REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                  -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_PowerFistS REPLACE label                                                                   -->
-<!--                                     WITH label power fist (Mk.IIa pattern)                                       -->
-<!--       + For OGI_Melee_PowerFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--       + For OGI_Melee_ChainFistS REPLACE label                                                                   -->
-<!--                                     WITH label chain fist                                                        -->
-<!--       + For OGI_Melee_ChainFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--       + For OGI_Melee_ThunderHammer REPLACE label                                                                -->
-<!--                                        WITH label thunder hammer                                                 -->
-<!--       + For OGI_Melee_ThunderHammer REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                   -->
-<!--                                                                   OG_Common_Tech_Weapons_Powered_Special         -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaw                                        -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawSingle                                              -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
+<!--                                                          MeleeCounterParryBonus  0.275                           -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - special weapons                                             -->
-<!--       + For OGI_Melee_GuardianSpear REPLACE label                                                                -->
-<!--                                        WITH label guardian spear (bolt caster)                                   -->
-<!--       + For OGI_Melee_GuardianSpear REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                   -->
-<!--                                                                   OG_Common_Tech_Weapons_Powered_Special         -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaws                                       -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawPair                                                -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
+<!--                                                          MeleeCounterParryBonus  0.55                            -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerFist                                           -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesPowerFist                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainfist                                           -->
+<!--    + OGI_Melee_ChainFistS REPLACE label                                                                          -->
+<!--                              WITH label  chainfist                                                               -->
+<!--    + OGI_Melee_ChainFistS recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesThunderHammer                                       -->
+<!--    + OGI_Melee_ThunderHammer REPLACE label                                                                       -->
+<!--                                 WITH label  thunder hammer                                                       -->
+<!--    + OGI_Melee_ThunderHammer recipeMaker REPLACE researchPrerequisites                                           -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  RemoveDefs                                                     -->
+<!--    + OGI_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGI_Melee_ChainFistS REMOVE ./                                                                              -->
+<!--    + OGI_Melee_ThunderHammer REMOVE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
@@ -80,186 +77,289 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  GuardianSpear                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Melee_GuardianSpear REMOVE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="OGI_Melee_GuardianSpear"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  FIND_MOD LegionesAstartesPrimarch                                                                               -->
+<!--  ==============================================================================================================  -->
 <!--            <li Class="PatchOperationFindMod">                                                                    -->
 <!--                <mods>                                                                                            -->
 <!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
 <!--                </mods>                                                                                           -->
-<!--                <match Class="PatchOperationSequence">                                                            -->
-<!--                    <operations>                                                                                  -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - mechanised weapons                                            -->
+<!--  NO_MATCH LegionesAstartesPrimarch                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--       + OGI_Melee_ChainSword REMOVE ThingDef                                                                     -->
-<!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainSword"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - power weapons                                                 -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_PowerSword REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_PowerAxe REMOVE ThingDef                                                                   -->
-<!--       + For OGI_Melee_LightningClawS REPLACE label                                                               -->
-<!--                                         WITH label lightning claw (Crusader pattern)                             -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites LAP_Tech_Basic                                -->
-<!--       + For OGI_Melee_LightningClawD REMOVE ThingDef                                                             -->
-<!--       + For OGI_Melee_PowerFistS REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_ChainFistS REMOVE ThingDef                                                                 -->
-<!--       + For OGI_Melee_ThunderHammer REMOVE ThingDef                                                              -->
-<!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerSword"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]</xpath>                           -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationReplace">                                                        -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/label</xpath>               -->
-<!--                            <value>                                                                               -->
-<!--                                <label>lightning claw (Crusader pattern)</label>                                  -->
-<!--                            </value>                                                                              -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationReplace">                                                        -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/recipeMaker/researchPrerequisites</xpath>  -->
-<!--                            <value>                                                                               -->
-<!--                                <researchPrerequisites>                                                           -->
-<!--                                    <li>LAP_Tech_Basic</li>                                                       -->
-<!--                                </researchPrerequisites>                                                          -->
-<!--                            </value>                                                                              -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]</xpath>                     -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]</xpath>                      -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Legiones Astartes: Primarch - special weapons                                               -->
-<!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_GuardianSpear"]</xpath>                      -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--                        <li />                                                                                    -->
-<!--                                                                                                                  -->
-<!--                    </operations>                                                                                 -->
-<!--                </match>                                                                                          -->
-<!--                                                                                                                  -->
 <!--                <nomatch Class="PatchOperationSequence">                                                          -->
 <!--                    <operations>                                                                                  -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - mechanised weapons                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainsword                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_ChainSword REPLACE label                                                                   -->
-<!--                                     WITH label chainsword (Hell's Teeth pattern)                                 -->
-<!--       + For OGI_Melee_ChainSword ADD researchPrerequisites Pos_AMA_Astartes_Placeholder                          -->
-<!--       + For OGI_Melee_ChainSword recipeMaker REPLACE recipeUsers                                                 -->
-<!--                                                 WITH recipeUsers TableMachining                                  -->
+<!--    + ADD ThingDef WITH defName POS_AMA_AstartesChainsword                                                        -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesChainsword statBases ADD Bulk  3.4                                                        -->
+<!--                                                 MeleeCounterParryBonus  0.25                                     -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainSword"]/label</xpath>
-                                <value>
-                                    <label>chainsword (Hell's Teeth pattern)</label>
-                                </value>
-                            </li>
-
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainSword"]/recipeMaker</xpath>
+                                <xpath>/Defs</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
-                                    </researchPrerequisites>
+                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Sharp_Quality">
+                                        <defName>POS_AMA_AstartesChainsword</defName>
+                                        <label>chainsword (Mars pattern)</label>
+                                        <description>The chainsword is the preferred close combat melee weapon of many of the military forces of the Imperium of Man. The chainsword is essentially a sword with powered teeth that run along a single-edged blade like that of a chainsaw. Most versions of the weapon make use of monomolecularly-edged or otherwise razor-sharp teeth. Chainswords are not subtle weapons, and wielding one is a statement in its own right: they are horrific tools of war, designed to bite, tear and eviscerate where more primitive blades merely cut and slice. The weapon makes an angry buzzing sound as the teeth spin around, intensifying into a high pitched scream as they grind into armour. It is not unlike a modern chainsaw, but lighter and able to be wielded with one hand. When weilded by the warriors of the Adeptus Astartes, it is often used in conjunction with a bolt pistol.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/ChainSword</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                            <colorTwo>(0.208,0.286,0.176)</colorTwo>
+                                            <drawSize>1.25</drawSize>
+                                        </graphicData>
+                                        <comps>
+                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon>
+                                                <northOffset>0.0,0.0,0.0</northOffset>
+                                                <eastOffset>0.0,0.0,0.0</eastOffset>
+                                                <westOffset>0.0,0.10,0.0</westOffset>
+                                                <southOffset>0.0,0.0,0.0</southOffset>
+                                            </li>
+                                        </comps>
+                                        <soundInteract>Interact_Chainsword</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>18000</WorkToMake>
+                                            <Mass>3.2</Mass>
+                                            <MarketValue>300</MarketValue>
+                                        </statBases>
+                                        <equippedAngleOffset>-20</equippedAngleOffset>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <tools>
+                                            <li>
+                                                <label>pommel</label>
+                                                <capacities>
+                                                    <li>Blunt</li>
+                                                </capacities>
+                                                <power>8</power>
+                                                <cooldownTime>1.0</cooldownTime>
+                                            </li>
+                                            <li>
+                                                <label>blade</label>
+                                                <capacities>
+                                                    <li>Cut</li>
+                                                </capacities>
+                                                <power>14</power>
+                                                <cooldownTime>1.3</cooldownTime>
+                                            </li>
+                                            <li>
+                                                <label>point</label>
+                                                <capacities>
+                                                    <li>Stab</li>
+                                                </capacities>
+                                                <power>20</power>
+                                                <cooldownTime>1.8</cooldownTime>
+                                            </li>
+                                        </tools>
+                                        <recipeMaker>
+                                            <recipeUsers>
+                                                <li>TableMachining</li>
+                                            </recipeUsers>
+                                            <researchPrerequisites>
+                                                <li>POS_AMA_Astartes_Placeholder</li>
+                                                <li>OG_Common_Tech_Weapons_Special</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costStuffCount>75</costStuffCount>
+                                        <costList>
+                                            <ComponentIndustrial>4</ComponentIndustrial>
+                                        </costList>
+                                        <weaponTags>
+                                            <li>IChainsword</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGIMelee</li>
+                                        </tradeTags>
+                                        <generateCommonality>1</generateCommonality>
+                                    </ThingDef>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainSword"]/recipeMaker/recipeUsers</xpath>
-                                <value>
-                                    <recipeUsers>
-                                        <li>TableMachining</li>
-                                    </recipeUsers>
-                                </value>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Combat Extended</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesChainsword"]/statBases</xpath>
+                                    <value>
+                                        <Bulk>3.4</Bulk>
+                                        <MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
+                                    </value>
+                                </match>
+                            </li>
+
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Dual Wield</li>
+                                </mods>
+                                <match Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesChainsword"]/statBases</xpath>
+                                    <value>
+                                        <li Class="DualWield.DefModextension_DefaultSettings">
+                                            <dualWield>true</dualWield>
+                                            <twoHand>false</twoHand>
+                                        </li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                                            <extraRotation>0</extraRotation>
+                                        </li>
+                                    </value>
+                                </match>
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - power weapons                                               -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerSword                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_PowerSword REPLACE label                                                                   -->
-<!--                                     WITH label power sword (Ingelldina pattern)                                  -->
-<!--       + For OGI_Melee_PowerSword REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered                    -->
-<!--       + For OGI_Melee_PowerAxe REPLACE label                                                                     -->
-<!--                                   WITH label power axe (Ultra Mk.II pattern)                                     -->
-<!--       + For OGI_Melee_PowerAxe REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                        -->
-<!--                                                              OG_Common_Tech_Weapons_Powered                      -->
-<!--       + For OGI_Melee_LightningClawS REPLACE label                                                               -->
-<!--                                         WITH label lightning claw (Angel's Talon pattern)                        -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                  -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_LightningClawD REPLACE label                                                               -->
-<!--                                         WITH label lightning claws (Angel's Talon pattern)                       -->
-<!--       + For OGI_Melee_LightningClawD REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                  -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_PowerFistS REPLACE label                                                                   -->
-<!--                                     WITH label power fist (Mk.IIa pattern)                                       -->
-<!--       + For OGI_Melee_PowerFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--       + For OGI_Melee_ChainFistS REPLACE label                                                                   -->
-<!--                                     WITH label chain fist                                                        -->
-<!--       + For OGI_Melee_ChainFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--       + For OGI_Melee_ThunderHammer REPLACE label                                                                -->
-<!--                                        WITH label thunder hammer                                                 -->
-<!--       + For OGI_Melee_ThunderHammer REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                   -->
-<!--                                                                   OG_Common_Tech_Weapons_Powered_Special         -->
+<!--    + ADD ThingDef WITH defName POS_AMA_AstartesPowerSword                                                        -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesChainsword statBases ADD Bulk  3.0                                                        -->
+<!--                                                 MeleeCounterParryBonus  0.275                                    -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerSword"]/label</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
                                 <value>
-                                    <label>power sword (Ingelldina pattern)</label>
+                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Sharp_Quality">
+                                        <defName>POS_AMA_AstartesPowerSword</defName>
+                                        <label>power sword (Mars pattern)</label>
+                                        <description>A power sword is a power weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though usually adamantium. When its power cell is activated, often by touching a control located on the hilt, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh, bone and most forms of armour plate alike, making a power sword a highly effective Imperial close combat weapon. Power swords are used by all members of the Imperial armed forces, including the troops of the Imperial Guard and the Space Marines of the Adeptus Astartes.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/PowerSword/Militarum_PowerSword</texPath>
+                                            <graphicClass>AdvancedGraphics.Graphic_SingleQuality</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                        </graphicData>
+                                        <uiIconPath>Things/Item/Equipment/WeaponMelee/Imperial/PowerSword/Militarum_PowerSword_Normal_Icon</uiIconPath>
+                                        <uiIconColor>(1,1,1,1)</uiIconColor>
+                                        <soundInteract>Interact_Revolver</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>25000</WorkToMake>
+                                            <Mass>2.50</Mass>
+                                            <MarketValue>500</MarketValue>
+                                        </statBases>
+                                        <equippedAngleOffset>-20</equippedAngleOffset>
+                                        <tools>
+                                            <li>
+                                                <label>blade</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Cut</li>
+                                                </capacities>
+                                                <power>14</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>1.3</cooldownTime>
+                                            </li>
+                                            <li>
+                                                <label>point</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Stab</li>
+                                                </capacities>
+                                                <power>20</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>1.8</cooldownTime>
+                                            </li>
+                                        </tools>
+                                        <recipeMaker>
+                                            <recipeUsers />
+                                            <researchPrerequisites>
+                                                <li>POS_AMA_Astartes_Placeholder</li>
+                                                <li>OG_Common_Tech_Weapons_Powered</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costStuffCount>200</costStuffCount>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <costList>
+                                            <Plasteel>10</Plasteel>
+                                            <ComponentIndustrial>2</ComponentIndustrial>
+                                            <Gold>2</Gold>
+                                        </costList>
+                                        <weaponTags>
+                                            <li>IPowerSword</li>
+                                            <li>OGIPowerWeapon</li>
+                                            <li>PowerWeapon</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGIMelee</li>
+                                        </tradeTags>
+                                            <generateCommonality>0.15</generateCommonality>
+                                        <comps>
+                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+                                                <gizmosOnEquip>false</gizmosOnEquip>
+                                                <graphicData>
+                                                    <graphicClass>Graphic_Single</graphicClass>
+                                                    <shaderType>CutoutComplex</shaderType>
+                                                    <color>(49,100,205)</color>
+                                                </graphicData>
+                                            </li>
+                                        </comps>
+                                    </ThingDef>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerSword"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Militarum_Tech_Base_T2</li>
-                                        <li>OG_Common_Tech_Weapons_Powered</li>
-                                    </researchPrerequisites>
-                                </value>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Combat Extended</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerSword"]/statBases</xpath>
+                                    <value>
+                                        <Bulk>3.0</Bulk>
+                                        <MeleeCounterParryBonus>0.275</MeleeCounterParryBonus>
+                                    </value>
+                                </match>
                             </li>
 
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Dual Wield</li>
+                                </mods>
+                                <match Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerSword"]/statBases</xpath>
+                                    <value>
+                                        <li Class="DualWield.DefModextension_DefaultSettings">
+                                            <dualWield>true</dualWield>
+                                            <twoHand>false</twoHand>
+                                        </li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                                            <extraRotation>0</extraRotation>
+                                        </li>
+                                    </value>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerAxe                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Melee_PowerAxe REPLACE label                                                                            -->
+<!--                            WITH label  power axe (Mars pattern)                                                  -->
+<!--    + OGI_Melee_PowerAxe REPLACE researchPrerequisites                                                            -->
+<!--                            WITH researchPrerequisites  POS_AMA_Astartes_Placeholder                              -->
+<!--                                                        OG_Common_Tech_Weapons_Powered                            -->
+<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]/label</xpath>
                                 <value>
-                                    <label>power axe (Ultra Mk.II pattern)</label>
+                                    <label>power axe (Mars pattern)</label>
                                 </value>
                             </li>
 
@@ -267,63 +367,389 @@
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
                                     <researchPrerequisites>
-                                        <li>OG_Militarum_Tech_Base_T2</li>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
                                         <li>OG_Common_Tech_Weapons_Powered</li>
                                     </researchPrerequisites>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/label</xpath>
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaw                                        -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawSingle                                              -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
+<!--                                                          MeleeCounterParryBonus  0.275                           -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
+<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
                                 <value>
-                                    <label>lightning claw (Angel's Talon pattern)</label>
+                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Sharp_Quality">
+                                        <defName>POS_AMA_AstartesLightningClawSingle</defName>
+                                        <label>lightning claw (Mars pattern)</label>
+                                        <description>A lightning claw is a specialised type of power weapon, most commonly used by Space Marine Assault Squads and Terminator Squads. It consists of a powered gauntlet fitted with three or four razor-sharp adamantium blades, each a miniature power weapon sheathed in a matter disrupting power field, enabling them to carve through armour and flesh with ease. Lightning claws are often wielded in pairs, though a single claw can be used in combination with a pistol weapon.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawS</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
+                                        </graphicData>
+                                        <soundInteract>Interact_Revolver</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>30000</WorkToMake>
+                                            <Mass>3.2</Mass>
+                                            <MarketValue>650</MarketValue>
+                                        </statBases>
+                                        <equippedAngleOffset>-80</equippedAngleOffset>
+                                        <tools>
+                                            <li>
+                                                <label>blade</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Cut</li>
+                                                </capacities>
+                                                <power>14</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>1.3</cooldownTime>
+                                            </li>
+                                            <li>
+                                                <label>point</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Stab</li>
+                                                </capacities>
+                                                <power>20</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>1.8</cooldownTime>
+                                            </li>
+                                        </tools>
+                                        <recipeMaker>
+                                            <recipeUsers />
+                                            <researchPrerequisites>
+                                                <li>POS_AMA_Astartes_Placeholder</li>
+                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costList>
+                                            <Plasteel>10</Plasteel>
+                                            <ComponentIndustrial>8</ComponentIndustrial>
+                                            <Gold>4</Gold>
+                                        </costList>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <costStuffCount>300</costStuffCount>
+                                        <weaponTags>
+                                            <li>IGCLightningClaw</li>
+                                            <li>LightningClaw</li>
+                                            <li>ILightningClaws</li>
+                                            <li>OGIPowerWeapon</li>
+                                            <li>PowerWeapon</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGIMelee</li>
+                                        </tradeTags>
+                                        <generateCommonality>0.10</generateCommonality>
+                                        <comps>
+                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
+                                                <angleAdjustmentWest>45</angleAdjustmentWest>
+                                                <eastOffset>-0.15,0,-0.0</eastOffset>
+                                                <westOffset>0.15,-0.1,-0.0</westOffset>
+                                                <southOffset>-0.15,0,-0.0</southOffset>
+                                            </li>
+                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+                                                <gizmosOnEquip>false</gizmosOnEquip>
+                                                <graphicData>
+                                                    <graphicClass>Graphic_Single</graphicClass>
+                                                    <shaderType>CutoutComplex</shaderType>
+                                                    <color>(49,100,205)</color>
+                                                </graphicData>
+                                            </li>
+                                        </comps>
+                                    </ThingDef>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/recipeMaker/researchPrerequisites</xpath>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Combat Extended</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesLightningClawSingle"]/statBases</xpath>
+                                    <value>
+                                        <Bulk>3.0</Bulk>
+                                        <MeleeCounterParryBonus>0.275</MeleeCounterParryBonus>
+                                    </value>
+                                </match>
+                            </li>
+
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Dual Wield</li>
+                                </mods>
+                                <match Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerSword"]/statBases</xpath>
+                                    <value>
+                                        <li Class="DualWield.DefModextension_DefaultSettings">
+                                            <dualWield>true</dualWield>
+                                            <twoHand>false</twoHand>
+                                        </li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                                            <extraRotation>0</extraRotation>
+                                        </li>
+                                    </value>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaws                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawPair                                                -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
+<!--                                                          MeleeCounterParryBonus  0.55                            -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
-                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                    </researchPrerequisites>
+                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Sharp_Quality">
+                                        <defName>POS_AMA_AstartesLightningClawPair</defName>
+                                        <label>lightning claws (Mars pattern)</label>
+                                        <description>Lightning claws are a  specialised type of power weapon, most commonly used by Space Marine Assault Squads and Terminator Squads. They consist of powered gauntlets fitted with three or four razor-sharp adamantium blades, each a miniature power weapon sheathed in a matter disrupting power field, enabling them to carve through armour and flesh with ease. Lightning claws are often wielded in pairs, though a single claw can be used in combination with a pistol weapon.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawS</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
+                                        </graphicData>
+                                        <soundInteract>Interact_Revolver</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>35000</WorkToMake>
+                                            <Mass>3.2</Mass>
+                                            <MarketValue>1300</MarketValue>
+                                        </statBases>
+                                        <equippedAngleOffset>0</equippedAngleOffset>
+                                        <tools>
+                                            <li>
+                                                <label>blade</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Cut</li>
+                                                </capacities>
+                                                <power>14</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>0.65</cooldownTime>
+                                            </li>
+                                            <li>
+                                                <label>point</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Stab</li>
+                                                </capacities>
+                                                <power>20</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>0.9</cooldownTime>
+                                            </li>
+                                        </tools>
+                                        <recipeMaker>
+                                            <recipeUsers />
+                                            <researchPrerequisites>
+                                                <li>POS_AMA_Astartes_Placeholder</li>
+                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costList>
+                                            <Plasteel>20</Plasteel>
+                                            <ComponentIndustrial>12</ComponentIndustrial>
+                                            <Gold>6</Gold>
+                                        </costList>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <costStuffCount>400</costStuffCount>
+                                        <weaponTags>
+                                            <li>IGCDualLightningClaw</li>
+                                            <li>ILightningClaws</li>
+                                            <li>OGIPowerWeapon</li>
+                                            <li>PowerWeapon</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGIMelee</li>
+                                        </tradeTags>
+                                        <generateCommonality>0.05</generateCommonality>
+                                        <comps>
+                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                                                <groundGraphic>
+                                                    <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawD</texPath>
+                                                    <graphicClass>Graphic_Single</graphicClass>
+                                                    <shaderType>CutoutComplex</shaderType>
+                                                    <color>(0.286,0.286,0.286)</color>
+                                                </groundGraphic>
+                                                <verticalFlipNorth>true</verticalFlipNorth>
+                                                <isDualWeapon>true</isDualWeapon>
+                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
+                                                <angleAdjustmentWest>45</angleAdjustmentWest>
+                                                <eastOffset>-0.0,0,-0.250</eastOffset>
+                                                <westOffset>0.0,0,-0.250</westOffset>
+                                                <southOffset>0.55,0,0.30</southOffset>
+                                                <northOffset>0.55,0,0.30</northOffset>
+                                            </li>
+                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+                                                <gizmosOnEquip>false</gizmosOnEquip>
+                                                <graphicData>
+                                                    <graphicClass>Graphic_Single</graphicClass>
+                                                    <shaderType>CutoutComplex</shaderType>
+                                                    <color>(49,100,205)</color>
+                                                </graphicData>
+                                            </li>
+                                        </comps>
+                                    </ThingDef>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]/label</xpath>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Combat Extended</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesLightningClawPair"]/statBases</xpath>
+                                    <value>
+                                        <Bulk>3.0</Bulk>
+                                        <MeleeCounterParryBonus>0.55</MeleeCounterParryBonus>
+                                    </value>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerFist                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesPowerFist                                                        -->
+<!--    + MATCH CombatExtended                                                                                        -->
+<!--      + POS_AMA_AstartesPowerFist statBases ADD Bulk  5.0                                                         -->
+<!--                                                MeleeCounterParryBonus  0.15                                      -->
+<!--    + MATCH DualWield                                                                                             -->
+<!--      + POS_AMA_AstartesPowerFist ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                   -->
+<!--                                                    "DualWield.DefModextension_CustomRotation"                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
                                 <value>
-                                    <label>lightning claws (Angel's Talon pattern)</label>
+                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Blunt_Quality">
+                                        <defName>POS_AMA_AstartesPowerFist</defName>
+                                        <label>power fist (Mars pattern)</label>
+                                        <description>A power fist (also known as a power glove) is essentially an over-sized, armoured gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches. It is a favoured close combat weapon for many warriors of the Imperium of Man, as well as the Forces of Chaos (particularly the Chaos Space Marines). It is especially an iconic weapon of the Loyalist Space Marines. A power fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a power fist vastly augments a user's strength, much as power armour does due to the power provided its mechanical servos. The disadvantages of its unwieldy nature are often well worth the limitations, as the combination of the disruptive power field and sheer physical strength afforded by a Power Fist allows a Space Marine to pulverize and tear apart armour plate from even the most well-protected of vehicles, and to wound and kill colossal monstrous creatures in close combat; its brutal effects against more mundane foes goes without saying. It is most commonly found fitted to Space Marine Tactical Dreadnought (Terminator) Armour.</description>
+                                        <graphicData>
+                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/PowerFistS</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <shaderType>CutoutComplex</shaderType>
+                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
+                                        </graphicData>
+                                        <soundInteract>Interact_Revolver</soundInteract>
+                                        <statBases>
+                                            <WorkToMake>40000</WorkToMake>
+                                            <Mass>3.5</Mass>
+                                            <MarketValue>1750</MarketValue>
+                                        </statBases>
+                                        <equippedAngleOffset>-25</equippedAngleOffset>
+                                        <tools>
+                                            <li>
+                                                <label>fist</label>
+                                                <capacities>
+                                                    <li>OG_PowerWeapon_Blunt</li>
+                                                </capacities>
+                                                <power>66</power>
+                                                <armorPenetration>2</armorPenetration>
+                                                <cooldownTime>2.8</cooldownTime>
+                                            </li>
+                                        </tools>
+                                        <recipeMaker>
+                                            <recipeUsers />
+                                            <researchPrerequisites>
+                                                <li>POS_AMA_Astartes_Placeholder</li>
+                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                            </researchPrerequisites>
+                                        </recipeMaker>
+                                        <costList>
+                                            <Plasteel>10</Plasteel>
+                                            <ComponentIndustrial>8</ComponentIndustrial>
+                                            <Gold>4</Gold>
+                                        </costList>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <costStuffCount>400</costStuffCount>
+                                        <weaponTags>
+                                            <li>IGCPowerFist</li>
+                                            <li>OGIPowerWeapon</li>
+                                            <li>PowerWeapon</li>
+                                        </weaponTags>
+                                        <tradeTags>
+                                            <li>OGIMelee</li>
+                                        </tradeTags>
+                                        <generateCommonality>0.10</generateCommonality>
+                                        <comps>
+                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
+                                                <angleAdjustmentWest>45</angleAdjustmentWest>
+                                                <eastOffset>-0.25,0,-0.0</eastOffset>
+                                                <westOffset>0.25,-0.1,-0.0</westOffset>
+                                                <southOffset>-0.35,0,-0.0</southOffset>
+                                            </li>
+                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
+                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
+                                                <gizmosOnEquip>false</gizmosOnEquip>
+                                                <graphicData>
+                                                    <graphicClass>Graphic_Single</graphicClass>
+                                                    <shaderType>CutoutComplex</shaderType>
+                                                    <color>(49,100,205)</color>
+                                                </graphicData>
+                                            </li>
+                                        </comps>
+                                    </ThingDef>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
-                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                    </researchPrerequisites>
-                                </value>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Combat Extended</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerFist"]/statBases</xpath>
+                                    <value>
+                                        <Bulk>5.0</Bulk>
+                                        <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+                                    </value>
+                                </match>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]/label</xpath>
-                                <value>
-                                    <label>power fist (Mk.IIa pattern)</label>
-                                </value>
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Dual Wield</li>
+                                </mods>
+                                <match Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerFist"]/statBases</xpath>
+                                    <value>
+                                        <li Class="DualWield.DefModextension_DefaultSettings">
+                                            <dualWield>true</dualWield>
+                                            <twoHand>false</twoHand>
+                                        </li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                                            <extraRotation>0</extraRotation>
+                                        </li>
+                                    </value>
+                                </match>
                             </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
-                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
-
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainfist                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Melee_ChainFistS REPLACE label                                                                          -->
+<!--                              WITH label  chainfist                                                               -->
+<!--    + OGI_Melee_ChainFistS recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
+<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]/label</xpath>
                                 <value>
@@ -335,12 +761,21 @@
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
                                     <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
                                         <li>OG_Common_Tech_Weapons_Powered_Special</li>
                                     </researchPrerequisites>
                                 </value>
                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesThunderHammer                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Melee_ThunderHammer REPLACE label                                                                       -->
+<!--                                 WITH label  thunder hammer                                                       -->
+<!--    + OGI_Melee_ThunderHammer recipeMaker REPLACE researchPrerequisites                                           -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]/label</xpath>
                                 <value>
@@ -352,33 +787,7 @@
                                 <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
                                     <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
-                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + Requires NOMATCH Legiones Astartes: Primarch - special weapons                                             -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_GuardianSpear REPLACE label                                                                -->
-<!--                                        WITH label guardian spear (bolt caster)                                   -->
-<!--       + For OGI_Melee_GuardianSpear REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites Pos_AMA_Astartes_Placeholder                   -->
-<!--                                                                   OG_Common_Tech_Weapons_Powered_Special         -->
-<!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_GuardianSpear"]/label</xpath>
-                                <value>
-                                    <label>guardian spear (bolt caster)</label>
-                                </value>
-                            </li>
-
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Melee_GuardianSpear"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>Pos_AMA_Astartes_Placeholder</li>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
                                         <li>OG_Common_Tech_Weapons_Powered_Special</li>
                                     </researchPrerequisites>
                                 </value>
@@ -386,11 +795,36 @@
 
 <!--                    </operations>                                                                                 -->
 <!--                </nomatch>                                                                                        -->
-<!--            </li>                                                                                                 -->
+<!--                                                                                                                  -->
+<!--                <match Class="PatchOperationSequence">                                                            -->
+<!--                    <operations>                                                                                  -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES - power weapons                                                                                  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  RemoveDefs                                                     -->
 <!--  ==============================================================================================================  -->
+<!--    + OGI_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGI_Melee_ChainFistS REMOVE ./                                                                              -->
+<!--    + OGI_Melee_ThunderHammer REMOVE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]</xpath>                           -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]</xpath>                         -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--                        <li Class="PatchOperationRemove">                                                         -->
+<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]</xpath>                      -->
+<!--                        </li>                                                                                     -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--                                                                                                                  -->
+<!--                    </operations>                                                                                 -->
+<!--                </match>                                                                                          -->
+<!--                                                                                                                  -->
+<!--            </li>                                                                                                 -->
+<!--                                                                                                                  -->
             </operations>
         </match>
     </Operation>
