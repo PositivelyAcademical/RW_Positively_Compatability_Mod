@@ -16,8 +16,8 @@
 <!--                                         WITH prerequisites MicroelectronicsBasics                                -->
 <!--                                                            Gunsmithing                                           -->
 <!--       + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                      -->
-<!--                                          WITH prerequisites AdvancedFabrication                                  -->
-<!--                                                             ChargedShot                                          -->
+<!--                                          WITH prerequisites  AdvancedFabrication                                 -->
+<!--                                                              ChargedShot                                         -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -37,13 +37,15 @@
 <!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                   -->
-<!--                                             WITH prerequisites VWE_Flamethrower                                  -->
+<!--                                             WITH prerequisites  VWE_Flamethrower                                 -->
+<!--                                                                 Gunsmithing                                      -->
 <!--  ==============================================================================================================  -->
                             <li Class = "PatchOperationReplace">
                                 <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/prerequisites</xpath>
                                 <value>
                                     <prerequisites>
                                        <li>VWE_Flamethrower</li>
+                                       <li>Gunsmithing</li>
                                     </prerequisites>
                                 </value>
                             </li>
