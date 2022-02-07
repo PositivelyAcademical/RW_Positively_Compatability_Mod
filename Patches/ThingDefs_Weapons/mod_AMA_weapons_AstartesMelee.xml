@@ -69,6 +69,9 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  RemoveDefs                                                     -->
 <!--    + OGI_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGI_Melee_LightningClawS REMOVE ./                                                                          -->
+<!--    + OGI_Melee_LightningClawD REMOVE ./                                                                          -->
+<!--    + OGI_Melee_PowerFistS REMOVE ./                                                                              -->
 <!--    + OGI_Melee_ChainFistS REMOVE ./                                                                              -->
 <!--    + OGI_Melee_ThunderHammer REMOVE ./                                                                           -->
 <!--  ==============================================================================================================  -->
@@ -92,17 +95,17 @@
 <!--  ==============================================================================================================  -->
 <!--  FIND_MOD LegionesAstartesPrimarch                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--            <li Class="PatchOperationFindMod">                                                                    -->
-<!--                <mods>                                                                                            -->
-<!--                    <li>Legiones Astartes: Primarch</li>                                                          -->
-<!--                </mods>                                                                                           -->
-<!--                                                                                                                  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+
 <!--  ==============================================================================================================  -->
 <!--  NO_MATCH LegionesAstartesPrimarch                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--                <nomatch Class="PatchOperationSequence">                                                          -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainsword                                          -->
 <!--  ==============================================================================================================  -->
@@ -506,38 +509,41 @@
                                 </value>
                             </li>
 
-<!--                    </operations>                                                                                 -->
-<!--                </nomatch>                                                                                        -->
-<!--                                                                                                                  -->
-<!--                <match Class="PatchOperationSequence">                                                            -->
-<!--                    <operations>                                                                                  -->
-<!--                                                                                                                  -->
+                        </operations>
+                    </nomatch>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  RemoveDefs                                                     -->
 <!--  ==============================================================================================================  -->
 <!--    + OGI_Melee_PowerAxe REMOVE ./                                                                                -->
+<!--    + OGI_Melee_LightningClawS REMOVE ./                                                                          -->
+<!--    + OGI_Melee_LightningClawD REMOVE ./                                                                          -->
+<!--    + OGI_Melee_PowerFistS REMOVE ./                                                                              -->
 <!--    + OGI_Melee_ChainFistS REMOVE ./                                                                              -->
 <!--    + OGI_Melee_ThunderHammer REMOVE ./                                                                           -->
 <!--  ==============================================================================================================  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]</xpath>                           -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]</xpath>                         -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
-<!--                        <li Class="PatchOperationRemove">                                                         -->
-<!--                            <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]</xpath>                      -->
-<!--                        </li>                                                                                     -->
-<!--                                                                                                                  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerAxe"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]</xpath>
+                            </li>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_ThunderHammer"]</xpath>
+                            </li>
+
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
-<!--                    </operations>                                                                                 -->
-<!--                </match>                                                                                          -->
-<!--                                                                                                                  -->
-<!--            </li>                                                                                                 -->
-<!--                                                                                                                  -->
+
+                        </operations>
+                    </match>
+
+                </li>
+
             </operations>
         </match>
     </Operation>
