@@ -8,18 +8,6 @@
 <!--       + For OGI_Melee_PowerSword REPLACE researchPrerequisites                                                   -->
 <!--                                     WITH researchPrerequisites OG_Imperial_Tech_Base_T0                          -->
 <!--                                                                OG_Common_Tech_Weapons_Powered                    -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites OG_Militarum_Tech_Base_T3                     -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_LightningClawD REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites OG_Militarum_Tech_Base_T3                     -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--       + For OGI_Melee_PowerFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites OG_Militarum_Tech_Base_T3                         -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--       + For OGI_Melee_ChainFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites POS_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
 <!--       + For OGI_Melee_PowerMaul REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites OG_Militarum_Tech_Base_T1                          -->
 <!--                                                               OG_Common_Tech_Weapons_Powered                     -->
@@ -44,74 +32,6 @@
                         <researchPrerequisites>
                             <li>OG_Imperial_Tech_Base_T0</li>
                             <li>OG_Common_Tech_Weapons_Powered</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_LightningClawS REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites OG_Militarum_Tech_Base_T3                     -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_LightningClawD REPLACE researchPrerequisites                                               -->
-<!--                                         WITH researchPrerequisites OG_Militarum_Tech_Base_T3                     -->
-<!--                                                                    OG_Common_Tech_Weapons_Powered_Special        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_PowerFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites OG_Militarum_Tech_Base_T3                         -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Melee_ChainFistS REPLACE researchPrerequisites                                                   -->
-<!--                                     WITH researchPrerequisites POS_AMA_Astartes_Placeholder                      -->
-<!--                                                                OG_Common_Tech_Weapons_Powered_Special            -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Melee_ChainFistS"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>POS_AMA_Astartes_Placeholder</li>
-                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
                         </researchPrerequisites>
                     </value>
                 </li>

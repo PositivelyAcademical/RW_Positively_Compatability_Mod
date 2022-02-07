@@ -28,27 +28,30 @@
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerAxe                                            -->
 <!--    + OGI_Melee_PowerAxe REPLACE label                                                                            -->
 <!--                            WITH label  power axe (Mars pattern)                                                  -->
-<!--    + OGI_Melee_PowerAxe REPLACE researchPrerequisites                                                            -->
-<!--                            WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                           -->
-<!--                                                       li  OG_Common_Tech_Weapons_Powered                         -->
+<!--    + OGI_Melee_PowerAxe recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder               -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Powered             -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaw                                        -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawSingle                                              -->
-<!--    + MATCH CombatExtended                                                                                        -->
-<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
-<!--                                                          MeleeCounterParryBonus  0.275                           -->
-<!--    + MATCH DualWield                                                                                             -->
-<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
-<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
+<!--    + OGI_Melee_LightningClawS REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claw (Mars pattern)                                       -->
+<!--    + OGI_Melee_LightningClawS recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaws                                       -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawPair                                                -->
-<!--    + MATCH CombatExtended                                                                                        -->
-<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
-<!--                                                          MeleeCounterParryBonus  0.55                            -->
+<!--    + OGI_Melee_LightningClawD REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claws (Mars pattern)                                      -->
+<!--    + OGI_Melee_LightningClawD recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerFist                                           -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesPowerFist                                                        -->
+<!--    + OGI_Melee_PowerFistS REPLACE label                                                                          -->
+<!--                              WITH label  power fist (Mars pattern)                                               -->
+<!--    + OGI_Melee_PowerFistS recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesChainfist                                           -->
 <!--    + OGI_Melee_ChainFistS REPLACE label                                                                          -->
@@ -375,370 +378,80 @@
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaw                                        -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawSingle                                              -->
-<!--    + MATCH CombatExtended                                                                                        -->
-<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
-<!--                                                          MeleeCounterParryBonus  0.275                           -->
-<!--    + MATCH DualWield                                                                                             -->
-<!--      + POS_AMA_AstartesChainsword ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                  -->
-<!--                                                     "DualWield.DefModextension_CustomRotation"                   -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs</xpath>
+<!--    + OGI_Melee_LightningClawS REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claw (Mars pattern)                                       -->
+<!--    + OGI_Melee_LightningClawS recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/label</xpath>
                                 <value>
-                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Sharp_Quality">
-                                        <defName>POS_AMA_AstartesLightningClawSingle</defName>
-                                        <label>lightning claw (Mars pattern)</label>
-                                        <description>A lightning claw is a specialised type of power weapon, most commonly used by Space Marine Assault Squads and Terminator Squads. It consists of a powered gauntlet fitted with three or four razor-sharp adamantium blades, each a miniature power weapon sheathed in a matter disrupting power field, enabling them to carve through armour and flesh with ease. Lightning claws are often wielded in pairs, though a single claw can be used in combination with a pistol weapon.</description>
-                                        <graphicData>
-                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawS</texPath>
-                                            <graphicClass>Graphic_Single</graphicClass>
-                                            <shaderType>CutoutComplex</shaderType>
-                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
-                                        </graphicData>
-                                        <soundInteract>Interact_Revolver</soundInteract>
-                                        <statBases>
-                                            <WorkToMake>30000</WorkToMake>
-                                            <Mass>3.2</Mass>
-                                            <MarketValue>650</MarketValue>
-                                        </statBases>
-                                        <equippedAngleOffset>-80</equippedAngleOffset>
-                                        <tools>
-                                            <li>
-                                                <label>blade</label>
-                                                <capacities>
-                                                    <li>OG_PowerWeapon_Cut</li>
-                                                </capacities>
-                                                <power>14</power>
-                                                <armorPenetration>2</armorPenetration>
-                                                <cooldownTime>1.3</cooldownTime>
-                                            </li>
-                                            <li>
-                                                <label>point</label>
-                                                <capacities>
-                                                    <li>OG_PowerWeapon_Stab</li>
-                                                </capacities>
-                                                <power>20</power>
-                                                <armorPenetration>2</armorPenetration>
-                                                <cooldownTime>1.8</cooldownTime>
-                                            </li>
-                                        </tools>
-                                        <recipeMaker>
-                                            <recipeUsers />
-                                            <researchPrerequisites>
-                                                <li>POS_AMA_Astartes_Placeholder</li>
-                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                            </researchPrerequisites>
-                                        </recipeMaker>
-                                        <costList>
-                                            <Plasteel>10</Plasteel>
-                                            <ComponentIndustrial>8</ComponentIndustrial>
-                                            <Gold>4</Gold>
-                                        </costList>
-                                        <stuffCategories>
-                                            <li>Metallic</li>
-                                        </stuffCategories>
-                                        <costStuffCount>300</costStuffCount>
-                                        <weaponTags>
-                                            <li>IGCLightningClaw</li>
-                                            <li>LightningClaw</li>
-                                            <li>ILightningClaws</li>
-                                            <li>OGIPowerWeapon</li>
-                                            <li>PowerWeapon</li>
-                                        </weaponTags>
-                                        <tradeTags>
-                                            <li>OGIMelee</li>
-                                        </tradeTags>
-                                        <generateCommonality>0.10</generateCommonality>
-                                        <comps>
-                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
-                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
-                                                <angleAdjustmentWest>45</angleAdjustmentWest>
-                                                <eastOffset>-0.15,0,-0.0</eastOffset>
-                                                <westOffset>0.15,-0.1,-0.0</westOffset>
-                                                <southOffset>-0.15,0,-0.0</southOffset>
-                                            </li>
-                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
-                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
-                                                <gizmosOnEquip>false</gizmosOnEquip>
-                                                <graphicData>
-                                                    <graphicClass>Graphic_Single</graphicClass>
-                                                    <shaderType>CutoutComplex</shaderType>
-                                                    <color>(49,100,205)</color>
-                                                </graphicData>
-                                            </li>
-                                        </comps>
-                                    </ThingDef>
+                                    <label>lightning claw (Mars pattern)</label>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationFindMod">
-                                <mods>
-                                    <li>Combat Extended</li>
-                                </mods>
-                                <match Class="PatchOperationAdd">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesLightningClawSingle"]/statBases</xpath>
-                                    <value>
-                                        <Bulk>3.0</Bulk>
-                                        <MeleeCounterParryBonus>0.275</MeleeCounterParryBonus>
-                                    </value>
-                                </match>
-                            </li>
-
-                            <li Class="PatchOperationFindMod">
-                                <mods>
-                                    <li>Dual Wield</li>
-                                </mods>
-                                <match Class="PatchOperationAddModExtension">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerSword"]/statBases</xpath>
-                                    <value>
-                                        <li Class="DualWield.DefModextension_DefaultSettings">
-                                            <dualWield>true</dualWield>
-                                            <twoHand>false</twoHand>
-                                        </li>
-                                        <li Class="DualWield.DefModextension_CustomRotation">
-                                            <extraRotation>0</extraRotation>
-                                        </li>
-                                    </value>
-                                </match>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawS"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
+                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                    </researchPrerequisites>
+                                </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesLighningClaws                                       -->
 <!--  ==============================================================================================================  -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesLightningClawPair                                                -->
-<!--    + MATCH CombatExtended                                                                                        -->
-<!--      + POS_AMA_AstartesLightningClawSingle statBases ADD Bulk  3.0                                               -->
-<!--                                                          MeleeCounterParryBonus  0.55                            -->
+<!--    + OGI_Melee_LightningClawD REPLACE label                                                                      -->
+<!--                                  WITH label  lightning claws (Mars pattern)                                      -->
+<!--    + OGI_Melee_LightningClawD recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                           WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]/label</xpath>
                                 <value>
-                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Sharp_Quality">
-                                        <defName>POS_AMA_AstartesLightningClawPair</defName>
-                                        <label>lightning claws (Mars pattern)</label>
-                                        <description>Lightning claws are a  specialised type of power weapon, most commonly used by Space Marine Assault Squads and Terminator Squads. They consist of powered gauntlets fitted with three or four razor-sharp adamantium blades, each a miniature power weapon sheathed in a matter disrupting power field, enabling them to carve through armour and flesh with ease. Lightning claws are often wielded in pairs, though a single claw can be used in combination with a pistol weapon.</description>
-                                        <graphicData>
-                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawS</texPath>
-                                            <graphicClass>Graphic_Single</graphicClass>
-                                            <shaderType>CutoutComplex</shaderType>
-                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
-                                        </graphicData>
-                                        <soundInteract>Interact_Revolver</soundInteract>
-                                        <statBases>
-                                            <WorkToMake>35000</WorkToMake>
-                                            <Mass>3.2</Mass>
-                                            <MarketValue>1300</MarketValue>
-                                        </statBases>
-                                        <equippedAngleOffset>0</equippedAngleOffset>
-                                        <tools>
-                                            <li>
-                                                <label>blade</label>
-                                                <capacities>
-                                                    <li>OG_PowerWeapon_Cut</li>
-                                                </capacities>
-                                                <power>14</power>
-                                                <armorPenetration>2</armorPenetration>
-                                                <cooldownTime>0.65</cooldownTime>
-                                            </li>
-                                            <li>
-                                                <label>point</label>
-                                                <capacities>
-                                                    <li>OG_PowerWeapon_Stab</li>
-                                                </capacities>
-                                                <power>20</power>
-                                                <armorPenetration>2</armorPenetration>
-                                                <cooldownTime>0.9</cooldownTime>
-                                            </li>
-                                        </tools>
-                                        <recipeMaker>
-                                            <recipeUsers />
-                                            <researchPrerequisites>
-                                                <li>POS_AMA_Astartes_Placeholder</li>
-                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                            </researchPrerequisites>
-                                        </recipeMaker>
-                                        <costList>
-                                            <Plasteel>20</Plasteel>
-                                            <ComponentIndustrial>12</ComponentIndustrial>
-                                            <Gold>6</Gold>
-                                        </costList>
-                                        <stuffCategories>
-                                            <li>Metallic</li>
-                                        </stuffCategories>
-                                        <costStuffCount>400</costStuffCount>
-                                        <weaponTags>
-                                            <li>IGCDualLightningClaw</li>
-                                            <li>ILightningClaws</li>
-                                            <li>OGIPowerWeapon</li>
-                                            <li>PowerWeapon</li>
-                                        </weaponTags>
-                                        <tradeTags>
-                                            <li>OGIMelee</li>
-                                        </tradeTags>
-                                        <generateCommonality>0.05</generateCommonality>
-                                        <comps>
-                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
-                                                <groundGraphic>
-                                                    <texPath>Things/Item/Equipment/WeaponMelee/Imperial/LightningClawD</texPath>
-                                                    <graphicClass>Graphic_Single</graphicClass>
-                                                    <shaderType>CutoutComplex</shaderType>
-                                                    <color>(0.286,0.286,0.286)</color>
-                                                </groundGraphic>
-                                                <verticalFlipNorth>true</verticalFlipNorth>
-                                                <isDualWeapon>true</isDualWeapon>
-                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
-                                                <angleAdjustmentWest>45</angleAdjustmentWest>
-                                                <eastOffset>-0.0,0,-0.250</eastOffset>
-                                                <westOffset>0.0,0,-0.250</westOffset>
-                                                <southOffset>0.55,0,0.30</southOffset>
-                                                <northOffset>0.55,0,0.30</northOffset>
-                                            </li>
-                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
-                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
-                                                <gizmosOnEquip>false</gizmosOnEquip>
-                                                <graphicData>
-                                                    <graphicClass>Graphic_Single</graphicClass>
-                                                    <shaderType>CutoutComplex</shaderType>
-                                                    <color>(49,100,205)</color>
-                                                </graphicData>
-                                            </li>
-                                        </comps>
-                                    </ThingDef>
+                                    <label>lightning claws (Mars pattern)</label>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationFindMod">
-                                <mods>
-                                    <li>Combat Extended</li>
-                                </mods>
-                                <match Class="PatchOperationAdd">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesLightningClawPair"]/statBases</xpath>
-                                    <value>
-                                        <Bulk>3.0</Bulk>
-                                        <MeleeCounterParryBonus>0.55</MeleeCounterParryBonus>
-                                    </value>
-                                </match>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_LightningClawD"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
+                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                    </researchPrerequisites>
+                                </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesPowerFist                                           -->
 <!--  ==============================================================================================================  -->
-<!--    + ADD ThingDef WITH defName  POS_AMA_AstartesPowerFist                                                        -->
-<!--    + MATCH CombatExtended                                                                                        -->
-<!--      + POS_AMA_AstartesPowerFist statBases ADD Bulk  5.0                                                         -->
-<!--                                                MeleeCounterParryBonus  0.15                                      -->
-<!--    + MATCH DualWield                                                                                             -->
-<!--      + POS_AMA_AstartesPowerFist ADD_MOD_EXTENSION "DualWield.DefModextension_DefaultSettings"                   -->
-<!--                                                    "DualWield.DefModextension_CustomRotation"                    -->
+<!--    + OGI_Melee_PowerFistS REPLACE label                                                                          -->
+<!--                              WITH label  power fist (Mars pattern)                                               -->
+<!--    + OGI_Melee_PowerFistS recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs</xpath>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]/label</xpath>
                                 <value>
-                                    <ThingDef ParentName="OG_Imperial_MeleeWeapon_Power_Blunt_Quality">
-                                        <defName>POS_AMA_AstartesPowerFist</defName>
-                                        <label>power fist (Mars pattern)</label>
-                                        <description>A power fist (also known as a power glove) is essentially an over-sized, armoured gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches. It is a favoured close combat weapon for many warriors of the Imperium of Man, as well as the Forces of Chaos (particularly the Chaos Space Marines). It is especially an iconic weapon of the Loyalist Space Marines. A power fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a power fist vastly augments a user's strength, much as power armour does due to the power provided its mechanical servos. The disadvantages of its unwieldy nature are often well worth the limitations, as the combination of the disruptive power field and sheer physical strength afforded by a Power Fist allows a Space Marine to pulverize and tear apart armour plate from even the most well-protected of vehicles, and to wound and kill colossal monstrous creatures in close combat; its brutal effects against more mundane foes goes without saying. It is most commonly found fitted to Space Marine Tactical Dreadnought (Terminator) Armour.</description>
-                                        <graphicData>
-                                            <texPath>Things/Item/Equipment/WeaponMelee/Imperial/PowerFistS</texPath>
-                                            <graphicClass>Graphic_Single</graphicClass>
-                                            <shaderType>CutoutComplex</shaderType>
-                                            <colorTwo>(0.286,0.286,0.286)</colorTwo>
-                                        </graphicData>
-                                        <soundInteract>Interact_Revolver</soundInteract>
-                                        <statBases>
-                                            <WorkToMake>40000</WorkToMake>
-                                            <Mass>3.5</Mass>
-                                            <MarketValue>1750</MarketValue>
-                                        </statBases>
-                                        <equippedAngleOffset>-25</equippedAngleOffset>
-                                        <tools>
-                                            <li>
-                                                <label>fist</label>
-                                                <capacities>
-                                                    <li>OG_PowerWeapon_Blunt</li>
-                                                </capacities>
-                                                <power>66</power>
-                                                <armorPenetration>2</armorPenetration>
-                                                <cooldownTime>2.8</cooldownTime>
-                                            </li>
-                                        </tools>
-                                        <recipeMaker>
-                                            <recipeUsers />
-                                            <researchPrerequisites>
-                                                <li>POS_AMA_Astartes_Placeholder</li>
-                                                <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                                            </researchPrerequisites>
-                                        </recipeMaker>
-                                        <costList>
-                                            <Plasteel>10</Plasteel>
-                                            <ComponentIndustrial>8</ComponentIndustrial>
-                                            <Gold>4</Gold>
-                                        </costList>
-                                        <stuffCategories>
-                                            <li>Metallic</li>
-                                        </stuffCategories>
-                                        <costStuffCount>400</costStuffCount>
-                                        <weaponTags>
-                                            <li>IGCPowerFist</li>
-                                            <li>OGIPowerWeapon</li>
-                                            <li>PowerWeapon</li>
-                                        </weaponTags>
-                                        <tradeTags>
-                                            <li>OGIMelee</li>
-                                        </tradeTags>
-                                        <generateCommonality>0.10</generateCommonality>
-                                        <comps>
-                                            <li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
-                                                <angleAdjustmentEast>-45</angleAdjustmentEast>
-                                                <angleAdjustmentWest>45</angleAdjustmentWest>
-                                                <eastOffset>-0.25,0,-0.0</eastOffset>
-                                                <westOffset>0.25,-0.1,-0.0</westOffset>
-                                                <southOffset>-0.35,0,-0.0</southOffset>
-                                            </li>
-                                            <li Class="AdeptusMechanicus.CompProperties_PowerWeaponActivatableEffect">
-                                                <compClass>AdeptusMechanicus.CompPowerWeaponActivatableEffect</compClass>
-                                                <gizmosOnEquip>false</gizmosOnEquip>
-                                                <graphicData>
-                                                    <graphicClass>Graphic_Single</graphicClass>
-                                                    <shaderType>CutoutComplex</shaderType>
-                                                    <color>(49,100,205)</color>
-                                                </graphicData>
-                                            </li>
-                                        </comps>
-                                    </ThingDef>
+                                    <label>power fist (Mars pattern)</label>
                                 </value>
                             </li>
 
-                            <li Class="PatchOperationFindMod">
-                                <mods>
-                                    <li>Combat Extended</li>
-                                </mods>
-                                <match Class="PatchOperationAdd">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerFist"]/statBases</xpath>
-                                    <value>
-                                        <Bulk>5.0</Bulk>
-                                        <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
-                                    </value>
-                                </match>
-                            </li>
-
-                            <li Class="PatchOperationFindMod">
-                                <mods>
-                                    <li>Dual Wield</li>
-                                </mods>
-                                <match Class="PatchOperationAddModExtension">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesPowerFist"]/statBases</xpath>
-                                    <value>
-                                        <li Class="DualWield.DefModextension_DefaultSettings">
-                                            <dualWield>true</dualWield>
-                                            <twoHand>false</twoHand>
-                                        </li>
-                                        <li Class="DualWield.DefModextension_CustomRotation">
-                                            <extraRotation>0</extraRotation>
-                                        </li>
-                                    </value>
-                                </match>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Melee_PowerFistS"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>POS_AMA_Astartes_Placeholder</li>
+                                        <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                                    </researchPrerequisites>
+                                </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
