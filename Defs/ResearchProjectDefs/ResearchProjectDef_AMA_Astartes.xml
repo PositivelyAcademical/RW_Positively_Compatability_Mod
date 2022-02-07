@@ -9,7 +9,7 @@
 <!--  ==============================================================================================================  -->
 
     <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-        <defName>Pos_AMA_Astartes_Placeholder</defName>
+        <defName>POS_AMA_Astartes_Placeholder</defName>
         <label>Adeptus Astartes</label>
         <description>Grants you access to STC templates used by the Adeptus Astartes</description>
         <baseCost>8000</baseCost>
