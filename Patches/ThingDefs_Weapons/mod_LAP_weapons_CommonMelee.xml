@@ -16,6 +16,19 @@
 <!--                                                monomolecular-edged teeth driven on a motorised chain.            -->
 <!--    + LAP_WEAP_ChainSword recipeMaker REPLACE researchPrerequisite                                                -->
 <!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  Machining                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesChainaxe                                                                    -->
+<!--    + LAP_WEAP_ChainAxe REPLACE label                                                                             -->
+<!--                           WITH label  chainaxe (Proteus pattern)                                                 -->
+<!--    + LAP_WEAP_ChainAxe REPLACE description                                                                       -->
+<!--                           WITH description  A chainaxe is a brutal hand-to-hand motorised chain weapon crafted   -->
+<!--                                              in the form of a great one or two-handed axe. The biting action of  -->
+<!--                                              the whirling row of monomolecular teeth means these weapons can     -->
+<!--                                              hack through both flesh and armour with ease.                       -->
+<!--    + LAP_WEAP_ChainAxe recipeMaker REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -39,6 +52,7 @@
 <!--                                                monomolecular-edged teeth driven on a motorised chain.            -->
 <!--    + LAP_WEAP_ChainSword recipeMaker REPLACE researchPrerequisite                                                -->
 <!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  Machining                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/label</xpath>
@@ -59,6 +73,45 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
+                            <li>Machining</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesChainaxe                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_ChainAxe REPLACE label                                                                             -->
+<!--                           WITH label  chainaxe (Proteus pattern)                                                 -->
+<!--    + LAP_WEAP_ChainAxe REPLACE description                                                                       -->
+<!--                           WITH description  A chainaxe is a brutal hand-to-hand motorised chain weapon crafted   -->
+<!--                                              in the form of a great one or two-handed axe. The biting action of  -->
+<!--                                              the whirling row of monomolecular teeth means these weapons can     -->
+<!--                                              hack through both flesh and armour with ease.                       -->
+<!--    + LAP_WEAP_ChainAxe recipeMaker REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/label</xpath>
+                    <value>
+                        <label>chainaxe (Proteus pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/description</xpath>
+                    <value>
+                        <description>A chainaxe is a brutal hand-to-hand motorised chain weapon crafted in the form of a great one or two-handed axe. The biting action of the whirling row of monomolecular teeth means these weapons can hack through both flesh and armour with ease.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
                         </researchPrerequisites>
                     </value>
                 </li>
