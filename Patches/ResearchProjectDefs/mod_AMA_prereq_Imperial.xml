@@ -2,8 +2,6 @@
 <Patch>
 
 <!--  ==============================================================================================================  -->
-<!--  What this xml patch does:                                                                                       -->
-<!--  ==============================================================================================================  -->
 <!--     + Requires MATCH Vanilla Apparel Expanded                                                                    -->
 <!--       + For OG_Imperial_Tech_Apparel REPLACE prerequisites                                                       -->
 <!--                                         WITH prerequisites VAE_MilitaryClothing                                  -->
@@ -16,7 +14,6 @@
 <!--       + For OG_Imperial_Tech_Apparel AFTER baseCost                                                              -->
 <!--                                     INSERT hiddenPrerequisites OG_Imperial_Tech_Base_T0                          -->
 <!--       + For OG_Imperial_Tech_Base_T0 prerequisites REPLACE Electricity with Machining                            -->
-<!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
 <!--       + For OG_Imperial_Tech_Wargear_ServoSkull prerequisites REPLACE with OG_Imperial_Tech_Base_T0              -->
 <!--       + For OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD Militarum                           -->
 <!--       + For OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                -->
@@ -104,18 +101,6 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/prerequisites/li</xpath>
                     <value>
                         <li>Machining</li>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL_CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OG_Imperial_Tech_Weapons_Bolt ADD prerequisites PrecisionRifling                                     -->
-<!--  ==============================================================================================================  -->
-                <li Class = "PatchOperationAdd">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
-                    <value>
-                        <li>PrecisionRifling</li>
                     </value>
                 </li>
 

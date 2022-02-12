@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PowerWeapons                                                              -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE label                                                                -->
+<!--                                        WITH label  power weapons                                                 -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE description                                                          -->
+<!--                                        WITH description  Allows the creation of basic power weapons.\n\nAttacks  -->
+<!--                                                           made with power weapons ignore all armour.             -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                        -->
+<!--                                        WITH prerequisites li  Fabrication                                        -->
+<!--                                                           li  LongBlades                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SpecialWeapons                                                            -->
+<!--    + OG_Common_Tech_Weapons_Special REPLACE label                                                                -->
+<!--                                        WITH label  special weapons                                               -->
+<!--    + OG_Common_Tech_Weapons_Special REPLACE description                                                          -->
+<!--                                        WITH description  Allows the creation of more specialised weapons.        -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SpecialPowerWeapons                                                       -->
+<!--    + OG_Common_Tech_Weapons_Powered_Special REPLACE label                                                        -->
+<!--                                                WITH label  specialised power weapons                             -->
+<!--    + OG_Common_Tech_Weapons_Powered_Special REPLACE description                                                  -->
+<!--                                                WITH description  Allows the creation of power weapons with more  -->
+<!--                                                                   specialised effects.                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  HeavyWeapons                                                              -->
+<!--    + OG_Common_Tech_Weapons_Heavy REPLACE label                                                                  -->
+<!--                                      WITH label  heavy weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Heavy REPLACE description                                                            -->
+<!--                                      WITH description  Allows the creation of basic heavy weapons.               -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ForceWeapons                                                              -->
+<!--    + OG_Common_Tech_Weapons_Force REPLACE label                                                                  -->
+<!--                                      WITH label  force weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Force REPLACE description                                                            -->
+<!--                                      WITH description  Force weapons are advanced, psychically-attuned close     -->
+<!--                                                         combat weapons that are only effective in the hands of   -->
+<!--                                                         a psyker. Force weapons effectively act as psychic       -->
+<!--                                                         amplifiers of the wielder's own powers. They are         -->
+<!--                                                         designed to allow a psyker to channel deadly warp        -->
+<!--                                                         energies into their victim, acting as a conduit between  -->
+<!--                                                         the wielder's mind and the flesh of his target. Large    -->
+<!--                                                         alien monstrosities and daemons that are resilient to    -->
+<!--                                                         conventional weapons can be slain outright by a single   -->
+<!--                                                         wound from a force weapon, as their bodies and minds     -->
+<!--                                                         destroyed by the unearthly powers of the immaterium.     -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  FlameWeapons                                                              -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE label                                                                  -->
+<!--                                      WITH label  flame weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE description                                                            -->
+<!--                                      WITH description  Create flamethrower weapons, capable of unleashing a      -->
+<!--                                                         liquid incendiary chemical that bursts into flames as    -->
+<!--                                                         it leaves the weapon.\n\nFlame-based weapons are used    -->
+<!--                                                         by several of the intelligent races across the Milky     -->
+<!--                                                         Way galaxy, and are valued for their to destroy many     -->
+<!--                                                         enemies at once with a burst of expanding flame,         -->
+<!--                                                         regardless of any protective cover they possess.         -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaWeaponsExpanded  (ResearchProjectDef)  -  FlameWeapons                                        -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  BiofuelRefining                                      -->
+<!--                                                         li  Gunsmithing                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpanded  (ResearchProjectDef)  -  FlameWeapons                                           -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  VWE_Flamethrower                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  LaserWeapons                                                              -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE label                                                                  -->
+<!--                                      WITH label  laser weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE description                                                            -->
+<!--                                      WITH description  Laser weapons, or las weapons as they are known in the    -->
+<!--                                                         Imperium of Man, are a family of directed energy         -->
+<!--                                                         weapons that produce beams of high-intensity amplified   -->
+<!--                                                         light to produce heat damage on a target. Laser weapons  -->
+<!--                                                         are relatively easy to produce and maintain. No solid    -->
+<!--                                                         ammunition is ever used - only power cells which can be  -->
+<!--                                                         recharged and quickly swapped for another when           -->
+<!--                                                         depleted. This makes them ideal for large troop          -->
+<!--                                                         formations.                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaWeaponsExpandedLaser   (ResearchProjectDef)  -  LaserWeapons                                  -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  MicroelectronicsBasics                               -->
+<!--                                                         li  Gunsmithing                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpandedLaser   (ResearchProjectDef)  -  LaserWeapons                                     -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  VWE_LaserWeapons                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  MeltaWeaponry                                                             -->
+<!--    + OG_Common_Tech_Weapons_Melta REPLACE label                                                                  -->
+<!--                                      WITH label  melta weaponry                                                  -->
+<!--    + OG_Common_Tech_Weapons_Melta REPLACE description                                                            -->
+<!--                                      WITH description  Melta weapons are a type of thermal weapon that make use  -->
+<!--                                                         of a sub-atomic reaction in a chemical fuel source to    -->
+<!--                                                         produce a tightly-focused beam of intense, searing       -->
+<!--                                                         heat. These weapons typically have a short range but     -->
+<!--                                                         are very powerful. A meltagun works by inducing a        -->
+<!--                                                         minute, sub-molecular reaction within                    -->
+<!--                                                         highly-pressurised pyrum-petrol fuel mix located within  -->
+<!--                                                         an ammunition canister, and then projecting the          -->
+<!--                                                         resulting plasma through the canister and from the       -->
+<!--                                                         weapon's barrel as a blast of incredible heat.           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PlasmaWeapons                                                             -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE label                                                                 -->
+<!--                                       WITH label  plasma weapons                                                 -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE description                                                           -->
+<!--                                       WITH description  Plasma weapons are highly potent and destructive         -->
+<!--                                                          directed energy weapons utilised in many forms by the   -->
+<!--                                                          advanced intelligent races of the Milky Way galaxy.     -->
+<!--                                                          Most plasma weapons work by delivering pulses of        -->
+<!--                                                          searing energy and superheated matter that have been    -->
+<!--                                                          transmuted into a gaseous plasma state that carries an  -->
+<!--                                                          electrical charge. The plasma "bolts" fired by these    -->
+<!--                                                          weapons explode on impact and generate the destructive  -->
+<!--                                                          heat of a small sun, and the sheer amount of energy     -->
+<!--                                                          released by the impact of superheated plasma is often   -->
+<!--                                                          enough to completely vaporise the target.\n\nImperial   -->
+<!--                                                          plasma weapons are prone to overheating.                -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  AdvancedFabrication                                 -->
+<!--                                                          li  ChargedShot                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  HaywireWeaponry                                                           -->
+<!--    + OG_Common_Tech_Weapons_Haywire REPLACE label                                                                -->
+<!--                                        WITH label  haywire weaponry                                              -->
+<!--    + OG_Common_Tech_Weapons_Haywire REPLACE description                                                          -->
+<!--                                        WITH description  When fired, haywire based weapons cause crackling       -->
+<!--                                                           blasts of electromagnetic energy leap from the         -->
+<!--                                                           projector with every shot. Capable of scrambling even  -->
+<!--                                                           the most robust electrical systems, a single hit from  -->
+<!--                                                           such a weapon can leave enemy tanks and aircraft       -->
+<!--                                                           powerless.                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SonicWeaponry                                                             -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE label                                                                  -->
+<!--                                      WITH label  sonic weaponry                                                  -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE description                                                            -->
+<!--                                      WITH description  Allows the creation of sonic weapons.                     -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  Gunsmithing                                          -->
+<!--                                                         li  Fabrication                                          -->
+<!--    + OG_Common_Tech_Weapons_Sonic REMOVE modExtensions                                                           -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PowerWeapons                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE label                                                                -->
+<!--                                        WITH label  power weapons                                                 -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE description                                                          -->
+<!--                                        WITH description  Allows the creation of basic power weapons.\n\nAttacks  -->
+<!--                                                           made with power weapons ignore all armour.             -->
+<!--    + OG_Common_Tech_Weapons_Powered REPLACE prerequisites                                                        -->
+<!--                                        WITH prerequisites li  Fabrication                                        -->
+<!--                                                           li  LongBlades                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered"]/label</xpath>
+                    <value>
+                        <label>power weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered"]/description</xpath>
+                    <value>
+                        <description>Allows the creation of basic power weapons.\n\nAttacks made with power weapons ignore all armour.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Fabrication</li>
+                            <li>LongBlades</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SpecialWeapons                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Special REPLACE label                                                                -->
+<!--                                        WITH label  special weapons                                               -->
+<!--    + OG_Common_Tech_Weapons_Special REPLACE description                                                          -->
+<!--                                        WITH description  Allows the creation of more specialised weapons.        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Special"]/label</xpath>
+                    <value>
+                        <label>special weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Special"]/description</xpath>
+                    <value>
+                        <description>Allows the creation of more specialised weapons.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SpecialPowerWeapons                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Powered_Special REPLACE label                                                        -->
+<!--                                                WITH label  specialised power weapons                             -->
+<!--    + OG_Common_Tech_Weapons_Powered_Special REPLACE description                                                  -->
+<!--                                                WITH description  Allows the creation of power weapons with more  -->
+<!--                                                                   specialised effects.                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered_Special"]/label</xpath>
+                    <value>
+                        <label>specialised power weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Powered_Special"]/description</xpath>
+                    <value>
+                        <description>Allows the creation of power weapons with more specialised effects.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  HeavyWeapons                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Heavy REPLACE label                                                                  -->
+<!--                                      WITH label  heavy weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Heavy REPLACE description                                                            -->
+<!--                                      WITH description  Allows the creation of basic heavy weapons.               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Heavy"]/label</xpath>
+                    <value>
+                        <label>heavy weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Heavy"]/description</xpath>
+                    <value>
+                        <description>Allows the creation of basic heavy weapons.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ForceWeapons                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Force REPLACE label                                                                  -->
+<!--                                      WITH label  force weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Force REPLACE description                                                            -->
+<!--                                      WITH description  Force weapons are advanced, psychically-attuned close     -->
+<!--                                                         combat weapons that are only effective in the hands of   -->
+<!--                                                         a psyker. Force weapons effectively act as psychic       -->
+<!--                                                         amplifiers of the wielder's own powers. They are         -->
+<!--                                                         designed to allow a psyker to channel deadly warp        -->
+<!--                                                         energies into their victim, acting as a conduit between  -->
+<!--                                                         the wielder's mind and the flesh of his target. Large    -->
+<!--                                                         alien monstrosities and daemons that are resilient to    -->
+<!--                                                         conventional weapons can be slain outright by a single   -->
+<!--                                                         wound from a force weapon, as their bodies and minds     -->
+<!--                                                         destroyed by the unearthly powers of the immaterium.     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Force"]/label</xpath>
+                    <value>
+                        <label>force weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Force"]/description</xpath>
+                    <value>
+                        <description>Force weapons are advanced, psychically-attuned close combat weapons that are only effective in the hands of a psyker. Force weapons effectively act as psychic amplifiers of the wielder's own powers. They are designed to allow a psyker to channel deadly warp energies into their victim, acting as a conduit between the wielder's mind and the flesh of his target. Large alien monstrosities and daemons that are resilient to conventional weapons can be slain outright by a single wound from a force weapon, as their bodies and minds destroyed by the unearthly powers of the immaterium.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  FlameWeapons                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE label                                                                  -->
+<!--                                      WITH label  flame weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE description                                                            -->
+<!--                                      WITH description  Create flamethrower weapons, capable of unleashing a      -->
+<!--                                                         liquid incendiary chemical that bursts into flames as    -->
+<!--                                                         it leaves the weapon.\n\nFlame-based weapons are used    -->
+<!--                                                         by several of the intelligent races across the Milky     -->
+<!--                                                         Way galaxy, and are valued for their to destroy many     -->
+<!--                                                         enemies at once with a burst of expanding flame,         -->
+<!--                                                         regardless of any protective cover they possess.         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/label</xpath>
+                    <value>
+                        <label>flame weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/description</xpath>
+                    <value>
+                        <description>Create flamethrower weapons, capable of unleashing a liquid incendiary chemical that bursts into flames as it leaves the weapon.\n\nFlame-based weapons are used by several of the intelligent races across the Milky galaxy, and are valued for their to destroy many enemies at once with a burst of expanding flame regardless of any protective cover they possess.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaWeaponsExpanded  (ResearchProjectDef)  -  FlameWeapons                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  BiofuelRefining                                      -->
+<!--                                                         li  Gunsmithing                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>BiofuelRefining</li>
+                                <li>Gunsmithing</li>
+                            </prerequisites>
+                        </value>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpanded  (ResearchProjectDef)  -  FlameWeapons                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Flame REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  VWE_Flamethrower                                     -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Flame"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>VWE_Flamethrower</li>
+                            </prerequisites>
+                        </value>
+                    </match>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  LaserWeapons                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE label                                                                  -->
+<!--                                      WITH label  laser weapons                                                   -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE description                                                            -->
+<!--                                      WITH description  Laser weapons, or las weapons as they are known in the    -->
+<!--                                                         Imperium of Man, are a family of directed energy         -->
+<!--                                                         weapons that produce beams of high-intensity amplified   -->
+<!--                                                         light to produce heat damage on a target. Laser weapons  -->
+<!--                                                         are relatively easy to produce and maintain. No solid    -->
+<!--                                                         ammunition is ever used - only power cells which can be  -->
+<!--                                                         recharged and quickly swapped for another when           -->
+<!--                                                         depleted. This makes them ideal for large troop          -->
+<!--                                                         formations.                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/label</xpath>
+                    <value>
+                        <label>laser weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/description</xpath>
+                    <value>
+                        <description>Laser weapons, or las weapons as they are known in the Imperium of Man, are a family of directed energy weapons that produce beams of high-intensity amplified light to produce heat damage on a target. Laser weapons are relatively easy to produce and maintain. No solid ammunition is ever used - only power cells which can be recharged and quickly swapped for another when depleted. This makes them ideal for large troop formations.</decription>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaWeaponsExpandedLaser   (ResearchProjectDef)  -  LaserWeapons                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  MicroelectronicsBasics                               -->
+<!--                                                         li  Gunsmithing                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded - Laser</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>MicroelectronicsBasics</li>
+                                <li>Gunsmithing</li>
+                            </prerequisites>
+                        </value>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaWeaponsExpandedLaser   (ResearchProjectDef)  -  LaserWeapons                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Laser REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  VWE_LaserWeapons                                     -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>VWE_LaserWeapons</li>
+                            </prerequisites>
+                        </value>
+                    </match>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  MeltaWeaponry                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Melta REPLACE label                                                                  -->
+<!--                                      WITH label  melta weaponry                                                  -->
+<!--    + OG_Common_Tech_Weapons_Melta REPLACE description                                                            -->
+<!--                                      WITH description  Melta weapons are a type of thermal weapon that make use  -->
+<!--                                                         of a sub-atomic reaction in a chemical fuel source to    -->
+<!--                                                         produce a tightly-focused beam of intense, searing       -->
+<!--                                                         heat. These weapons typically have a short range but     -->
+<!--                                                         are very powerful. A meltagun works by inducing a        -->
+<!--                                                         minute, sub-molecular reaction within                    -->
+<!--                                                         highly-pressurised pyrum-petrol fuel mix located within  -->
+<!--                                                         an ammunition canister, and then projecting the          -->
+<!--                                                         resulting plasma through the canister and from the       -->
+<!--                                                         weapon's barrel as a blast of incredible heat.           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Melta"]/label</xpath>
+                    <value>
+                        <label>melta weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Melta"]/description</xpath>
+                    <value>
+                        <description>Melta weapons are a type of thermal weapon that make use of a sub-atomic reaction in a chemical fuel source to produce a tightly-focused beam of intense, searing heat. These weapons typically have a short range but are very powerful. A meltagun works by inducing a minute, sub-molecular reaction within highly-pressurised pyrum-petrol fuel mix located within an ammunition canister, and then projecting the resulting plasma through the canister and from the weapon's barrel as a blast of incredible heat.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PlasmaWeapons                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE label                                                                 -->
+<!--                                       WITH label  plasma weapons                                                 -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE description                                                           -->
+<!--                                       WITH description  Plasma weapons are highly potent and destructive         -->
+<!--                                                          directed energy weapons utilised in many forms by the   -->
+<!--                                                          advanced intelligent races of the Milky Way galaxy.     -->
+<!--                                                          Most plasma weapons work by delivering pulses of        -->
+<!--                                                          searing energy and superheated matter that have been    -->
+<!--                                                          transmuted into a gaseous plasma state that carries an  -->
+<!--                                                          electrical charge. The plasma "bolts" fired by these    -->
+<!--                                                          weapons explode on impact and generate the destructive  -->
+<!--                                                          heat of a small sun, and the sheer amount of energy     -->
+<!--                                                          released by the impact of superheated plasma is often   -->
+<!--                                                          enough to completely vaporise the target.\n\nImperial   -->
+<!--                                                          plasma weapons are prone to overheating.                -->
+<!--    + OG_Common_Tech_Weapons_Plasma REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  AdvancedFabrication                                 -->
+<!--                                                          li  ChargedShot                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Plasma"]/label</xpath>
+                    <value>
+                        <label>plasma weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Plasma"]/description</xpath>
+                    <value>
+                        <description>Plasma weapons are highly potent and destructive directed energy weapons utilised in many forms by the advanced intelligent races of the Milky Way galaxy. Most plasma weapons work by delivering pulses of searing energy and superheated matter that have been transmuted into a gaseous plasma state that carries an electrical charge. The plasma "bolts" fired by these weapons explode on impact and generate the destructive heat of a small sun, and the sheer amount of energy released by the impact of superheated plasma is often enough to completely vaporise the target.\n\nImperial plasma weapons are prone to overheating.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Plasma"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>AdvancedFabrication</li>
+                            <li>ChargedShot</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  HaywireWeaponry                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Haywire REPLACE label                                                                -->
+<!--                                        WITH label  haywire weaponry                                              -->
+<!--    + OG_Common_Tech_Weapons_Haywire REPLACE description                                                          -->
+<!--                                        WITH description  When fired, haywire based weapons cause crackling       -->
+<!--                                                           blasts of electromagnetic energy leap from the         -->
+<!--                                                           projector with every shot. Capable of scrambling even  -->
+<!--                                                           the most robust electrical systems, a single hit from  -->
+<!--                                                           such a weapon can leave enemy tanks and aircraft       -->
+<!--                                                           powerless.                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Haywire"]/label</xpath>
+                    <value>
+                        <label>haywire weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Haywire"]/description</xpath>
+                    <value>
+                        <description>When fired, haywire based weapons cause crackling blasts of electromagnetic energy leap from the projector with every shot. Capable of scrambling even the most robust electrical systems, a single hit from such a weapon can leave enemy tanks and aircraft powerless.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  SonicWeaponry                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE label                                                                  -->
+<!--                                      WITH label  sonic weaponry                                                  -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE description                                                            -->
+<!--                                      WITH description  Allows the creation of sonic weapons.                     -->
+<!--    + OG_Common_Tech_Weapons_Sonic REPLACE prerequisites                                                          -->
+<!--                                      WITH prerequisites li  Gunsmithing                                          -->
+<!--                                                         li  Fabrication                                          -->
+<!--    + OG_Common_Tech_Weapons_Sonic REMOVE modExtensions                                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Sonic"]/label</xpath>
+                    <value>
+                        <label>sonic weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Sonic"]/description</xpath>
+                    <value>
+                        <description>Allows the creation of sonic weapons.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Sonic"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Gunsmithing</li>
+                            <li>Fabrication</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Sonic"]/modExtensions</xpath>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

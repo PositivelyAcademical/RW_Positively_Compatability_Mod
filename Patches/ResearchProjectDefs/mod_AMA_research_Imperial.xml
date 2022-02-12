@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
+<!--                                       WITH label  bolt weapons                                                   -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
+<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
+<!--                                                          mass-reactive bolts at its targets, each one a          -->
+<!--                                                          self-propelled missile which explodes with devastating  -->
+<!--                                                          effectiveness after penetrating its target. The fear    -->
+<!--                                                          and awe that bolter fire creates makes it a perfect     -->
+<!--                                                          weapon for shock troops, the hammering thunder of the   -->
+<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
+<!--                                                          as flesh is blown apart.                                -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  Fabrication                                         -->
+<!--                                                          li  PrecisionRifling                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
+<!--                                            WITH label  volkite weaponry                                          -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
+<!--                                            WITH description  Volkite weapons are an arcane term used by the      -->
+<!--                                                               Adeptus Mechanicus to refer to a class of          -->
+<!--                                                               powerful thermal ray weapons whose technology is   -->
+<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
+<!--                                                               Age of Technology or the Age of Strife. These      -->
+<!--                                                               weapons possess considerable killing power,        -->
+<!--                                                               surpassing most other armaments of their size.     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REMOVE prerequisites                                                     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  0.00                                              -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite ADD_MOD_EXTENSION                                                        -->
+<!--                                                   li @Class  AdeptusMechanicus.AnyPrerequisiteResearchExtension  -->
+<!--                                                      ResearchKeyPrefix  OG_                                      -->
+<!--                                                      ResearchKey  _Tech_Base                                     -->
+<!--                                                      ResearchKeyPostfix  _T3                                     -->
+<!--                                                      Include li  Imperial                                        -->
+<!--                                                              li  Militarum                                       -->
+<!--                                                              li  Mechanicus                                      -->
+<!--                                                              li  Sororitas                                       -->
+<!--                                                              li  Astartes                                        -->
+<!--                                                              li  Chaos                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialResearch                                                          -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.80                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial clothing                                                   -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
+<!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label                                                            -->
+<!--                                            WITH label  Imperial flak armour                                      -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  2                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE label                                                            -->
+<!--                                            WITH label  carapace armour                                           -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial carapace        -->
+<!--                                                               armour.                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  3                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE label                                                            -->
+<!--                                            WITH label  power armour                                              -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  4                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_Tech_Apparel_Armour_T4                                     -->
+<!--                             label  terminator armour                                                             -->
+<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
+<!--                             baseCost  6000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  5                                                                     -->
+<!--                             researchViewY  1.50                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ResearchProjectDef)  -  ArmourResearch                                                        -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  CataphractArmor                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  ArmourResearch                                          -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  VAE_SiegebreakerArmor                         -->
+<!--  ==============================================================================================================  -->
+<!--                                                                                                                  -->
+<!--                                                                                                                  -->
+<!--                                                                                                                  -->
+<!--                                                                                                                  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
+<!--                                       WITH label  bolt weapons                                                   -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
+<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
+<!--                                                          mass-reactive bolts at its targets, each one a          -->
+<!--                                                          self-propelled missile which explodes with devastating  -->
+<!--                                                          effectiveness after penetrating its target. The fear    -->
+<!--                                                          and awe that bolter fire creates makes it a perfect     -->
+<!--                                                          weapon for shock troops, the hammering thunder of the   -->
+<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
+<!--                                                          as flesh is blown apart.                                -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  Fabrication                                         -->
+<!--                                                          li  PrecisionRifling                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/label</xpath>
+                    <value>
+                        <label>bolt weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/description</xpath>
+                    <value>
+                        <description>A brutally effieicnt weapon, the bolter fires mass-reactive bolts at its targets, each one a self-propelled missile which explodes with devastating effectiveness after penetrating its target. The fear and awe that bolter fire creates makes it a perfect weapon for shock troops, the hammering thunder of the guns mixing terrifyingly with the dull, wet explosions as flesh is blown apart.</prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Fabrication</li>
+                            <li>PrecisionRifling</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
+<!--                                            WITH label  volkite weaponry                                          -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
+<!--                                            WITH description  Volkite weapons are an arcane term used by the      -->
+<!--                                                               Adeptus Mechanicus to refer to a class of          -->
+<!--                                                               powerful thermal ray weapons whose technology is   -->
+<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
+<!--                                                               Age of Technology or the Age of Strife. These      -->
+<!--                                                               weapons possess considerable killing power,        -->
+<!--                                                               surpassing most other armaments of their size.     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REMOVE prerequisites                                                     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  0.00                                              -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite ADD_MOD_EXTENSION                                                        -->
+<!--                                                   li @Class  AdeptusMechanicus.AnyPrerequisiteResearchExtension  -->
+<!--                                                      ResearchKeyPrefix  OG_                                      -->
+<!--                                                      ResearchKey  _Tech_Base                                     -->
+<!--                                                      ResearchKeyPostfix  _T3                                     -->
+<!--                                                      Include li  Imperial                                        -->
+<!--                                                              li  Militarum                                       -->
+<!--                                                              li  Mechanicus                                      -->
+<!--                                                              li  Sororitas                                       -->
+<!--                                                              li  Astartes                                        -->
+<!--                                                              li  Chaos                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/label</xpath>
+                    <value>
+                        <label>volkite weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/description</xpath>
+                    <value>
+                        <description>Volkite weapons are an arcane term used by the Adeptus Mechanicus to refer to a class of powerful thermal ray weapons whose technology is pre-Imperial in origin and dates back to the Dark Age of Technology or the Age of Strife. These weapons posses considerable killing power, surpassing most other armaments of their size.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/prerequisites</xpath>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.00</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]</xpath>
+                    <value>
+                        <li Class="AdeptusMechanicus.AnyPrerequisiteResearchExtension">
+                            <ResearchKeyPrefix>OG_</ResearchKeyPrefix>
+                            <ResearchKey>_Tech_Base</ResearchKey>
+                            <ResearchKeyPostfix>_T3</_Tech_Base>
+                            <Include>
+                                <li>Imperial</li>
+                                <li>Militarum</li>
+                                <li>Mechanicus</li>
+                                <li>Sororitas</li>
+                                <li>Astartes</li>
+                                <li>Chaos</li>
+                            </Include>
+                        </li>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialResearch                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.80                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
+                    <value>
+                        <label>Imperial subjects</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.80</researchViewY>
+                    </value>
+                </li>
+
+
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
