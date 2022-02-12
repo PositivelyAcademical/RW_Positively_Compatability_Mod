@@ -5,10 +5,16 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
+<!--    + VWE_LaserWeapons REPLACE prerequisites                                                                      -->
+<!--                          WITH prerequisites li  MicroelectronicsBasics                                           -->
+<!--                                             li  Gunsmithing                                                      -->
 <!--    + VWE_LaserWeapons REPLACE researchViewX                                                                      -->
 <!--                          WITH researchViewX  7                                                                   -->
 <!--    + VWE_LaserWeapons REPLACE researchViewY                                                                      -->
 <!--                          WITH researchViewY  0.62                                                                -->
+<!--    + VWE_UltratechLaserWeapons REPLACE prerequisites                                                             -->
+<!--                                   WITH prerequisites li  VWE_LaserWeapons                                        -->
+<!--                                                      li  Fabrication                                             -->
 <!--    + VWE_UltratechLaserWeapons REPLACE researchViewX                                                             -->
 <!--                                   WITH researchViewX  8                                                          -->
 <!--    + VWE_UltratechLaserWeapons REPLACE researchViewY                                                             -->
@@ -25,15 +31,31 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES (ResearchProjectDef) - row 2 (Y = 0.62)                                                             -->
 <!--  ==============================================================================================================  -->
+<!--    + VWE_LaserWeapons REPLACE prerequisites                                                                      -->
+<!--                          WITH prerequisites li  MicroelectronicsBasics                                           -->
+<!--                                             li  Gunsmithing                                                      -->
 <!--    + VWE_LaserWeapons REPLACE researchViewX                                                                      -->
 <!--                          WITH researchViewX  7                                                                   -->
 <!--    + VWE_LaserWeapons REPLACE researchViewY                                                                      -->
 <!--                           WITH researchViewY  0.62                                                               -->
+<!--    + VWE_UltratechLaserWeapons REPLACE prerequisites                                                             -->
+<!--                                   WITH prerequisites li  VWE_LaserWeapons                                        -->
+<!--                                                      li  Fabrication                                             -->
 <!--    + VWE_UltratechLaserWeapons REPLACE researchViewX                                                             -->
 <!--                                   WITH researchViewX  8                                                          -->
 <!--    + VWE_UltratechLaserWeapons REPLACE researchViewY                                                             -->
 <!--                                   WITH researchViewY  0.62                                                       -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>MicroelectronicsBasics</li>
+                            <li>Gunsmithing</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewX</xpath>
                     <value>
@@ -45,6 +67,16 @@
                     <xpath>/Defs/ResearchProjectDef[defName="VWE_LaserWeapons"]/researchViewY</xpath>
                     <value>
                         <researchViewY>0.62</researchViewY>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="VWE_UltratechLaserWeapons"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>VWE_LaserWeapons</li>
+                            <li>Fabrication</li>
+                        </prerequisites>
                     </value>
                 </li>
 
