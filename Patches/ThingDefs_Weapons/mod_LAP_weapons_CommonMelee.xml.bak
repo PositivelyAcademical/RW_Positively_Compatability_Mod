@@ -1,21 +1,3 @@
-<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerAxe                                                                    -->
-<!--    + LAP_WEAP_PowerAxe REPLACE label                                                                             -->
-<!--                           WITH label  power axe (Proteus pattern)                                                -->
-<!--    + LAP_WEAP_PowerAxe REPLACE description                                                                       -->
-<!--                           WITH description  A power axe is a power weapon that has been shaped into an axe of    -->
-<!--                                              varying size and design crafted from one of any number of           -->
-<!--                                              different materials, though usually adamantium. When its power      -->
-<!--                                              cell is activated, often by touching a control located on the       -->
-<!--                                              haft, the blade is sheathed in a lethal corona of disruptive        -->
-<!--                                              energy. This energy field allows the blade to carve through flesh,  -->
-<!--                                              bone and most forms of armour plate alike, making a power axe a     -->
-<!--                                              highly effective weapon.\n\nThe Proteus pattern power axe was the   -->
-<!--                                              most common such weapon in use by the Legiones Astartes throughout  -->
-<!--                                              the Crusade and Heresy eras.                                        -->
-<!--    + LAP_WEAP_PowerAxe recipeMaker REPLACE researchPrerequisite                                                  -->
-<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
-<!--                                                                  li  OG_Common_Tech_Weapons_Powered              -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  LegionesLightningClaw                                                               -->
 <!--    + LAP_WEAP_LightningClaw REPLACE label                                                                        -->
 <!--                                WITH label  lightning claw (Proteus pattern)                                      -->
@@ -86,50 +68,6 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerAxe                                                                    -->
-<!--  ==============================================================================================================  -->
-<!--    + LAP_WEAP_PowerAxe REPLACE label                                                                             -->
-<!--                           WITH label  power axe (Proteus pattern)                                                -->
-<!--    + LAP_WEAP_PowerAxe REPLACE description                                                                       -->
-<!--                           WITH description  A power axe is a power weapon that has been shaped into an axe of    -->
-<!--                                              varying size and design crafted from one of any number of           -->
-<!--                                              different materials, though usually adamantium. When its power      -->
-<!--                                              cell is activated, often by touching a control located on the       -->
-<!--                                              haft, the blade is sheathed in a lethal corona of disruptive        -->
-<!--                                              energy. This energy field allows the blade to carve through flesh,  -->
-<!--                                              bone and most forms of armour plate alike, making a power axe a     -->
-<!--                                              highly effective weapon.\n\nThe Proteus pattern power axe was the   -->
-<!--                                              most common such weapon in use by the Legiones Astartes throughout  -->
-<!--                                              the Crusade and Heresy eras.                                        -->
-<!--    + LAP_WEAP_PowerAxe recipeMaker REPLACE researchPrerequisite                                                  -->
-<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
-<!--                                                                  li  OG_Common_Tech_Weapons_Powered              -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/label</xpath>
-                    <value>
-                        <label>power axe (Proteus pattern)</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/description</xpath>
-                    <value>
-                        <description> power axe is a power weapon that has been shaped into an axe of varying size and design crafted from one of any number of different materials, though usually adamantium. When its power cell is activated, often by touching a control located on the haft, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh bone and most forms of armour plate alike, making a power axe a highly effective weapon.\n\nThe Proteus pattern power axe was the most common such weapon in use by the Legiones Astartes throughout the Crusade and Heresy eras.</description>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Common_Tech_Weapons_Powered</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  LegionesLightningClaw                                                               -->
