@@ -118,6 +118,24 @@
 <!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
 <!--                                                                   li  OG_Common_Tech_Weapons_Powered_Special     -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesThunderHammer                                                               -->
+<!--    + LAP_WEAP_ThunderHammer REPLACE label                                                                        -->
+<!--                                WITH label  thunder hammer                                                        -->
+<!--    + LAP_WEAP_ThunderHammer REPLACE description                                                                  -->
+<!--                                WITH description  A thunder hammer is a melee power weapon employed by the        -->
+<!--                                                   warriors of the Legiones Astartes. They are most often         -->
+<!--                                                   carried by Space Marine officers and veterans wearing          -->
+<!--                                                   Tactical Dreadnought Armour.\n\nThe thunder hammer is a large  -->
+<!--                                                   warhammer incorporating an energy field emitter within its     -->
+<!--                                                   head which activates only when the hammer strikes its target.  -->
+<!--                                                   This allows the weapon to store a tremendous amount of energy  -->
+<!--                                                   and release it only at the moment of impact, producing a       -->
+<!--                                                   blast of energy and concussive force like the crack of         -->
+<!--                                                   thunder, from which the name of the weapon originates.         -->
+<!--    + LAP_WEAP_ThunderHammer recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -414,6 +432,50 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainFist"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesThunderHammer                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_ThunderHammer REPLACE label                                                                        -->
+<!--                                WITH label  thunder hammer                                                        -->
+<!--    + LAP_WEAP_ThunderHammer REPLACE description                                                                  -->
+<!--                                WITH description  A thunder hammer is a melee power weapon employed by the        -->
+<!--                                                   warriors of the Legiones Astartes. They are most often         -->
+<!--                                                   carried by Space Marine officers and veterans wearing          -->
+<!--                                                   Tactical Dreadnought Armour.\n\nThe thunder hammer is a large  -->
+<!--                                                   warhammer incorporating an energy field emitter within its     -->
+<!--                                                   head which activates only when the hammer strikes its target.  -->
+<!--                                                   This allows the weapon to store a tremendous amount of energy  -->
+<!--                                                   and release it only at the moment of impact, producing a       -->
+<!--                                                   blast of energy and concussive force like the crack of         -->
+<!--                                                   thunder, from which the name of the weapon originates.         -->
+<!--    + LAP_WEAP_ThunderHammer recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/label</xpath>
+                    <value>
+                        <label>thunder hammer</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/description</xpath>
+                    <value>
+                        <description>A thunder hammer is a melee power weapon employed by the warriors of the Legiones Astartes. They are most often carried by Space Marine officers and veterans wearing Tactical Dreadnought Armour.\n\nThe thunder hammer is a large warhammer incorporating an energy field emitter within its head which activates only when the hammer strikes its target. This allows the weapon to store a tremendous amount of energy and release it only at the moment of impact, producing a blast of energy and concussive force like the crack of thunder, from which the name of the weapon originates.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
