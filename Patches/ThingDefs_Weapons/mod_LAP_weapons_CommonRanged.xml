@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesAutocannon                                                                  -->
+<!--    + LAP_WEAP_AutoCannon REPLACE label                                                                           -->
+<!--                             WITH label autocannon (Sol Militaris pattern)                                        -->
+<!--    + LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
+<!--                                                                    li  HeavyTurrets                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesAutocannon                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_AutoCannon REPLACE label                                                                           -->
+<!--                             WITH label autocannon (Sol Militaris pattern)                                        -->
+<!--    + LAP_WEAP_AutoCannon REPLACE description                                                                     -->
+<!--                             WITH description  An autocannon is an automatic, self-loading heavy ballistic        -->
+<!--                                                weapon that fires a high velocity hail of solid shells, and is    -->
+<!--                                                used by the military forces of the Imperium of Man. It is an      -->
+<!--                                                ancient weapon, but has nevertheless remained a widely-used       -->
+<!--                                                piece of wargear throughout the Imperium's history. These         -->
+<!--                                                rapid-firing weapons can lay down a burst of fire to cover        -->
+<!--                                                advancing troops, or strafe enemy-held positions. Autocannons     -->
+<!--                                                are considered ideally suited for attacking enemy vehicles and    -->
+<!--                                                fortifications from long range.\n\nThe Sol Militaris pattern      -->
+<!--                                                autocannon was used by the Legiones Astartes during the Crusade   -->
+<!--                                                and Heresy eras.                                                  -->
+<!--    + LAP_WEAP_AutoCannon recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
+<!--                                                                    li  HeavyTurrets                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/label</xpath>
+                    <value>
+                        <label>autocannon (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/description</xpath>
+                    <value>
+                        <description>An autocannon is an automatic, self-loading heavy ballistic weapon that fires a high velocity hail of solid shells, and is used by the military forces of the Imperium of Man. It is an ancient weapon, but has nevertheless remained a widely-used piece of wargear throughout the Imperium's history. These rapid-firing weapons can lay down a burst of fire to cover advancing troops, or strafe enemy-held positions. Autocannons are considered ideally suited for attacking enemy vehicles and fortifications from long range.\n\nThe Sol Militaris pattern autocannon was used by the Legiones Astartes during the Crusade and Heresy eras.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
