@@ -30,6 +30,24 @@
 <!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerSword                                                                  -->
+<!--    + LAP_WEAP_PowerSword REPLACE label                                                                           -->
+<!--                             WITH label  power sword (Proteus pattern)                                            -->
+<!--    + LAP_WEAP_PowerSword REPLACE description                                                                     -->
+<!--                             WITH description  A power sword is a power weapon that has been shaped into a sword  -->
+<!--                                                of varying lengths and designs crafted from one of any number of  -->
+<!--                                                different materials, though usually adamantium. When its power    -->
+<!--                                                cell is activated, often by touching a control located on the     -->
+<!--                                                hilt, the blade is sheathed in a lethal corona of disruptive      -->
+<!--                                                energy. This energy field allows the blade to carve through       -->
+<!--                                                flesh, bone and most forms of armour plate alike, making a power  -->
+<!--                                                sword highly effective weapon. \n\nThe Proteus pattern power      -->
+<!--                                                sword was the most common in use by the Legiones Astartes         -->
+<!--                                                throughout the Crusade and Heresy eras.                           -->
+<!--    + LAP_WEAP_PowerSword recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Powered            -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -112,6 +130,50 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
                             <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerSword                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_PowerSword REPLACE label                                                                           -->
+<!--                             WITH label  power sword (Proteus pattern)                                            -->
+<!--    + LAP_WEAP_PowerSword REPLACE description                                                                     -->
+<!--                             WITH description  A power sword is a power weapon that has been shaped into a sword  -->
+<!--                                                of varying lengths and designs crafted from one of any number of  -->
+<!--                                                different materials, though usually adamantium. When its power    -->
+<!--                                                cell is activated, often by touching a control located on the     -->
+<!--                                                hilt, the blade is sheathed in a lethal corona of disruptive      -->
+<!--                                                energy. This energy field allows the blade to carve through       -->
+<!--                                                flesh, bone and most forms of armour plate alike, making a power  -->
+<!--                                                sword highly effective weapon.\n\nThe Proteus pattern power       -->
+<!--                                                sword was the most common in use by the Legiones Astartes         -->
+<!--                                                throughout the Crusade and Heresy eras.                           -->
+<!--    + LAP_WEAP_PowerSword recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Powered            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/label</xpath>
+                    <value>
+                        <label>power sword (Proteus pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/description</xpath>
+                    <value>
+                        <description>A power sword is a power weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though usually adamantium. When its power cell is activated, often by touching a control located on the hilt, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh, bone and most forms of armour plate alike, making a power sword highly effective weapon.\n\nThe Proteus pattern power sword was the most common in use by the Legiones Astartes throughout the Crusade and Heresy eras.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Powered</li>
                         </researchPrerequisites>
                     </value>
                 </li>
