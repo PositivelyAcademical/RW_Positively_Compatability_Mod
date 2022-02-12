@@ -84,6 +84,27 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerFist                                                                   -->
+<!--    + LAP_WEAP_PowerFist REPLACE label                                                                            -->
+<!--                            WITH label  power fist (Proteus pattern)                                              -->
+<!--    + LAP_WEAP_PowerFist REPLACE description                                                                      -->
+<!--                            WITH description  A power fist is essentially an over-sized, armoured gauntlet which  -->
+<!--                                               generates an energy field around itself, and which is capable of   -->
+<!--                                               violently disrupting any solid matter it touches. It is large and  -->
+<!--                                               slow in combat, so the bearer must be willing to risk the attacks  -->
+<!--                                               of his enemy before he can strike back. However, a power fist      -->
+<!--                                               vastly augments the user's strength, much as power armour does     -->
+<!--                                               with its mechanised servos. As such the disadvantages of its       -->
+<!--                                               unwieldy nature are often well worth the limitation.\n\nThe        -->
+<!--                                               Proteus pattern power fist was favoured by many of the Space       -->
+<!--                                               Marine Legions throughout the Crusade and Heresy eras. Usage was   -->
+<!--                                               primarily by those marines equipped in Tactical Dreadnought        -->
+<!--                                               Armour, though it was also availabe to those officers having       -->
+<!--                                               access to the Legion's armoury.                                    -->
+<!--    + LAP_WEAP_PowerFist recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Powered_Special     -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -294,6 +315,53 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPowerFist                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_PowerFist REPLACE label                                                                            -->
+<!--                            WITH label  power fist (Proteus pattern)                                              -->
+<!--    + LAP_WEAP_PowerFist REPLACE description                                                                      -->
+<!--                            WITH description  A power fist is essentially an over-sized, armoured gauntlet which  -->
+<!--                                               generates an energy field around itself, and which is capable of   -->
+<!--                                               violently disrupting any solid matter it touches. It is large and  -->
+<!--                                               slow in combat, so the bearer must be willing to risk the attacks  -->
+<!--                                               of his enemy before he can strike back. However, a power fist      -->
+<!--                                               vastly augments the user's strength, much as power armour does     -->
+<!--                                               with its mechanised servos. As such the disadvantages of its       -->
+<!--                                               unwieldy nature are often well worth the limitation.\n\nThe        -->
+<!--                                               Proteus pattern power fist was favoured by many of the Space       -->
+<!--                                               Marine Legions throughout the Crusade and Heresy eras. Usage was   -->
+<!--                                               primarily by those marines equipped in Tactical Dreadnought        -->
+<!--                                               Armour, though it was also availabe to those officers having       -->
+<!--                                               access to the Legion's armoury.                                    -->
+<!--    + LAP_WEAP_PowerFist recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Powered_Special     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/label</xpath>
+                    <value>
+                        <label>power fist (Proteus pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/description</xpath>
+                    <value>
+                        <description>A power fist is essentially an over-sized, armoured gauntlet which generates an energy field around itself, and which is capable of violently disrupting any solid matter it touches. It is large and slow in combat, so the bearer must be willing to risk the attacks of his enemy before he can strike back. However, a power fist vastly augments the user's strength, much as power armour does with its mechanised servos. As such the disadvantages of its unwieldy nature are often well worth the limitation.\n\nThe Proteus pattern power fist was favoured by many of the Space Marine Legions throughout the Crusade and Heresy eras. Usage was primarily by those marines equipped in Tactical Dreadnought Armour, though it was also availabe to those officers having access to the Legion's armoury.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
