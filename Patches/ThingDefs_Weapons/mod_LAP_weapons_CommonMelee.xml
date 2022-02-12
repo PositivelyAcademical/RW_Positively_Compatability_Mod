@@ -136,6 +136,12 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesNarthecium                                                                  -->
+<!--    + LAP_WEAP_Narthecium recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  Machining                                 -->
+<!--                                                                    li  MedicineProduction                        -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -480,6 +486,25 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
                             <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesNarthecium                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Narthecium recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  Machining                                 -->
+<!--                                                                    li  MedicineProduction                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Narthecium"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>Machining</li>
+                            <li>MedicineProduction</li>
                         </researchPrerequisites>
                     </value>
                 </li>
