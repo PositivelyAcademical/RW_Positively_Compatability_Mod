@@ -643,6 +643,7 @@
                             <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
                             <researchViewX>5</researchViewX>
                             <researchViewY>1.50</researchViewY>
+                        </ResearchProjectDef>
                     </value>
                 </li>
 
@@ -670,7 +671,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  ShieldBelt                                    -->
 <!--  ==============================================================================================================  -->
-            <li Class="PatchOperationFindMod"
+            <li Class="PatchOperationFindMod">
                 <mods>
                     <li>Vanilla Armour Expanded</li>
                 </mods>
