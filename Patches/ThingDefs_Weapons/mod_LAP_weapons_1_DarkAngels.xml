@@ -33,7 +33,7 @@
 <!--                                                                   li  LAP_Tech_Emperor                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LionSword"]/researchPrerequisite</xpath>
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LionSword"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
@@ -52,7 +52,7 @@
 <!--                                                                   li  LAP_Tech_Emperor                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/researchPrerequisite</xpath>
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
