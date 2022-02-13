@@ -4,17 +4,46 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - armour                                                                            -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                              -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                           -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD tags PrestigeCombatGear                                         -->
-<!--       + For LAP_Armour_Lion_Armor ADD tags PrestigeCombatGear                                                    -->
+<!--  + ALL_CASES  (ThingDef)  -  armour                                                                              -->
+<!--    + LAP_Armour_DarkAngels_Armor recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_DarkAngels                      -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
+<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
+<!--                                                                      li  LAP_Tech_Emperor                        -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - helmets                                                                           -->
-<!--       + For LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                             -->
-<!--       + For LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
-<!--       + For LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                   -->
+<!--  + ALL_CASES  (ThingDef)  -  helmets                                                                             -->
+<!--    + LAP_Armour_DarkAngels_Helmet recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_DarkAngels                      -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
+<!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  LAP_Tech_Emperor                       -->
 <!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  armour                                                                          -->
+<!--    + LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker researchPrerequisites ADD li JumpPack                            -->
+<!--    + LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                                  -->
+<!--    + LAP_Armour_DarkAngels_Terminator ADD tags PrestigeCombatGear                                                -->
+<!--    + LAP_Armour_Lion_Armor ADD tags PrestigeCombatGear                                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  helmets                                                                         -->
+<!--    + LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                          -->
+<!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Legiones Astartes: Primarch</li>
@@ -22,6 +51,118 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  armour                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_DarkAngels_Armor recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_DarkAngels                      -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
+<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
+<!--                                                                      li  LAP_Tech_Emperor                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>LAP_Tech_Emperor</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  helmets                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_DarkAngels_Helmet recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_DarkAngels                 -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_DarkAngels                      -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
+<!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  LAP_Tech_Emperor                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_DarkAngels</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>LAP_Tech_Emperor</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  armour                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                                     -->
+<!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker researchPrerequisites ADD li JumpPack                            -->
+<!--    + LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                                  -->
+<!--    + LAP_Armour_DarkAngels_Terminator ADD tags PrestigeCombatGear                                                -->
+<!--    + LAP_Armour_Lion_Armor ADD tags PrestigeCombatGear                                                           -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Royalty</li>
@@ -29,20 +170,19 @@
                     <match Class="PatchOperationSequence">
                         <operations>
 
-<!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - armour                                                                            -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_DarkAngels_Armor ADD tags PrestigeCombatGear                                              -->
-<!--       + For LAP_Armour_DarkAngels_JumpPack ADD tags PrestigeCombatGear                                           -->
-<!--       + For LAP_Armour_DarkAngels_Terminator ADD tags PrestigeCombatGear                                         -->
-<!--       + For LAP_Armour_Lion_Armor ADD tags PrestigeCombatGear                                                    -->
-<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Armor"]/apparel</xpath>
                                 <value>
                                     <tags>
                                         <li>PrestigeCombatGear</li>
                                     </tags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>JumpPack</li>
                                 </value>
                             </li>
 
@@ -74,11 +214,11 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - helmets                                                                           -->
+<!--  + MATCH Royalty  (ThingDef)  -  helmets                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                             -->
-<!--       + For LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                  -->
-<!--       + For LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                   -->
+<!--    + LAP_Armour_DarkAngels_Helmet ADD tags PrestigeCombatGear                                                    -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet ADD tags PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_Lion_Helmet ADD tags PrestigeCombatGear                                                          -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Helmet"]/apparel</xpath>
@@ -107,7 +247,6 @@
                                 </value>
                             </li>
 
-<!--  ==============================================================================================================  -->
                         </operations>
                     </match>
                 </li>
@@ -115,4 +254,5 @@
             </operations>
         </match>
     </Operation>
+
 </Patch>
