@@ -28,44 +28,25 @@
                     <mods>
                         <li>Legiones Astartes: Primarch</li>
                     </mods>
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + NO_Match LegionesAstartesPrimarch   (ResearchProjectDef)  -  AdeptusAstartes                                  -->
-<!--  ==============================================================================================================  -->
-<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Astartes_Placeholder                                                -->
-<!--                             label  Adeptus Astartes                                                              -->
-<!--                             description  Grants you access to STC templates used by the Adeptus Astartes.        -->
-<!--                             baseCost  8000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Base_T0                                           -->
-<!--                             techLevel  Spacer                                                                    -->
-<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  1.00                                                                  -->
-<!--                             researchViewY  4.85                                                                  -->
-<!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs</xpath>
-                                <value>
-                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                                        <defName>POS_AMA_Astartes_Placeholder</defName>
-                                        <label>Adeptus Astartes</label>
-                                        <description>Grants you access to STC templates used by the Adeptus Astartes.</description>
-                                        <baseCost>8000</baseCost>
-                                        <prerequisites>
-                                            <li>OG_Imperial_Tech_Base_T0</li>
-                                        </prerequisites>
-                                        <techLevel>Spacer</techLevel>
-                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-                                        <researchViewX>1.00</researchViewX>
-                                        <researchViewY>4.85</researchViewY>
-                                    </prerequisites>
-                                </value>
-                            </li>
-
-                        </operations>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                            <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                                <defName>POS_AMA_Astartes_Placeholder</defName>
+                                <label>Adeptus Astartes</label>
+                                <description>Grants you access to STC templates used by the Adeptus Astartes.</description>
+                                <baseCost>8000</baseCost>
+                                <prerequisites>
+                                    <li>OG_Imperial_Tech_Base_T0</li>
+                                </prerequisites>
+                                <techLevel>Spacer</techLevel>
+                                <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                                <researchViewX>1.00</researchViewX>
+                                <researchViewY>4.85</researchViewY>
+                            </prerequisites>
+                        </value>
                     </nomatch>
+                </li>
 
             </operations>
         </match>
