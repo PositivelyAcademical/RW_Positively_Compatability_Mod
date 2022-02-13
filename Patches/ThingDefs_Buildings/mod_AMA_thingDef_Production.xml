@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ImperialMachingTable                                                                -->
+<!--    + OGI_TableMachining REPLACE description                                                                      -->
+<!--                            WITH description  An Imperial work station for assembling or breaking down machinery  -->
+<!--                                               like components, armour, guns and ammuntion, or dead mechanoids.   -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  WarpTaintedMachingTable                                     -->
+<!--    + OGC_TableMachining REPLACE label                                                                            -->
+<!--                            WITH label  warp-tainted machining table                                              -->
+<!--    + OGC_TableMachining REPLACE description                                                                      -->
+<!--                            WITH description  An Imperial work station tainted by the nefarious powers of the     -->
+<!--                                               warp. Used for assembling or breaking down machinery like          -->
+<!--                                               components, armour, guns and ammuntion, or dead mechanoids.        -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  WarpTaintedMachingTable                                        -->
+<!--    + OGC_TableMachining REMOVE ./                                                                                -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ImperialMachingTable                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_TableMachining REPLACE description                                                                      -->
+<!--                            WITH description  An Imperial work station for assembling or breaking down machinery  -->
+<!--                                               like components, armour, guns and ammuntion, or dead mechanoids.   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_TableMachining"]/description</xpath>
+                    <value>
+                        <description>An Imperial work station for assembling or breaking down machinery like components, armour, guns and ammuntion, or dead mechanoids.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  WarpTaintedMachingTable                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_TableMachining REPLACE label                                                                            -->
+<!--                            WITH label  warp-tainted machining table                                              -->
+<!--    + OGC_TableMachining REPLACE description                                                                      -->
+<!--                            WITH description  An Imperial work station tainted by the nefarious powers of the     -->
+<!--                                               warp. Used for assembling or breaking down machinery like          -->
+<!--                                               components, armour, guns and ammuntion, or dead mechanoids.        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_TableMachining"]/label</xpath>
+                                <value>
+                                    <label>warp-tainted machining table</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGC_TableMachining"]/desription</xpath>
+                                <value>
+                                    <desription>An Imperial work station tainted by the nefarious powers of the warp. Used for assembling or breaking down machinery like components, armour, guns and ammuntion, or dead mechanoids.</desription>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  WarpTaintedMachingTable                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OGC_TableMachining REMOVE ./                                                                                -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_TableMachining"]</xpath>
+                    </match>
+
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
