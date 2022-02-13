@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  OfficioAssassinorum                                                       -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE description                                                               -->
+<!--                                   WITH description  Grants access to the Officio Assassinorum.                   -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  6                                                          -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3.00                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CallidusTemple                                                            -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE label                                                         -->
+<!--                                               WITH label  Callidus temple                                        -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE description                                                   -->
+<!--                                               WITH description  Grants access to the STC templates unique to     -->
+<!--                                                                  the Callidus temple of the Officio              -->
+<!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX                                                 -->
+<!--                                               WITH researchViewX  7                                              -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY                                                 -->
+<!--                                               WITH researchViewY  2.25                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CulexusTemple                                                             -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE label                                                          -->
+<!--                                              WITH label  Culexus temple                                          -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE description                                                    -->
+<!--                                              WITH description  Grants access to the STC templates unique to the  -->
+<!--                                                                 the Culexus temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX  7                                               -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY  2.75                                            -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  EversorTemple                                                             -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE label                                                          -->
+<!--                                              WITH label  Eversor temple                                          -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE description                                                    -->
+<!--                                              WITH description  Grants access to the STC templates unique to the  -->
+<!--                                                                 the Eversor temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX  7                                               -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY  3.25                                            -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  VindicareTemple                                                           -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE label                                                        -->
+<!--                                                WITH label  Vindicare temple                                      -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE description                                                  -->
+<!--                                                WITH description  Grants access to the STC templates unique to    -->
+<!--                                                                   the Vindicare temple of the Officio            -->
+<!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX                                                -->
+<!--                                                WITH researchViewX  7                                             -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY                                                -->
+<!--                                                WITH researchViewY  3.75                                          -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  OfficioAssassinorum                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE description                                                               -->
+<!--                                   WITH description  Grants access to the Officio Assassinorum.                   -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE researchViewX                                                             -->
+<!--                                   WITH researchViewX  6                                                          -->
+<!--    + OG_Assassinorum_Tech_Base REPLACE researchViewY                                                             -->
+<!--                                   WITH researchViewY  3.00                                                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/description</xpath>
+                    <value>
+                        <description>Grants access to the Officio Assassinorum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>6</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.00</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CallidusTemple                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE label                                                         -->
+<!--                                               WITH label  Callidus temple                                        -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE description                                                   -->
+<!--                                               WITH description  Grants access to the STC templates unique to     -->
+<!--                                                                  the Callidus temple of the Officio              -->
+<!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX                                                 -->
+<!--                                               WITH researchViewX  7                                              -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY                                                 -->
+<!--                                               WITH researchViewY  2.25                                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/label</xpath>
+                    <value>
+                        <label>Callidus temple</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/description</xpath>
+                    <value>
+                        <description>Grants access to the STC templates unique to the Callidus temple of the Officio Assassinorum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.25</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CulexusTemple                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE label                                                          -->
+<!--                                              WITH label  Culexus temple                                          -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE description                                                    -->
+<!--                                              WITH description  Grants access to the STC templates unique to the  -->
+<!--                                                                 the Culexus temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX  7                                               -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY  2.75                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/label</xpath>
+                    <value>
+                        <label>Culexus temple</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/description</xpath>
+                    <value>
+                        <description>Grants access to the STC templates unique to the Culexus temple of the Officio Assassinorum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.75</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  EversorTemple                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE label                                                          -->
+<!--                                              WITH label  Eversor temple                                          -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE description                                                    -->
+<!--                                              WITH description  Grants access to the STC templates unique to the  -->
+<!--                                                                 the Eversor temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX                                                  -->
+<!--                                              WITH researchViewX  7                                               -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY                                                  -->
+<!--                                              WITH researchViewY  3.25                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/label</xpath>
+                    <value>
+                        <label>Eversor temple</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/description</xpath>
+                    <value>
+                        <description>Grants access to the STC templates unique to the Eversor temple of the Officio Assassinorum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.25</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  VindicareTemple                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE label                                                        -->
+<!--                                                WITH label  Vindicare temple                                      -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE description                                                  -->
+<!--                                                WITH description  Grants access to the STC templates unique to    -->
+<!--                                                                   the Vindicare temple of the Officio            -->
+<!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX                                                -->
+<!--                                                WITH researchViewX  7                                             -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY                                                -->
+<!--                                                WITH researchViewY  3.75                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/label</xpath>
+                    <value>
+                        <label>Vindicare temple</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/description</xpath>
+                    <value>
+                        <description>Grants access to the STC templates unique to the Vindicare temple of the Officio Assassinorum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>7</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.75</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
