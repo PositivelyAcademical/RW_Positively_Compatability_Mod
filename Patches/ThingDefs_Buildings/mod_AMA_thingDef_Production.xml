@@ -60,9 +60,9 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGC_TableMachining"]/desription</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGC_TableMachining"]/description</xpath>
                     <value>
-                        <desription>An Imperial work station tainted by the nefarious powers of the warp. Used for assembling or breaking down machinery like components, armour, guns and ammuntion, or dead mechanoids.</desription>
+                        <description>An Imperial work station tainted by the nefarious powers of the warp. Used for assembling or breaking down machinery like components, armour, guns and ammuntion, or dead mechanoids.</description>
                     </value>
                 </li>
 
