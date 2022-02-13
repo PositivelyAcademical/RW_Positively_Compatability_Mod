@@ -20,6 +20,22 @@
 <!--    + OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites li  POS_AMA_Astartes_Placeholder              -->
 <!--                                                                        GasOperation                              -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesAssaultCannon                                       -->
+<!--    + OGI_Gun_AssaultCannon REPLACE label                                                                         -->
+<!--                               WITH label  assault cannon                                                         -->
+<!--    + OGI_Gun_AssaultCannon REPLACE description                                                                   -->
+<!--                               WITH description  The assault cannon is a six-barreled, self-loading rotory        -->
+<!--                                                  autocannon, effective against infantry and light vehicles at    -->
+<!--                                                  close to medium range. The assault cannon was developed from    -->
+<!--                                                  the ancient rotor cannon following the Horus Heresy. It was     -->
+<!--                                                  intended as a replacement for the handheld autocannons used by  -->
+<!--                                                  the Legiones Astartes; but is only used by Space Marines        -->
+<!--                                                  wearing tactical dreadnought armour.                            -->
+<!--    + OGI_Gun_AutoCannon REPLACE researchPrerequisites                                                            -->
+<!--                            WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                           -->
+<!--                                                       li  OG_Common_Tech_Weapons_Heavy                           -->
+<!--                                                       li  HeavyTurrets                                           -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  LegionesShotgun                                                -->
 <!--    + OGI_Gun_AstartesShotgun REPLACE label                                                                       -->
 <!--                                 WITH label  combat shotgun (Astartes assault pattern)                            -->
@@ -36,25 +52,24 @@
 <!--    + OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites li  LAP_Tech_Basic                            -->
 <!--                                                                        GasOperation                              -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesAssaultCannon                                          -->
+<!--    + OGI_Gun_AssaultCannon REMOVE ./                                                                             -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adeptus Mechanicus: Armoury</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Legiones Astartes: Primarch</li>
-                    </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Legiones Astartes: Primarch</li>
+            </mods>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
 <!--  ==============================================================================================================  -->
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesShotgun                                             -->
@@ -74,38 +89,80 @@
 <!--    + OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites li  POS_AMA_Astartes_Placeholder              -->
 <!--                                                                        GasOperation                              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/label</xpath>
-                                <value>
-                                    <label>combat shotgun (Astartes assault pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/label</xpath>
+                        <value>
+                            <label>combat shotgun (Astartes assault pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/description</xpath>
-                                <value>
-                                    <description>While not as iconic or widespread amongst the warriors of the Adeptus Astartes as the boltgun, the assault shotgun is a powerful and versatile weapon commonly used by their Scouts. These bulky, clipped Shotguns can fire in both semi- and fully automatic modes, and can use an array of specialty ammunition ranging from armour-piercing penetrator rounds to the powerful manstopper rounds. Assault shotguns are best used in urban and close-quarters combat, as well as in boarding actions aboard voidships.</description>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/description</xpath>
+                        <value>
+                            <description>While not as iconic or widespread amongst the warriors of the Adeptus Astartes as the boltgun, the assault shotgun is a powerful and versatile weapon commonly used by their Scouts. These bulky, clipped Shotguns can fire in both semi- and fully automatic modes, and can use an array of specialty ammunition ranging from armour-piercing penetrator rounds to the powerful manstopper rounds. Assault shotguns are best used in urban and close-quarters combat, as well as in boarding actions aboard voidships.</description>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>POS_AMA_Astartes_Placeholder</li>
-                                        <li>GasOperation</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>POS_AMA_Astartes_Placeholder</li>
+                                <li>GasOperation</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesAssaultCannon                                       -->
+<!--    + OGI_Gun_AssaultCannon REPLACE label                                                                         -->
+<!--                               WITH label  assault cannon                                                         -->
+<!--    + OGI_Gun_AssaultCannon REPLACE description                                                                   -->
+<!--                               WITH description  The assault cannon is a six-barreled, self-loading rotory        -->
+<!--                                                  autocannon, effective against infantry and light vehicles at    -->
+<!--                                                  close to medium range. The assault cannon was developed from    -->
+<!--                                                  the ancient rotor cannon following the Horus Heresy. It was     -->
+<!--                                                  intended as a replacement for the handheld autocannons used by  -->
+<!--                                                  the Legiones Astartes; but is only used by Space Marines        -->
+<!--                                                  wearing tactical dreadnought armour.                            -->
+<!--    + OGI_Gun_AutoCannon REPLACE researchPrerequisites                                                            -->
+<!--                            WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                           -->
+<!--                                                       li  OG_Common_Tech_Weapons_Heavy                           -->
+<!--                                                       li  HeavyTurrets                                           -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/label</xpath>
+                        <value>
+                            <label>assault cannon</label>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/description</xpath>
+                        <value>
+                            <description>The assault cannon is a six-barreled, self-loading rotory autocannon, effective against infantry and light vehicles at close to medium range. The assault cannon was developed from the ancient rotor cannon following the Horus Heresy. It was intended as a replacement for the handheld autocannons used by the Legiones Astartes; but is only used by Space Marines wearing tactical dreadnought armour.</description>
+                        </value>
+                    </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>POS_AMA_Astartes_Placeholder</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>MultibarrelWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch                                                                                -->
 <!--  ==============================================================================================================  -->
-                        </operations>
-                    </nomatch>
+                </operations>
+            </nomatch>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
+            <match Class="PatchOperationSequence">
+                <operations>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  LegionesShotgun                                                -->
@@ -125,36 +182,42 @@
 <!--    + OGI_Gun_AstartesShotgun recipeMaker ADD researchPrerequisites li  LAP_Tech_Basic                            -->
 <!--                                                                        GasOperation                              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/label</xpath>
-                                <value>
-                                    <label>combat shotgun (Astartes assault pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/label</xpath>
+                        <value>
+                            <label>combat shotgun (Astartes assault pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/description</xpath>
-                                <value>
-                                    <description>While not as iconic or widespread amongst the warriors of the Legiones Astartes as the boltgun, the assault shotgun is a powerful and versatile weapon commonly used by their Scouts. These bulky, clipped Shotguns can fire in both semi- and fully automatic modes, and can use an array of specialty ammunition ranging from armour-piercing penetrator rounds to the powerful manstopper rounds. Assault shotguns are best used in urban and close-quarters combat, as well as in boarding actions aboard voidships.</description>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/description</xpath>
+                        <value>
+                            <description>While not as iconic or widespread amongst the warriors of the Legiones Astartes as the boltgun, the assault shotgun is a powerful and versatile weapon commonly used by their Scouts. These bulky, clipped Shotguns can fire in both semi- and fully automatic modes, and can use an array of specialty ammunition ranging from armour-piercing penetrator rounds to the powerful manstopper rounds. Assault shotguns are best used in urban and close-quarters combat, as well as in boarding actions aboard voidships.</description>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>POS_AMA_Astartes_Placeholder</li>
-                                        <li>GasOperation</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>POS_AMA_Astartes_Placeholder</li>
+                                <li>GasOperation</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
-                        </operations>
-                    </match>
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesAssaultCannon                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_AssaultCannon REMOVE ./                                                                             -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]</xpath>
+                    </li>
 
-                </li>
+                </operations>
+            </match>
 
-            </operations>
         </match>
     </Operation>
 

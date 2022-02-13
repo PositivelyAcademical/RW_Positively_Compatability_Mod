@@ -13,14 +13,6 @@
 <!--                                     WITH researchPrerequisites OG_Militarum_Tech_Base_T2                         -->
 <!--                                                                OG_Common_Tech_Weapons_Special                    -->
 <!--                                                                PrecisionRifling                                  -->
-<!--       + For OGI_Gun_AutoCannon REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites POS_AMA_Astartes_Placeholder                        -->
-<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
-<!--                                                              HeavyTurrets                                        -->
-<!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites POS_AMA_Astartes_Placeholder                     -->
-<!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
-<!--                                                                 MultibarrelWeapons                               -->
 <!--       + For OGI_Gun_ArbitesShotgun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1               -->
 <!--                                                                          GasOperation                            -->
 <!--       + For OGI_Gun_Vanaheim recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                     -->
@@ -94,10 +86,6 @@
 <!--                                   WITH researchPrerequisites POS_AMA_Astartes_Placeholder                        -->
 <!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
 <!--                                                              HeavyTurrets                                        -->
-<!--       + For OGI_Gun_AssaultCannon REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites POS_AMA_Astartes_Placeholder                     -->
-<!--                                                                 OG_Common_Tech_Weapons_Heavy                     -->
-<!--                                                                 MultibarrelWeapons                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
@@ -106,17 +94,6 @@
                             <li>POS_AMA_Astartes_Placeholder</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                             <li>HeavyTurrets</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>POS_AMA_Astartes_Placeholder</li>
-                            <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>MultibarrelWeapons</li>
                         </researchPrerequisites>
                     </value>
                 </li>
