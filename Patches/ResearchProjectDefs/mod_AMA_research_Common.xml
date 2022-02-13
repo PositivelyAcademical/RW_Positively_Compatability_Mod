@@ -385,7 +385,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Common_Tech_Weapons_Laser"]/description</xpath>
                     <value>
-                        <description>Laser weapons, or las weapons as they are known in the Imperium of Man, are a family of directed energy weapons that produce beams of high-intensity amplified light to produce heat damage on a target. Laser weapons are relatively easy to produce and maintain. No solid ammunition is ever used - only power cells which can be recharged and quickly swapped for another when depleted. This makes them ideal for large troop formations.</decription>
+                        <description>Laser weapons, or las weapons as they are known in the Imperium of Man, are a family of directed energy weapons that produce beams of high-intensity amplified light to produce heat damage on a target. Laser weapons are relatively easy to produce and maintain. No solid ammunition is ever used - only power cells which can be recharged and quickly swapped for another when depleted. This makes them ideal for large troop formations.</description>
                     </value>
                 </li>
 
