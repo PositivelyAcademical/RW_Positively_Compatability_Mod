@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
 <!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
 <!--                                       WITH label  bolt weapons                                                   -->
 <!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
@@ -20,7 +20,7 @@
 <!--                                       WITH prerequisites li  Fabrication                                         -->
 <!--                                                          li  PrecisionRifling                                    -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  VolkiteWeaponry                                                           -->
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
 <!--                                            WITH label  volkite weaponry                                          -->
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
@@ -46,19 +46,52 @@
 <!--                                                              li  Astartes                                        -->
 <!--                                                              li  Chaos                                           -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialResearch                                                          -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
+<!--                                         WITH label  conversion fields                                            -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
+<!--                                         WITH description  Allows for the creation of conversion field            -->
+<!--                                                            emitters.                                             -->
+<!--    + OG_Imperial_Tech_Wargear_Shield INSERT hiddenPrerequisites li  OG_Imperial_Tech_Apparel_Armour_T3           -->
+<!--                                       AFTER prerequisites                                                        -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  0.75                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
 <!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
 <!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  Machining                                                -->
 <!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
 <!--                                  WITH researchViewY  2.80                                                        -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
+<!--                                             WITH labels  servo skulls                                            -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  2.80                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialClothing                                                          -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
 <!--                                  WITH label  Imperial clothing                                                   -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
 <!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
+<!--    + OG_Imperial_Tech_Apparel ADD hiddenPrerequisites li  OG_Imperial_Tech_Base_T0                               -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  + NO_MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                    -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  ComplexClothing                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                       -->
+<!--       + For OG_Imperial_Tech_Apparel REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites VAE_MilitaryClothing                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialFlakArmour                                                        -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label                                                            -->
 <!--                                            WITH label  Imperial flak armour                                      -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
@@ -66,7 +99,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  2                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CarapaceArmour                                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE label                                                            -->
 <!--                                            WITH label  carapace armour                                           -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE description                                                      -->
@@ -75,7 +108,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  3                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PowerArmour                                                               -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE label                                                            -->
 <!--                                            WITH label  power armour                                              -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
@@ -83,7 +116,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  4                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
 <!--                             defName  POS_AMA_Imperial_Tech_Apparel_Armour_T4                                     -->
 <!--                             label  terminator armour                                                             -->
@@ -95,16 +128,15 @@
 <!--                             researchViewX  5                                                                     -->
 <!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ResearchProjectDef)  -  ArmourResearch                                                        -->
+<!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
 <!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  CataphractArmor                               -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  ArmourResearch                                          -->
+<!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  ShieldBelt                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
 <!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  VAE_SiegebreakerArmor                         -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
-<!--                                                                                                                  -->
-<!--                                                                                                                  -->
-<!--                                                                                                                  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -250,6 +282,419 @@
                 </li>
 
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial clothing                                                   -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
+<!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/label</xpath>
+                    <value>
+                        <label>Imperial clothing</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial clothing.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label                                                            -->
+<!--                                            WITH label  Imperial flak armour                                      -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  2                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
+                    <value>
+                        <label>Imperial flak armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial flak armour.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
+<!--                                         WITH label  conversion fields                                            -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
+<!--                                         WITH description  Allows for the creation of conversion field            -->
+<!--                                                            emitters.                                             -->
+<!--    + OG_Imperial_Tech_Wargear_Shield INSERT hiddenPrerequisites li  OG_Imperial_Tech_Apparel_Armour_T3           -->
+<!--                                       AFTER prerequisites                                                        -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  0.75                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/label</xpath>
+                    <value>
+                        <label>conversion fields</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of conversion field emitters.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/prerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.75</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  Machining                                                -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.80                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
+                    <value>
+                        <label>Imperial subjects</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/prerequisites/li</xpath>
+                    <value>
+                        <li>Machining</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.80</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
+<!--                                             WITH labels  servo skulls                                            -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  2.80                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/label</xpath>
+                    <value>
+                        <label>servo skulls</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial servo skulls.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/modExtensions/li/Include</xpath>
+                    <value>
+                        <li>Militarum</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.80</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialClothing                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial clothing                                                   -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
+<!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
+<!--    + OG_Imperial_Tech_Apparel ADD hiddenPrerequisites li  OG_Imperial_Tech_Base_T0                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/label</xpath>
+                    <value>
+                        <label>Imperial clothing</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial clothing.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  ComplexClothing                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Apparel Expanded</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>ComplexClothing</li>
+                            </prerequisites>
+                        </value>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                       -->
+<!--  ==============================================================================================================  -->
+<!--       + For OG_Imperial_Tech_Apparel REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites VAE_MilitaryClothing                                  -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                                <li>VAE_MilitaryClothing</li>
+                            </prerequisites>
+                        </value>
+                    </match>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialFlakArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label                                                            -->
+<!--                                            WITH label  Imperial flak armour                                      -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  2                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
+                    <value>
+                        <label>Imperial flak armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial flak armour.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  CarapaceArmour                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE label                                                            -->
+<!--                                            WITH label  carapace armour                                           -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial carapace        -->
+<!--                                                               armour.                                            -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  3                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/label</xpath>
+                    <value>
+                        <label>carapace armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial carapace armour.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>3</researchViewX>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PowerArmour                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE label                                                            -->
+<!--                                            WITH label  power armour                                              -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
+<!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
+<!--                                            WITH researchViewX  4                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/label</xpath>
+                    <value>
+                        <label>power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial power armour.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_Tech_Apparel_Armour_T4                                     -->
+<!--                             label  terminator armour                                                             -->
+<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
+<!--                             baseCost  6000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  5                                                                     -->
+<!--                             researchViewY  1.50                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                            <defName>POS_AMA_Imperial_Tech_Apparel_Armour_T4</defName>
+                            <label>terminator armour</label>
+                            <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
+                            <baseCost>6000</baseCost>
+                            <prerequisites>
+                                <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            </prerequisites>
+                            <techLevel>Spacer</techLevel>
+                            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                            <researchViewX>5</researchViewX>
+                            <researchViewY>1.50</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  CataphractArmor                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <value>
+                            <li>CataphractArmor</li>
+                        </value>
+                    </match>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  ShieldBelt                                    -->
+<!--  ==============================================================================================================  -->
+            <li Class="PatchOperationFindMod"
+                <mods>
+                    <li>Vanilla Armour Expanded</li>
+                </mods>
+
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <value>
+                            <li>ShieldBelt</li>
+                        </value>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  VAE_SiegebreakerArmor                         -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <value>
+                            <li>VAE_SiegebreakerArmor</li>
+                        </value>
+                    </match>
+
+                </li>
 
             </operations>
         </match>

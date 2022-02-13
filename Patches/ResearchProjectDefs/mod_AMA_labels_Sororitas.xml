@@ -15,18 +15,6 @@
 
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - Militarum                                                                                      -->
-<!--  ==============================================================================================================  -->
-<!--       + For OG_Imperial_Tech_Apparel_Armour_T1 REPLACE label Flakk Armour with label Imperial Flak Armour        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
-                    <value>
-                        <label>Imperial Flak Armour</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - Sororitas                                                                                      -->
 <!--  ==============================================================================================================  -->
 <!--       + For OG_Sororitas_Tech_Base_T1 REPLACE label Adeptus Sororitas with Adeptus Sororitas I                   -->
