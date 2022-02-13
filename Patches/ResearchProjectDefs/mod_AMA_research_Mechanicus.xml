@@ -50,6 +50,9 @@
 <!--                                                       WITH description  Allows for the creation of the advanced  -->
 <!--                                                                          stub weapons used by the Adeptus        -->
 <!--                                                                          Mechanicus.                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE prerequisites                                         -->
+<!--                                                       WITH prerequisites li  OG_Mechanicus_Tech_Base_T2          -->
+<!--                                                                          li  PrecisionRifling                    -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
 <!--                                                       WITH researchViewX  4                                      -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
@@ -64,6 +67,26 @@
 <!--                                                       li  Fabrication                                            -->
 <!--    + OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY                                                            -->
 <!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  VolkiteWeaponry                                                           -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
+<!--                                            WITH label  volkite weaponry                                          -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
+<!--                                            WITH description  Volkite is an arcane term used by the Adeptus       -->
+<!--                                                               Mechanicus to refer to a class of powerful         -->
+<!--                                                               thermal ray weapons whose technology is            -->
+<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
+<!--                                                               Age of Technology or the Age of Strife. These      -->
+<!--                                                               weapons possess considerable killing power,        -->
+<!--                                                               surpassing most other armaments of their size.     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE prerequisites                                                    -->
+<!--                                            WITH prerequisites li  OG_Mechanicus_Tech_Base_T3                     -->
+<!--                                                               li  PrecisionRifling                               -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE hiddenPrerequisites                                              -->
+<!--                                            WITH hiddenPrerequisites li  OG_Common_Tech_Weapons_Laser             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Melta             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  3.65                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -229,6 +252,9 @@
 <!--                                                       WITH description  Allows for the creation of the advanced  -->
 <!--                                                                          stub weapons used by the Adeptus        -->
 <!--                                                                          Mechanicus.                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE prerequisites                                         -->
+<!--                                                       WITH prerequisites li  OG_Mechanicus_Tech_Base_T2          -->
+<!--                                                                          li  PrecisionRifling                    -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
 <!--                                                       WITH researchViewX  4                                      -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
@@ -245,6 +271,16 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/description</xpath>
                     <value>
                         <description>Allows for the creation of the advanced stub weapons used by the Adeptus Mechanicus.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Mechanicus_Tech_Base_T2</li>
+                            <li>PrecisionRifling</li>
+                        </prerequisites>
                     </value>
                 </li>
 
@@ -295,6 +331,69 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/researchViewY</xpath>
                     <value>
                         <researchViewY>3.35</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  VolkiteWeaponry                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
+<!--                                            WITH label  volkite weaponry                                          -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
+<!--                                            WITH description  Volkite is an arcane term used by the Adeptus       -->
+<!--                                                               Mechanicus to refer to a class of powerful         -->
+<!--                                                               thermal ray weapons whose technology is            -->
+<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
+<!--                                                               Age of Technology or the Age of Strife. These      -->
+<!--                                                               weapons possess considerable killing power,        -->
+<!--                                                               surpassing most other armaments of their size.     -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE prerequisites                                                    -->
+<!--                                            WITH prerequisites li  OG_Mechanicus_Tech_Base_T3                     -->
+<!--                                                               li  PrecisionRifling                               -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE hiddenPrerequisites                                              -->
+<!--                                            WITH hiddenPrerequisites li  OG_Common_Tech_Weapons_Laser             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Melta             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  3.65                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/label</xpath>
+                    <value>
+                        <label>volkite weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/description</xpath>
+                    <value>
+                        <description>Volkite is an arcane term used by the Adeptus Mechanicus to refer to a class of powerful thermal ray weapons whose technology is pre-Imperial in origin and dates back to the Dark Age of Technology or the Age of Strife. These weapons posses considerable killing power, surpassing most other armaments of their size.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Mechanicus_Tech_Base_T3</li>
+                            <li>PrecisionRifling</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/hiddenPrerequisites</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>OG_Common_Tech_Weapons_Laser</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.65</researchViewY>
                     </value>
                 </li>
 

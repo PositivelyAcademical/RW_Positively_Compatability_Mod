@@ -20,32 +20,6 @@
 <!--                                       WITH prerequisites li  Fabrication                                         -->
 <!--                                                          li  PrecisionRifling                                    -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  VolkiteWeaponry                                                           -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
-<!--                                            WITH label  volkite weaponry                                          -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
-<!--                                            WITH description  Volkite weapons are an arcane term used by the      -->
-<!--                                                               Adeptus Mechanicus to refer to a class of          -->
-<!--                                                               powerful thermal ray weapons whose technology is   -->
-<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
-<!--                                                               Age of Technology or the Age of Strife. These      -->
-<!--                                                               weapons possess considerable killing power,        -->
-<!--                                                               surpassing most other armaments of their size.     -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REMOVE prerequisites                                                     -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  0.00                                              -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite ADD_MOD_EXTENSION                                                        -->
-<!--                                                   li @Class  AdeptusMechanicus.AnyPrerequisiteResearchExtension  -->
-<!--                                                      ResearchKeyPrefix  OG_                                      -->
-<!--                                                      ResearchKey  _Tech_Base                                     -->
-<!--                                                      ResearchKeyPostfix  _T3                                     -->
-<!--                                                      Include li  Imperial                                        -->
-<!--                                                              li  Militarum                                       -->
-<!--                                                              li  Mechanicus                                      -->
-<!--                                                              li  Sororitas                                       -->
-<!--                                                              li  Astartes                                        -->
-<!--                                                              li  Chaos                                           -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
 <!--                                         WITH label  conversion fields                                            -->
@@ -185,78 +159,6 @@
                             <li>Fabrication</li>
                             <li>PrecisionRifling</li>
                         </prerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
-<!--                                            WITH label  volkite weaponry                                          -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE description                                                      -->
-<!--                                            WITH description  Volkite weapons are an arcane term used by the      -->
-<!--                                                               Adeptus Mechanicus to refer to a class of          -->
-<!--                                                               powerful thermal ray weapons whose technology is   -->
-<!--                                                               pre-Imperial in origin and dates back to the Dark  -->
-<!--                                                               Age of Technology or the Age of Strife. These      -->
-<!--                                                               weapons possess considerable killing power,        -->
-<!--                                                               surpassing most other armaments of their size.     -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REMOVE prerequisites                                                     -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  0.00                                              -->
-<!--    + OG_Mechanicus_Tech_Weapons_Volkite ADD_MOD_EXTENSION                                                        -->
-<!--                                                   li @Class  AdeptusMechanicus.AnyPrerequisiteResearchExtension  -->
-<!--                                                      ResearchKeyPrefix  OG_                                      -->
-<!--                                                      ResearchKey  _Tech_Base                                     -->
-<!--                                                      ResearchKeyPostfix  _T3                                     -->
-<!--                                                      Include li  Imperial                                        -->
-<!--                                                              li  Militarum                                       -->
-<!--                                                              li  Mechanicus                                      -->
-<!--                                                              li  Sororitas                                       -->
-<!--                                                              li  Astartes                                        -->
-<!--                                                              li  Chaos                                           -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/label</xpath>
-                    <value>
-                        <label>volkite weaponry</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/description</xpath>
-                    <value>
-                        <description>Volkite weapons are an arcane term used by the Adeptus Mechanicus to refer to a class of powerful thermal ray weapons whose technology is pre-Imperial in origin and dates back to the Dark Age of Technology or the Age of Strife. These weapons posses considerable killing power, surpassing most other armaments of their size.</description>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/prerequisites</xpath>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>0.00</researchViewY>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]</xpath>
-                    <value>
-                        <li Class="AdeptusMechanicus.AnyPrerequisiteResearchExtension">
-                            <ResearchKeyPrefix>OG_</ResearchKeyPrefix>
-                            <ResearchKey>_Tech_Base</ResearchKey>
-                            <ResearchKeyPostfix>_T3</ResearchKeyPostfix>
-                            <Include>
-                                <li>Imperial</li>
-                                <li>Militarum</li>
-                                <li>Mechanicus</li>
-                                <li>Sororitas</li>
-                                <li>Astartes</li>
-                                <li>Chaos</li>
-                            </Include>
-                        </li>
                     </value>
                 </li>
 
