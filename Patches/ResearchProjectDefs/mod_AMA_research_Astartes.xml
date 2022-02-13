@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch   (ResearchProjectDef)  -  AdeptusAstartes                                  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Astartes_Placeholder                                                -->
+<!--                             label  Adeptus Astartes                                                              -->
+<!--                             description  Grants access to STC templates used by the Adeptus Astartes.            -->
+<!--                             baseCost  8000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Base_T0                                           -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  1.00                                                                  -->
+<!--                             researchViewY  4.85                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch   (ResearchProjectDef)  -  TheHorusHeresy                                      -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Astartes_Placeholder                                                -->
+<!--                             label  the Horus Heresy                                                              -->
+<!--                             description  In the temple of the Serpent Lodge on Davin Horus Lupical, the          -->
+<!--                                           Warmaster, is corrupted by the denziens of the warp and turns traitor  -->
+<!--                                           against the Emperor.                                                   -->
+<!--                             baseCost  8000                                                                       -->
+<!--                             prerequisites li  LAP_Tech_SOH                                                       -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  6.00                                                                  -->
+<!--                             researchViewY  4.85                                                                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Legiones Astartes: Primarch</li>
+            </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch   (ResearchProjectDef)  -  AdeptusAstartes                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Astartes_Placeholder                                                -->
+<!--                             label  Adeptus Astartes                                                              -->
+<!--                             description  Grants access to STC templates used by the Adeptus Astartes.            -->
+<!--                             baseCost  8000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Base_T0                                           -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  1.00                                                                  -->
+<!--                             researchViewY  4.85                                                                  -->
+<!--  ==============================================================================================================  -->
+            <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                        <defName>POS_AMA_Astartes_Placeholder</defName>
+                        <label>Adeptus Astartes</label>
+                        <description>Grants access to STC templates used by the Adeptus Astartes.</description>
+                        <baseCost>8000</baseCost>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                        </prerequisites>
+                        <techLevel>Spacer</techLevel>
+                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                        <researchViewX>1.00</researchViewX>
+                        <researchViewY>4.85</researchViewY>
+                    </ResearchProjectDef>
+                </value>
+            </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch   (ResearchProjectDef)  -  TheHorusHeresy                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Astartes_Placeholder                                                -->
+<!--                             label  the Horus Heresy                                                              -->
+<!--                             description  In the temple of the Serpent Lodge on Davin Horus Lupical, the          -->
+<!--                                           Warmaster, is corrupted by the denziens of the warp and turns traitor  -->
+<!--                                           against the Emperor.                                                   -->
+<!--                             baseCost  8000                                                                       -->
+<!--                             prerequisites li  LAP_Tech_SOH                                                       -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  6.00                                                                  -->
+<!--                             researchViewY  4.85                                                                  -->
+<!--  ==============================================================================================================  -->
+            <match Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                        <defName>POS_AMA_Astartes_Placeholder</defName>
+                        <label>the Horus Heresy</label>
+                        <description>In the temple of the Serpent Lodge on Davin Horus Lupical, the Warmaster, is corrupted by the denziens of the warp and turns traitor against the Emperor.</description>
+                        <baseCost>8000</baseCost>
+                        <prerequisites>
+                            <li>LAP_Tech_SOH</li>
+                        </prerequisites>
+                        <techLevel>Spacer</techLevel>
+                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                        <researchViewX>6.00</researchViewX>
+                        <researchViewY>4.85</researchViewY>
+                    </ResearchProjectDef>
+                </value>
+            </match>
+
+        </match>
+    </Operation>
+
+</Patch>
