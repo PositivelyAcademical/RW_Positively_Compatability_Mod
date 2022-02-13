@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  MechanicumInitiation                                                      -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE label                                                                    -->
+<!--                                    WITH label  Mechanicum initiation                                             -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to basic the basic technology of the Adeptus  -->
+<!--                                                       Mechanicus.\n\n\Requires a member of the Adeptus           -->
+<!--                                                       Mechnaicus if Magos Xenobiologis is loaded.                -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  RadiumWeapons                                                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE label                                                             -->
+<!--                                           WITH label  radium weapons                                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE description                                                       -->
+<!--                                           WITH description  Allows for the creation of radium weapons.           -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium ADD hiddenPrerequisites li  OG_Common_Tech_Weapons_Special                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX                                                     -->
+<!--                                           WITH researchViewX  2                                                  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY                                                     -->
+<!--                                           WITH researchViewY  3.10                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PhosphorWeaponry                                                          -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE label                                                           -->
+<!--                                             WITH label  phosphor weaponry                                        -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of the phosphor-based      -->
+<!--                                                                weapons of the Adeptus Mechanicus.                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX                                                   -->
+<!--                                             WITH researchViewX  2                                                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  3.65                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  TechAdeptsOfMars                                                          -->
+<!--    + OG_Mechanicus_Tech_Base_T2 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to improved technologies of the Adeptus       -->
+<!--                                                       Mechanicus.                                                -->
+<!--    + OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  AdvancedBallistics                                                        -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE label                                                 -->
+<!--                                                       WITH label  advanced ballistics                            -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE description                                           -->
+<!--                                                       WITH description  Allows for the creation of the advanced  -->
+<!--                                                                          stub weapons used by the Adeptus        -->
+<!--                                                                          Mechanicus.                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
+<!--                                                       WITH researchViewX  4                                      -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
+<!--                                                       WITH researchViewY  3.65                                   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ScionsOfMars                                                              -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to advanced technologies of the Adeptus       -->
+<!--                                                       Mechanicus.                                                -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE prerequisites                                                            -->
+<!--                                    WITH prerequisites li  OG_Mechanicus_Tech_Base_T2                             -->
+<!--                                                       li  Fabrication                                            -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  MechanicumInitiation                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE label                                                                    -->
+<!--                                    WITH label  Mechanicum initiation                                             -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to basic the basic technology of the Adeptus  -->
+<!--                                                       Mechanicus.\n\n\Requires a member of the Adeptus           -->
+<!--                                                       Mechnaicus if Magos Xenobiologis is loaded.                -->
+<!--    + OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/label</xpath>
+                    <value>
+                        <label>Mechanicum initiation</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/description</xpath>
+                    <value>
+                        <description>Allows access to basic the basic technology of the Adeptus Mechnaicus.\n\nRequires a member of the Adeptus Mechnaicus if Magos Xenobiologis is loaded.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.35</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  RadiumWeapons                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE label                                                             -->
+<!--                                           WITH label  radium weapons                                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE description                                                       -->
+<!--                                           WITH description  Allows for the creation of radium weapons.           -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium ADD hiddenPrerequisites li  OG_Common_Tech_Weapons_Special                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX                                                     -->
+<!--                                           WITH researchViewX  2                                                  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY                                                     -->
+<!--                                           WITH researchViewY  3.10                                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/label</xpath>
+                    <value>
+                        <label>radium weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of radium weapons.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]</xpath>
+                    <value>
+                        <hiddenPrerequisites>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.10</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  PhosphorWeaponry                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE label                                                           -->
+<!--                                             WITH label  phosphor weaponry                                        -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of the phosphor-based      -->
+<!--                                                                weapons of the Adeptus Mechanicus.                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX                                                   -->
+<!--                                             WITH researchViewX  2                                                -->
+<!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  3.65                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/label</xpath>
+                    <value>
+                        <label>phosphor weaponry</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of the phosphor-based weapons of the Adeptus Mechanicus.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.65</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  TechAdeptsOfMars                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Base_T2 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to improved technologies of the Adeptus       -->
+<!--                                                       Mechanicus.                                                -->
+<!--    + OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T2"]/description</xpath>
+                    <value>
+                        <description>Allows access to improved technologies of the Adeptus Mechanicus.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T2"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.35</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  AdvancedBallistics                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE label                                                 -->
+<!--                                                       WITH label  advanced ballistics                            -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE description                                           -->
+<!--                                                       WITH description  Allows for the creation of the advanced  -->
+<!--                                                                          stub weapons used by the Adeptus        -->
+<!--                                                                          Mechanicus.                             -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
+<!--                                                       WITH researchViewX  4                                      -->
+<!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
+<!--                                                       WITH researchViewY  3.65                                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/label</xpath>
+                    <value>
+                        <label>advanced ballistics</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of the advanced stub weapons used by the Adeptus Mechanicus.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>4</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.65</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ScionsOfMars                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE description                                                              -->
+<!--                                    WITH description  Allows access to advanced technologies of the Adeptus       -->
+<!--                                                       Mechanicus.                                                -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE prerequisites                                                            -->
+<!--                                    WITH prerequisites li  OG_Mechanicus_Tech_Base_T2                             -->
+<!--                                                       li  Fabrication                                            -->
+<!--    + OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY                                                            -->
+<!--                                    WITH researchViewY  3.35                                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/description</xpath>
+                    <value>
+                        <description>Allows access to advanced technologies of the Adeptus Mechanicus.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Mechanicus_Tech_Base_T2</li>
+                            <li>Fabrication</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3.35</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
