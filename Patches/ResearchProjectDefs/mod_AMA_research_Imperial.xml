@@ -173,7 +173,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/description</xpath>
                     <value>
-                        <description>A brutally effieicnt weapon, the bolter fires mass-reactive bolts at its targets, each one a self-propelled missile which explodes with devastating effectiveness after penetrating its target. The fear and awe that bolter fire creates makes it a perfect weapon for shock troops, the hammering thunder of the guns mixing terrifyingly with the dull, wet explosions as flesh is blown apart.</prerequisites>
+                        <description>A brutally effieicnt weapon, the bolter fires mass-reactive bolts at its targets, each one a self-propelled missile which explodes with devastating effectiveness after penetrating its target. The fear and awe that bolter fire creates makes it a perfect weapon for shock troops, the hammering thunder of the guns mixing terrifyingly with the dull, wet explosions as flesh is blown apart.</description>
                     </value>
                 </li>
 
@@ -246,7 +246,7 @@
                         <li Class="AdeptusMechanicus.AnyPrerequisiteResearchExtension">
                             <ResearchKeyPrefix>OG_</ResearchKeyPrefix>
                             <ResearchKey>_Tech_Base</ResearchKey>
-                            <ResearchKeyPostfix>_T3</_Tech_Base>
+                            <ResearchKeyPostfix>_T3</ResearchKeyPostfix>
                             <Include>
                                 <li>Imperial</li>
                                 <li>Militarum</li>
