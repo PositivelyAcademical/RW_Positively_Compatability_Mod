@@ -4,13 +4,29 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - armour                                                                            -->
-<!--       + For LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                 -->
-<!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                              -->
+<!--  + ALL_CASES  (ThingDef)  -  armour                                                                              -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - helmets                                                                           -->
-<!--       + For LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                      -->
-<!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                             -->
+<!--  + ALL_CASES  (ThingDef)  -  helmets                                                                             -->
+<!--    + LAP_Armour_Emperors_Children_Helmet recipeMaker REPLACE researchPrerequisite                                -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  armour                                                                          -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  helmets                                                                         -->
+<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -19,6 +35,72 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  armour                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperors_Children</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperors_Children</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  helmets                                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Emperors_Children_Helmet recipeMaker REPLACE researchPrerequisite                                -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperors_Children</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperors_Children</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  armour                                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Royalty</li>
@@ -26,12 +108,6 @@
                     <match Class="PatchOperationSequence">
                         <operations>
 
-<!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - armour                                                                            -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                 -->
-<!--       + For LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                              -->
-<!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Power_Armor"]/apparel</xpath>
                                 <value>
@@ -51,10 +127,10 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Royalty - helmets                                                                           -->
+<!--  + MATCH Royalty  (ThingDef)  -  helmets                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                      -->
-<!--       + For LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                             -->
+<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Helmet"]/apparel</xpath>
@@ -78,8 +154,8 @@
                     </match>
                 </li>
 
-<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
+
 </Patch>
