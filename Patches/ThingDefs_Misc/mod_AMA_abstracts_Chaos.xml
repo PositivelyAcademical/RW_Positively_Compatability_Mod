@@ -4,13 +4,29 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  -  ChaosMeleeWeapons                                                                               -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosArmour                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  -  ChaosRangedWeapons                                                                              -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosMeleeWeapons                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosRangedWeapons                                                                  -->
 <!--    + @OG_Chaos_Gun_Makeable recipeMaker REMOVE researchPrerequisites                                             -->
 <!--    + @OG_Chaos_Gun recipeMaker REMOVE researchPrerequisites                                                      -->
 <!--    + @OG_Chaos_Gun_Special recipeMaker REMOVE researchPrerequisites                                              -->
 <!--    + @OG_Chaos_Gun_Heavy recipeMaker REMOVE researchPrerequisites                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosWargear                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosArmour                                                    -->
+<!--    + @OG_Chaos_Apparel_Armor_Makeable recipeMaker REMOVE recipeUsers                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosMeleeWeapons                                              -->
+<!--    + @OG_Chaos_MeleeWeapon_Makeable recipeMaker REMOVE recipeUsers                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosRangedWeapons                                             -->
+<!--    + @OG_Chaos_Gun_Makeable recipeMaker REMOVE recipeUsers                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosWargear                                                   -->
+<!--    + @OG_Chaos_Apparel_Wargear_Makeable recipeMaker REMOVE recipeUsers                                           -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -21,12 +37,12 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  -  ChaosMeleeWeapons                                                                               -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosMeleeWeapons                                                                   -->
 <!--  ==============================================================================================================  -->
 <!--  ==============================================================================================================  -->
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  -  ChaosRangedWeapons                                                                              -->
+<!--  + ALL_CASES  (ThingDef)  -  ChaosRangedWeapons                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--    + @OG_Chaos_Gun_Makeable recipeMaker REMOVE researchPrerequisites                                             -->
 <!--    + @OG_Chaos_Gun recipeMaker REMOVE researchPrerequisites                                                      -->
@@ -47,6 +63,53 @@
 
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[@Name="OG_Chaos_Gun_Heavy"]/recipeMaker/researchPrerequisites</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosArmour                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + @OG_Chaos_Apparel_Armor_Makeable recipeMaker REMOVE recipeUsers                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Legiones Astartes: Primarch</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[@Name="OG_Chaos_Apparel_Armor_Makeable"]/recipeMaker/recipeUsers</xpath>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosMeleeWeapons                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + @OG_Chaos_MeleeWeapon_Makeable recipeMaker REMOVE recipeUsers                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[@Name="OG_Chaos_MeleeWeapon_Makeable"]/recipeMaker/recipeUsers</xpath>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosRangedWeapons                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + @OG_Chaos_Gun_Makeable recipeMaker REMOVE recipeUsers                                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[@Name="OG_Chaos_Gun_Makeable"]/recipeMaker/recipeUsers</xpath>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosWargear                                                   -->
+<!--  ==============================================================================================================  -->
+<!--    + @OG_Chaos_Apparel_Wargear_Makeable recipeMaker REMOVE recipeUsers                                           -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[@Name="OG_Chaos_Apparel_Wargear_Makeable"]/recipeMaker/recipeUsers</xpath>
+                            </li>
+
+                        </operations>
+                    </match>
                 </li>
 
             </operations>
