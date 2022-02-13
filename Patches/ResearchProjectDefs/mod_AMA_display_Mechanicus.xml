@@ -14,8 +14,6 @@
 <!--       + For OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX 3.75 with 4                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY 2.25 with 3.65                   -->
 <!--       + For OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY 2.50 with 3.35                                      -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewX 3.75 with 6                                 -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY 2.25 with 3.65                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -36,8 +34,6 @@
 <!--       + For OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX 3.75 with 2                      -->
 <!--       + For OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY 2.25 with 3.65                   -->
 <!--       + For OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY 2.50 with 3.35                                      -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewX 3.75 with 4                                 -->
-<!--       + For OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY 2.25 with 3.65                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/researchViewY</xpath>
@@ -99,20 +95,6 @@
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/researchViewY</xpath>
                     <value>
                         <researchViewY>3.35</researchViewY>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>6</researchViewX>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>3.65</researchViewY>
                     </value>
                 </li>
 
