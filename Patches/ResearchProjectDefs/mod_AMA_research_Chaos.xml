@@ -56,26 +56,26 @@
             <nomatch Class="PatchOperationSequence">
                 <operations>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/label</xpath>
-                    <value>
-                        <label>heretical inclinations</label>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/label</xpath>
+                        <value>
+                            <label>heretical inclinations</label>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of basic warp-tainted technologies.</description>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/description</xpath>
+                        <value>
+                            <description>Allows for the creation of basic warp-tainted technologies.</description>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>5.60</researchViewY>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]/researchViewY</xpath>
+                        <value>
+                            <researchViewY>5.60</researchViewY>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ResearchProjectDefs)  -  HereticalTechnology                              -->
@@ -87,26 +87,26 @@
 <!--    + OG_Chaos_Tech_Base_T2 REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  5.60                                                           -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/label</xpath>
-                    <value>
-                        <label>heretical technology</label>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/label</xpath>
+                        <value>
+                            <label>heretical technology</label>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of more warp-tainted technologies.</description>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/description</xpath>
+                        <value>
+                            <description>Allows for the creation of more warp-tainted technologies.</description>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>5.60</researchViewY>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]/researchViewY</xpath>
+                        <value>
+                            <researchViewY>5.60</researchViewY>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ResearchProjectDefs)  -  GrandHeresy                                      -->
@@ -118,29 +118,29 @@
 <!--    + OG_Chaos_Tech_Base_T3 REPLACE researchViewY                                                                 -->
 <!--                               WITH researchViewY  5.60                                                           -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/label</xpath>
-                    <value>
-                        <label>grand heresy</label>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/label</xpath>
+                        <value>
+                            <label>grand heresy</label>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of advanced warp-spawned technologies.</description>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/description</xpath>
+                        <value>
+                            <description>Allows for the creation of advanced warp-spawned technologies.</description>
+                        </value>
+                    </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>5.60</researchViewY>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]/researchViewY</xpath>
+                        <value>
+                            <researchViewY>5.60</researchViewY>
+                        </value>
+                    </li>
 
-            </operations>
-        </nomatch>
+                </operations>
+            </nomatch>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDefs)  -  Removals                                            -->
@@ -149,24 +149,25 @@
 <!--    + OG_Chaos_Tech_Base_T2 REMOVE ./                                                                             -->
 <!--    + OG_Chaos_Tech_Base_T3 REMOVE ./                                                                             -->
 <!--  ==============================================================================================================  -->
-        <match Class="PatchOperationSequence">
-            <operations>
+            <match Class="PatchOperationSequence">
+                <operations>
 
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]</xpath>
-                </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T1"]</xpath>
+                    </li>
 
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]</xpath>
-                </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T2"]</xpath>
+                    </li>
 
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]</xpath>
-                </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ResearchProjectDef[defName="OG_Chaos_Tech_Base_T3"]</xpath>
+                    </li>
 
-            </operations>
+                </operations>
+            </match>
+
         </match>
-
     </Operation>
 
 </Patch>
