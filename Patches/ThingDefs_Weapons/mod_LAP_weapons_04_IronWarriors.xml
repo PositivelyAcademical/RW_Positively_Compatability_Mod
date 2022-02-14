@@ -15,6 +15,7 @@
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
 <!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
 <!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  MultibarrelWeapons                  -->
 <!--                                                                          li  LAP_Tech_Emperor                    -->
 <!--  ==============================================================================================================  -->
 
@@ -51,6 +52,7 @@
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
 <!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
 <!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  MultibarrelWeapons                  -->
 <!--                                                                          li  LAP_Tech_Emperor                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -60,6 +62,7 @@
                             <li>LAP_Tech_Iron_Warriors</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                             <li>HeavyTurrets</li>
+                            <li>MultibarrelWeapons</li>
                             <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
