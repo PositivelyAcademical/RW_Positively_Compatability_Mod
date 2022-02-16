@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPowerArmour                                                             -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE label                                                                 -->
+<!--                                       WITH label  Iron Warriors power armour                                     -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE description                                                           -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the IV Legion, the Iron       -->
+<!--                              Warriors. Power armour worn by the Legiones Astartes is a sophisticated defensive   -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                               -->
+<!--    + LAP_Armour_IronWarriors_Armor recipeMaker REPLACE researchPrerequisite                                      -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsHelmet                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE label                                                                 -->
+<!--                                       WITH label  Iron Warriors helmet                                           -->
+<!--    + LAP_Armour_IronWarriors_Helmet REPLACE description                                                          -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the IV Legion, the     -->
+<!--                              Iron Warriors. Completing a set of power armour, the helmet seals the wearer in a   -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                 -->
+<!--                                                            WITH ToxicSensitivity  -0.35                          -->
+<!--    + LAP_Armour_IronWarriors_Helmet recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsAssaultArmour                                                           -->
+<!--    + LAP_Armour_IronWarriors_JumpPack REPLACE label                                                              -->
+<!--                                          WITH label  Iron Warriors assault armour                                -->
+<!--    + LAP_Armour_IronWarriors_JumpPack REPLACE description                                                        -->
+<!--          WITH description  Assault pattern Astartes power armour in the livery of the IV Legion, the Iron        -->
+<!--                              Warriors. This armour incorporates a light and effective jump pack, allowing the    -->
+<!--                              wearer to quickly engage enemies across the battlefield.\n\n                        -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_JumpPack equippedStatOffsets ADD ToxicSensitivity  -0.65                            -->
+<!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryArmour                                                        -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor REPLACE label                                                      -->
+<!--                                       WITH label  Iron Warriors Apothecary armour                                -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor REPLACE description                                                -->
+<!--          WITH description  Astartes Apothecarion pattern power armour in the livery of an Apothecary of the IV   -->
+<!--                              Legion, the Iron Warriors. Apothecaries carry a Legion's most sacred trusts: the    -->
+<!--                              care of its fallen and the promise of its future. They serve as battlefield         -->
+<!--                              healers in addition to being tasked with the recovery of the Legion's gene-seed     -->
+<!--                              from the fallen, and as such, the power armour worn by Legion Apothecaries is       -->
+<!--                              adapted for their role.\n\n                                                         -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors Apothecary helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes Apothecarion pattern power armour helmet in the livery of the IV Legion,     -->
+<!--                              the Iron Warriors. Completing an Apothecary's power armour, the helmet seals the    -->
+<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--                              atmospheres. It's sensory systems are enhanced to assist the Apothecary's function  -->
+<!--                              of battlefield medicine and gene-seed recovery.\n\n                                 -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineArmour                                                        -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE label                                                      -->
+<!--                                                  WITH label  Iron Warriors Techmarine armour                     -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE description                                                -->
+<!--          WITH description  Astartes Armorum pattern power armour in the livery of a Techmarine of the IV         -->
+<!--                              Legion, the Iron Warriors. Techmarines are the masters of the Legion's Armorum,     -->
+<!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
+<!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
+<!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
+<!--                              enhancements necessary to complete their function.                                  -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                        -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors Techmarine helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the IV  -->
+<!--                              Legion, the Iron Warriors. Completing a Techmarine's power armour, the helmet       -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
+<!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
+<!--                              with Servo-automata.                                                                -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorArmour                                                        -->
+<!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
+<!--                                            WITH label Iron Warriors terminator armour                            -->
+<!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
+<!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
+<!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                          -->
+<!--    + LAP_Armour_IronWarriors_Terminator recipeMaker REPLACE researchPrerequisite                                 -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                        -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors terminator helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron  -->
+<!--                              Warriors. Completing a set of terminator armour, this helmet fully encloses the     -->
+<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
+<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.20               -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchArmour                                                          -->
+<!--    + LAP_Armour_Perturabo_Armor REPLACE label                                                                    -->
+<!--                                    WITH label  the Logos                                                         -->
+<!--    + LAP_Armour_Perturabo_Armor REPLACE description                                                              -->
+<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of Terminator armour  -->
+<!--                              of his own design known as the Logos.\n\n                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Perturabo_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
+<!--    + LAP_Armour_Perturabo_Armor recipeMaker REPLACE researchPrerequisite                                         -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                          -->
+<!--    + LAP_Armour_Perturabo_Head REPLACE label                                                                     -->
+<!--                                   WITH label  the Logos suppport system                                          -->
+<!--    + LAP_Armour_Perturabo_Head REPLACE description                                                               -->
+<!--          WITH description  The Logos contained sophisticated command and control systems which linked Perturabo  -->
+<!--                              cybernetically to every facet of the forces under his disposal and a shifting       -->
+<!--                              array of weapons and secondary systems created by his own vast intellect.\n\n       -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets REPLACE ToxicSensitivity                                      -->
+<!--                                                       WITH ToxicSensitivity  -0.20                               -->
+<!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerArmour                                                         -->
+<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags  PrestigeCombatGear                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerHelmet                                                         -->
+<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsAssaultArmour                                                       -->
+<!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                         -->
+<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags  PrestigeCombatGear                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryArmour                                                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineArmour                                                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorArmour                                                    -->
+<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                    -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchArmour                                                      -->
+<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags  PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                      -->
+<!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
+<!--                                                                                   WITH li  GlitterworldAutopsy   ---
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisite REPLACE li[3]                    -->
+<!--                                                                                    WITH li  GlitterworldAutopsy  -->
+<!--  ==============================================================================================================  -->
+Harvest Organs Post Mortem
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPowerArmour                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE label                                                                 -->
+<!--                                       WITH label  Iron Warriors power armour                                     -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE description                                                           -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the IV Legion, the Iron       -->
+<!--                              Warriors. Power armour worn by the Legiones Astartes is a sophisticated defensive   -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                               -->
+<!--    + LAP_Armour_IronWarriors_Armor recipeMaker REPLACE researchPrerequisite                                      -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour in the livery of the IV Legion, the Iron Warriors. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsHelmet                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Armor REPLACE label                                                                 -->
+<!--                                       WITH label  Iron Warriors helmet                                           -->
+<!--    + LAP_Armour_IronWarriors_Helmet REPLACE description                                                          -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the IV Legion, the     -->
+<!--                              Iron Warriors. Completing a set of power armour, the helmet seals the wearer in a   -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                 -->
+<!--                                                            WITH ToxicSensitivity  -0.35                          -->
+<!--    + LAP_Armour_IronWarriors_Helmet recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour helmet in the livery of the IV Legion, the Iron Warriors. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsAssaultArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_JumpPack REPLACE label                                                              -->
+<!--                                          WITH label  Iron Warriors assault armour                                -->
+<!--    + LAP_Armour_IronWarriors_JumpPack REPLACE description                                                        -->
+<!--          WITH description  Assault pattern Astartes power armour in the livery of the IV Legion, the Iron        -->
+<!--                              Warriors. This armour incorporates a light and effective jump pack, allowing the    -->
+<!--                              wearer to quickly engage enemies across the battlefield.\n\n                        -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_JumpPack equippedStatOffsets ADD ToxicSensitivity  -0.65                            -->
+<!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors assault armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/description</xpath>
+                    <value>
+                        <description>Assault pattern Astartes power armour in the livery of the IV Legion, the Iron Warriors. This armour incorporates a light and effective jump pack, allowing the wearer to quickly engage enemies across the battlefield.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor REPLACE label                                                      -->
+<!--                                       WITH label  Iron Warriors Apothecary armour                                -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor REPLACE description                                                -->
+<!--          WITH description  Astartes Apothecarion pattern power armour in the livery of an Apothecary of the IV   -->
+<!--                              Legion, the Iron Warriors. Apothecaries carry a Legion's most sacred trusts: the    -->
+<!--                              care of its fallen and the promise of its future. They serve as battlefield         -->
+<!--                              healers in addition to being tasked with the recovery of the Legion's gene-seed     -->
+<!--                              from the fallen, and as such, the power armour worn by Legion Apothecaries is       -->
+<!--                              adapted for their role.\n\n                                                         -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors Apothecary armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/description</xpath>
+                    <value>
+                        <description>Astartes Apothecarion pattern power armour in the livery of an Apothecary of the IV Legion, the Iron Warriors. Apothecaries carry a Legion's most sacred trusts: the care of its fallen and the promise of its future. They serve as battlefield healers in addition to being tasked with the recovery of the Legion's gene-seed from the fallen, and as such, the power armour worn by Legion Apothecaries is adapted for their role.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>MedicineProduction</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors Apothecary helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes Apothecarion pattern power armour helmet in the livery of the IV Legion,     -->
+<!--                              the Iron Warriors. Completing an Apothecary's power armour, the helmet seals the    -->
+<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--                              atmospheres. It's sensory systems are enhanced to assist the Apothecary's function  -->
+<!--                              of battlefield medicine and gene-seed recovery.\n\n                                 -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors Apothecary helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes Apothecarion pattern power armour helmet in the livery of the IV Legion, the Iron Warriors. Completing an Apothecary's power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It's sensory systems are enhanced to assist the Apothecary's function of battlefield medicine and gene-seed recovery.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>MedicineProduction</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE label                                                      -->
+<!--                                                  WITH label  Iron Warriors Techmarine armour                     -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE description                                                -->
+<!--          WITH description  Astartes Armorum pattern power armour in the livery of a Techmarine of the IV         -->
+<!--                              Legion, the Iron Warriors. Techmarines are the masters of the Legion's Armorum,     -->
+<!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
+<!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
+<!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
+<!--                              enhancements necessary to complete their function.                                  -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors Techmarine armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/description</xpath>
+                    <value>
+                        <description>Astartes Armorum pattern power armour in the livery of a Techmarine of the IV Legion, the Iron Warriors. Techmarines are the masters of the Legion's Armorum, holding dual allegiances to both their legion and the Machine Cult of Mars. Their role on the battlefield is to operate and repair the most specialised and complex weaponry of the Legion, and their armour is modified to accommodate the cybernetic enhancements necessary to complete their function.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors Techmarine helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the IV  -->
+<!--                              Legion, the Iron Warriors. Completing a Techmarine's power armour, the helmet       -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
+<!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
+<!--                              with Servo-automata.                                                                -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the IV Legion, the Iron Warriors. Completing a Techmarine's power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It's sensory systems are enhanced for combat and to better interface with Servo-automata.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
+<!--                                            WITH label Iron Warriors terminator armour                            -->
+<!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
+<!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
+<!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                          -->
+<!--    + LAP_Armour_IronWarriors_Terminator recipeMaker REPLACE researchPrerequisite                                 -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors terminator armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/description</xpath>
+                    <value>
+                        <description>Astates tactical dreadnought Armour in the livery of the IV Legion, the Iron Warriors. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense mass, causing a reduction in manoeuvrability and speed.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE label                                                     -->
+<!--                                                   WITH label  Iron Warriors terminator helmet                    -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE description                                               -->
+<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron  -->
+<!--                              Warriors. Completing a set of terminator armour, this helmet fully encloses the     -->
+<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
+<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
+<!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
+<!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
+<!--                              Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes     -->
+<!--                              throughout the Great Crusade.                                                       -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
+<!--                                                                       WITH ToxicSensitivity  -0.20               -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/label</xpath>
+                    <value>
+                        <label>Iron Warriors terminator helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron Warriors. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchArmour                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Perturabo_Armor REPLACE label                                                                    -->
+<!--                                    WITH label  the Logos                                                         -->
+<!--    + LAP_Armour_Perturabo_Armor REPLACE description                                                              -->
+<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of Terminator armour  -->
+<!--                              of his own design known as the Logos.\n\n                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Perturabo_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
+<!--    + LAP_Armour_Perturabo_Armor recipeMaker REPLACE researchPrerequisite                                         -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/label</xpath>
+                    <value>
+                        <label>the Logos</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/description</xpath>
+                    <value>
+                        <description>Perterabo's panoply of war, a unique and highly customised suit of Terminator armour of his own design known as the Logos.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                            <li>LAP_Tech_Emperor</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Perturabo_Head REPLACE label                                                                     -->
+<!--                                   WITH label  the Logos suppport system                                          -->
+<!--    + LAP_Armour_Perturabo_Head REPLACE description                                                               -->
+<!--          WITH description  The Logos contained sophisticated command and control systems which linked Perturabo  -->
+<!--                              cybernetically to every facet of the forces under his disposal and a shifting       -->
+<!--                              array of weapons and secondary systems created by his own vast intellect.\n\n       -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets REPLACE ToxicSensitivity                                      -->
+<!--                                                       WITH ToxicSensitivity  -0.20                               -->
+<!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
+<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/label</xpath>
+                    <value>
+                        <label>the Logos suppport system</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/description</xpath>
+                    <value>
+                        <description>The Logos contained sophisticated command and control systems which linked Perturabo cybernetically to every facet of the forces under his disposal and a shifting array of weapons and secondary systems created by his own vast intellect.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                            <li>LAP_Tech_Emperor</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerArmour                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags  PrestigeCombatGear                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerHelmet                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsAssaultArmour                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                         -->
+<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags  PrestigeCombatGear                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>JumpPack</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryArmour                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineArmour                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorArmour                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchArmour                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags  PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
+<!--                                                                                   WITH li  GlitterworldAutopsy   ---
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Harvest Organs Post Mortem</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite/li[3]</xpath>
+                                <value>
+                                    <li>GlitterworldAutopsy</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisite REPLACE li[3]                    -->
+<!--                                                                                    WITH li  GlitterworldAutopsy  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite/li[3]</xpath>
+                                <value>
+                                    <li>GlitterworldAutopsy</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+</Patch>
