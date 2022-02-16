@@ -44,11 +44,11 @@
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantsArmour                                                     -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                      -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE label                                                   -->
-<!--                                                     WITH label  Emperor's Children sergeants' armour             -->
+<!--                                                     WITH label  Emperor's Children Sergeant armour               -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE description                                             -->
-<!--          WITH description  Astartes officer pattern power armour in the livery of a sergeant of the III Legion,  -->
+<!--          WITH description  Astartes officer pattern power armour in the livery of a Sergeant of the III Legion,  -->
 <!--                              the Emperor's Children. Power armour worn by the Legiones Astartes is a             -->
 <!--                              sophisticated defensive system, combining huge resistance to physical damage along  -->
 <!--                              with integrated electro-motivated fibre bundles which augment the strength of the   -->
@@ -64,11 +64,11 @@
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantsHelmet                                                     -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children sergeants' helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeants' helmet            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
-<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a sergeant of tbe III   -->
+<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
 <!--                              the wearer in a closed environment allowing for combat in the most extreme          -->
 <!--                              atmospheres. It also incorporates advanced targeting and sensory systems.\n\n       -->
@@ -90,10 +90,10 @@
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenHelmet                                                          -->
 <!--    + LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                             -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantsArmour                                                 -->
+<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantsHelmet                                                 -->
+<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
 
@@ -211,12 +211,12 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantsArmour                                                     -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE label                                                   -->
-<!--                                                     WITH label  Emperor's Children sergeants' armour             -->
+<!--                                                     WITH label  Emperor's Children Sergeant armour               -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor REPLACE description                                             -->
-<!--          WITH description  Astartes officer pattern power armour in the livery of a sergeant of the III Legion,  -->
+<!--          WITH description  Astartes officer pattern power armour in the livery of a Sergeant of the III Legion,  -->
 <!--                              the Emperor's Children. Power armour worn by the Legiones Astartes is a             -->
 <!--                              sophisticated defensive system, combining huge resistance to physical damage along  -->
 <!--                              with integrated electro-motivated fibre bundles which augment the strength of the   -->
@@ -235,14 +235,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/label</xpath>
                     <value>
-                        <label>Emperor's Children sergeants' armour</label>
+                        <label>Emperor's Children Sergeants' armour</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/description</xpath>
                     <value>
-                        <description>Astartes officer pattern power armour in the livery of a sergeant of the III Legion, the Emperor's Children. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nThe Emperor's Children have always striven to be exemplars above all others in the arts of war and martial virtue, scorning those who do not meet their own standards. This led them to seek perfection in war as a lightning-quick force whose battles were preordained victories bought by a combination of acute strategic planning and flawless execution.</description>
+                        <description>Astartes officer pattern power armour in the livery of a Sergeant of the III Legion, the Emperor's Children. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nThe Emperor's Children have always striven to be exemplars above all others in the arts of war and martial virtue, scorning those who do not meet their own standards. This led them to seek perfection in war as a lightning-quick force whose battles were preordained victories bought by a combination of acute strategic planning and flawless execution.</description>
                     </value>
                 </li>
 
@@ -264,12 +264,12 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantsHelmet                                                     -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children sergeants' helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeants' helmet            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
-<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a sergeant of tbe III   -->
+<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
 <!--                              the wearer in a closed environment allowing for combat in the most extreme          -->
 <!--                              atmospheres. It also incorporates advanced targeting and sensory systems.\n\n       -->
@@ -288,14 +288,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/label</xpath>
                     <value>
-                        <label>Emperor's Children sergeants' helmet</label>
+                        <label>Emperor's Children Sergeants' helmet</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/description</xpath>
                     <value>
-                        <description>Astartes officer pattern power armour helmet in the livery of a sergeant of tbe III Legion, the Emperor's Children. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nThe Emperor's Children have always striven to be exemplars above all others in the arts of war and martial virtue, scorning those who do not meet their own standards. This led them to seek perfection in war as a lightning-quick force whose battles were preordained victories bought by a combination of acute strategic planning and flawless execution.</description>
+                        <description>Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III Legion, the Emperor's Children. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nThe Emperor's Children have always striven to be exemplars above all others in the arts of war and martial virtue, scorning those who do not meet their own standards. This led them to seek perfection in war as a lightning-quick force whose battles were preordained victories bought by a combination of acute strategic planning and flawless execution.</description>
                     </value>
                 </li>
 
@@ -352,7 +352,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantsArmour                                                 -->
+<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                  -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
 <!--  ==============================================================================================================  -->
@@ -366,7 +366,7 @@
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantsHelmet                                                 -->
+<!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                  -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
