@@ -217,8 +217,7 @@
 <!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
 <!--                              mathematics of warfare as keenly as he did a blade.                                 -->
 <!--                                                                                                                  -->
-<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets REPLACE ToxicSensitivity                                      -->
-<!--                                                       WITH ToxicSensitivity  -0.20                               -->
+<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets ADD ToxicSensitivity  -0.20                                   -->
 <!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
 <!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
@@ -828,8 +827,7 @@ Harvest Organs Post Mortem
 <!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
 <!--                              mathematics of warfare as keenly as he did a blade.                                 -->
 <!--                                                                                                                  -->
-<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets REPLACE ToxicSensitivity                                      -->
-<!--                                                       WITH ToxicSensitivity  -0.20                               -->
+<!--    + LAP_Armour_Perturabo_Head equippedStatOffsets ADD ToxicSensitivity  -0.20                                   -->
 <!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
 <!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
@@ -849,8 +847,8 @@ Harvest Organs Post Mortem
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/equippedStatOffsets</xpath>
                     <value>
                         <ToxicSensitivity>-0.20</ToxicSensitivity>
                     </value>
