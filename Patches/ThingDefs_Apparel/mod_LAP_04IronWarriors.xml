@@ -1052,7 +1052,7 @@ Harvest Organs Post Mortem
                         <operations>
 
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite/li[3]</xpath>
+                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisites/li[3]</xpath>
                                 <value>
                                     <li>GlitterworldAutopsy</li>
                                 </value>
@@ -1065,7 +1065,7 @@ Harvest Organs Post Mortem
 <!--                                                                                    WITH li  GlitterworldAutopsy  -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite/li[3]</xpath>
+                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisites/li[3]</xpath>
                                 <value>
                                     <li>GlitterworldAutopsy</li>
                                 </value>
