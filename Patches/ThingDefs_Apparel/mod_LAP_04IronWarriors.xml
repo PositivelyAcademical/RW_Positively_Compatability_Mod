@@ -260,7 +260,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
-<!--                                                                                   WITH li  GlitterworldAutopsy   ---
+<!--                                                                                   WITH li  GlitterworldAutopsy   -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisite REPLACE li[3]                    -->
@@ -1044,7 +1044,7 @@ Harvest Organs Post Mortem
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
-<!--                                                                                   WITH li  GlitterworldAutopsy   ---
+<!--                                                                                   WITH li  GlitterworldAutopsy   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
