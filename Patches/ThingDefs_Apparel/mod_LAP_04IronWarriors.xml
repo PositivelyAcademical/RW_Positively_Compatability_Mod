@@ -78,10 +78,6 @@
 <!--                              throughout the Great Crusade.                                                       -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE label                                                     -->
@@ -100,10 +96,6 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
 <!--                                                                       WITH ToxicSensitivity  -0.35               -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineArmour                                                        -->
 <!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE label                                                      -->
@@ -257,15 +249,30 @@
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                      -->
 <!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
-<!--                                                                                   WITH li  GlitterworldAutopsy   -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  GlitterworldAutopsy                 -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisite REPLACE li[3]                    -->
-<!--                                                                                    WITH li  GlitterworldAutopsy  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  GlitterworldAutopsy                 -->
 <!--  ==============================================================================================================  -->
-Harvest Organs Post Mortem
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -450,10 +457,6 @@ Harvest Organs Post Mortem
 <!--                              throughout the Great Crusade.                                                       -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/label</xpath>
@@ -476,18 +479,6 @@ Harvest Organs Post Mortem
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Iron_Warriors</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>MedicineProduction</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
 <!--  ==============================================================================================================  -->
@@ -507,10 +498,6 @@ Harvest Organs Post Mortem
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
 <!--                                                                       WITH ToxicSensitivity  -0.35               -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/label</xpath>
@@ -530,17 +517,6 @@ Harvest Organs Post Mortem
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
                         <ToxicSensitivity>-0.35</ToxicSensitivity>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Iron_Warriors</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>MedicineProduction</li>
-                        </researchPrerequisites>
                     </value>
                 </li>
 
@@ -1038,36 +1014,93 @@ Harvest Organs Post Mortem
                     </match>
                 </li>
 
-<!--  ==============================================================================================================  -->
-<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
-<!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisite REPLACE li[3]                     -->
-<!--                                                                                   WITH li  GlitterworldAutopsy   -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Harvest Organs Post Mortem</li>
                     </mods>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>LAP_Tech_Iron_Warriors</li>
+                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        <li>MedicineProduction</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  MedicineProduction                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                                <value>
+                                    <researchPrerequisites>
+                                        <li>LAP_Tech_Iron_Warriors</li>
+                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        <li>MedicineProduction</li>
+                                    </researchPrerequisites>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  GlitterworldAutopsy                 -->
+<!--  ==============================================================================================================  -->
                     <match Class="PatchOperationSequence">
                         <operations>
 
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisites/li[3]</xpath>
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <li>GlitterworldAutopsy</li>
+                                    <researchPrerequisites>
+                                        <li>LAP_Tech_Iron_Warriors</li>
+                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        <li>GlitterworldAutopsy</li>
+                                    </researchPrerequisites>
                                 </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisite REPLACE li[3]                    -->
-<!--                                                                                    WITH li  GlitterworldAutopsy  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  GlitterworldAutopsy                 -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDefs[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisites/li[3]</xpath>
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
                                 <value>
-                                    <li>GlitterworldAutopsy</li>
+                                    <researchPrerequisites>
+                                        <li>LAP_Tech_Iron_Warriors</li>
+                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        <li>GlitterworldAutopsy</li>
+                                    </researchPrerequisites>
                                 </value>
                             </li>
 
