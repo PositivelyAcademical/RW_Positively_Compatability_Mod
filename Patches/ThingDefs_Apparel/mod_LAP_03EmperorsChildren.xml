@@ -66,7 +66,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children Sergeants' helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeant helmet            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
 <!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
@@ -235,7 +235,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/label</xpath>
                     <value>
-                        <label>Emperor's Children Sergeants' armour</label>
+                        <label>Emperor's Children Sergeant armour</label>
                     </value>
                 </li>
 
@@ -267,7 +267,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children Sergeants' helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeant helmet            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
 <!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
@@ -288,7 +288,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/label</xpath>
                     <value>
-                        <label>Emperor's Children Sergeants' helmet</label>
+                        <label>Emperor's Children Sergeant helmet</label>
                     </value>
                 </li>
 
