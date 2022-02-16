@@ -99,12 +99,15 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchArmour                                                            -->
 <!--    + LAP_Armour_Lion_Armor REPLACE label                                                                         -->
-<!--                               WITH label  armour of the Lion                                                     -->
+<!--                               WITH label  the Leonine Panoply                                                    -->
 <!--    + LAP_Armour_Lion_Armor REPLACE description                                                                   -->
-<!--          WITH description  The bespoke Calibanite power armour created for Lion El'Johnson.\n\n                  -->
-<!--                            The Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the    -->
-<!--                              Emperor on the world of Caliban, where he had risen to position of Grand Master in  -->
-<!--                              The Order, the greatest of Caliban's knightly orders.                               -->
+<!--          WITH description  Crafted in homage to the armour of Caliban and the heritage of his new Legion, the    -->
+<!--                              Leonine Panoply was both a brutally efficient aegis against harm and a fitting set  -->
+<!--                              of regalia for the First of the Primarchs.\n\n                                      -->
+<!--                            Lion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most   -->
+<!--                              pragmatic and ruthlessly efficient commander of the Great Crusade. His was the      -->
+<!--                              task of rooting out those threats which the Imperium most feared, and he undertook  -->
+<!--                              it with peerless valour.                                                            -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
@@ -114,18 +117,22 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                            -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE label                                                                        -->
-<!--                                WITH label  helm of the Lion                                                      -->
+<!--                                WITH label  the Lion Helm                                                         -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE description                                                                  -->
-<!--          WITH description  The bespoke Calibanite power armour helmet created for Lion El'Johnson.\n\n           -->
-<!--                            The Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the    -->
-<!--                              Emperor on the world of Caliban, where he had risen to position of Grand Master in  -->
-<!--                              The Order, the greatest of Caliban's knightly orders.                               -->
+<!--          WITH description  The crowning glory of the Leonine Panoply, the Lion Helm was a graceful ceramite      -->
+<!--                              helm that bore a set of plumed wings in the style of the First Legion's emblem,     -->
+<!--                              and which incorporated a power field projector of ancient design.\n\n               -->
+<!--                            Lion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most   -->
+<!--                              pragmatic and ruthlessly efficient commander of the Great Crusade. His was the      -->
+<!--                              task of rooting out those threats which the Imperium most feared, and he undertook  -->
+<!--                              it with peerless valour.                                                            -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Lion_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                         -->
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
 <!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
 <!--                                                                       li  LAP_Tech_Emperor                       -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerArmour                                                           -->
@@ -420,12 +427,15 @@
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchArmour                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Lion_Armor REPLACE label                                                                         -->
-<!--                               WITH label  armour of the Lion                                                     -->
+<!--                               WITH label  the Leonine Panoply                                                    -->
 <!--    + LAP_Armour_Lion_Armor REPLACE description                                                                   -->
-<!--          WITH description  The bespoke Calibanite power armour created for Lion El'Johnson.\n\n                  -->
-<!--                            The Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the    -->
-<!--                              Emperor on the world of Caliban, where he had risen to position of Grand Master in  -->
-<!--                              The Order, the greatest of Caliban's knightly orders.                               -->
+<!--          WITH description  Crafted in homage to the armour of Caliban and the heritage of his new Legion, the    -->
+<!--                              Leonine Panoply was both a brutally efficient aegis against harm and a fitting set  -->
+<!--                              of regalia for the First of the Primarchs.\n\n                                      -->
+<!--                            Lion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most   -->
+<!--                              pragmatic and ruthlessly efficient commander of the Great Crusade. His was the      -->
+<!--                              task of rooting out those threats which the Imperium most feared, and he undertook  -->
+<!--                              it with peerless valour.                                                            -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
@@ -436,14 +446,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/label</xpath>
                     <value>
-                        <label>armour of the Lion</label>
+                        <label>the Leonine Panoply</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/description</xpath>
                     <value>
-                        <description>The bespoke Calibanite power armour created for Lion El'Johnson.\n\nThe Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the Emperor on the world of Caliban, where he had risen to position of Grand Master in The Order, the greatest of Caliban's knightly orders.</description>
+                        <description>Crafted in homage to the armour of Caliban and the heritage of his new Legion, the Leonine Panoply was both a brutally efficient aegis against harm and a fitting set of regalia for the First of the Primarchs.\n\nLion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most pragmatic and ruthlessly efficient commander of the Great Crusade. His was the task of rooting out those threats which the Imperium most feared, and he undertook it with peerless valour.</description>
                     </value>
                 </li>
 
@@ -469,31 +479,35 @@
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE label                                                                        -->
-<!--                                WITH label  helm of the Lion                                                      -->
+<!--                                WITH label  the Lion Helm                                                         -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE description                                                                  -->
-<!--          WITH description  The bespoke Calibanite power armour helmet created for Lion El'Johnson.\n\n           -->
-<!--                            The Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the    -->
-<!--                              Emperor on the world of Caliban, where he had risen to position of Grand Master in  -->
-<!--                              The Order, the greatest of Caliban's knightly orders.                               -->
+<!--          WITH description  The crowning glory of the Leonine Panoply, the Lion Helm was a graceful ceramite      -->
+<!--                              helm that bore a set of plumed wings in the style of the First Legion's emblem,     -->
+<!--                              and which incorporated a power field projector of ancient design.\n\n               -->
+<!--                            Lion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most   -->
+<!--                              pragmatic and ruthlessly efficient commander of the Great Crusade. His was the      -->
+<!--                              task of rooting out those threats which the Imperium most feared, and he undertook  -->
+<!--                              it with peerless valour.                                                            -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Lion_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                         -->
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
 <!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
 <!--                                                                       li  LAP_Tech_Emperor                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/label</xpath>
                     <value>
-                        <label>helm of the Lion</label>
+                        <label>the Lion Helm</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/description</xpath>
                     <value>
-                        <description>The bespoke Calibanite power armour helmet created for Lion El'Johnson.\n\nThe Lion was Primarch of the I Legion, the Dark Angels. He was rediscovered by the Emperor on the world of Caliban, where he had risen to position of Grand Master in The Order, the greatest of Caliban's knightly orders.</description>
+                        <description>The crowning glory of the Leonine Panoply, the Lion Helm was a graceful ceramite helm that bore a set of plumed wings in the style of the First Legion's emblem, and which incorporated a power field projector of ancient design.\n\nLion El'Jonson, Primarch of the I Legion, the Dark Angels, was regarded as the most pragmatic and ruthlessly efficient commander of the Great Crusade. His was the task of rooting out those threats which the Imperium most feared, and he undertook it with peerless valour.</description>
                     </value>
                 </li>
 
@@ -510,6 +524,7 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
                             <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
