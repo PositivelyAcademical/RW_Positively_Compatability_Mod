@@ -11,8 +11,6 @@
 <!--                                     WITH label Captain-General's Power Armour                                    -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - helmets                                                                                        -->
-<!--       + For Custodian_Helmet REPLACE label                                                                       -->
-<!--                                 WITH label Custodes Helmet                                                       -->
 <!--       + For Custodian_Terminator_Helmet REPLACE label                                                            -->
 <!--                                            WITH label Custodes Allarus Terminator Helmet                         -->
 <!--       + For Golden_General_Helmet REPLACE label                                                                  -->
@@ -50,20 +48,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
-<!--       + For Custodian_Helmet REPLACE label                                                                       -->
-<!--                                 WITH label Custodes Helmet                                                       -->
 <!--       + For Custodian_Terminator_Helmet REPLACE label                                                            -->
 <!--                                            WITH label Custodes Allarus Terminator Helmet                         -->
 <!--       + For Golden_General_Helmet REPLACE label                                                                  -->
 <!--                                      WITH label Captain-General's Helm                                           -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/label</xpath>
-                    <value>
-                        <label>Custodes Helmet</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/label</xpath>
                     <value>

@@ -23,10 +23,32 @@
 <!--    + Custodian_Armor recipeMaker REPLACE researchPrerequisite                                                    -->
 <!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
 <!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
+<!--                                                                li  OG_Imperial_Tech_Wargear_Shield               -->
 <!--                                                                li  AdvancedFabrication                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesHelmet                                                                      -->
+<!--    + Custodian_Helmet REPLACE label                                                                              -->
+<!--                          WITH label  Custodes helmet                                                             -->
+<!--    + Custodian_Helmet REPLACE description                                                                        -->
+<!--          WITH description  Completing a set of Custodes power armour, the Custodes pattern power armour helmet   -->
+<!--                              also represents the pinnacle of the armourer's art. Fashioned in the rare auramite  -->
+<!--                              alloy of the Emperor's armour, each helm is is unique to the Custodian Guard who    -->
+<!--                              wears it, and is fitted with arrays of proximity sensors and refractor field        -->
+<!--                              generators to further enhance their defences.\n\n                                   -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
 <!--                                                                                                                  -->
+<!--    + Custodian_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                               -->
+<!--                                              WITH ToxicSensitivity  -0.35                                        -->
+<!--    + Custodian_Helmet recipeMaker REPLACE researchPrerequisite                                                   -->
+<!--                                      WITH researchPrerequisites li  LAP_Tech_Emperor                             -->
+<!--                                                                 li  OG_Imperial_Tech_Apparel_Armour_T3           -->
+<!--                                                                 li  OG_Imperial_Tech_Wargear_Shield              -->
+<!--                                                                 li  AdvancedFabrication                          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorArmour                                                            -->
 <!--                                                                                                                  -->
@@ -76,6 +98,7 @@
 <!--    + Custodian_Armor recipeMaker REPLACE researchPrerequisite                                                    -->
 <!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
 <!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
+<!--                                                                li  OG_Imperial_Tech_Wargear_Shield               -->
 <!--                                                                li  AdvancedFabrication                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -112,6 +135,66 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesHelmet                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Helmet REPLACE label                                                                              -->
+<!--                          WITH label  Custodes helmet                                                             -->
+<!--    + Custodian_Helmet REPLACE description                                                                        -->
+<!--          WITH description  Completing a set of Custodes power armour, the Custodes pattern power armour helmet   -->
+<!--                              also represents the pinnacle of the armourer's art. Fashioned in the rare auramite  -->
+<!--                              alloy of the Emperor's armour, each helm is is unique to the Custodian Guard who    -->
+<!--                              wears it, and is fitted with arrays of proximity sensors and refractor field        -->
+<!--                              generators to further enhance their defences.\n\n                                   -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
+<!--    + Custodian_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                               -->
+<!--                                              WITH ToxicSensitivity  -0.35                                        -->
+<!--    + Custodian_Helmet recipeMaker REPLACE researchPrerequisite                                                   -->
+<!--                                      WITH researchPrerequisites li  LAP_Tech_Emperor                             -->
+<!--                                                                 li  OG_Imperial_Tech_Apparel_Armour_T3           -->
+<!--                                                                 li  OG_Imperial_Tech_Wargear_Shield              -->
+<!--                                                                 li  AdvancedFabrication                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/label</xpath>
+                    <value>
+                        <label>Custodes helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/description</xpath>
+                    <value>
+                        <description>Completing a set of Custodes power armour, the Custodes pattern power armour helmet also represents the pinnacle of the armourer's art. Fashioned in the rare auramite alloy of the Emperor's armour, each helm is is unique to the Custodian Guard who wears it, and is fitted with arrays of proximity sensors and refractor field generators to further enhance their defences.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
                             <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
