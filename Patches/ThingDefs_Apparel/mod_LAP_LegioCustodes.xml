@@ -69,7 +69,7 @@
 <!--    + Custodian_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Custodian_Terminator recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--                                                                     li  AdvancedFabrication                      -->
 <!--  ==============================================================================================================  -->
@@ -92,10 +92,10 @@
 <!--    + Custodian_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                    -->
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + Custodian_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
-<!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
-<!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
-<!--                                                                     li  AdvancedFabrication                      -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
+<!--                                                                           li  AdvancedFabrication                -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralArmour                                                               -->
 <!--                                                                                                                  -->
@@ -255,7 +255,7 @@
 <!--    + Custodian_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Custodian_Terminator recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
+<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--                                                                     li  AdvancedFabrication                      -->
 <!--  ==============================================================================================================  -->
@@ -285,7 +285,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                             <li>AdvancedFabrication</li>
                         </researchPrerequisites>
@@ -313,10 +313,10 @@
 <!--    + Custodian_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                    -->
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + Custodian_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
-<!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_Tech_Apparel_Armour_T4  -->
-<!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
-<!--                                                                     li  AdvancedFabrication                      -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
+<!--                                                                           li  AdvancedFabrication                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/label</xpath>
@@ -344,7 +344,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_Tech_Apparel_Armour_T4</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                             <li>AdvancedFabrication</li>
                         </researchPrerequisites>

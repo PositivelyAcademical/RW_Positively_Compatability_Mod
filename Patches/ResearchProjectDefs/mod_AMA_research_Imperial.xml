@@ -93,7 +93,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_Tech_Apparel_Armour_T4                                     -->
+<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
 <!--                             label  terminator armour                                                             -->
 <!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
 <!--                             baseCost  6000                                                                       -->
@@ -103,14 +103,29 @@
 <!--                             researchViewX  6                                                                     -->
 <!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ArtiferArmour                                                             -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
+<!--                             label  artificer armour                                                              -->
+<!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
+<!--                             baseCost  4000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  6                                                                     -->
+<!--                             researchViewY  2.25                                                                  -->
+<!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  CataphractArmor                               -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ResearchProjectDef)  -  ArtiferArmour                                                         -->
+<!--    + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                         -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  ShieldBelt                                    -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                          -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  VAE_SiegebreakerArmor                         -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                               -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -500,7 +515,7 @@
 <!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
 <!--  ==============================================================================================================  -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_Tech_Apparel_Armour_T4                                     -->
+<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
 <!--                             label  terminator armour                                                             -->
 <!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
 <!--                             baseCost  6000                                                                       -->
@@ -514,7 +529,7 @@
                     <xpath>/Defs</xpath>
                     <value>
                         <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                            <defName>POS_AMA_Imperial_Tech_Apparel_Armour_T4</defName>
+                            <defName>POS_AMA_Imperial_TerminatorArmour</defName>
                             <label>terminator armour</label>
                             <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
                             <baseCost>6000</baseCost>
@@ -532,7 +547,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  CataphractArmor                               -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -540,7 +555,7 @@
                     </mods>
 
                     <match Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
                         <value>
                             <li>CataphractArmor</li>
                         </value>
@@ -551,7 +566,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  ShieldBelt                                    -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                          -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationFindMod">
                 <mods>
@@ -559,7 +574,7 @@
                 </mods>
 
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
                         <value>
                             <li>ShieldBelt</li>
                         </value>
@@ -568,10 +583,10 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
 <!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_Tech_Apparel_Armour_T4 prerequisites ADD li  VAE_SiegebreakerArmor                         -->
+<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                               -->
 <!--  ==============================================================================================================  -->
                     <match Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_Tech_Apparel_Armour_T4"]/prerequisites</xpath>
+                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
                         <value>
                             <li>VAE_SiegebreakerArmor</li>
                         </value>
