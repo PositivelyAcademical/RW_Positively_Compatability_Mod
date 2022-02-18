@@ -61,12 +61,12 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                 -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
+<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children Sergeant helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeant helmet              -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
 <!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
@@ -81,8 +81,8 @@
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet equippedStatOffsets REPLACE ToxicSensitivity                   -->
 <!--                                                                          WITH ToxicSensitivity  -0.35            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
+<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenPowerArmour                                                     -->
 <!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                        -->
@@ -229,8 +229,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                 -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
+<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/label</xpath>
@@ -258,7 +258,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperors_Children</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -267,7 +267,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
-<!--                                                      WITH label  Emperor's Children Sergeant helmet            -->
+<!--                                                      WITH label  Emperor's Children Sergeant helmet              -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE description                                            -->
 <!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Sergeant of tbe III   -->
 <!--                              Legion, the Emperor's Children. Completing a set of power armour, the helmet seals  -->
@@ -282,7 +282,7 @@
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet equippedStatOffsets REPLACE ToxicSensitivity                   -->
 <!--                                                                          WITH ToxicSensitivity  -0.35            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Emperors_Children          -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -311,7 +311,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperors_Children</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
