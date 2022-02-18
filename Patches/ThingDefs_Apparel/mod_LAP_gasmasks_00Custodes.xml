@@ -22,7 +22,6 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES                                                                                                  -->
-<!--       + For Custodian_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets                             -->
 <!--       + For Custodian_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Golden_General_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Emperor_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
@@ -41,18 +40,10 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For Custodian_Armor (3b) ADD ToxicSensitivity (-0.65) to equippedStatOffsets                             -->
 <!--       + For Custodian_Terminator (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Golden_General_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Emperor_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/equippedStatOffsets</xpath>
-                    <value>
-                        <ToxicSensitivity>-0.65</ToxicSensitivity>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/equippedStatOffsets</xpath>
                     <value>

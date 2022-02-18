@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesPowerArmour                                                                 -->
+<!--    + Custodian_Armor REPLACE label                                                                               -->
+<!--                         WITH label  Custodes power armour                                                        -->
+<!--    + Custodian_Armor REPLACE description                                                                         -->
+<!--          WITH description  The panoply of the Legio Custodes represents the pinnacle of the armourer's art. Far  -->
+<!--                              more sophisticated than production-model Legion power armour, it is fashioned with  -->
+<!--                              rare auramite alloy such as that used for the armour the Emperor Himself wears in   -->
+<!--                              battle. Each suit is unique to the Custodian Guard who wears it.\n\n                -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
+<!--    + Custodian_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                             -->
+<!--    + Custodian_Armor recipeMaker REPLACE researchPrerequisite                                                    -->
+<!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
+<!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
+<!--                                                                li  AdvancedFabrication                           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesHelmet                                                                      -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorArmour                                                            -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorHelmet                                                            -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralArmour                                                               -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralHelmet                                                               -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorArmour                                                               -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorHelmet                                                               -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--                                                                                                                  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesPowerArmour                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Armor REPLACE label                                                                               -->
+<!--                         WITH label  Custodes power armour                                                        -->
+<!--    + Custodian_Armor REPLACE description                                                                         -->
+<!--          WITH description  The panoply of the Legio Custodes represents the pinnacle of the armourer's art. Far  -->
+<!--                              more sophisticated than production-model Legion power armour, it is fashioned with  -->
+<!--                              rare auramite alloy such as that used for the armour the Emperor Himself wears in   -->
+<!--                              battle. Each suit is unique to the Custodian Guard who wears it.\n\n                -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
+<!--    + Custodian_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                             -->
+<!--    + Custodian_Armor recipeMaker REPLACE researchPrerequisite                                                    -->
+<!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
+<!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
+<!--                                                                li  AdvancedFabrication                           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/label</xpath>
+                    <value>
+                        <label>Custodes power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/description</xpath>
+                    <value>
+                        <description>The panoply of the Legio Custodes represents the pinnacle of the armourer's art. Far more sophisticated than production-model Legion power armour, it is fashioned with rare auramite alloy such as that used for the armour the Emperor Himself wears in battle. Each suit is unique to the Custodian Guard who wears it.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/label</xpath>
+                    <value>
+                        <label>Custodes power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

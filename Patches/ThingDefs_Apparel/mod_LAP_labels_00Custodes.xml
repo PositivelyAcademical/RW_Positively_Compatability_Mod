@@ -5,8 +5,6 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
-<!--       + For Custodian_Armor REPLACE label                                                                        -->
-<!--                                WITH label Custodes Power Armour                                                  -->
 <!--       + For Custodian_Terminator REPLACE label                                                                   -->
 <!--                                     WITH label Custodes Allarus Terminator Armour                                -->
 <!--       + For Golden_General_Armor REPLACE label                                                                   -->
@@ -30,20 +28,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For Custodian_Armor REPLACE label                                                                        -->
-<!--                                WITH label Custodes Power Armour                                                  -->
 <!--       + For Custodian_Terminator REPLACE label                                                                   -->
 <!--                                     WITH label Custodes Allarus Terminator Armour                                -->
 <!--       + For Golden_General_Armor REPLACE label                                                                   -->
 <!--                                     WITH label Captain-General's Power Armour                                    -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/label</xpath>
-                    <value>
-                        <label>Custodes Power Armour</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/label</xpath>
                     <value>
