@@ -112,8 +112,8 @@
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
-<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
-<!--                                                                      li  LAP_Tech_Emperor                        -->
+<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                            -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE label                                                                        -->
@@ -131,9 +131,8 @@
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
-<!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
 <!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
-<!--                                                                       li  LAP_Tech_Emperor                       -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerArmour                                                           -->
 <!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags  PrestigeCombatGear                                            -->
@@ -440,8 +439,8 @@
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
-<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
-<!--                                                                      li  LAP_Tech_Emperor                        -->
+<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/label</xpath>
@@ -469,8 +468,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>LAP_Tech_Emperor</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -493,9 +492,8 @@
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
-<!--                                                                       li  OG_Imperial_Tech_Apparel_Armour_T3     -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
 <!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
-<!--                                                                       li  LAP_Tech_Emperor                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/label</xpath>
@@ -523,9 +521,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
                 </li>
