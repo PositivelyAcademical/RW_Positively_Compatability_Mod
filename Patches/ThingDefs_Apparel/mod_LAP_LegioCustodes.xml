@@ -24,7 +24,6 @@
 <!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
 <!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
 <!--                                                                li  OG_Imperial_Tech_Wargear_Shield               -->
-<!--                                                                li  AdvancedFabrication                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesHelmet                                                                      -->
 <!--    + Custodian_Helmet REPLACE label                                                                              -->
@@ -48,7 +47,6 @@
 <!--                                      WITH researchPrerequisites li  LAP_Tech_Emperor                             -->
 <!--                                                                 li  OG_Imperial_Tech_Apparel_Armour_T3           -->
 <!--                                                                 li  OG_Imperial_Tech_Wargear_Shield              -->
-<!--                                                                 li  AdvancedFabrication                          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorArmour                                                            -->
 <!--    + Custodian_Terminator REPLACE label                                                                          -->
@@ -71,7 +69,6 @@
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
 <!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
-<!--                                                                     li  AdvancedFabrication                      -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorHelmet                                                            -->
 <!--    + Custodian_Terminator_Helmet REPLACE label                                                                   -->
@@ -95,13 +92,45 @@
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
 <!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
 <!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
-<!--                                                                           li  AdvancedFabrication                -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralArmour                                                               -->
+<!--    + Golden_General_Armor REPLACE label                                                                          -->
+<!--                              WITH label  Captain-General's armour                                                -->
+<!--    + Golden_General_Armor REPLACE description                                                                    -->
+<!--          WITH description  The artificer power armour worn by Constantin Valdor, Captain-General of the Legio    -->
+<!--                              Custodes. Like all the wargear of the Custodians, the Captain-General's armour is   -->
+<!--                              fashioned from rare auramite alloy.\n\n                                             -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
 <!--                                                                                                                  -->
+<!--    + Golden_General_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
+<!--    + Golden_General_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
+<!--                                                                     li  POS_AMA_Imperial_ArtificerArmour         -->
+<!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralHelmet                                                               -->
+<!--    Golden_General_Helmet REPLACE label                                                                           -->
+<!--                             WITH label  Captain-General's helmet                                                 -->
+<!--    Golden_General_Helmet REPLACE description                                                                     -->
+<!--          WITH description  The artificer power armour helmet worn by Constantin Valdor, Captain-General of the   -->
+<!--                              Legio Custodes. Like all the wargear of the Custodians, the Captain-General's       -->
+<!--                              helmet is fashioned from rare auramite alloy.\n\n                                   -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
 <!--                                                                                                                  -->
+<!--    + Golden_General_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                          -->
+<!--                                                   WITH ToxicSensitivity  -0.20                                   -->
+<!--    + Golden_General_Helmet recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
+<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorArmour                                                               -->
 <!--                                                                                                                  -->
@@ -140,7 +169,6 @@
 <!--                                     WITH researchPrerequisites li  LAP_Tech_Emperor                              -->
 <!--                                                                li  OG_Imperial_Tech_Apparel_Armour_T3            -->
 <!--                                                                li  OG_Imperial_Tech_Wargear_Shield               -->
-<!--                                                                li  AdvancedFabrication                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/label</xpath>
@@ -170,7 +198,6 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -199,7 +226,6 @@
 <!--                                      WITH researchPrerequisites li  LAP_Tech_Emperor                             -->
 <!--                                                                 li  OG_Imperial_Tech_Apparel_Armour_T3           -->
 <!--                                                                 li  OG_Imperial_Tech_Wargear_Shield              -->
-<!--                                                                 li  AdvancedFabrication                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/label</xpath>
@@ -229,7 +255,6 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -257,7 +282,6 @@
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
 <!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
-<!--                                                                     li  AdvancedFabrication                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/label</xpath>
@@ -287,7 +311,6 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>POS_AMA_Imperial_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -316,7 +339,6 @@
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
 <!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
 <!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
-<!--                                                                           li  AdvancedFabrication                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/label</xpath>
@@ -346,7 +368,112 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>POS_AMA_Imperial_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralArmour                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + Golden_General_Armor REPLACE label                                                                          -->
+<!--                              WITH label  Captain-General's armour                                                -->
+<!--    + Golden_General_Armor REPLACE description                                                                    -->
+<!--          WITH description  The artificer power armour worn by Constantin Valdor, Captain-General of the Legio    -->
+<!--                              Custodes. Like all the wargear of the Custodians, the Captain-General's armour is   -->
+<!--                              fashioned from rare auramite alloy.\n\n                                             -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
+<!--                                                                                                                  -->
+<!--    + Golden_General_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
+<!--    + Golden_General_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
+<!--                                                                     li  POS_AMA_Imperial_ArtificerArmour         -->
+<!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/label</xpath>
+                    <value>
+                        <label>Captain-General's armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/description</xpath>
+                    <value>
+                        <description>The artificer power armour worn by Constantin Valdor, Captain-General of the Legio Custodes. Like all the wargear of the Custodians, the Captain-General's armour is fashioned from rare auramite alloy.\n\nConstantin Valdor sits at the right hand of the Emperor as perhaps His most trusted companion and guardian, a watchman of inviolable purpose and all but unmatched fighting skill. Such in fact is Valdor's martial power and superhuman physical and mental abilities that there are those, even within the Imperial Court, who have in whispers called him 'Primarch' in all but name.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralHelmet                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    Golden_General_Helmet REPLACE label                                                                           -->
+<!--                             WITH label  Captain-General's helmet                                                 -->
+<!--    Golden_General_Helmet REPLACE description                                                                     -->
+<!--          WITH description  The artificer power armour helmet worn by Constantin Valdor, Captain-General of the   -->
+<!--                              Legio Custodes. Like all the wargear of the Custodians, the Captain-General's       -->
+<!--                              helmet is fashioned from rare auramite alloy.\n\n                                   -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
+<!--                                                                                                                  -->
+<!--    + Golden_General_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                          -->
+<!--                                                   WITH ToxicSensitivity  -0.20                                   -->
+<!--    + Golden_General_Helmet recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
+<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/label</xpath>
+                    <value>
+                        <label>Captain-General's helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/description</xpath>
+                    <value>
+                        <description>The artificer power armour helmet worn by Constantin Valdor, Captain-General of the Legio Custodes. Like all the wargear of the Custodians, the Captain-General's helmet is fashioned from rare auramite alloy.\n\nConstantin Valdor sits at the right hand of the Emperor as perhaps His most trusted companion and guardian, a watchman of inviolable purpose and all but unmatched fighting skill. Such in fact is Valdor's martial power and superhuman physical and mental abilities that there are those, even within the Imperial Court, who have in whispers called him 'Primarch' in all but name.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
                 </li>

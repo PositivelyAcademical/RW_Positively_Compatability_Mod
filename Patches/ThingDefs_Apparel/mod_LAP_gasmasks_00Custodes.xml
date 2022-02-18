@@ -22,9 +22,7 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES                                                                                                  -->
-<!--       + For Golden_General_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Emperor_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
-<!--       + For Golden_General_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                                 -->
 <!--       + For Emperor_Crown (5h) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
@@ -37,16 +35,8 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For Golden_General_Armor (4b) ADD ToxicSensitivity (-0.80) to equippedStatOffsets                        -->
 <!--       + For Emperor_Armor (5b) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/equippedStatOffsets</xpath>
-                    <value>
-                        <ToxicSensitivity>-0.80</ToxicSensitivity>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/equippedStatOffsets</xpath>
                     <value>
@@ -57,16 +47,8 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - helmets                                                                                        -->
 <!--  ==============================================================================================================  -->
-<!--       + For Golden_General_Helmet (4h) REPLACE ToxicSensitivity -1.00 with -0.20                                 -->
 <!--       + For Emperor_Crown (5h) ADD ToxicSensitivity (-1.00) to equippedStatOffsets                               -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
-                    <value>
-                        <ToxicSensitivity>-0.20</ToxicSensitivity>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/equippedStatOffsets</xpath>
                     <value>
