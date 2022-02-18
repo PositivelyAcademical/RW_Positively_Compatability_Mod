@@ -20,18 +20,6 @@
 <!--                                       WITH prerequisites li  Fabrication                                         -->
 <!--                                                          li  PrecisionRifling                                    -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
-<!--                                         WITH label  conversion fields                                            -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
-<!--                                         WITH description  Allows for the creation of conversion field            -->
-<!--                                                            emitters.                                             -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                       -->
-<!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
-<!--                                                            li  ShieldBelt                                        -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  0.75                                                 -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
 <!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
 <!--                                  WITH label  Imperial subjects                                                   -->
@@ -57,6 +45,8 @@
 <!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
 <!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
 <!--    + OG_Imperial_Tech_Apparel ADD hiddenPrerequisites li  OG_Imperial_Tech_Base_T0                               -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  0                                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                    -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE prerequisites                                                              -->
@@ -72,7 +62,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2                                                 -->
+<!--                                            WITH researchViewX  1                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  CarapaceArmour                                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE label                                                            -->
@@ -81,7 +71,7 @@
 <!--                                            WITH description  Allows for the creation of Imperial carapace        -->
 <!--                                                               armour.                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  4                                                 -->
+<!--                                            WITH researchViewX  2                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  PowerArmour                                                               -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE label                                                            -->
@@ -89,31 +79,45 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  5                                                 -->
+<!--                                            WITH researchViewX  3                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
-<!--                             label  terminator armour                                                             -->
-<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
-<!--                             baseCost  6000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
-<!--                             techLevel  Spacer                                                                    -->
-<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  1.50                                                                  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
+<!--                                         WITH label  conversion fields                                            -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
+<!--                                         WITH description  Allows for the creation of conversion field            -->
+<!--                                                            emitters.                                             -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
+<!--                                                            li  ShieldBelt                                        -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  5                                                    -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  1.80                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
 <!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
 <!--                             label  artificer armour                                                              -->
 <!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
-<!--                             baseCost  4000                                                                       -->
+<!--                             baseCost  3000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  4                                                                     -->
+<!--                             researchViewY  1.80                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
+<!--                             label  terminator armour                                                             -->
+<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
+<!--                             baseCost  5000                                                                       -->
 <!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
 <!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  2.25                                                                  -->
+<!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + MATCH Royalty                                                                                               -->
@@ -140,7 +144,7 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  CommonResearch                                                            -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
 <!--  ==============================================================================================================  -->
 <!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
 <!--                                       WITH label  bolt weapons                                                   -->
@@ -182,7 +186,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialResearch                                                          -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
 <!--  ==============================================================================================================  -->
 <!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
 <!--                                  WITH label  Imperial subjects                                                   -->
@@ -203,73 +207,6 @@
                     </value>
                 </li>
 
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArmourResearch                                                            -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
-<!--                                  WITH label  Imperial clothing                                                   -->
-<!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
-<!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/label</xpath>
-                    <value>
-                        <label>Imperial clothing</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of Imperial clothing.</description>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
-<!--                                         WITH label  conversion fields                                            -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
-<!--                                         WITH description  Allows for the creation of conversion field            -->
-<!--                                                            emitters.                                             -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                       -->
-<!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
-<!--                                                            li  ShieldBelt                                        -->
-<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  0.75                                                 -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/label</xpath>
-                    <value>
-                        <label>conversion fields</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of conversion field emitters.</description>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/prerequisites</xpath>
-                    <value>
-                        <prerequisites>
-                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>ShieldBelt</li>
-                        </prerequisites>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>0.75</researchViewY>
-                    </value>
-                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
@@ -360,6 +297,8 @@
 <!--    + OG_Imperial_Tech_Apparel REPLACE description                                                                -->
 <!--                                  WITH description  Allows for the creation of Imperial clothing.                 -->
 <!--    + OG_Imperial_Tech_Apparel ADD hiddenPrerequisites li  OG_Imperial_Tech_Base_T0                               -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  0                                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/label</xpath>
@@ -381,6 +320,13 @@
                         <hiddenPrerequisites>
                             <li>OG_Imperial_Tech_Base_T0</li>
                         </hiddenPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>0</researchViewX>
                     </value>
                 </li>
 
@@ -429,7 +375,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2                                                 -->
+<!--                                            WITH researchViewX  1                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
@@ -448,7 +394,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>1</researchViewX>
                     </value>
                 </li>
 
@@ -461,7 +407,7 @@
 <!--                                            WITH description  Allows for the creation of Imperial carapace        -->
 <!--                                                               armour.                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  4                                                 -->
+<!--                                            WITH researchViewX  2                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/label</xpath>
@@ -480,7 +426,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>4</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
@@ -492,7 +438,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  5                                                 -->
+<!--                                            WITH researchViewX  3                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/label</xpath>
@@ -511,23 +457,77 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>5</researchViewX>
+                        <researchViewX>3</researchViewX>
                     </value>
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
+<!--                                         WITH label  conversion fields                                            -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE description                                                         -->
+<!--                                         WITH description  Allows for the creation of conversion field            -->
+<!--                                                            emitters.                                             -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE prerequisites                                                       -->
+<!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
+<!--                                                            li  ShieldBelt                                        -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX                                                       -->
+<!--                                         WITH researchViewX  5                                                    -->
+<!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
+<!--                                         WITH researchViewY  1.80                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/label</xpath>
+                    <value>
+                        <label>conversion fields</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of conversion field emitters.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>ShieldBelt</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>5</researchViewX>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>1.80</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
-<!--                             label  terminator armour                                                             -->
-<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
-<!--                             baseCost  6000                                                                       -->
+<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
+<!--                             label  artificer armour                                                              -->
+<!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
+<!--                             baseCost  3000                                                                       -->
 <!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  1.50                                                                  -->
+<!--                             researchViewX  4                                                                     -->
+<!--                             researchViewY  1.80                                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -540,10 +540,43 @@
                                 <xpath>/Defs</xpath>
                                 <value>
                                     <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                                        <defName>POS_AMA_Imperial_ArtificerArmour</defName>
+                                        <label>artificer armour</label>
+                                        <description>Allows for the creation of bespoke patterns of Imperial power armours.</description>
+                                        <baseCost>3000</baseCost>
+                                        <prerequisites>
+                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        </prerequisites>
+                                        <techLevel>Spacer</techLevel>
+                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                                        <researchViewX>4</researchViewX>
+                                        <researchViewY>1.80</researchViewY>
+                                    </ResearchProjectDef>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
+<!--                             label  terminator armour                                                             -->
+<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
+<!--                             baseCost  5000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  6                                                                     -->
+<!--                             researchViewY  1.50                                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
+                                <value>
+                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
                                         <defName>POS_AMA_Imperial_TerminatorArmour</defName>
                                         <label>terminator armour</label>
                                         <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
-                                        <baseCost>6000</baseCost>
+                                        <baseCost>5000</baseCost>
                                         <prerequisites>
                                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
                                         </prerequisites>
@@ -551,39 +584,6 @@
                                         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
                                         <researchViewX>6</researchViewX>
                                         <researchViewY>1.50</researchViewY>
-                                    </ResearchProjectDef>
-                                </value>
-                            </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
-<!--  ==============================================================================================================  -->
-<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
-<!--                             label  artificer armour                                                              -->
-<!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
-<!--                             baseCost  4000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
-<!--                             techLevel  Spacer                                                                    -->
-<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  2.25                                                                  -->
-<!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs</xpath>
-                                <value>
-                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                                        <defName>POS_AMA_Imperial_ArtificerArmour</defName>
-                                        <label>artificer armour</label>
-                                        <description>Allows for the creation of bespoke patterns of Imperial power armours.</description>
-                                        <baseCost>4000</baseCost>
-                                        <prerequisites>
-                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        </prerequisites>
-                                        <techLevel>Spacer</techLevel>
-                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-                                        <researchViewX>6</researchViewX>
-                                        <researchViewY>2.25</researchViewY>
                                     </ResearchProjectDef>
                                 </value>
                             </li>
