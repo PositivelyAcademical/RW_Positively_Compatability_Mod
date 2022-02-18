@@ -5,8 +5,6 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
-<!--       + For Custodian_Terminator REPLACE label                                                                   -->
-<!--                                     WITH label Custodes Allarus Terminator Armour                                -->
 <!--       + For Golden_General_Armor REPLACE label                                                                   -->
 <!--                                     WITH label Captain-General's Power Armour                                    -->
 <!--  ==============================================================================================================  -->
@@ -26,18 +24,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - armour                                                                                         -->
 <!--  ==============================================================================================================  -->
-<!--       + For Custodian_Terminator REPLACE label                                                                   -->
-<!--                                     WITH label Custodes Allarus Terminator Armour                                -->
 <!--       + For Golden_General_Armor REPLACE label                                                                   -->
 <!--                                     WITH label Captain-General's Power Armour                                    -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/label</xpath>
-                    <value>
-                        <label>Custodes Allarus Terminator Armour</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/label</xpath>
                     <value>
