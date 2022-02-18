@@ -91,7 +91,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
 <!--                                            WITH researchViewX  5                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
 <!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
 <!--                             label  terminator armour                                                             -->
@@ -103,7 +103,7 @@
 <!--                             researchViewX  6                                                                     -->
 <!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ArtiferArmour                                                             -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
 <!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
 <!--                             label  artificer armour                                                              -->
@@ -115,17 +115,21 @@
 <!--                             researchViewX  6                                                                     -->
 <!--                             researchViewY  2.25                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                     -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                   -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ResearchProjectDef)  -  ArtiferArmour                                                         -->
-<!--    + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                         -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtiferArmour                                        -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--      + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                          -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + NO_MATCH VanillaArmourExpanded                                                                              -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                        -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                               -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + MATCH VanillaArmourExpanded                                                                                 -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                             -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -512,7 +516,7 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  TerminatorArmour                                                          -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--  ==============================================================================================================  -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
 <!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
@@ -525,73 +529,137 @@
 <!--                             researchViewX  6                                                                     -->
 <!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                            <defName>POS_AMA_Imperial_TerminatorArmour</defName>
-                            <label>terminator armour</label>
-                            <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
-                            <baseCost>6000</baseCost>
-                            <prerequisites>
-                                <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            </prerequisites>
-                            <techLevel>Spacer</techLevel>
-                            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-                            <researchViewX>6</researchViewX>
-                            <researchViewY>1.50</researchViewY>
-                        </ResearchProjectDef>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH Royalty  (ResearchProjectDef)  -  TerminatorArmour                                                      -->
-<!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                     -->
-<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Royalty</li>
+                        <li>Legiones Astartes: Primarch</li>
                     </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
 
-                    <match Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
-                        <value>
-                            <li>CataphractArmor</li>
-                        </value>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
+                                <value>
+                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                                        <defName>POS_AMA_Imperial_TerminatorArmour</defName>
+                                        <label>terminator armour</label>
+                                        <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
+                                        <baseCost>6000</baseCost>
+                                        <prerequisites>
+                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        </prerequisites>
+                                        <techLevel>Spacer</techLevel>
+                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                                        <researchViewX>6</researchViewX>
+                                        <researchViewY>1.50</researchViewY>
+                                    </ResearchProjectDef>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
+<!--                             label  artificer armour                                                              -->
+<!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
+<!--                             baseCost  4000                                                                       -->
+<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  6                                                                     -->
+<!--                             researchViewY  2.25                                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
+                                <value>
+                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                                        <defName>POS_AMA_Imperial_ArtificerArmour</defName>
+                                        <label>artificer armour</label>
+                                        <description>Allows for the creation of bespoke patterns of Imperial power armours.</description>
+                                        <baseCost>4000</baseCost>
+                                        <prerequisites>
+                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                        </prerequisites>
+                                        <techLevel>Spacer</techLevel>
+                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                                        <researchViewX>6</researchViewX>
+                                        <researchViewY>2.25</researchViewY>
+                                    </ResearchProjectDef>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                   -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Royalty</li>
+                                </mods>
+                                <match Class="PatchOperationSequence">
+                                    <operations>
+
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
+                                            <value>
+                                                <li>CataphractArmor</li>
+                                            </value>
+                                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtiferArmour                                        -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                       -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_ArtificerArmour"]/prerequisites</xpath>
+                                            <value>
+                                                <li>RoyalApparel</li>
+                                            </value>
+                                        </li>
+
+                                    </operations>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + NO_MATCH VanillaArmourExpanded                                                                              -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                        -->
+<!--  ==============================================================================================================  -->
+                        <li Class="PatchOperationFindMod">
+                            <mods>
+                                <li>Vanilla Armour Expanded</li>
+                            </mods>
+
+                                <nomatch Class="PatchOperationAdd">
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
+                                    <value>
+                                        <li>ShieldBelt</li>
+                                    </value>
+                                </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + MATCH VanillaArmourExpanded                                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                             -->
+<!--  ==============================================================================================================  -->
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
+                                    <value>
+                                        <li>VAE_SiegebreakerArmor</li>
+                                    </value>
+                                </match>
+
+                            </li>
+
+                        </operations>
                     </match>
-
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                          -->
-<!--  ==============================================================================================================  -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Armour Expanded</li>
-                </mods>
-
-                    <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
-                        <value>
-                            <li>ShieldBelt</li>
-                        </value>
-                    </nomatch>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaArmourExpanded  (ResearchProjectDef)  -  TerminatorArmour                                        -->
-<!--  ==============================================================================================================  -->
-<!--    + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                               -->
-<!--  ==============================================================================================================  -->
-                    <match Class="PatchOperationAdd">
-                        <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
-                        <value>
-                            <li>VAE_SiegebreakerArmor</li>
-                        </value>
-                    </match>
-
                 </li>
 
             </operations>
