@@ -194,9 +194,9 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Perturabo_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
 <!--    + LAP_Armour_Perturabo_Armor recipeMaker REPLACE researchPrerequisite                                         -->
-<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
-<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
-<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Iron_Warriors             -->
+<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                          -->
 <!--    + LAP_Armour_Perturabo_Head REPLACE label                                                                     -->
@@ -211,9 +211,9 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Perturabo_Head equippedStatOffsets ADD ToxicSensitivity  -0.20                                   -->
 <!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
-<!--                                          WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                   -->
-<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
-<!--                                                                     li  LAP_Tech_Emperor                         -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  POS_AMA_Imperial_ArtificerArmour    -->
+<!--                                                                          li  POS_AMA_Imperial_TerminatorArmour   -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerArmour                                                         -->
 <!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags  PrestigeCombatGear                                          -->
@@ -755,8 +755,8 @@
 <!--    + LAP_Armour_Perturabo_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
 <!--    + LAP_Armour_Perturabo_Armor recipeMaker REPLACE researchPrerequisite                                         -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Iron_Warriors             -->
+<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
 <!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
-<!--                                                                           li  LAP_Tech_Emperor                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/label</xpath>
@@ -784,8 +784,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
                             <li>POS_AMA_Imperial_TerminatorArmour</li>
-                            <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -806,8 +806,8 @@
 <!--    + LAP_Armour_Perturabo_Head equippedStatOffsets ADD ToxicSensitivity  -0.20                                   -->
 <!--    + LAP_Armour_Perturabo_Head recipeMaker REPLACE researchPrerequisite                                          -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  POS_AMA_Imperial_ArtificerArmour    -->
 <!--                                                                          li  POS_AMA_Imperial_TerminatorArmour   -->
-<!--                                                                          li  LAP_Tech_Emperor                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/label</xpath>
@@ -835,8 +835,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Iron_Warriors</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
                             <li>POS_AMA_Imperial_TerminatorArmour</li>
-                            <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
                 </li>
