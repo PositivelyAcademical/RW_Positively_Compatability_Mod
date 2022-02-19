@@ -170,7 +170,30 @@
 <!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
 <!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesPowerArmour                                                             -->
+<!--    + Custodian_Armor apparel ADD tags li  PrestigeCombatGear                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesHelmet                                                                  -->
+<!--    + Custodian_Helmet apparel ADD tags li  PrestigeCombatGear                                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesTerminatorArmour                                                        -->
+<!--    + Custodian_Terminator apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesTerminatorHelmet                                                        -->
+<!--    + Custodian_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesGeneralArmour                                                           -->
+<!--    + Golden_General_Armor apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesGeneralHelmet                                                           -->
+<!--    + Golden_General_Helmet apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesEmperorArmour                                                           -->
+<!--    + Emperor_Armor apparel ADD tags li  PrestigeCombatGear                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesEmperorHelmet                                                           -->
+<!--    + Emperor_Crown apparel ADD tags li  PrestigeCombatGear                                                       -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -618,9 +641,147 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesPowerArmour                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Armor apparel ADD tags li  PrestigeCombatGear                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesHelmet                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Helmet apparel ADD tags li  PrestigeCombatGear                                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesTerminatorArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Terminator apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesTerminatorHelmet                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Custodian_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesGeneralArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Golden_General_Armor apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Golden_General_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesGeneralHelmet                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Golden_General_Helmet apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Golden_General_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesEmperorArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Emperor_Armor apparel ADD tags li  PrestigeCombatGear                                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  CustodesEmperorHelmet                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + Emperor_Crown apparel ADD tags li  PrestigeCombatGear                                                       -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
 
             </operations>
         </match>
     </Operation>
 
 </Patch>
+
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
