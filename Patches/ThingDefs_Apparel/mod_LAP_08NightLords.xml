@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPowerArmour                                                               -->
+<!--    + LAP_Armour_NightLords_Armor REPLACE label                                                                   -->
+<!--                                     WITH label  Night Lords power armour                                         -->
+<!--    + LAP_Armour_NightLords_Armor REPLACE description                                                             -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the VIII Legion, the Night    -->
+<!--                              Lords. Power armour worn by the Legiones Astartes is a sophisticated defensive      -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                 -->
+<!--    + LAP_Armour_NightLords_Armor recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsHelmet                                                                    -->
+<!--    + LAP_Armour_NightLords_Helmet REPLACE label                                                                  -->
+<!--                                      WITH label  Night Lords Helmet                                              -->
+<!--    + LAP_Armour_NightLords_Helmet REPLACE description                                                            -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the VIII Legion, the   -->
+<!--                              Night Lords. Completing a set of power armour, the helmet seals the wearer in a     -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                   -->
+<!--                                                          WITH ToxicSensitivity  -0.35                            -->
+<!--    + LAP_Armour_NightLords_Helmet recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsRaptorArmour                                                              -->
+<!--    + LAP_Armour_NightLords_Raptor REPLACE label                                                                  -->
+<!--                                      WITH label  Night Lords Raptor armour                                       -->
+<!--    + LAP_Armour_NightLords_Raptor REPLACE description                                                            -->
+<!--          WITH description  Raptor variant assault pattern power armour in the livery of the Night Raptors of     -->
+<!--                              VIII Legion, the Night Lords. The Night Raptors are equipped with jump packs and    -->
+<!--                              an array of close combat weapons. Where possible each warrior will adorn their      -->
+<!--                              armour with grisly trophies and advanced systems to project images of death on its  -->
+<!--                              surface.\n\n                                                                        -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Raptor equippedStatOffsets ADD ToxicSensitivity  -0.65                                -->
+<!--    + LAP_Armour_NightLords_Raptor recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorArmour                                                          -->
+<!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
+<!--                                          WITH label  Night Lords Terminator armour                               -->
+<!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
+<!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
+<!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                            -->
+<!--    + LAP_Armour_NightLords_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Night_Lords               -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorHelmet                                                          -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
+<!--                                                 WITH label  Night Lords Terminator helmet                        -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
+<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
+<!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
+<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
+<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                        -->
+<!--                                                                     WITH ToxicSensitivity  -0.20                 -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Night_Lords               -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchArmour                                                            -->
+<!--    + LAP_Armour_Curze_Armor REPLACE label                                                                        -->
+<!--                                WITH label  the Nightmare Mantle                                                  -->
+<!--    + LAP_Armour_Curze_Armor REPLACE description                                                                  -->
+<!--          WITH description  The Nightmare Mantle is the rainment of war of Konrad Curze, Primarch of the VIII     -->
+<!--                              Legion, the Night Lords. It is a customised artificer suit, bedecked in grisly      -->
+<!--                              trophies of judgement and the flayed skins of those he saw as particularly          -->
+<!--                              egregious or noteworthy.\n\n                                                        -->
+<!--                            Called the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze  -->
+<!--                              was from his earliest days a figure of dark renown. When he was granted command of  -->
+<!--                              the VIII Legion, which the Primarch named the Night Lords, Curze set about          -->
+<!--                              imposing his particular notions of order and justice upon the wider galaxy. World   -->
+<!--                              after world fell to the Night Haunter's bloody campaigns of conquest, the Primarch  -->
+<!--                              becoming so feared that the mere word of his approach was often sufficient to       -->
+<!--                              suppress rebellion and cow disobedience.                                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Curze_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                      -->
+<!--    + LAP_Armour_Curze_Armor recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Night_Lords                   -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsPowerArmour                                                           -->
+<!--    + LAP_Armour_NightLords_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsHelmet                                                                -->
+<!--    + LAP_Armour_NightLords_Helmet apparel ADD tags li  PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsRaptorArmour                                                          -->
+<!--    + LAP_Armour_NightLords_Raptor recipeMaker researchPrerequisites ADD li  JumpPack                             -->
+<!--    + LAP_Armour_NightLords_Raptor apparel ADD tags li  PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsTerminatorArmour                                                      -->
+<!--    + LAP_Armour_NightLords_Terminator apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsTerminatorHelmet                                                      -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsPrimarchArmour                                                        -->
+<!--    + LAP_Armour_Curze_Armor apparel ADD tags li  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPowerArmour                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Armor REPLACE label                                                                   -->
+<!--                                     WITH label  Night Lords power armour                                         -->
+<!--    + LAP_Armour_NightLords_Armor REPLACE description                                                             -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the VIII Legion, the Night    -->
+<!--                              Lords. Power armour worn by the Legiones Astartes is a sophisticated defensive      -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                 -->
+<!--    + LAP_Armour_NightLords_Armor recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Armor"]/label</xpath>
+                    <value>
+                        <label>Night Lords power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Armor"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour in the livery of the VIII Legion, the Night Lords. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsHelmet                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Helmet REPLACE label                                                                  -->
+<!--                                      WITH label  Night Lords Helmet                                              -->
+<!--    + LAP_Armour_NightLords_Helmet REPLACE description                                                            -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the VIII Legion, the   -->
+<!--                              Night Lords. Completing a set of power armour, the helmet seals the wearer in a     -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                   -->
+<!--                                                          WITH ToxicSensitivity  -0.35                            -->
+<!--    + LAP_Armour_NightLords_Helmet recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/label</xpath>
+                    <value>
+                        <label>Night Lords helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour helmet in the livery of the VIII Legion, the Night Lords. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsRaptorArmour                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Raptor REPLACE label                                                                  -->
+<!--                                      WITH label  Night Lords Raptor armour                                       -->
+<!--    + LAP_Armour_NightLords_Raptor REPLACE description                                                            -->
+<!--          WITH description  Raptor variant assault pattern power armour in the livery of the Night Raptors of     -->
+<!--                              VIII Legion, the Night Lords. The Night Raptors are equipped with jump packs and    -->
+<!--                              an array of close combat weapons. Where possible each warrior will adorn their      -->
+<!--                              armour with grisly trophies and advanced systems to project images of death on its  -->
+<!--                              surface.\n\n                                                                        -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Raptor equippedStatOffsets ADD ToxicSensitivity  -0.65                                -->
+<!--    + LAP_Armour_NightLords_Raptor recipeMaker REPLACE researchPrerequisite                                       -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Night_Lords                -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/label</xpath>
+                    <value>
+                        <label>Night Lords Raptor armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/description</xpath>
+                    <value>
+                        <description>Raptor variant assault pattern power armour in the livery of the Night Raptors of VIII Legion, the Night Lords. The Night Raptors are equipped with jump packs and an array of close combat weapons. Where possible each warrior will adorn their armour with grisly trophies and advanced systems to project images of death on itssurface.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorArmour                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
+<!--                                          WITH label  Night Lords Terminator armour                               -->
+<!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
+<!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
+<!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                            -->
+<!--    + LAP_Armour_NightLords_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Night_Lords               -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/label</xpath>
+                    <value>
+                        <label>Night Lords Terminator armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/description</xpath>
+                    <value>
+                        <description>Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night Lords. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorHelmet                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
+<!--                                                 WITH label  Night Lords Terminator helmet                        -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
+<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
+<!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
+<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
+<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
+<!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
+<!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
+<!--                              escape in order to sow the seeds of dread still further.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                        -->
+<!--                                                                     WITH ToxicSensitivity  -0.20                 -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Night_Lords               -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/label</xpath>
+                    <value>
+                        <label>Night Lords Terminator helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the Night Lords. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchArmour                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Curze_Armor REPLACE label                                                                        -->
+<!--                                WITH label  the Nightmare Mantle                                                  -->
+<!--    + LAP_Armour_Curze_Armor REPLACE description                                                                  -->
+<!--          WITH description  The Nightmare Mantle is the rainment of war of Konrad Curze, Primarch of the VIII     -->
+<!--                              Legion, the Night Lords. It is a customised artificer suit, bedecked in grisly      -->
+<!--                              trophies of judgement and the flayed skins of those he saw as particularly          -->
+<!--                              egregious or noteworthy.\n\n                                                        -->
+<!--                            Called the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze  -->
+<!--                              was from his earliest days a figure of dark renown. When he was granted command of  -->
+<!--                              the VIII Legion, which the Primarch named the Night Lords, Curze set about          -->
+<!--                              imposing his particular notions of order and justice upon the wider galaxy. World   -->
+<!--                              after world fell to the Night Haunter's bloody campaigns of conquest, the Primarch  -->
+<!--                              becoming so feared that the mere word of his approach was often sufficient to       -->
+<!--                              suppress rebellion and cow disobedience.                                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Curze_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                      -->
+<!--    + LAP_Armour_Curze_Armor recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Night_Lords                   -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Curze_Armor"]/label</xpath>
+                    <value>
+                        <label>the Nightmare Mantle</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Curze_Armor"]/description</xpath>
+                    <value>
+                        <description>The Nightmare Mantle is the rainment of war of Konrad Curze, Primarch of the VIII Legion, the Night Lords. It is a customised artificer suit, bedecked in grisly trophies of judgement and the flayed skins of those he saw as particularly egregious or noteworthy.\n\nCalled the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze was from his earliest days a figure of dark renown. When he was granted command of the VIII Legion, which the Primarch named the Night Lords, Curze set about imposing his particular notions of order and justice upon the wider galaxy. World after world fell to the Night Haunter's bloody campaigns of conquest, the Primarch becoming so feared that the mere word of his approach was often sufficient to suppress rebellion and cow disobedience.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Curze_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Curze_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsPowerArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsHelmet                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Helmet apparel ADD tags li  PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsRaptorArmour                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Raptor recipeMaker researchPrerequisites ADD li  JumpPack                             -->
+<!--    + LAP_Armour_NightLords_Raptor apparel ADD tags li  PrestigeCombatGear                                        -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>JumpPack</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsTerminatorArmour                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Terminator apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsTerminatorHelmet                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_NightLords_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  NightLordsPrimarchArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Curze_Armor apparel ADD tags li  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Curze_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
