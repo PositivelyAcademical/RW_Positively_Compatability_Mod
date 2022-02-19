@@ -133,7 +133,23 @@
 <!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorArmour                                                               -->
+<!--    + Emperor_Armor REPLACE label                                                                                 -->
+<!--                       WITH label  the One True Armour                                                            -->
+<!--    + Emperor_Armor REPLACE description                                                                           -->
+<!--          WITH description  The One True Armour is an unique set of power armour created and worn by the Emperor  -->
+<!--                              of Mankind. Fashione in auramite alloy, this panoply of war far exceeds any armour  -->
+<!--                              wrought by mortal hands.\n\n                                                        -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
 <!--                                                                                                                  -->
+<!--    + Emperor_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
+<!--    + Emperor_Armor recipeMaker REPLACE researchPrerequisite                                                      -->
+<!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
+<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
+<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorHelmet                                                               -->
 <!--                                                                                                                  -->
@@ -474,6 +490,53 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>POS_AMA_Imperial_ArtificerArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorArmour                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + Emperor_Armor REPLACE label                                                                                 -->
+<!--                       WITH label  the One True Armour                                                            -->
+<!--    + Emperor_Armor REPLACE description                                                                           -->
+<!--          WITH description  The One True Armour is an unique set of power armour created and worn by the Emperor  -->
+<!--                              of Mankind. Fashione in auramite alloy, this panoply of war far exceeds any armour  -->
+<!--                              wrought by mortal hands.\n\n                                                        -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
+<!--                                                                                                                  -->
+<!--    + Emperor_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
+<!--    + Emperor_Armor recipeMaker REPLACE researchPrerequisite                                                      -->
+<!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
+<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
+<!--                                                              li  AdvancedFabrication                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/label</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>
