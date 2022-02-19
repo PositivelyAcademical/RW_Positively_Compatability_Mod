@@ -152,7 +152,23 @@
 <!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorHelmet                                                               -->
+<!--    + Emperor_Crown REPLACE label                                                                                 -->
+<!--                       WITH label  the Crown                                                                      -->
+<!--    + Emperor_Crown REPLACE description                                                                           -->
+<!--          WITH description  The Crown of the Emperor of Mankind. Wrought of gold and shaped as a laurel wreath,   -->
+<!--                              the Emeperor's Crown was made by His own hand through His knowledge of              -->
+<!--                              warpcraft.\n\n                                                                      -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
 <!--                                                                                                                  -->
+<!--    + Emperor_Crown equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
+<!--    + Emperor_Crown recipeMaker REPLACE researchPrerequisite                                                      -->
+<!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
+<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
+<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
 <!--                                                                                                                  -->
 
@@ -518,7 +534,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/label</xpath>
                     <value>
-                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                        <label>the One True Armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/description</xpath>
+                    <value>
+                        <description>The One True Armour is an unique set of power armour created and worn by the Emperor of Mankind. Fashione in auramite alloy, this panoply of war far exceeds any armour wrought by mortal hands.\n\nThe Emperor, the Master of Mankind, has reunited the clans of old Earth following Long Night. Now that the Unification Wars are over, He seeks to bring together the lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is born.</description>
                     </value>
                 </li>
 
@@ -531,6 +554,60 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorHelmet                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + Emperor_Crown REPLACE label                                                                                 -->
+<!--                       WITH label  the Crown                                                                      -->
+<!--    + Emperor_Crown REPLACE description                                                                           -->
+<!--          WITH description  The Crown of the Emperor of Mankind. Wrought of gold and shaped as a laurel wreath,   -->
+<!--                              the Emeperor's Crown was made by His own hand through His knowledge of              -->
+<!--                              warpcraft.\n\n                                                                      -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
+<!--                                                                                                                  -->
+<!--    + Emperor_Crown equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
+<!--    + Emperor_Crown recipeMaker REPLACE researchPrerequisite                                                      -->
+<!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
+<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
+<!--                                                              li  AdvancedFabrication                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/label</xpath>
+                    <value>
+                        <label>the Crown</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/description</xpath>
+                    <value>
+                        <description>The Crown of the Emperor of Mankind. Wrought of gold and shaped as a laurel wreath, the Emeperor's Crown was made by His own hand through His knowledge of warpcraft.\n\nThe Emperor, the Master of Mankind, has reunited the clans of old Earth following Long Night. Now that the Unification Wars are over, He seeks to bring together the lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is born.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
