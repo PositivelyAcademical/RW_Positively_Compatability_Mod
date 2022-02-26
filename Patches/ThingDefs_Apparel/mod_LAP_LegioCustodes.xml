@@ -50,7 +50,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorArmour                                                            -->
 <!--    + Custodian_Terminator REPLACE label                                                                          -->
-<!--                              WITH label  Custodes Terminator armour                                              -->
+<!--                              WITH label  Custodes terminator armour                                              -->
 <!--    + Custodian_Terminator REPLACE description                                                                    -->
 <!--          WITH description  Aquilon pattern Terminator armour is a variant uniquely designed to operate in        -->
 <!--                              conjunction with the physiology of the Legio Custodes. Its origins lie with the     -->
@@ -72,7 +72,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorHelmet                                                            -->
 <!--    + Custodian_Terminator_Helmet REPLACE label                                                                   -->
-<!--                                     WITH label  Custodes Terminator helmet                                       -->
+<!--                                     WITH label  Custodes terminator helmet                                       -->
 <!--    + Custodian_Terminator_Helmet REPLACE description                                                             -->
 <!--          WITH description  Aquilon pattern Terminator armour helmet, completing a set of Aquilon pattern         -->
 <!--                              Terminator armour worn by the warriors of the Legio Custodes. Derived from the      -->
