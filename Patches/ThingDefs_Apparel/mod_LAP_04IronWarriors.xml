@@ -222,38 +222,38 @@
 <!--                                                                          li  POS_AMA_Imperial_TerminatorArmour   -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerArmour                                                         -->
-<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags  PrestigeCombatGear                                          -->
+<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags li  PrestigeCombatGear                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerHelmet                                                         -->
-<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags  PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags li  PrestigeCombatGear                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsAssaultArmour                                                       -->
 <!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                         -->
-<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags  PrestigeCombatGear                                       -->
+<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryArmour                                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineArmour                                                    -->
-<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                    -->
-<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorArmour                                                    -->
-<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags  PrestigeCombatGear                                     -->
+<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags li  PrestigeCombatGear                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                    -->
-<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchArmour                                                      -->
-<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags  PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags li  PrestigeCombatGear                                          -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                      -->
-<!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
+<!--    + LAP_Armour_Perturabo_Head apparel ADD tags li  PrestigeCombatGear                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction       -->
@@ -864,7 +864,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerArmour                                                         -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags  PrestigeCombatGear                                          -->
+<!--    + LAP_Armour_IronWarriors_Armor apparel ADD tags li  PrestigeCombatGear                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -885,7 +885,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPowerHelmet                                                         -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags  PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_IronWarriors_Helmet apparel ADD tags li  PrestigeCombatGear                                      -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/apparel</xpath>
@@ -900,7 +900,7 @@
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsAssaultArmour                                                       -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_IronWarriors_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                         -->
-<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags  PrestigeCombatGear                                       -->
+<!--    + LAP_Armour_IronWarriors_JumpPack apparel ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/recipeMaker/researchPrerequisites</xpath>
@@ -921,7 +921,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryArmour                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel</xpath>
@@ -935,7 +935,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/apparel</xpath>
@@ -949,7 +949,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineArmour                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Armor apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel</xpath>
@@ -963,7 +963,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTechmarineHelmet                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Techmarine_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/apparel</xpath>
@@ -977,7 +977,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorArmour                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags  PrestigeCombatGear                                     -->
+<!--    + LAP_Armour_IronWarriors_Terminator apparel ADD tags li  PrestigeCombatGear                                  -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/apparel</xpath>
@@ -991,7 +991,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsTerminatorHelmet                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                              -->
+<!--    + LAP_Armour_IronWarriors_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                           -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/apparel</xpath>
@@ -1005,7 +1005,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchArmour                                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags  PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Perturabo_Armor apparel ADD tags li  PrestigeCombatGear                                          -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel</xpath>
@@ -1019,7 +1019,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  IronWarriorsPrimarchHelmet                                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
+<!--    + LAP_Armour_Perturabo_Head apparel ADD tags li  PrestigeCombatGear                                           -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/apparel</xpath>
