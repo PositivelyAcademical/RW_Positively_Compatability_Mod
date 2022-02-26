@@ -85,16 +85,16 @@
 <!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenPowerArmour                                                     -->
-<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenHelmet                                                          -->
-<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                  -->
-<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags li  PrestigeCombatGear                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                  -->
-<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags li  PrestigeCombatGear                                -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -319,7 +319,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenPowerArmour                                                     -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -340,7 +340,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenHelmet                                                          -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags PrestigeCombatGear                                             -->
+<!--    + LAP_Armour_Emperors_Children_Helmet ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Helmet"]/apparel</xpath>
@@ -354,7 +354,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantArmour                                                  -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags PrestigeCombatGear                                     -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Armor ADD tags li  PrestigeCombatGear                                 -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/apparel</xpath>
@@ -368,7 +368,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                  -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags PrestigeCombatGear                                    -->
+<!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet ADD tags li  PrestigeCombatGear                                -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/apparel</xpath>
