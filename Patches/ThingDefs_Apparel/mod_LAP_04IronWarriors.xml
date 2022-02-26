@@ -78,6 +78,9 @@
 <!--                              throughout the Great Crusade.                                                       -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet REPLACE label                                                     -->
@@ -96,6 +99,9 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
 <!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTechmarineArmour                                                        -->
 <!--    + LAP_Armour_IronWarriors_Techmarine_Armor REPLACE label                                                      -->
@@ -143,7 +149,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorArmour                                                        -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
-<!--                                            WITH label Iron Warriors terminator armour                            -->
+<!--                                            WITH label  Iron Warriors terminator armour                           -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
 <!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
 <!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
@@ -186,7 +192,7 @@
 <!--    + LAP_Armour_Perturabo_Armor REPLACE label                                                                    -->
 <!--                                    WITH label  the Logos                                                         -->
 <!--    + LAP_Armour_Perturabo_Armor REPLACE description                                                              -->
-<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of Terminator armour  -->
+<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of terminator armour  -->
 <!--                              of his own design known as the Logos.\n\n                                           -->
 <!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
 <!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
@@ -250,28 +256,16 @@
 <!--    + LAP_Armour_Perturabo_Head apparel ADD tags  PrestigeCombatGear                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction       -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                 -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  MedicineProduction      -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  GlitterworldAutopsy                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy      -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  GlitterworldAutopsy                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy     -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -457,6 +451,9 @@
 <!--                              throughout the Great Crusade.                                                       -->
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                    -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/label</xpath>
@@ -479,6 +476,16 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsApothecaryHelmet                                                        -->
 <!--  ==============================================================================================================  -->
@@ -498,6 +505,9 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                      -->
 <!--                                                                       WITH ToxicSensitivity  -0.35               -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/label</xpath>
@@ -517,6 +527,16 @@
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
                     <value>
                         <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
                     </value>
                 </li>
 
@@ -637,7 +657,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsTerminatorArmour                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
-<!--                                            WITH label Iron Warriors terminator armour                            -->
+<!--                                            WITH label  Iron Warriors terminator armour                           -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
 <!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
 <!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
@@ -746,7 +766,7 @@
 <!--    + LAP_Armour_Perturabo_Armor REPLACE label                                                                    -->
 <!--                                    WITH label  the Logos                                                         -->
 <!--    + LAP_Armour_Perturabo_Armor REPLACE description                                                              -->
-<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of Terminator armour  -->
+<!--          WITH description  Perterabo's panoply of war, a unique and highly customised suit of terminator armour  -->
 <!--                              of his own design known as the Logos.\n\n                                           -->
 <!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
 <!--                              grim warrior and a master of technological arcana who wielded logic and the         -->
@@ -768,7 +788,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/description</xpath>
                     <value>
-                        <description>Perterabo's panoply of war, a unique and highly customised suit of Terminator armour of his own design known as the Logos.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                        <description>Perterabo's panoply of war, a unique and highly customised suit of terminator armour of his own design known as the Logos.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
                     </value>
                 </li>
 
@@ -1022,41 +1042,27 @@
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction       -->
 <!--  ==============================================================================================================  -->
                     <nomatch Class="PatchOperationSequence">
                         <operations>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>LAP_Tech_Iron_Warriors</li>
-                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        <li>MedicineProduction</li>
-                                    </researchPrerequisites>
+                                    <li>MedicineProduction</li>
                                 </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                 -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  MedicineProduction                  -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  MedicineProduction      -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>LAP_Tech_Iron_Warriors</li>
-                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        <li>MedicineProduction</li>
-                                    </researchPrerequisites>
+                                    <li>MedicineProduction</li>
                                 </value>
                             </li>
 
@@ -1066,41 +1072,27 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  GlitterworldAutopsy                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy      -->
 <!--  ==============================================================================================================  -->
                     <match Class="PatchOperationSequence">
                         <operations>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>LAP_Tech_Iron_Warriors</li>
-                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        <li>GlitterworldAutopsy</li>
-                                    </researchPrerequisites>
+                                    <li>GlitterworldAutopsy</li>
                                 </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryHelmet                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                          -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
-<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  GlitterworldAutopsy                 -->
+<!--    + LAP_Armour_IronWarriors_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy     -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
-                                    <researchPrerequisites>
-                                        <li>LAP_Tech_Iron_Warriors</li>
-                                        <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        <li>GlitterworldAutopsy</li>
-                                    </researchPrerequisites>
+                                    <li>GlitterworldAutopsy</li>
                                 </value>
                             </li>
 
