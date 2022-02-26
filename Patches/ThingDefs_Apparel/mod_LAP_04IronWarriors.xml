@@ -1034,16 +1034,16 @@
                     </match>
                 </li>
 
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Harvest Organs Post Mortem</li>
-                    </mods>
-
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  IronWarriorsApothecaryArmour                                 -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_IronWarriors_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction       -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Harvest Organs Post Mortem</li>
+                    </mods>
+
                     <nomatch Class="PatchOperationSequence">
                         <operations>
 
