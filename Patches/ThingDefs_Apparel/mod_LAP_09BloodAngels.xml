@@ -143,23 +143,23 @@
 <!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsPowerArmour                                                          -->
-<!--    + LAP_Armour_BloodAngels_Armor apparel ADD tags  PrestigeCombatGear                                           -->
+<!--    + LAP_Armour_BloodAngels_Armor apparel ADD tags li  PrestigeCombatGear                                        -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsHelmet                                                               -->
-<!--    + LAP_Armour_BloodAngels_Helmet apparel ADD tags  PrestigeCombatGear                                          -->
+<!--    + LAP_Armour_BloodAngels_Helmet apparel ADD tags li  PrestigeCombatGear                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsAssaultArmour                                                        -->
 <!--    + LAP_Armour_BloodAngels_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                          -->
-<!--    + LAP_Armour_BloodAngels_JumpPack apparel ADD tags  PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_BloodAngels_JumpPack apparel ADD tags li  PrestigeCombatGear                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsTerminatorArmour                                                     -->
-<!--    + LAP_Armour_BloodAngels_Terminator apparel ADD tags  PrestigeCombatGear                                      -->
+<!--    + LAP_Armour_BloodAngels_Terminator apparel ADD tags li  PrestigeCombatGear                                   -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsTerminatorHelmet                                                     -->
-<!--    + LAP_Armour_BloodAngels_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_BloodAngels_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsPrimarchArmour                                                       -->
-<!--    + LAP_Armour_Sanguinius_Armor apparel ADD tags  PrestigeCombatGear                                            -->
+<!--    + LAP_Armour_Sanguinius_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -508,7 +508,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsPowerArmour                                                          -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_BloodAngels_Armor apparel ADD tags  PrestigeCombatGear                                           -->
+<!--    + LAP_Armour_BloodAngels_Armor apparel ADD tags li  PrestigeCombatGear                                        -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -529,7 +529,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsHelmet                                                               -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_BloodAngels_Helmet apparel ADD tags  PrestigeCombatGear                                          -->
+<!--    + LAP_Armour_BloodAngels_Helmet apparel ADD tags li  PrestigeCombatGear                                       -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Helmet"]/apparel</xpath>
@@ -544,7 +544,7 @@
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsAssaultArmour                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_BloodAngels_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                          -->
-<!--    + LAP_Armour_BloodAngels_JumpPack apparel ADD tags  PrestigeCombatGear                                        -->
+<!--    + LAP_Armour_BloodAngels_JumpPack apparel ADD tags li  PrestigeCombatGear                                     -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_JumpPack"]/recipeMaker/researchPrerequisites</xpath>
@@ -565,7 +565,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsTerminatorArmour                                                     -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_BloodAngels_Terminator apparel ADD tags  PrestigeCombatGear                                      -->
+<!--    + LAP_Armour_BloodAngels_Terminator apparel ADD tags li  PrestigeCombatGear                                   -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/apparel</xpath>
@@ -579,7 +579,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsTerminatorHelmet                                                     -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_BloodAngels_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                               -->
+<!--    + LAP_Armour_BloodAngels_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                            -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator_Helmet"]/apparel</xpath>
@@ -593,7 +593,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsPrimarchArmour                                                       -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Sanguinius_Armor apparel ADD tags  PrestigeCombatGear                                            -->
+<!--    + LAP_Armour_Sanguinius_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Sanguinius_Armor"]/apparel</xpath>
