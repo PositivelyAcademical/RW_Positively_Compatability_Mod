@@ -367,7 +367,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/label</xpath>
                     <value>
-                        <label>Blood Angels Terminator armour<label>
+                        <label>Blood Angels Terminator armour</label>
                     </value>
                 </li>
 
