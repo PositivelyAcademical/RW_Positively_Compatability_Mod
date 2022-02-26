@@ -75,7 +75,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsTerminatorArmour                                                         -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE label                                                             -->
-<!--                                           WITH label  Blood Angels Terminator armour                             -->
+<!--                                           WITH label  Blood Angels terminator armour                             -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE description                                                       -->
 <!--          WITH description  Astates tactical dreadnought armour in the livery of the IX Legion, the Blood         -->
 <!--                              Angels. Commonly called terminator armour, this armour is an advanced form of       -->
@@ -100,7 +100,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsTerminatorHelmet                                                         -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE label                                                      -->
-<!--                                                  WITH label  Blood Angels Terminator helmet                      -->
+<!--                                                  WITH label  Blood Angels terminator helmet                      -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE description                                                -->
 <!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IX Legion, the       -->
 <!--                              Blood Angels. Completing a set of terminator armour, this helmet fully encloses     -->
@@ -341,7 +341,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsTerminatorArmour                                                         -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE label                                                             -->
-<!--                                           WITH label  Blood Angels Terminator armour                             -->
+<!--                                           WITH label  Blood Angels terminator armour                             -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE description                                                       -->
 <!--          WITH description  Astates tactical dreadnought armour in the livery of the IX Legion, the Blood         -->
 <!--                              Angels. Commonly called terminator armour, this armour is an advanced form of       -->
@@ -367,7 +367,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/label</xpath>
                     <value>
-                        <label>Blood Angels Terminator armour</label>
+                        <label>Blood Angels terminator armour</label>
                     </value>
                 </li>
 
@@ -399,7 +399,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsTerminatorHelmet                                                         -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE label                                                      -->
-<!--                                                  WITH label  Blood Angels Terminator helmet                      -->
+<!--                                                  WITH label  Blood Angels terminator helmet                      -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE description                                                -->
 <!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IX Legion, the       -->
 <!--                              Blood Angels. Completing a set of terminator armour, this helmet fully encloses     -->
@@ -424,7 +424,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/label</xpath>
                     <value>
-                        <label>Blood Angels Terminator helmet</label>
+                        <label>Blood Angels terminator helmet</label>
                     </value>
                 </li>
 
