@@ -135,26 +135,26 @@
 <!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerArmour                                                           -->
-<!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags  PrestigeCombatGear                                            -->
+<!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerHelmet                                                           -->
-<!--    + LAP_Armour_DarkAngels_Helmet apparel ADD tags  PrestigeCombatGear                                           -->
+<!--    + LAP_Armour_DarkAngels_Helmet apparel ADD tags li  PrestigeCombatGear                                        -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsAssaultArmour                                                         -->
 <!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                           -->
-<!--    + LAP_Armour_DarkAngels_JumpPack apparel ADD tags  PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_DarkAngels_JumpPack apparel ADD tags li  PrestigeCombatGear                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsTerminatorArmour                                                      -->
-<!--    + LAP_Armour_DarkAngels_Terminator apparel ADD tags  PrestigeCombatGear                                       -->
+<!--    + LAP_Armour_DarkAngels_Terminator apparel ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsTerminatorHelmet                                                      -->
-<!--    + LAP_Armour_DarkAngels_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                                -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                             -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPrimarchArmour                                                        -->
-<!--    + LAP_Armour_Lion_Armor apparel ADD tags  PrestigeCombatGear                                                  -->
+<!--    + LAP_Armour_Lion_Armor apparel ADD tags li  PrestigeCombatGear                                               -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                        -->
-<!--    + LAP_Armour_Lion_Helmet apparel ADD tags  PrestigeCombatGear                                                 -->
+<!--    + LAP_Armour_Lion_Helmet apparel ADD tags li  PrestigeCombatGear                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -530,7 +530,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerArmour                                                           -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags  PrestigeCombatGear                                            -->
+<!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -551,7 +551,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerHelmet                                                           -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_DarkAngels_Helmet apparel ADD tags  PrestigeCombatGear                                           -->
+<!--    + LAP_Armour_DarkAngels_Helmet apparel ADD tags li  PrestigeCombatGear                                        -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Helmet"]/apparel</xpath>
@@ -566,7 +566,7 @@
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsAssaultArmour                                                         -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_DarkAngels_JumpPack recipeMaker researchPrerequisites ADD li  JumpPack                           -->
-<!--    + LAP_Armour_DarkAngels_JumpPack apparel ADD tags  PrestigeCombatGear                                         -->
+<!--    + LAP_Armour_DarkAngels_JumpPack apparel ADD tags li  PrestigeCombatGear                                      -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_JumpPack"]/recipeMaker/researchPrerequisites</xpath>
@@ -587,7 +587,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsTerminatorArmour                                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_DarkAngels_Terminator apparel ADD tags  PrestigeCombatGear                                       -->
+<!--    + LAP_Armour_DarkAngels_Terminator apparel ADD tags li  PrestigeCombatGear                                    -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/apparel</xpath>
@@ -601,7 +601,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsTerminatorHelmet                                                      -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_DarkAngels_Terminator_Helmet apparel ADD tags  PrestigeCombatGear                                -->
+<!--    + LAP_Armour_DarkAngels_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                             -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator_Helmet"]/apparel</xpath>
@@ -615,7 +615,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPrimarchArmour                                                        -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Lion_Armor apparel ADD tags  PrestigeCombatGear                                                  -->
+<!--    + LAP_Armour_Lion_Armor apparel ADD tags li  PrestigeCombatGear                                               -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/apparel</xpath>
@@ -629,7 +629,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                        -->
 <!--  ==============================================================================================================  -->
-<!--    + LAP_Armour_Lion_Helmet apparel ADD tags  PrestigeCombatGear                                                 -->
+<!--    + LAP_Armour_Lion_Helmet apparel ADD tags li  PrestigeCombatGear                                              -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/apparel</xpath>
