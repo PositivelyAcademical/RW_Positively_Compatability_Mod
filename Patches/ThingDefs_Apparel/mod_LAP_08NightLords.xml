@@ -62,7 +62,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorArmour                                                          -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
-<!--                                          WITH label  Night Lords Terminator armour                               -->
+<!--                                          WITH label  Night Lords terminator armour                               -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
 <!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
 <!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
@@ -82,7 +82,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorHelmet                                                          -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
-<!--                                                 WITH label  Night Lords Terminator helmet                        -->
+<!--                                                 WITH label  Night Lords terminator helmet                        -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
 <!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
 <!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
@@ -306,7 +306,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorArmour                                                          -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
-<!--                                          WITH label  Night Lords Terminator armour                               -->
+<!--                                          WITH label  Night Lords terminator armour                               -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
 <!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
 <!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
@@ -327,7 +327,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/label</xpath>
                     <value>
-                        <label>Night Lords Terminator armour</label>
+                        <label>Night Lords terminator armour</label>
                     </value>
                 </li>
 
@@ -359,7 +359,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsTerminatorHelmet                                                          -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
-<!--                                                 WITH label  Night Lords Terminator helmet                        -->
+<!--                                                 WITH label  Night Lords terminator helmet                        -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
 <!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
 <!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
@@ -379,7 +379,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/label</xpath>
                     <value>
-                        <label>Night Lords Terminator helmet</label>
+                        <label>Night Lords terminator helmet</label>
                     </value>
                 </li>
 
