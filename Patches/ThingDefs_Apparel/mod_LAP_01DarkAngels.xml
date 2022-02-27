@@ -62,12 +62,12 @@
 <!--    + LAP_Armour_DarkAngels_Terminator REPLACE label                                                              -->
 <!--                                          WITH label  Dark Angels terminator armour                               -->
 <!--    + LAP_Armour_DarkAngels_Terminator REPLACE description                                                        -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the I Legion, the Dark Angels.   -->
-<!--                              Commonly called terminator armour, this armour is an advanced form of powered       -->
-<!--                              armour developed by blending dreadnought sarcophagi, standard power armour, and     -->
-<!--                              the heavy suits used by engineers working in the most hostile environments. The     -->
-<!--                              result is a level of protection far superior to power armour; but also an immense   -->
-<!--                              bulk, causing a reduction in manoeuvrability and speed.\n\n                         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the I Legion, the   -->
+<!--                              Dark Angels. Commonly called terminator armour, this armour is an advanced form of  -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            The Dark Angels were the first of the Emperor's Space Marine Legions, and in their    -->
 <!--                              earliest incarnation they fought as the personal army of the Master of Mankind.     -->
 <!--                              Unyielding, technologically capable, ruthless and insular, the Dark Angels at the   -->
@@ -82,10 +82,10 @@
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet REPLACE label                                                       -->
 <!--                                                 WITH label  Dark Angels terminator helmet                        -->
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet REPLACE description                                                 -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the I Legion, the Dark   -->
-<!--                              Angels. Completing a set of terminator armour, this helmet fully encloses the       -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the I        -->
+<!--                              Legion, the Dark Angels. Completing a set of terminator armour, this helmet fully   -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              of sensors more advanced than those of standard power armour.\n\n                   -->
 <!--                            The Dark Angels were the first of the Emperor's Space Marine Legions, and in their    -->
 <!--                              earliest incarnation they fought as the personal army of the Master of Mankind.     -->
 <!--                              Unyielding, technologically capable, ruthless and insular, the Dark Angels at the   -->
@@ -323,12 +323,12 @@
 <!--    + LAP_Armour_DarkAngels_Terminator REPLACE label                                                              -->
 <!--                                          WITH label  Dark Angels terminator armour                               -->
 <!--    + LAP_Armour_DarkAngels_Terminator REPLACE description                                                        -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the I Legion, the Dark Angels.   -->
-<!--                              Commonly called terminator armour, this armour is an advanced form of powered       -->
-<!--                              armour developed by blending dreadnought sarcophagi, standard power armour, and     -->
-<!--                              the heavy suits used by engineers working in the most hostile environments. The     -->
-<!--                              result is a level of protection far superior to power armour; but also an immense   -->
-<!--                              bulk, causing a reduction in manoeuvrability and speed.\n\n                         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the I Legion, the   -->
+<!--                              Dark Angels. Commonly called terminator armour, this armour is an advanced form of  -->
+<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--                              environments. The result is a level of protection far superior to power armour;     -->
+<!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            The Dark Angels were the first of the Emperor's Space Marine Legions, and in their    -->
 <!--                              earliest incarnation they fought as the personal army of the Master of Mankind.     -->
 <!--                              Unyielding, technologically capable, ruthless and insular, the Dark Angels at the   -->
@@ -349,7 +349,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/description</xpath>
                     <value>
-                        <description>Astates tactical dreadnought Armour in the livery of the I Legion, the Dark Angels. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense mass, causing a reduction in manoeuvrability and speed.\n\nThe Dark Angels were the first of the Emperor's Space Marine Legions, and in their earliest incarnation they fought as the personal army of the Master of Mankind. Unyielding, technologically capable, ruthless and insular, the Dark Angels at the time of the Heresy were a powerful and highly-independent Legion.</description>
+                        <description>Cataphractii pattern tactical dreadnought Armour in the livery of the I Legion, the Dark Angels. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense mass, causing a reduction in manoeuvrability and speed.\n\nThe Dark Angels were the first of the Emperor's Space Marine Legions, and in their earliest incarnation they fought as the personal army of the Master of Mankind. Unyielding, technologically capable, ruthless and insular, the Dark Angels at the time of the Heresy were a powerful and highly-independent Legion.</description>
                     </value>
                 </li>
 
@@ -376,10 +376,10 @@
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet REPLACE label                                                       -->
 <!--                                                 WITH label  Dark Angels terminator helmet                        -->
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet REPLACE description                                                 -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the I Legion, the Dark   -->
-<!--                              Angels. Completing a set of terminator armour, this helmet fully encloses the       -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the I        -->
+<!--                              Legion, the Dark Angels. Completing a set of terminator armour, this helmet fully   -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              of sensors more advanced than those of standard power armour.\n\n                   -->
 <!--                            The Dark Angels were the first of the Emperor's Space Marine Legions, and in their    -->
 <!--                              earliest incarnation they fought as the personal army of the Master of Mankind.     -->
 <!--                              Unyielding, technologically capable, ruthless and insular, the Dark Angels at the   -->
