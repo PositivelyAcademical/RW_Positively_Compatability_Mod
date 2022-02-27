@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchArmour                                                           -->
+<!--    + LAP_Armour_Alpharius_Armor REPLACE label                                                                    -->
+<!--                                    WITH label  the Pythian Scales                                                -->
+<!--    + LAP_Armour_Alpharius_Armor REPLACE description                                                              -->
+<!--          WITH description  Although frequently recorded as entering battle in the semblance of a regular member  -->
+<!--                              of his Legion, Alpharius is also known to have led his Legion to war armoured in    -->
+<!--                              sinister and baroque reptilian-styled armour whose stature left no doubts in the    -->
+<!--                              in the mind of onlookers that bloody-handed Primarch had entered the fray. This     -->
+<!--                              armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was   -->
+<!--                              known as the Pythian Scales, and could turn blade, energy bias and alchemical       -->
+<!--                              attack with equal ease.\n\n                                                         -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Alpharius_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
+<!--    + LAP_Armour_Alpharius_Armor recipeMaker REPLACE researchPrerequisite                                         -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Alpha_Legion              -->
+<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchHelmet                                                           -->
+<!--    + LAP_Armour_Alpharius_Helmet REPLACE label                                                                   -->
+<!--                                     WITH label  the Pythian Scales helmet                                        -->
+<!--    + LAP_Armour_Alpharius_Helmet REPLACE description                                                             -->
+<!--          WITH description  Although frequently recorded as entering battle in the semblance of a regular member  -->
+<!--                              of his Legion, Alpharius is also known to have led his Legion to war armoured in    -->
+<!--                              sinister and baroque reptilian-styled armour whose stature left no doubts in the    -->
+<!--                              in the mind of onlookers that bloody-handed Primarch had entered the fray. This     -->
+<!--                              armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was   -->
+<!--                              known as the Pythian Scales, and could turn blade, energy bias and alchemical       -->
+<!--                              attack with equal ease.\n\n                                                         -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Alpharius_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                    -->
+<!--                                                         WITH ToxicSensitivity  -0.20                             -->
+<!--    + LAP_Armour_Alpharius_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Alpha_Legion             -->
+<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  AlphaLegionPrimarchArmour                                                       -->
+<!--    + LAP_Armour_Alpharius_Armor apparel ADD tags li  PrestigeCombatGear                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  AlphaLegionPrimarchHelmet                                                       -->
+<!--    + LAP_Armour_Alpharius_Helmet apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Alpharius_Armor REPLACE label                                                                    -->
+<!--                                    WITH label  the Pythian Scales                                                -->
+<!--    + LAP_Armour_Alpharius_Armor REPLACE description                                                              -->
+<!--          WITH description  Although frequently recorded as entering battle in the semblance of a regular member  -->
+<!--                              of his Legion, Alpharius is also known to have led his Legion to war armoured in    -->
+<!--                              sinister and baroque reptilian-styled armour whose stature left no doubts in the    -->
+<!--                              in the mind of onlookers that bloody-handed Primarch had entered the fray. This     -->
+<!--                              armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was   -->
+<!--                              known as the Pythian Scales, and could turn blade, energy bias and alchemical       -->
+<!--                              attack with equal ease.\n\n                                                         -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Alpharius_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
+<!--    + LAP_Armour_Alpharius_Armor recipeMaker REPLACE researchPrerequisite                                         -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_Alpha_Legion              -->
+<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/label</xpath>
+                    <value>
+                        <label>the Pythian Scales</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/description</xpath>
+                    <value>
+                        <description>Although frequently recorded as entering battle in the semblance of a regular member of his Legion, Alpharius is also known to have led his Legion to war armoured in sinister and baroque reptilian-styled armour whose stature left no doubts in the in the mind of onlookers that bloody-handed Primarch had entered the fray. This armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was known as the Pythian Scales, and could turn blade, energy bias and alchemical attack with equal ease.\n\nOf all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most steeped in mystery, legend, contradiction and deliberate falsification. Some even claim that the Alpha Legion has more than one Primarch, though it is entirely possible that this belief is itself but a part of elaborate misdirection on the part of Alpharius, intended to further his Legion's goals.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Alpha_Legion</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchHelmet                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Alpharius_Helmet REPLACE label                                                                   -->
+<!--                                     WITH label  the Pythian Scales helmet                                        -->
+<!--    + LAP_Armour_Alpharius_Helmet REPLACE description                                                             -->
+<!--          WITH description  Although frequently recorded as entering battle in the semblance of a regular member  -->
+<!--                              of his Legion, Alpharius is also known to have led his Legion to war armoured in    -->
+<!--                              sinister and baroque reptilian-styled armour whose stature left no doubts in the    -->
+<!--                              in the mind of onlookers that bloody-handed Primarch had entered the fray. This     -->
+<!--                              armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was   -->
+<!--                              known as the Pythian Scales, and could turn blade, energy bias and alchemical       -->
+<!--                              attack with equal ease.\n\n                                                         -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Alpharius_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                    -->
+<!--                                                         WITH ToxicSensitivity  -0.20                             -->
+<!--    + LAP_Armour_Alpharius_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
+<!--                                                 WITH researchPrerequisites li  LAP_Tech_Alpha_Legion             -->
+<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/label</xpath>
+                    <value>
+                        <label>the Pythian Scales helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/description</xpath>
+                    <value>
+                        <description>Although frequently recorded as entering battle in the semblance of a regular member of his Legion, Alpharius is also known to have led his Legion to war armoured in sinister and baroque reptilian-styled armour whose stature left no doubts in the in the mind of onlookers that bloody-handed Primarch had entered the fray. This armour, faceless and fashioned after the shadowed mythic age of Ancient Terra was known as the Pythian Scales, and could turn blade, energy bias and alchemical attack with equal ease.\n\nOf all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most steeped in mystery, legend, contradiction and deliberate falsification. Some even claim that the Alpha Legion has more than one Primarch, though it is entirely possible that this belief is itself but a part of elaborate misdirection on the part of Alpharius, intended to further his Legion's goals.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Alpha_Legion</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  AlphaLegionPrimarchArmour                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Alpharius_Armor apparel ADD tags li  PrestigeCombatGear                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  AlphaLegionPrimarchHelmet                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Alpharius_Helmet apparel ADD tags li  PrestigeCombatGear                                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+</Patch>
