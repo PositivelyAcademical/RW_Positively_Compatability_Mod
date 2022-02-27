@@ -64,10 +64,10 @@
 <!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
 <!--                                          WITH label  Night Lords terminator armour                               -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
-<!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
-<!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
-<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the VIII Legion,    -->
+<!--                              the Night Lords. Commonly called terminator armour, this armour is an advanced      -->
+<!--                              form of powered armour developed by blending dreadnought sarcophagi, standard       -->
+<!--                              power armour, and the heavy suits used by engineers working in the most hostile     -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
@@ -84,10 +84,10 @@
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
 <!--                                                 WITH label  Night Lords terminator helmet                        -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
-<!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the VIII     -->
+<!--                              Legion, the Night Lords. Completing a set of terminator armour, this helmet fully   -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
 <!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
 <!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
@@ -308,10 +308,10 @@
 <!--    + LAP_Armour_NightLords_Terminator REPLACE label                                                              -->
 <!--                                          WITH label  Night Lords terminator armour                               -->
 <!--    + LAP_Armour_NightLords_Terminator REPLACE description                                                        -->
-<!--          WITH description  Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night      -->
-<!--                              Lords. Commonly called terminator armour, this armour is an advanced form of        -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
-<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the VIII Legion,    -->
+<!--                              the Night Lords. Commonly called terminator armour, this armour is an advanced      -->
+<!--                              form of powered armour developed by blending dreadnought sarcophagi, standard       -->
+<!--                              power armour, and the heavy suits used by engineers working in the most hostile     -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
@@ -334,7 +334,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour in the livery of the VIII Legion, the Night Lords. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour in the livery of the VIII Legion, the Night Lords. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
                     </value>
                 </li>
 
@@ -361,10 +361,10 @@
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE label                                                       -->
 <!--                                                 WITH label  Night Lords terminator helmet                        -->
 <!--    + LAP_Armour_NightLords_Terminator_Helmet REPLACE description                                                 -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the     -->
-<!--                              Night Lords. Completing a set of terminator armour, this helmet fully encloses the  -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the VIII     -->
+<!--                              Legion, the Night Lords. Completing a set of terminator armour, this helmet fully   -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            The Night Lords Legion were always renegade in all but name, having entirely devoted  -->
 <!--                              themselves to the arts of terror and murder. Never given to mercy, few who oppose   -->
 <!--                              the Night Lords ever live to tell the tale, unless they are allowed by design to    -->
@@ -386,7 +386,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Terminator_Helmet"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour helmet in the livery of the VIII Legion, the Night Lords. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour helmet in the livery of the VIII Legion, the Night Lords. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Night Lords Legion were always renegade in all but name, having entirely devoted themselves to the arts of terror and murder. Never given to mercy, few who oppose the Night Lords ever live to tell the tale, unless they are allowed by design to escape in order to sow the seeds of dread still further.</description>
                     </value>
                 </li>
 
