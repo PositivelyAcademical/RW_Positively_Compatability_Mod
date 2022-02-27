@@ -77,9 +77,9 @@
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE label                                                             -->
 <!--                                           WITH label  Blood Angels terminator armour                             -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE description                                                       -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the IX Legion, the Blood         -->
-<!--                              Angels. Commonly called terminator armour, this armour is an advanced form of       -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the IX Legion, the  -->
+<!--                              Blood Angels. Commonly called terminator armour, this armour is an advanced form    -->
+<!--                              of powered armour developed by blending dreadnought sarcophagi, standard power      -->
 <!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
@@ -102,10 +102,10 @@
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE label                                                      -->
 <!--                                                  WITH label  Blood Angels terminator helmet                      -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE description                                                -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IX Legion, the       -->
-<!--                              Blood Angels. Completing a set of terminator armour, this helmet fully encloses     -->
-<!--                              the wearer and provides life-support functions, along with an array of sensors      -->
-<!--                              more advanced than those of standard power armour.\n\n                              -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the IX       -->
+<!--                              Legion, the Blood Angels. Completing a set of terminator armour, this helmet fully  -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            The Blood Angels evidenced perhaps the greatest degree of transformation of their     -->
 <!--                              flesh from their human origins to the Space Marines they would become. The          -->
 <!--                              aggressive over-writing of the aspirant's gene-helix by the blood of their          -->
@@ -343,9 +343,9 @@
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE label                                                             -->
 <!--                                           WITH label  Blood Angels terminator armour                             -->
 <!--    + LAP_Armour_BloodAngels_Terminator REPLACE description                                                       -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the IX Legion, the Blood         -->
-<!--                              Angels. Commonly called terminator armour, this armour is an advanced form of       -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the IX Legion, the  -->
+<!--                              Blood Angels. Commonly called terminator armour, this armour is an advanced form    -->
+<!--                              of powered armour developed by blending dreadnought sarcophagi, standard power      -->
 <!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
@@ -374,7 +374,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/description</xpath>
                     <value>
-                        <description>Astates tactical dreadnought armour in the livery of the IX Legion, the Blood Angels. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nThe Blood Angels evidenced perhaps the greatest degree of transformation of their flesh from their human origins to the Space Marines they would become. The aggressive over-writing of the aspirant's gene-helix by the blood of their Primarch was capable of transfiguring the rad-scarred and twisted inhabitants of Baal to create 'perfected' warriors, living icons of the physical ideal of the Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Sanguinius in his fearsome glory. There was a price, however, for this power, and the process of transformation was a more arcane, elaborate and painful one than that endured by any other Legion.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour in the livery of the IX Legion, the Blood Angels. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nThe Blood Angels evidenced perhaps the greatest degree of transformation of their flesh from their human origins to the Space Marines they would become. The aggressive over-writing of the aspirant's gene-helix by the blood of their Primarch was capable of transfiguring the rad-scarred and twisted inhabitants of Baal to create 'perfected' warriors, living icons of the physical ideal of the Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Sanguinius in his fearsome glory. There was a price, however, for this power, and the process of transformation was a more arcane, elaborate and painful one than that endured by any other Legion.</description>
                     </value>
                 </li>
 
@@ -401,10 +401,10 @@
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE label                                                      -->
 <!--                                                  WITH label  Blood Angels terminator helmet                      -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE description                                                -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IX Legion, the       -->
-<!--                              Blood Angels. Completing a set of terminator armour, this helmet fully encloses     -->
-<!--                              the wearer and provides life-support functions, along with an array of sensors      -->
-<!--                              more advanced than those of standard power armour.\n\n                              -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the IX       -->
+<!--                              Legion, the Blood Angels. Completing a set of terminator armour, this helmet fully  -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            The Blood Angels evidenced perhaps the greatest degree of transformation of their     -->
 <!--                              flesh from their human origins to the Space Marines they would become. The          -->
 <!--                              aggressive over-writing of the aspirant's gene-helix by the blood of their          -->
@@ -431,7 +431,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour helmet in the livery of the IX Legion, the Blood Angels. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Blood Angels evidenced perhaps the greatest degree of transformation of their flesh from their human origins to the Space Marines they would become. The aggressive over-writing of the aspirant's gene-helix by the blood of their Primarch was capable of transfiguring the rad-scarred and twisted inhabitants of Baal to create 'perfected' warriors, living icons of the physical ideal of the Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Sanguinius in his fearsome glory. There was a price, however, for this power, and the process of transformation was a more arcane, elaborate and painful one than that endured by any other Legion.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour helmet in the livery of the IX Legion, the Blood Angels. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Blood Angels evidenced perhaps the greatest degree of transformation of their flesh from their human origins to the Space Marines they would become. The aggressive over-writing of the aspirant's gene-helix by the blood of their Primarch was capable of transfiguring the rad-scarred and twisted inhabitants of Baal to create 'perfected' warriors, living icons of the physical ideal of the Legiones Astartes, each one an echo of their Primarch, called 'the Angel', Sanguinius in his fearsome glory. There was a price, however, for this power, and the process of transformation was a more arcane, elaborate and painful one than that endured by any other Legion.</description>
                     </value>
                 </li>
 
