@@ -112,7 +112,7 @@
 <!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
 <!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
 <!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
-<!--                              enhancements necessary to complete their function.                                  -->
+<!--                              enhancements necessary to complete their function.\n\n                              -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -133,7 +133,7 @@
 <!--                              Legion, the Iron Warriors. Completing a Techmarine's power armour, the helmet       -->
 <!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
 <!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
-<!--                              with Servo-automata.                                                                -->
+<!--                              with Servo-automata.\n\n                                                            -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -151,9 +151,9 @@
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
 <!--                                            WITH label  Iron Warriors terminator armour                           -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
-<!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the IV Legion, the  -->
+<!--                              Iron Warriors. Commonly called terminator armour, this armour is an advanced form   -->
+<!--                              of powered armour developed by blending dreadnought sarcophagi, standard power      -->
 <!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
@@ -172,10 +172,10 @@
 <!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE label                                                     -->
 <!--                                                   WITH label  Iron Warriors terminator helmet                    -->
 <!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE description                                               -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron  -->
-<!--                              Warriors. Completing a set of terminator armour, this helmet fully encloses the     -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the IV       -->
+<!--                              Legion, the Iron Warriors. Completing a set of terminator armour, this helmet       -->
+<!--                              fully encloses the wearer and provides life-support functions, along with an array  -->
+<!--                              of sensors more advanced than those of standard power armour.\n\n                   -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -551,7 +551,7 @@
 <!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
 <!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
 <!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
-<!--                              enhancements necessary to complete their function.                                  -->
+<!--                              enhancements necessary to complete their function.\n\n                              -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -607,7 +607,7 @@
 <!--                              Legion, the Iron Warriors. Completing a Techmarine's power armour, the helmet       -->
 <!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
 <!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
-<!--                              with Servo-automata.                                                                -->
+<!--                              with Servo-automata.\n\n                                                            -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -659,9 +659,9 @@
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE label                                                            -->
 <!--                                            WITH label  Iron Warriors terminator armour                           -->
 <!--    + LAP_Armour_IronWarriors_Terminator REPLACE description                                                      -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the IV Legion, the Iron          -->
-<!--                              Warriors. Commonly called terminator armour, this armour is an advanced form of     -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the IV Legion, the  -->
+<!--                              Iron Warriors. Commonly called terminator armour, this armour is an advanced form   -->
+<!--                              of powered armour developed by blending dreadnought sarcophagi, standard power      -->
 <!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
@@ -686,7 +686,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator"]/description</xpath>
                     <value>
-                        <description>Astates tactical dreadnought Armour in the livery of the IV Legion, the Iron Warriors. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense mass, causing a reduction in manoeuvrability and speed.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                        <description>Cataphractii pattern tactical dreadnought Armour in the livery of the IV Legion, the Iron Warriors. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense mass, causing a reduction in manoeuvrability and speed.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
                     </value>
                 </li>
 
@@ -713,10 +713,10 @@
 <!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE label                                                     -->
 <!--                                                   WITH label  Iron Warriors terminator helmet                    -->
 <!--    + LAP_Armour_IronWarriors_Terminator_Helmet REPLACE description                                               -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron  -->
-<!--                              Warriors. Completing a set of terminator armour, this helmet fully encloses the     -->
-<!--                              wearer and provides life-support functions, along with an array of sensors more     -->
-<!--                              advanced than those of standard power armour.\n\n                                   -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the IV       -->
+<!--                              Legion, the Iron Warriors. Completing a set of terminator armour, this helmet       -->
+<!--                              fully encloses the wearer and provides life-support functions, along with an array  -->
+<!--                              of sensors more advanced than those of standard power armour.\n\n                   -->
 <!--                            The Iron Warriors are the grim-faced, cold-hearted masters of the science of war.     -->
 <!--                              More so than in any other Legion, the life of each warrior is secondary to his      -->
 <!--                              duty. Possibly the most relentless and dogged siege warriors in the ranks of the    -->
@@ -739,7 +739,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_IronWarriors_Terminator_Helmet"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour helmet in the livery of the IV Legion, the Iron Warriors. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour helmet in the livery of the IV Legion, the Iron Warriors. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nThe Iron Warriors are the grim-faced, cold-hearted masters of the science of war. More so than in any other Legion, the life of each warrior is secondary to his duty. Possibly the most relentless and dogged siege warriors in the ranks of the Legiones Astartes, the Iron Warriors have reduced countless fortresses to ashes throughout the Great Crusade.</description>
                     </value>
                 </li>
 
@@ -1102,6 +1102,7 @@
 
             </operations>
         </match>
+
     </Operation>
 
 <!--  ==============================================================================================================  -->
