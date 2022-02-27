@@ -217,10 +217,10 @@
 <!--    + WorldEaters_Terminator REPLACE label                                                                        -->
 <!--                                WITH label  World Eaters terminator armour                                        -->
 <!--    + WorldEaters_Terminator REPLACE description                                                                  -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the XII Legion, the World        -->
-<!--                              Eaters. Commonly called terminator armour, this armour is an advanced form of       -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
-<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the XII Legion,     -->
+<!--                              the World Eaters. Commonly called terminator armour, this armour is an advanced     -->
+<!--                              form of powered armour developed by blending dreadnought sarcophagi, standard       -->
+<!--                              power armour, and the heavy suits used by engineers working in the most hostile     -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
@@ -241,10 +241,10 @@
 <!--    + WorldEaters_Terminator_Helmet REPLACE label                                                                 -->
 <!--                                       WITH label  World Eaters terminator helmet                                 -->
 <!--    + WorldEaters_Terminator_Helmet REPLACE description                                                           -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the XII Legion, the      -->
-<!--                              World Eaters. Completing a set of terminator armour, this helmet fully encloses     -->
-<!--                              the wearer and provides life-support functions, along with an array of sensors      -->
-<!--                              more advanced than those of standard power armour.\n\n                              -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the XII      -->
+<!--                              Legion, the World Eaters. Completing a set of terminator armour, this helmet fully  -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
 <!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
 <!--                              and send armies to flight in terror. Tales of their predations and massacres were   -->
@@ -264,10 +264,10 @@
 <!--    + WorldEaters_Kharn_Armor REPLACE label                                                                       -->
 <!--                                 WITH label  World Eaters Captain armour                                          -->
 <!--    + WorldEaters_Kharn_Armor REPLACE description                                                                 -->
-<!--          WITH description  Astartes officer pattern power armour in the livery of a Captain of the XII Legion,   -->
-<!--                              the World Eaters. Power armour worn by the Legiones Astartes is a sophisticated     -->
-<!--                              defensive system, combining huge resistance to physical damage along with           -->
-<!--                              integrated electro-motivated fibre bundles which augment the strength of the        -->
+<!--          WITH description  Astartes officer pattern artificer power armour in the livery of a Captain of the     -->
+<!--                              XII Legion, the World Eaters. Power armour worn by the Legiones Astartes is a       -->
+<!--                              sophisticated defensive system, combining huge resistance to physical damage along  -->
+<!--                              with integrated electro-motivated fibre bundles which augment the strength of the   -->
 <!--                              wearer.\n\n                                                                         -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
 <!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
@@ -287,9 +287,9 @@
 <!--    + WorldEaters_Kharn_Helmet REPLACE label                                                                      -->
 <!--                                  WITH label  World Eaters Captain helmet                                         -->
 <!--    + WorldEaters_Kharn_Helmet REPLACE description                                                                -->
-<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Captain of the XII    -->
-<!--                              Legion, the World Eaters. Completing a set of power armour, the helmet seals the    -->
-<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--          WITH description  Astartes officer pattern artificer power armour helmet in the livery of a Captain of  -->
+<!--                              the XII Legion, the World Eaters. Completing a set of power armour, the helmet      -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
 <!--                              atmospheres. It also incorporates advanced targeting and sensory systems.\n\n       -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
 <!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
@@ -958,10 +958,10 @@
 <!--    + WorldEaters_Terminator REPLACE label                                                                        -->
 <!--                                WITH label  World Eaters terminator armour                                        -->
 <!--    + WorldEaters_Terminator REPLACE description                                                                  -->
-<!--          WITH description  Astates tactical dreadnought armour in the livery of the XII Legion, the World        -->
-<!--                              Eaters. Commonly called terminator armour, this armour is an advanced form of       -->
-<!--                              powered armour developed by blending dreadnought sarcophagi, standard power         -->
-<!--                              armour, and the heavy suits used by engineers working in the most hostile           -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the XII Legion,     -->
+<!--                              the World Eaters. Commonly called terminator armour, this armour is an advanced     -->
+<!--                              form of powered armour developed by blending dreadnought sarcophagi, standard       -->
+<!--                              power armour, and the heavy suits used by engineers working in the most hostile     -->
 <!--                              environments. The result is a level of protection far superior to power armour;     -->
 <!--                              but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\n     -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
@@ -988,7 +988,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour in the livery of the XII Legion, the World Eaters. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour in the livery of the XII Legion, the World Eaters. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
                     </value>
                 </li>
 
@@ -1015,10 +1015,10 @@
 <!--    + WorldEaters_Terminator_Helmet REPLACE label                                                                 -->
 <!--                                       WITH label  World Eaters terminator helmet                                 -->
 <!--    + WorldEaters_Terminator_Helmet REPLACE description                                                           -->
-<!--          WITH description  Astartes tactical dreadnought armour helmet in the livery of the XII Legion, the      -->
-<!--                              World Eaters. Completing a set of terminator armour, this helmet fully encloses     -->
-<!--                              the wearer and provides life-support functions, along with an array of sensors      -->
-<!--                              more advanced than those of standard power armour.\n\n                              -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the XII      -->
+<!--                              Legion, the World Eaters. Completing a set of terminator armour, this helmet fully  -->
+<!--                              encloses the wearer and provides life-support functions, along with an array of     -->
+<!--                              sensors more advanced than those of standard power armour.\n\n                      -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
 <!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
 <!--                              and send armies to flight in terror. Tales of their predations and massacres were   -->
@@ -1044,7 +1044,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator_Helmet"]/description</xpath>
                     <value>
-                        <description>Astartes tactical dreadnought armour helmet in the livery of the XII Legion, the World Eaters. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
+                        <description>Cataphractii pattern tactical dreadnought armour helmet in the livery of the XII Legion, the World Eaters. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
                     </value>
                 </li>
 
@@ -1071,6 +1071,11 @@
 <!--    + WorldEaters_Kharn_Armor REPLACE label                                                                       -->
 <!--                                 WITH label  World Eaters Captain armour                                          -->
 <!--    + WorldEaters_Kharn_Armor REPLACE description                                                                 -->
+<!--          WITH description  Astartes officer pattern artificer power armour in the livery of a Captain of the     -->
+<!--                              XII Legion, the World Eaters. Power armour worn by the Legiones Astartes is a       -->
+<!--                              sophisticated defensive system, combining huge resistance to physical damage along  -->
+<!--                              with integrated electro-motivated fibre bundles which augment the strength of the   -->
+<!--                              wearer.\n\n                                                                         -->
 <!--          WITH description  Astartes officer pattern power armour in the livery of a Captain of the XII Legion,   -->
 <!--                              the World Eaters. Power armour worn by the Legiones Astartes is a sophisticated     -->
 <!--                              defensive system, combining huge resistance to physical damage along with           -->
@@ -1100,7 +1105,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Armor"]/description</xpath>
                     <value>
-                        <description>Astartes officer pattern power armour in the livery of a Captain of the XII Legion, the World Eaters. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
+                        <description>Astartes officer pattern artificer power armour in the livery of a Captain of the XII Legion, the World Eaters. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
                     </value>
                 </li>
 
@@ -1127,9 +1132,9 @@
 <!--    + WorldEaters_Kharn_Helmet REPLACE label                                                                      -->
 <!--                                  WITH label  World Eaters Captain helmet                                         -->
 <!--    + WorldEaters_Kharn_Helmet REPLACE description                                                                -->
-<!--          WITH description  Astartes officer pattern power armour helmet in the livery of a Captain of the XII    -->
-<!--                              Legion, the World Eaters. Completing a set of power armour, the helmet seals the    -->
-<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--          WITH description  Astartes officer pattern artificer power armour helmet in the livery of a Captain of  -->
+<!--                              the XII Legion, the World Eaters. Completing a set of power armour, the helmet      -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
 <!--                              atmospheres. It also incorporates advanced targeting and sensory systems.\n\n       -->
 <!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
 <!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
@@ -1156,7 +1161,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Helmet"]/description</xpath>
                     <value>
-                        <description>Astartes officer pattern power armour helmet in the livery of a Captain of the XII Legion, the World Eaters. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
+                        <description>Astartes officer pattern artificer power armour helmet in the livery of a Captain of the XII Legion, the World Eaters. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
                     </value>
                 </li>
 

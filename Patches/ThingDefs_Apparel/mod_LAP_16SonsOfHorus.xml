@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  BlackLegionWargear                                                                  -->
+<!--    + LAP_Armour_BlackLegion_Armor REMOVE ./                                                                      -->
+<!--    + LAP_Armour_BlackLegion_Helmet REMOVE ./                                                                     -->
+<!--    + LAP_Armour_BlackLegion_Raptor REMOVE ./                                                                     -->
+<!--    + LAP_Armour_BlackLegion_Terminator REMOVE ./                                                                 -->
+<!--    + LAP_Armour_BlackLegion_Terminator_Helmet REMOVE ./                                                          -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPowerArmour                                                              -->
+<!--    + LAP_Armour_SOH_Armor REPLACE label                                                                          -->
+<!--                              WITH label  Sons of Horus power armour                                              -->
+<!--    + LAP_Armour_SOH_Armor REPLACE description                                                                    -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the XVI Legion, the Sons of   -->
+<!--                              Horus. Power armour worn by the Legiones Astartes is a sophisticated defensive      -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                        -->
+<!--    + LAP_Armour_SOH_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Imperial_Tech_Apparel_Armour_T3       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPowerArmour                                                              -->
+<!--    + LAP_Armour_SOH_Helmet REPLACE label                                                                         -->
+<!--                               WITH label  Sons of Horus helmet                                                   -->
+<!--    + LAP_Armour_SOH_Helmet REPLACE description                                                                   -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the XVI Legion, the    -->
+<!--                              Sons of Horus. Completing a set of power armour, the helmet seals the wearer in a   -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                          -->
+<!--                                                   WITH ToxicSensitivity  -0.35                                   -->
+<!--    + LAP_Armour_SOH_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Imperial_Tech_Apparel_Armour_T3       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusAssaultArmour                                                            -->
+<!--    + LAP_Armour_SOH_Raptor REPLACE label                                                                         -->
+<!--                               WITH label  Sons of Horus assault armour                                           -->
+<!--    + LAP_Armour_SOH_Raptor REPLACE description                                                                   -->
+<!--          WITH description  Assault pattern Astartes power armour in the livery of the XVI Legion, the Sons of    -->
+<!--                              Horus. This armour incorporates a light and effective jump pack, allowing the       -->
+<!--                              wearer to quickly engage enemies across the battlefield.\n\n                        -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Raptor equippedStatOffsets ADD ToxicSensitivity  -0.65                                       -->
+<!--    + LAP_Armour_SOH_Raptor recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
+<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusApothecaryArmour                                                         -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor REPLACE label                                                               -->
+<!--                                         WITH label  Sons of Horus Apothecary armour                              -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor REPLACE description                                                         -->
+<!--          WITH description  Astartes Apothecarion pattern power armour in the livery of an Apothecary of the XVI  -->
+<!--                              Legion, the Sons of Horus. Apothecaries carry a Legion's most sacred trusts: the    -->
+<!--                              care of its fallen and the promise of its future. They serve as battlefield         -->
+<!--                              healers in addition to being tasked with the recovery of the Legion's gene-seed     -->
+<!--                              from the fallen, and as such, the power armour worn by Legion Apothecaries is       -->
+<!--                              adapted for their role.\n\n                                                         -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                             -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                                    -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                                         -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Apothecary helmet                             -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet REPLACE description                                                        -->
+<!--          WITH description  Astartes Apothecarion pattern power armour helmet in the livery of the XVI Legion,    -->
+<!--                              the Sons of Horus. Completing an Apothecary's power armour, the helmet seals the    -->
+<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--                              atmospheres. It's sensory systems are enhanced to assist the Apothecary's function  -->
+<!--                              of battlefield medicine and gene-seed recovery.\n\n                                 -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.35                        -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusTechmarineArmour                                                         -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor REPLACE label                                                               -->
+<!--                                         WITH label  Sons of Horus Techmarine armour                              -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor REPLACE description                                                         -->
+<!--          WITH description  Astartes Armorum pattern power armour in the livery of a Techmarine of the XVI        -->
+<!--                              Legion, the Sons of Horus. Techmarines are the masters of the Legion's Armorum,     -->
+<!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
+<!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
+<!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
+<!--                              enhancements necessary to complete their function.\n\n                              -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                             -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                                    -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusTechmarineHelmet                                                         -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Techmarine helmet                             -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet description                                                                -->
+<!--          WITH description  Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the     -->
+<!--                              XVI Legion, the Sons of Horus. Completing a Techmarine's power armour, the helmet   -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
+<!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
+<!--                              with Servo-automata.\n\n                                                            -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.35                        -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorArmour                                                 -->
+<!--    + LAP_Armour_SOH_Terminator REPLACE label                                                                     -->
+<!--                                   WITH label  Sons of Horus Justaerin terminator armour                          -->
+<!--    + LAP_Armour_SOH_Terminator REPLACE description                                                               -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the Justaerin of    -->
+<!--                              the XVI Legion, the Sons of Horus. Commonly called terminator armour, this armour   -->
+<!--                              is an advanced form of powered armour developed by blending dreadnought             -->
+<!--                              sarcophagi, standard power armour, and the heavy suits used by engineers working    -->
+<!--                              in the most hostile environments. The result is a level of protection far superior  -->
+<!--                              to power armour; but also an immense bulk, causing a reduction in manoeuvrability   -->
+<!--                              and speed.\n\n                                                                      -->
+<!--                            One of the two principal elite formations within the wider Luna Wolves and later      -->
+<!--                              Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion.  -->
+<!--                              Tasked with forming the 'point of the spear' of the Legion, they went where the     -->
+<!--                              fighting was thickest, their attack directed usually at destroying the heart of an  -->
+<!--                              opposing target or conducting the decapitation strike of an enemy force. Early      -->
+<!--                              proponents of the use of tactical dreadnought armour, many entered combat as        -->
+<!--                              terminators, relying on the resilience this gave them to smash aside any            -->
+<!--                              resistance and close in for the kill.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                   -->
+<!--    + LAP_Armour_SOH_Terminator recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  POS_AMA_Imperial_TerminatorArmour   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorHelmet                                                 -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Justaerin terminator helmet                   -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet REPLACE description                                                        -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the          -->
+<!--                              Justaerin of the XVI Legion, the Sons of Horus. Completing a set of terminator      -->
+<!--                              armour, this helmet fully encloses the wearer and provides life-support functions,  -->
+<!--                              along with an array of sensors more advanced than those of standard power           -->
+<!--                              armour.\n\n                                                                         -->
+<!--                            One of the two principal elite formations within the wider Luna Wolves and later      -->
+<!--                              Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion.  -->
+<!--                              Tasked with forming the 'point of the spear' of the Legion, they went where the     -->
+<!--                              fighting was thickest, their attack directed usually at destroying the heart of an  -->
+<!--                              opposing target or conducting the decapitation strike of an enemy force. Early      -->
+<!--                              proponents of the use of tactical dreadnought armour, many entered combat as        -->
+<!--                              terminators, relying on the resilience this gave them to smash aside any            -->
+<!--                              resistance and close in for the kill.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.20                        -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_SOH                       -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchArmour                                                           -->
+<!--    + LAP_Armour_Horus_Armor REPLACE label                                                                        -->
+<!--                                WITH label  the Serpent's Scales                                                  -->
+<!--    + LAP_Armour_Horus_Armor REPLACE description                                                                  -->
+<!--          WITH description  The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of    -->
+<!--                              the first prototypes of their kind. Fashioned and continuously improved by the      -->
+<!--                              hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof   -->
+<!--                              against attacks of both brute and esoteric origin.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Horus_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                      -->
+<!--    + LAP_Armour_Horus_Armor recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_SOH                           -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
+<!--                                                                       li  POS_AMA_Imperial_TerminatorArmour      -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchHelmet                                                           -->
+<!--    + LAP_Armour_Horus_Helmet REPLACE label                                                                       -->
+<!--                                 WITH label  the Serpent's Scales helmet                                          -->
+<!--    + LAP_Armour_Horus_Helmet REPLACE description                                                                 -->
+<!--          WITH description  The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of    -->
+<!--                              the first prototypes of their kind. Fashioned and continuously improved by the      -->
+<!--                              hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof   -->
+<!--                              against attacks of both brute and esoteric origin.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Horus_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                        -->
+<!--                                                     WITH ToxicSensitivity  -0.20                                 -->
+<!--    + LAP_Armour_Horus_Helmet recipeMaker REPLACE researchPrerequisite                                            -->
+<!--                                             WITH researchPrerequisites li  LAP_Tech_SOH                          -->
+<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                                                        li  POS_AMA_Imperial_TerminatorArmour     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPowerArmour                                                          -->
+<!--    + LAP_Armour_SOH_Armor apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPowerHelmet                                                          -->
+<!--    + LAP_Armour_SOH_Helmet apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusAssaultArmour                                                        -->
+<!--    + LAP_Armour_SOH_Raptor recipeMaker researchPrerequisites ADD li  JumpPack                                    -->
+<!--    + LAP_Armour_SOH_Raptor apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusApothecaryArmour                                                     -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor apparel ADD tags li  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                                     -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTechmarineArmour                                                     -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor apparel ADD tags li  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTechmarineHelmet                                                     -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTerminatorArmour                                                     -->
+<!--    + LAP_Armour_SOH_Terminator apparel ADD tags li  PrestigeCombatGear                                           -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTerminatorHelmet                                                     -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPrimarchArmour                                                       -->
+<!--    + LAP_Armour_Horus_Armor apparel ADD tags li  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPrimarchHelmet                                                       -->
+<!--    + LAP_Armour_Horus_Helmet apparel ADD tags li  PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryArmour                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction                -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  MedicineProduction               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryArmour                                     -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                     -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  BlackLegionWargear                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_BlackLegion_Armor REMOVE ./                                                                      -->
+<!--    + LAP_Armour_BlackLegion_Helmet REMOVE ./                                                                     -->
+<!--    + LAP_Armour_BlackLegion_Raptor REMOVE ./                                                                     -->
+<!--    + LAP_Armour_BlackLegion_Terminator REMOVE ./                                                                 -->
+<!--    + LAP_Armour_BlackLegion_Terminator_Helmet REMOVE ./                                                          -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Armor"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Helmet"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Raptor"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Terminator"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_BlackLegion_Terminator_Helmet"]</xpath>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPowerArmour                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Armor REPLACE label                                                                          -->
+<!--                              WITH label  Sons of Horus power armour                                              -->
+<!--    + LAP_Armour_SOH_Armor REPLACE description                                                                    -->
+<!--          WITH description  Standard pattern Astartes power armour in the livery of the XVI Legion, the Sons of   -->
+<!--                              Horus. Power armour worn by the Legiones Astartes is a sophisticated defensive      -->
+<!--                              system, combining huge resistance to physical damage along with integrated          -->
+<!--                              electro-motivated fibre bundles which augment the strength of the wearer.\n\n       -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                                        -->
+<!--    + LAP_Armour_SOH_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Imperial_Tech_Apparel_Armour_T3       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus power armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour in the livery of the XVI Legion, the Sons of Horus. Power armour worn by the Legiones Astartes is a sophisticated defensive system, combining huge resistance to physical damage along with integrated electro-motivated fibre bundles which augment the strength of the wearer.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPowerArmour                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Helmet REPLACE label                                                                         -->
+<!--                               WITH label  Sons of Horus helmet                                                   -->
+<!--    + LAP_Armour_SOH_Helmet REPLACE description                                                                   -->
+<!--          WITH description  Standard pattern Astartes power armour helmet in the livery of the XVI Legion, the    -->
+<!--                              Sons of Horus. Completing a set of power armour, the helmet seals the wearer in a   -->
+<!--                              closed environment allowing for combat in the most extreme atmospheres. It also     -->
+<!--                              incorporates advanced targeting and sensory systems.\n\n                            -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                          -->
+<!--                                                   WITH ToxicSensitivity  -0.35                                   -->
+<!--    + LAP_Armour_SOH_Armor recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Imperial_Tech_Apparel_Armour_T3       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/description</xpath>
+                    <value>
+                        <description>Standard pattern Astartes power armour helmet in the livery of the XVI Legion, the Sons of Horus. Completing a set of power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It also incorporates advanced targeting and sensory systems.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusAssaultArmour                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Raptor REPLACE label                                                                         -->
+<!--                               WITH label  Sons of Horus assault armour                                           -->
+<!--    + LAP_Armour_SOH_Raptor REPLACE description                                                                   -->
+<!--          WITH description  Assault pattern Astartes power armour in the livery of the XVI Legion, the Sons of    -->
+<!--                              Horus. This armour incorporates a light and effective jump pack, allowing the       -->
+<!--                              wearer to quickly engage enemies across the battlefield.\n\n                        -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Raptor equippedStatOffsets ADD ToxicSensitivity  -0.65                                       -->
+<!--    + LAP_Armour_SOH_Raptor recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
+<!--                                                                      li  OG_Imperial_Tech_Apparel_Armour_T3      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus assault armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/description</xpath>
+                    <value>
+                        <description>Assault pattern Astartes power armour in the livery of the XVI Legion, the Sons of Horus. This armour incorporates a light and effective jump pack, allowing the wearer to quickly engage enemies across the battlefield.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusApothecaryArmour                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor REPLACE label                                                               -->
+<!--                                         WITH label  Sons of Horus Apothecary armour                              -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor REPLACE description                                                         -->
+<!--          WITH description  Astartes Apothecarion pattern power armour in the livery of an Apothecary of the XVI  -->
+<!--                              Legion, the Sons of Horus. Apothecaries carry a Legion's most sacred trusts: the    -->
+<!--                              care of its fallen and the promise of its future. They serve as battlefield         -->
+<!--                              healers in addition to being tasked with the recovery of the Legion's gene-seed     -->
+<!--                              from the fallen, and as such, the power armour worn by Legion Apothecaries is       -->
+<!--                              adapted for their role.\n\n                                                         -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                             -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker REPLACE researchPrerequisite                                    -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Apothecary armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/description</xpath>
+                    <value>
+                        <description>Astartes Apothecarion pattern power armour in the livery of an Apothecary of the XVI Legion, the Sons of Horus. Apothecaries carry a Legion's most sacred trusts: the care of its fallen and the promise of its future. They serve as battlefield healers in addition to being tasked with the recovery of the Legion's gene-seed from the fallen, and as such, the power armour worn by Legion Apothecaries is adapted for their role.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Apothecary helmet                             -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet REPLACE description                                                        -->
+<!--          WITH description  Astartes Apothecarion pattern power armour helmet in the livery of the XVI Legion,    -->
+<!--                              the Sons of Horus. Completing an Apothecary's power armour, the helmet seals the    -->
+<!--                              wearer in a closed environment allowing for combat in the most extreme              -->
+<!--                              atmospheres. It's sensory systems are enhanced to assist the Apothecary's function  -->
+<!--                              of battlefield medicine and gene-seed recovery.\n\n                                 -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.35                        -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Apothecary helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes Apothecarion pattern power armour helmet in the livery of the XVI Legion, the Sons of Horus. Completing an Apothecary's power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It's sensory systems are enhanced to assist the Apothecary's function of battlefield medicine and gene-seed recovery.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusTechmarineArmour                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor REPLACE label                                                               -->
+<!--                                         WITH label  Sons of Horus Techmarine armour                              -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor REPLACE description                                                         -->
+<!--          WITH description  Astartes Armorum pattern power armour in the livery of a Techmarine of the XVI        -->
+<!--                              Legion, the Sons of Horus. Techmarines are the masters of the Legion's Armorum,     -->
+<!--                              holding dual allegiances to both their legion and the Machine Cult of Mars. Their   -->
+<!--                              role on the battlefield is to operate and repair the most specialised and complex   -->
+<!--                              weaponry of the Legion, and their armour is modified to accommodate the cybernetic  -->
+<!--                              enhancements necessary to complete their function.                                  -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                              an assault.                                                                         -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                             -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                                    -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Techmarine armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/description</xpath>
+                    <value>
+                        <description>Astartes Armorum pattern power armour in the livery of a Techmarine of the XVI Legion, the Sons of Horus. Techmarines are the masters of the Legion's Armorum, holding dual allegiances to both their legion and the Machine Cult of Mars. Their role on the battlefield is to operate and repair the most specialised and complex weaponry of the Legion, and their armour is modified to accommodate the cybernetic enhancements necessary to complete their function.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.65</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusTechmarineHelmet                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Techmarine helmet                             -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet description                                                                -->
+<!--          WITH description  Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the     -->
+<!--                              XVI Legion, the Sons of Horus. Completing a Techmarine's power armour, the helmet   -->
+<!--                              seals the wearer in a closed environment allowing for combat in the most extreme    -->
+<!--                              atmospheres. It's sensory systems are enhanced for combat and to better interface   -->
+<!--                              with Servo-automata.\n\n                                                            -->
+<!--                            In the case of the Sons of Horus, the combat doctrines of this most aggressive        -->
+<!--                              Legion were those of the application of overwhelming force directed to where the    -->
+<!--                              foe was weakest. These shattering blows were used to utterly destroy enemy command  -->
+<!--                              cadres, vital strategic support structures and wreak terrible slaughter on the      -->
+<!--                              pride of an enemy's forces, often turning the tide of an entire conflict with a     -->
+<!--                              single, well-placed and savage attack. Even on a personal level the Sons of Horus   -->
+<!--                              took this merciless doctrine to heart and like the wolves they were once named      -->
+<!--                              for, were swift to exploit a foe's weakness, surrounding and brutally tearing       -->
+<!--                              apart an outnumbered or exposed enemy before they could recover from the shock of   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.35                        -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
+<!--                                                                          li  AdvancedFabrication                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Techmarine helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/description</xpath>
+                    <value>
+                        <description>Astartes Armorum pattern power armour helmet in the livery of a Techmarine of the XVI Legion, the Sons of Horus. Completing a Techmarine's power armour, the helmet seals the wearer in a closed environment allowing for combat in the most extreme atmospheres. It's sensory systems are enhanced for combat and to better interface with Servo-automata.\n\nIn the case of the Sons of Horus, the combat doctrines of this most aggressive Legion were those of the application of overwhelming force directed to where the foe was weakest. These shattering blows were used to utterly destroy enemy command cadres, vital strategic support structures and wreak terrible slaughter on the pride of an enemy's forces, often turning the tide of an entire conflict with a single, well-placed and savage attack. Even on a personal level the Sons of Horus took this merciless doctrine to heart and like the wolves they were once named for, were swift to exploit a foe's weakness, surrounding and brutally tearing apart an outnumbered or exposed enemy before they could recover from the shock of an assault.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.35</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorArmour                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Terminator REPLACE label                                                                     -->
+<!--                                   WITH label  Sons of Horus Justaerin terminator armour                          -->
+<!--    + LAP_Armour_SOH_Terminator REPLACE description                                                               -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the Justaerin of    -->
+<!--                              the XVI Legion, the Sons of Horus. Commonly called terminator armour, this armour   -->
+<!--                              is an advanced form of powered armour developed by blending dreadnought             -->
+<!--                              sarcophagi, standard power armour, and the heavy suits used by engineers working    -->
+<!--                              in the most hostile environments. The result is a level of protection far superior  -->
+<!--                              to power armour; but also an immense bulk, causing a reduction in manoeuvrability   -->
+<!--                              and speed.\n\n                                                                      -->
+<!--                            One of the two principal elite formations within the wider Luna Wolves and later      -->
+<!--                              Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion.  -->
+<!--                              Tasked with forming the 'point of the spear' of the Legion, they went where the     -->
+<!--                              fighting was thickest, their attack directed usually at destroying the heart of an  -->
+<!--                              opposing target or conducting the decapitation strike of an enemy force. Early      -->
+<!--                              proponents of the use of tactical dreadnought armour, many entered combat as        -->
+<!--                              terminators, relying on the resilience this gave them to smash aside any            -->
+<!--                              resistance and close in for the kill.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                   -->
+<!--    + LAP_Armour_SOH_Terminator recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_SOH                        -->
+<!--                                                                          li  POS_AMA_Imperial_TerminatorArmour   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Justaerin terminator armour</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/description</xpath>
+                    <value>
+                        <description>Cataphractii pattern tactical dreadnought armour in the livery of the Justaerin of the XVI Legion, the Sons of Horus. Commonly called terminator armour, this armour is an advanced form of powered armour developed by blending dreadnought sarcophagi, standard power armour, and the heavy suits used by engineers working in the most hostile environments. The result is a level of protection far superior to power armour; but also an immense bulk, causing a reduction in manoeuvrability and speed.\n\nOne of the two principal elite formations within the wider Luna Wolves and later Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion. Tasked with forming the 'point of the spear' of the Legion, they went where the fighting was thickest, their attack directed usually at destroying the heart of an opposing target or conducting the decapitation strike of an enemy force. Early proponents of the use of tactical dreadnought armour, many entered combat as terminators, relying on the resilience this gave them to smash aside any resistance and close in for the kill.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.80</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorHelmet                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet REPLACE label                                                              -->
+<!--                                          WITH label  Sons of Horus Justaerin terminator helmet                   -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet REPLACE description                                                        -->
+<!--          WITH description  Cataphractii pattern tactical dreadnought armour helmet in the livery of the          -->
+<!--                              Justaerin of the XVI Legion, the Sons of Horus. Completing a set of terminator      -->
+<!--                              armour, this helmet fully encloses the wearer and provides life-support functions,  -->
+<!--                              along with an array of sensors more advanced than those of standard power           -->
+<!--                              armour.\n\n                                                                         -->
+<!--                            One of the two principal elite formations within the wider Luna Wolves and later      -->
+<!--                              Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion.  -->
+<!--                              Tasked with forming the 'point of the spear' of the Legion, they went where the     -->
+<!--                              fighting was thickest, their attack directed usually at destroying the heart of an  -->
+<!--                              opposing target or conducting the decapitation strike of an enemy force. Early      -->
+<!--                              proponents of the use of tactical dreadnought armour, many entered combat as        -->
+<!--                              terminators, relying on the resilience this gave them to smash aside any            -->
+<!--                              resistance and close in for the kill.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                               -->
+<!--                                                              WITH ToxicSensitivity  -0.20                        -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                   -->
+<!--                                                WITH researchPrerequisites li  LAP_Tech_SOH                       -->
+<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/label</xpath>
+                    <value>
+                        <label>Sons of Horus Justaerin terminator helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/description</xpath>
+                    <value>
+                        <description>Cataphractii pattern tactical dreadnought armour helmet in the livery of the Justaerin of the XVI Legion, the Sons of Horus. Completing a set of terminator armour, this helmet fully encloses the wearer and provides life-support functions, along with an array of sensors more advanced than those of standard power armour.\n\nOne of the two principal elite formations within the wider Luna Wolves and later Sons of Horus Legion, the black-armoured Justaerin were the pride of their Legion. Tasked with forming the 'point of the spear' of the Legion, they went where the fighting was thickest, their attack directed usually at destroying the heart of an opposing target or conducting the decapitation strike of an enemy force. Early proponents of the use of tactical dreadnought armour, many entered combat as terminators, relying on the resilience this gave them to smash aside any resistance and close in for the kill.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchArmour                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Horus_Armor REPLACE label                                                                        -->
+<!--                                WITH label  the Serpent's Scales                                                  -->
+<!--    + LAP_Armour_Horus_Armor REPLACE description                                                                  -->
+<!--          WITH description  The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of    -->
+<!--                              the first prototypes of their kind. Fashioned and continuously improved by the      -->
+<!--                              hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof   -->
+<!--                              against attacks of both brute and esoteric origin.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Horus_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                      -->
+<!--    + LAP_Armour_Horus_Armor recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_SOH                           -->
+<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
+<!--                                                                       li  POS_AMA_Imperial_TerminatorArmour      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/label</xpath>
+                    <value>
+                        <label>the Serpent's Scales</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/description</xpath>
+                    <value>
+                        <description>The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of the first prototypes of their kind. Fashioned and continuously improved by the hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof against attacks of both brute and esoteric origin.\n\nHorus was the Primarch of the Luna Wolves Legion and greatest of his superhuman kind. A tactical genius and charismatic battle leader, Horus proved himself over the course of the Great Crusade as a warlord second only to the Emperor who he served and called father. So it was that when the Emperor stood apart from the burden of command of the Great Crusade, it was Horus that He named Warmaster to act in His stead.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/equippedStatOffsets</xpath>
+                    <value>
+                        <ToxicSensitivity>-1.00</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchHelmet                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Horus_Helmet REPLACE label                                                                       -->
+<!--                                 WITH label  the Serpent's Scales helmet                                          -->
+<!--    + LAP_Armour_Horus_Helmet REPLACE description                                                                 -->
+<!--          WITH description  The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of    -->
+<!--                              the first prototypes of their kind. Fashioned and continuously improved by the      -->
+<!--                              hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof   -->
+<!--                              against attacks of both brute and esoteric origin.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_Armour_Horus_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                        -->
+<!--                                                     WITH ToxicSensitivity  -0.20                                 -->
+<!--    + LAP_Armour_Horus_Helmet recipeMaker REPLACE researchPrerequisite                                            -->
+<!--                                             WITH researchPrerequisites li  LAP_Tech_SOH                          -->
+<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                                                        li  POS_AMA_Imperial_TerminatorArmour     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/label</xpath>
+                    <value>
+                        <label>the Serpent's Scales helmet</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/description</xpath>
+                    <value>
+                        <description>The Serpent's Sacles were Horus' unique suit of terminator armour, and were one of the first prototypes of their kind. Fashioned and continuously improved by the hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof hand of Kelbore Hal and the greatest artificers of the Imperium, and it was proof against attacks of both brute and esoteric origin.\n\nHorus was the Primarch of the Luna Wolves Legion and greatest of his superhuman kind. A tactical genius and charismatic battle leader, Horus proved himself over the course of the Great Crusade as a warlord second only to the Emperor who he served and called father. So it was that when the Emperor stood apart from the burden of command of the Great Crusade, it was Horus that He named Warmaster to act in His stead.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+                    <value>
+                        <ToxicSensitivity>-0.20</ToxicSensitivity>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPowerArmour                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Armor apparel ADD tags li  PrestigeCombatGear                                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPowerHelmet                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Helmet apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusAssaultArmour                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Raptor recipeMaker researchPrerequisites ADD li  JumpPack                                    -->
+<!--    + LAP_Armour_SOH_Raptor apparel ADD tags li  PrestigeCombatGear                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>JumpPack</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Raptor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusApothecaryArmour                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor apparel ADD tags li  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTechmarineArmour                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Techmarine_Armor apparel ADD tags li  PrestigeCombatGear                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTechmarineHelmet                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Techmarine_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Techmarine_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTerminatorArmour                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Terminator apparel ADD tags li  PrestigeCombatGear                                           -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusTerminatorHelmet                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Terminator_Helmet apparel ADD tags li  PrestigeCombatGear                                    -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPrimarchArmour                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Horus_Armor apparel ADD tags li  PrestigeCombatGear                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Armor"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH Royalty  (ThingDef)  -  SonsOfHorusPrimarchHelmet                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_Horus_Helmet apparel ADD tags li  PrestigeCombatGear                                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_Horus_Helmet"]/apparel</xpath>
+                                <value>
+                                    <tags>
+                                        <li>PrestigeCombatGear</li>
+                                    </tags>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryArmour                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker researchPrerequisites ADD li  MedicineProduction                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Harvest Organs Post Mortem</li>
+                    </mods>
+
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>MedicineProduction</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  MedicineProduction               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>MedicineProduction</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryArmour                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Armor recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy               -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Armor"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>GlitterworldAutopsy</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  SonsOfHorusApothecaryHelmet                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_Armour_SOH_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Apothecary_Helmet"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>GlitterworldAutopsy</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+<!--  ==============================================================================================================  -->
+<!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
+<!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
+<!--  Tier 1b  -  0.20  -  anti-toxic simple armour (e.g. trenchcoats)                                                -->
+<!--  Tier 1h  -  0.70  -  stand alone gas masks                                                                      -->
+<!--  Tier 2b  -  0.45  -  sealed armours (e.g. carapace, recon)                                                      -->
+<!--  Tier 2h  -  0.45  -  helmets for sealed armours                                                                 -->
+<!--  Tier 3b  -  0.65  -  power armour                                                                               -->
+<!--  Tier 3h  -  0.35  -  power armour helmets                                                                       -->
+<!--  Tier 4b  -  0.80  -  terminator armour, etc. (e.g. Primarchs)                                                   -->
+<!--  Tier 4h  -  0.20  -  terminator helmets                                                                         -->
+<!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
+<!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
+<!--  ==============================================================================================================  -->
+
+</Patch>
