@@ -402,7 +402,40 @@
 <!--  + MATCH HarvestOrgansPostMortem  (ThingDef)  -  WorldEatersApothecaryHelmet                                     -->
 <!--    + WorldEaters_Apothecary_Helmet recipeMaker researchPrerequisites ADD li  GlitterworldAutopsy                 -->
 <!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNails                          -->
+<!--    + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                         -->
+<!--                                                                 li  BionicWarfare                                -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNailsAndMask                   -->
+<!--    + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                  -->
+<!--                                                                        li  BionicWarfare                         -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersPrimarchHelmet                         -->
+<!--    + Butcher_Nail recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                                 -->
+<!--                                                         li  AdvancedBionicWarfare                                -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersButchersNails                                                      -->
+<!--      + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  BrainWiring                                -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersButchersNailsAndMask                                               -->
+<!--      + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  BrainWiring                         -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersPrimarchHelmet                                                     -->
+<!--      + Butcher_Nail recipeMaker researchPrerequisites ADD li  BrainWiring                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNails                        -->
+<!--    + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  Bionics                                      -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNailsAndMask                 -->
+<!--    + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  Bionics                               -->
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersPrimarchHelmet                       -->
+<!--    + Butcher_Nail recipeMaker researchPrerequisites ADD li  Bionics                                              -->
+<!--                                                             AdvancedFabrication                                  -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -1534,6 +1567,155 @@
 
                         </operations>
                     </match>
+
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNails                          -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                         -->
+<!--                                                                 li  BionicWarfare                                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>AdvancedBrainSurgery</li>
+                                    <li>BionicWarfare</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNailsAndMask                   -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                  -->
+<!--                                                                        li  BionicWarfare                         -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica_Masked"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>AdvancedBrainSurgery</li>
+                                    <li>BionicWarfare</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersPrimarchHelmet                         -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail recipeMaker researchPrerequisites ADD li  AdvancedBrainSurgery                                 -->
+<!--                                                         li  AdvancedBionicWarfare                                -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>AdvancedBrainSurgery</li>
+                                    <li>AdvancedBionicWarfare</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersButchersNails                                                      -->
+<!--  ==============================================================================================================  -->
+<!--      + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  BrainWiring                                -->
+<!--  ==============================================================================================================  -->
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Royalty</li>
+                                </mods>
+                                <match Class="PatchOperationSequence">
+                                    <operations>
+
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica"]/recipeMaker/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>BrainWiring</li>
+                                            </value>
+                                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersButchersNailsAndMask                                               -->
+<!--  ==============================================================================================================  -->
+<!--      + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  BrainWiring                         -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica_Masked"]/recipeMaker/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>BrainWiring</li>
+                                            </value>
+                                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering                                                                 -->
+<!--    + MATCH Royalty  (ThingDef)  -  WorldEatersPrimarchHelmet                                                     -->
+<!--  ==============================================================================================================  -->
+<!--      + Butcher_Nail recipeMaker researchPrerequisites ADD li  BrainWiring                                        -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="Butcher_Nail"]/recipeMaker/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>BrainWiring</li>
+                                            </value>
+                                        </li>
+
+                                    </operations>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNails                        -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail_Replica recipeMaker researchPrerequisites ADD li  Bionics                                      -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>Bionics</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersButchersNailsAndMask                 -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail_Replica_Masked recipeMaker researchPrerequisites ADD li  Bionics                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail_Replica_Masked"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>Bionics</li>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NOMATCH ExpandedProtheticsAndOrganEngineering  (ThingDef)  -  WorldEatersPrimarchHelmet                       -->
+<!--  ==============================================================================================================  -->
+<!--    + Butcher_Nail recipeMaker researchPrerequisites ADD li  Bionics                                              -->
+<!--                                                             AdvancedFabrication                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Butcher_Nail"]/recipeMaker/researchPrerequisites</xpath>
+                                <value>
+                                    <li>Bionics</li>
+                                    <li>AdvancedFabrication</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
 
                 </li>
 
