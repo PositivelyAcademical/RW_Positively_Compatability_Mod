@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchWeapon                                                            -->
+<!--    + LAP_WEAP_Mercy_and_Forgiveness recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Night_Lords                    -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchWeapon                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Mercy_and_Forgiveness recipeMaker REPLACE researchPrerequisite                                     -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Night_Lords                    -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Night_Lords</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
