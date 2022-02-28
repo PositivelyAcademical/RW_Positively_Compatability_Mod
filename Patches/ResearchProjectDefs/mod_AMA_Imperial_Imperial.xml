@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  Machining                                                -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewX                                                              -->
+<!--                                  WITH researchViewX  0                                                           -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.55                                                        -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
+<!--                                             WITH labels  servo skulls                                            -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  2.55                                             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.55                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
+                    <value>
+                        <label>Imperial subjects</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.55</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
+<!--                                  WITH label  Imperial subjects                                                   -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
+<!--                                  WITH prerequisites li  Machining                                                -->
+<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  2.55                                                        -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
+                    <value>
+                        <label>Imperial subjects</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/prerequisites/li</xpath>
+                    <value>
+                        <li>Machining</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.55</researchViewY>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
+<!--                                             WITH labels  servo skulls                                            -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
+<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
+<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
+<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
+<!--                                             WITH researchViewY  2.55                                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/label</xpath>
+                    <value>
+                        <label>servo skulls</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/description</xpath>
+                    <value>
+                        <description>Allows for the creation of Imperial servo skulls.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>OG_Imperial_Tech_Base_T0</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/modExtensions/li/Include</xpath>
+                    <value>
+                        <li>Militarum</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.55</researchViewY>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

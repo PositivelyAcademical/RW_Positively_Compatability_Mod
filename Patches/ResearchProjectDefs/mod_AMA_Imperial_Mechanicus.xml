@@ -12,7 +12,7 @@
 <!--                                                       Mechanicus.\n\n\Requires a member of the Adeptus           -->
 <!--                                                       Mechnaicus if Magos Xenobiologis is loaded.                -->
 <!--    + OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  RadiumWeapons                                                             -->
 <!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE label                                                             -->
@@ -23,7 +23,7 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX                                                     -->
 <!--                                           WITH researchViewX  2                                                  -->
 <!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY                                                     -->
-<!--                                           WITH researchViewY  3.10                                               -->
+<!--                                           WITH researchViewY  2.85                                               -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  PhosphorWeaponry                                                          -->
 <!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE label                                                           -->
@@ -34,14 +34,14 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX                                                   -->
 <!--                                             WITH researchViewX  2                                                -->
 <!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  3.65                                             -->
+<!--                                             WITH researchViewY  3.35                                             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  TechAdeptsOfMars                                                          -->
 <!--    + OG_Mechanicus_Tech_Base_T2 REPLACE description                                                              -->
 <!--                                    WITH description  Allows access to improved technologies of the Adeptus       -->
 <!--                                                       Mechanicus.                                                -->
 <!--    + OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  AdvancedBallistics                                                        -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE label                                                 -->
@@ -56,7 +56,7 @@
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
 <!--                                                       WITH researchViewX  4                                      -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
-<!--                                                       WITH researchViewY  3.65                                   -->
+<!--                                                       WITH researchViewY  3.35                                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ScionsOfMars                                                              -->
 <!--    + OG_Mechanicus_Tech_Base_T3 REPLACE description                                                              -->
@@ -66,7 +66,7 @@
 <!--                                    WITH prerequisites li  OG_Mechanicus_Tech_Base_T2                             -->
 <!--                                                       li  Fabrication                                            -->
 <!--    + OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  VolkiteWeaponry                                                           -->
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE label                                                            -->
@@ -85,8 +85,9 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE hiddenPrerequisites                                              -->
 <!--                                            WITH hiddenPrerequisites li  OG_Common_Tech_Weapons_Laser             -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Melta             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite heldByFactionCategoryTags ADD li  Empire                                 -->
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  3.65                                              -->
+<!--                                            WITH researchViewY  3.35                                              -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -106,7 +107,7 @@
 <!--                                                       Mechanicus.\n\n\Requires a member of the Adeptus           -->
 <!--                                                       Mechnaicus if Magos Xenobiologis is loaded.                -->
 <!--    + OG_Mechanicus_Tech_Base_T1 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/label</xpath>
@@ -125,7 +126,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T1"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.35</researchViewY>
+                        <researchViewY>3.05</researchViewY>
                     </value>
                 </li>
 
@@ -140,7 +141,7 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewX                                                     -->
 <!--                                           WITH researchViewX  2                                                  -->
 <!--    + OG_Mechanicus_Tech_Weapons_Radium REPLACE researchViewY                                                     -->
-<!--                                           WITH researchViewY  3.10                                               -->
+<!--                                           WITH researchViewY  2.85                                               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/label</xpath>
@@ -175,7 +176,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Radium"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.10</researchViewY>
+                        <researchViewY>2.85</researchViewY>
                     </value>
                 </li>
 
@@ -190,7 +191,7 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewX                                                   -->
 <!--                                             WITH researchViewX  2                                                -->
 <!--    + OG_Mechanicus_Tech_Weapons_Phosphor REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  3.65                                             -->
+<!--                                             WITH researchViewY  3.35                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/label</xpath>
@@ -216,7 +217,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Phosphor"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.65</researchViewY>
+                        <researchViewY>3.35</researchViewY>
                     </value>
                 </li>
 
@@ -227,7 +228,7 @@
 <!--                                    WITH description  Allows access to improved technologies of the Adeptus       -->
 <!--                                                       Mechanicus.                                                -->
 <!--    + OG_Mechanicus_Tech_Base_T2 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T2"]/description</xpath>
@@ -239,7 +240,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T2"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.35</researchViewY>
+                        <researchViewY>3.05</researchViewY>
                     </value>
                 </li>
 
@@ -258,7 +259,7 @@
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewX                                         -->
 <!--                                                       WITH researchViewX  4                                      -->
 <!--    + OG_Mechanicus_Tech_Weapons_AdvancedBallistics REPLACE researchViewY                                         -->
-<!--                                                       WITH researchViewY  3.65                                   -->
+<!--                                                       WITH researchViewY  3.35                                   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/label</xpath>
@@ -294,7 +295,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_AdvancedBallistics"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.65</researchViewY>
+                        <researchViewY>3.35</researchViewY>
                     </value>
                 </li>
 
@@ -308,7 +309,7 @@
 <!--                                    WITH prerequisites li  OG_Mechanicus_Tech_Base_T2                             -->
 <!--                                                       li  Fabrication                                            -->
 <!--    + OG_Mechanicus_Tech_Base_T3 REPLACE researchViewY                                                            -->
-<!--                                    WITH researchViewY  3.35                                                      -->
+<!--                                    WITH researchViewY  3.05                                                      -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/description</xpath>
@@ -330,7 +331,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Base_T3"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.35</researchViewY>
+                        <researchViewY>3.05</researchViewY>
                     </value>
                 </li>
 
@@ -353,8 +354,9 @@
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE hiddenPrerequisites                                              -->
 <!--                                            WITH hiddenPrerequisites li  OG_Common_Tech_Weapons_Laser             -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Melta             -->
+<!--    + OG_Mechanicus_Tech_Weapons_Volkite heldByFactionCategoryTags ADD li  Empire                                 -->
 <!--    + OG_Mechanicus_Tech_Weapons_Volkite REPLACE researchViewY                                                    -->
-<!--                                            WITH researchViewY  3.65                                              -->
+<!--                                            WITH researchViewY  3.35                                              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/label</xpath>
@@ -390,10 +392,17 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/heldByFactionCategoryTags</xpath>
+                    <value>
+                        <li>Empire</li>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Mechanicus_Tech_Weapons_Volkite"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.65</researchViewY>
+                        <researchViewY>3.35</researchViewY>
                     </value>
                 </li>
 

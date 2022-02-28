@@ -24,7 +24,7 @@
 <!--    + LAP_Armour_Alpharius_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
 <!--    + LAP_Armour_Alpharius_Armor recipeMaker REPLACE researchPrerequisite                                         -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Alpha_Legion              -->
-<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
+<!--                                                                           li  POS_Tech_PrimarchWargear           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchHelmet                                                           -->
 <!--    + LAP_Armour_Alpharius_Helmet REPLACE label                                                                   -->
@@ -47,7 +47,7 @@
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + LAP_Armour_Alpharius_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
 <!--                                                 WITH researchPrerequisites li  LAP_Tech_Alpha_Legion             -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                                            li  POS_Tech_PrimarchWargear          -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  AlphaLegionPrimarchArmour                                                       -->
 <!--    + LAP_Armour_Alpharius_Armor apparel ADD tags li  PrestigeCombatGear                                          -->
@@ -85,7 +85,7 @@
 <!--    + LAP_Armour_Alpharius_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                  -->
 <!--    + LAP_Armour_Alpharius_Armor recipeMaker REPLACE researchPrerequisite                                         -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Alpha_Legion              -->
-<!--                                                                           li  POS_AMA_Imperial_ArtificerArmour   -->
+<!--                                                                           li  POS_Tech_PrimarchWargear           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Armor"]/label</xpath>
@@ -113,7 +113,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Alpha_Legion</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -141,7 +141,7 @@
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + LAP_Armour_Alpharius_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
 <!--                                                 WITH researchPrerequisites li  LAP_Tech_Alpha_Legion             -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                                            li  POS_Tech_PrimarchWargear          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Alpharius_Helmet"]/label</xpath>
@@ -169,7 +169,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Alpha_Legion</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>

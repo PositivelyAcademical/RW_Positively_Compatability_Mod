@@ -52,7 +52,7 @@
 <!--    + Custodian_Terminator REPLACE label                                                                          -->
 <!--                              WITH label  Custodes terminator armour                                              -->
 <!--    + Custodian_Terminator REPLACE description                                                                    -->
-<!--          WITH description  Aquilon pattern Terminator armour is a variant uniquely designed to operate in        -->
+<!--          WITH description  Aquilon pattern terminator armour is a variant uniquely designed to operate in        -->
 <!--                              conjunction with the physiology of the Legio Custodes. Its origins lie with the     -->
 <!--                              Cataphractii suits of the Space Marine Legions, but with far greater power          -->
 <!--                              capacity and customised neuro-fibre uplinks, it is said, redesigned by the mind of  -->
@@ -67,15 +67,15 @@
 <!--    + Custodian_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Custodian_Terminator recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
+<!--                                                                     li  POS_Tech_TerminatorArmour                -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorHelmet                                                            -->
 <!--    + Custodian_Terminator_Helmet REPLACE label                                                                   -->
 <!--                                     WITH label  Custodes terminator helmet                                       -->
 <!--    + Custodian_Terminator_Helmet REPLACE description                                                             -->
-<!--          WITH description  Aquilon pattern Terminator armour helmet, completing a set of Aquilon pattern         -->
-<!--                              Terminator armour worn by the warriors of the Legio Custodes. Derived from the      -->
+<!--          WITH description  Aquilon pattern terminator armour helmet, completing a set of Aquilon pattern         -->
+<!--                              terminator armour worn by the warriors of the Legio Custodes. Derived from the      -->
 <!--                              Cataphractii pattern helmets worn by Space Marine Terminators, the customised       -->
 <!--                              neuro-fibre uplinks used in the Aquilon pattern helmets are said to have been       -->
 <!--                              redesigned by the mind of the Emperor Himself for His elite forces.\n\n             -->
@@ -90,7 +90,7 @@
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + Custodian_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                                           li  POS_Tech_TerminatorArmour          -->
 <!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralArmour                                                               -->
@@ -109,7 +109,7 @@
 <!--    + Golden_General_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Golden_General_Armor recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_ArtificerArmour         -->
+<!--                                                                     li  POS_Tech_ArtificerArmour                 -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGeneralHelmet                                                               -->
@@ -129,7 +129,7 @@
 <!--                                                   WITH ToxicSensitivity  -0.20                                   -->
 <!--    + Golden_General_Helmet recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
-<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  POS_Tech_ArtificerArmour                -->
 <!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorArmour                                                               -->
@@ -147,9 +147,8 @@
 <!--    + Emperor_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
 <!--    + Emperor_Armor recipeMaker REPLACE researchPrerequisite                                                      -->
 <!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
-<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  POS_Tech_PrimarchWargear                        -->
 <!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
-<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesEmperorHelmet                                                               -->
 <!--    + Emperor_Crown REPLACE label                                                                                 -->
@@ -166,9 +165,8 @@
 <!--    + Emperor_Crown equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
 <!--    + Emperor_Crown recipeMaker REPLACE researchPrerequisite                                                      -->
 <!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
-<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  POS_Tech_PrimarchWargear                        -->
 <!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
-<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  CustodesPowerArmour                                                             -->
 <!--    + Custodian_Armor apparel ADD tags li  PrestigeCombatGear                                                     -->
@@ -318,9 +316,9 @@
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorArmour                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + Custodian_Terminator REPLACE label                                                                          -->
-<!--                              WITH label  Custodes Terminator armour                                              -->
+<!--                              WITH label  Custodes terminator armour                                              -->
 <!--    + Custodian_Terminator REPLACE description                                                                    -->
-<!--          WITH description  Aquilon pattern Terminator armour is a variant uniquely designed to operate in        -->
+<!--          WITH description  Aquilon pattern terminator armour is a variant uniquely designed to operate in        -->
 <!--                              conjunction with the physiology of the Legio Custodes. Its origins lie with the     -->
 <!--                              Cataphractii suits of the Space Marine Legions, but with far greater power          -->
 <!--                              capacity and customised neuro-fibre uplinks, it is said, redesigned by the mind of  -->
@@ -335,20 +333,20 @@
 <!--    + Custodian_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Custodian_Terminator recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_TerminatorArmour        -->
+<!--                                                                     li  POS_Tech_TerminatorArmour                -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/label</xpath>
                     <value>
-                        <label>Custodes Terminator armour</label>
+                        <label>Custodes terminator armour</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator"]/description</xpath>
                     <value>
-                        <description>Aquilon pattern Terminator armour is a variant uniquely designed to operate in conjunction with the physiology of the Legio Custodes. Its origins lie with the Cataphractii suits ofthe Space Marine Legions, but with far greater power capacity and customised neuro-fibre uplinks, it is said, redesigned by the mind of the Emperor Himself for His elite forces.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
+                        <description>Aquilon pattern terminator armour is a variant uniquely designed to operate in conjunction with the physiology of the Legio Custodes. Its origins lie with the Cataphractii suits ofthe Space Marine Legions, but with far greater power capacity and customised neuro-fibre uplinks, it is said, redesigned by the mind of the Emperor Himself for His elite forces.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
                     </value>
                 </li>
 
@@ -364,7 +362,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
@@ -374,10 +372,10 @@
 <!--  + ALL_CASES  (ThingDef)  -  CustodesTerminatorHelmet                                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + Custodian_Terminator_Helmet REPLACE label                                                                   -->
-<!--                                     WITH label  Custodes Terminator helmet                                       -->
+<!--                                     WITH label  Custodes terminator helmet                                       -->
 <!--    + Custodian_Terminator_Helmet REPLACE description                                                             -->
-<!--          WITH description  Aquilon pattern Terminator armour helmet, completing a set of Aquilon pattern         -->
-<!--                              Terminator armour worn by the warriors of the Legio Custodes. Derived from the      -->
+<!--          WITH description  Aquilon pattern terminator armour helmet, completing a set of Aquilon pattern         -->
+<!--                              terminator armour worn by the warriors of the Legio Custodes. Derived from the      -->
 <!--                              Cataphractii pattern helmets worn by Space Marine Terminators, the customised       -->
 <!--                              neuro-fibre uplinks used in the Aquilon pattern helmets are said to have been       -->
 <!--                              redesigned by the mind of the Emperor Himself for His elite forces.\n\n             -->
@@ -392,20 +390,20 @@
 <!--                                                         WITH ToxicSensitivity  -0.20                             -->
 <!--    + Custodian_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                        -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Emperor                   -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                                           li  POS_Tech_TerminatorArmour          -->
 <!--                                                                           li  OG_Imperial_Tech_Wargear_Shield    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/label</xpath>
                     <value>
-                        <label>Custodes Allarus Terminator Helmet</label>
+                        <label>Custodes terminator helmet</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Custodian_Terminator_Helmet"]/description</xpath>
                     <value>
-                        <description>Aquilon pattern Terminator armour helmet, completing a set of Aquilon pattern Terminator armour worn by the warriors of the Legio Custodes. Derived from the Cataphractii pattern helmets worn by Space Marine Terminators, the customised neuro-fibre uplinks used in the Aquilon pattern helmets are said to have been redesigned by the mind of the Emperor Himself for His elite forces.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
+                        <description>Aquilon pattern terminator armour helmet, completing a set of Aquilon pattern Terminator armour worn by the warriors of the Legio Custodes. Derived from the Cataphractii pattern helmets worn by Space Marine Terminators, the customised neuro-fibre uplinks used in the Aquilon pattern helmets are said to have been redesigned by the mind of the Emperor Himself for His elite forces.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
                     </value>
                 </li>
 
@@ -421,7 +419,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
@@ -445,7 +443,7 @@
 <!--    + Golden_General_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                        -->
 <!--    + Golden_General_Armor recipeMaker REPLACE researchPrerequisite                                               -->
 <!--                                          WITH researchPrerequisites li  LAP_Tech_Emperor                         -->
-<!--                                                                     li  POS_AMA_Imperial_ArtificerArmour         -->
+<!--                                                                     li  POS_Tech_ArtificerArmour                 -->
 <!--                                                                     li  OG_Imperial_Tech_Wargear_Shield          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -474,7 +472,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
@@ -498,7 +496,7 @@
 <!--                                                   WITH ToxicSensitivity  -0.20                                   -->
 <!--    + Golden_General_Helmet recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
-<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
+<!--                                                                      li  POS_Tech_ArtificerArmour                -->
 <!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
@@ -527,7 +525,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
                         </researchPrerequisites>
                     </value>
@@ -550,9 +548,8 @@
 <!--    + Emperor_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
 <!--    + Emperor_Armor recipeMaker REPLACE researchPrerequisite                                                      -->
 <!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
-<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  POS_Tech_PrimarchWargear                        -->
 <!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
-<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Emperor_Armor"]/label</xpath>
@@ -580,9 +577,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -604,9 +600,8 @@
 <!--    + Emperor_Crown equippedStatOffsets ADD ToxicSensitivity  -1.00                                               -->
 <!--    + Emperor_Crown recipeMaker REPLACE researchPrerequisite                                                      -->
 <!--                                   WITH researchPrerequisites li  LAP_Tech_Emperor                                -->
-<!--                                                              li  POS_AMA_Imperial_ArtificerArmour                -->
+<!--                                                              li  POS_Tech_PrimarchWargear                        -->
 <!--                                                              li  OG_Imperial_Tech_Wargear_Shield                 -->
-<!--                                                              li  AdvancedFabrication                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Emperor_Crown"]/label</xpath>
@@ -634,9 +629,8 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperor</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                             <li>OG_Imperial_Tech_Wargear_Shield</li>
-                            <li>AdvancedFabrication</li>
                         </researchPrerequisites>
                     </value>
                 </li>

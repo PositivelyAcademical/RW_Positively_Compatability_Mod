@@ -9,7 +9,7 @@
 <!--                                   WITH description  Grants access to the STC templates used by the Adeptus       -->
 <!--                                                      Ministorum.                                                 -->
 <!--    + OG_Sororitas_Tech_Base_T1 REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  4.10                                                       -->
+<!--                                   WITH researchViewY  3.85                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  AdeptaSororitas                                                           -->
 <!--    + OG_Sororitas_Tech_Base_T2 REPLACE label                                                                     -->
@@ -18,7 +18,7 @@
 <!--                                   WITH description  Grants access to the STC templates used by the Adepta        -->
 <!--                                                      Sororitas.                                                  -->
 <!--    + OG_Sororitas_Tech_Base_T2 REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  4.10                                                       -->
+<!--                                   WITH researchViewY  3.85                                                       -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -37,7 +37,7 @@
 <!--                                   WITH description  Grants access to the STC templates used by the Adeptus       -->
 <!--                                                      Ministorum.                                                 -->
 <!--    + OG_Sororitas_Tech_Base_T1 REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  4.10                                                       -->
+<!--                                   WITH researchViewY  3.85                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T1"]/label</xpath>
@@ -56,7 +56,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T1"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.10</researchViewY>
+                        <researchViewY>3.85</researchViewY>
                     </value>
                 </li>
 
@@ -69,7 +69,7 @@
 <!--                                   WITH description  Grants access to the STC templates used by the Adepta        -->
 <!--                                                      Sororitas.                                                  -->
 <!--    + OG_Sororitas_Tech_Base_T2 REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  4.10                                                       -->
+<!--                                   WITH researchViewY  3.85                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T2"]/label</xpath>
@@ -88,7 +88,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Sororitas_Tech_Base_T2"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>4.10</researchViewY>
+                        <researchViewY>3.85</researchViewY>
                     </value>
                 </li>
 

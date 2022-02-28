@@ -14,7 +14,7 @@
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
 <!--                             researchViewX  1.00                                                                  -->
-<!--                             researchViewY  4.85                                                                  -->
+<!--                             researchViewY  4.65                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch   (ResearchProjectDef)  -  TheHorusHeresy                                      -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
@@ -28,7 +28,7 @@
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
 <!--                             researchViewX  6.00                                                                  -->
-<!--                             researchViewY  4.85                                                                  -->
+<!--                             researchViewY  4.65                                                                  -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -52,7 +52,7 @@
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
 <!--                             researchViewX  1.00                                                                  -->
-<!--                             researchViewY  4.85                                                                  -->
+<!--                             researchViewY  4.65                                                                  -->
 <!--  ==============================================================================================================  -->
             <nomatch Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>
@@ -68,7 +68,7 @@
                         <techLevel>Spacer</techLevel>
                         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
                         <researchViewX>1.00</researchViewX>
-                        <researchViewY>4.85</researchViewY>
+                        <researchViewY>4.65</researchViewY>
                     </ResearchProjectDef>
                 </value>
             </nomatch>
@@ -87,7 +87,7 @@
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
 <!--                             researchViewX  6.00                                                                  -->
-<!--                             researchViewY  4.85                                                                  -->
+<!--                             researchViewY  4.65                                                                  -->
 <!--  ==============================================================================================================  -->
             <match Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>
@@ -103,7 +103,7 @@
                         <techLevel>Spacer</techLevel>
                         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
                         <researchViewX>6.00</researchViewX>
-                        <researchViewY>4.85</researchViewY>
+                        <researchViewY>4.65</researchViewY>
                     </ResearchProjectDef>
                 </value>
             </match>

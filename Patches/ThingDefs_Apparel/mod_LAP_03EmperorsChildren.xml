@@ -61,8 +61,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                 -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_Emperors_Children  -->
+<!--                                                                                  li  POS_Tech_ArtificerArmour    -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  EmperorsChildrenSergeantHelmet                                                      -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet REPLACE label                                                  -->
@@ -82,8 +82,8 @@
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet equippedStatOffsets REPLACE ToxicSensitivity                   -->
 <!--                                                                          WITH ToxicSensitivity  -0.35            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_Emperors_Children  -->
+<!--                                                                                  li  POS_Tech_ArtificerArmour    -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  EmperorsChildrenPowerArmour                                                     -->
 <!--    + LAP_Armour_Emperors_Children_Power_Armor ADD tags li  PrestigeCombatGear                                    -->
@@ -230,8 +230,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor equippedStatOffsets ADD ToxicSensitivity  -0.65                 -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Armor recipeMaker REPLACE researchPrerequisite                        -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_Emperors_Children  -->
+<!--                                                                                  li  POS_Tech_ArtificerArmour    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Armor"]/label</xpath>
@@ -259,7 +259,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperors_Children</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -284,8 +284,8 @@
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet equippedStatOffsets REPLACE ToxicSensitivity                   -->
 <!--                                                                          WITH ToxicSensitivity  -0.35            -->
 <!--    + LAP_Armour_Emperors_Children_Sergeant_Helmet recipeMaker REPLACE researchPrerequisite                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Emperors_Children        -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_Emperors_Children  -->
+<!--                                                                                  li  POS_Tech_ArtificerArmour    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Emperors_Children_Sergeant_Helmet"]/label</xpath>
@@ -313,7 +313,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Emperors_Children</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>

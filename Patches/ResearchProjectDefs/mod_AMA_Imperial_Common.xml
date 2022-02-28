@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
+<!--                                       WITH label  bolt weapons                                                   -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
+<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
+<!--                                                          mass-reactive bolts at its targets, each one a          -->
+<!--                                                          self-propelled missile which explodes with devastating  -->
+<!--                                                          effectiveness after penetrating its target. The fear    -->
+<!--                                                          and awe that bolter fire creates makes it a perfect     -->
+<!--                                                          weapon for shock troops, the hammering thunder of the   -->
+<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
+<!--                                                          as flesh is blown apart.                                -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  Fabrication                                         -->
+<!--                                                          li  PrecisionRifling                                    -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adeptus Mechanicus: Armoury</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
+<!--                                       WITH label  bolt weapons                                                   -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
+<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
+<!--                                                          mass-reactive bolts at its targets, each one a          -->
+<!--                                                          self-propelled missile which explodes with devastating  -->
+<!--                                                          effectiveness after penetrating its target. The fear    -->
+<!--                                                          and awe that bolter fire creates makes it a perfect     -->
+<!--                                                          weapon for shock troops, the hammering thunder of the   -->
+<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
+<!--                                                          as flesh is blown apart.                                -->
+<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
+<!--                                       WITH prerequisites li  Fabrication                                         -->
+<!--                                                          li  PrecisionRifling                                    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/label</xpath>
+                    <value>
+                        <label>bolt weapons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/description</xpath>
+                    <value>
+                        <description>A brutally effieicnt weapon, the bolter fires mass-reactive bolts at its targets, each one a self-propelled missile which explodes with devastating effectiveness after penetrating its target. The fear and awe that bolter fire creates makes it a perfect weapon for shock troops, the hammering thunder of the guns mixing terrifyingly with the dull, wet explosions as flesh is blown apart.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Fabrication</li>
+                            <li>PrecisionRifling</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

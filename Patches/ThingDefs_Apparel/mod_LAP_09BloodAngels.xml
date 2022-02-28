@@ -95,8 +95,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_BloodAngels_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                           -->
 <!--    + LAP_Armour_BloodAngels_Terminator recipeMaker REPLACE researchPrerequisite                                  -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_BloodAngels               -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_BloodAngels        -->
+<!--                                                                                  li  POS_Tech_TerminatorArmour   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsTerminatorHelmet                                                         -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet REPLACE label                                                      -->
@@ -119,8 +119,8 @@
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                       -->
 <!--                                                                      WITH ToxicSensitivity  -0.20                -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_BloodAngels               -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                        WITH researchPrerequisites li  LAP_Tech_BloodAngels       -->
+<!--                                                                                   li  POS_Tech_TerminatorArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsPrimarchArmour                                                           -->
 <!--    + LAP_Armour_Sanguinius_Armor REPLACE label                                                                   -->
@@ -139,8 +139,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Sanguinius_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                 -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_BloodAngels              -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                         WITH researchPrerequisites li  LAP_Tech_BloodAngels      -->
+<!--                                                                                    li  POS_Tech_PrimarchWargear  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  BloodAngelsPowerArmour                                                          -->
 <!--    + LAP_Armour_BloodAngels_Armor apparel ADD tags li  PrestigeCombatGear                                        -->
@@ -361,8 +361,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_BloodAngels_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                           -->
 <!--    + LAP_Armour_BloodAngels_Terminator recipeMaker REPLACE researchPrerequisite                                  -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_BloodAngels               -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                       WITH researchPrerequisites li  LAP_Tech_BloodAngels        -->
+<!--                                                                                  li  POS_Tech_TerminatorArmour   -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/label</xpath>
@@ -390,7 +390,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_BloodAngels</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -418,8 +418,8 @@
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                       -->
 <!--                                                                      WITH ToxicSensitivity  -0.20                -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_BloodAngels               -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                        WITH researchPrerequisites li  LAP_Tech_BloodAngels       -->
+<!--                                                                                   li  POS_Tech_TerminatorArmour  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_BloodAngels_Terminator"]/label</xpath>
@@ -447,7 +447,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_BloodAngels</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -471,8 +471,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_Sanguinius_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                 -->
 <!--    + LAP_Armour_BloodAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                           -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_BloodAngels              -->
-<!--                                                                            li  POS_AMA_Imperial_ArtificerArmour  -->
+<!--                                                         WITH researchPrerequisites li  LAP_Tech_BloodAngels      -->
+<!--                                                                                    li  POS_Tech_PrimarchWargear  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Sanguinius_Armor"]/label</xpath>
@@ -500,7 +500,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_BloodAngels</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -612,8 +612,6 @@
         </match>
     </Operation>
 
-</Patch>
-
 <!--  ==============================================================================================================  -->
 <!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
 <!--  Tier 0b  -  <.05  -  tough body clothes                                                                         -->
@@ -628,3 +626,5 @@
 <!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
 <!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
 <!--  ==============================================================================================================  -->
+
+</Patch>

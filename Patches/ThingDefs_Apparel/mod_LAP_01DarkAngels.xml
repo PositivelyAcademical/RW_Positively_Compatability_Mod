@@ -75,8 +75,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_DarkAngels_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                            -->
 <!--    + LAP_Armour_DarkAngels_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_DarkAngels                -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                      WITH researchPrerequisites li  LAP_Tech_DarkAngels          -->
+<!--                                                                                 li  POS_Tech_TerminatorArmour    -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsTerminatorHelmet                                                          -->
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet REPLACE label                                                       -->
@@ -94,8 +94,8 @@
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                        -->
 <!--                                                                     WITH ToxicSensitivity  -0.20                 -->
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_DarkAngels                -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels        -->
+<!--                                                                                   li  POS_Tech_TerminatorArmour  -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchArmour                                                            -->
 <!--    + LAP_Armour_Lion_Armor REPLACE label                                                                         -->
@@ -112,8 +112,7 @@
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
-<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
-<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchHelmet                                                            -->
 <!--    + LAP_Armour_Lion_Helmet REPLACE label                                                                        -->
@@ -131,8 +130,7 @@
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
-<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
-<!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
+<!--                                                                       li  POS_Tech_PrimarchWargear               -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  DarkAngelsPowerArmour                                                           -->
 <!--    + LAP_Armour_DarkAngels_Armor apparel ADD tags li  PrestigeCombatGear                                         -->
@@ -336,8 +334,8 @@
 <!--                                                                                                                  -->
 <!--    + LAP_Armour_DarkAngels_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                            -->
 <!--    + LAP_Armour_DarkAngels_Terminator recipeMaker REPLACE researchPrerequisite                                   -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_DarkAngels                -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                      WITH researchPrerequisites li  LAP_Tech_DarkAngels          -->
+<!--                                                                                 li  POS_Tech_TerminatorArmour    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator"]/label</xpath>
@@ -365,7 +363,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -388,8 +386,8 @@
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                        -->
 <!--                                                                     WITH ToxicSensitivity  -0.20                 -->
 <!--    + LAP_Armour_DarkAngels_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                            -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_DarkAngels                -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels        -->
+<!--                                                                                   li  POS_Tech_TerminatorArmour  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_DarkAngels_Terminator_Helmet"]/label</xpath>
@@ -417,7 +415,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -439,8 +437,7 @@
 <!--    + LAP_Armour_Lion_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                       -->
 <!--    + LAP_Armour_Lion_Armor recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_DarkAngels                     -->
-<!--                                                                      li  POS_AMA_Imperial_ArtificerArmour        -->
-<!--                                                                      li  OG_Imperial_Tech_Wargear_Shield         -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Armor"]/label</xpath>
@@ -468,8 +465,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
-                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -492,8 +488,7 @@
 <!--                                                    WITH ToxicSensitivity  -0.20                                  -->
 <!--    + LAP_Armour_Lion_Helmet recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_DarkAngels                    -->
-<!--                                                                       li  POS_AMA_Imperial_ArtificerArmour       -->
-<!--                                                                       li  OG_Imperial_Tech_Wargear_Shield        -->
+<!--                                                                       li  POS_Tech_PrimarchWargear               -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_Lion_Helmet"]/label</xpath>
@@ -521,8 +516,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_DarkAngels</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
-                            <li>OG_Imperial_Tech_Wargear_Shield</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>

@@ -186,7 +186,7 @@
 <!--    + WorldEaters_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                                       -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_World_Eaters               -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  AdvancedFabrication                 -->
+<!--                                                                          li  OG_Mechanicus_Tech_Base_T3          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersTechmarineHelmet                                                         -->
 <!--    + WorldEaters_Techmarine_Helmet REPLACE label                                                                 -->
@@ -211,7 +211,7 @@
 <!--    + WorldEaters_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                                      -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_World_Eaters               -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  AdvancedFabrication                 -->
+<!--                                                                          li  OG_Mechanicus_Tech_Base_T3          -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersTerminatorArmour                                                         -->
 <!--    + WorldEaters_Terminator REPLACE label                                                                        -->
@@ -235,7 +235,7 @@
 <!--    + WorldEaters_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                      -->
 <!--    + WorldEaters_Terminator recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_World_Eaters                  -->
-<!--                                                                       li  POS_AMA_Imperial_TerminatorArmour      -->
+<!--                                                                       li  POS_Tech_TerminatorArmour              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersTerminatorHelmet                                                         -->
 <!--    + WorldEaters_Terminator_Helmet REPLACE label                                                                 -->
@@ -257,8 +257,8 @@
 <!--    + WorldEaters_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                  -->
 <!--                                                           WITH ToxicSensitivity  -0.20                           -->
 <!--    + WorldEaters_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                      -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_World_Eaters              -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_World_Eaters           -->
+<!--                                                                              li  POS_Tech_TerminatorArmour       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersCaptainArmour                                                            -->
 <!--    + WorldEaters_Kharn_Armor REPLACE label                                                                       -->
@@ -281,7 +281,7 @@
 <!--    + WorldEaters_Kharn_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                     -->
 <!--    + WorldEaters_Kharn_Armor recipeMaker REPLACE researchPrerequisite                                            -->
 <!--                                             WITH researchPrerequisites li  LAP_Tech_World_Eaters                 -->
-<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                                                        li  POS_Tech_ArtificerArmour              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersCaptainHelmet                                                            -->
 <!--    + WorldEaters_Kharn_Helmet REPLACE label                                                                      -->
@@ -303,8 +303,8 @@
 <!--    + WorldEaters_Kharn_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                       -->
 <!--                                                      WITH ToxicSensitivity  -0.20                                -->
 <!--    + WorldEaters_Kharn_Helmet recipeMaker REPLACE researchPrerequisite                                           -->
-<!--                                             WITH researchPrerequisites li  LAP_Tech_World_Eaters                 -->
-<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_World_Eaters                -->
+<!--                                                                         li  POS_Tech_ArtificerArmour             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchArmour                                                           -->
 <!--    + Angron_Armor REPLACE label                                                                                  -->
@@ -323,7 +323,7 @@
 <!--    + Angron_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                                -->
 <!--    + Angron_Armor recipeMaker REPLACE researchPrerequisite                                                       -->
 <!--                                  WITH researchPrerequisites li  LAP_Tech_World_Eaters                            -->
-<!--                                                             li  POS_AMA_Imperial_ArtificerArmour                 -->
+<!--                                                             li  POS_Tech_PrimarchWargear                         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchButchersNails                                                    -->
 <!--    + Butcher_Nail REPLACE label                                                                                  -->
@@ -342,7 +342,7 @@
 <!--                                                                                                                  -->
 <!--    + Butcher_Nail REPLACE researchPrerequisite                                                                   -->
 <!--                      WITH researchPrerequisites li  LAP_Tech_World_Eaters                                        -->
-<!--                                                 li  POS_AMA_Imperial_ArtificerArmour                             -->
+<!--                                                 li  POS_Tech_PrimarchWargear                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH Royalty  (ThingDef)  -  WorldEatersPowerArmour                                                          -->
 <!--    + WorldEaters_Armor apparel ADD tags li  PrestigeCombatGear                                                   -->
@@ -859,7 +859,7 @@
 <!--    + WorldEaters_Techmarine_Armor recipeMaker REPLACE researchPrerequisite                                       -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_World_Eaters               -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  AdvancedFabrication                 -->
+<!--                                                                          li  OG_Mechanicus_Tech_Base_T3          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Techmarine_Armor"]/label</xpath>
@@ -888,7 +888,7 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>AdvancedFabrication</li>
+                            <li>OG_Mechanicus_Tech_Base_T3</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -918,7 +918,7 @@
 <!--    + WorldEaters_Techmarine_Helmet recipeMaker REPLACE researchPrerequisite                                      -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_World_Eaters               -->
 <!--                                                                          li  OG_Imperial_Tech_Apparel_Armour_T3  -->
-<!--                                                                          li  AdvancedFabrication                 -->
+<!--                                                                          li  OG_Mechanicus_Tech_Base_T3          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Techmarine_Helmet"]/label</xpath>
@@ -947,7 +947,7 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
                             <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                            <li>AdvancedFabrication</li>
+                            <li>OG_Mechanicus_Tech_Base_T3</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -976,7 +976,7 @@
 <!--    + WorldEaters_Terminator equippedStatOffsets ADD ToxicSensitivity  -0.80                                      -->
 <!--    + WorldEaters_Terminator recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_World_Eaters                  -->
-<!--                                                                       li  POS_AMA_Imperial_TerminatorArmour      -->
+<!--                                                                       li  POS_Tech_TerminatorArmour              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator"]/label</xpath>
@@ -1004,7 +1004,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1031,8 +1031,8 @@
 <!--    + WorldEaters_Terminator_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                  -->
 <!--                                                           WITH ToxicSensitivity  -0.20                           -->
 <!--    + WorldEaters_Terminator_Helmet recipeMaker REPLACE researchPrerequisite                                      -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_World_Eaters              -->
-<!--                                                                           li  POS_AMA_Imperial_TerminatorArmour  -->
+<!--                                                   WITH researchPrerequisites li  LAP_Tech_World_Eaters           -->
+<!--                                                                              li  POS_Tech_TerminatorArmour       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Terminator_Helmet"]/label</xpath>
@@ -1060,7 +1060,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_TerminatorArmour</li>
+                            <li>POS_Tech_TerminatorArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1093,7 +1093,7 @@
 <!--    + WorldEaters_Kharn_Armor equippedStatOffsets ADD ToxicSensitivity  -0.80                                     -->
 <!--    + WorldEaters_Kharn_Armor recipeMaker REPLACE researchPrerequisite                                            -->
 <!--                                             WITH researchPrerequisites li  LAP_Tech_World_Eaters                 -->
-<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                                                        li  POS_Tech_ArtificerArmour              -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Armor"]/label</xpath>
@@ -1121,7 +1121,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1148,8 +1148,8 @@
 <!--    + WorldEaters_Kharn_Helmet equippedStatOffsets REPLACE ToxicSensitivity                                       -->
 <!--                                                      WITH ToxicSensitivity  -0.20                                -->
 <!--    + WorldEaters_Kharn_Helmet recipeMaker REPLACE researchPrerequisite                                           -->
-<!--                                             WITH researchPrerequisites li  LAP_Tech_World_Eaters                 -->
-<!--                                                                        li  POS_AMA_Imperial_ArtificerArmour      -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_World_Eaters                -->
+<!--                                                                         li  POS_Tech_ArtificerArmour             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="WorldEaters_Kharn_Helmet"]/label</xpath>
@@ -1177,7 +1177,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_ArtificerArmour</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1201,7 +1201,7 @@
 <!--    + Angron_Armor equippedStatOffsets ADD ToxicSensitivity  -1.00                                                -->
 <!--    + Angron_Armor recipeMaker REPLACE researchPrerequisite                                                       -->
 <!--                                  WITH researchPrerequisites li  LAP_Tech_World_Eaters                            -->
-<!--                                                             li  POS_AMA_Imperial_ArtificerArmour                 -->
+<!--                                                             li  POS_Tech_PrimarchWargear                         -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Angron_Armor"]/label</xpath>
@@ -1229,7 +1229,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1253,7 +1253,7 @@
 <!--                                                                                                                  -->
 <!--    + Butcher_Nail REPLACE researchPrerequisite                                                                   -->
 <!--                      WITH researchPrerequisites li  LAP_Tech_World_Eaters                                        -->
-<!--                                                 li  POS_AMA_Imperial_ArtificerArmour                             -->
+<!--                                                 li  POS_Tech_PrimarchWargear                                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Butcher_Nail"]/label</xpath>
@@ -1274,7 +1274,7 @@
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_World_Eaters</li>
-                            <li>POS_AMA_Imperial_ArtificerArmour</li>
+                            <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -1715,7 +1715,7 @@
                                 <xpath>/Defs/ThingDef[defName="Butcher_Nail"]/recipeMaker/researchPrerequisites</xpath>
                                 <value>
                                     <li>Bionics</li>
-                                    <li>AdvancedFabrication</li>
+                                    <li>OG_Mechanicus_Tech_Base_T3</li>
                                 </value>
                             </li>
 
@@ -1727,8 +1727,6 @@
             </operations>
         </match>
     </Operation>
-
-</Patch>
 
 <!--  ==============================================================================================================  -->
 <!--    STANDARDISATION OF GAS MASKS ETC                                                                              -->
@@ -1744,3 +1742,5 @@
 <!--  Tier 5b  -  1.00  -  special armours (those designed to be worn alone, e.g. Angron, Sanguinius, Emperor)        -->
 <!--  Tier 5h  -  1.00  -  special headgear (e.g. Emperor's Crown)                                                    -->
 <!--  ==============================================================================================================  -->
+
+</Patch>

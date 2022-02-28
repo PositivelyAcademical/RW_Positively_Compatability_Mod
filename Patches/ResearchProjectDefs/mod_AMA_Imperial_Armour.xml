@@ -4,41 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
-<!--                                       WITH label  bolt weapons                                                   -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
-<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
-<!--                                                          mass-reactive bolts at its targets, each one a          -->
-<!--                                                          self-propelled missile which explodes with devastating  -->
-<!--                                                          effectiveness after penetrating its target. The fear    -->
-<!--                                                          and awe that bolter fire creates makes it a perfect     -->
-<!--                                                          weapon for shock troops, the hammering thunder of the   -->
-<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
-<!--                                                          as flesh is blown apart.                                -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
-<!--                                       WITH prerequisites li  Fabrication                                         -->
-<!--                                                          li  PrecisionRifling                                    -->
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
-<!--                                  WITH label  Imperial subjects                                                   -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
-<!--                                  WITH prerequisites li  Machining                                                -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  2.80                                                        -->
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
-<!--                                             WITH labels  servo skulls                                            -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
-<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
-<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  2.80                                             -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialClothing                                                          -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE label                                                                      -->
 <!--                                  WITH label  Imperial clothing                                                   -->
@@ -47,6 +12,8 @@
 <!--    + OG_Imperial_Tech_Apparel ADD hiddenPrerequisites li  OG_Imperial_Tech_Base_T0                               -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE researchViewX                                                              -->
 <!--                                  WITH researchViewX  0                                                           -->
+<!--    + OG_Imperial_Tech_Apparel REPLACE researchViewY                                                              -->
+<!--                                  WITH researchViewY  1.50                                                        -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH VanillaApparelExpanded  (ResearchProjectDef)  -  ImperialClothing                                    -->
 <!--    + OG_Imperial_Tech_Apparel REPLACE prerequisites                                                              -->
@@ -62,7 +29,9 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  1                                                 -->
+<!--                                            WITH researchViewX  2                                                 -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  1.50                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  CarapaceArmour                                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE label                                                            -->
@@ -71,7 +40,9 @@
 <!--                                            WITH description  Allows for the creation of Imperial carapace        -->
 <!--                                                               armour.                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2                                                 -->
+<!--                                            WITH researchViewX  4                                                 -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  1.50                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  PowerArmour                                                               -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE label                                                            -->
@@ -79,7 +50,9 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  3                                                 -->
+<!--                                            WITH researchViewX  6                                                 -->
+<!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewY                                                    -->
+<!--                                            WITH researchViewY  1.50                                              -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ConversionFields                                                          -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE label                                                               -->
@@ -91,49 +64,82 @@
 <!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
 <!--                                                            li  ShieldBelt                                        -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  5                                                    -->
+<!--                                         WITH researchViewX  7                                                    -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  1.80                                                 -->
+<!--                                         WITH researchViewY  1.30                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH RimHammer40kDreadnought  (ResearchProjectDef)  -  DreadnoughtSarcophagii                                -->
+<!--    + WC_Dreadnought REPLACE tab                                                                                  -->
+<!--                        WITH tab  OGAMA_RSubTab_Imperial                                                          -->
+<!--    + WC_Dreadnought REPLACE label                                                                                -->
+<!--                        WITH label  dreadnought sarcophagii                                                       -->
+<!--    + WC_Dreadnought REPLACE description                                                                          -->
+<!--                        WITH desription  Allows for the creation of Imperial dreadnought sarcophagii.             -->
+<!--    + WC_Dreadnought prerequisites ADD li  OG_Imperial_Tech_Apparel_Armour_T3                                     -->
+<!--    + WC_Dreadnought REPLACE researchViewX                                                                        -->
+<!--                        WITH researchViewX  7                                                                     -->
+<!--    + WC_Dreadnought REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.80                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
+<!--                             defName  POS_Tech_ArtificerArmour                                                    -->
 <!--                             label  artificer armour                                                              -->
 <!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
 <!--                             baseCost  3000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             prerequisites li  OG_Imperial_Tech_Wargear_Shield                                    -->
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  4                                                                     -->
-<!--                             researchViewY  1.80                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
-<!--                             label  terminator armour                                                             -->
-<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
-<!--                             baseCost  5000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
-<!--                             techLevel  Spacer                                                                    -->
-<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  1.50                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
-<!--    + MATCH Royalty                                                                                               -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                   -->
+<!--                             researchViewX  8                                                                     -->
+<!--                             researchViewY  1.30                                                                  -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtiferArmour                                        -->
 <!--    + MATCH Royalty                                                                                               -->
-<!--      + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                       -->
+<!--      + POS_Tech_ArtificerArmour prerequisites ADD li  RoyalApparel                                               -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_Tech_TerminatorArmour                                                   -->
+<!--                             label  terminator armour                                                             -->
+<!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
+<!--                             baseCost  5000                                                                       -->
+<!--                             prerequisites /                                                                      -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  8                                                                     -->
+<!--                             researchViewY  1.80                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch                                                                                -->
+<!--    + MATCH RimHammer40kDreadnought  (ResearchProjectDef)  -  TerminatorArmour                                    -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  WC_Dreadnought                                            -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + POS_Tech_TerminatorArmour prerequisites ADD li  OG_Imperial_Tech_Wargear_Shield                             -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  CataphractArmor                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + NO_MATCH VanillaArmourExpanded                                                                              -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                        -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  ShieldBelt                                                -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + MATCH VanillaArmourExpanded                                                                                 -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                             -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  PrimarchWargear                                      -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_Tech_PrimarchWargear                                                    -->
+<!--                             label  Primarch's wargear                                                            -->
+<!--                             description  Allows for the creation of the wargear of the Primarchs.                -->
+<!--                             baseCost  10000                                                                      -->
+<!--                             prerequisites li  POS_Tech_ArtificerArmour                                           -->
+<!--                                           li  POS_Tech_TerminatorArmour                                          -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  9                                                                     -->
+<!--                             researchViewY  1.50                                                                  -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -142,152 +148,6 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  BoltWeapons                                                               -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE label                                                                 -->
-<!--                                       WITH label  bolt weapons                                                   -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE description                                                           -->
-<!--                                       WITH description  A brutally effieicnt weapon, the bolter fires            -->
-<!--                                                          mass-reactive bolts at its targets, each one a          -->
-<!--                                                          self-propelled missile which explodes with devastating  -->
-<!--                                                          effectiveness after penetrating its target. The fear    -->
-<!--                                                          and awe that bolter fire creates makes it a perfect     -->
-<!--                                                          weapon for shock troops, the hammering thunder of the   -->
-<!--                                                          guns mixing terrifyingly with the dull, wet explosions  -->
-<!--                                                          as flesh is blown apart.                                -->
-<!--    + OG_Imperial_Tech_Weapons_Bolt REPLACE prerequisites                                                         -->
-<!--                                       WITH prerequisites li  Fabrication                                         -->
-<!--                                                          li  PrecisionRifling                                    -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/label</xpath>
-                    <value>
-                        <label>bolt weapons</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/description</xpath>
-                    <value>
-                        <description>A brutally effieicnt weapon, the bolter fires mass-reactive bolts at its targets, each one a self-propelled missile which explodes with devastating effectiveness after penetrating its target. The fear and awe that bolter fire creates makes it a perfect weapon for shock troops, the hammering thunder of the guns mixing terrifyingly with the dull, wet explosions as flesh is blown apart.</description>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Weapons_Bolt"]/prerequisites</xpath>
-                    <value>
-                        <prerequisites>
-                            <li>Fabrication</li>
-                            <li>PrecisionRifling</li>
-                        </prerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
-<!--                                  WITH label  Imperial subjects                                                   -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  2.80                                                        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
-                    <value>
-                        <label>Imperial subjects</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2.80</researchViewY>
-                    </value>
-                </li>
-
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialSubjects                                                          -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE label                                                                      -->
-<!--                                  WITH label  Imperial subjects                                                   -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE prerequisites                                                              -->
-<!--                                  WITH prerequisites li  Machining                                                -->
-<!--    + OG_Imperial_Tech_Base_T0 REPLACE researchViewY                                                              -->
-<!--                                  WITH researchViewY  2.80                                                        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/label</xpath>
-                    <value>
-                        <label>Imperial subjects</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/prerequisites/li</xpath>
-                    <value>
-                        <li>Machining</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Base_T0"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2.80</researchViewY>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ResearchProjectDef)  -  ServoSkulls                                                               -->
-<!--  ==============================================================================================================  -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE labels                                                          -->
-<!--                                             WITH labels  servo skulls                                            -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE description                                                     -->
-<!--                                             WITH description  Allows for the creation of Imperial servo skulls.  -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE prerequisites                                                   -->
-<!--                                             WITH prerequisites li  OG_Imperial_Tech_Base_T0                      -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull modExtensions li Include ADD  Militarum                                 -->
-<!--    + OG_Imperial_Tech_Wargear_ServoSkull REPLACE researchViewY                                                   -->
-<!--                                             WITH researchViewY  2.80                                             -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/label</xpath>
-                    <value>
-                        <label>servo skulls</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/description</xpath>
-                    <value>
-                        <description>Allows for the creation of Imperial servo skulls.</description>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/prerequisites</xpath>
-                    <value>
-                        <prerequisites>
-                            <li>OG_Imperial_Tech_Base_T0</li>
-                        </prerequisites>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/modExtensions/li/Include</xpath>
-                    <value>
-                        <li>Militarum</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_ServoSkull"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2.80</researchViewY>
-                    </value>
-                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  ImperialClothing                                                          -->
@@ -375,7 +235,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial flak armour.    -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T1 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  1                                                 -->
+<!--                                            WITH researchViewX  2                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/label</xpath>
@@ -394,7 +254,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T1"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>1</researchViewX>
+                        <researchViewX>2</researchViewX>
                     </value>
                 </li>
 
@@ -407,7 +267,7 @@
 <!--                                            WITH description  Allows for the creation of Imperial carapace        -->
 <!--                                                               armour.                                            -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T2 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  2                                                 -->
+<!--                                            WITH researchViewX  4                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/label</xpath>
@@ -426,7 +286,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T2"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>2</researchViewX>
+                        <researchViewX>4</researchViewX>
                     </value>
                 </li>
 
@@ -438,7 +298,7 @@
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE description                                                      -->
 <!--                                            WITH description  Allows for the creation of Imperial power armour.   -->
 <!--    + OG_Imperial_Tech_Apparel_Armour_T3 REPLACE researchViewX                                                    -->
-<!--                                            WITH researchViewX  3                                                 -->
+<!--                                            WITH researchViewX  6                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/label</xpath>
@@ -457,7 +317,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Apparel_Armour_T3"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>3</researchViewX>
+                        <researchViewX>6</researchViewX>
                     </value>
                 </li>
 
@@ -473,9 +333,9 @@
 <!--                                         WITH prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                -->
 <!--                                                            li  ShieldBelt                                        -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewX                                                       -->
-<!--                                         WITH researchViewX  5                                                    -->
+<!--                                         WITH researchViewX  7                                                    -->
 <!--    + OG_Imperial_Tech_Wargear_Shield REPLACE researchViewY                                                       -->
-<!--                                         WITH researchViewY  1.80                                                 -->
+<!--                                         WITH researchViewY  1.30                                                 -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/label</xpath>
@@ -504,30 +364,98 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>5</researchViewX>
+                        <researchViewX>7</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Imperial_Tech_Wargear_Shield"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>1.80</researchViewY>
+                        <researchViewY>1.30</researchViewY>
                     </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH RimHammer40kDreadnought  (ResearchProjectDef)  -  DreadnoughtSarcophagii                                -->
+<!--  ==============================================================================================================  -->
+<!--    + WC_Dreadnought REPLACE tab                                                                                  -->
+<!--                        WITH tab  OGAMA_RSubTab_Imperial                                                          -->
+<!--    + WC_Dreadnought REPLACE label                                                                                -->
+<!--                        WITH label  dreadnought sarcophagii                                                       -->
+<!--    + WC_Dreadnought REPLACE description                                                                          -->
+<!--                        WITH desription  Allows for the creation of Imperial dreadnought sarcophagii.             -->
+<!--    + WC_Dreadnought prerequisites ADD li  OG_Imperial_Tech_Apparel_Armour_T3                                     -->
+<!--    + WC_Dreadnought REPLACE researchViewX                                                                        -->
+<!--                        WITH researchViewX  7                                                                     -->
+<!--    + WC_Dreadnought REPLACE researchViewY                                                                        -->
+<!--                        WITH researchViewY  1.80                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>RimHammer40k -Dreadnought</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/tab</xpath>
+                                <value>
+                                    <tab>OGAMA_RSubTab_Imperial</tab>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/label</xpath>
+                                <value>
+                                    <label>dreadnought sarcophagii</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/description</xpath>
+                                <value>
+                                    <description>Allows for the creation of Imperial dreadnought sarcophagii.</description>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/prerequisites</xpath>
+                                <value>
+                                    <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/researchViewX</xpath>
+                                <value>
+                                    <researchViewX>7</researchViewX>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ResearchProjectDef[defName="WC_Dreadnought"]/researchViewY</xpath>
+                                <value>
+                                    <researchViewY>1.80</researchViewY>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
                 </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtificerArmour                                      -->
 <!--  ==============================================================================================================  -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_ArtificerArmour                                            -->
+<!--                             defName  POS_Tech_ArtificerArmour                                                    -->
 <!--                             label  artificer armour                                                              -->
 <!--                             description  Allows for the creation of bespoke patterns of Imperial power armours.  -->
 <!--                             baseCost  3000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             prerequisites li  OG_Imperial_Tech_Wargear_Shield                                    -->
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  4                                                                     -->
-<!--                             researchViewY  1.80                                                                  -->
+<!--                             researchViewX  8                                                                     -->
+<!--                             researchViewY  1.30                                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -540,51 +468,97 @@
                                 <xpath>/Defs</xpath>
                                 <value>
                                     <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                                        <defName>POS_AMA_Imperial_ArtificerArmour</defName>
+                                        <defName>POS_Tech_ArtificerArmour</defName>
                                         <label>artificer armour</label>
                                         <description>Allows for the creation of bespoke patterns of Imperial power armours.</description>
                                         <baseCost>3000</baseCost>
                                         <prerequisites>
-                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
+                                            <li>OG_Imperial_Tech_Wargear_Shield</li>
                                         </prerequisites>
                                         <techLevel>Spacer</techLevel>
                                         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-                                        <researchViewX>4</researchViewX>
-                                        <researchViewY>1.80</researchViewY>
+                                        <researchViewX>8</researchViewX>
+                                        <researchViewY>1.30</researchViewY>
                                     </ResearchProjectDef>
                                 </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtiferArmour                                        -->
+<!--    + MATCH Royalty                                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_Tech_ArtificerArmour prerequisites ADD li  RoyalApparel                                               -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>Royalty</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_ArtificerArmour"]/prerequisites</xpath>
+                                    <value>
+                                        <li>RoyalApparel</li>
+                                    </value>
+                                </match>
                             </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--  ==============================================================================================================  -->
 <!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
-<!--                             defName  POS_AMA_Imperial_TerminatorArmour                                           -->
+<!--                             defName  POS_Tech_TerminatorArmour                                                   -->
 <!--                             label  terminator armour                                                             -->
 <!--                             description  Allows for the creation of Imperial tactical dreadnought armour.        -->
 <!--                             baseCost  5000                                                                       -->
-<!--                             prerequisites li  OG_Imperial_Tech_Apparel_Armour_T3                                 -->
+<!--                             prerequisites                                                                        -->
 <!--                             techLevel  Spacer                                                                    -->
 <!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
-<!--                             researchViewX  6                                                                     -->
-<!--                             researchViewY  1.50                                                                  -->
+<!--                             researchViewX  8                                                                     -->
+<!--                             researchViewY  1.80                                                                  -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs</xpath>
                                 <value>
                                     <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
-                                        <defName>POS_AMA_Imperial_TerminatorArmour</defName>
+                                        <defName>POS_Tech_TerminatorArmour</defName>
                                         <label>terminator armour</label>
                                         <description>Allows for the creation of Imperial tactical dreadnought armour.</description>
                                         <baseCost>5000</baseCost>
-                                        <prerequisites>
-                                            <li>OG_Imperial_Tech_Apparel_Armour_T3</li>
-                                        </prerequisites>
+                                        <prerequisites />
                                         <techLevel>Spacer</techLevel>
                                         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-                                        <researchViewX>6</researchViewX>
-                                        <researchViewY>1.50</researchViewY>
+                                        <researchViewX>8</researchViewX>
+                                        <researchViewY>1.80</researchViewY>
                                     </ResearchProjectDef>
+                                </value>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch                                                                                -->
+<!--    + MATCH RimHammer40kDreadnought  (ResearchProjectDef)  -  TerminatorArmour                                    -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  WC_Dreadnought                                            -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationFindMod">
+                                <mods>
+                                    <li>RimHammer40k -Dreadnought</li>
+                                </mods>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_TerminatorArmour"]/prerequisites</xpath>
+                                    <value>
+                                        <li>WC_Dreadnought</li>
+                                    </value>
+                                </match>
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_Tech_TerminatorArmour prerequisites ADD li  OG_Imperial_Tech_Wargear_Shield                             -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_TerminatorArmour"]/prerequisites</xpath>
+                                <value>
+                                    <li>OG_Imperial_Tech_Wargear_Shield</li>
                                 </value>
                             </li>
 
@@ -592,36 +566,17 @@
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + MATCH Royalty                                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  CataphractArmor                                   -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  CataphractArmor                                           -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationFindMod">
                                 <mods>
                                     <li>Royalty</li>
                                 </mods>
-                                <match Class="PatchOperationSequence">
-                                    <operations>
-
-                                        <li Class="PatchOperationAdd">
-                                            <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
-                                            <value>
-                                                <li>CataphractArmor</li>
-                                            </value>
-                                        </li>
-
-<!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  ArtiferArmour                                        -->
-<!--    + MATCH Royalty                                                                                               -->
-<!--  ==============================================================================================================  -->
-<!--      + POS_AMA_Imperial_ArtificerArmour prerequisites ADD li  RoyalApparel                                       -->
-<!--  ==============================================================================================================  -->
-                                        <li Class="PatchOperationAdd">
-                                            <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_ArtificerArmour"]/prerequisites</xpath>
-                                            <value>
-                                                <li>RoyalApparel</li>
-                                            </value>
-                                        </li>
-
-                                    </operations>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_TerminatorArmour"]/prerequisites</xpath>
+                                    <value>
+                                        <li>CataphractArmor</li>
+                                    </value>
                                 </match>
                             </li>
 
@@ -629,7 +584,7 @@
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + NO_MATCH VanillaArmourExpanded                                                                              -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  ShieldBelt                                        -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  ShieldBelt                                                -->
 <!--  ==============================================================================================================  -->
                         <li Class="PatchOperationFindMod">
                             <mods>
@@ -637,7 +592,7 @@
                             </mods>
 
                                 <nomatch Class="PatchOperationAdd">
-                                    <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_TerminatorArmour"]/prerequisites</xpath>
                                     <value>
                                         <li>ShieldBelt</li>
                                     </value>
@@ -647,15 +602,50 @@
 <!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  TerminatorArmour                                     -->
 <!--    + MATCH VanillaArmourExpanded                                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_AMA_Imperial_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                             -->
+<!--      + POS_Tech_TerminatorArmour prerequisites ADD li  VAE_SiegebreakerArmor                                     -->
 <!--  ==============================================================================================================  -->
                                 <match Class="PatchOperationAdd">
-                                    <xpath>/Defs/ResearchProjectDef[defName="POS_AMA_Imperial_TerminatorArmour"]/prerequisites</xpath>
+                                    <xpath>/Defs/ResearchProjectDef[defName="POS_Tech_TerminatorArmour"]/prerequisites</xpath>
                                     <value>
                                         <li>VAE_SiegebreakerArmor</li>
                                     </value>
                                 </match>
 
+                            </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ResearchProjectDef)  -  PrimarchWargear                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ResearchProjectDef @ParentName  OG_Imperial_ReseachBase                                                 -->
+<!--                             defName  POS_Tech_PrimarchWargear                                                    -->
+<!--                             label  Primarch's wargear                                                            -->
+<!--                             description  Allows for the creation of the wargear of the Primarchs.                -->
+<!--                             baseCost  10000                                                                      -->
+<!--                             prerequisites li  POS_Tech_ArtificerArmour                                           -->
+<!--                                           li  POS_Tech_TerminatorArmour                                          -->
+<!--                             techLevel  Spacer                                                                    -->
+<!--                             requiredResearchBuilding  HiTechResearchBench                                        -->
+<!--                             researchViewX  9                                                                     -->
+<!--                             researchViewY  1.50                                                                  -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs</xpath>
+                                <value>
+                                    <ResearchProjectDef ParentName="OG_Imperial_ReseachBase">
+                                        <defName>POS_Tech_PrimarchWargear</defName>
+                                        <label>Primarch's wargear</label>
+                                        <description>Allows for the creation of the wargear of the Primarchs.</description>
+                                        <baseCost>10000</baseCost>
+                                        <prerequisites>
+                                            <li>POS_Tech_ArtificerArmour</li>
+                                            <li>POS_Tech_TerminatorArmour</li>
+                                        </prerequisites>
+                                        <techLevel>Spacer</techLevel>
+                                        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                                        <researchViewX>9</researchViewX>
+                                        <researchViewY>1.50</researchViewY>
+                                    </ResearchProjectDef>
+                                </value>
                             </li>
 
                         </operations>

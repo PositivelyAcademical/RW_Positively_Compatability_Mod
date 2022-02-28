@@ -8,9 +8,9 @@
 <!--    + OG_Assassinorum_Tech_Base REPLACE description                                                               -->
 <!--                                   WITH description  Grants access to the Officio Assassinorum.                   -->
 <!--    + OG_Assassinorum_Tech_Base REPLACE researchViewX                                                             -->
-<!--                                   WITH researchViewX  6                                                          -->
+<!--                                   WITH researchViewX  7                                                          -->
 <!--    + OG_Assassinorum_Tech_Base REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.00                                                       -->
+<!--                                   WITH researchViewY  2.55                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  CallidusTemple                                                            -->
 <!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE label                                                         -->
@@ -19,10 +19,11 @@
 <!--                                               WITH description  Grants access to the STC templates unique to     -->
 <!--                                                                  the Callidus temple of the Officio              -->
 <!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus heldByFactionCategoryTags ADD li  Empire                              -->
 <!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX                                                 -->
-<!--                                               WITH researchViewX  7                                              -->
+<!--                                               WITH researchViewX  8                                              -->
 <!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY                                                 -->
-<!--                                               WITH researchViewY  2.25                                           -->
+<!--                                               WITH researchViewY  2.35                                           -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  CulexusTemple                                                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE label                                                          -->
@@ -30,10 +31,11 @@
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE description                                                    -->
 <!--                                              WITH description  Grants access to the STC templates unique to the  -->
 <!--                                                                 the Culexus temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus heldByFactionCategoryTags ADD li  Empire                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX  7                                               -->
+<!--                                              WITH researchViewX  8                                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY                                                  -->
-<!--                                              WITH researchViewY  2.75                                            -->
+<!--                                              WITH researchViewY  2.85                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  EversorTemple                                                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE label                                                          -->
@@ -41,10 +43,11 @@
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE description                                                    -->
 <!--                                              WITH description  Grants access to the STC templates unique to the  -->
 <!--                                                                 the Eversor temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor heldByFactionCategoryTags ADD li  Empire                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX  7                                               -->
+<!--                                              WITH researchViewX  8                                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY                                                  -->
-<!--                                              WITH researchViewY  3.25                                            -->
+<!--                                              WITH researchViewY  3.35                                            -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ResearchProjectDef)  -  VindicareTemple                                                           -->
 <!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE label                                                        -->
@@ -53,10 +56,11 @@
 <!--                                                WITH description  Grants access to the STC templates unique to    -->
 <!--                                                                   the Vindicare temple of the Officio            -->
 <!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare heldByFactionCategoryTags ADD li  Empire                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX                                                -->
-<!--                                                WITH researchViewX  7                                             -->
+<!--                                                WITH researchViewX  8                                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY                                                -->
-<!--                                                WITH researchViewY  3.75                                          -->
+<!--                                                WITH researchViewY  3.85                                          -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -71,10 +75,8 @@
 <!--  ==============================================================================================================  -->
 <!--    + OG_Assassinorum_Tech_Base REPLACE description                                                               -->
 <!--                                   WITH description  Grants access to the Officio Assassinorum.                   -->
-<!--    + OG_Assassinorum_Tech_Base REPLACE researchViewX                                                             -->
-<!--                                   WITH researchViewX  6                                                          -->
 <!--    + OG_Assassinorum_Tech_Base REPLACE researchViewY                                                             -->
-<!--                                   WITH researchViewY  3.00                                                       -->
+<!--                                   WITH researchViewY  2.55                                                       -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/description</xpath>
@@ -84,16 +86,9 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>6</researchViewX>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Base"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.00</researchViewY>
+                        <researchViewY>2.55</researchViewY>
                     </value>
                 </li>
 
@@ -106,10 +101,11 @@
 <!--                                               WITH description  Grants access to the STC templates unique to     -->
 <!--                                                                  the Callidus temple of the Officio              -->
 <!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Callidus heldByFactionCategoryTags ADD li  Empire                              -->
 <!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewX                                                 -->
-<!--                                               WITH researchViewX  7                                              -->
+<!--                                               WITH researchViewX  8                                              -->
 <!--    + OG_Assassinorum_Tech_Weapons_Callidus REPLACE researchViewY                                                 -->
-<!--                                               WITH researchViewY  2.25                                           -->
+<!--                                               WITH researchViewY  2.35                                           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/label</xpath>
@@ -125,17 +121,24 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/heldByFactionCategoryTags</xpath>
+                    <value>
+                        <li>Empire</li>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>7</researchViewX>
+                        <researchViewX>8</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Callidus"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2.25</researchViewY>
+                        <researchViewY>2.35</researchViewY>
                     </value>
                 </li>
 
@@ -147,10 +150,11 @@
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE description                                                    -->
 <!--                                              WITH description  Grants access to the STC templates unique to the  -->
 <!--                                                                 the Culexus temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Culexus heldByFactionCategoryTags ADD li  Empire                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX  7                                               -->
+<!--                                              WITH researchViewX  8                                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Culexus REPLACE researchViewY                                                  -->
-<!--                                              WITH researchViewY  2.75                                            -->
+<!--                                              WITH researchViewY  2.85                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/label</xpath>
@@ -166,17 +170,24 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/heldByFactionCategoryTags</xpath>
+                    <value>
+                        <li>Empire</li>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>7</researchViewX>
+                        <researchViewX>8</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Culexus"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>2.75</researchViewY>
+                        <researchViewY>2.85</researchViewY>
                     </value>
                 </li>
 
@@ -188,10 +199,11 @@
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE description                                                    -->
 <!--                                              WITH description  Grants access to the STC templates unique to the  -->
 <!--                                                                 the Eversor temple of the Officio Assassinorum.  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Eversor heldByFactionCategoryTags ADD li  Empire                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewX                                                  -->
-<!--                                              WITH researchViewX  7                                               -->
+<!--                                              WITH researchViewX  8                                               -->
 <!--    + OG_Assassinorum_Tech_Weapons_Eversor REPLACE researchViewY                                                  -->
-<!--                                              WITH researchViewY  3.25                                            -->
+<!--                                              WITH researchViewY  3.35                                            -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/label</xpath>
@@ -207,17 +219,24 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/heldByFactionCategoryTags</xpath>
+                    <value>
+                        <li>Empire</li>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>7</researchViewX>
+                        <researchViewX>8</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Eversor"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.25</researchViewY>
+                        <researchViewY>3.35</researchViewY>
                     </value>
                 </li>
 
@@ -230,10 +249,11 @@
 <!--                                                WITH description  Grants access to the STC templates unique to    -->
 <!--                                                                   the Vindicare temple of the Officio            -->
 <!--                                                                   Assassinorum.                                  -->
+<!--    + OG_Assassinorum_Tech_Weapons_Vindicare heldByFactionCategoryTags ADD li  Empire                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewX                                                -->
-<!--                                                WITH researchViewX  7                                             -->
+<!--                                                WITH researchViewX  8                                             -->
 <!--    + OG_Assassinorum_Tech_Weapons_Vindicare REPLACE researchViewY                                                -->
-<!--                                                WITH researchViewY  3.75                                          -->
+<!--                                                WITH researchViewY  3.85                                          -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/label</xpath>
@@ -249,17 +269,24 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/heldByFactionCategoryTags</xpath>
+                    <value>
+                        <li>Empire</li>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/researchViewX</xpath>
                     <value>
-                        <researchViewX>7</researchViewX>
+                        <researchViewX>8</researchViewX>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="OG_Assassinorum_Tech_Weapons_Vindicare"]/researchViewY</xpath>
                     <value>
-                        <researchViewY>3.75</researchViewY>
+                        <researchViewY>3.85</researchViewY>
                     </value>
                 </li>
 
