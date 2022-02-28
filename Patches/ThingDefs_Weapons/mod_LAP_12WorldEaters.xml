@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_ChainAxe REPLACE label                                                                             -->
+<!--                           WITH label  chainaxe                                                                   -->
+<!--    + LAP_WEAP_ChainAxe REPLACE description                                                                       -->
+<!--          WITH description  A chainaxe is a brutal hand-to-hand motorised chain weapon crafted in the form of a   -->
+<!--                              great one or two-handed axe. The biting action of the whirling row of               -->
+<!--                              monomolecular teeth means these weapons can hack through both flesh and armour      -->
+<!--                              ease.\n\n                                                                           -->
+<!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
+<!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
+<!--                              and send armies to flight in terror. Tales of their predations and massacres were   -->
+<!--                              numberless, and their reputation was as the Emperor's war hounds, as such a name    -->
+<!--                              they once carried: beasts, butchers and madmen whose fury was fuelled by            -->
+<!--                              bloodshed, and was such that no sane warrior would stand willingly against them.    -->
+<!--                              Their reputation was well deserved, if an oversimplification of them as a fighting  -->
+<!--                              force, which knew all the virtue of tactics and weapons.                            -->
+<!--                                                                                                                  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersChainaxe                                                                 -->
+<!--    + LAP_WEAP_ChainAxe recipeMaker REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_World_Eaters                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchGorechild                                                        -->
+<!--    + LAP_WEAP_Gorechild REPLACE description                                                                      -->
+<!--          WITH description  One of a pair of archaic matched chainaxes, Gorechild was among the most potent       -->
+<!--                              weapons known the relics of the Primarchs, was made all the more deadly by          -->
+<!--                              Angron's consummate skill as a fighter.\n\n                                         -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Gorechild recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_World_Eaters                      -->
+<!--                                                                   li  POS_Tech_PrimarchWargear                   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchGorefather                                                       -->
+<!--    + LAP_WEAP_Gorefather REPLACE description                                                                     -->
+<!--          WITH description  One of a pair of archaic matched chainaxes, Gorefather was among the most potent      -->
+<!--                              weapons known the relics of the Primarchs, was made all the more deadly by          -->
+<!--                              Angron's consummate skill as a fighter.\n\n                                         -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Gorefather recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_World_Eaters                     -->
+<!--                                                                    li  POS_Tech_PrimarchWargear                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchWidowmaker                                                       -->
+<!--    + LAP_WEAP_Widowmaker REPLACE description                                                                     -->
+<!--          WITH description  Widowmaker was a massive two-handed Chain axe wielded by the Primarch Angron during   -->
+<!--                              the Great Crusade. Following it's destruction it was replaced by the pair of        -->
+<!--                              chainaxes, Gorefather and Gorechild.\n\n                                            -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Widowmaker recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_World_Eaters                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Special            -->
+<!--                                                                    li  POS_Tech_PrimarchWargear                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersChainaxe                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_ChainAxe REPLACE label                                                                             -->
+<!--                           WITH label  chainaxe                                                                   -->
+<!--    + LAP_WEAP_ChainAxe REPLACE description                                                                       -->
+<!--          WITH description  A chainaxe is a brutal hand-to-hand motorised chain weapon crafted in the form of a   -->
+<!--                              great one or two-handed axe. The biting action of the whirling row of               -->
+<!--                              monomolecular teeth means these weapons can hack through both flesh and armour      -->
+<!--                              ease.\n\n                                                                           -->
+<!--                            Of all the Space Marine Legions in the Emperor's service, the World Eaters were       -->
+<!--                              among the most feared, the whisper of their coming was enough to quell rebellion    -->
+<!--                              and send armies to flight in terror. Tales of their predations and massacres were   -->
+<!--                              numberless, and their reputation was as the Emperor's war hounds, as such a name    -->
+<!--                              they once carried: beasts, butchers and madmen whose fury was fuelled by            -->
+<!--                              bloodshed, and was such that no sane warrior would stand willingly against them.    -->
+<!--                              Their reputation was well deserved, if an oversimplification of them as a fighting  -->
+<!--                              force, which knew all the virtue of tactics and weapons.                            -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_ChainAxe recipeMaker REPLACE researchPrerequisite                                                  -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_World_Eaters                       -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/label</xpath>
+                    <value>
+                        <label>chainaxe</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/description</xpath>
+                    <value>
+                        <description>A chainaxe is a brutal hand-to-hand motorised chain weapon crafted in the form of a great one or two-handed axe. The biting action of the whirling row of monomolecular teeth means these weapons can hack through both flesh and armour with ease.\n\nOf all the Space Marine Legions in the Emperor's service, the World Eaters were among the most feared, the whisper of their coming was enough to quell rebellion and send armies to flight in terror. Tales of their predations and massacres were numberless, and their reputation was as the Emperor's war hounds, as such a name they once carried: beasts, butchers and madmen whose fury was fuelled by bloodshed, and was such that no sane warrior would stand willingly against them. Their reputation was well deserved, if an oversimplification of them as a fighting force, which knew all the virtue of tactics and weapons.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_World_Eaters</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchGorechild                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Gorechild REPLACE description                                                                      -->
+<!--          WITH description  One of a pair of archaic matched chainaxes, Gorechild was among the most potent       -->
+<!--                              weapons known the relics of the Primarchs, was made all the more deadly by          -->
+<!--                              Angron's consummate skill as a fighter.\n\n                                         -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Gorechild recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_World_Eaters                      -->
+<!--                                                                   li  POS_Tech_PrimarchWargear                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Gorechild"]/description</xpath>
+                    <value>
+                        <description>One of a pair of archaic matched chainaxes, Gorechild was among the most potent weapons known the relics of the Primarchs, was made all the more deadly by Angron's consummate skill as a fighter.\n\nAngron, most bloody-handed and savage of the Primarchs, was the master of the World Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved and surgically mutilated to become a gladiator in the games of death, where he became the undefeated lord of the red sands, a killer without peer. After leading a doomed slave revolt the Emperor saved him from dying with his rebellion and placed him at the head of his Legion.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Gorechild"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_World_Eaters</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchGorefather                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Gorefather REPLACE description                                                                     -->
+<!--          WITH description  One of a pair of archaic matched chainaxes, Gorefather was among the most potent      -->
+<!--                              weapons known the relics of the Primarchs, was made all the more deadly by          -->
+<!--                              Angron's consummate skill as a fighter.\n\n                                         -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Gorefather recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_World_Eaters                     -->
+<!--                                                                    li  POS_Tech_PrimarchWargear                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Gorefather"]/description</xpath>
+                    <value>
+                        <description>One of a pair of archaic matched chainaxes, Gorefather was among the most potent weapons known the relics of the Primarchs, was made all the more deadly by Angron's consummate skill as a fighter.\n\nAngron, most bloody-handed and savage of the Primarchs, was the master of the World Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved and surgically mutilated to become a gladiator in the games of death, where he became the undefeated lord of the red sands, a killer without peer. After leading a doomed slave revolt the Emperor saved him from dying with his rebellion and placed him at the head of his Legion.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Gorefather"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_World_Eaters</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  WorldEatersPrimarchWidowmaker                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Widowmaker REPLACE description                                                                     -->
+<!--          WITH description  Widowmaker was a massive two-handed Chain axe wielded by the Primarch Angron during   -->
+<!--                              the Great Crusade. Following it's destruction it was replaced by the pair of        -->
+<!--                              chainaxes, Gorefather and Gorechild.\n\n                                            -->
+<!--                            Angron, most bloody-handed and savage of the Primarchs, was the master of the World   -->
+<!--                              Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved  -->
+<!--                              and surgically mutilated to become a gladiator in the games of death, where he      -->
+<!--                              became the undefeated lord of the red sands, a killer without peer. After leading   -->
+<!--                              a doomed slave revolt the Emperor saved him from dying with his rebellion and       -->
+<!--                              placed him at the head of his Legion.                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Widowmaker recipeMaker REPLACE researchPrerequisite                                                -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_World_Eaters                     -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Special            -->
+<!--                                                                    li  POS_Tech_PrimarchWargear                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Widowmaker"]/description</xpath>
+                    <value>
+                        <description>Widowmaker was a massive two-handed Chain axe wielded by the Primarch Angron during the Great Crusade. Following it's destruction it was replaced by the pair of chainaxes, Gorefather and Gorechild.\n\nAngron, most bloody-handed and savage of the Primarchs, was the master of the World Eaters Legion. In his youth cast upon a world of brutal oppression he was enslaved and surgically mutilated to become a gladiator in the games of death, where he became the undefeated lord of the red sands, a killer without peer. After leading a doomed slave revolt the Emperor saved him from dying with his rebellion and placed him at the head of his Legion.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Widowmaker"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_World_Eaters</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
