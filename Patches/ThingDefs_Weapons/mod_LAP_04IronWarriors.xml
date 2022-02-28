@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHammer                                                          -->
+<!--    + LAP_WEAP_Forgebreaker recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                  -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchCannons                                                         -->
+<!--    + LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
+<!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  MultibarrelWeapons                  -->
+<!--                                                                          li  POS_Tech_PrimarchWargear            -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHammer                                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Forgebreaker recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                  -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchCannons                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                          -->
+<!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
+<!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
+<!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  MultibarrelWeapons                  -->
+<!--                                                                          li  POS_Tech_PrimarchWargear            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Perturabo_Weapon"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Iron_Warriors</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                            <li>MultibarrelWeapons</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
