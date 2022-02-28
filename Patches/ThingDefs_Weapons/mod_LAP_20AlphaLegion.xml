@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchSpear                                                            -->
+<!--    + LAP_WEAP_Sarrisanata REPLACE label                                                                          -->
+<!--                              WITH label  the Pale Spear                                                          -->
+<!--    + LAP_WEAP_Sarrisanata REPLACE description                                                                    -->
+<!--          WITH description  The Pale Spear was one of a number of strange and esoteric weapons associated with    -->
+<!--                              the Primarch Alpharius, and was rumoured to be a strange xenos artefact whose       -->
+<!--                              forging predated even the rise of the Elder. This double-bladed spear flickered     -->
+<!--                              seemingly out of phase with the material universe when wielded, emitting an eerie   -->
+<!--                              and otherworldly howling, and was able to pierce any physical defence it            -->
+<!--                              encountered without impediment, ripping them apart at the molecular level. Against  -->
+<!--                              living matter, it inflicted hideously gaping bloodless wounds as the where it       -->
+<!--                              struck dissolved into oily smoke.\n\n                                               -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Sarrisanata recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Alpha_Legion                    -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Force             -->
+<!--                                                                     li  POS_Tech_PrimarchWargear                 -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  AlphaLegionPrimarchSpear                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Sarrisanata REPLACE label                                                                          -->
+<!--                              WITH label  the Pale Spear                                                          -->
+<!--    + LAP_WEAP_Sarrisanata REPLACE description                                                                    -->
+<!--          WITH description  The Pale Spear was one of a number of strange and esoteric weapons associated with    -->
+<!--                              the Primarch Alpharius, and was rumoured to be a strange xenos artefact whose       -->
+<!--                              forging predated even the rise of the Elder. This double-bladed spear flickered     -->
+<!--                              seemingly out of phase with the material universe when wielded, emitting an eerie   -->
+<!--                              and otherworldly howling, and was able to pierce any physical defence it            -->
+<!--                              encountered without impediment, ripping them apart at the molecular level. Against  -->
+<!--                              living matter, it inflicted hideously gaping bloodless wounds as the where it       -->
+<!--                              struck dissolved into oily smoke.\n\n                                               -->
+<!--                            Of all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most    -->
+<!--                              steeped in mystery, legend, contradiction and deliberate falsification. Some even   -->
+<!--                              claim that the Alpha Legion has more than one Primarch, though it is entirely       -->
+<!--                              possible that this belief is itself but a part of elaborate misdirection on the     -->
+<!--                              part of Alpharius, intended to further his Legion's goals.                          -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Sarrisanata recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Alpha_Legion                    -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Force             -->
+<!--                                                                     li  POS_Tech_PrimarchWargear                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Sarrisanata"]/label</xpath>
+                    <value>
+                        <label>the Pale Spear</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Sarrisanata"]/description</xpath>
+                    <value>
+                        <description>The Pale Spear was one of a number of strange and esoteric weapons associated with the Primarch Alpharius, and was rumoured to be a strange xenos artefact whose forging predated even the rise of the Elder. This double-bladed spear flickered seemingly out of phase with the material universe when wielded, emitting an eerie and otherworldly howling, and was able to pierce any physical defence it encountered without impediment, ripping them apart at the molecular level. Against living matter, it inflicted hideously gaping bloodless wounds as the where it struck dissolved into oily smoke.\n\nOf all the Primarchs of the Legiones Astartes, Alpharius is without doubt the most steeped in mystery, legend, contradiction and deliberate falsification. Some even claim that the Alpha Legion has more than one Primarch, though it is entirely possible that this belief is itself but a part of elaborate misdirection on the part of Alpharius, intended to further his Legion's goals.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Sarrisanata"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Alpha_Legion</li>
+                            <li>OG_Common_Tech_Weapons_Force</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
