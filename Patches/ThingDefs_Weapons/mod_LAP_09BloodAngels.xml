@@ -5,6 +5,16 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsPrimarchSword                                                            -->
+<!--    + LAP_WEAP_Blade_Encarmine REPLACE label                                                                      -->
+<!--                                  WITH label  the Blade Encarmine                                                 -->
+<!--    + LAP_WEAP_Blade_Encarmine REPLACE description                                                                -->
+<!--          WITH description  A powerful broad-bladed sword, the Blade Encarmine was carried to glory by            -->
+<!--                              Sanguinius on a hundred worlds during the Great Crusade.\n\n                        -->
+<!--                            Often considered to be the greatest of his kin, Sanguinius is a peerless warrior,     -->
+<!--                              masterful strategist and beloved hero of the Imperium. Among the Primarchs, there   -->
+<!--                              were few who would speak ill of him, with even grim figure such as Perturabo and    -->
+<!--                              Ferrus Manus offering grudging praise of their winged brother.                      -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Blade_Encarmine recipeMaker REPLACE researchPrerequisite                                           -->
 <!--                                              WITH researchPrerequisites li  LAP_Tech_BloodAngels                 -->
 <!--                                                                         li  OG_Common_Tech_Weapons_Force         -->
@@ -21,11 +31,35 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  BloodAngelsPrimarchSword                                                            -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Blade_Encarmine REPLACE label                                                                      -->
+<!--                                  WITH label  the Blade Encarmine                                                 -->
+<!--    + LAP_WEAP_Blade_Encarmine REPLACE description                                                                -->
+<!--          WITH description  A powerful broad-bladed sword, the Blade Encarmine was carried to glory by            -->
+<!--                              Sanguinius on a hundred worlds during the Great Crusade.\n\n                        -->
+<!--                            Often considered to be the greatest of his kin, Sanguinius is a peerless warrior,     -->
+<!--                              masterful strategist and beloved hero of the Imperium. Among the Primarchs, there   -->
+<!--                              were few who would speak ill of him, with even grim figure such as Perturabo and    -->
+<!--                              Ferrus Manus offering grudging praise of their winged brother.                      -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Blade_Encarmine recipeMaker REPLACE researchPrerequisite                                           -->
 <!--                                              WITH researchPrerequisites li  LAP_Tech_BloodAngels                 -->
 <!--                                                                         li  OG_Common_Tech_Weapons_Force         -->
 <!--                                                                         li  POS_Tech_PrimarchWargear             -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]/label</xpath>
+                    <value>
+                        <label>the Blade Encarmine</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]/description</xpath>
+                    <value>
+                        <description>A powerful broad-bladed sword, the Blade Encarmine was carried to glory by Sanguinius on a hundred worlds during the Great Crusade.\n\nOften considered to be the greatest of his kin, Sanguinius is a peerless warrior, masterful strategist and beloved hero of the Imperium. Among the Primarchs, there were few who would speak ill of him, with even grim figure such as Perturabo and Ferrus Manus offering grudging praise of their winged brother.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
