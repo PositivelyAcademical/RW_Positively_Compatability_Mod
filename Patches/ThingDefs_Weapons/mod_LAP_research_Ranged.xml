@@ -85,10 +85,6 @@
 <!--       + For LAP_WEAP_RocketLaucher recipeMaker REPLACE researchPrerequisites                                     -->
 <!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
 <!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
-<!--       + For LAP_WEAP_Talon_Horus recipeMaker REPLACE researchPrerequisite                                        -->
-<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
-<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
-<!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -383,10 +379,6 @@
 <!--       + For LAP_WEAP_RocketLaucher recipeMaker REPLACE researchPrerequisites                                     -->
 <!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
 <!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
-<!--       + For LAP_WEAP_Talon_Horus recipeMaker REPLACE researchPrerequisite                                        -->
-<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
-<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
-<!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_RocketLaucher"]/recipeMaker/researchPrerequisites</xpath>
@@ -394,17 +386,6 @@
                         <researchPrerequisites>
                             <li>LAP_Tech_Basic</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Talon_Horus"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_SOH</li>
-                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
-                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
                         </researchPrerequisites>
                     </value>
                 </li>

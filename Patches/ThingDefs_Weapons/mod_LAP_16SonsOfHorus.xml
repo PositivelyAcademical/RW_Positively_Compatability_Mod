@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchWorldbreaker                                                     -->
+<!--    + LAP_WEAP_Worldbreaker REPLACE label                                                                         -->
+<!--                               WITH label  Worldbreaker                                                           -->
+<!--    + LAP_WEAP_Worldbreaker REPLACE description                                                                   -->
+<!--          WITH description  Worldbreaker was a power maul of prodigious size and might, which as well as having   -->
+<!--                              been a weapon capable of shattering armoured ceramite, it was also a signifier of   -->
+<!--                              Horus' rank of Warmaster. It was said to have been created by the hand of the       -->
+<!--                              Emperor Himself, and was a gift to His favoured son.\n\n                            -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Worldbreaker recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Force            -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchTalon                                                            -->
+<!--    + LAP_WEAP_Talon_Horus REPLACE label                                                                          -->
+<!--                              WITH label  the Warmaster's Talon                                                   -->
+<!--    + LAP_WEAP_Talon_Horus REPLACE description                                                                    -->
+<!--          WITH description  A unique lightning claw which incorporates a baroquely styled twin-bolter, the        -->
+<!--                              Warmaster's Talon has long been Horus' favoured weapon. Some apocryphal sources     -->
+<!--                              claim it is an antediluvian relic that was found deep on the planet Clthon, and     -->
+<!--                              was a product of Mankind's Dark Age of Technology.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Talon_Horus recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
+<!--                                                                     li  OG_Imperial_Tech_Weapons_Bolt            -->
+<!--                                                                     li  POS_Tech_PrimarchWargear                 -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchWorldbreaker                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Worldbreaker REPLACE description                                                                   -->
+<!--          WITH description  Worldbreaker was a power maul of prodigious size and might, which as well as having   -->
+<!--                              been a weapon capable of shattering armoured ceramite, it was also a signifier of   -->
+<!--                              Horus' rank of Warmaster. It was said to have been created by the hand of the       -->
+<!--                              Emperor Himself, and was a gift to His favoured son.\n\n                            -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Worldbreaker recipeMaker REPLACE researchPrerequisite                                              -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_SOH                            -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Force            -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Worldbreaker"]/description</xpath>
+                    <value>
+                        <description>Worldbreaker was a power maul of prodigious size and might, which as well as having been a weapon capable of shattering armoured ceramite, it was also a signifier of Horus' rank of Warmaster. It was said to have been created by the hand of the Emperor Himself, and was a gift to His favoured son.\n\nHorus was the Primarch of the Luna Wolves Legion and greatest of his superhuman kind. A tactical genius and charismatic battle leader, Horus proved himself over the course of the Great Crusade as a warlord second only to the Emperor who he served and called father. So it was that when the Emperor stood apart from the burden of command of the Great Crusade, it was Horus that He named Warmaster to act in His stead.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Worldbreaker"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Common_Tech_Weapons_Force</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusPrimarchTalon                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Talon_Horus REPLACE label                                                                          -->
+<!--                              WITH label  the Warmaster's Talon                                                   -->
+<!--    + LAP_WEAP_Talon_Horus REPLACE description                                                                    -->
+<!--          WITH description  A unique lightning claw which incorporates a baroquely styled twin-bolter, the        -->
+<!--                              Warmaster's Talon has long been Horus' favoured weapon. Some apocryphal sources     -->
+<!--                              claim it is an antediluvian relic that was found deep on the planet Clthon, and     -->
+<!--                              was a product of Mankind's Dark Age of Technology.\n\n                              -->
+<!--                            Horus was the Primarch of the Luna Wolves Legion and greatest of his superhuman       -->
+<!--                              kind. A tactical genius and charismatic battle leader, Horus proved himself over    -->
+<!--                              the course of the Great Crusade as a warlord second only to the Emperor who he      -->
+<!--                              served and called father. So it was that when the Emperor stood apart from the      -->
+<!--                              burden of command of the Great Crusade, it was Horus that He named Warmaster to     -->
+<!--                              act in His stead.                                                                   -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Talon_Horus recipeMaker REPLACE researchPrerequisite                                               -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_SOH                             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Powered_Special   -->
+<!--                                                                     li  OG_Imperial_Tech_Weapons_Bolt            -->
+<!--                                                                     li  POS_Tech_PrimarchWargear                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Talon_Horus"]/label</xpath>
+                    <value>
+                        <label>the Warmaster's Talon</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Talon_Horus"]/description</xpath>
+                    <value>
+                        <description>A unique lightning claw which incorporates a baroquely styled twin-bolter, the Warmaster's Talon has long been Horus' favoured weapon. Some apocryphal sources claim it is an antediluvian relic that was found deep on the planet Clthon, and was a product of Mankind's Dark Age of Technology.\n\nHorus was the Primarch of the Luna Wolves Legion and greatest of his superhuman kind. A tactical genius and charismatic battle leader, Horus proved himself over the course of the Great Crusade as a warlord second only to the Emperor who he served and called father. So it was that when the Emperor stood apart from the burden of command of the Great Crusade, it was Horus that He named Warmaster to act in His stead.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Talon_Horus"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_SOH</li>
+                            <li>OG_Common_Tech_Weapons_Powered_Special</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
