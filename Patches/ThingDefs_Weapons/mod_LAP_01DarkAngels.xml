@@ -5,12 +5,45 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchPowerSword                                                        -->
+<!--    + LAP_WEAP_LionSword REPLACE label                                                                            -->
+<!--                            WITH label  the Lion Sword                                                            -->
+<!--    + LAP_WEAP_LionSword REPLACE description                                                                      -->
+<!--          WITH description  The Lion Sword was a powerful broad-bladed sword that glowed with a soft inner light  -->
+<!--                              and scorched those it struck with a silver flame. Its keen edge made a mockery of   -->
+<!--                              even the finest armour or the mightiest of foes, cutting a clear path for the       -->
+<!--                              First Primarch and his Legion through the darkest of battlefields.\n\n              -->
+<!--                            Lion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander  -->
+<!--                              of the Great Crusade. His was the task of rooting out those threats which the       -->
+<!--                              Imperium most feared, and he undertook it with peerless valour. Perhaps this        -->
+<!--                              quality was moulded into the Lion in his formative years, where he grew and         -->
+<!--                              learned to survive alone in the trackless, monster-haunted forests of Caliban.      -->
+<!--                              There the young Primarch faced a constant struggle against nigh-insurmountable      -->
+<!--                              odds which taught him that to hesitate once committed led only to death, while      -->
+<!--                              stoic determination brought victory.                                                -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_LionSword recipeMaker REPLACE researchPrerequisite                                                 -->
 <!--                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels                        -->
 <!--                                                                   li  OG_Common_Tech_Weapons_Powered             -->
 <!--                                                                   li  POS_Tech_PrimarchWargear                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchChainSword                                                        -->
+<!--    + LAP_WEAP_WolfBlade REPLACE label                                                                            -->
+<!--                            WITH label  the Wolf Blade                                                            -->
+<!--    + LAP_WEAP_WolfBlade REPLACE description                                                                      -->
+<!--          WITH description  A blade of ancient provenance borne by the First Primarch in the earliest days of     -->
+<!--                              the Great Crusade and which remained at his side even to the last days of the       -->
+<!--                              Horus Heresy. The Wolf Blade was a masterpiece of the the armourer's craft, whose   -->
+<!--                              flickering silver teeth wrought a fearsome ruin upon the foe and shattered the      -->
+<!--                              resolve of those that stood against the Lion.\n\n                                   -->
+<!--                            Lion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander  -->
+<!--                              of the Great Crusade. His was the task of rooting out those threats which the       -->
+<!--                              Imperium most feared, and he undertook it with peerless valour. Perhaps this        -->
+<!--                              quality was moulded into the Lion in his formative years, where he grew and         -->
+<!--                              learned to survive alone in the trackless, monster-haunted forests of Caliban.      -->
+<!--                              There the young Primarch faced a constant struggle against nigh-insurmountable      -->
+<!--                              odds which taught him that to hesitate once committed led only to death, while      -->
+<!--                              stoic determination brought victory.                                                -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_WolfBlade recipeMaker REPLACE researchPrerequisite                                                 -->
 <!--                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels                        -->
 <!--                                                                   li  OG_Common_Tech_Weapons_Special             -->
@@ -27,11 +60,42 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchPowerSword                                                        -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchPowerSword                                                        -->
+<!--    + LAP_WEAP_LionSword REPLACE label                                                                            -->
+<!--                            WITH label  the Lion Sword                                                            -->
+<!--    + LAP_WEAP_LionSword REPLACE description                                                                      -->
+<!--          WITH description  The Lion Sword was a powerful broad-bladed sword that glowed with a soft inner light  -->
+<!--                              and scorched those it struck with a silver flame. Its keen edge made a mockery of   -->
+<!--                              even the finest armour or the mightiest of foes, cutting a clear path for the       -->
+<!--                              First Primarch and his Legion through the darkest of battlefields.\n\n              -->
+<!--                            Lion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander  -->
+<!--                              of the Great Crusade. His was the task of rooting out those threats which the       -->
+<!--                              Imperium most feared, and he undertook it with peerless valour. Perhaps this        -->
+<!--                              quality was moulded into the Lion in his formative years, where he grew and         -->
+<!--                              learned to survive alone in the trackless, monster-haunted forests of Caliban.      -->
+<!--                              There the young Primarch faced a constant struggle against nigh-insurmountable      -->
+<!--                              odds which taught him that to hesitate once committed led only to death, while      -->
+<!--                              stoic determination brought victory.                                                -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_LionSword recipeMaker REPLACE researchPrerequisite                                                 -->
 <!--                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels                        -->
 <!--                                                                   li  OG_Common_Tech_Weapons_Powered             -->
 <!--                                                                   li  POS_Tech_PrimarchWargear                   -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LionSword"]/label</xpath>
+                    <value>
+                        <label>the Lion Sword</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_LionSword"]/description</xpath>
+                    <value>
+                        <description>The Lion Sword was a powerful broad-bladed sword that glowed with a soft inner light and scorched those it struck with a silver flame. Its keen edge made a mockery of even the finest armour or the mightiest of foes, cutting a clear path for the First Primarch and his Legion through the darkest of battlefields.\n\nLion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander of the Great Crusade. His was the task of rooting out those threats which the Imperium most feared, and he undertook it with peerless valour. Perhaps this quality was moulded into the Lion in his formative years, where he grew and learned to survive alone in the trackless, monster-haunted forests of Caliban. There the young Primarch faced a constant struggle against nigh-insurmountable odds which taught him that to hesitate once committed led only to death, while stoic determination brought victory.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_LionSword"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
@@ -46,11 +110,42 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  DarkAngelsPrimarchChainSword                                                        -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_WolfBlade REPLACE label                                                                            -->
+<!--                            WITH label  the Wolf Blade                                                            -->
+<!--    + LAP_WEAP_WolfBlade REPLACE description                                                                      -->
+<!--          WITH description  A blade of ancient provenance borne by the First Primarch in the earliest days of     -->
+<!--                              the Great Crusade and which remained at his side even to the last days of the       -->
+<!--                              Horus Heresy. The Wolf Blade was a masterpiece of the the armourer's craft, whose   -->
+<!--                              flickering silver teeth wrought a fearsome ruin upon the foe and shattered the      -->
+<!--                              resolve of those that stood against the Lion.\n\n                                   -->
+<!--                            Lion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander  -->
+<!--                              of the Great Crusade. His was the task of rooting out those threats which the       -->
+<!--                              Imperium most feared, and he undertook it with peerless valour. Perhaps this        -->
+<!--                              quality was moulded into the Lion in his formative years, where he grew and         -->
+<!--                              learned to survive alone in the trackless, monster-haunted forests of Caliban.      -->
+<!--                              There the young Primarch faced a constant struggle against nigh-insurmountable      -->
+<!--                              odds which taught him that to hesitate once committed led only to death, while      -->
+<!--                              stoic determination brought victory.                                                -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_WolfBlade recipeMaker REPLACE researchPrerequisite                                                 -->
 <!--                                        WITH researchPrerequisites li  LAP_Tech_DarkAngels                        -->
 <!--                                                                   li  OG_Common_Tech_Weapons_Special             -->
 <!--                                                                   li  POS_Tech_PrimarchWargear                   -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/label</xpath>
+                    <value>
+                        <label>the Wolf Blade</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/description</xpath>
+                    <value>
+                        <description>A blade of ancient provenance borne by the First Primarch in the earliest days of the Great Crusade and which remained at his side even to the last days of the Horus Heresy. The Wolf Blade was a masterpiece of the the armourer's craft, whose flickering silver teeth wrought a fearsome ruin upon the foe and shattered the resolve of those that stood against the Lion.\n\nLion El'Jonson was regarded as the most pragmatic and ruthlessly efficient commander of the Great Crusade. His was the task of rooting out those threats which the Imperium most feared, and he undertook it with peerless valour. Perhaps this quality was moulded into the Lion in his formative years, where he grew and learned to survive alone in the trackless, monster-haunted forests of Caliban. There the young Primarch faced a constant struggle against nigh-insurmountable odds which taught him that to hesitate once committed led only to death, while stoic determination brought victory.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
