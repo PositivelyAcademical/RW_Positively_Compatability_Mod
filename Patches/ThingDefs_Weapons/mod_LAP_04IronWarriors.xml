@@ -5,16 +5,35 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHammer                                                          -->
+<!--    + LAP_WEAP_Forgebreaker REPLACE label                                                                         -->
+<!--                               WITH label  Forgebreaker                                                           -->
+<!--    + LAP_WEAP_Forgebreaker REPLACE description                                                                   -->
+<!--          WITH description  Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer         -->
+<!--                              Forgebreaker was later gifted to Perturabo and brutally adapted by his own          -->
+<!--                              hand.\n\n                                                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Forgebreaker recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                  -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchCannons                                                         -->
+<!--    + LAP_WEAP_Perturabo_Weapon REPLACE label                                                                     -->
+<!--                                   WITH label  the Logos' wrist cannons                                           -->
+<!--    + LAP_WEAP_Perturabo_Weapon REPLACE description                                                               -->
+<!--          WITH description  Amongst the customisations Perturabo included in the Logos were a pair of             -->
+<!--                              multi-barrelled wrist cannon bolters.\n\n                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                          -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
 <!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
-<!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  OG_Imperial_Tech_Weapons_Bolt       -->
 <!--                                                                          li  MultibarrelWeapons                  -->
 <!--                                                                          li  POS_Tech_PrimarchWargear            -->
 <!--  ==============================================================================================================  -->
@@ -29,11 +48,26 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchHammer                                                          -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Forgebreaker REPLACE description                                                                   -->
+<!--          WITH description  Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer         -->
+<!--                              Forgebreaker was later gifted to Perturabo and brutally adapted by his own          -->
+<!--                              hand.\n\n                                                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Forgebreaker recipeMaker REPLACE researchPrerequisite                                              -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Iron_Warriors                  -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/description</xpath>
+                    <value>
+                        <description>Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer Forgebreaker was later gifted to Perturabo and brutally adapted by his own hand.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
@@ -48,20 +82,43 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  IronWarriorsPrimarchCannons                                                         -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Perturabo_Weapon REPLACE label                                                                     -->
+<!--                                   WITH label  the Logos' wrist cannons                                           -->
+<!--    + LAP_WEAP_Perturabo_Weapon REPLACE description                                                               -->
+<!--          WITH description  Amongst the customisations Perturabo included in the Logos were a pair of             -->
+<!--                              multi-barrelled wrist cannon bolters.\n\n                                           -->
+<!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
+<!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
+<!--                              mathematics of warfare as keenly as he did a blade.                                 -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Perturabo_Weapon recipeMaker REPLACE researchPrerequisite                                          -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Iron_Warriors              -->
 <!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
-<!--                                                                          li  HeavyTurrets                        -->
+<!--                                                                          li  OG_Imperial_Tech_Weapons_Bolt       -->
 <!--                                                                          li  MultibarrelWeapons                  -->
 <!--                                                                          li  POS_Tech_PrimarchWargear            -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Perturabo_Weapon"]/label</xpath>
+                    <value>
+                        <label>the Logos' wrist cannons</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Perturabo_Weapon"]/description</xpath>
+                    <value>
+                        <description>Amongst the customisations Perturabo included in the Logos were a pair of multi-barrelled wrist cannon bolters.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Perturabo_Weapon"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>LAP_Tech_Iron_Warriors</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>HeavyTurrets</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
                             <li>MultibarrelWeapons</li>
                             <li>POS_Tech_PrimarchWargear</li>
                         </researchPrerequisites>
