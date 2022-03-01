@@ -9,7 +9,7 @@
 <!--                               WITH label  Forgebreaker                                                           -->
 <!--    + LAP_WEAP_Forgebreaker REPLACE description                                                                   -->
 <!--          WITH description  Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer         -->
-<!--                              Forgebreaker was later gifted to Perturabo and brutally adapted by his own          -->
+<!--                              'Forgebreaker' was later gifted to Perturabo and brutally adapted by his own        -->
 <!--                              hand.\n\n                                                                           -->
 <!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
 <!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
@@ -50,7 +50,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + LAP_WEAP_Forgebreaker REPLACE description                                                                   -->
 <!--          WITH description  Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer         -->
-<!--                              Forgebreaker was later gifted to Perturabo and brutally adapted by his own          -->
+<!--                              'Forgebreaker' was later gifted to Perturabo and brutally adapted by his own        -->
 <!--                              hand.\n\n                                                                           -->
 <!--                            Weaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a    -->
 <!--                              grim grim warrior and a master of technological arcana who wielded logic and the    -->
@@ -64,7 +64,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/description</xpath>
                     <value>
-                        <description>Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer Forgebreaker was later gifted to Perturabo and brutally adapted by his own hand.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
+                        <description>Fashioned by Fulgrim for Ferrus Manus, the exquisitely wrought thunder hammer 'Forgebreaker' was later gifted to Perturabo and brutally adapted by his own hand.\n\nWeaned on war and intrigue in the strife-ridden courts of Olympia, Perturabo was a grim grim warrior and a master of technological arcana who wielded logic and the mathematics of warfare as keenly as he did a blade.</description>
                     </value>
                 </li>
 
