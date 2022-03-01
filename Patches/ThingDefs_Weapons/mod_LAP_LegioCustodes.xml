@@ -5,33 +5,44 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGuardianSpear                                                               -->
+<!--    + LAP_WEAP_GuardianSpear REPLACE label                                                                        -->
+<!--                                WITH label  guardian spear                                                        -->
 <!--    + LAP_WEAP_GuardianSpear REPLACE description                                                                  -->
-<!--                                WITH description  The guardian spear has been the signature weapon of the         -->
-<!--                                                   Adeptus Custodes since the time of the Unification Wars in     -->
-<!--                                                   the 30th Millennium; and in many ways is their symbol of       -->
-<!--                                                   office. Elegant and deadly, it is a potent and unique design   -->
-<!--                                                   incorporating a power blade and a highly advanced integrated   -->
-<!--                                                   bolt caster, and in the hands of a Custodian it can strike     -->
-<!--                                                   and parry at blinding speed despite its size. More rarely,     -->
-<!--                                                   variants of these weapons may be seen mounting melta, volkite  -->
-<!--                                                   or even Adrathic disintergration beamer weapons, rather than   -->
-<!--                                                   the bolt caster.                                               -->
+<!--          WITH description  The guardian spear has been the signature weapon of the Adeptus Custodes since the    -->
+<!--                              time of the Unification Wars in the 30th Millennium; and in many ways is their      -->
+<!--                              symbol of office. Elegant and deadly, it is a potent and unique design bolt         -->
+<!--                              caster, and in the hands of a Custodian it can strike and parry at blinding speed   -->
+<!--                              despite its size. More rarely, variants of these weapons may be seen mounting       -->
+<!--                              melta, volkite or even Adrathic disintergration beamer weapons, rather than the     -->
+<!--                              the bolt caster.\n\n                                                                -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_GuardianSpear recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelSword                                                               -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelBlade                                                               -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE label                                                                        -->
 <!--                                WITH label  sentinel blade                                                        -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE description                                                                  -->
-<!--                                WITH description  Sentinel blades are power broadswords that are wielded by the   -->
-<!--                                                   Adeptus Custodes and are of such daunting size that their      -->
-<!--                                                   hilts are flanked with bolt casters of exceptionally fine      -->
-<!--                                                   craftsmanship. It is a testament to the sheer strength of the  -->
-<!--                                                   sheer strength of the Custodes that they can wield these       -->
-<!--                                                   mighty swords with the same ease a lesser man might swing a    -->
-<!--                                                   cavalry sabre.                                                 -->
+<!--          WITH description  Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and    -->
+<!--                              are of such daunting size that their hilts are flanked with bolt casters of         -->
+<!--                              exceptionally fine craftsmanship. It is a testament to the sheer strength of the    -->
+<!--                              sheer strength of the Custodes that they can wield these mighty swords with the     -->
+<!--                              same ease a lesser man might swing a cavalry sabre.\n\n                             -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_SentinelBlade recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
@@ -60,6 +71,7 @@
 <!--    + LAP_WEAP_Emperor_Sword recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                            WITH researchPrerequisites li  LAP_Tech_Emperor                       -->
 <!--                                                                       li  OG_Common_Tech_Weapons_Force           -->
+<!--                                                                       li  POS_Tech_PrimarchWargear               -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  ValdorSpear                                                                         -->
 <!--    + LAP_WEAP_ApollonianSpear REPLACE description                                                                -->
@@ -79,8 +91,7 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
-<!--  ==============================================================================================================  -->
-<!--                                                                                                                  -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -93,18 +104,21 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesGuardianSpear                                                               -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  CustodesGuardianSpear                                                               -->
 <!--    + LAP_WEAP_GuardianSpear REPLACE description                                                                  -->
-<!--                                WITH description  The guardian spear has been the signature weapon of the         -->
-<!--                                                   Adeptus Custodes since the time of the Unification Wars in     -->
-<!--                                                   the 30th Millennium; and in many ways is their symbol of       -->
-<!--                                                   office. Elegant and deadly, it is a potent and unique design   -->
-<!--                                                   incorporating a power blade and a highly advanced integrated   -->
-<!--                                                   bolt caster, and in the hands of a Custodian it can strike     -->
-<!--                                                   and parry at blinding speed despite its size. More rarely,     -->
-<!--                                                   variants of these weapons may be seen mounting melta, volkite  -->
-<!--                                                   or even Adrathic disintergration beamer weapons, rather than   -->
-<!--                                                   the the bolt caster.                                           -->
+<!--          WITH description  The guardian spear has been the signature weapon of the Adeptus Custodes since the    -->
+<!--                              time of the Unification Wars in the 30th Millennium; and in many ways is their      -->
+<!--                              symbol of office. Elegant and deadly, it is a potent and unique design bolt         -->
+<!--                              caster, and in the hands of a Custodian it can strike and parry at blinding speed   -->
+<!--                              despite its size. More rarely, variants of these weapons may be seen mounting       -->
+<!--                              melta, volkite or even Adrathic disintergration beamer weapons, rather than the     -->
+<!--                              the bolt caster.\n\n                                                                -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_GuardianSpear recipeMaker REPLACE researchPrerequisite                                             -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
@@ -113,7 +127,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/description</xpath>
                     <value>
-                        <description>The guardian spear has been the signature weapon of the Adeptus Custodes since the time of the Unification Wars in the 30th Millennium; and in many ways is their symbol of office. Elegant and deadly, it is a potent and unique design incorporating a power blade and a highly advanced integrated bolt caster, and in the hands of a Custodian it can strike and parry at blinding speed despite its size. More rarely variants of these weapons may be seen mounting melta, volkite or even Adrathic disintergration beamer weapons, rather than the bolt caster.</description>
+                        <description>The guardian spear has been the signature weapon of the Adeptus Custodes since the time of the Unification Wars in the 30th Millennium; and in many ways is their symbol of office. Elegant and deadly, it is a potent and unique design incorporating a power blade and a highly advanced integrated bolt caster, and in the hands of a Custodian it can strike and parry at blinding speed despite its size. More rarely variants of these weapons may be seen mounting melta, volkite or even Adrathic disintergration beamer weapons, rather than the bolt caster.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
                     </value>
                 </li>
 
@@ -129,23 +143,23 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelSword                                                               -->
+<!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelBlade                                                               -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE label                                                                        -->
 <!--                                WITH label  sentinel blade                                                        -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE description                                                                  -->
-<!--                                WITH description  Sentinel blades are power broadswords that are wielded by the   -->
-<!--                                                   Adeptus Custodes and are of such daunting size that their      -->
-<!--                                                   hilts are flanked with bolt casters of exceptionally fine      -->
-<!--                                                   craftsmanship. It is a testament to the sheer strength of the  -->
-<!--                                                   sheer strength of the Custodes that they can wield these       -->
-<!--                                                   mighty swords with the same ease a lesser man might swing a    -->
-<!--                                                   cavalry sabre.                                                 -->
-<!--    + LAP_WEAP_SentinelBlade recipeMaker REPLACE researchPrerequisite                                             -->
-<!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
-<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
-<!--                                                                      li  OG_Common_Tech_Weapons_Heavy            -->
-<!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--          WITH description  Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and    -->
+<!--                              are of such daunting size that their hilts are flanked with bolt casters of         -->
+<!--                              exceptionally fine craftsmanship. It is a testament to the sheer strength of the    -->
+<!--                              sheer strength of the Custodes that they can wield these mighty swords with the     -->
+<!--                              same ease a lesser man might swing a cavalry sabre.\n\n                             -->
+<!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
+<!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
+<!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
+<!--                              singular and centred on individual combat, where one Custodian might slaughter      -->
+<!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
+<!--                              champions with contemptuous ease.                                                   -->
+<!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/label</xpath>
@@ -157,7 +171,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/description</xpath>
                     <value>
-                        <description>Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and are of such daunting size that their hilts are flanked with bolt casters of exceptionally fine craftsmanship. It is a testament to the sheer strength of the sheer strength of the Custodes that they can wield these mighty swords with the same ease a lesser man might swing a cavalry sabre.</description>
+                        <description>Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and are of such daunting size that their hilts are flanked with bolt casters of exceptionally fine craftsmanship. It is a testament to the sheer strength of the sheer strength of the Custodes that they can wield these mighty swords with the same ease a lesser man might swing a cavalry sabre.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
                     </value>
                 </li>
 
@@ -229,7 +243,6 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
