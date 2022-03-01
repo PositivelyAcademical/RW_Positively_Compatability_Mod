@@ -5,6 +5,21 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchWeapon                                                            -->
+<!--    + LAP_WEAP_Mercy_and_Forgiveness REPLACE label                                                                -->
+<!--                                        WITH label  Mercy and Forgiveness                                         -->
+<!--    + LAP_WEAP_Mercy_and_Forgiveness REPLACE description                                                          -->
+<!--          WITh description  This pair of murderous artificer-lightning claws, unknown in origin, which Curze      -->
+<!--                              favoured as his personal weapons were given the doleful names 'Mercy' and           -->
+<!--                              'Forgiveness' by the Night Lords; though what their wielder named them, if          -->
+<!--                              anything remains as with so much about their master, unknown.\n\n                   -->
+<!--                            Called the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze  -->
+<!--                              was from his earliest days a figure of dark renown. When he was granted command of  -->
+<!--                              the VIII Legion, which the Primarch named the Night Lords, Curze set about          -->
+<!--                              imposing his particular notions of order and justice upon the wider galaxy. World   -->
+<!--                              after world have fallen to the Night Haunter's bloody campaigns of conquest, the    -->
+<!--                              Primarch becoming so feared that the mere word of his approach was often            -->
+<!--                              sufficient to suppress rebellion and cow disobedience.                              -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Mercy_and_Forgiveness recipeMaker REPLACE researchPrerequisite                                     -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Night_Lords                    -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
@@ -21,11 +36,31 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsPrimarchWeapon                                                            -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Mercy_and_Forgiveness REPLACE description                                                          -->
+<!--          WITh description  This pair of murderous artificer-lightning claws, unknown in origin, which Curze      -->
+<!--                              favoured as his personal weapons were given the doleful names 'Mercy' and           -->
+<!--                              'Forgiveness' by the Night Lords; though what their wielder named them, if          -->
+<!--                              anything remains as with so much about their master, unknown.\n\n                   -->
+<!--                            Called the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze  -->
+<!--                              was from his earliest days a figure of dark renown. When he was granted command of  -->
+<!--                              the VIII Legion, which the Primarch named the Night Lords, Curze set about          -->
+<!--                              imposing his particular notions of order and justice upon the wider galaxy. World   -->
+<!--                              after world have fallen to the Night Haunter's bloody campaigns of conquest, the    -->
+<!--                              Primarch becoming so feared that the mere word of his approach was often            -->
+<!--                              sufficient to suppress rebellion and cow disobedience.                              -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_Mercy_and_Forgiveness recipeMaker REPLACE researchPrerequisite                                     -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Night_Lords                    -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]/description</xpath>
+                    <value>
+                        <description>This pair of murderous artificer-lightning claws, unknown in origin, which Curze favoured as his personal weapons were given the doleful names 'Mercy' and 'Forgiveness' by the Night Lords; though what their wielder named them, if anything remains as with so much about their master, unknown.\n\nCalled the 'Night Haunter' by the people of his home world of Nostramo, Konrad Curze was from his earliest days a figure of dark renown. When he was granted command of the VIII Legion, which the Primarch named the Night Lords, Curze set about imposing his particular notions of order and justice upon the wider galaxy. World after world have fallen to the Night Haunter's bloody campaigns of conquest, the Primarch becoming so feared that the mere word of his approach was often sufficient to suppress rebellion and cow disobedience.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
