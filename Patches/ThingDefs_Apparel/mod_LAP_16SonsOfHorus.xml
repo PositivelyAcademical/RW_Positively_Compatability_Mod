@@ -190,7 +190,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorArmour                                                 -->
 <!--    + LAP_Armour_SOH_Terminator REPLACE label                                                                     -->
-<!--                                   WITH label  Sons of Horus Justaerin terminator armour                          -->
+<!--                                   WITH label  Justaerin terminator armour                                        -->
 <!--    + LAP_Armour_SOH_Terminator REPLACE description                                                               -->
 <!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the Justaerin of    -->
 <!--                              the XVI Legion, the Sons of Horus. Commonly called terminator armour, this armour   -->
@@ -775,7 +775,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  SonsOfHorusJutaerinTerminatorArmour                                                 -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_SOH_Terminator REPLACE label                                                                     -->
-<!--                                   WITH label  Sons of Horus Justaerin terminator armour                          -->
+<!--                                   WITH label  Justaerin terminator armour                                        -->
 <!--    + LAP_Armour_SOH_Terminator REPLACE description                                                               -->
 <!--          WITH description  Cataphractii pattern tactical dreadnought armour in the livery of the Justaerin of    -->
 <!--                              the XVI Legion, the Sons of Horus. Commonly called terminator armour, this armour   -->
@@ -801,7 +801,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_SOH_Terminator"]/label</xpath>
                     <value>
-                        <label>Sons of Horus Justaerin terminator armour</label>
+                        <label>Justaerin terminator armour</label>
                     </value>
                 </li>
 
