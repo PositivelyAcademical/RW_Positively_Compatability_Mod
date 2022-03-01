@@ -43,7 +43,7 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsRaptorArmour                                                              -->
 <!--    + LAP_Armour_NightLords_Raptor REPLACE label                                                                  -->
-<!--                                      WITH label  Night Lords Raptor armour                                       -->
+<!--                                      WITH label  Night Raptor armour                                             -->
 <!--    + LAP_Armour_NightLords_Raptor REPLACE description                                                            -->
 <!--          WITH description  Raptor variant assault pattern power armour in the livery of the Night Raptors of     -->
 <!--                              VIII Legion, the Night Lords. The Night Raptors are equipped with jump packs and    -->
@@ -254,7 +254,7 @@
 <!--  + ALL_CASES  (ThingDef)  -  NightLordsRaptorArmour                                                              -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_Armour_NightLords_Raptor REPLACE label                                                                  -->
-<!--                                      WITH label  Night Lords Raptor armour                                       -->
+<!--                                      WITH label  Night Raptor armour                                             -->
 <!--    + LAP_Armour_NightLords_Raptor REPLACE description                                                            -->
 <!--          WITH description  Raptor variant assault pattern power armour in the livery of the Night Raptors of     -->
 <!--                              VIII Legion, the Night Lords. The Night Raptors are equipped with jump packs and    -->
@@ -274,7 +274,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_Armour_NightLords_Raptor"]/label</xpath>
                     <value>
-                        <label>Night Lords Raptor armour</label>
+                        <label>Night Raptor armour</label>
                     </value>
                 </li>
 
