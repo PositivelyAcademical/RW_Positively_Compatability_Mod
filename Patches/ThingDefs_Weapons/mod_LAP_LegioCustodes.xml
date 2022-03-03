@@ -26,6 +26,16 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--    + LAP_WEAP_GuardianSpear verbs li[#] REPLACE warmupTime                                                       -->
+<!--                                            WITH warmupTime  0.4                                                  -->
+<!--    + LAP_WEAP_GuardianSpear verbs li[#] REPLACE ticksBetweenBurstShots                                           -->
+<!--                                            WITH ticksBetweenBurstShots  12                                       -->
+<!--    + LAP_WEAP_GuardianSpear statBases ADD reliability  1                                                         -->
+<!--                                           AccuracyTouch  0.85                                                    -->
+<!--                                           AccuracyShort  0.90                                                    -->
+<!--                                           AccuracyMedium  0.92                                                   -->
+<!--                                           AccuracyLong  0.85                                                     -->
+<!--                                           RangedWeapon_Cooldown  1.2                                             -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelBlade                                                               -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE label                                                                        -->
@@ -48,19 +58,19 @@
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Heavy            -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
-<!--    + LAP_WEAP_SentinelBlade statBases ADD reliability  1              ?                                          -->
-<!--                                           AccuracyTouch  0.85         ?                                          -->
-<!--                                           AccuracyShort  0.90         ?                                          -->
-<!--                                           AccuracyMedium  0.92        ?                                          -->
-<!--                                           AccuracyLong  0.85          ?                                          -->
-<!--                                           RangedWeapon_Cooldown  1.5  ?                                          -->
+<!--    + LAP_WEAP_SentinelBlade statBases ADD reliability  1                                                         -->
+<!--                                           AccuracyTouch  0.90                                                    -->
+<!--                                           AccuracyShort  0.95                                                    -->
+<!--                                           AccuracyMedium  0.80                                                   -->
+<!--                                           AccuracyLong  0.50                                                     -->
+<!--                                           RangedWeapon_Cooldown  0.55                                            -->
 <!--    + LAP_WEAP_SentinelBlade comps REMOVE li[2]                                                                   -->
 <!--    + LAP_WEAP_SentinelBlade ADD verbs li verbClass  Verb_Shoot                                                   -->
 <!--                                          hasStandardCommand  true                                                -->
 <!--                                          defaultProjectile  OGI_Bullet_BoltStd                                   -->
-<!--                                          warmupTime  0.60                                                        -->
+<!--                                          warmupTime  0.40                                                        -->
 <!--                                          range  25                                                               -->
-<!--                                          ticksBetweenBurstShots  10                                              -->
+<!--                                          ticksBetweenBurstShots  9                                               -->
 <!--                                          burstShotCount  4                                                       -->
 <!--                                          soundCast  OG_Bolt_Gun_Sound                                            -->
 <!--                                          soundCastTail  GunTail_Heavy                                            -->
@@ -138,6 +148,16 @@
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--    + LAP_WEAP_GuardianSpear verbs li[#] REPLACE warmupTime                                                       -->
+<!--                                            WITH warmupTime  0.4                                                  -->
+<!--    + LAP_WEAP_GuardianSpear verbs li[#] REPLACE ticksBetweenBurstShots                                           -->
+<!--                                            WITH ticksBetweenBurstShots  12                                       -->
+<!--    + LAP_WEAP_GuardianSpear statBases ADD reliability  1                                                         -->
+<!--                                           AccuracyTouch  0.85                                                    -->
+<!--                                           AccuracyShort  0.90                                                    -->
+<!--                                           AccuracyMedium  0.92                                                   -->
+<!--                                           AccuracyLong  0.85                                                     -->
+<!--                                           RangedWeapon_Cooldown  1.2                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/description</xpath>
@@ -154,6 +174,32 @@
                             <li>OG_Common_Tech_Weapons_Powered_Special</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
                         </researchPrerequisites>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/verbs/li/warmupTime</xpath>
+                    <value>
+                        <warmupTime>0.4</warmupTime>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/verbs/li/ticksBetweenBurstShots</xpath>
+                    <value>
+                        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/statBases</xpath>
+                    <value>
+                        <reliability>1</reliability>
+                        <AccuracyTouch>0.85</AccuracyTouch>
+                        <AccuracyShort>0.90</AccuracyShort>
+                        <AccuracyMedium>0.92</AccuracyMedium>
+                        <AccuracyLong>0.85</AccuracyLong>
+                        <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
                     </value>
                 </li>
 
