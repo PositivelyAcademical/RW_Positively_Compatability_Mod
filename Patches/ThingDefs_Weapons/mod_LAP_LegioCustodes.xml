@@ -8,13 +8,13 @@
 <!--    + LAP_WEAP_GuardianSpear REPLACE label                                                                        -->
 <!--                                WITH label  guardian spear                                                        -->
 <!--    + LAP_WEAP_GuardianSpear REPLACE description                                                                  -->
-<!--          WITH description  The guardian spear has been the signature weapon of the Adeptus Custodes since the    -->
-<!--                              time of the Unification Wars in the 30th Millennium; and in many ways is their      -->
-<!--                              symbol of office. Elegant and deadly, it is a potent and unique design bolt         -->
-<!--                              caster, and in the hands of a Custodian it can strike and parry at blinding speed   -->
-<!--                              despite its size. More rarely, variants of these weapons may be seen mounting       -->
-<!--                              melta, volkite or even Adrathic disintergration beamer weapons, rather than the     -->
-<!--                              the bolt caster.\n\n                                                                -->
+<!--          WITH description  The signature weapon of the Legio Custodes and in many ways their symbol of office    -->
+<!--                              is the guardian spear. Elegant and deadly, it is a potent and unique design         -->
+<!--                              incorporating a power blade and a highly advanced integrated bolter weapon, and in  -->
+<!--                              the hands of a Custodian Guard it can strike and parry at blinding speed despite    -->
+<!--                              its size. More rarely, these weapons mount not bolters but advanced specialised     -->
+<!--                              sub-weapons such as compact meltas or even Adrathic disintegration beamers, issued  -->
+<!--                              issued against the deadliest of expected foes.\n\n                                  -->
 <!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
 <!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
 <!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
@@ -29,13 +29,13 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelBlade                                                               -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE label                                                                        -->
-<!--                                WITH label  sentinel blade                                                        -->
+<!--                                WITH label  sentinel warblade                                                     -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE description                                                                  -->
-<!--          WITH description  Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and    -->
-<!--                              are of such daunting size that their hilts are flanked with bolt casters of         -->
-<!--                              exceptionally fine craftsmanship. It is a testament to the sheer strength of the    -->
-<!--                              sheer strength of the Custodes that they can wield these mighty swords with the     -->
-<!--                              same ease a lesser man might swing a cavalry sabre.\n\n                             -->
+<!--          WITH description  The sentinel warbled is unique weapon of the Legio Custodes, brutal where the         -->
+<!--                              guardian spear is precise. The hyper-pulse disruption field generators found in     -->
+<!--                              the warblade are able to tear apart flesh and metal on contact, while inbuilt into  -->
+<!--                              the blade is a double-barrelled bolt caster able to lay down a hail of fire at      -->
+<!--                              short range.\n\n                                                                    -->
 <!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
 <!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
 <!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
@@ -67,31 +67,46 @@
 <!--                                          muzzleFlashScale  10                                                    -->
 <!--                                          targetParams canTargetLocations  true                                   -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorSword                                                                        -->
-<!--    + LAP_WEAP_Emperor_Sword recipeMaker REPLACE researchPrerequisite                                             -->
-<!--                                            WITH researchPrerequisites li  LAP_Tech_Emperor                       -->
-<!--                                                                       li  OG_Common_Tech_Weapons_Force           -->
-<!--                                                                       li  POS_Tech_PrimarchWargear               -->
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  ValdorSpear                                                                         -->
+<!--    + LAP_WEAP_ApollonianSpear REPLACE label                                                                      -->
+<!--                                  WITH label  the Apollonian Spear                                                -->
 <!--    + LAP_WEAP_ApollonianSpear REPLACE description                                                                -->
-<!--                                  WITH description  The Apollonian Spear is the guardian spear of the first       -->
-<!--                                                     Captain-General of the Adeptus Custodes, Constantin Valdor.  -->
-<!--                                                     The Apollonian Spear was crafted alongside its sister the    -->
-<!--                                                     Dionysian Spear by the Emperor's own hand, deep inside his   -->
-<!--                                                     first underground fortress on Terra during the Age of        -->
-<!--                                                     Strife. Wielded for a time by the Emperor himself, he would  -->
-<!--                                                     later give the Apollonian Spear to Valdor to wield after he  -->
-<!--                                                     became the Legio Custodes' Chief Custodian.\n\nLike the      -->
-<!--                                                     signature armament of the Custodians, it incorporates both   -->
-<!--                                                     a power blade and built-in bolter weapon - though in both    -->
-<!--                                                     cases these are of a potency far exceeding those even the    -->
-<!--                                                     Emperor's elite carry into battle.                           -->
+<!--          WITH description  Believed to be crafted by the hand of the Emperor Himself and once wielded by His     -->
+<!--                              own hand in battle as far back as the Unification Wars in which He rose to power    -->
+<!--                              on Terra, the Apollonian Spear was given to Valdor upon his accession to the        -->
+<!--                              mantle of Chief Custodian, and it has served no other since. Like the signature     -->
+<!--                              armament of the Custodian Guard, it incorporates both a power blade and inbuilt     -->
+<!--                              bolter weapon, though in both cases these are of a potency far exceeding those      -->
+<!--                              even the Emperor's elite carry into battle.\n\n                                     -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_ApollonianSpear recipeMaker REPLACE researchPrerequisite                                           -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
 <!--                                                                      li  POS_Tech_PrimarchWargear                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorSword                                                                        -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE label                                                                        -->
+<!--                                WITH label  the Emperor's Sword                                                   -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE description                                                                  -->
+<!--          WITH description  The Emperor's Sword is a giant flame-covered blade that the Emperor created by using  -->
+<!--                              both his mastery of science and Warpcraft.\n\n                                      -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE label                                                                        -->
+<!--                                   Maker REPLACE researchPrerequisite                                             -->
+<!--    + LAP_WEAP_Emperor_Sword recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Emperor                       -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Force           -->
+<!--                                                                       li  POS_Tech_PrimarchWargear               -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindMod">
@@ -146,13 +161,13 @@
 <!--  + ALL_CASES  (ThingDef)  -  CustodesSentinelBlade                                                               -->
 <!--  ==============================================================================================================  -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE label                                                                        -->
-<!--                                WITH label  sentinel blade                                                        -->
+<!--                                WITH label  sentinel warblade                                                     -->
 <!--    + LAP_WEAP_SentinelBlade REPLACE description                                                                  -->
-<!--          WITH description  Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and    -->
-<!--                              are of such daunting size that their hilts are flanked with bolt casters of         -->
-<!--                              exceptionally fine craftsmanship. It is a testament to the sheer strength of the    -->
-<!--                              sheer strength of the Custodes that they can wield these mighty swords with the     -->
-<!--                              same ease a lesser man might swing a cavalry sabre.\n\n                             -->
+<!--          WITH description  The sentinel warbled is unique weapon of the Legio Custodes, brutal where the         -->
+<!--                              guardian spear is precise. The hyper-pulse disruption field generators found in     -->
+<!--                              the warblade are able to tear apart flesh and metal on contact, while inbuilt into  -->
+<!--                              the blade is a double-barrelled bolt caster able to lay down a hail of fire at      -->
+<!--                              short range.\n\n                                                                    -->
 <!--                            The warriors of the Legio Custodes are uniquely created, genetically engineered       -->
 <!--                              living weapons, superhuman in physical and mental prowess and skilled in battle     -->
 <!--                              beyond even the warriors of the Legiones Astartes. Their martial arts are also      -->
@@ -160,18 +175,23 @@
 <!--                              dozens of lesser opponents with blinding speed and slay would-be assassins and      -->
 <!--                              champions with contemptuous ease.                                                   -->
 <!--                                                                                                                  -->
+<!--    + LAP_WEAP_SentinelBlade recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Heavy            -->
+<!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/label</xpath>
                     <value>
-                        <label>sentinel blade</label>
+                        <label>sentinel warblade</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/description</xpath>
                     <value>
-                        <description>Sentinel blades are power broadswords that are wielded by the Adeptus Custodes and are of such daunting size that their hilts are flanked with bolt casters of exceptionally fine craftsmanship. It is a testament to the sheer strength of the sheer strength of the Custodes that they can wield these mighty swords with the same ease a lesser man might swing a cavalry sabre.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
+                        <description>The sentinel warbled is unique weapon of the Legio Custodes, brutal where the guardian spear is precise. The hyper-pulse disruption field generators found in the warblade are able to tear apart flesh and metal on contact, while inbuilt into the blade is a double-barrelled bolt caster able to lay down a hail of fire at short range.\n\nThe warriors of the Legio Custodes are uniquely created, genetically engineered living weapons, superhuman in physical and mental prowess and skilled in battle beyond even the warriors of the Legiones Astartes. Their martial arts are also singular and centred on individual combat, where one Custodian might slaughter dozens of lesser opponents with blinding speed and slay would-be assassins and champions with contemptuous ease.</description>
                     </value>
                 </li>
 
@@ -188,47 +208,41 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  EmperorSword                                                                        -->
-<!--  ==============================================================================================================  -->
-<!--    + LAP_WEAP_Emperor_Sword recipeMaker REPLACE researchPrerequisite                                             -->
-<!--                                            WITH researchPrerequisites li  LAP_Tech_Emperor                       -->
-<!--                                                                       li  OG_Common_Tech_Weapons_Force           -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/recipeMaker/researchPrerequisite</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Emperor</li>
-                            <li>OG_Common_Tech_Weapons_Force</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  ValdorSpear                                                                         -->
 <!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_ApollonianSpear REPLACE label                                                                      -->
+<!--                                  WITH label  the Apollonian Spear                                                -->
 <!--    + LAP_WEAP_ApollonianSpear REPLACE description                                                                -->
-<!--                                  WITH description  The Apollonian Spear is the guardian spear of the first       -->
-<!--                                                     Captain-General of the Adeptus Custodes, Constantin Valdor.  -->
-<!--                                                     The Apollonian Spear was crafted alongside its sister the    -->
-<!--                                                     Dionysian Spear by the Emperor's own hand, deep inside his   -->
-<!--                                                     first underground fortress on Terra during the Age of        -->
-<!--                                                     Strife. Wielded for a time by the Emperor himself, he would  -->
-<!--                                                     later give the Apollonian Spear to Valdor to wield after he  -->
-<!--                                                     became the Legio Custodes' Chief Custodian.\n\nLike the      -->
-<!--                                                     signature armament of the Custodians, it incorporates both   -->
-<!--                                                     a power blade and built-in bolter weapon - though in both    -->
-<!--                                                     cases these are of a potency far exceeding those even the    -->
-<!--                                                     Emperor's elite carry into battle.                           -->
+<!--          WITH description  Believed to be crafted by the hand of the Emperor Himself and once wielded by His     -->
+<!--                              own hand in battle as far back as the Unification Wars in which He rose to power    -->
+<!--                              on Terra, the Apollonian Spear was given to Valdor upon his accession to the        -->
+<!--                              mantle of Chief Custodian, and it has served no other since. Like the signature     -->
+<!--                              armament of the Custodian Guard, it incorporates both a power blade and inbuilt     -->
+<!--                              bolter weapon, though in both cases these are of a potency far exceeding those      -->
+<!--                              even the Emperor's elite carry into battle.\n\n                                     -->
+<!--                            Constantin Valdor sits at the right hand of the Emperor as perhaps His most trusted   -->
+<!--                              companion and guardian, a watchman of inviolable purpose and all but unmatched      -->
+<!--                              fighting skill. Such in fact is Valdor's martial power and superhuman physical      -->
+<!--                              and mental abilities that there are those, even within the Imperial Court, who      -->
+<!--                              have in whispers called him 'Primarch' in all but name.                             -->
+<!--                                                                                                                  -->
 <!--    + LAP_WEAP_ApollonianSpear recipeMaker REPLACE researchPrerequisite                                           -->
 <!--                                           WITH researchPrerequisites li  LAP_Tech_Emperor                        -->
 <!--                                                                      li  OG_Common_Tech_Weapons_Powered_Special  -->
 <!--                                                                      li  OG_Imperial_Tech_Weapons_Bolt           -->
+<!--                                                                      li  POS_Tech_PrimarchWargear                -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_ApollonianSpear"]/label</xpath>
+                    <value>
+                        <label>the Apollonian Spear</label>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_ApollonianSpear"]/description</xpath>
                     <value>
-                        <description>The Apollonian Spear is the guardian spear of the first Captain-General of the Adeptus Custodes, Constantin Valdor. The Apollonian Spear was crafted alongside its sister the Dionysian Spear by the Emperor's own hand, deep inside his first underground fortress on Terra during the Age of Strife. Wielded for a time by the Emperor himself, he would later give the Apollonian Spear to Valdor to wield after he became the Legio Custodes' Chief Custodian.\n\nLike the signature armament of the Custodians, it incorporates both a power blade and built-in bolter weapon - though in both cases these are of a potency far exceeding those even the Emperor's elite carry into battle.</description>
+                        <description>Believed to be crafted by the hand of the Emperor Himself and once wielded by His own hand in battle as far back as the Unification Wars in which He rose to power on Terra, the Apollonian Spear was given to Valdor upon his accession to the mantle of Chief Custodian, and it has served no other since. Like the signature armament of the Custodian Guard, it incorporates both a power blade and inbuilt bolter weapon, though in both cases these are of a potency far exceeding those even the Emperor's elite carry into battle.\n\nConstantin Valdor sits at the right hand of the Emperor as perhaps His most trusted companion and guardian, a watchman of inviolable purpose and all but unmatched fighting skill. Such in fact is Valdor's martial power and superhuman physical and mental abilities that there are those, even within the Imperial Court, who have in whispers called him 'Primarch' in all but name.</description>
                     </value>
                 </li>
 
@@ -239,6 +253,52 @@
                             <li>LAP_Tech_Emperor</li>
                             <li>OG_Common_Tech_Weapons_Powered_Special</li>
                             <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>POS_Tech_PrimarchWargear</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  EmperorSword                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE label                                                                        -->
+<!--                                WITH label  the Emperor's Sword                                                   -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE description                                                                  -->
+<!--          WITH description  The Emperor's Sword is a giant flame-covered blade that the Emperor created by using  -->
+<!--                              both his mastery of science and Warpcraft.\n\n                                      -->
+<!--                            The Emperor, the Master of Mankind, has reunited the clans of old Earth following     -->
+<!--                              Long Night. Now that the Unification Wars are over, He seeks to bring together the  -->
+<!--                              lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is     -->
+<!--                              born.                                                                               -->
+<!--                                                                                                                  -->
+<!--    + LAP_WEAP_Emperor_Sword REPLACE label                                                                        -->
+<!--                                   Maker REPLACE researchPrerequisite                                             -->
+<!--    + LAP_WEAP_Emperor_Sword recipeMaker REPLACE researchPrerequisite                                             -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Emperor                       -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Force           -->
+<!--                                                                       li  POS_Tech_PrimarchWargear               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/label</xpath>
+                    <value>
+                        <label>the Emperor's Sword</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/description</xpath>
+                    <value>
+                        <description>The Emperor's Sword is a giant flame-covered blade that the Emperor created by using both his mastery of science and Warpcraft.\n\nThe Emperor, the Master of Mankind, has reunited the clans of old Earth following Long Night. Now that the Unification Wars are over, He seeks to bring together the lost worlds of humanity in a Great Crusade. Through Him, the Imperium of Man is born.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Emperor</li>
+                            <li>OG_Common_Tech_Weapons_Force</li>
+                            <li>LAP_Tech_Emperor</li>
                         </researchPrerequisites>
                     </value>
                 </li>
