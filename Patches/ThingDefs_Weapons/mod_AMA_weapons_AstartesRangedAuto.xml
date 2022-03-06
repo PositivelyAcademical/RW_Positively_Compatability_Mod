@@ -144,16 +144,16 @@
                         </value>
                     </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>POS_AMA_Astartes_Placeholder</li>
-                            <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>MultibarrelWeapons</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>POS_AMA_Astartes_Placeholder</li>
+                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                                <li>MultibarrelWeapons</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch                                                                                -->
@@ -200,7 +200,7 @@
                         <xpath>/Defs/ThingDef[defName="OGI_Gun_AstartesShotgun"]/recipeMaker</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>POS_AMA_Astartes_Placeholder</li>
+                                <li>LAP_Tech_Basic</li>
                                 <li>GasOperation</li>
                             </researchPrerequisites>
                         </value>
