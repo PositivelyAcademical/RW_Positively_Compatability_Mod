@@ -4,10 +4,11 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  @Slope                                                                              -->
-<!--    + Defs ADD ThingDef @Name  Slope                                                                              -->
+<!--  + ALL_CASES  (ThingDef)  -  Slope                                                                               -->
+<!--    + Defs ADD ThingDef @Abstract  true                                                                           -->
+<!--                        @Name  POS_Slope                                                                          -->
 <!--                        @ParentName  BuildingBase                                                                 -->
-<!--                        thingClass  Building                                                                      -->
+<!--                        @Name  Slope                                                                              -->
 <!--                        category  Building                                                                        -->
 <!--                        graphicData linkFlags li  Wall                                                            -->
 <!--                                              li  Rock                                                            -->
@@ -21,6 +22,7 @@
 <!--                                               edgeRight  Damage/Edge                                             -->
 <!--                        statBases MeditationFocusStrength  0.22                                                   -->
 <!--                        leaveResourcesWhenKilled  false                                                           -->
+<!--                        altitudeLayer  Building                                                                   -->
 <!--                        blockWind  false                                                                          -->
 <!--                        castEdgeShadows  true                                                                     -->
 <!--                        fillPercent  1                                                                            -->
@@ -60,55 +62,18 @@
 <!--                      graphicData texPath  Buildings/Linked/SlopedWallFlat                                        -->
 <!--                                  graphicClass  Graphic_Appearances                                               -->
 <!--                                  linkType  CornerFiller                                                          -->
-<!--                                  linkFlags li  Wall                                                              -->
-<!--                                            li  Rock                                                              -->
-<!--                                  damageData cornerTL  Damage/Corner                                              -->
-<!--                                             cornerTR  Damage/Corner                                              -->
-<!--                                             cornerBL  Damage/Corner                                              -->
-<!--                                             cornerBR  Damage/Corner                                              -->
-<!--                                             edgeTop  Damage/Edge                                                 -->
-<!--                                             edgeBot  Damage/Edge                                                 -->
-<!--                                             edgeLeft  Damage/Edge                                                -->
-<!--                                             edgeRight  Damage/Edge                                               -->
 <!--                      uiIconPath  UI/SlopedWall_north                                                             -->
 <!--                      statBases MaxHitPoints  250                                                                 -->
 <!--                                WorkToBuild  110                                                                  -->
 <!--                                Flammability  0.2                                                                 -->
-<!--                                MeditationFocusStrength  0.22                                                     -->
 <!--                      costStuffCount  5                                                                           -->
-<!--                      leaveResourcesWhenKilled  false                                                             -->
-<!--                      altitudeLayer  Building                                                                     -->
 <!--                      passability  Standable                                                                      -->
 <!--                      pathCost  20                                                                                -->
-<!--                      blockWind  false                                                                            -->
-<!--                      castEdgeShadows  true                                                                       -->
-<!--                      fillPercent  1                                                                              -->
-<!--                      coversFloor  true                                                                           -->
-<!--                      placingDraggableDimensions  1                                                               -->
-<!--                      tickerType  Never                                                                           -->
-<!--                      rotatable  false                                                                            -->
-<!--                      selectable true                                                                             -->
-<!--                      neverMultiSelect  true                                                                      -->
-<!--                      useStuffTerrainAffordance  true                                                             -->
 <!--                      terrainAffordanceNeeded  Heavy                                                              -->
-<!--                      holdsRoof  false                                                                            -->
-<!--                      designationCategory  Structure                                                              -->
-<!--                      staticSunShadowHeight  0.6                                                                  -->
-<!--                      blockLight  true                                                                            -->
-<!--                      canOverlapZones  false                                                                      -->
-<!--                      fertility  0                                                                                -->
 <!--                      stuffCategories li  Metallic                                                                -->
 <!--                                      li  Woody                                                                   -->
 <!--                                      li  Stony                                                                   -->
-<!--                      building isInert  true                                                                      -->
-<!--                               isPlaceOverableWall  true                                                          -->
-<!--                               ai_chillDestination  false                                                         -->
-<!--                               blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
-<!--                               relatedBuildCommands li  Door                                                      -->
-<!--                                                    li  Autodoor                                                  -->
-<!--                      comps li @Class  CompProperties_MeditationFocus                                             -->
-<!--                               statDef  MeditationFocusStrength                                                   -->
-<!--                               focusTypes li  Minimal                                                             -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
 <!--                      damageMultipliers li damageDef  Bomb                                                        -->
 <!--                                           multiplier  1.25                                                       -->
 <!--                                        li damageDef  Thump                                                       -->
@@ -154,89 +119,58 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  Birm                                                                                -->
+<!--  + ALL_CASES  (ThingDef)  -  Slope                                                                               -->
 <!--  ==============================================================================================================  -->
-<!--    + SlopedWall REPLACE ./                                                                                       -->
-<!--        WITH ThingDef @Name  SlopedWall                                                                           -->
-<!--                      @ParentName  BuildingBase                                                                   -->
-<!--                      defName  SlopedWall                                                                         -->
-<!--                      label  birm                                                                                 -->
-<!--                      description  A climbable sloped wall. Blocks line of sight but not movement. The flat       -->
-<!--                                     leveled top is easy to stand on.                                             -->
-<!--                                                                                                                  -->
-<!--                      thingClass  Building                                                                        -->
-<!--                      category  Building                                                                          -->
-<!--                      graphicData texPath  Buildings/Linked/SlopedWallFlat                                        -->
-<!--                                  graphicClass  Graphic_Appearances                                               -->
-<!--                                  linkType  CornerFiller                                                          -->
-<!--                                  linkFlags li  Wall                                                              -->
-<!--                                            li  Rock                                                              -->
-<!--                                  damageData cornerTL  Damage/Corner                                              -->
-<!--                                             cornerTR  Damage/Corner                                              -->
-<!--                                             cornerBL  Damage/Corner                                              -->
-<!--                                             cornerBR  Damage/Corner                                              -->
-<!--                                             edgeTop  Damage/Edge                                                 -->
-<!--                                             edgeBot  Damage/Edge                                                 -->
-<!--                                             edgeLeft  Damage/Edge                                                -->
-<!--                                             edgeRight  Damage/Edge                                               -->
-<!--                      uiIconPath  UI/SlopedWall_north                                                             -->
-<!--                      statBases MaxHitPoints  250                                                                 -->
-<!--                                WorkToBuild  110                                                                  -->
-<!--                                Flammability  0.2                                                                 -->
-<!--                                MeditationFocusStrength  0.22                                                     -->
-<!--                      costStuffCount  5                                                                           -->
-<!--                      leaveResourcesWhenKilled  false                                                             -->
-<!--                      altitudeLayer  Building                                                                     -->
-<!--                      passability  Standable                                                                      -->
-<!--                      pathCost  20                                                                                -->
-<!--                      blockWind  false                                                                            -->
-<!--                      castEdgeShadows  true                                                                       -->
-<!--                      fillPercent  1                                                                              -->
-<!--                      coversFloor  true                                                                           -->
-<!--                      placingDraggableDimensions  1                                                               -->
-<!--                      tickerType  Never                                                                           -->
-<!--                      rotatable  false                                                                            -->
-<!--                      selectable true                                                                             -->
-<!--                      neverMultiSelect  true                                                                      -->
-<!--                      useStuffTerrainAffordance  true                                                             -->
-<!--                      terrainAffordanceNeeded  Heavy                                                              -->
-<!--                      holdsRoof  false                                                                            -->
-<!--                      designationCategory  Structure                                                              -->
-<!--                      staticSunShadowHeight  0.6                                                                  -->
-<!--                      blockLight  true                                                                            -->
-<!--                      canOverlapZones  false                                                                      -->
-<!--                      fertility  0                                                                                -->
-<!--                      stuffCategories li  Metallic                                                                -->
-<!--                                      li  Woody                                                                   -->
-<!--                                      li  Stony                                                                   -->
-<!--                      building isInert  true                                                                      -->
-<!--                               isPlaceOverableWall  true                                                          -->
-<!--                               ai_chillDestination  false                                                         -->
-<!--                               blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
-<!--                               relatedBuildCommands li  Door                                                      -->
-<!--                                                    li  Autodoor                                                  -->
-<!--                      comps li @Class  CompProperties_MeditationFocus                                             -->
-<!--                               statDef  MeditationFocusStrength                                                   -->
-<!--                               focusTypes li  Minimal                                                             -->
-<!--                      damageMultipliers li damageDef  Bomb                                                        -->
-<!--                                           multiplier  1.25                                                       -->
-<!--                                        li damageDef  Thump                                                       -->
-<!--                                           multiplier  1.25                                                       -->
-<!--                      researchPrerequisites /                                                                     -->
+<!--    + Defs ADD ThingDef @Abstract  true                                                                           -->
+<!--                        @Name  POS_Slope                                                                          -->
+<!--                        @ParentName  BuildingBase                                                                 -->
+<!--                        thingClass  Building                                                                      -->
+<!--                        category  Building                                                                        -->
+<!--                        graphicData linkFlags li  Wall                                                            -->
+<!--                                              li  Rock                                                            -->
+<!--                                    damageData cornerTL  Damage/Corner                                            -->
+<!--                                               cornerTR  Damage/Corner                                            -->
+<!--                                               cornerBL  Damage/Corner                                            -->
+<!--                                               cornerBR  Damage/Corner                                            -->
+<!--                                               edgeTop  Damage/Edge                                               -->
+<!--                                               edgeBot  Damage/Edge                                               -->
+<!--                                               edgeLeft  Damage/Edge                                              -->
+<!--                                               edgeRight  Damage/Edge                                             -->
+<!--                        statBases MeditationFocusStrength  0.22                                                   -->
+<!--                        leaveResourcesWhenKilled  false                                                           -->
+<!--                        altitudeLayer  Building                                                                   -->
+<!--                        blockWind  false                                                                          -->
+<!--                        castEdgeShadows  true                                                                     -->
+<!--                        fillPercent  1                                                                            -->
+<!--                        coversFloor  true                                                                         -->
+<!--                        placingDraggableDimensions  1                                                             -->
+<!--                        tickerType  Never                                                                         -->
+<!--                        rotatable  false                                                                          -->
+<!--                        selectable true                                                                           -->
+<!--                        neverMultiSelect  true                                                                    -->
+<!--                        useStuffTerrainAffordance  true                                                           -->
+<!--                        holdsRoof  false                                                                          -->
+<!--                        designationCategory  Structure                                                            -->
+<!--                        staticSunShadowHeight  0.6                                                                -->
+<!--                        blockLight  true                                                                          -->
+<!--                        canOverlapZones  false                                                                    -->
+<!--                        fertility  0                                                                              -->
+<!--                        building isInert  true                                                                    -->
+<!--                                 isPlaceOverableWall  true                                                        -->
+<!--                                 ai_chillDestination  false                                                       -->
+<!--                                 relatedBuildCommands li  Door                                                    -->
+<!--                                                      li  Autodoor                                                -->
+<!--                        comps li @Class  CompProperties_MeditationFocus                                           -->
+<!--                                 statDef  MeditationFocusStrength                                                 -->
+<!--                                 focusTypes li  Minimal                                                           -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="SlopedWall"]</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
                     <value>
-                        <ThingDef Name="SlopedWall" ParentName="BuildingBase">
-                            <defName>SlopedWall</defName>
-                            <label>birm</label>
-                            <description>A climbable sloped wall. Blocks line of sight but not movement. The flat leveled top is easy to stand on.</description>
+                        <ThingDef Abstract="true" Name="POS_Slope" ParentName="BuildingBase">
                             <thingClass>Building</thingClass>
                             <category>Building</category>
                             <graphicData>
-                                <texPath>Buildings/Linked/SlopedWallFlat</texPath>
-                                <graphicClass>Graphic_Appearances</graphicClass>
-                                <linkType>CornerFiller</linkType>
                                 <linkFlags>
                                     <li>Wall</li>
                                     <li>Rock</li>
@@ -252,18 +186,11 @@
                                     <edgeRight>Damage/Edge</edgeRight>
                                 </damageData>
                             </graphicData>
-                            <uiIconPath>UI/SlopedWall_north</uiIconPath>
                             <statBases>
-                                <MaxHitPoints>250</MaxHitPoints>
-                                <WorkToBuild>110</WorkToBuild>
-                                <Flammability>0.2</Flammability>
                                 <MeditationFocusStrength>0.22</MeditationFocusStrength>
                             </statBases>
-                            <costStuffCount>5</costStuffCount>
                             <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
                             <altitudeLayer>Building</altitudeLayer>
-                            <passability>Standable</passability>
-                            <pathCost>20</pathCost>
                             <blockWind>false</blockWind>
                             <castEdgeShadows>true</castEdgeShadows>
                             <fillPercent>1</fillPercent>
@@ -274,25 +201,16 @@
                             <selectable>true</selectable>
                             <neverMultiSelect>true</neverMultiSelect>
                             <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
                             <holdsRoof>false</holdsRoof>
                             <designationCategory>Structure</designationCategory>
                             <staticSunShadowHeight>0.6</staticSunShadowHeight>
                             <blockLight>true</blockLight>
                             <canOverlapZones>false</canOverlapZones>
                             <fertility>0</fertility>
-                            <stuffCategories>
-                                <li>Metallic</li>
-                                <li>Woody</li>
-                                <li>Stony</li>
-                            </stuffCategories>
                             <building>
                                 <isInert>true</isInert>
                                 <isPlaceOverableWall>true</isPlaceOverableWall>
                                 <ai_chillDestination>false</ai_chillDestination>
-                                <blueprintGraphicData>
-                                    <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-                                </blueprintGraphicData>
                                 <relatedBuildCommands>
                                     <li>Door</li>
                                     <li>Autodoor</li>
@@ -306,6 +224,75 @@
                                     </focusTypes>
                                 </li>
                             </comps>
+                        </ThingDef>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Birm                                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + SlopedWall REPLACE ./                                                                                       -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  SlopedWall                                                                         -->
+<!--                      label  birm                                                                                 -->
+<!--                      description  A climbable sloped wall. Blocks line of sight but not movement. The flat       -->
+<!--                                     leveled top is easy to stand on.                                             -->
+<!--                                                                                                                  -->
+<!--                      thingClass  Building                                                                        -->
+<!--                      category  Building                                                                          -->
+<!--                      graphicData texPath  Buildings/Linked/SlopedWallFlat                                        -->
+<!--                                  graphicClass  Graphic_Appearances                                               -->
+<!--                                  linkType  CornerFiller                                                          -->
+<!--                      uiIconPath  UI/SlopedWall_north                                                             -->
+<!--                      statBases MaxHitPoints  250                                                                 -->
+<!--                                WorkToBuild  110                                                                  -->
+<!--                                Flammability  0.2                                                                 -->
+<!--                      costStuffCount  5                                                                           -->
+<!--                      passability  Standable                                                                      -->
+<!--                      pathCost  20                                                                                -->
+<!--                      terrainAffordanceNeeded  Heavy                                                              -->
+<!--                      stuffCategories li  Metallic                                                                -->
+<!--                                      li  Woody                                                                   -->
+<!--                                      li  Stony                                                                   -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
+<!--                      damageMultipliers li damageDef  Bomb                                                        -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                                        li damageDef  Thump                                                       -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                      researchPrerequisites /                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SlopedWall"]</xpath>
+                    <value>
+                        <ThingDef ParentName="POS_Slope" Name="SlopedWall">
+                            <defName>SlopedWall</defName>
+                            <label>birm</label>
+                            <description>A climbable sloped wall. Blocks line of sight but not movement. The flat leveled top is easy to stand on.</description>
+                            <graphicData>
+                                <texPath>Buildings/Linked/SlopedWallFlat</texPath>
+                                <graphicClass>Graphic_Appearances</graphicClass>
+                                <linkType>CornerFiller</linkType>
+                            </graphicData>
+                            <uiIconPath>UI/SlopedWall_north</uiIconPath>
+                            <statBases>
+                                <MaxHitPoints>250</MaxHitPoints>
+                                <WorkToBuild>110</WorkToBuild>
+                                <Flammability>0.2</Flammability>
+                            </statBases>
+                            <costStuffCount>5</costStuffCount>
+                            <passability>Standable</passability>
+                            <pathCost>20</pathCost>
+                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                            <stuffCategories>
+                                <li>Metallic</li>
+                                <li>Woody</li>
+                                <li>Stony</li>
+                            </stuffCategories>
+                            <building>
+                                <blueprintGraphicData>
+                                    <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                                </blueprintGraphicData>
+                            </building>
                             <damageMultipliers>
                                 <li>
                                     <damageDef>Bomb</damageDef>
@@ -320,8 +307,6 @@
                         </ThingDef>
                     </value>
                 </li>
-
-
 
             </operations>
         </match>
