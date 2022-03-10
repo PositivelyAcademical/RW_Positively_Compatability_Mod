@@ -50,15 +50,12 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Birm                                                                                -->
 <!--    + SlopedWall REPLACE ./                                                                                       -->
-<!--        WITH ThingDef @Name  SlopedWall                                                                           -->
-<!--                      @ParentName  BuildingBase                                                                   -->
-<!--                      defName  SlopedWall                                                                         -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  POS_Birm                                                                           -->
 <!--                      label  birm                                                                                 -->
 <!--                      description  A climbable sloped wall. Blocks line of sight but not movement. The flat       -->
 <!--                                     leveled top is easy to stand on.                                             -->
 <!--                                                                                                                  -->
-<!--                      thingClass  Building                                                                        -->
-<!--                      category  Building                                                                          -->
 <!--                      graphicData texPath  Buildings/Linked/SlopedWallFlat                                        -->
 <!--                                  graphicClass  Graphic_Appearances                                               -->
 <!--                                  linkType  CornerFiller                                                          -->
@@ -82,17 +79,32 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  Ridge                                                                               -->
 <!--    + SlopedRidge REPLACE  ./                                                                                     -->
-<!--        WITH ThingDef @ParentName  SlopedWall                                                                     -->
-<!--                      defName  SlopedRidge                                                                        -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  POS_Ridge                                                                          -->
 <!--                      label  ridge                                                                                -->
 <!--                      description  A climbable sloped barrier. Blocks line of sight but not movement, only        -->
 <!--                                     impedes it. The narrow tops require some balance to walk across.             -->
+<!--                                                                                                                  -->
 <!--                      graphicData texPath  Buildings/Linked/SlopedWall                                            -->
 <!--                                  graphicClass  Graphic_Appearances                                               -->
 <!--                                  linkType  Basic                                                                 -->
 <!--                      uiIconPath  UI/SlopedWall_east                                                              -->
+<!--                      statBases MaxHitPoints  250                                                                 -->
+<!--                                WorkToBuild  110                                                                  -->
+<!--                                Flammability  0.2                                                                 -->
+<!--                      costStuffCount  5                                                                           -->
 <!--                      passability  PassThroughOnly                                                                -->
 <!--                      pathCost  60                                                                                -->
+<!--                      terrainAffordanceNeeded  Heavy                                                              -->
+<!--                      stuffCategories li  Metallic                                                                -->
+<!--                                      li  Woody                                                                   -->
+<!--                                      li  Stony                                                                   -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
+<!--                      damageMultipliers li damageDef  Bomb                                                        -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                                        li damageDef  Thump                                                       -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                      researchPrerequisites /                                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaSomethingExpanded  -  Birm                                                                       -->
 <!--    + SlopedWall researchPrerequisites ADD li  TrenchWarfare                                                      -->
@@ -233,7 +245,7 @@
 <!--  ==============================================================================================================  -->
 <!--    + SlopedWall REPLACE ./                                                                                       -->
 <!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
-<!--                      defName  SlopedWall                                                                         -->
+<!--                      defName  POS_Birm                                                                           -->
 <!--                      label  birm                                                                                 -->
 <!--                      description  A climbable sloped wall. Blocks line of sight but not movement. The flat       -->
 <!--                                     leveled top is easy to stand on.                                             -->
@@ -265,7 +277,7 @@
                     <xpath>/Defs/ThingDef[defName="SlopedWall"]</xpath>
                     <value>
                         <ThingDef ParentName="POS_Slope" Name="SlopedWall">
-                            <defName>SlopedWall</defName>
+                            <defName>POS_Birm</defName>
                             <label>birm</label>
                             <description>A climbable sloped wall. Blocks line of sight but not movement. The flat leveled top is easy to stand on.</description>
                             <graphicData>
@@ -307,6 +319,87 @@
                         </ThingDef>
                     </value>
                 </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Ridge                                                                               -->
+<!--  ==============================================================================================================  -->
+<!--    + SlopedRidge REPLACE  ./                                                                                     -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  POS_Ridge                                                                          -->
+<!--                      label  ridge                                                                                -->
+<!--                      description  A climbable sloped barrier. Blocks line of sight but not movement, only        -->
+<!--                                     impedes it. The narrow tops require some balance to walk across.             -->
+<!--                                                                                                                  -->
+<!--                      graphicData texPath  Buildings/Linked/SlopedWall                                            -->
+<!--                                  graphicClass  Graphic_Appearances                                               -->
+<!--                                  linkType  Basic                                                                 -->
+<!--                      uiIconPath  UI/SlopedWall_east                                                              -->
+<!--                      statBases MaxHitPoints  250                                                                 -->
+<!--                                WorkToBuild  110                                                                  -->
+<!--                                Flammability  0.2                                                                 -->
+<!--                      costStuffCount  5                                                                           -->
+<!--                      passability  PassThroughOnly                                                                -->
+<!--                      pathCost  60                                                                                -->
+<!--                      terrainAffordanceNeeded  Heavy                                                              -->
+<!--                      stuffCategories li  Metallic                                                                -->
+<!--                                      li  Woody                                                                   -->
+<!--                                      li  Stony                                                                   -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
+<!--                      damageMultipliers li damageDef  Bomb                                                        -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                                        li damageDef  Thump                                                       -->
+<!--                                           multiplier  1.25                                                       -->
+<!--                      researchPrerequisites /                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="SlopedRidge"]</xpath>
+                    <value>
+                        <ThingDef ParentName="POS_Slope">
+                            <defName>POS_Ridge</defName>
+                            <label>ridge</label>
+                            <description>A climbable sloped barrier. Blocks line of sight but not movement, only impedes it. The narrow tops require some balance to walk across.</description>
+                            <graphicData>
+                                <texPath>Buildings/Linked/SlopedWall</texPath>
+                                <graphicClass>Graphic_Appearances</graphicClass>
+                                <linkType>Basic</linkType>
+                            </graphicData>
+                            <uiIconPath>UI/SlopedWall_east</uiIconPath>
+                            <statBases>
+                                <MaxHitPoints>250</MaxHitPoints>
+                                <WorkToBuild>110</WorkToBuild>
+                                <Flammability>0.2</Flammability>
+                            </statBases>
+                            <costStuffCount>5</costStuffCount>
+                            <passability>PassThroughOnly</passability>
+                            <pathCost>60</pathCost>
+                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                            <stuffCategories>
+                                <li>Metallic</li>
+                                <li>Woody</li>
+                                <li>Stony</li>
+                            </stuffCategories>
+                            <building>
+                                <blueprintGraphicData>
+                                    <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                                </blueprintGraphicData>
+                            </building>
+                            <damageMultipliers>
+                                <li>
+                                    <damageDef>Bomb</damageDef>
+                                    <multiplier>1.25</multiplier>
+                                </li>
+                                <li>
+                                    <damageDef>Thump</damageDef>
+                                    <multiplier>1.25</multiplier>
+                                </li>
+                            </damageMultipliers>
+                            <researchPrerequisites />
+                        </ThingDef>
+                    </value>
+                </li>
+
+
+
 
             </operations>
         </match>
