@@ -122,6 +122,34 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesHeavyBolter                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_HeavyBolter REPLACE label                                                                          -->
+<!--                              WITH label  heavy bolter (Sol Militaris pattern)                                    -->
+<!--    + LAP_WEAP_HeavyBolter recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Imperial_Tech_Weapons_Bolt            -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HeavyBolter"]/label</xpath>
+                    <value>
+                        <label>heavy bolter (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
