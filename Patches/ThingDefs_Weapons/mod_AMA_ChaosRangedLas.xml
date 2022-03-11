@@ -4,21 +4,21 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLaspistol                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLaspistol                                              -->
 <!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
 <!--                           WITH label  laspistol (Ghalmek pattern)                                                -->
 <!--    + OGC_Gun_LasPistol recipeMaker REPLACE researchPrerequisites                                                 -->
 <!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                       -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Laser                -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLasgun                                                             -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLasgun                                                 -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
 <!--                        WITH label  lasgun (Ghalmek pattern)                                                      -->
 <!--    + OGC_Gun_LasGun recipeMaker REPLACE researchPrerequisites                                                    -->
 <!--                                    WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                          -->
 <!--                                                               li  OG_Common_Tech_Weapons_Laser                   -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLascannon                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLascannon                                              -->
 <!--    + OGC_Gun_LasCannon REPLACE label                                                                             -->
 <!--                           WITH label  lascannon (Ghalmek pattern)                                                -->
 <!--    + OGC_Gun_LasCannon recipeMaker REPLACE researchPrerequisites                                                 -->
@@ -32,23 +32,17 @@
 <!--    + OGC_Gun_LasCannon REMOVE ./                                                                                 -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
+            <li>Ogliss.AdMech.Armoury</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Legiones Astartes: Primarch</li>
-                    </mods>
-
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
+        <match Class="PatchOperationFindModID">
+            <mods>
+                <li>Archaon.Primarch</li>
+            </mods>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLaspistol                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLaspistol                                              -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasPistol REPLACE label                                                                             -->
 <!--                           WITH label  laspistol (Ghalmek pattern)                                                -->
@@ -56,25 +50,28 @@
 <!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                       -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Laser                -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/label</xpath>
-                                <value>
-                                    <label>laspistol (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T1</li>
-                                        <li>OG_Common_Tech_Weapons_Laser</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/label</xpath>
+                        <value>
+                            <label>laspistol (Ghalmek pattern)</label>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T1</li>
+                                <li>OG_Common_Tech_Weapons_Laser</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLasgun                                                             -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLasgun                                                 -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasGun REPLACE label                                                                                -->
 <!--                        WITH label  lasgun (Ghalmek pattern)                                                      -->
@@ -82,25 +79,25 @@
 <!--                                    WITH researchPrerequisites li  OG_Chaos_Tech_Base_T1                          -->
 <!--                                                               li  OG_Common_Tech_Weapons_Laser                   -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
-                                <value>
-                                    <label>lasgun (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/label</xpath>
+                        <value>
+                            <label>lasgun (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T1</li>
-                                        <li>OG_Common_Tech_Weapons_Laser</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T1</li>
+                                <li>OG_Common_Tech_Weapons_Laser</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosLascannon                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosLascannon                                              -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_LasCannon REPLACE label                                                                             -->
 <!--                           WITH label  lascannon (Ghalmek pattern)                                                -->
@@ -109,29 +106,26 @@
 <!--                                                                  li  OG_Common_Tech_Weapons_Laser                -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Heavy                -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/label</xpath>
-                                <value>
-                                    <label>lascannon (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/label</xpath>
+                        <value>
+                            <label>lascannon (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Common_Tech_Weapons_Laser</li>
-                                        <li>OG_Common_Tech_Weapons_Heavy</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T3</li>
+                                <li>OG_Common_Tech_Weapons_Laser</li>
+                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
-                        </operations>
-                    </nomatch>
-
-                    <match Class="PatchOperationSequence">
-                        <operations>
+                </operations>
+            </nomatch>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
@@ -140,24 +134,24 @@
 <!--    + OGC_Gun_LasGun REMOVE ./                                                                                    -->
 <!--    + OGC_Gun_LasCannon REMOVE ./                                                                                 -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]</xpath>
-                            </li>
+            <match Class="PatchOperationSequence">
+                <operations>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasPistol"]</xpath>
+                    </li>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasGun"]</xpath>
+                    </li>
 
-                        </operations>
-                    </match>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_LasCannon"]</xpath>
+                    </li>
 
-                </li>
+                </operations>
+            </match>
 
-            </operations>
         </match>
     </Operation>
 
