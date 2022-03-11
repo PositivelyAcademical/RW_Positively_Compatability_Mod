@@ -4,14 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - flame weapons                                                                                  -->
-<!--       + For LAP_WEAP_HandFlamer REPLACE label                                                                    -->
-<!--                                    WITH label hand flamer (Phaestos pattern)                                     -->
-<!--       + For LAP_WEAP_Flamer REPLACE label                                                                        -->
-<!--                                WITH label flamer (Phaestos pattern)                                              -->
-<!--       + For LAP_WEAP_HeavyFlamer REPLACE label                                                                   -->
-<!--                                     WITH label heavy flamer (Phaestos pattern)                                   -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--       + For LAP_WEAP_BoltPistol REPLACE label                                                                    -->
 <!--                                    WITH label bolt pistol (Phobos pattern)                                       -->
@@ -45,7 +37,6 @@
 <!--                                         WITH label volkite culverin (Sol Militaris pattern)                      -->
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - suis generis weapons                                                                           -->
-<!--  ==============================================================================================================  -->
 <!--       + For LAP_WEAP_RocketLaucher REPLACE label                                                                 -->
 <!--                                       WITH label missile launcher (Sol Militaris pattern)                        -->
 <!--  ==============================================================================================================  -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesHandFlamer                                                                  -->
+<!--    + LAP_WEAP_HandFlamer REPLACE label                                                                           -->
+<!--                             WITH label  hand flamer (Phaestos pattern)                                           -->
+<!--    + LAP_WEAP_HandFlamer recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Flame              -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesFlamer                                                                      -->
+<!--    + LAP_WEAP_Flamer REPLACE label                                                                               -->
+<!--                         WITH label  flamer (Phaestos pattern)                                                    -->
+<!--    + LAP_WEAP_Flamer recipeMaker REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites li  LAP_Tech_Basic                                -->
+<!--                                                                li  OG_Common_Tech_Weapons_Flame                  -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesHeavyFlamer                                                                 -->
+<!--    + LAP_WEAP_HeavyFlamer REPLACE label                                                                          -->
+<!--                              WITH label  heavy flamer (Phaestos pattern)                                         -->
+<!--    + LAP_WEAP_HeavyFlamer recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Flame             -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
