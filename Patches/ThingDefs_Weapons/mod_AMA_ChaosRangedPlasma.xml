@@ -4,21 +4,21 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaPistol                                                       -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmaPistol                                           -->
 <!--    + OGC_Gun_PlasmaPistol REPLACE label                                                                          -->
 <!--                              WITH label  plasma pistol (Ghalmek pattern)                                         -->
 <!--    + OGC_Gun_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                              -->
 <!--                                          WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                    -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Plasma            -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmagun                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmagun                                              -->
 <!--    + OGC_Gun_PlasmaGun REPLACE label                                                                             -->
 <!--                           WITH label  plasmagun (Ghalmek pattern)                                                -->
 <!--    + OGC_Gun_PlasmaGun recipeMaker REPLACE researchPrerequisites                                                 -->
 <!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                       -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Plasma               -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaCannon                                                       -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmaCannon                                           -->
 <!--    + OGC_Gun_PlasmaCannon REPLACE label                                                                          -->
 <!--                              WITH label  plasma cannon (Ghalmek pattern)                                         -->
 <!--    + OGC_Gun_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                              -->
@@ -26,29 +26,26 @@
 <!--                                                                     li  OG_Common_Tech_Weapons_Plasma            -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  Removals                                                       -->
 <!--    + OGC_Gun_PlasmaPistol REMOVE ./                                                                              -->
 <!--    + OGC_Gun_PlasmaGun REMOVE ./                                                                                 -->
 <!--    + OGC_Gun_PlasmaCannon REMOVE ./                                                                              -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
+            <li>Ogliss.AdMech.Armoury</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
+        <match Class="PatchOperationFindModID">
+            <mods>
+                <li>Archaon.Primarch</li>
+            </mods>
 
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Legiones Astartes: Primarch</li>
-                    </mods>
-
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaPistol                                                       -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmaPistol                                           -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_PlasmaPistol REPLACE label                                                                          -->
 <!--                              WITH label  plasma pistol (Ghalmek pattern)                                         -->
@@ -56,25 +53,25 @@
 <!--                                          WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                    -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Plasma            -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]/label</xpath>
-                                <value>
-                                    <label>plasma pistol (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]/label</xpath>
+                        <value>
+                            <label>plasma pistol (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T2</li>
-                                        <li>OG_Common_Tech_Weapons_Plasma</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T2</li>
+                                <li>OG_Common_Tech_Weapons_Plasma</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmagun                                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmagun                                              -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_PlasmaGun REPLACE label                                                                             -->
 <!--                           WITH label  plasmagun (Ghalmek pattern)                                                -->
@@ -82,25 +79,25 @@
 <!--                                       WITH researchPrerequisites li  OG_Chaos_Tech_Base_T3                       -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Plasma               -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/label</xpath>
-                                <value>
-                                    <label>plasmagun (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/label</xpath>
+                        <value>
+                            <label>plasmagun (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Common_Tech_Weapons_Plasma</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T3</li>
+                                <li>OG_Common_Tech_Weapons_Plasma</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosPlasmaCannon                                                       -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosPlasmaCannon                                           -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_PlasmaCannon REPLACE label                                                                          -->
 <!--                              WITH label  plasma cannon (Ghalmek pattern)                                         -->
@@ -109,55 +106,52 @@
 <!--                                                                     li  OG_Common_Tech_Weapons_Plasma            -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/label</xpath>
-                                <value>
-                                    <label>plasma cannon (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/label</xpath>
+                        <value>
+                            <label>plasma cannon (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Common_Tech_Weapons_Plasma</li>
-                                        <li>OG_Common_Tech_Weapons_Heavy</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T3</li>
+                                <li>OG_Common_Tech_Weapons_Plasma</li>
+                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
-                        </operations>
-                    </nomatch>
+                </operations>
+            </nomatch>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
+            <match Class="PatchOperationSequence">
+                <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  Removals                                                       -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_PlasmaPistol REMOVE ./                                                                              -->
 <!--    + OGC_Gun_PlasmaGun REMOVE ./                                                                                 -->
 <!--    + OGC_Gun_PlasmaCannon REMOVE ./                                                                              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaPistol"]</xpath>
+                    </li>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaGun"]</xpath>
+                    </li>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_PlasmaCannon"]</xpath>
+                    </li>
 
-                        </operations>
-                    </match>
+                </operations>
+            </match>
 
-                </li>
-
-            </operations>
         </match>
     </Operation>
 
