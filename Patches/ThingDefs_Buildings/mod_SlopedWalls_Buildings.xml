@@ -921,6 +921,25 @@
                                     </operations>
                                 </match>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + NO_MATCH DoorsExpanded  (ThingDef)  -  ReinforcedBirm                                                       -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  SpacerFurniture                                          -->
+<!--  ==============================================================================================================  -->
+                                <nomatch Class="PatchOperationSequence">
+                                    <operations>
+
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>SpacerFurniture</li>
+                                            </value>
+                                        </li>
+
+                                    </operations>
+                                </nomatch>
+
                             </li>
 
                         </operations>
