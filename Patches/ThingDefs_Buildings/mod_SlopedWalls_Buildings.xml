@@ -561,7 +561,6 @@
                         <mods>
                             <li>VanillaExpanded.VWE</li>
                         </mods>
-
                         <match Class="PatchOperationSequence">
                             <operatations>
 
@@ -587,7 +586,6 @@
 
                             </operations>
                         </match>
-
                     </nomatch>
 
                 </li>
@@ -775,7 +773,7 @@
                                         <li Class="PatchOperationAdd">
                                             <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
                                             <value>
-                                                <li>VWE_TrenchWarfare</li>
+                                                <li>VFES_TrenchWarfare</li>
                                             </value>
                                         </li>
 
@@ -788,12 +786,37 @@
                                         <li Class="PatchOperationAdd">
                                             <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
                                             <value>
-                                                <li>VWE_TrenchWarfare</li>
+                                                <li>VFES_TrenchWarfare</li>
                                             </value>
                                         </li>
 
                                     </operations>
                                 </match>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + NO_MATCH VanillaFurnitureExpanedSecurity                                                                    -->
+<!--      + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedBirm                                               -->
+<!--  ==============================================================================================================  -->
+<!--        + POS_ReinforcedBirm researchPrerequisites ADD li  VWE_TrenchWarfare                                      -->
+<!--  ==============================================================================================================  -->
+                                <nomatch Class="PatchOperationFindModID">
+                                    <mods>
+                                        <li>VanillaExpanded.VWE</li>
+                                    </mods>
+                                    <match Class="PatchOperationSequence">
+                                        <operatations>
+
+                                            <li Class="PatchOperationAdd">
+                                                <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
+                                                <value>
+                                                    <li>VWE_TrenchWarfare</li>
+                                                </value>
+                                            </li>
+
+                                        </operatations>
+                                    </match>
+                                </nomatch>
 
                             </li>
 
