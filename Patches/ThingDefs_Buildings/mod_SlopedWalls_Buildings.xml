@@ -384,7 +384,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="SlopedWall"]</xpath>
                     <value>
-                        <ThingDef ParentName="POS_Slope" Name="SlopedWall">
+                        <ThingDef ParentName="POS_Slope">
                             <defName>POS_Birm</defName>
                             <label>birm</label>
                             <description>A climbable sloped wall. Blocks line of sight but not movement. The flat leveled top is easy to stand on.</description>
