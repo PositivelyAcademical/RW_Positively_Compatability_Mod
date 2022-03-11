@@ -779,6 +779,19 @@
                                             </value>
                                         </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedRidge                                       -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  VFES_TrenchWarfare                                      -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>VWE_TrenchWarfare</li>
+                                            </value>
+                                        </li>
+
                                     </operations>
                                 </match>
 
