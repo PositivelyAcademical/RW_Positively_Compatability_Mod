@@ -241,9 +241,9 @@
 <!--      + POS_ReinforcedRidge researchPrerequisites ADD li  SpacerFurniture                                         -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>SlopedWalls (Continued)</li>
+            <li>Mlie.SlopedWalls</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
@@ -521,9 +521,9 @@
 <!--  ==============================================================================================================  -->
 <!--    + POS_Birm researchPrerequisites ADD li  VFES_TrenchWarfare                                                   -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationFindMod">
+                <li Class="PatchOperationFindModID">
                     <mods>
-                        <li>Vanilla Furniture Expanded - Security</li>
+                        <li>VanillaExpanded.VFESecurity</li>
                     <mods>
 
                     <match Class="PatchOperationSequence">
@@ -557,9 +557,9 @@
 <!--  ==============================================================================================================  -->
 <!--      + POS_Birm researchPrerequisites ADD li  VWE_TrenchWarfare                                                  -->
 <!--  ==============================================================================================================  -->
-                    <nomatch Class="PatchOperationFindMod">
+                    <nomatch Class="PatchOperationFindModID">
                         <mods>
-                            <li>Vanilla Weapons Expanded</li>
+                            <li>VanillaExpanded.VWE</li>
                         </mods>
 
                         <match Class="PatchOperationSequence">
@@ -625,9 +625,9 @@
 <!--                                           multiplier  0.05                                                       -->
 <!--                      researchPrerequisites /                                                                     -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationFindMod">
+                <li Class="PatchOperationFindModID">
                     <mods>
-                        <li>Vanilla Furniture Expanded - Spacer Module</li>
+                        <li>VanillaExpanded.VFESpacer</li>
                     </mods>
 
                     <match Class="PatchOperationSequence">
