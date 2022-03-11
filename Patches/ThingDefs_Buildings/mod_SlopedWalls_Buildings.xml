@@ -814,6 +814,19 @@
                                                 </value>
                                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
+<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                          -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                 -->
+<!--  ==============================================================================================================  -->
+                                            <li Class="PatchOperationAdd">
+                                                <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
+                                                <value>
+                                                    <li>VWE_TrenchWarfare</li>
+                                                </value>
+                                            </li>
+
                                         </operatations>
                                     </match>
                                 </nomatch>
