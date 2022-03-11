@@ -27,6 +27,32 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesMeltagun                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_MeltaGun REPLACE label                                                                             -->
+<!--                           WITH label  meltagun (Ryza pattern)                                                    -->
+<!--    + LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Melta                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/label</xpath>
+                    <value>
+                        <label>meltagun (Ryza pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>

@@ -119,24 +119,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - melta weapons                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                          -->
-<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
-<!--                                                                         li  OG_Common_Tech_Weapons_Melta         -->
 <!--       + For LAP_WEAP_MultiMelta recipeMaker REPLACE researchPrerequisites                                        -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
 <!--                                                                           li  OG_Common_Tech_Weapons_Melta       -->
 <!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Common_Tech_Weapons_Melta</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
                     <value>

@@ -85,18 +85,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - melta weapons                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_MeltaGun REPLACE label                                                                      -->
-<!--                                  WITH label meltagun (Ryza pattern)                                              -->
 <!--       + For LAP_WEAP_MultiMelta REPLACE label                                                                    -->
 <!--                                    WITH label multi-melta (Sol Militaris pattern)                                -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_MeltaGun"]/label</xpath>
-                    <value>
-                        <label>meltagun (Ryza pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_MultiMelta"]/label</xpath>
                     <value>
