@@ -138,7 +138,8 @@
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
-<!--                      costStuffCount  10                                                                          -->
+<!--                      costStuffCount /                                                                            -->
+<!--                      costList /                                                                                  -->
 <!--                      passability  Standable                                                                      -->
 <!--                      pathCost  20                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
@@ -591,6 +592,97 @@
 
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule  (ThingDef)  -  ReinforcedBirm                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + SlopedReinforced_Wall REPLACE ./                                                                            -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  POS_ReinforcedBirm                                                                 -->
+<!--                      label  reinforced birm                                                                      -->
+<!--                      description  A climbable reinforced sloped wall, created by layering materials over each    -->
+<!--                                     other. Blocks line of sight but not movement. The flat leveled top is easy   -->
+<!--                                     to stand on.\n\n                                                             -->
+<!--                                   Reinforced walls are neary entirely blast resistant and barely take damage     -->
+<!--                                     from breaching methods.                                                      -->
+<!--                                                                                                                  -->
+<!--                      graphicData texPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedWall_Atlas             -->
+<!--                                  graphicClass  Graphic_Single                                                    -->
+<!--                                  linkType  CornerFiller                                                          -->
+<!--                      uiIconPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedWall_UI                         -->
+<!--                      statBases MaxHitPoints  1400                                                                -->
+<!--                                WorkToBuild  200                                                                  -->
+<!--                                Flammability  0                                                                   -->
+<!--                      costStuffCount /                                                                            -->
+<!--                      costList /                                                                                  -->
+<!--                      passability  Standable                                                                      -->
+<!--                      pathCost  20                                                                                -->
+<!--                      terrainAffordanceNeeded  Medium                                                             -->
+<!--                      stuffCategories li  Metallic                                                                -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
+<!--                      damageMultipliers li damageDef  Bomb                                                        -->
+<!--                                           multiplier  0.05                                                       -->
+<!--                                        li damageDef  Thump                                                       -->
+<!--                                           multiplier  0.05                                                       -->
+<!--                      researchPrerequisites /                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Spacer Module</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="SlopedReinforced_Wall"]</xpath>
+                                <value>
+                                    <ThingDef ParentName="POS_Slope">
+                                        <defName>POS_ReinforcedBirm</defName>
+                                        <label>reinforced birm</label>
+                                        <description>A climbable reinforced sloped wall, created by layering materials over each other. Blocks line of sight but not movement. The flat leveled top is easy to stand on.\n\nReinforced walls are neary entirely blast resistant and barely take damage from breaching methods.</description>
+                                        <graphicData>
+                                            <texPath>Buildings/Linked/ReinforcedWall/ReinforcedSlopedWall_Atlas</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <linkType>CornerFiller</linkType>
+                                        </graphicData>
+                                        <uiIconPath>Buildings/Linked/ReinforcedWall/ReinforcedSlopedWall_UI</uiIconPath>
+                                        <statBases>
+                                            <MaxHitPoints>1400</MaxHitPoints>
+                                            <WorkToBuild>200</WorkToBuild>
+                                            <Flammability>0</Flammability>
+                                        </statBases>
+                                        <costStuffCount />
+                                        <costList />
+                                        <passability>Standable</passability>
+                                        <pathCost>20</pathCost>
+                                        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <building>
+                                            <blueprintGraphicData>
+                                                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                                            </blueprintGraphicData>
+                                        </building>
+                                        <damageMultipliers>
+                                            <li>
+                                                <damageDef>Bomb</damageDef>
+                                                <multiplier>0.05</multiplier>
+                                            </li>
+                                            <li>
+                                                <damageDef>Thump</damageDef>
+                                                <multiplier>0.05</multiplier>
+                                            </li>
+                                        </damageMultipliers>
+                                        <researchPrerequisites />
+                                    </ThingDef>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
 
             </operations>
         </match>
