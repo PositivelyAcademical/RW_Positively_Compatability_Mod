@@ -106,19 +106,19 @@
 <!--                                           multiplier  1.25                                                       -->
 <!--                      researchPrerequisites /                                                                     -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Birm                                                    -->
-<!--    + POS_Birm researchPrerequisites ADD li  VFES_TrenchWarfare                                                   -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Birm                                                             -->
+<!--    + POS_Birm researchPrerequisites ADD li  VWE_TrenchWarfare                                                    -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Ridge                                                   -->
-<!--    + POS_Ridge researchPrerequisites ADD li  VFES_TrenchWarfare                                                  -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                            -->
+<!--    + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                   -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
-<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Birm                                                           -->
-<!--      + POS_Birm researchPrerequisites ADD li  VWE_TrenchWarfare                                                  -->
+<!--  + NO_MATCH VanillaWeaponsExpanded                                                                               -->
+<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Birm                                                  -->
+<!--      + POS_Birm researchPrerequisites ADD li  VFES_TrenchWarfare                                                 -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
-<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                          -->
-<!--      + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                 -->
+<!--  + NO_MATCH VanillaWeaponsExpanded                                                                               -->
+<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Ridge                                                 -->
+<!--      + POS_Ridge researchPrerequisites ADD li  VFES_TrenchWarfare                                                -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule  (ThingDef)  -  ReinforcedBirm                                     -->
 <!--    + SlopedReinforced_Wall REPLACE ./                                                                            -->
@@ -181,22 +181,22 @@
 <!--                      researchPrerequisites /                                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedBirm                                        -->
-<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  VFES_TrenchWarfare                                       -->
+<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedBirm                                                 -->
+<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  VWE_TrenchWarfare                                        -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedRidge                                       -->
-<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  VFES_TrenchWarfare                                      -->
+<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedRidge                                                -->
+<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  VWE_TrenchWarfare                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + NO_MATCH VanillaFurnitureExpanedSecurity                                                                    -->
-<!--      + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedBirm                                               -->
-<!--        + POS_ReinforcedBirm researchPrerequisites ADD li  VWE_TrenchWarfare                                      -->
+<!--    + NO_MATCH VanillaWeaponsExpanded                                                                             -->
+<!--      + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedBirm                                      -->
+<!--        + POS_ReinforcedBirm researchPrerequisites ADD li  VFES_TrenchWarfare                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + NO_MATCH VanillaFurnitureExpanedSecurity                                                                    -->
-<!--      + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedRidge                                              -->
-<!--        + POS_ReinforcedRidge researchPrerequisites ADD li  VWE_TrenchWarfare                                     -->
+<!--    + NO_MATCH VanillaWeaponsExpanded                                                                             -->
+<!--      + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedRidge                                     -->
+<!--        + POS_ReinforcedRidge researchPrerequisites ADD li  VFES_TrenchWarfare                                    -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
 <!--    + MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedBirm                                                -->
@@ -507,70 +507,70 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Birm                                                    -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Birm                                                             -->
 <!--  ==============================================================================================================  -->
-<!--    + POS_Birm researchPrerequisites ADD li  VFES_TrenchWarfare                                                   -->
+<!--    + POS_Birm researchPrerequisites ADD li  VWE_TrenchWarfare                                                    -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationFindModID">
                     <mods>
-                        <li>VanillaExpanded.VFESecurity</li>
-                    <mods>
+                        <li>VanillaExpanded.VWE</li>
+                    </mods>
 
                     <match Class="PatchOperationSequence">
-                        <operatations>
+                        <operations>
 
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="POS_Birm"]/researchPrerequisites</xpath>
                                 <value>
-                                    <li>VFES_TrenchWarfare</li>
+                                    <li>VWE_TrenchWarfare</li>
                                 </value>
                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Ridge                                                   -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + POS_Ridge researchPrerequisites ADD li  VFES_TrenchWarfare                                                  -->
+<!--    + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                   -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="POS_Ridge"]/researchPrerequisites</xpath>
                                 <value>
-                                    <li>VFES_TrenchWarfare</li>
+                                    <li>VWE_TrenchWarfare</li>
                                 </value>
                             </li>
 
-                        </operatations>
+                        </operations>
                     </match>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
-<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Birm                                                           -->
+<!--  + NO_MATCH VanillaWeaponsExpanded                                                                               -->
+<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Birm                                                  -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_Birm researchPrerequisites ADD li  VWE_TrenchWarfare                                                  -->
+<!--      + POS_Birm researchPrerequisites ADD li  VFES_TrenchWarfare                                                 -->
 <!--  ==============================================================================================================  -->
                     <nomatch Class="PatchOperationFindModID">
                         <mods>
-                            <li>VanillaExpanded.VWE</li>
+                            <li>VanillaExpanded.VFESecurity</li>
                         </mods>
                         <match Class="PatchOperationSequence">
-                            <operatations>
+                            <operations>
 
                                 <li Class="PatchOperationAdd">
                                     <xpath>/Defs/ThingDef[defName="POS_Birm"]/researchPrerequisites</xpath>
                                     <value>
-                                        <li>VWE_TrenchWarfare</li>
+                                        <li>VFES_TrenchWarfare</li>
                                     </value>
                                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
-<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                          -->
+<!--  + NO_MATCH VanillaWeaponsExpanded                                                                               -->
+<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  Ridge                                                 -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                 -->
+<!--      + POS_Ridge researchPrerequisites ADD li  VFES_TrenchWarfare                                                -->
 <!--  ==============================================================================================================  -->
                                 <li Class="PatchOperationAdd">
                                     <xpath>/Defs/ThingDef[defName="POS_Ridge"]/researchPrerequisites</xpath>
                                     <value>
-                                        <li>VWE_TrenchWarfare</li>
+                                        <li>VFES_TrenchWarfare</li>
                                     </value>
                                 </li>
 
@@ -716,7 +716,7 @@
                                             <Flammability>0</Flammability>
                                         </statBases>
                                         <costStuffCount>15</costStuffCount>
-                                        <passability>Basic</passability>
+                                        <passability>PassThroughOnly</passability>
                                         <pathCost>60</pathCost>
                                         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
                                         <stuffCategories>
@@ -744,13 +744,13 @@
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedBirm                                        -->
+<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedBirm                                                 -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  VFES_TrenchWarfare                                       -->
+<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  VWE_TrenchWarfare                                        -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationFindModID">
                                 <mods>
-                                    <li>VanillaExpanded.VFESecurity</li>
+                                    <li>VanillaExpanded.VWE</li>
                                 </mods>
 
                                 <match Class="PatchOperationSequence">
@@ -759,20 +759,20 @@
                                         <li Class="PatchOperationAdd">
                                             <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
                                             <value>
-                                                <li>VFES_TrenchWarfare</li>
+                                                <li>VWE_TrenchWarfare</li>
                                             </value>
                                         </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedRidge                                       -->
+<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedRidge                                                -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  VFES_TrenchWarfare                                      -->
+<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  VWE_TrenchWarfare                                       -->
 <!--  ==============================================================================================================  -->
                                         <li Class="PatchOperationAdd">
                                             <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
                                             <value>
-                                                <li>VFES_TrenchWarfare</li>
+                                                <li>VWE_TrenchWarfare</li>
                                             </value>
                                         </li>
 
@@ -781,39 +781,40 @@
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + NO_MATCH VanillaFurnitureExpanedSecurity                                                                    -->
-<!--      + MATCH VanillaWeaponsExpanded  (ThingDef)  -  ReinforcedBirm                                               -->
+<!--    + NO_MATCH VanillaWeaponsExpanded                                                                             -->
+<!--      + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedBirm                                      -->
 <!--  ==============================================================================================================  -->
-<!--        + POS_ReinforcedBirm researchPrerequisites ADD li  VWE_TrenchWarfare                                      -->
+<!--        + POS_ReinforcedBirm researchPrerequisites ADD li  VFES_TrenchWarfare                                     -->
 <!--  ==============================================================================================================  -->
                                 <nomatch Class="PatchOperationFindModID">
                                     <mods>
-                                        <li>VanillaExpanded.VWE</li>
+                                        <li>VanillaExpanded.VFESecurity</li>
                                     </mods>
                                     <match Class="PatchOperationSequence">
-                                        <operatations>
+                                        <operations>
 
                                             <li Class="PatchOperationAdd">
                                                 <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
                                                 <value>
-                                                    <li>VWE_TrenchWarfare</li>
+                                                    <li>VFES_TrenchWarfare</li>
                                                 </value>
                                             </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH VanillaFurnitureExpanedSecurity                                                                      -->
-<!--    + MATCH VanillaWeaponsExpanded  (ThingDef)  -  Ridge                                                          -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + NO_MATCH VanillaWeaponsExpanded                                                                             -->
+<!--      + MATCH VanillaFurnitureExpanedSecurity  (ThingDef)  -  ReinforcedRidge                                     -->
 <!--  ==============================================================================================================  -->
-<!--      + POS_Ridge researchPrerequisites ADD li  VWE_TrenchWarfare                                                 -->
+<!--        + POS_ReinforcedRidge researchPrerequisites ADD li  VFES_TrenchWarfare                                    -->
 <!--  ==============================================================================================================  -->
                                             <li Class="PatchOperationAdd">
                                                 <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
                                                 <value>
-                                                    <li>VWE_TrenchWarfare</li>
+                                                    <li>VFES_TrenchWarfare</li>
                                                 </value>
                                             </li>
 
-                                        </operatations>
+                                        </operations>
                                     </match>
                                 </nomatch>
 
@@ -861,14 +862,14 @@
 <!--                           INSERT costList POS_BlocksPlascrete  10                                                -->
 <!--  ==============================================================================================================  -->
                                         <li Class="PatchOperationReplace">
-                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costStuffCount</xpath>
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/costStuffCount</xpath>
                                             <value>
                                                 <costStuffCount>5</costStuffCount>
                                             </value>
                                         </li>
 
                                         <li Class="PatchOperationInsert">
-                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costStuffCount</xpath>
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/costStuffCount</xpath>
                                             <value>
                                                 <costList>
                                                     <POS_BlocksPlascrete>10</POS_BlocksPlascrete>
