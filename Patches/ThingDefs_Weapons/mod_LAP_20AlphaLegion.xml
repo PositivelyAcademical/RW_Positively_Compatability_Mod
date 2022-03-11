@@ -28,9 +28,9 @@
 <!--                                                                     li  POS_Tech_PrimarchWargear                 -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Legiones Astartes: Primarch</li>
+            <li>Archaon.Primarch</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
