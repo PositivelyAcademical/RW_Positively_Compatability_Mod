@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Warhammer                                                                           -->
+<!--    + MeleeWeapon_Warhammer REPLACE description                                                                   -->
+<!--        WITH description  A long polearm topped with a brutal hammer. The powerful blunt impacts can pulverize    -->
+<!--                            an enemy's insides, even through armour.                                              -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Monosword                                                                           -->
+<!--    + MeleeWeapon_MonoSword REPLACE description                                                                   -->
+<!--        WITH description  A crystal-metallic longsword infused with mechanites that maintain a mono-molecular     -->
+<!--                            cutting edge. It cuts through even thick armor with ease, and its light weight        -->
+<!--                            permits fast attacks.                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  PersonaMonosword                                                                    -->
+<!--    + MeleeWeapon_MonoSwordBladelink REPLACE description                                                          -->
+<!--        WITH description  A crystal-metallic longsword infused with mechanites that maintain a mono-molecular     -->
+<!--                            cutting edge. It cuts through even thick armour with ease, while its light weight     -->
+<!--                            and onboard persona permit extremely fast attacks.\n\n                                -->
+<!--                          This weapon has an onboard persona that can bond to only a single person. The wielder   -->
+<!--                            and intelligent weapon can synchronize their reflexes and attack with frightening     -->
+<!--                            speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will  -->
+<!--                            refuse to be wielded by anyone else.                                                  -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Ludeon.RimWorld.Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Warhammer                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + MeleeWeapon_Warhammer REPLACE description                                                                   -->
+<!--        WITH description  A long polearm topped with a brutal hammer. The powerful blunt impacts can pulverize    -->
+<!--                            an enemy's insides, even through armour.                                              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/description</xpath>
+                    <value>
+                        <description>A long polearm topped with a brutal hammer. The powerful blunt impacts can pulverize an enemy's insides, even through armour.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  Monosword                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--    + MeleeWeapon_MonoSword REPLACE description                                                                   -->
+<!--        WITH description  A crystal-metallic longsword infused with mechanites that maintain a mono-molecular     -->
+<!--                            cutting edge. It cuts through even thick armor with ease, and its light weight        -->
+<!--                            permits fast attacks.                                                                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoSword"]/description</xpath>
+                    <value>
+                        <description>A crystal-metallic longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  PersonaMonosword                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + MeleeWeapon_MonoSwordBladelink REPLACE description                                                          -->
+<!--        WITH description  A crystal-metallic longsword infused with mechanites that maintain a mono-molecular     -->
+<!--                            cutting edge. It cuts through even thick armour with ease, while its light weight     -->
+<!--                            and onboard persona permit extremely fast attacks.\n\n                                -->
+<!--                          This weapon has an onboard persona that can bond to only a single person. The wielder   -->
+<!--                            and intelligent weapon can synchronize their reflexes and attack with frightening     -->
+<!--                            speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will  -->
+<!--                            refuse to be wielded by anyone else.                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoSwordBladelink"]/description</xpath>
+                    <value>
+                        <description>A crystal-metallic longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armour with ease, while its light weight and onboard persona permit extremely fast attacks.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                    </value>
+                </li>
+
+            </operations>
+        <match>
+    </Operation>
+
+</Patch>
