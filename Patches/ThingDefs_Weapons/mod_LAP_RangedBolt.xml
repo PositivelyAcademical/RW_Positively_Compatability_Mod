@@ -68,6 +68,32 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesBoltgun                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_BoltGun REPLACE label                                                                              -->
+<!--                          WITH label  boltgun (Phobos pattern)                                                    -->
+<!--    + @LAP_Bolter_Base recipeMaker REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites li  LAP_Tech_Basic                               -->
+<!--                                                                 li  OG_Imperial_Tech_Weapons_Bolt                -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltGun"]/label</xpath>
+                    <value>
+                        <label>boltgun (Phobos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[@Name="LAP_Bolter_Base"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
