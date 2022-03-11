@@ -16,12 +16,6 @@
 <!--                                                                            li  OG_Common_Tech_Weapons_Flame      -->
 <!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - las weapons                                                                                    -->
-<!--       + For LAP_WEAP_LasCannon recipeMaker REPLACE researchPrerequisites                                         -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
-<!--                                                                          li  OG_Common_Tech_Weapons_Laser        -->
-<!--                                                                          li  OG_Common_Tech_Weapons_Heavy        -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--       + For LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                        -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->

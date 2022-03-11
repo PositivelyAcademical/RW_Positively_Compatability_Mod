@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesLascannon                                                                   -->
+<!--    + LAP_WEAP_LasCannon REPLACE label                                                                            -->
+<!--                            WITH label  lascannon (Sol Militaris pattern)                                         -->
+<!--    + LAP_WEAP_LasCannon recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Laser               -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
