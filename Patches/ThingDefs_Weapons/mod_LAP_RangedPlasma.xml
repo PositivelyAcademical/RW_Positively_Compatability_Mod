@@ -34,6 +34,32 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPlasmaPistol                                                                -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_PlasmaPistol REPLACE label                                                                         -->
+<!--                               WITH label  plasma pistol (Ryza pattern)                                           -->
+<!--    + LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Plasma           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaPistol"]/label</xpath>
+                    <value>
+                        <label>plasma pistol (Ryza pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaPistol"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Plasma</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
