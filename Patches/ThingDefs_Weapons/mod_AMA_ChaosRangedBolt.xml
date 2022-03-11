@@ -4,21 +4,21 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBoltPistol                                                         -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosBoltPistol                                             -->
 <!--    + OGC_Gun_BoltPistol REPLACE label                                                                            -->
 <!--                            WITH label  bolt pistol (Ghalmek pattern)                                             -->
 <!--    + OGC_Gun_BoltPistol recipeMaker REPLACE researchPrerequisites                                                -->
 <!--                                        WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                      -->
 <!--                                                                   li  OG_Imperial_Tech_Weapons_Bolt              -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBoltgun                                                            -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosBoltgun                                                -->
 <!--    + OGC_Gun_BoltGun REPLACE label                                                                               -->
 <!--                         WITH label  boltgun (Ghalmek pattern)                                                    -->
 <!--    + OGC_Gun_BoltGun recipeMaker REPLACE researchPrerequisites                                                   -->
 <!--                                     WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                         -->
 <!--                                                                li  OG_Imperial_Tech_Weapons_Bolt                 -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosCombiBolter                                                        -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosCombiBolter                                            -->
 <!--    + OGC_Gun_StormBolter REPLACE label                                                                           -->
 <!--                             WITH label  combi-bolter (Ghalmek pattern)                                           -->
 <!--    + OGC_Gun_StormBolter recipeMaker REPLACE researchPrerequisites                                               -->
@@ -26,7 +26,7 @@
 <!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
 <!--                                                                    li  OG_Common_Tech_Weapons_Special            -->
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosHeavyBolter                                                        -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosHeavyBolter                                            -->
 <!--    + OGC_Gun_HeavyBolter REPLACE label                                                                           -->
 <!--                             WITH label  heavy bolter (Ghalmek pattern)                                           -->
 <!--    + OGC_Gun_HeavyBolter recipeMaker REPLACE researchPrerequisites                                               -->
@@ -41,23 +41,17 @@
 <!--    + OGC_Gun_HeavyBolter REMOVE ./                                                                               -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
+            <li>Ogliss.AdMech.Armoury</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Legiones Astartes: Primarch</li>
-                    </mods>
-
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
+        <match Class="PatchOperationFindModID">
+            <mods>
+                <li>Archaon.Primarch</li>
+            </mods>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBoltPistol                                                         -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosBoltPistol                                             -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_BoltPistol REPLACE label                                                                            -->
 <!--                            WITH label  bolt pistol (Ghalmek pattern)                                             -->
@@ -65,25 +59,28 @@
 <!--                                        WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                      -->
 <!--                                                                   li  OG_Imperial_Tech_Weapons_Bolt              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]/label</xpath>
-                                <value>
-                                    <label>bolt pistol (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T2</li>
-                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]/label</xpath>
+                        <value>
+                            <label>bolt pistol (Ghalmek pattern)</label>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T2</li>
+                                <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosBoltgun                                                            -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosBoltgun                                                -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_BoltGun REPLACE label                                                                               -->
 <!--                         WITH label  boltgun (Ghalmek pattern)                                                    -->
@@ -91,25 +88,25 @@
 <!--                                     WITH researchPrerequisites li  OG_Chaos_Tech_Base_T2                         -->
 <!--                                                                li  OG_Imperial_Tech_Weapons_Bolt                 -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/label</xpath>
-                                <value>
-                                    <label>boltgun (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/label</xpath>
+                        <value>
+                            <label>boltgun (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T2</li>
-                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T2</li>
+                                <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosCombiBolter                                                        -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosCombiBolter                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_StormBolter REPLACE label                                                                           -->
 <!--                             WITH label  combi-bolter (Ghalmek pattern)                                           -->
@@ -118,26 +115,26 @@
 <!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
 <!--                                                                    li  OG_Common_Tech_Weapons_Special            -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]/label</xpath>
-                                <value>
-                                    <label>combi-bolter (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]/label</xpath>
+                        <value>
+                            <label>combi-bolter (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                                        <li>OG_Common_Tech_Weapons_Special</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T3</li>
+                                <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                                <li>OG_Common_Tech_Weapons_Special</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosHeavyBolter                                                        -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  ChaosHeavyBolter                                            -->
 <!--  ==============================================================================================================  -->
 <!--    + OGC_Gun_HeavyBolter REPLACE label                                                                           -->
 <!--                             WITH label  heavy bolter (Ghalmek pattern)                                           -->
@@ -146,29 +143,26 @@
 <!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
 <!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/label</xpath>
-                                <value>
-                                    <label>heavy bolter (Ghalmek pattern)</label>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/label</xpath>
+                        <value>
+                            <label>heavy bolter (Ghalmek pattern)</label>
+                        </value>
+                    </li>
 
-                            <li Class="PatchOperationReplace">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
-                                <value>
-                                    <researchPrerequisites>
-                                        <li>OG_Chaos_Tech_Base_T3</li>
-                                        <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                                        <li>OG_Common_Tech_Weapons_Heavy</li>
-                                    </researchPrerequisites>
-                                </value>
-                            </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>OG_Chaos_Tech_Base_T3</li>
+                                <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
 
-                        </operations>
-                    </nomatch>
-
-                    <match Class="PatchOperationSequence">
-                        <operations>
+                </operations>
+            </nomatch>
 
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
@@ -178,28 +172,28 @@
 <!--    + OGC_Gun_StormBolter REMOVE ./                                                                               -->
 <!--    + OGC_Gun_HeavyBolter REMOVE ./                                                                               -->
 <!--  ==============================================================================================================  -->
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]</xpath>
-                            </li>
+            <match Class="PatchOperationSequence">
+                <operations>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltPistol"]</xpath>
+                    </li>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_BoltGun"]</xpath>
+                    </li>
 
-                            <li Class="PatchOperationRemove">
-                                <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]</xpath>
-                            </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_StormBolter"]</xpath>
+                    </li>
 
-                        </operations>
-                    </match>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="OGC_Gun_HeavyBolter"]</xpath>
+                    </li>
 
-                </li>
+                </operations>
+            </match>
 
-            </operations>
         </match>
     </Operation>
 
