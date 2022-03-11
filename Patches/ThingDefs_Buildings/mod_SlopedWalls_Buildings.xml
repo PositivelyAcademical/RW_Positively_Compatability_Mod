@@ -156,7 +156,7 @@
 <!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
 <!--                      defName  POS_ReinforcedRidge                                                                -->
 <!--                      label  reinforced ridge                                                                     -->
-<!--                      description  A climbable reinforced sloped barrier, created by layering materials over h    -->
+<!--                      description  A climbable reinforced sloped barrier, created by layering materials over      -->
 <!--                                     each other. Blocks line of sight but not movement, only impedes it. The      -->
 <!--                                     narrow tops require some balance to walk across.\n\n                         -->
 <!--                                   Reinforced walls are neary entirely blast resistant and barely take damage     -->
@@ -164,15 +164,15 @@
 <!--                                                                                                                  -->
 <!--                      graphicData texPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_Atlas            -->
 <!--                                  graphicClass  Graphic_Single                                                    -->
-<!--                                  linkType  Basic      r                                                          -->
+<!--                                  linkType  Basic                                                                 -->
 <!--                      uiIconPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_UI                        -->
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
 <!--                      costStuffCount /                                                                            -->
 <!--                      costList /                                                                                  -->
-<!--                      passability  Standable                                                                      -->
-<!--                      pathCost  20                                                                                -->
+<!--                      passability  PassThroughOnly                                                                -->
+<!--                      pathCost  60                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
 <!--                      stuffCategories li  Metallic                                                                -->
 <!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
@@ -678,6 +678,86 @@
                                     </ThingDef>
                                 </value>
                             </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule  (ThingDef)  -  ReinforcedRidge                                    -->
+<!--    + SlopedReinforced_Ridge REPLACE ./                                                                           -->
+<!--  ==============================================================================================================  -->
+<!--        WITH ThingDef @ParentName  POS_Slope                                                                      -->
+<!--                      defName  POS_ReinforcedRidge                                                                -->
+<!--                      label  reinforced ridge                                                                     -->
+<!--                      description  A climbable reinforced sloped barrier, created by layering materials over      -->
+<!--                                     each other. Blocks line of sight but not movement, only impedes it. The      -->
+<!--                                     narrow tops require some balance to walk across.\n\n                         -->
+<!--                                   Reinforced walls are neary entirely blast resistant and barely take damage     -->
+<!--                                     from breaching methods.                                                      -->
+<!--                                                                                                                  -->
+<!--                      graphicData texPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_Atlas            -->
+<!--                                  graphicClass  Graphic_Single                                                    -->
+<!--                                  linkType  Basic                                                                 -->
+<!--                      uiIconPath  Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_UI                        -->
+<!--                      statBases MaxHitPoints  1400                                                                -->
+<!--                                WorkToBuild  200                                                                  -->
+<!--                                Flammability  0                                                                   -->
+<!--                      costStuffCount /                                                                            -->
+<!--                      costList /                                                                                  -->
+<!--                      passability  PassThroughOnly                                                                -->
+<!--                      pathCost  60                                                                                -->
+<!--                      terrainAffordanceNeeded  Medium                                                             -->
+<!--                      stuffCategories li  Metallic                                                                -->
+<!--                      building blueprintGraphicData texPath  Things/Building/Linked/Wall_Blueprint_Atlas          -->
+<!--                      damageMultipliers li damageDef  Bomb                                                        -->
+<!--                                           multiplier  0.05                                                       -->
+<!--                                        li damageDef  Thump                                                       -->
+<!--                                           multiplier  0.05                                                       -->
+<!--                      researchPrerequisites /                                                                     -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="SlopedReinforced_Ridge"]</xpath>
+                                <value>
+                                    <ThingDef ParentName="POS_Slope">
+                                        <defName>POS_ReinforcedRidge</defName>
+                                        <label>reinforced ridge</label>
+                                        <description>A climbable reinforced sloped barrier, created by layering materials over each other. Blocks line of sight but not movement, only impedes it. The narrow tops require some balance to walk across.\n\nReinforced walls are neary entirely blast resistant and barely take damage from breaching methods.</description>
+                                        <graphicData>
+                                            <texPath>Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_Atlas</texPath>
+                                            <graphicClass>Graphic_Single</graphicClass>
+                                            <linkType>Basic</linkType>
+                                        </graphicData>
+                                        <uiIconPath>Buildings/Linked/ReinforcedWall/ReinforcedSlopedRidge_UI</uiIconPath>
+                                        <statBases>
+                                            <MaxHitPoints>1400</MaxHitPoints>
+                                            <WorkToBuild>200</WorkToBuild>
+                                            <Flammability>0</Flammability>
+                                        </statBases>
+                                        <costStuffCount />
+                                        <costList />
+                                        <passability>Basic</passability>
+                                        <pathCost>60</pathCost>
+                                        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                                        <stuffCategories>
+                                            <li>Metallic</li>
+                                        </stuffCategories>
+                                        <building>
+                                            <blueprintGraphicData>
+                                                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                                            </blueprintGraphicData>
+                                        </building>
+                                        <damageMultipliers>
+                                            <li>
+                                                <damageDef>Bomb</damageDef>
+                                                <multiplier>0.05</multiplier>
+                                            </li>
+                                            <li>
+                                                <damageDef>Thump</damageDef>
+                                                <multiplier>0.05</multiplier>
+                                            </li>
+                                        </damageMultipliers>
+                                        <researchPrerequisites />
+                                    </ThingDef>
+                                </value>
+                            </li>
+
 
                         </operations>
                     </match>
