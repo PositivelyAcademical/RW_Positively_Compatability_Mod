@@ -60,6 +60,32 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteCaliver                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_VolkiteCaliver REPLACE label                                                                       -->
+<!--                                 WITH label  volkite caliver (Sol Militaris pattern)                              -->
+<!--    + LAP_WEAP_VolkiteCaliver recipeMaker REPLACE researchPrerequisites                                           -->
+<!--                                             WITH researchPrerequisites li  LAP_Tech_Basic                        -->
+<!--                                                                        li  OG_Mechanicus_Tech_Weapons_Volkite    -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCaliver"]/label</xpath>
+                    <value>
+                        <label>volkite caliver (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCaliver"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Mechanicus_Tech_Weapons_Volkite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
