@@ -880,6 +880,34 @@
                                 </match>
                             </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + MATCH DoorsExpanded  (ThingDef)  -  ReinforcedBirm                                                          -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_ReinforcedBirm researchPrerequisites ADD li  ProjectHeron_BlastDoors                                  -->
+<!--                                                     li  Fabrication                                              -->
+<!--  ==============================================================================================================  -->
+                            <li Class="PatchOperationFindModID">
+                                <mods>
+                                    <li>jecrell.doorsexpanded</li>
+                                </mods>
+
+                                <match Class="PatchOperationSequence">
+                                    <operations>
+
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>ProjectHeron_BlastDoors</li>
+                                                <li>Fabrication</li>
+                                            </value>
+                                        </li>
+
+                                    </operations>
+                                </match>
+
+                            </li>
+
                         </operations>
                     </match>
 
