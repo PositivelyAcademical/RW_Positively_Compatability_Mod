@@ -80,7 +80,7 @@
                         <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>LAP_Tech_Basic</li>
+                                <li>POS_AMA_Astartes_Placeholder</li>
                                 <li>OG_Common_Tech_Weapons_Melta</li>
                             </researchPrerequisites>
                         </value>
