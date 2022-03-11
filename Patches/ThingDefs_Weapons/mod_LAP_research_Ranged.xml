@@ -4,18 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - plasma weapons                                                                                 -->
-<!--       + For LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                      -->
-<!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
-<!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
-<!--       + For LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                         -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
-<!--                                                                          li  OG_Common_Tech_Weapons_Plasma       -->
-<!--       + For LAP_WEAP_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                      -->
-<!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
-<!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
-<!--                                                                             li  OG_Common_Tech_Weapons_Heavy     -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - volkite weapons                                                                                -->
 <!--       + For LAP_WEAP_VolkiteSerpenta recipeMaker REPLACE researchPrerequisites                                   -->
 <!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->

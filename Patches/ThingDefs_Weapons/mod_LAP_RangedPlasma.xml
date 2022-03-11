@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPlasmaPistol                                                                -->
+<!--    + LAP_WEAP_PlasmaPistol REPLACE label                                                                         -->
+<!--                               WITH label  plasma pistol (Ryza pattern)                                           -->
+<!--    + LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Plasma           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPlasmaGun                                                                   -->
+<!--    + LAP_WEAP_PlasmaGun REPLACE label                                                                            -->
+<!--                            WITH label  plasma gun (Ryza pattern)                                                 -->
+<!--    + LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Plasma              -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPlasmaCannon                                                                -->
+<!--    + LAP_WEAP_PlasmaCannon REPLACE label                                                                         -->
+<!--                               WITH label  plasma cannon (Sol Militaris pattern)                                  -->
+<!--    + LAP_WEAP_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                             -->
+<!--                                           WITH researchPrerequisites li  LAP_Tech_Basic                          -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Plasma           -->
+<!--                                                                      li  OG_Common_Tech_Weapons_Heavy            -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

@@ -4,14 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - plasma weapons                                                                                 -->
-<!--       + For LAP_WEAP_PlasmaPistol REPLACE label                                                                  -->
-<!--                                      WITH label plasma pistol (Ryza pattern)                                     -->
-<!--       + For LAP_WEAP_PlasmaGun REPLACE label                                                                     -->
-<!--                                   WITH label plasma gun (Ryza pattern)                                           -->
-<!--       + For LAP_WEAP_PlasmaCannon REPLACE label                                                                  -->
-<!--                                      WITH label plasma cannon (Sol Militaris pattern)                            -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - volkite weapons                                                                                -->
 <!--       + For LAP_WEAP_VolkiteSerpenta REPLACE label                                                               -->
 <!--                                         WITH label volkite serpenta (Sol Militaris pattern)                      -->
