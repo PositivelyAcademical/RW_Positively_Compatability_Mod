@@ -60,6 +60,32 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesFlamer                                                                      -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_Flamer REPLACE label                                                                               -->
+<!--                         WITH label  flamer (Phaestos pattern)                                                    -->
+<!--    + LAP_WEAP_Flamer recipeMaker REPLACE researchPrerequisites                                                   -->
+<!--                                     WITH researchPrerequisites li  LAP_Tech_Basic                                -->
+<!--                                                                li  OG_Common_Tech_Weapons_Flame                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Flamer"]/label</xpath>
+                    <value>
+                        <label>flamer (Phaestos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_Flamer"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Flame</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
