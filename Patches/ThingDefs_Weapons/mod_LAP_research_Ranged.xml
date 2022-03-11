@@ -43,9 +43,6 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                        -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
-<!--                                                                           li  OG_Imperial_Tech_Weapons_Bolt      -->
 <!--       + For @LAP_Bolter_Base recipeMaker REPLACE researchPrerequisites                                           -->
 <!--                                             WITH researchPrerequisites li  LAP_Tech_Basic                        -->
 <!--                                                                        li  OG_Imperial_Tech_Weapons_Bolt         -->
@@ -58,16 +55,6 @@
 <!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
 <!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[@Name="LAP_Bolter_Base"]/recipeMaker/researchPrerequisites</xpath>
                     <value>

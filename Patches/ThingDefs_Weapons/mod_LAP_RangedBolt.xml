@@ -42,6 +42,32 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesBoltPistol                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_BoltPistol REPLACE label                                                                           -->
+<!--                             WITH label  bolt pistol (Phobos pattern)                                             -->
+<!--    + LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/label</xpath>
+                    <value>
+                        <label>bolt pistol (Phobos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Imperial_Tech_Weapons_Bolt</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>

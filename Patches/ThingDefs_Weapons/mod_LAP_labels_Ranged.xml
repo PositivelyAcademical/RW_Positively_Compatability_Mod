@@ -35,8 +35,6 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - bolt weapons                                                                                   -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_BoltPistol REPLACE label                                                                    -->
-<!--                                    WITH label bolt pistol (Phobos pattern)                                       -->
 <!--       + For LAP_WEAP_BoltGun REPLACE label                                                                       -->
 <!--                                 WITH label boltgun (Phobos pattern)                                              -->
 <!--       + For LAP_WEAP_CombiBolter REPLACE label                                                                   -->
@@ -44,13 +42,6 @@
 <!--       + For LAP_WEAP_HeavyBolter REPLACE label                                                                   -->
 <!--                                     WITH label heavy bolter (Sol Militaris pattern)                              -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltPistol"]/label</xpath>
-                    <value>
-                        <label>bolt pistol (Phobos pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_BoltGun"]/label</xpath>
                     <value>
