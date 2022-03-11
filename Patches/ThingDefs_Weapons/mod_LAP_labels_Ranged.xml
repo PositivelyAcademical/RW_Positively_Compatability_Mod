@@ -51,20 +51,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - flame weapons                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_HandFlamer REPLACE label                                                                    -->
-<!--                                    WITH label hand flamer (Phaestos pattern)                                     -->
 <!--       + For LAP_WEAP_Flamer REPLACE label                                                                        -->
 <!--                                WITH label flamer (Phaestos pattern)                                              -->
 <!--       + For LAP_WEAP_HeavyFlamer REPLACE label                                                                   -->
 <!--                                     WITH label heavy flamer (Phaestos pattern)                                   -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HandFlamer"]/label</xpath>
-                    <value>
-                        <label>hand flamer (Phaestos pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_Flamer"]/label</xpath>
                     <value>

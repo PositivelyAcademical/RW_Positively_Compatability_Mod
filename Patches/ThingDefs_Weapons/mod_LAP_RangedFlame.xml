@@ -34,6 +34,32 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesHandFlamer                                                                  -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_HandFlamer REPLACE label                                                                           -->
+<!--                             WITH label  hand flamer (Phaestos pattern)                                           -->
+<!--    + LAP_WEAP_HandFlamer recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Flame              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HandFlamer"]/label</xpath>
+                    <value>
+                        <label>hand flamer (Phaestos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_HandFlamer"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Flame</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
