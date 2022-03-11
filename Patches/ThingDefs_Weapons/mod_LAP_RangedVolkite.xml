@@ -34,6 +34,32 @@
         <match Class="PatchOperationSequence">
             <operations>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteSerpenta                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_VolkiteSerpenta REPLACE label                                                                      -->
+<!--                                  WITH label  volkite serpenta (Sol Militaris pattern)                            -->
+<!--    + LAP_WEAP_VolkiteSerpenta recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Mechanicus_Tech_Weapons_Volkite   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteSerpenta"]/label</xpath>
+                    <value>
+                        <label>volkite serpenta (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteSerpenta"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Mechanicus_Tech_Weapons_Volkite</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>

@@ -19,20 +19,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - volkite weapons                                                                                -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_VolkiteSerpenta REPLACE label                                                               -->
-<!--                                         WITH label volkite serpenta (Sol Militaris pattern)                      -->
 <!--       + For LAP_WEAP_VolkiteCaliver REPLACE label                                                                -->
 <!--                                        WITH label volkite caliver (Sol Militaris pattern)                        -->
 <!--       + For LAP_WEAP_VolkiteCulverin REPLACE label                                                               -->
 <!--                                         WITH label volkite culverin (Sol Militaris pattern)                      -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteSerpenta"]/label</xpath>
-                    <value>
-                        <label>volkite serpenta (Sol Militaris pattern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCaliver"]/label</xpath>
                     <value>
