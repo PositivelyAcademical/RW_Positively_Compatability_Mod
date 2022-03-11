@@ -5,22 +5,6 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
 <!--  ==============================================================================================================  -->
-<!--    + ALL_CASES  (ThingDef)  -  ReinforcedSlopedWall                                                              -->
-<!--      + SlopedReinforced_Wall REPLACE description                                                                 -->
-<!--            WITH description  A climbable reinforced sloped wall, created by layering materials over each other.  -->
-<!--                                Blocks line of sight but not movement. The flat leveled top is easy to stand on.  -->
-<!--                                Reinforced walls are neary entirely blast resistant and barely take damage from   -->
-<!--                                breaching methods.                                                                -->
-<!--                                                                                                                  -->
-<!--     + SlopedReinforced_Wall statBases REPLACE MaxHitPoints                                                       -->
-<!--                                          WITH MaxHitPoints  1400                                                 -->
-<!--     + SlopedReinforced_Wall statBases REPLACE Flammability                                                       -->
-<!--                                          WITH Flammability  0                                                    -->
-<!--     + SlopedReinforced_Wall damageMultipliers li[1] (Bomb) REPLACE multiplier                                    -->
-<!--                                                               WITH multiplier  0.05                              -->
-<!--     + SlopedReinforced_Wall damageMultipliers li[2] (Thump) REPLACE multiplier                                   -->
-<!--                                                                WITH multiplier  0.05                             -->
-<!--  ==============================================================================================================  -->
 <!--    + NO_MATCH DoorsExpanded  (ThingDef)  -  ReinforcedSlopedWall                                                 -->
 <!--      + SlopedReinforced_Wall REPLACE researchPrerequisites                                                       -->
 <!--                                 WITH researchPrerequisites li  Fabrication                                       -->
@@ -40,22 +24,6 @@
 <!--    + NO_MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedSlopedWall                                       -->
 <!--      + SlopedReinforced_Wall REPLACE costStuffCount                                                              -->
 <!--                                 WITH costStuffCount  15                                                          -->
-<!--  ==============================================================================================================  -->
-<!--    + ALL_CASES  (ThingDef)  -  ReinforcedSlopedRidge                                                             -->
-<!--      + SlopedReinforced_Ridge REPLACE description                                                                -->
-<!--            WITH description  A climbable reinforced sloped barrier, created by layering materials over each      -->
-<!--                                other. Blocks line of sight but not movement, only impedes it. The narrow tops    -->
-<!--                                require some balance to walk across. Reinforced walls are neary entirely blast    -->
-<!--                                resistant and barely take damage from breaching methods.                          -->
-<!--                                                                                                                  -->
-<!--     + SlopedReinforced_Ridge statBases REPLACE MaxHitPoints                                                      -->
-<!--                                           WITH MaxHitPoints  1400                                                -->
-<!--     + SlopedReinforced_Ridge statBases REPLACE Flammability                                                      -->
-<!--                                           WITH Flammability  0                                                   -->
-<!--     + SlopedReinforced_Ridge damageMultipliers li[1] (Bomb) REPLACE multiplier                                   -->
-<!--                                                                WITH multiplier  0.05                             -->
-<!--     + SlopedReinforced_Ridge damageMultipliers li[2] (Thump) REPLACE multiplier                                  -->
-<!--                                                                 WITH multiplier  0.05                            -->
 <!--  ==============================================================================================================  -->
 <!--    + NO_MATCH DoorsExpanded  (ThingDef)  -  ReinforcedSlopedRidge                                                -->
 <!--      + SlopedReinforced_Ridge REPLACE researchPrerequisites                                                      -->
