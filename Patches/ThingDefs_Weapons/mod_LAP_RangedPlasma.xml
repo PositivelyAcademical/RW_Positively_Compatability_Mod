@@ -60,6 +60,32 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesPlasmaGun                                                                   -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_PlasmaGun REPLACE label                                                                            -->
+<!--                            WITH label  plasma gun (Ryza pattern)                                                 -->
+<!--    + LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  LAP_Tech_Basic                             -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Plasma              -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaGun"]/label</xpath>
+                    <value>
+                        <label>plasma gun (Ryza patern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Plasma</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>

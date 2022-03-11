@@ -27,18 +27,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - plasma weapons                                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_PlasmaGun REPLACE label                                                                     -->
-<!--                                   WITH label plasma gun (Ryza pattern)                                           -->
 <!--       + For LAP_WEAP_PlasmaCannon REPLACE label                                                                  -->
 <!--                                      WITH label plasma cannon (Sol Militaris pattern)                            -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaGun"]/label</xpath>
-                    <value>
-                        <label>plasma gun (Ryza patern)</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaCannon"]/label</xpath>
                     <value>

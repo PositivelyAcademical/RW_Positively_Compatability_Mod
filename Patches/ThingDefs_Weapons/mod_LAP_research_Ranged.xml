@@ -31,24 +31,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - plasma weapons                                                                                 -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_PlasmaGun recipeMaker REPLACE researchPrerequisites                                         -->
-<!--                                               WITH researchPrerequisites li  LAP_Tech_Basic                      -->
-<!--                                                                          li  OG_Common_Tech_Weapons_Plasma       -->
 <!--       + For LAP_WEAP_PlasmaCannon recipeMaker REPLACE researchPrerequisites                                      -->
 <!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
 <!--                                                                             li  OG_Common_Tech_Weapons_Plasma    -->
 <!--                                                                             li  OG_Common_Tech_Weapons_Heavy     -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaGun"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Common_Tech_Weapons_Plasma</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_PlasmaCannon"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
