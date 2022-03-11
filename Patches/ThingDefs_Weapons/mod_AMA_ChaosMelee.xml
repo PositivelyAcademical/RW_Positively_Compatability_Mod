@@ -86,20 +86,17 @@
 <!--    + OGC_Melee_ThunderHammer REMOVE ./                                                                           -->
 <!--  ==============================================================================================================  -->
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
+            <li>Ogliss.AdMech.Armoury</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
 
-                <li Class="PatchOperationFindMod">
+                <li Class="PatchOperationFindModID">
                     <mods>
-                        <li>Legiones Astartes: Primarch</li>
+                        <li>Archaon.Primarch</li>
                     </mods>
-
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  -  ChaosChainsword                                                         -->
@@ -109,6 +106,9 @@
 <!--    + OGC_Melee_ChainSword recipeMaker ADD researchPrerequisites  li  OG_Chaos_Tech_Base_T1                       -->
 <!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
 <!--  ==============================================================================================================  -->
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
                             <li Class="PatchOperationReplace">
                                 <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]/label</xpath>
                                 <value>
@@ -338,9 +338,6 @@
                         </operations>
                     </nomatch>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
-
 <!--  ==============================================================================================================  -->
 <!--  + MATCH LegionesAstartesPrimarch  -  remove defs                                                                -->
 <!--  ==============================================================================================================  -->
@@ -355,6 +352,9 @@
 <!--    + OGC_Melee_SorcerersStaff REMOVE ./                                                                          -->
 <!--    + OGC_Melee_Hellblade REMOVE ./                                                                               -->
 <!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
                             <li Class="PatchOperationRemove">
                                 <xpath>/Defs/ThingDef[defName="OGC_Melee_ChainSword"]</xpath>
                             </li>
