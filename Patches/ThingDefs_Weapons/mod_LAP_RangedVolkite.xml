@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteSerpenta                                                             -->
+<!--    + LAP_WEAP_VolkiteSerpenta REPLACE label                                                                      -->
+<!--                                  WITH label  volkite serpenta (Sol Militaris pattern)                            -->
+<!--    + LAP_WEAP_VolkiteSerpenta recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Mechanicus_Tech_Weapons_Volkite   -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteCaliver                                                              -->
+<!--    + LAP_WEAP_VolkiteCaliver REPLACE label                                                                       -->
+<!--                                 WITH label  volkite caliver (Sol Militaris pattern)                              -->
+<!--    + LAP_WEAP_VolkiteCaliver recipeMaker REPLACE researchPrerequisites                                           -->
+<!--                                             WITH researchPrerequisites li  LAP_Tech_Basic                        -->
+<!--                                                                        li  OG_Mechanicus_Tech_Weapons_Volkite    -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteCulverin                                                             -->
+<!--    + LAP_WEAP_VolkiteCulverin REPLACE label                                                                      -->
+<!--                                  WITH label  volkite culverin (Sol Militaris pattern)                            -->
+<!--    + LAP_WEAP_VolkiteCulverin recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Mechanicus_Tech_Weapons_Volkite   -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Heavy         -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
