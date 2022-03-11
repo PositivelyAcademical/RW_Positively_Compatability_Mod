@@ -4,32 +4,33 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - slug and auto weapons                                                                             -->
+<!--  + ALL_CASES  (ThingDef)  -  ExitusPistol                                                                        -->
 <!--    + OGI_Gun_ExitusPistol REPLACE label                                                                          -->
 <!--                            WITH label  Exitus pistol                                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ExitusRifle                                                                         -->
 <!--    + OGI_Gun_ExitusRifle REPLACE label                                                                           -->
 <!--                             WITH label  Exitus rifle                                                             -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - bolt weapons                                                                                      -->
+<!--  + ALL_CASES (ThingDef)  -  ExecutionerPistol                                                                    -->
 <!--    + OGI_Gun_ExecutionerPistol REPLACE label                                                                     -->
 <!--                                   WITH label  Executioner pistol                                                 -->
-<!--    + OGI_Gun_ExecutionerPistol REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites OG_Assassinorum_Tech_Weapons_Eversor                -->
+<!--    + OGI_Gun_ExecutionerPistol recipeMaker REPLACE researchPrerequisites                                         -->
+<!--                                             WITH researchPrerequisites li  OG_Assassinorum_Tech_Weapons_Eversor  -->
 <!--  ==============================================================================================================  -->
-    <Operation Class="PatchOperationFindMod">
+
+    <Operation Class="PatchOperationFindModID">
         <mods>
-            <li>Adeptus Mechanicus: Armoury</li>
+            <li>Ogliss.AdMech.Armoury</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - slug and auto weapons                                                                             -->
+<!--  + ALL_CASES  (ThingDef)  -  ExitusPistol                                                                        -->
 <!--  ==============================================================================================================  -->
 <!--    + OGI_Gun_ExitusPistol REPLACE label                                                                          -->
 <!--                            WITH label  Exitus pistol                                                             -->
-<!--    + OGI_Gun_ExitusRifle REPLACE label                                                                           -->
-<!--                             WITH label  Exitus rifle                                                             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_ExitusPistol"]/label</xpath>
@@ -38,6 +39,12 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  ExitusRifle                                                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_ExitusRifle REPLACE label                                                                           -->
+<!--                             WITH label  Exitus rifle                                                             -->
+<!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_ExitusRifle"]/label</xpath>
                     <value>
@@ -46,12 +53,12 @@
                 </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES - bolt weapons                                                                                      -->
+<!--  + ALL_CASES (ThingDef)  -  ExecutionerPistol                                                                    -->
 <!--  ==============================================================================================================  -->
 <!--    + OGI_Gun_ExecutionerPistol REPLACE label                                                                     -->
 <!--                                   WITH label  Executioner pistol                                                 -->
-<!--    + OGI_Gun_ExecutionerPistol REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites OG_Assassinorum_Tech_Weapons_Eversor                -->
+<!--    + OGI_Gun_ExecutionerPistol recipeMaker REPLACE researchPrerequisites                                         -->
+<!--                                             WITH researchPrerequisites li  OG_Assassinorum_Tech_Weapons_Eversor  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_ExecutionerPistol"]/label</xpath>
@@ -69,8 +76,8 @@
                     </value>
                 </li>
 
-<!--  ==============================================================================================================  -->
             </operations>
         </match>
     </Operation>
+
 </Patch>
