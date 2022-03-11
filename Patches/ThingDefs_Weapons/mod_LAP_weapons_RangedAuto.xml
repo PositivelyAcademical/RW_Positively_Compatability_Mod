@@ -93,6 +93,34 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesReaperAutocannon                                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_RAutocannon REPLACE label                                                                          -->
+<!--                              WITH label  Reaper autocannon                                                       -->
+<!--    + LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
+<!--                                                                     li  HeavyTurrets                             -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/label</xpath>
+                    <value>
+                        <label>Reaper autocannon</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>

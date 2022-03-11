@@ -64,18 +64,9 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_RAutocannon REPLACE label                                                                   -->
-<!--                                     WITH label Reaper autocannon                                                 -->
 <!--       + For LAP_WEAP_AssaultCannon REPLACE label                                                                 -->
 <!--                                       WITH label rotor cannon                                                    -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/label</xpath>
-                    <value>
-                        <label>Reaper autocannon</label>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/label</xpath>
                     <value>

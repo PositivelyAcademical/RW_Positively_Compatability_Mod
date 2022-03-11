@@ -86,26 +86,11 @@
 <!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - slug and auto weapons                                                                          -->
 <!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
-<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
-<!--                                                                            li  HeavyTurrets                      -->
 <!--       + For LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                     -->
 <!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
 <!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
 <!--                                                                              li  MultibarrelWeapons              -->
 <!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RAutocannon"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>LAP_Tech_Basic</li>
-                            <li>OG_Common_Tech_Weapons_Heavy</li>
-                            <li>HeavyTurrets</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
                     <value>
