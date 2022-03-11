@@ -138,8 +138,7 @@
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
-<!--                      costStuffCount /                                                                            -->
-<!--                      costList /                                                                                  -->
+<!--                      costStuffCount 15                                                                           -->
 <!--                      passability  Standable                                                                      -->
 <!--                      pathCost  20                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
@@ -169,8 +168,7 @@
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
-<!--                      costStuffCount /                                                                            -->
-<!--                      costList /                                                                                  -->
+<!--                      costStuffCount 15                                                                           -->
 <!--                      passability  PassThroughOnly                                                                -->
 <!--                      pathCost  60                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
@@ -204,23 +202,15 @@
 <!--    + MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedBirm                                                -->
 <!--      + POS_ReinforcedBirm REPLACE costStuffCount                                                                 -->
 <!--                              WITH costStuffCount  5                                                              -->
-<!--      + POS_ReinforcedBirm costList ADD POS_BlocksPlascrete  10                                                   -->
+<!--      + POS_ReinforcedBirm AFTER costStuffCount                                                                   -->
+<!--                          INSERT costList POS_BlocksPlascrete  10                                                 -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
 <!--    + MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedRidge                                               -->
 <!--      + POS_ReinforcedRidge REPLACE costStuffCount                                                                -->
 <!--                               WITH costStuffCount  5                                                             -->
-<!--      + POS_ReinforcedRidge costList ADD POS_BlocksPlascrete  10                                                  -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + NO_MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedBirm                                             -->
-<!--      + POS_ReinforcedBirm REPLACE costStuffCount                                                                 -->
-<!--                              WITH costStuffCount  15                                                             -->
-<!--  ==============================================================================================================  -->
-<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
-<!--    + NO_MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedRidge                                            -->
-<!--      + POS_ReinforcedRidge REPLACE costStuffCount                                                                -->
-<!--                               WITH costStuffCount  15                                                            -->
+<!--      + POS_ReinforcedRidge AFTER costStuffCount                                                                  -->
+<!--                           INSERT costList POS_BlocksPlascrete  10                                                -->
 <!--  ==============================================================================================================  -->
 <!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
 <!--    + MATCH DoorsExpanded  (ThingDef)  -  ReinforcedBirm                                                          -->
@@ -610,8 +600,7 @@
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
-<!--                      costStuffCount /                                                                            -->
-<!--                      costList /                                                                                  -->
+<!--                      costStuffCount 15                                                                           -->
 <!--                      passability  Standable                                                                      -->
 <!--                      pathCost  20                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
@@ -649,8 +638,7 @@
                                             <WorkToBuild>200</WorkToBuild>
                                             <Flammability>0</Flammability>
                                         </statBases>
-                                        <costStuffCount />
-                                        <costList />
+                                        <costStuffCount>15</costStuffCount>
                                         <passability>Standable</passability>
                                         <pathCost>20</pathCost>
                                         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -697,8 +685,7 @@
 <!--                      statBases MaxHitPoints  1400                                                                -->
 <!--                                WorkToBuild  200                                                                  -->
 <!--                                Flammability  0                                                                   -->
-<!--                      costStuffCount /                                                                            -->
-<!--                      costList /                                                                                  -->
+<!--                      costStuffCount 15                                                                           -->
 <!--                      passability  PassThroughOnly                                                                -->
 <!--                      pathCost  60                                                                                -->
 <!--                      terrainAffordanceNeeded  Medium                                                             -->
@@ -728,8 +715,7 @@
                                             <WorkToBuild>200</WorkToBuild>
                                             <Flammability>0</Flammability>
                                         </statBases>
-                                        <costStuffCount />
-                                        <costList />
+                                        <costStuffCount>15</costStuffCount>
                                         <passability>Basic</passability>
                                         <pathCost>60</pathCost>
                                         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -839,13 +825,13 @@
 <!--  ==============================================================================================================  -->
 <!--      + POS_ReinforcedBirm REPLACE costStuffCount                                                                 -->
 <!--                              WITH costStuffCount  5                                                              -->
-<!--      + POS_ReinforcedBirm costList ADD POS_BlocksPlascrete  10                                                   -->
+<!--      + POS_ReinforcedBirm AFTER costStuffCount                                                                   -->
+<!--                          INSERT costList POS_BlocksPlascrete  10                                                 -->
 <!--  ==============================================================================================================  -->
                             <li Class="PatchOperationFindModID">
                                 <mods>
                                     <li>rimworld.positively.stone</li>
                                 </mods>
-
                                 <match Class="PatchOperationSequence">
                                     <operations>
 
@@ -856,16 +842,42 @@
                                             </value>
                                         </li>
 
-                                        <li Class="PatchOperationAdd">
-                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costList</xpath>
+                                        <li Class="PatchOperationInsert">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costStuffCount</xpath>
                                             <value>
-                                                <POS_BlocksPlascrete>10</POS_BlocksPlascrete>
+                                                <costList>
+                                                    <POS_BlocksPlascrete>10</POS_BlocksPlascrete>
+                                                </costList>
+                                            </value>
+                                        </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + MATCH PositivelyMetalAndStone  (ThingDef)  -  ReinforcedRidge                                               -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_ReinforcedRidge REPLACE costStuffCount                                                                -->
+<!--                               WITH costStuffCount  5                                                             -->
+<!--      + POS_ReinforcedRidge AFTER costStuffCount                                                                  -->
+<!--                           INSERT costList POS_BlocksPlascrete  10                                                -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationReplace">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costStuffCount</xpath>
+                                            <value>
+                                                <costStuffCount>5</costStuffCount>
+                                            </value>
+                                        </li>
+
+                                        <li Class="PatchOperationInsert">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedBirm"]/costStuffCount</xpath>
+                                            <value>
+                                                <costList>
+                                                    <POS_BlocksPlascrete>10</POS_BlocksPlascrete>
+                                                </costList>
                                             </value>
                                         </li>
 
                                     </operations>
                                 </match>
-
                             </li>
 
                         </operations>
