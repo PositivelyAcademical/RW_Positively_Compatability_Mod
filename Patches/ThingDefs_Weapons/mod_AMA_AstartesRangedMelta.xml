@@ -86,6 +86,49 @@
                         </value>
                     </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                          -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_MultiMelta REPLACE label                                                                            -->
+<!--                            WITH label  multi-melta (Mars pattern)                                                -->
+<!--    + OGI_Gun_MultiMelta REPLACE description                                                                      -->
+<!--        WITH description  Multi-meltas are a larger version of the meltagun, which have both an increased         -->
+<!--                            maximum range and are more effective as an anti-armour weapon compared to the         -->
+<!--                            standard meltagun, at the cost of portability and ease-of-use.\n\n                    -->
+<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
+<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
+<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_MultiMelta recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder               -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Melta               -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/label</xpath>
+                        <value>
+                            <label>multi-melta (Mars pattern)</label>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/description</xpath>
+                        <value>
+                            <description>Multi-meltas are a larger version of the meltagun, which have both an increased maximum range and are more effective as an anti-armour weapon compared to the standard meltagun, at the cost of portability and ease-of-use.\n\nMelta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.</description>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>POS_AMA_Astartes_Placeholder</li>
+                                <li>OG_Common_Tech_Weapons_Melta</li>
+                                <li>OG_Common_Tech_Weapons_Heavy</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+
                 </operations>
             </nomatch>
         </match>
