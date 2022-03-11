@@ -17,19 +17,6 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - volkite weapons                                                                                -->
-<!--  ==============================================================================================================  -->
-<!--       + For LAP_WEAP_VolkiteCulverin REPLACE label                                                               -->
-<!--                                         WITH label volkite culverin (Sol Militaris pattern)                      -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCulverin"]/label</xpath>
-                    <value>
-                        <label>volkite culverin (Sol Militaris pattern)</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - suis generis weapons                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For LAP_WEAP_RocketLaucher REPLACE label                                                                 -->

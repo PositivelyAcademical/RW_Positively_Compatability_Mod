@@ -86,6 +86,34 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesVolkiteCulverin                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_VolkiteCulverin REPLACE label                                                                      -->
+<!--                                  WITH label  volkite culverin (Sol Militaris pattern)                            -->
+<!--    + LAP_WEAP_VolkiteCulverin recipeMaker REPLACE researchPrerequisites                                          -->
+<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
+<!--                                                                         li  OG_Mechanicus_Tech_Weapons_Volkite   -->
+<!--                                                                         li  OG_Common_Tech_Weapons_Heavy         -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCulverin"]/label</xpath>
+                    <value>
+                        <label>volkite culverin (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_VolkiteCulverin"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Mechanicus_Tech_Weapons_Volkite</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
