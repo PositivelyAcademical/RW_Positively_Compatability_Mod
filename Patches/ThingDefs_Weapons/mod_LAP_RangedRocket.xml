@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesMissileLauncher                                                             -->
+<!--    + LAP_WEAP_RocketLaucher REPLACE label                                                                        -->
+<!--                                WITH label  missile launcher (Sol Militaris pattern)                              -->
+<!--    + LAP_WEAP_RocketLaucher recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Basic                         -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesMissileLauncher                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_RocketLaucher REPLACE label                                                                        -->
+<!--                                WITH label  missile launcher (Sol Militaris pattern)                              -->
+<!--    + LAP_WEAP_RocketLaucher recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Basic                         -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RocketLaucher"]/label</xpath>
+                    <value>
+                        <label>missile launcher (Sol Militaris pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_RocketLaucher"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
