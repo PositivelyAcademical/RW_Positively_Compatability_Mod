@@ -4,19 +4,22 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (preamble)                                                                                       -->
-<!--       + For Weapon_GrenadeFrag REPLACE researchPrerequisite with researchPrerequisites Machining                 -->
+<!--  + ALL_CASES  (ThingDef)  -  FragGrenades                                                                        -->
+<!--    + Weapon_GrenadeFrag recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  Machining                                  -->
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
-<!--       + For Weapon_GrenadeFrag researchPrerequisites ADD VWE_Gunpowder                                           -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  FragGrenades                                                     -->
+<!--    + Weapon_GrenadeFrag recipeMaker researchPrerequisites ADD li  VWE_Gunpowder                                  -->
 <!--  ==============================================================================================================  -->
+
     <Operation Class="PatchOperationSequence">
         <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES (preamble)                                                                                       -->
+<!--  + ALL_CASES  (ThingDef)  -  FragGrenades                                                                        -->
 <!--  ==============================================================================================================  -->
-<!--       + For Weapon_GrenadeFrag REPLACE researchPrerequisite with researchPrerequisites Machining                 -->
+<!--    + Weapon_GrenadeFrag recipeMaker REPLACE researchPrerequisite                                                 -->
+<!--                                        WITH researchPrerequisites li  Machining                                  -->
 <!--  ==============================================================================================================  -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Weapon_GrenadeFrag"]/recipeMaker/researchPrerequisite</xpath>
@@ -28,13 +31,13 @@
             </li>
 
 <!--  ==============================================================================================================  -->
-<!--     + Requires MATCH Vanilla Weapons Expanded                                                                    -->
+<!--  + MATCH VanillaWeaponsExpanded  (ThingDef)  -  FragGrenades                                                     -->
 <!--  ==============================================================================================================  -->
-<!--       + For Weapon_GrenadeFrag researchPrerequisites ADD VWE_Gunpowder                                           -->
+<!--    + Weapon_GrenadeFrag recipeMaker researchPrerequisites ADD li  VWE_Gunpowder                                  -->
 <!--  ==============================================================================================================  -->
-            <li Class="PatchOperationFindMod">
+            <li Class="PatchOperationFindModID">
                 <mods>
-                    <li>Vanilla Weapons Expanded</li>
+                    <li>VanillaExpanded.VWE</li>
                 </mods>
                 <match Class="PatchOperationSequence">
                     <operations>
@@ -49,6 +52,8 @@
                     </operations>
                 </match>
             </li>
+
         </operations>
     </Operation>
+
 </Patch>
