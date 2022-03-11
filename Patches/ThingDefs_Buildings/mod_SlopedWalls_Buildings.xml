@@ -903,6 +903,21 @@
                                             </value>
                                         </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + MATCH VanillaFurnitureExpandedSpacerModule                                                                    -->
+<!--    + MATCH DoorsExpanded  (ThingDef)  -  ReinforcedRidge                                                         -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_ReinforcedRidge researchPrerequisites ADD li  ProjectHeron_BlastDoors                                 -->
+<!--                                                      li  Fabrication                                             -->
+<!--  ==============================================================================================================  -->
+                                        <li Class="PatchOperationAdd">
+                                            <xpath>/Defs/ThingDef[defName="POS_ReinforcedRidge"]/researchPrerequisites</xpath>
+                                            <value>
+                                                <li>ProjectHeron_BlastDoors</li>
+                                                <li>Fabrication</li>
+                                            </value>
+                                        </li>
+
                                     </operations>
                                 </match>
 
