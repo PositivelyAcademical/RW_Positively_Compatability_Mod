@@ -121,6 +121,34 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesRotorCannon                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + LAP_WEAP_AssaultCannon REPLACE label                                                                        -->
+<!--                                WITH label  rotor cannon                                                          -->
+<!--    + LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Basic                         -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--                                                                       li  MultibarrelWeapons                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/label</xpath>
+                    <value>
+                        <label>rotor cannon</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="LAP_WEAP_AssaultCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>LAP_Tech_Basic</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>MultibarrelWeapons</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
