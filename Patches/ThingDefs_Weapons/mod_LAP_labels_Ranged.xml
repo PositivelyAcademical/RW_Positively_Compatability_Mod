@@ -14,12 +14,6 @@
 <!--       + For LAP_WEAP_HeavyBolter REPLACE label                                                                   -->
 <!--                                     WITH label heavy bolter (Sol Militaris pattern)                              -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - melta weapons                                                                                  -->
-<!--       + For LAP_WEAP_MeltaGun REPLACE label                                                                      -->
-<!--                                  WITH label meltagun (Ryza pattern)                                              -->
-<!--       + For LAP_WEAP_MultiMelta REPLACE label                                                                    -->
-<!--                                    WITH label multi-melta (Sol Militaris pattern)                                -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - plasma weapons                                                                                 -->
 <!--       + For LAP_WEAP_PlasmaPistol REPLACE label                                                                  -->
 <!--                                      WITH label plasma pistol (Ryza pattern)                                     -->

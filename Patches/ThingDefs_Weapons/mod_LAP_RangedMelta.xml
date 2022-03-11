@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesMeltagun                                                                    -->
+<!--    + LAP_WEAP_MeltaGun REPLACE label                                                                             -->
+<!--                           WITH label  meltagun (Ryza pattern)                                                    -->
+<!--    + LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                                 -->
+<!--                                       WITH researchPrerequisites li  LAP_Tech_Basic                              -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Melta                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesMultiMelta                                                                  -->
+<!--    + LAP_WEAP_MultiMelta REPLACE label                                                                           -->
+<!--                             WITH label  multi-melta (Sol Militaris pattern)                                      -->
+<!--    + LAP_WEAP_MultiMelta recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Melta              -->
+<!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

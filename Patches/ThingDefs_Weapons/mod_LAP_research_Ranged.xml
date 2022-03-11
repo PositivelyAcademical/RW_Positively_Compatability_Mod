@@ -20,15 +20,6 @@
 <!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
 <!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - melta weapons                                                                                  -->
-<!--       + For LAP_WEAP_MeltaGun recipeMaker REPLACE researchPrerequisites                                          -->
-<!--                                              WITH researchPrerequisites li  LAP_Tech_Basic                       -->
-<!--                                                                         li  OG_Common_Tech_Weapons_Melta         -->
-<!--       + For LAP_WEAP_MultiMelta recipeMaker REPLACE researchPrerequisites                                        -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
-<!--                                                                           li  OG_Common_Tech_Weapons_Melta       -->
-<!--                                                                           li  OG_Common_Tech_Weapons_Heavy       -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - plasma weapons                                                                                 -->
 <!--       + For LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                      -->
 <!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
