@@ -4,7 +4,7 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                               -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                            -->
 <!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
 <!--                          WITH label  meltagun (Mars pattern)                                                     -->
 <!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
@@ -18,7 +18,7 @@
 <!--                                      WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                 -->
 <!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                             -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                          -->
 <!--    + OGI_Gun_MultiMelta REPLACE label                                                                            -->
 <!--                            WITH label  multi-melta (Mars pattern)                                                -->
 <!--    + OGI_Gun_MultiMelta REPLACE description                                                                      -->
@@ -43,7 +43,7 @@
             <mods>
                 <li>Archaon.Primarch</li>
             </mods>
-            <match Class="PatchOperationSequence">
+            <nomatch Class="PatchOperationSequence">
                 <operations>
 
 <!--  ==============================================================================================================  -->
@@ -87,7 +87,7 @@
                     </li>
 
                 </operations>
-            </match>
+            </nomatch>
         </match>
     </Operation>
 
