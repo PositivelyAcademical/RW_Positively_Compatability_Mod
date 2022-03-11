@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesBoltPistol                                                                  -->
+<!--    + LAP_WEAP_BoltPistol REPLACE label                                                                           -->
+<!--                             WITH label  bolt pistol (Phobos pattern)                                             -->
+<!--    + LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                               -->
+<!--                                         WITH researchPrerequisites li  LAP_Tech_Basic                            -->
+<!--                                                                    li  OG_Imperial_Tech_Weapons_Bolt             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesBoltgun                                                                     -->
+<!--    + LAP_WEAP_BoltGun REPLACE label                                                                              -->
+<!--                          WITH label  boltgun (Phobos pattern)                                                    -->
+<!--    + @LAP_Bolter_Base recipeMaker REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites li  LAP_Tech_Basic                               -->
+<!--                                                                 li  OG_Imperial_Tech_Weapons_Bolt                -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesCombiBolter                                                                 -->
+<!--    + LAP_WEAP_CombiBolter REPLACE label                                                                          -->
+<!--                              WITH label  combi-bolter (Phobos pattern)                                           -->
+<!--    + LAP_WEAP_CombiBolter recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Imperial_Tech_Weapons_Bolt            -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Special           -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesHeavyBolter                                                                 -->
+<!--    + LAP_WEAP_HeavyBolter REPLACE label                                                                          -->
+<!--                              WITH label  heavy bolter (Sol Militaris pattern)                                    -->
+<!--    + LAP_WEAP_HeavyBolter recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Imperial_Tech_Weapons_Bolt            -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Archaon.Primarch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

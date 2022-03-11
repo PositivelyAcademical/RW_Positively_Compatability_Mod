@@ -4,22 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - bolt weapons                                                                                   -->
-<!--       + For LAP_WEAP_BoltPistol recipeMaker REPLACE researchPrerequisites                                        -->
-<!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->
-<!--                                                                           li  OG_Imperial_Tech_Weapons_Bolt      -->
-<!--       + For @LAP_Bolter_Base recipeMaker REPLACE researchPrerequisites                                           -->
-<!--                                             WITH researchPrerequisites li  LAP_Tech_Basic                        -->
-<!--                                                                        li  OG_Imperial_Tech_Weapons_Bolt         -->
-<!--       + For LAP_WEAP_CombiBolter recipeMaker REPLACE researchPrerequisites                                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
-<!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
-<!--                                                                            li  OG_Common_Tech_Weapons_Special    -->
-<!--       + For LAP_WEAP_HeavyBolter recipeMaker REPLACE researchPrerequisites                                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
-<!--                                                                            li  OG_Imperial_Tech_Weapons_Bolt     -->
-<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - plasma weapons                                                                                 -->
 <!--       + For LAP_WEAP_PlasmaPistol recipeMaker REPLACE researchPrerequisites                                      -->
 <!--                                                  WITH researchPrerequisites li  LAP_Tech_Basic                   -->
