@@ -4,16 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - slug and auto weapons                                                                          -->
-<!--       + For LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                       -->
-<!--                                                 WITH researchPrerequisites li  LAP_Tech_Basic                    -->
-<!--                                                                            li  OG_Common_Tech_Weapons_Heavy      -->
-<!--                                                                            li  HeavyTurrets                      -->
-<!--       + For LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                     -->
-<!--                                                   WITH researchPrerequisites li  LAP_Tech_Basic                  -->
-<!--                                                                              li  OG_Common_Tech_Weapons_Heavy    -->
-<!--                                                                              li  MultibarrelWeapons              -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - flamer weapons                                                                                 -->
 <!--       + For LAP_WEAP_HandFlamer recipeMaker REPLACE researchPrerequisites                                        -->
 <!--                                                WITH researchPrerequisites li  LAP_Tech_Basic                     -->

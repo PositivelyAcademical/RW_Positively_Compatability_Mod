@@ -4,12 +4,6 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--     + ALL_CASES - slug and auto weapons                                                                          -->
-<!--       + For LAP_WEAP_RAutocannon REPLACE label                                                                   -->
-<!--                                     WITH label Reaper autocannon                                                 -->
-<!--       + For LAP_WEAP_AssaultCannon REPLACE label                                                                 -->
-<!--                                       WITH label rotor cannon                                                    -->
-<!--  ==============================================================================================================  -->
 <!--     + ALL_CASES - las weapons                                                                                    -->
 <!--       + For LAP_WEAP_LasCannon REPLACE label                                                                     -->
 <!--                                   WITH label lascannon (Sol Militaris pattern)                                   -->

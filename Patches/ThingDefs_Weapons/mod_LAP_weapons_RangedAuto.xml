@@ -23,6 +23,22 @@
 <!--                                                                    li  OG_Common_Tech_Weapons_Heavy              -->
 <!--                                                                    li  HeavyTurrets                              -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesReaperAutocannon                                                            -->
+<!--    + LAP_WEAP_RAutocannon REPLACE label                                                                          -->
+<!--                              WITH label  Reaper autocannon                                                       -->
+<!--    + LAP_WEAP_RAutocannon recipeMaker REPLACE researchPrerequisites                                              -->
+<!--                                          WITH researchPrerequisites li  LAP_Tech_Basic                           -->
+<!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
+<!--                                                                     li  HeavyTurrets                             -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  LegionesRotorCannon                                                                 -->
+<!--    + LAP_WEAP_AssaultCannon REPLACE label                                                                        -->
+<!--                                WITH label  rotor cannon                                                          -->
+<!--    + LAP_WEAP_AssaultCannon recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                            WITH researchPrerequisites li  LAP_Tech_Basic                         -->
+<!--                                                                       li  OG_Common_Tech_Weapons_Heavy           -->
+<!--                                                                       li  MultibarrelWeapons                     -->
+<!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindModID">
         <mods>
