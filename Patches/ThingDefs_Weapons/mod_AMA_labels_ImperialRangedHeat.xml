@@ -11,12 +11,6 @@
 <!--                               WITH label flamer (Sororitas pattern)                                              -->
 <!--       + For OGI_Gun_FlamerHeavy REPLACE label                                                                    -->
 <!--                                    WITH label heavy flamer (Sororitas pattern)                                   -->
-<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE label                                                      -->
-<!--                                                  WITH label inferno pistol                                       -->
-<!--       + For OGI_Gun_MeltaGun REPLACE label                                                                       -->
-<!--                                 WITH label meltagun (Sororitas pattern)                                          -->
-<!--       + For OGI_Gun_MultiMelta REPLACE label                                                                     -->
-<!--                                   WITH label muli-melta (Sororitas pattern)                                      -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -61,45 +55,6 @@
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_FlamerHeavy"]/label</xpath>
                     <value>
                         <label>heavy flamer (Sororitas pattern)</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE label                                                      -->
-<!--                                                  WITH label inferno pistol                                       -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_InfernoPistol_Inquisition"]/label</xpath>
-                    <value>
-                        <label>inferno pistol</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_MeltaGun REPLACE label                                                                       -->
-<!--                                 WITH label meltagun (Sororitas pattern)                                          -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
-                    <value>
-                        <label>meltagun (Sororitas pattern)</label>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_MultiMelta REPLACE label                                                                     -->
-<!--                                   WITH label muli-melta (Sororitas pattern)                                      -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/label</xpath>
-                    <value>
-                        <label>multi-melta (Sororitas pattern)</label>
                     </value>
                 </li>
 
