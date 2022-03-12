@@ -54,7 +54,7 @@
 <!--                            militias.                                                                             -->
 <!--                                                                                                                  -->
 <!--    + OGI_Gun_AutoGun recipeMaker ADD researchPrerequisites li  OG_Militarum_Tech_Base_T1                         -->
-<!--                                                            li  PrecisionRifling                                  -->
+<!--                                                            li  GasOperation                                      -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MilitarumOgrynRipperGun                                                             -->
 <!--    + OGI_Gun_OgrynRipperGun REPLACE label                                                                        -->
@@ -72,7 +72,6 @@
 <!--    + OGI_Gun_OgrynRipperGun REPLACE researchPrerequisites                                                        -->
 <!--                                WITH researchPrerequisites li  OG_Militarum_Tech_Base_T3                          -->
 <!--                                                           li  OG_Common_Tech_Weapons_Special                     -->
-<!--                                                           li  GasOperation                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MilitarumHeavyStubber                                                               -->
 <!--    + OGI_Gun_HeavyStubber REPLACE label                                                                          -->
@@ -92,7 +91,6 @@
 <!--    + OGI_Gun_HeavyStubber recipeMaker REPLACE researchPrerequisites                                              -->
 <!--                                          WITH researchPrerequisites li  OG_Militarum_Tech_Base_T2                -->
 <!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
-<!--                                                                     li  PrecisionRifling                         -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MilitarumAutocannon                                                                 -->
 <!--    + OGI_Gun_AutoCannon REPLACE label                                                                            -->
@@ -198,6 +196,50 @@
 
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumAutogun                                                                    -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_AutoGun REPLACE label                                                                               -->
+<!--                         WITH label  autogun (Agripinaa pattern)                                                  -->
+<!--    + OGI_Gun_AutoGun REPLACE description                                                                         -->
+<!--        WITH description  The autogun is a fully-automatic projectile weapon which fires solid-slug ballistic     -->
+<!--                            rounds at the intended target in rapid succession. Cheap, rugged and reliable, it     -->
+<!--                            can be found throughout the Imperium, where it is appreciated for its decent damage   -->
+<!--                            and accuracy. Its main drawbacks are its weight and the need to carry a large amount  -->
+<!--                            of cumbersome ammunition for prolonged operations.\n\n                                -->
+<!--                          The Agripinaa pattern autogun was originally issued to the Imperial Army, and later     -->
+<!--                            the Astra Militarum - who subsequently phased auto weapons in favour of lasguns in    -->
+<!--                            the late 32nd millenium. Now these weapons are primarily used by the Adeptus          -->
+<!--                            Arbites, local Magistratum enforces, and some backwater Planetary Defence Force       -->
+<!--                            militias.                                                                             -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_AutoGun recipeMaker ADD researchPrerequisites li  OG_Militarum_Tech_Base_T1                         -->
+<!--                                                            li  GasOperation                                      -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/label</xpath>
+                    <value>
+                        <label>autogun (Agripinaa pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/description</xpath>
+                    <value>
+                        <description>The autogun is a fully-automatic projectile weapon which fires solid-slug ballistic rounds at the intended target in rapid succession. Cheap, rugged and reliable, it can be found throughout the Imperium, where it is appreciated for its decent damage and accuracy. Its main drawbacks are its weight and the need to carry a large amount of cumbersome ammunition for prolonged operations.\n\nThe Agripinaa pattern autogun was originally issued to the Imperial Army, and later the Astra Militarum - who subsequently phased auto weapons in favour of lasguns in the late 32nd millenium. Now these weapons are primarily used by the Adeptus Arbites, local Magistratum enforces, and some backwater Planetary Defence Force militias.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T1</li>

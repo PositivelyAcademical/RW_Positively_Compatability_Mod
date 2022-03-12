@@ -16,24 +16,6 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
-<!--     + ALL CASES                                                                                                  -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_AutoPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                   -->
-<!--                                                                      GasOperation                                -->
-<!--       + For OGI_Gun_AutoGun recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                      -->
-<!--                                                                   PrecisionRifling                               -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T1</li>
-                            <li>PrecisionRifling</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
 <!--     + ALL CASES (cont)                                                                                           -->
 <!--  ==============================================================================================================  -->
 <!--       + For OGI_Gun_HeavyStubber REPLACE researchPrerequisites                                                   -->
