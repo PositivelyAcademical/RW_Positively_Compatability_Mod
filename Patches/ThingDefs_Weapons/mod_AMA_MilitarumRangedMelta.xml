@@ -4,7 +4,12 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  MilitarumMeltagun                                              -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumMeltagun                                                                   -->
+<!--    + OGI_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
+<!--                                      WITH researchPrerequisites li  OG_Militarum_Tech_Base_T2                    -->
+<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  MilitarumMeltagun                                           -->
 <!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
 <!--                          WITH label  meltagun (Hades pattern)                                                    -->
 <!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
@@ -17,107 +22,122 @@
 <!--                            Regiments of the Astra Militarum (the Imperial Guard) and the Tempestus Scions        -->
 <!--                            (Storm Troopers) of the Militarum Tempestus.                                          -->
 <!--                                                                                                                  -->
-<!--    + OGI_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites li  OG_Militarum_Tech_Base_T2                    -->
-<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  MilitarumMeltagun                                              -->
+<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
+<!--                          WITH label  meltagun (Mars-Tellurian pattern)                                           -->
+<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
+<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
+<!--                            Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very    -->
+<!--                            short range. When fired, the super-heating of the air produces a distinctive and      -->
+<!--                            sinister hiss. Solid rock is reduced to molten slag, and living creatures are         -->
+<!--                            vaporised in an instant.\n\n                                                          -->
+<!--                          The Mars-Tllurian pattern meltagun was the standard pattern created for the Imperial    -->
+<!--                            Army at the start of the Great Crusade.                                               -->
+<!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
 
     <Operation Class="PatchOperationFindModID">
         <mods>
             <li>Ogliss.AdMech.Armoury</li>
         </mods>
-        <match Class="PatchOperationFindModID">
-            <mods>
-                <li>Archaon.Primarch</li>
-            </mods>
-            <nomatch Class="PatchOperationSequence">
-                <operations>
+        <match Class="PatchOperationSequence">
+            <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                               -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumMeltagun                                                                   -->
 <!--  ==============================================================================================================  -->
-<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
-<!--                          WITH label  meltagun (Mars pattern)                                                     -->
-<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
-<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
-<!--                            Imperial origin.\n\n                                                                  -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
-<!--                                                                                                                  -->
 <!--    + OGI_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                 -->
+<!--                                      WITH researchPrerequisites li  OG_Militarum_Tech_Base_T2                    -->
 <!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
 <!--  ==============================================================================================================  -->
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
-                        <value>
-                            <label>meltagun (Mars pattern)</label>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/description</xpath>
-                        <value>
-                            <description>Meltaguns are the basic version of melta weapons, used by a wide range of forces of Imperial origin.\n\nMelta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.</description>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>POS_AMA_Astartes_Placeholder</li>
-                                <li>OG_Common_Tech_Weapons_Melta</li>
-                            </researchPrerequisites>
-                        </value>
-                    </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T2</li>
+                            <li>OG_Common_Tech_Weapons_Melta</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
-<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                          -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  MilitarumMeltagun                                           -->
 <!--  ==============================================================================================================  -->
-<!--    + OGI_Gun_MultiMelta REPLACE label                                                                            -->
-<!--                            WITH label  multi-melta (Mars pattern)                                                -->
-<!--    + OGI_Gun_MultiMelta REPLACE description                                                                      -->
-<!--        WITH description  Multi-meltas are a larger version of the meltagun, which have both an increased         -->
-<!--                            maximum range and are more effective as an anti-armour weapon compared to the         -->
-<!--                            standard meltagun, at the cost of portability and ease-of-use.\n\n                    -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
-<!--                                                                                                                  -->
-<!--    + OGI_Gun_MultiMelta recipeMaker REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Melta               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
+<!--                          WITH label  meltagun (Hades pattern)                                                    -->
+<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
+<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
+<!--                            Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very    -->
+<!--                            short range. When fired, the super-heating of the air produces a distinctive and      -->
+<!--                            sinister hiss. Solid rock is reduced to molten slag, and living creatures are         -->
+<!--                            vaporised in an instant.\n\n                                                          -->
+<!--                          The Hades pattern meltagun is predominently used by Weapons Specialists within the      -->
+<!--                            Regiments of the Astra Militarum (the Imperial Guard) and the Tempestus Scions        -->
+<!--                            (Storm Troopers) of the Militarum Tempestus.                                          -->
 <!--  ==============================================================================================================  -->
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/label</xpath>
-                        <value>
-                            <label>multi-melta (Mars pattern)</label>
-                        </value>
-                    </li>
+                <li Class="PatchOperationFindModID">
+                    <mods>
+                        <li>Archaon.Primarch</li>
+                    </mods>
 
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/description</xpath>
-                        <value>
-                            <description>Multi-meltas are a larger version of the meltagun, which have both an increased maximum range and are more effective as an anti-armour weapon compared to the standard meltagun, at the cost of portability and ease-of-use.\n\nMelta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.</description>
-                        </value>
-                    </li>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
 
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>POS_AMA_Astartes_Placeholder</li>
-                                <li>OG_Common_Tech_Weapons_Melta</li>
-                                <li>OG_Common_Tech_Weapons_Heavy</li>
-                            </researchPrerequisites>
-                        </value>
-                    </li>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
+                                <value>
+                                    <label>meltagun (Hades pattern)</label>
+                                </value>
+                            </li>
 
-                </operations>
-            </nomatch>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/description</xpath>
+                                <value>
+                                    <description>Meltaguns are the basic version of melta weapons, used by a wide range of forces of Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.\n\nThe Hades pattern meltagun is predominently used by Weapons Specialists within the Regiments of the Astra Militarum (the Imperial Guard) and the Tempestus Scions (Storm Troopers) of the Militarum Tempestus.</description>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  MilitarumMeltagun                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
+<!--                          WITH label  meltagun (Mars-Tellurian pattern)                                           -->
+<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
+<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
+<!--                            Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very    -->
+<!--                            short range. When fired, the super-heating of the air produces a distinctive and      -->
+<!--                            sinister hiss. Solid rock is reduced to molten slag, and living creatures are         -->
+<!--                            vaporised in an instant.\n\n                                                          -->
+<!--                          The Mars-Tllurian pattern meltagun was the standard pattern created for the Imperial    -->
+<!--                            Army at the start of the Great Crusade.                                               -->
+<!--  ==============================================================================================================  -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
+                                <value>
+                                    <label>meltagun (Mars-Tellurian pattern)</label>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/description</xpath>
+                                <value>
+                                    <description>Meltaguns are the basic version of melta weapons, used by a wide range of forces of Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.\n\nThe Mars-Tllurian pattern meltagun was the standard pattern created for the Imperial Army at the start of the Great Crusade.</description>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
+                </li>
+
+            </operations>
         </match>
     </Operation>
 
