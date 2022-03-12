@@ -15,16 +15,6 @@
 <!--                                    WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                          -->
 <!--                                                               OG_Common_Tech_Weapons_Flame                       -->
 <!--                                                               OG_Common_Tech_Weapons_Heavy                       -->
-<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE researchPrerequisites                                      -->
-<!--                                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T2            -->
-<!--                                                                             OG_Common_Tech_Weapons_Melta         -->
-<!--       + For OGI_Gun_MeltaGun REPLACE researchPrerequisites                                                       -->
-<!--                                 WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                             -->
-<!--                                                            OG_Common_Tech_Weapons_Melta                          -->
-<!--       + For OGI_Gun_MultiMelta REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                           -->
-<!--                                                              OG_Common_Tech_Weapons_Melta                        -->
-<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -81,59 +71,6 @@
                         <researchPrerequisites>
                             <li>OG_Sororitas_Tech_Base_T1</li>
                             <li>OG_Common_Tech_Weapons_Flame</li>
-                            <li>OG_Common_Tech_Weapons_Heavy</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_InfernoPistol_Inquisition REPLACE researchPrerequisites                                      -->
-<!--                                                  WITH researchPrerequisites OG_Sororitas_Tech_Base_T2            -->
-<!--                                                                             OG_Common_Tech_Weapons_Melta         -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_InfernoPistol_Inquisition"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Sororitas_Tech_Base_T2</li>
-                            <li>OG_Common_Tech_Weapons_Melta</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_MeltaGun REPLACE researchPrerequisites                                                       -->
-<!--                                 WITH researchPrerequisites OG_Sororitas_Tech_Base_T1                             -->
-<!--                                                            OG_Common_Tech_Weapons_Melta                          -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Sororitas_Tech_Base_T1</li>
-                            <li>OG_Common_Tech_Weapons_Melta</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_MultiMelta REPLACE researchPrerequisites                                                     -->
-<!--                                   WITH researchPrerequisites OG_Sororitas_Tech_Base_T2                           -->
-<!--                                                              OG_Common_Tech_Weapons_Melta                        -->
-<!--                                                              OG_Common_Tech_Weapons_Heavy                        -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Sororitas_Tech_Base_T2</li>
-                            <li>OG_Common_Tech_Weapons_Melta</li>
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
                     </value>
