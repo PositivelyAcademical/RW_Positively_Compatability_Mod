@@ -80,16 +80,6 @@
 <!--                                                                    GasOperation                                  -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/recipeMaker</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T1</li>
-                            <li>GasOperation</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>

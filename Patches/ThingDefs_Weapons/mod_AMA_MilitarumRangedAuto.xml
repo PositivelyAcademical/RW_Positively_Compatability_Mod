@@ -164,6 +164,48 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumCombatShotgun                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_ArbitesShotgun REPLACE label                                                                        -->
+<!--                                WITH label  combat shotgun (Agripinaa pattern)                                    -->
+<!--    + OGI_Gun_ArbitesShotgun REPLACE description                                                                  -->
+<!--        WITH description  The combat shotgun is a weapon of ancient Imperial design. It is an automatic           -->
+<!--                            projectile weapon with a low rate of fire, firing solid-slug ballistic rounds         -->
+<!--                            similar to a heavy stubber. Cheap, rugged and reliable, it can be found throughout    -->
+<!--                            the Imperium.\n\n                                                                     -->
+<!--                          The Agripinaa pattern combat shotgun is a standard pattern which has been designed to   -->
+<!--                            be produced locally. Users include the old Imperial Army and its replacement the      -->
+<!--                            Astra Militarum, Planetary Defence Force militias, the Adeptus Arbites, local         -->
+<!--                            Magistratum enforces, and many underhive gangers.                                     -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_ArbitesShotgun recipeMaker ADD researchPrerequisites li  OG_Militarum_Tech_Base_T1                  -->
+<!--                                                                   li  GasOperation                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/label</xpath>
+                    <value>
+                        <label>combat shotgun (Agripinaa pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/description</xpath>
+                    <value>
+                        <description>The combat shotgun is a weapon of ancient Imperial design. It is an automatic projectile weapon with a low rate of fire, firing solid-slug ballistic rounds similar to a heavy stubber. Cheap, rugged and reliable, it can be found throughout the Imperium.\n\nThe Agripinaa pattern combat shotgun is a standard pattern which has been designed to be produced locally. Users include the old Imperial Army and its replacement the Astra Militarum, Planetary Defence Force militias, the Adeptus Arbites, local Magistratum enforces, and many underhive gangers.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_ArbitesShotgun"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T1</li>
+                            <li>GasOperation</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
