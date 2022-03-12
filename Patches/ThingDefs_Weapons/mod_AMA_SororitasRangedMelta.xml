@@ -577,7 +577,7 @@
                             <operations>
 
                                 <li Class="PatchOperationAddModExtension">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMeltagun"]</xapth>
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMeltagun"]</xpath>
                                     <value>
                             			<li Class="DualWield.DefModextension_DefaultSettings">
                             				<dualWield>false</dualWield>
@@ -600,7 +600,7 @@
 <!--                                                     extraRotation  0                                             -->
 <!--  ==============================================================================================================  -->
                                 <li Class="PatchOperationAddModExtension">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMultiMelta"]</xapth>
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMultiMelta"]</xpath>
                                     <value>
                             			<li Class="DualWield.DefModextension_DefaultSettings">
                             				<dualWield>false</dualWield>
