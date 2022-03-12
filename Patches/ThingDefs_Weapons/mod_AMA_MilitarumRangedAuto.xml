@@ -268,14 +268,14 @@
 <!--                                                           li  OG_Common_Tech_Weapons_Special                     -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_OgrynRipperGun"]/label</xpath>
                     <value>
                         <label>Ogryn ripper gun</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/description</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_OgrynRipperGun"]/description</xpath>
                     <value>
                         <description>The ripper gun is a heavy, automatic combat shotgun built to the massive scale of Ogryns and other genestock ogres of the Astra Militarum and the old Imperial Army. Compared to other Imperial weapons, these weapons are fairly simple, somewhat akin to the Ork Shoota. A ripper gun is a short range weapon that fires several shells at once to compensate for the poor aim of the average Ogryn. Ripper guns usually can fire either a single heavy shell or a hail of shot in each burst, and possess a hard-wired burst limiter to prevent the Ogryn from emptying his weapon the first time he pulls the trigger.</description>
                     </value>
@@ -313,14 +313,14 @@
 <!--                                                                     li  OG_Common_Tech_Weapons_Heavy             -->
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyStubber"]/label</xpath>
                     <value>
                         <label>heavy stubber (Agripinaa pattern)</label>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/description</xpath>
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_HeavyStubber"]/description</xpath>
                     <value>
                         <description>Heavy stubber is the name given to a range of heavy-barrelled auto weapons used for sustained fire. Like autoguns they are easily manufactured and maintained, and are commonly used by forces across the Imperium. A mainstay support weapon on backwater planets that cannot maintain laser weapons in working order due to technological or resource limitations, and also popular with outlaws and hive gangers, the heavy stubber is ideal for fighting off large numbers of enemies or even lightly armoured vehicles. Its high rate of fire makes up for its modest strength and armour-piercing abilities.\n\nThe Agripinaa pattern heavy stubber was originally issued to the Imperial Army, and continues to be issued to the Astra Militarum and Planetary Defence Force militias.</description>
                     </value>
