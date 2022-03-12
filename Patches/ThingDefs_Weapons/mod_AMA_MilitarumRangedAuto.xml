@@ -336,6 +336,51 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumAutocannon                                                                 -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_AutoCannon REPLACE label                                                                            -->
+<!--                            WITH label  autocannon (Agripinaa pattern)                                            -->
+<!--    + OGI_Gun_AutoCannon REPLACE description                                                                      -->
+<!--        WITH description  The autocannon is an automatic, self-loading heavy ballistic weapon that fires a high   -->
+<!--                            velocity hail of solid shells, and is used by the military forces of the Imperium.    -->
+<!--                            It is an ancient weapon, but has nevertheless remained a widely-used piece of         -->
+<!--                            wargear. These rapid-firing weapons can lay down a burst of fire to cover advancing   -->
+<!--                            troops, or strafe enemy-held positions. Autocannons are considered ideally suited     -->
+<!--                            for attacking enemy vehicles and fortifications from long range.\n\n                  -->
+<!--                          The Agripinaa pattern autocannon was originally issued to the Imperial Army, and        -->
+<!--                            continues to be issued to heavy weapons teams within the Astra Militarum.             -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_AutoCannon recipeMaker REPLACE researchPrerequisites                                                -->
+<!--                                        WITH researchPrerequisites li  OG_Militarum_Tech_Base_T3                  -->
+<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--                                                                   li  HeavyTurrets                               -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoCannon"]/label</xpath>
+                    <value>
+                        <label>autocannon (Agripinaa pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoCannon"]/description</xpath>
+                    <value>
+                        <description>The autocannon is an automatic, self-loading heavy ballistic weapon that fires a high velocity hail of solid shells, and is used by the military forces of the Imperium. It is an ancient weapon, but has nevertheless remained a widely-used piece of wargear. These rapid-firing weapons can lay down a burst of fire to cover advancing troops, or strafe enemy-held positions. Autocannons are considered ideally suited for attacking enemy vehicles and fortifications from long range.\n\nThe Agripinaa pattern autocannon was originally issued to the Imperial Army, and continues to be issued to heavy weapons teams within the Astra Militarum.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoCannon"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
+                            <li>HeavyTurrets</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
