@@ -97,6 +97,7 @@
 <!--                                  instant.\n\n                                                                    -->
 <!--                                The Jove pattern multi-melta is used by heavy weapons specialists of the Adepta   -->
 <!--                                  Sororitas.                                                                      -->
+<!--                                                                                                                  -->
 <!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti                    -->
 <!--                               graphicClass  Graphic_Single                                                       -->
 <!--                               shaderType  CutoutComplex                                                          -->
@@ -396,6 +397,7 @@
 <!--                                  instant.\n\n                                                                    -->
 <!--                                The Jove pattern multi-melta is used by heavy weapons specialists of the Adepta   -->
 <!--                                  Sororitas.                                                                      -->
+<!--                                                                                                                  -->
 <!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti                    -->
 <!--                               graphicClass  Graphic_Single                                                       -->
 <!--                               shaderType  CutoutComplex                                                          -->
@@ -598,7 +600,7 @@
 <!--                                                     extraRotation  0                                             -->
 <!--  ==============================================================================================================  -->
                                 <li Class="PatchOperationAddModExtension">
-                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMeltagun"]</xapth>
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasMultiMelta"]</xapth>
                                     <value>
                             			<li Class="DualWield.DefModextension_DefaultSettings">
                             				<dualWield>false</dualWield>
