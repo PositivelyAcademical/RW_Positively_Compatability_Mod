@@ -21,9 +21,6 @@
 <!--                                       WITH researchPrerequisites OG_Militarum_Tech_Base_T3                       -->
 <!--                                                                  OG_Common_Tech_Weapons_Special                  -->
 <!--                                                                  PrecisionRifling                                -->
-<!--       + For OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T3                 -->
-<!--                                                                        OG_Common_Tech_Weapons_Special            -->
-<!--                                                                        PrecisionRifling                          -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -136,24 +133,6 @@
 <!--  ==============================================================================================================  -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_OgrynRipperGun"]/recipeMaker/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>OG_Militarum_Tech_Base_T3</li>
-                            <li>OG_Common_Tech_Weapons_Special</li>
-                            <li>PrecisionRifling</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-
-<!--  ==============================================================================================================  -->
-<!--     + ALL CASES (cont)                                                                                           -->
-<!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T3                 -->
-<!--                                                                        OG_Common_Tech_Weapons_Special            -->
-<!--                                                                        PrecisionRifling                          -->
-<!--  ==============================================================================================================  -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="OGI_Gun_RipperPistol"]/recipeMaker</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>OG_Militarum_Tech_Base_T3</li>

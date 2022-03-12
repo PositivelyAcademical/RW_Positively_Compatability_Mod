@@ -4,6 +4,24 @@
 <!--  ==============================================================================================================  -->
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  RipperPistol                                                                        -->
+<!--    + OGI_Gun_RipperPistol REPLACE label                                                                          -->
+<!--                              WITH label  ripper pistol                                                           -->
+<!--    + OGI_Gun_RipperPistol REPLACE description                                                                    -->
+<!--        WITH description  The ripper pistol is a modified Imperial autopistol that is the favoured personal       -->
+<!--                            weapon of those, including Rogue Traders, who venture onto hostile jungle worlds and  -->
+<!--                            death worlds. It fires specially designed armour-piercing rounds containing a         -->
+<!--                            vicious cocktail of venomous chemicals.\n\n                                           -->
+<!--                          It is designed so that if the vicious impact of the bullet does not kill the target,    -->
+<!--                            the poisons flooding into its bloodstream will, and thus can bring down the largest   -->
+<!--                            opponents in a single shot. Often, a ripper pistol is the final word in terminal      -->
+<!--                            close encounters. As this weapon is designed to be used with a specific type of       -->
+<!--                            ammunition, it may not be equipped with any other unusual rounds.                     -->
+<!--                                                                                                                  -->
+<!--    +  OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites li  OG_Assassinorum_Tech_Base                   -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
+<!--                                                                  li  PrecisionRifling                            -->
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  ExitusPistol                                                                        -->
 <!--    + OGI_Gun_ExitusPistol REPLACE label                                                                          -->
 <!--                            WITH label  Exitus pistol                                                             -->
@@ -25,6 +43,51 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  RipperPistol                                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_RipperPistol REPLACE label                                                                          -->
+<!--                              WITH label  ripper pistol                                                           -->
+<!--    + OGI_Gun_RipperPistol REPLACE description                                                                    -->
+<!--        WITH description  The ripper pistol is a modified Imperial autopistol that is the favoured personal       -->
+<!--                            weapon of those, including Rogue Traders, who venture onto hostile jungle worlds and  -->
+<!--                            death worlds. It fires specially designed armour-piercing rounds containing a         -->
+<!--                            vicious cocktail of venomous chemicals.\n\n                                           -->
+<!--                          It is designed so that if the vicious impact of the bullet does not kill the target,    -->
+<!--                            the poisons flooding into its bloodstream will, and thus can bring down the largest   -->
+<!--                            opponents in a single shot. Often, a ripper pistol is the final word in terminal      -->
+<!--                            close encounters. As this weapon is designed to be used with a specific type of       -->
+<!--                            ammunition, it may not be equipped with any other unusual rounds.                     -->
+<!--                                                                                                                  -->
+<!--    +  OGI_Gun_RipperPistol recipeMaker ADD researchPrerequisites li  OG_Assassinorum_Tech_Base                   -->
+<!--                                                                  li  OG_Common_Tech_Weapons_Special              -->
+<!--                                                                  li  PrecisionRifling                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_RipperPistol"]/label</xpath>
+                    <value>
+                        <label>ripper pistol</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_RipperPistol"]/description</xpath>
+                    <value>
+                        <description>The ripper pistol is a modified Imperial autopistol that is the favoured personal weapon of those, including Rogue Traders, who venture onto hostile jungle worlds and death worlds. It fires specially designed armour-piercing rounds containing a vicious cocktail of venomous chemicals.\n\nIt is designed so that if the vicious impact of the bullet does not kill the target, the poisons flooding into its bloodstream will, and thus can bring down the largest opponents in a single shot. Often, a ripper pistol is the final word in terminal close encounters. As this weapon is designed to be used with a specific type of ammunition, it may not be equipped with any other unusual rounds.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_RipperPistol"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Assassinorum_Tech_Base</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  ExitusPistol                                                                        -->
