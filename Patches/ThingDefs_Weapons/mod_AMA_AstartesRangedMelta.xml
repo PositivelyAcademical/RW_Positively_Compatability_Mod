@@ -5,39 +5,158 @@
 <!--  What this xml patch does:                                                                                       -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                            -->
-<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
-<!--                          WITH label  meltagun (Mars pattern)                                                     -->
-<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
-<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
-<!--                            Imperial origin.\n\n                                                                  -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Special                                                           -->
+<!--                   @Class  AdeptusMechanicus.Lasers.LaserGunDef                                                   -->
+<!--                   defName  POS_AMA_AstartesMeltagun                                                              -->
+<!--                   label  meltagun (Mars pattern)                                                                 -->
+<!--                   description  Meltaguns are the basic version of melta weapons, used by a wide range of forces  -->
+<!--                                  of Imperial origin. Melta weapons are lethal anti-armour guns, most effective   -->
+<!--                                  at very short range. When fired, the super-heating of the air produces a        -->
+<!--                                  distinctive and sinister hiss. Solid rock is reduced to molten slag, and        -->
+<!--                                  living creatures are vaporised in an instant.\n\n                               -->
+<!--                                The Mars pattern meltagun is used primarily by the loyal warriors of the Adeptus  -->
+<!--                                  Astartes.                                                                       -->
 <!--                                                                                                                  -->
-<!--    + OGI_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                 -->
-<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaGun                      -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.286,0.286,0.286)                                                         -->
+<!--                   soundInteract  Interact_Autopistol                                                             -->
+<!--                   statBases WorkToMake  55000                                                                    -->
+<!--                             Mass  5.2                                                                            -->
+<!--                             AccuracyTouch  0.80                                                                  -->
+<!--                             AccuracyShort  0.75                                                                  -->
+<!--                             AccuracyMedium  0.50                                                                 -->
+<!--                             AccuracyLong  0.30                                                                   -->
+<!--                             RangedWeapon_Cooldown  3.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  POS_AMA_Astartes_Placeholder                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Melta                             -->
+<!--                   costList Steel  150                                                                            -->
+<!--                            Plasteel  100                                                                         -->
+<!--                            ComponentIndustrial  10                                                               -->
+<!--                            Gold  4                                                                               -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  KrootGun                                                                        -->
+<!--                              li  ImperialAdvancedGun                                                             -->
+<!--                              li  ImperialMetlaGun                                                                -->
+<!--                              li  MetlaGun                                                                        -->
+<!--                              li  OGIGMetlaGun                                                                    -->
+<!--                              li  GuevesaSpecialGun                                                               -->
+<!--                              li  OgsWeaponTestMelta                                                              -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  0.10                                                                      -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_Melta                                                   -->
+<!--                            warmupTime  0.25                                                                      -->
+<!--                            range  16                                                                             -->
+<!--                            burstShotCount  1                                                                     -->
+<!--                            soundCast  OG_Melta_Sound                                                             -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  0.6                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  stock                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  9                                                                              -->
+<!--                            cooldownTime  1.8                                                                     -->
+<!--                         li label barrel                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                                       li  Poke                                                                   -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                          -->
-<!--    + OGI_Gun_MultiMelta REPLACE label                                                                            -->
-<!--                            WITH label  multi-melta (Mars pattern)                                                -->
-<!--    + OGI_Gun_MultiMelta REPLACE description                                                                      -->
-<!--        WITH description  Multi-meltas are a larger version of the meltagun, which have both an increased         -->
-<!--                            maximum range and are more effective as an anti-armour weapon compared to the         -->
-<!--                            standard meltagun, at the cost of portability and ease-of-use.\n\n                    -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Heavy                                                             -->
+<!--                   @Class  AdeptusMechanicus.Lasers.LaserGunDef                                                   -->
+<!--                   defName  POS_AMA_AstartesMultiMelta                                                            -->
+<!--                   label  multi-melta (Mars pattern)                                                              -->
+<!--                   description  Multi-meltas are a larger version of the meltagun, which have both and increased  -->
+<!--                                  maximum range and are more effective as an anti-armour weapon compared to the   -->
+<!--                                  standard meltagun, at the cost of portability and ease-of-use. Melta weapons    -->
+<!--                                  are lethal anti-armour guns, most effective at very short range. When fired,    -->
+<!--                                  the super-heating of the air produces a distinctive and sinister hiss. Solid    -->
+<!--                                  rock is reduced to molten slag, and living creatures are vaporised in an        -->
+<!--                                  instant.\n\n                                                                    -->
+<!--                                The Mars pattern multi-melta is used by Space Marine Devastator heavy weapons     -->
+<!--                                  specialists.                                                                    -->
 <!--                                                                                                                  -->
-<!--    + OGI_Gun_MultiMelta recipeMaker REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Melta               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti                    -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.286,0.286,0.286)                                                         -->
+<!--                   soundInteract  Interact_Autopistol                                                             -->
+<!--                   statBases WorkToMake  90000                                                                    -->
+<!--                             Mass  5.2                                                                            -->
+<!--                             AccuracyTouch  0.75                                                                  -->
+<!--                             AccuracyShort  0.80                                                                  -->
+<!--                             AccuracyMedium  0.80                                                                 -->
+<!--                             AccuracyLong  0.75                                                                   -->
+<!--                             RangedWeapon_Cooldown  4.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  POS_AMA_Astartes_Placeholder                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Melta                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Heavy                             -->
+<!--                   costList Steel  150                                                                            -->
+<!--                            Plasteel  100                                                                         -->
+<!--                            ComponentIndustrial  10                                                               -->
+<!--                            Gold  4                                                                               -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  ImperialHeavyGun                                                                -->
+<!--                              li  MultiMetla                                                                      -->
+<!--                              li  ImperialMultiMetla                                                              -->
+<!--                              li  GuevesaHeavyGun                                                                 -->
+<!--                              li  OgsWeaponTestMelta                                                              -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  0.05                                                                      -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_MultiMelta                                              -->
+<!--                            warmupTime  1.5                                                                       -->
+<!--                            range  28                                                                             -->
+<!--                            burstShotCount  1                                                                     -->
+<!--                            soundCast  OG_Melta_Sound                                                             -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  0.8                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   comps li @Class  AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules                       -->
+<!--                            VerbEntries li Multishot  true                                                        -->
+<!--                                           ScattershotCount  1                                                    -->
+<!--                         li @Class  OgsCompOversizedWeapon.CompProperties_OversizedWeapon                         -->
+<!--                            northOffset  0.0,0.0,0.0                                                              -->
+<!--                            eastOffset  0.0,1.0,0.0                                                               -->
+<!--                            westOffset  0.0,0.0,0.0                                                               -->
+<!--                            southOffset  0.0,1.0,0.0                                                              -->
+<!--                   tools li label  stock                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  9                                                                              -->
+<!--                            cooldownTime  1.8                                                                     -->
+<!--                         li label barrel                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                                       li  Poke                                                                   -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  - remove defs                                                                 -->
-<!--    + OGI_Gun_MeltaGun REMOVE ./                                                                                  -->
-<!--    + OGI_Gun_MultiMelta REMOVE ./                                                                                -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  AstartesMeltagun                                                           -->
+<!--      + POS_AMA_AstartesMeltagun ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings               -->
+<!--                                                   dualWield  false                                               -->
+<!--                                                   twoHand  true                                                  -->
+<!--                                                li @Class  DualWield.DefModextension_CustomRotation               -->
+<!--                                                   extraRotation  0                                               -->
 <!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  AstartesMultiMelta                                                         -->
+<!--      + POS_AMA_AstartesMultiMelta ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings            -->
+<!--                                                     dualWield  false                                             -->
+<!--                                                     twoHand  true                                                -->
+<!--                                                  li @Class  DualWield.DefModextension_CustomRotation             -->
+<!--                                                     extraRotation  0                                             -->
+<!--  ==============================================================================================================  -->
+
+
 
     <Operation Class="PatchOperationFindModID">
         <mods>
@@ -51,91 +170,397 @@
                 <operations>
 
 <!--  ==============================================================================================================  -->
-<!--  + MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                               -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMeltagun                                            -->
 <!--  ==============================================================================================================  -->
-<!--    + OGI_Gun_MeltaGun REPLACE label                                                                              -->
-<!--                          WITH label  meltagun (Mars pattern)                                                     -->
-<!--    + OGI_Gun_MeltaGun REPLACE description                                                                        -->
-<!--        WITH description  Meltaguns are the basic version of melta weapons, used by a wide range of forces of     -->
-<!--                            Imperial origin.\n\n                                                                  -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Special                                                           -->
+<!--                   @Class  AdeptusMechanicus.Lasers.LaserGunDef                                                   -->
+<!--                   defName  POS_AMA_AstartesMeltagun                                                              -->
+<!--                   label  meltagun (Mars pattern)                                                                 -->
+<!--                   description  Meltaguns are the basic version of melta weapons, used by a wide range of forces  -->
+<!--                                  of Imperial origin. Melta weapons are lethal anti-armour guns, most effective   -->
+<!--                                  at very short range. When fired, the super-heating of the air produces a        -->
+<!--                                  distinctive and sinister hiss. Solid rock is reduced to molten slag, and        -->
+<!--                                  living creatures are vaporised in an instant.\n\n                               -->
+<!--                                The Mars pattern meltagun is used primarily by the loyal warriors of the Adeptus  -->
+<!--                                  Astartes.                                                                       -->
 <!--                                                                                                                  -->
-<!--    + OGI_Gun_MeltaGun recipeMaker REPLACE researchPrerequisites                                                  -->
-<!--                                      WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder                 -->
-<!--                                                                 li  OG_Common_Tech_Weapons_Melta                 -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaGun                      -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.286,0.286,0.286)                                                         -->
+<!--                   soundInteract  Interact_Autopistol                                                             -->
+<!--                   statBases WorkToMake  55000                                                                    -->
+<!--                             Mass  5.2                                                                            -->
+<!--                             AccuracyTouch  0.80                                                                  -->
+<!--                             AccuracyShort  0.75                                                                  -->
+<!--                             AccuracyMedium  0.50                                                                 -->
+<!--                             AccuracyLong  0.30                                                                   -->
+<!--                             RangedWeapon_Cooldown  3.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  POS_AMA_Astartes_Placeholder                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Melta                             -->
+<!--                   costList Steel  150                                                                            -->
+<!--                            Plasteel  100                                                                         -->
+<!--                            ComponentIndustrial  10                                                               -->
+<!--                            Gold  4                                                                               -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  KrootGun                                                                        -->
+<!--                              li  ImperialAdvancedGun                                                             -->
+<!--                              li  ImperialMetlaGun                                                                -->
+<!--                              li  MetlaGun                                                                        -->
+<!--                              li  OGIGMetlaGun                                                                    -->
+<!--                              li  GuevesaSpecialGun                                                               -->
+<!--                              li  OgsWeaponTestMelta                                                              -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  0.10                                                                      -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_Melta                                                   -->
+<!--                            warmupTime  0.25                                                                      -->
+<!--                            range  16                                                                             -->
+<!--                            burstShotCount  1                                                                     -->
+<!--                            soundCast  OG_Melta_Sound                                                             -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  0.6                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  stock                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  9                                                                              -->
+<!--                            cooldownTime  1.8                                                                     -->
+<!--                         li label barrel                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                                       li  Poke                                                                   -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
 <!--  ==============================================================================================================  -->
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/label</xpath>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
                         <value>
-                            <label>meltagun (Mars pattern)</label>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/description</xpath>
-                        <value>
-                            <description>Meltaguns are the basic version of melta weapons, used by a wide range of forces of Imperial origin.\n\nMelta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.</description>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MeltaGun"]/recipeMaker/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>POS_AMA_Astartes_Placeholder</li>
-                                <li>OG_Common_Tech_Weapons_Melta</li>
-                            </researchPrerequisites>
+                            <ThingDef ParentName="OG_Imperial_Gun_Special" Class="AdeptusMechanicus.Lasers.LaserGunDef">
+    		                    <defName>POS_AMA_AstartesMeltagun</defName>
+                        		<label>meltagun (Mars pattern)</label>
+                        		<description>Meltaguns are the basic version of melta weapons, used by a wide range of forces of Imperial origin. Melta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.\n\nThe Mars pattern meltagun is widely used by the Sisters of the Adepta Astartes.</description>
+                        		<graphicData>
+                        			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/MeltaGun</texPath>
+                        			<graphicClass>Graphic_Single</graphicClass>
+                        			<shaderType>CutoutComplex</shaderType>
+                        			<color>(0.286,0.286,0.286)</color>
+                        		</graphicData>
+                        		<soundInteract>Interact_Autopistol</soundInteract>
+                        		<statBases>
+                        			<WorkToMake>55000</WorkToMake>
+                        			<Mass>5.2</Mass>
+                        			<AccuracyTouch>0.80</AccuracyTouch>
+                        			<AccuracyShort>0.75</AccuracyShort>
+                        			<AccuracyMedium>0.50</AccuracyMedium>
+                        			<AccuracyLong>0.30</AccuracyLong>
+                        			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
+                        		</statBases>
+                        		<recipeMaker>
+                    				<researchPrerequisites>
+                    					<li>POS_AMA_Astartes_Placeholder</li>
+                    					<li>OG_Common_Tech_Weapons_Melta</li>
+                    				</researchPrerequisites>
+                        		</recipeMaker>
+                        		<costList>
+                        			<Steel>150</Steel>
+                        			<Plasteel>100</Plasteel>
+                        			<ComponentIndustrial>10</ComponentIndustrial>
+                        			<Gold>4</Gold>
+                        		</costList>
+                        		<techLevel>Spacer</techLevel>
+                        		<weaponTags>
+                        			<li>KrootGun</li>
+                        			<li>ImperialAdvancedGun</li>
+                        			<li>ImperialMetlaGun</li>
+                        			<li>MetlaGun</li>
+                        			<li>OGIGMetlaGun</li>
+                        			<li>GuevesaSpecialGun</li>
+                        			<li>OgsWeaponTestMelta</li>
+                        		</weaponTags>
+                        		<tradeTags>
+                        			<li>OGIRanged</li>
+                        		</tradeTags>
+                    			<generateCommonality>0.10</generateCommonality>
+                        		<verbs>
+                        			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+                        				<verbClass>Verb_Shoot</verbClass>
+                        				<hasStandardCommand>true</hasStandardCommand>
+                        				<defaultProjectile>OGI_Bullet_Melta</defaultProjectile>
+                        				<warmupTime>0.25</warmupTime>
+                        				<range>16</range>
+                        				<burstShotCount>1</burstShotCount>
+                        				<soundCast>OG_Melta_Sound</soundCast>
+                        				<soundCastTail>GunTail_Heavy</soundCastTail>
+                        				<muzzleFlashScale>14</muzzleFlashScale>
+                        				<barrelLength>0.6</barrelLength>
+                        				<targetParams>
+                        					<canTargetLocations>true</canTargetLocations>
+                        				</targetParams>
+                        			</li>
+                        		</verbs>
+                        		<tools>
+                        			<li>
+                        				<label>stock</label>
+                        				<capacities>
+                        					<li>Blunt</li>
+                        				</capacities>
+                        				<power>9</power>
+                        				<cooldownTime>1.8</cooldownTime>
+                        			</li>
+                        			<li>
+                        				<label>barrel</label>
+                        				<capacities>
+                        					<li>Blunt</li>
+                        					<li>Poke</li>
+                        				</capacities>
+                        				<power>10</power>
+                        				<cooldownTime>1.9</cooldownTime>
+                        			</li>
+                        		</tools>
+                        	</ThingDef>
                         </value>
                     </li>
 
 <!--  ==============================================================================================================  -->
 <!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  AstartesMultiMelta                                          -->
 <!--  ==============================================================================================================  -->
-<!--    + OGI_Gun_MultiMelta REPLACE label                                                                            -->
-<!--                            WITH label  multi-melta (Mars pattern)                                                -->
-<!--    + OGI_Gun_MultiMelta REPLACE description                                                                      -->
-<!--        WITH description  Multi-meltas are a larger version of the meltagun, which have both an increased         -->
-<!--                            maximum range and are more effective as an anti-armour weapon compared to the         -->
-<!--                            standard meltagun, at the cost of portability and ease-of-use.\n\n                    -->
-<!--                          Melta weapons are lethal anti-armour guns, most effective at very short range. When     -->
-<!--                            fired, the super-heating of the air produces a distinctive and sinister hiss. Solid   -->
-<!--                            rock is reduced to molten slag, and living creatures are vaporised in an instant.     -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Heavy                                                             -->
+<!--                   @Class  AdeptusMechanicus.Lasers.LaserGunDef                                                   -->
+<!--                   defName  POS_AMA_AstartesMultiMelta                                                            -->
+<!--                   label  multi-melta (Mars pattern)                                                              -->
+<!--                   description  Multi-meltas are a larger version of the meltagun, which have both and increased  -->
+<!--                                  maximum range and are more effective as an anti-armour weapon compared to the   -->
+<!--                                  standard meltagun, at the cost of portability and ease-of-use. Melta weapons    -->
+<!--                                  are lethal anti-armour guns, most effective at very short range. When fired,    -->
+<!--                                  the super-heating of the air produces a distinctive and sinister hiss. Solid    -->
+<!--                                  rock is reduced to molten slag, and living creatures are vaporised in an        -->
+<!--                                  instant.\n\n                                                                    -->
+<!--                                The Mars pattern multi-melta is used by Space Marine Devastator heavy weapons     -->
+<!--                                  specialists.                                                                    -->
 <!--                                                                                                                  -->
-<!--    + OGI_Gun_MultiMelta recipeMaker REPLACE researchPrerequisites                                                -->
-<!--                                        WITH researchPrerequisites li  POS_AMA_Astartes_Placeholder               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Melta               -->
-<!--                                                                   li  OG_Common_Tech_Weapons_Heavy               -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti                    -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.286,0.286,0.286)                                                         -->
+<!--                   soundInteract  Interact_Autopistol                                                             -->
+<!--                   statBases WorkToMake  90000                                                                    -->
+<!--                             Mass  5.2                                                                            -->
+<!--                             AccuracyTouch  0.75                                                                  -->
+<!--                             AccuracyShort  0.80                                                                  -->
+<!--                             AccuracyMedium  0.80                                                                 -->
+<!--                             AccuracyLong  0.75                                                                   -->
+<!--                             RangedWeapon_Cooldown  4.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  POS_AMA_Astartes_Placeholder                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Melta                             -->
+<!--                                                     li  OG_Common_Tech_Weapons_Heavy                             -->
+<!--                   costList Steel  150                                                                            -->
+<!--                            Plasteel  100                                                                         -->
+<!--                            ComponentIndustrial  10                                                               -->
+<!--                            Gold  4                                                                               -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  ImperialHeavyGun                                                                -->
+<!--                              li  MultiMetla                                                                      -->
+<!--                              li  ImperialMultiMetla                                                              -->
+<!--                              li  GuevesaHeavyGun                                                                 -->
+<!--                              li  OgsWeaponTestMelta                                                              -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  0.05                                                                      -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_MultiMelta                                              -->
+<!--                            warmupTime  1.5                                                                       -->
+<!--                            range  28                                                                             -->
+<!--                            burstShotCount  1                                                                     -->
+<!--                            soundCast  OG_Melta_Sound                                                             -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  0.8                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   comps li @Class  AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules                       -->
+<!--                            VerbEntries li Multishot  true                                                        -->
+<!--                                           ScattershotCount  1                                                    -->
+<!--                         li @Class  OgsCompOversizedWeapon.CompProperties_OversizedWeapon                         -->
+<!--                            northOffset  0.0,0.0,0.0                                                              -->
+<!--                            eastOffset  0.0,1.0,0.0                                                               -->
+<!--                            westOffset  0.0,0.0,0.0                                                               -->
+<!--                            southOffset  0.0,1.0,0.0                                                              -->
+<!--                   tools li label  stock                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  9                                                                              -->
+<!--                            cooldownTime  1.8                                                                     -->
+<!--                         li label barrel                                                                          -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                                       li  Poke                                                                   -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
 <!--  ==============================================================================================================  -->
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/label</xpath>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
                         <value>
-                            <label>multi-melta (Mars pattern)</label>
+                        	<ThingDef ParentName="OG_Imperial_Gun_Heavy" Class="AdeptusMechanicus.Lasers.LaserGunDef">
+                        		<defName>POS_AMA_AstartesMultiMelta</defName>
+                        		<label>multi-melta (Mars pattern)</label>
+                        		<description>Multi-meltas are a larger version of the meltagun, which have both and increased maximum range and are more effective as an anti-armour weapon compared to the standard meltagun, at the cost of portability and ease-of-use. Melta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.\n\nThe Mars pattern multi-melta is used by heavy weapons specialists of the Adepta Astartes.</description>
+                        		<graphicData>
+                        			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/MeltaMulti</texPath>
+                        			<graphicClass>Graphic_Single</graphicClass>
+                        			<shaderType>CutoutComplex</shaderType>
+                        			<color>(0.286,0.286,0.286)</color>
+                        		</graphicData>
+                        		<soundInteract>Interact_Autopistol</soundInteract>
+                        		<statBases>
+                        			<WorkToMake>90000</WorkToMake>
+                        			<Mass>5.2</Mass>
+                        			<AccuracyTouch>0.75</AccuracyTouch>
+                        			<AccuracyShort>0.80</AccuracyShort>
+                        			<AccuracyMedium>0.80</AccuracyMedium>
+                        			<AccuracyLong>0.75</AccuracyLong>
+                        			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
+                        		</statBases>
+                        		<recipeMaker>
+                    				<researchPrerequisites>
+                    					<li>POS_AMA_Astartes_Placeholder</li>
+                    					<li>OG_Common_Tech_Weapons_Melta</li>
+                    					<li>OG_Common_Tech_Weapons_Heavy</li>
+                    				</researchPrerequisites>
+                        		</recipeMaker>
+                        		<costList>
+                        			<Steel>150</Steel>
+                        			<Plasteel>100</Plasteel>
+                        			<ComponentIndustrial>10</ComponentIndustrial>
+                        			<Gold>4</Gold>
+                        		</costList>
+                        		<techLevel>Spacer</techLevel>
+                        		<weaponTags>
+                        			<li>ImperialHeavyGun</li>
+                        			<li>MultiMetla</li>
+                        			<li>ImperialMultiMetla</li>
+                        			<li>GuevesaHeavyGun</li>
+                        			<li>OgsWeaponTestMelta</li>
+                        		</weaponTags>
+                        		<tradeTags>
+                        			<li>OGIRanged</li>
+                        		</tradeTags>
+                    			<generateCommonality>0.05</generateCommonality>
+                        		<verbs>
+                        			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+                        				<verbClass>Verb_Shoot</verbClass>
+                        				<hasStandardCommand>true</hasStandardCommand>
+                        				<defaultProjectile>OGI_Bullet_MultiMelta</defaultProjectile>
+                        				<warmupTime>1.5</warmupTime>
+                        				<range>28</range>
+                        				<burstShotCount>1</burstShotCount>
+                        				<soundCast>OG_Melta_Sound</soundCast>
+                        				<soundCastTail>GunTail_Heavy</soundCastTail>
+                        				<muzzleFlashScale>14</muzzleFlashScale>
+                        				<barrelLength>0.8</barrelLength>
+                        				<targetParams>
+                        					<canTargetLocations>true</canTargetLocations>
+                        				</targetParams>
+                        			</li>
+                        		</verbs>
+                        		<comps>
+                        			<li Class="AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules">
+                            			<VerbEntries>
+                            				<li>
+                            					<Multishot>true</Multishot>
+                            					<ScattershotCount>1</ScattershotCount>
+                            				</li>
+                            			</VerbEntries>
+                        			</li>
+                        			<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                        				<northOffset>0.0,0.0,0.0</northOffset>
+                        				<eastOffset>0.0,1.0,0.0</eastOffset>
+                        				<westOffset>0.0,0.0,0.0</westOffset>
+                        				<southOffset>0.0,1.0,0.0</southOffset>
+                        			</li>
+                        		</comps>
+                        		<tools>
+                        			<li>
+                        				<label>stock</label>
+                        				<capacities>
+                            				<li>Blunt</li>
+                        				</capacities>
+                        				<power>9</power>
+                        				<cooldownTime>1.8</cooldownTime>
+                        			</li>
+                        			<li>
+                        				<label>barrel</label>
+                        				<capacities>
+                            				<li>Blunt</li>
+                            				<li>Poke</li>
+                        				</capacities>
+                        				<power>10</power>
+                        				<cooldownTime>1.9</cooldownTime>
+                        			</li>
+                        		</tools>
+                        	</ThingDef>
                         </value>
                     </li>
 
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/description</xpath>
-                        <value>
-                            <description>Multi-meltas are a larger version of the meltagun, which have both an increased maximum range and are more effective as an anti-armour weapon compared to the standard meltagun, at the cost of portability and ease-of-use.\n\nMelta weapons are lethal anti-armour guns, most effective at very short range. When fired, the super-heating of the air produces a distinctive and sinister hiss. Solid rock is reduced to molten slag, and living creatures are vaporised in an instant.</description>
-                        </value>
-                    </li>
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  AstartesMeltagun                                                            -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_AstartesMeltagun ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings               -->
+<!--                                                   dualWield  false                                               -->
+<!--                                                   twoHand  true                                                  -->
+<!--                                                li @Class  DualWield.DefModextension_CustomRotation               -->
+<!--                                                   extraRotation  0                                               -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationFindModID">
+                        <mods>
+                            <li>Roolo.DualWield</li>
+                        </mods>
+                        <match Class="PatchOperationSequence">
+                            <operations>
 
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="OGI_Gun_MultiMelta"]/recipeMaker/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>POS_AMA_Astartes_Placeholder</li>
-                                <li>OG_Common_Tech_Weapons_Melta</li>
-                                <li>OG_Common_Tech_Weapons_Heavy</li>
-                            </researchPrerequisites>
-                        </value>
+                                <li Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesMeltagun"]</xapth>
+                                    <value>
+                            			<li Class="DualWield.DefModextension_DefaultSettings">
+                            				<dualWield>false</dualWield>
+                            				<twoHand>true</twoHand>
+                            			</li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                        	     	    	<extraRotation>0</extraRotation>
+                        		    	</li>
+                                    </value>
+                                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  AstartesMultiMelta                                                          -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_AstartesMultiMelta ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings             -->
+<!--                                                     dualWield  false                                             -->
+<!--                                                     twoHand  true                                                -->
+<!--                                                  li @Class  DualWield.DefModextension_CustomRotation             -->
+<!--                                                     extraRotation  0                                             -->
+<!--  ==============================================================================================================  -->
+                                <li Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_AstartesMultiMelta"]</xapth>
+                                    <value>
+                            			<li Class="DualWield.DefModextension_DefaultSettings">
+                            				<dualWield>false</dualWield>
+                            				<twoHand>true</twoHand>
+                            			</li>
+                            			<li Class="DualWield.DefModextension_CustomRotation">
+                            				<extraRotation>0</extraRotation>
+                        	    		</li>
+                                    </value>
+                                </li>
+
+                            </operations>
+                        </match>
                     </li>
 
                 </operations>
             </nomatch>
         </match>
-    </Operation>
+    <Operation>
 
 </Patch>
