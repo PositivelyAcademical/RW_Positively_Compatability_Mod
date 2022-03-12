@@ -248,6 +248,49 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MilitarumOgrynRipperGun                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OGI_Gun_OgrynRipperGun REPLACE label                                                                        -->
+<!--                                WITH label  Ogryn ripper gun                                                      -->
+<!--    + OGI_Gun_OgrynRipperGun REPLACE description                                                                  -->
+<!--        WITH description  The ripper gun is a heavy, automatic combat shotgun built to the massive scale of       -->
+<!--                            Ogryns and other genestock ogres of the Astra Militarum and the old Imperial Army.    -->
+<!--                            Compared to other Imperial weapons, these weapons are fairly simple, somewhat akin    -->
+<!--                            to the Ork Shoota. A ripper gun is a short range weapon that fires several shells at  -->
+<!--                            once to compensate for the poor aim of the average Ogryn. Ripper guns usually can     -->
+<!--                            fire either a single heavy shell or a hail of shot in each burst, and possess a       -->
+<!--                            hard-wired burst limiter to prevent the Ogryn from emptying his weapon the first      -->
+<!--                            time he pulls the trigger.                                                            -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_OgrynRipperGun REPLACE researchPrerequisites                                                        -->
+<!--                                WITH researchPrerequisites li  OG_Militarum_Tech_Base_T3                          -->
+<!--                                                           li  OG_Common_Tech_Weapons_Special                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/label</xpath>
+                    <value>
+                        <label>Ogryn ripper gun</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_AutoGun"]/description</xpath>
+                    <value>
+                        <description>The ripper gun is a heavy, automatic combat shotgun built to the massive scale of Ogryns and other genestock ogres of the Astra Militarum and the old Imperial Army. Compared to other Imperial weapons, these weapons are fairly simple, somewhat akin to the Ork Shoota. A ripper gun is a short range weapon that fires several shells at once to compensate for the poor aim of the average Ogryn. Ripper guns usually can fire either a single heavy shell or a hail of shot in each burst, and possess a hard-wired burst limiter to prevent the Ogryn from emptying his weapon the first time he pulls the trigger.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_OgrynRipperGun"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Militarum_Tech_Base_T3</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
