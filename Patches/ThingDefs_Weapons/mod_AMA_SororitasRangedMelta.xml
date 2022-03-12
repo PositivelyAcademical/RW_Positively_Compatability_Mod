@@ -172,8 +172,6 @@
 <!--                                                     extraRotation  0                                             -->
 <!--  ==============================================================================================================  -->
 
-
-
     <Operation Class="PatchOperationFindModID">
         <mods>
             <li>Ogliss.AdMech.Armoury</li>

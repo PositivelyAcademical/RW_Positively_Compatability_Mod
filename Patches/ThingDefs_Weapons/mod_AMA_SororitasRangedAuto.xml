@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  ==============================================================================================================  -->
+<!--  What this xml patch does:                                                                                       -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  SororitasAutopistol                                         -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun                                                                   -->
+<!--                   defName  POS_AMA_SororitasAutopistol                                                           -->
+<!--                   label  autopistol (Ministorum pattern)                                                         -->
+<!--                   description  The autopistol is a fully-automatic projectile weapon which fires solid-slug      -->
+<!--                                  ballistic rounds at the intended target in rapid succession. Cheap, rugged and  -->
+<!--                                  reliable, it can be found throughout the Imperium, where it is appreciated for  -->
+<!--                                  its decent damage and accuracy. Its main drawbacks are its weight and the need  -->
+<!--                                  to carry a large amount of cumbersome ammunition for prolonged operations.\n\n  -->
+<!--                                The Ministorum pattern autopistol is produced exclusively for the Ecclesiarchy,   -->
+<!--                                  and is seen wielded by Imperial Priests, the Adepta Sororitas, and the          -->
+<!--                                  Frateris Militia.                                                               -->
+<!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/AutoPistol                    -->
+<!--                               graphicClass  AdvancedGraphics.Graphic_SingleRandomized                            -->
+<!--                               drawSize  1.0                                                                      -->
+<!--                               comps /                                                                            -->
+<!--                               soundInteract  Interact_Rifle                                                      -->
+<!--                               statBases WorkToMake  5500                                                         -->
+<!--                                         Mass  0.4                                                                -->
+<!--                                         AccuracyTouch  0.91                                                      -->
+<!--                                         AccuracyShort  0.81                                                      -->
+<!--                                         AccuracyMedium  0.70                                                     -->
+<!--                                         AccuracyLong  0.62                                                       -->
+<!--                                         RangedWeapon_Cooldown  0.75                                              -->
+<!--                   recipeMaker researchPrerequisites li  OG_Sororitas_Tech_Base_T1                                -->
+<!--                                                     li  GasOperation                                             -->
+<!--                   costList Steel  50                                                                             -->
+<!--                            Plasteel  10                                                                          -->
+<!--                            ComponentIndustrial  1                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  Pistol                                                                          -->
+<!--                              li  ImperialPistol                                                                  -->
+<!--                              li  ImperialGun                                                                     -->
+<!--                              li  AutoPistol                                                                      -->
+<!--                              li  GuevesaPistol                                                                   -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets MoveSpeed  -0.25                                                           -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_AutoPistol                                              -->
+<!--                            warmupTime  0.5                                                                       -->
+<!--                            range  25                                                                             -->
+<!--                            ticksBetweenBurstShots  9                                                             -->
+<!--                            burstShotCount  6                                                                     -->
+<!--                            soundCast  Shot_Autopistol                                                            -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  10                                                                  -->
+<!--                            barrelLength  0.35                                                                    -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  barrel                                                                         -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  SororitasAutogun                                            -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun                                                                   -->
+<!--                   defName  POS_AMA_SororitasAutogun                                                              -->
+<!--                   label  autogun (Ministorum pattern)                                                            -->
+<!--                   description  The autogun is a fully-automatic projectile weapon which fires solid-slug         -->
+<!--                                  ballistic rounds at the intended target in rapid succession. Cheap, rugged and  -->
+<!--                                  reliable, it can be found throughout the Imperium, where it is appreciated for  -->
+<!--                                  its decent damage and accuracy. Its main drawbacks are its weight and the need  -->
+<!--                                  to carry a large amount of cumbersome ammunition for prolonged operations.\n\n  -->
+<!--                                The Ministorum pattern autogun is produced exclusively for the Ecclesiarchy, and  -->
+<!--                                  is seen wielded by Imperial Priests, the Adepta Sororitas, and the Frateris     -->
+<!--                                  Militia.                                                                        -->
+<!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/AutoGun                       -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.208,0.286,0.176)                                                         -->
+<!--                   soundInteract  Interact_Rifle                                                                  -->
+<!--                   statBases reliability  1                                                                       -->
+<!--                             WorkToMake  42000                                                                    -->
+<!--                             Mass  2                                                                              -->
+<!--                             AccuracyTouch  0.91                                                                  -->
+<!--                             AccuracyShort  0.81                                                                  -->
+<!--                             AccuracyMedium  0.70                                                                 -->
+<!--                             AccuracyLong  0.62                                                                   -->
+<!--                             RangedWeapon_Cooldown  0.75                                                          -->
+<!--                   recipeMaker researchPrerequisites li  OG_Sororitas_Tech_Base_T1                                -->
+<!--                                                     li  GasOperation                                             -->
+<!--                   costList Steel  75                                                                             -->
+<!--                            Plasteel  10                                                                          -->
+<!--                            ComponentIndustrial  2                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  ImperialGun                                                                     -->
+<!--                              li  Autogun                                                                         -->
+<!--                              li  AutoGun                                                                         -->
+<!--                              li  GuevesaGun                                                                      -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets /                                                                          -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            rapidFire  true                                                                       -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_AutoGun                                                 -->
+<!--                            warmupTime  0.75                                                                      -->
+<!--                            range  31                                                                             -->
+<!--                            ticksBetweenBurstShots  9                                                             -->
+<!--                            burstShotCount  6                                                                     -->
+<!--                            soundCast  Shot_AssaultRifle                                                          -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  10                                                                  -->
+<!--                            barrelLength  0.65                                                                    -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   comps li @Class  AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules                       -->
+<!--                            VerbEntries li RapidFire  true                                                        -->
+<!--                   tools li label  barrel                                                                         -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  SororitasAutopistol                                                         -->
+<!--      + POS_AMA_SororitasAutoPistol ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings            -->
+<!--                                                     dualWield  true                                              -->
+<!--                                                     twoHand  false                                               -->
+<!--                                                  li @Class  DualWield.DefModextension_CustomRotation             -->
+<!--                                                     extraRotation  0                                             -->
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  SororitasAutogun                                                            -->
+<!--      + POS_AMA_SororitasAutogun ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings               -->
+<!--                                                  dualWield  false                                                -->
+<!--                                                  twoHand  true                                                   -->
+<!--                                               li @Class  DualWield.DefModextension_CustomRotation                -->
+<!--                                                  extraRotation  0                                                -->
+<!--  ==============================================================================================================  -->
+
+    <Operation Class="PatchOperationFindModID">
+        <mods>
+            <li>Ogliss.AdMech.Armoury</li>
+        </mods>
+        <match Class="PatchOperationFindModID">
+            <mods>
+                <li>Archaon.Primarch</li>
+            </mods>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  SororitasAutopistol                                         -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun                                                                   -->
+<!--                   defName  POS_AMA_SororitasAutopistol                                                           -->
+<!--                   label  autopistol (Ministorum pattern)                                                         -->
+<!--                   description  The autopistol is a fully-automatic projectile weapon which fires solid-slug      -->
+<!--                                  ballistic rounds at the intended target in rapid succession. Cheap, rugged and  -->
+<!--                                  reliable, it can be found throughout the Imperium, where it is appreciated for  -->
+<!--                                  its decent damage and accuracy. Its main drawbacks are its weight and the need  -->
+<!--                                  to carry a large amount of cumbersome ammunition for prolonged operations.\n\n  -->
+<!--                                The Ministorum pattern autopistol is produced exclusively for the Ecclesiarchy,   -->
+<!--                                  and is seen wielded by Imperial Priests, the Adepta Sororitas, and the          -->
+<!--                                  Frateris Militia.                                                               -->
+<!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/AutoPistol                    -->
+<!--                               graphicClass  AdvancedGraphics.Graphic_SingleRandomized                            -->
+<!--                               drawSize  1.0                                                                      -->
+<!--                               comps /                                                                            -->
+<!--                               soundInteract  Interact_Rifle                                                      -->
+<!--                               statBases WorkToMake  5500                                                         -->
+<!--                                         Mass  0.4                                                                -->
+<!--                                         AccuracyTouch  0.91                                                      -->
+<!--                                         AccuracyShort  0.81                                                      -->
+<!--                                         AccuracyMedium  0.70                                                     -->
+<!--                                         AccuracyLong  0.62                                                       -->
+<!--                                         RangedWeapon_Cooldown  0.75                                              -->
+<!--                   recipeMaker researchPrerequisites li  OG_Sororitas_Tech_Base_T1                                -->
+<!--                                                     li  GasOperation                                             -->
+<!--                   costList Steel  50                                                                             -->
+<!--                            Plasteel  10                                                                          -->
+<!--                            ComponentIndustrial  1                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  Pistol                                                                          -->
+<!--                              li  ImperialPistol                                                                  -->
+<!--                              li  ImperialGun                                                                     -->
+<!--                              li  AutoPistol                                                                      -->
+<!--                              li  GuevesaPistol                                                                   -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets MoveSpeed  -0.25                                                           -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_AutoPistol                                              -->
+<!--                            warmupTime  0.5                                                                       -->
+<!--                            range  25                                                                             -->
+<!--                            ticksBetweenBurstShots  9                                                             -->
+<!--                            burstShotCount  6                                                                     -->
+<!--                            soundCast  Shot_Autopistol                                                            -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  10                                                                  -->
+<!--                            barrelLength  0.35                                                                    -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  barrel                                                                         -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+                        	<ThingDef ParentName="OG_Imperial_Gun">
+		                        <defName>POS_AMA_SororitasAutopistol</defName>
+		                        <label>autopistol (Ministorum pattern)</label>
+		                        <description>The autopistol is a fully-automatic projectile weapon which fires solid-slug ballistic rounds at the intended target in rapid succession. Cheap, rugged and reliable, it can be found throughout the Imperium, where it is appreciated for its decent damage and accuracy. Its main drawbacks are its weight and the need to carry a large amount of cumbersome ammunition for prolonged operations.\n\nThe Ministorum pattern autopistol is produced exclusively for the Ecclesiarchy, and is seen wielded by Imperial Priests, the Adepta Sororitas, and the Frateris Militia.</description>
+		                        <graphicData>
+			                        <texPath>Things/Item/Equipment/WeaponRanged/Imperial/AutoPistol</texPath>
+			                        <graphicClass>AdvancedGraphics.Graphic_SingleRandomized</graphicClass>
+			                        <drawSize>1.0</drawSize>
+		                        </graphicData>
+                                <comps />
+		                        <soundInteract>Interact_Rifle</soundInteract>
+		                        <statBases>
+			                        <WorkToMake>5500</WorkToMake>
+			                        <Mass>0.4</Mass>
+			                        <AccuracyTouch>0.91</AccuracyTouch>
+			                        <AccuracyShort>0.81</AccuracyShort>
+			                        <AccuracyMedium>0.70</AccuracyMedium>
+			                        <AccuracyLong>0.62</AccuracyLong>
+			                        <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+		                        </statBases>
+		                        <recipeMaker>
+                                    <researchPrerequisites>
+                                        <li>OG_Sororitas_Tech_Base_T1</li>
+                                        <li>GasOperation</li>
+                                    </researchPrerequisites>
+		                        </recipeMaker>
+		                        <costList>
+			                        <Steel>50</Steel>
+			                        <Plasteel>10</Plasteel>
+			                        <ComponentIndustrial>1</ComponentIndustrial>
+		                        </costList>
+		                        <techLevel>Spacer</techLevel>
+		                        <weaponTags>
+			                        <li>Pistol</li>
+			                        <li>ImperialPistol</li>
+			                        <li>ImperialGun</li>
+			                        <li>AutoPistol</li>
+			                        <li>GuevesaPistol</li>
+			                        <li>OgsWeaponTestAuto</li>
+		                        </weaponTags>
+		                        <tradeTags>
+			                        <li>OGIRanged</li>
+		                        </tradeTags>
+		                        <generateCommonality>1.25</generateCommonality>
+		                        <equippedStatOffsets>
+			                        <MoveSpeed>-0.25</MoveSpeed>
+		                        </equippedStatOffsets>
+		                        <verbs>
+			                        <li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				                        <verbClass>Verb_Shoot</verbClass>
+				                        <hasStandardCommand>true</hasStandardCommand>
+				                        <defaultProjectile>OGI_Bullet_AutoPistol</defaultProjectile>
+				                        <warmupTime>0.5</warmupTime>
+				                        <range>25</range>
+				                        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				                        <burstShotCount>6</burstShotCount>
+				                        <soundCast>Shot_Autopistol</soundCast>
+				                        <soundCastTail>GunTail_Heavy</soundCastTail>
+				                        <muzzleFlashScale>10</muzzleFlashScale>
+				                        <barrelLength>0.35</barrelLength>
+				                        <barrelOffset>0.0</barrelOffset>
+				                        <targetParams>
+					                        <canTargetLocations>true</canTargetLocations>
+				                        </targetParams>
+			                        </li>
+		                        </verbs>
+		                        <tools>
+			                        <li>
+				                        <label>barrel</label>
+				                        <capacities>
+					                        <li>Blunt</li>
+				                        </capacities>
+				                        <power>10</power>
+				                        <cooldownTime>1.9</cooldownTime>
+			                        </li>
+		                        </tools>
+	                        </ThingDef>
+                        </value>
+                    </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch  (ThingDef)  -  SororitasAutogun                                            -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun                                                                   -->
+<!--                   defName  POS_AMA_SororitasAutogun                                                              -->
+<!--                   label  autogun (Ministorum pattern)                                                            -->
+<!--                   description  The autogun is a fully-automatic projectile weapon which fires solid-slug         -->
+<!--                                  ballistic rounds at the intended target in rapid succession. Cheap, rugged and  -->
+<!--                                  reliable, it can be found throughout the Imperium, where it is appreciated for  -->
+<!--                                  its decent damage and accuracy. Its main drawbacks are its weight and the need  -->
+<!--                                  to carry a large amount of cumbersome ammunition for prolonged operations.\n\n  -->
+<!--                                The Ministorum pattern autogun is produced exclusively for the Ecclesiarchy, and  -->
+<!--                                  is seen wielded by Imperial Priests, the Adepta Sororitas, and the Frateris     -->
+<!--                                  Militia.                                                                        -->
+<!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/AutoGun                       -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.208,0.286,0.176)                                                         -->
+<!--                   soundInteract  Interact_Rifle                                                                  -->
+<!--                   statBases reliability  1                                                                       -->
+<!--                             WorkToMake  42000                                                                    -->
+<!--                             Mass  2                                                                              -->
+<!--                             AccuracyTouch  0.91                                                                  -->
+<!--                             AccuracyShort  0.81                                                                  -->
+<!--                             AccuracyMedium  0.70                                                                 -->
+<!--                             AccuracyLong  0.62                                                                   -->
+<!--                             RangedWeapon_Cooldown  0.75                                                          -->
+<!--                   recipeMaker researchPrerequisites li  OG_Sororitas_Tech_Base_T1                                -->
+<!--                                                     li  GasOperation                                             -->
+<!--                   costList Steel  75                                                                             -->
+<!--                            Plasteel  10                                                                          -->
+<!--                            ComponentIndustrial  2                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  ImperialGun                                                                     -->
+<!--                              li  Autogun                                                                         -->
+<!--                              li  AutoGun                                                                         -->
+<!--                              li  GuevesaGun                                                                      -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets /                                                                          -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            rapidFire  true                                                                       -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_AutoGun                                                 -->
+<!--                            warmupTime  0.75                                                                      -->
+<!--                            range  31                                                                             -->
+<!--                            ticksBetweenBurstShots  9                                                             -->
+<!--                            burstShotCount  6                                                                     -->
+<!--                            soundCast  Shot_AssaultRifle                                                          -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  10                                                                  -->
+<!--                            barrelLength  0.65                                                                    -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   comps li @Class  AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules                       -->
+<!--                            VerbEntries li RapidFire  true                                                        -->
+<!--                   tools li label  barrel                                                                         -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs</xpath>
+                        <value>
+	                        <ThingDef ParentName="OG_Imperial_Gun">
+		                        <defName>POS_AMA_SororitasAutogun</defName>
+		                        <label>autogun (Ministorum pattern)</label>
+		                        <description>The autogun is a fully-automatic projectile weapon which fires solid-slug ballistic rounds at the intended target in rapid succession. Cheap, rugged and reliable, it can be found throughout the Imperium, where it is appreciated for its decent damage and accuracy. Its main drawbacks are its weight and the need to carry a large amount of cumbersome ammunition for prolonged operations.\n\nThe Ministorum pattern autogun is produced exclusively for the Ecclesiarchy, and is seen wielded by Imperial Priests, the Adepta Sororitas, and the Frateris Militia.</description>
+		                        <graphicData>
+			                        <texPath>Things/Item/Equipment/WeaponRanged/Imperial/AutoGun</texPath>
+			                        <graphicClass>Graphic_Single</graphicClass>
+			                        <shaderType>CutoutComplex</shaderType>
+			                        <color>(0.208,0.286,0.176)</color>
+		                        </graphicData>
+		                        <soundInteract>Interact_Rifle</soundInteract>
+		                        <statBases>
+			                        <reliability>1</reliability>
+			                        <WorkToMake>42000</WorkToMake>
+			                        <Mass>2</Mass>
+			                        <AccuracyTouch>0.91</AccuracyTouch>
+			                        <AccuracyShort>0.81</AccuracyShort>
+			                        <AccuracyMedium>0.70</AccuracyMedium>
+			                        <AccuracyLong>0.62</AccuracyLong>
+			                        <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+		                        </statBases>
+		                        <recipeMaker>
+                                    <researchPrerequisites>
+                                        <li>OG_Sororitas_Tech_Base_T1</li>
+                                        <li>GasOperation</li>
+                                    </researchPrerequisites>
+		                        </recipeMaker>
+		                        <costList>
+			                        <Steel>75</Steel>
+			                        <Plasteel>10</Plasteel>
+			                        <ComponentIndustrial>2</ComponentIndustrial>
+		                        </costList>
+		                        <techLevel>Spacer</techLevel>
+		                        <weaponTags>
+			                        <li>ImperialGun</li>
+			                        <li>Autogun</li>
+			                        <li>AutoGun</li>
+			                        <li>GuevesaGun</li>
+			                        <li>OgsWeaponTestAuto</li>
+		                        </weaponTags>
+		                        <tradeTags>
+			                        <li>OGIRanged</li>
+		                        </tradeTags>
+		                        <generateCommonality>1.25</generateCommonality>
+		                        <equippedStatOffsets />
+		                        <verbs>
+			                        <li Class="AdeptusMechanicus.AdvancedVerbProperties">
+				                        <verbClass>Verb_Shoot</verbClass>
+				                        <rapidFire>true</rapidFire>
+				                        <hasStandardCommand>true</hasStandardCommand>
+				                        <defaultProjectile>OGI_Bullet_AutoGun</defaultProjectile>
+				                        <warmupTime>0.75</warmupTime>
+				                        <range>31</range>
+				                        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				                        <burstShotCount>6</burstShotCount>
+				                        <soundCast>Shot_AssaultRifle</soundCast>
+				                        <soundCastTail>GunTail_Heavy</soundCastTail>
+				                        <muzzleFlashScale>10</muzzleFlashScale>
+				                        <barrelLength>0.65</barrelLength>
+				                        <barrelOffset>0.0</barrelOffset>
+				                        <targetParams>
+					                        <canTargetLocations>true</canTargetLocations>
+				                        </targetParams>
+			                        </li>
+		                        </verbs>
+		                        <comps>
+			                        <li Class="AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules">
+			                        <VerbEntries>
+				                        <li>
+					                        <RapidFire>true</RapidFire>
+				                        </li>
+			                        </VerbEntries>
+			                        </li>
+		                        </comps>
+		                        <tools>
+			                        <li>
+				                        <label>barrel</label>
+				                        <capacities>
+					                        <li>Blunt</li>
+				                        </capacities>
+				                        <power>10</power>
+				                        <cooldownTime>1.9</cooldownTime>
+			                        </li>
+		                        </tools>
+	                        </ThingDef>
+                        </value>
+                    </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  SororitasAutopistol                                                         -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_SororitasAutoPistol ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings            -->
+<!--                                                     dualWield  true                                              -->
+<!--                                                     twoHand  false                                               -->
+<!--                                                  li @Class  DualWield.DefModextension_CustomRotation             -->
+<!--                                                     extraRotation  0                                             -->
+<!--  ==============================================================================================================  -->
+                    <li Class="PatchOperationFindModID">
+                        <mods>
+                            <li>Roolo.DualWield</li>
+                        </mods>
+                        <match Class="PatchOperationSequence">
+                            <operations>
+
+                                <li Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasAutoPistol"]</xpath>
+                                    <value>
+                            			<li Class="DualWield.DefModextension_DefaultSettings">
+                            				<dualWield>true</dualWield>
+                            				<twoHand>false</twoHand>
+                            			</li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                        	     	    	<extraRotation>0</extraRotation>
+                        		    	</li>
+                                    </value>
+                                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + NO_MATCH LegionesAstartesPrimarch                                                                             -->
+<!--    + MATCH DualWield  (ThingDef)  -  SororitasAutogun                                                            -->
+<!--  ==============================================================================================================  -->
+<!--      + POS_AMA_SororitasAutogun ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings               -->
+<!--                                                  dualWield  false                                                -->
+<!--                                                  twoHand  true                                                   -->
+<!--                                               li @Class  DualWield.DefModextension_CustomRotation                -->
+<!--                                                  extraRotation  0                                                -->
+<!--  ==============================================================================================================  -->
+                                <li Class="PatchOperationAddModExtension">
+                                    <xpath>/Defs/ThingDef[defName="POS_AMA_SororitasAutogun"]</xpath>
+                                    <value>
+                            			<li Class="DualWield.DefModextension_DefaultSettings">
+                            				<dualWield>false</dualWield>
+                            				<twoHand>true</twoHand>
+                            			</li>
+                                        <li Class="DualWield.DefModextension_CustomRotation">
+                        	     	    	<extraRotation>0</extraRotation>
+                        		    	</li>
+                                    </value>
+                                </li>
+
+                            </operations>
+                        </match>
+                    </li>
+
+                </operations>
+            </nomatch>
+        </match>
+    </Operation>
+
+</Patch>
