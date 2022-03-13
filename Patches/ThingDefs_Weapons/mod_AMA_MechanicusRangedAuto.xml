@@ -91,6 +91,33 @@
             <operations>
 
 <!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusMacroStubber                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + OGAM_Gun_MacroStubber REPLACE label                                                                         -->
+<!--                               WITH label  macro stubber (Kronos pattern)                                         -->
+<!--    + OGAM_Gun_MacroStubber REPLACE description                                                                   -->
+<!--        WITH description  The macro stubber is a pistol-platform auto weapon with an incredible high rate of      -->
+<!--                            fire, hurling a thunderous cloud of solid slugs at the target.\n\n                    -->
+<!--                          The Kronos pattern macro stubber is used exclusively by the Tech Priests of the         -->
+<!--                            Adeptus Mechanicus, though similar patterns are used by Skitarii officers and other   -->
+<!--                            troops aligned with the Mechanicum.                                                   -->
+<!--                                                                                                                  -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_MacroStubber"]/label</xpath>
+                    <value>
+                        <label>macro stubber (Kronos pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_MacroStubber"]/description</xpath>
+                    <value>
+                        <description>The macro stubber is a pistol-platform auto weapon with an incredible high rate of fire, hurling a thunderous cloud of solid slugs at the target.\n\nThe Kronos pattern macro stubber is used exclusively by the Tech Priests of the Adeptus Mechanicus, though similar patterns are used by Skitarii officers and other troops aligned with the Mechanicum.</description>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MechanicusCombatShotgun                                                             -->
 <!--  ==============================================================================================================  -->
 <!--    + OGI_Gun_Vanaheim REPLACE label                                                                              -->
