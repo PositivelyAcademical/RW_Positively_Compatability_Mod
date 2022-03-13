@@ -93,9 +93,34 @@
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MechanicusCombatShotgun                                                             -->
 <!--  ==============================================================================================================  -->
-<!--       + For OGI_Gun_Vanaheim recipeMaker ADD researchPrerequisites OG_Militarum_Tech_Base_T1                     -->
-<!--                                                                    GasOperation                                  -->
+<!--    + OGI_Gun_Vanaheim REPLACE label                                                                              -->
+<!--                          WITH label  combat shotgun (Vanaheim pattern)                                           -->
+<!--    + OGI_Gun_Vanaheim REPLACE description                                                                        -->
+<!--        WITH description  The combat shotgun is a weapon of ancient Imperial design. It is an automatic           -->
+<!--                            projectile weapon with a low rate of fire, firing solid-slug ballistic rounds         -->
+<!--                            similar to a heavy stubber. Cheap, rugged and reliable, it can be found throughout    -->
+<!--                            the Imperium.\n\n                                                                     -->
+<!--                          The Vanaheim pattern shotgun is created by the Mechanicum for their Skitarii warriors,  -->
+<!--                            who use it as a close combat weapon. Similar weapons are provided for use by the      -->
+<!--                            Vostroyan Guard regiments who are loyal to Mars.                                      -->
+<!--                                                                                                                  -->
+<!--    + OGI_Gun_Vanaheim recipeMaker ADD researchPrerequisites li  OG_Mechanicus_Tech_Base_T1                       -->
+<!--                                                             li  GasOperation                                     -->
 <!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/label</xpath>
+                    <value>
+                        <label>combat shotgun (Vanaheim pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/description</xpath>
+                    <value>
+                        <description>The combat shotgun is a weapon of ancient Imperial design. It is an automatic projectile weapon with a low rate of fire, firing solid-slug ballistic rounds similar to a heavy stubber. Cheap, rugged and reliable, it can be found throughout the Imperium.\n\nThe Vanaheim pattern shotgun is created by the Mechanicum for their Skitarii warriors, who use it as a close combat weapon. Similar weapons are provided for use by the Vostroyan Guard regiments who are loyal to Mars.</description>
+                    </value>
+                </li>
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="OGI_Gun_Vanaheim"]/recipeMaker</xpath>
                     <value>
@@ -109,4 +134,5 @@
             </operations>
         </match>
     </Operation>
+
 </Patch>
