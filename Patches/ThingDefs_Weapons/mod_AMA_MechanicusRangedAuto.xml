@@ -196,6 +196,47 @@
                     </value>
                 </li>
 
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusGalvanicRifle                                                             -->
+<!--  ==============================================================================================================  -->
+<!--    + OGAM_Gun_GalvanicRifle REPLACE label                                                                        -->
+<!--                                WITH label  galvanic rifle (Vanaheim pattern)                                     -->
+<!--    + OGAM_Gun_GalvanicRifle REPLACE description                                                                  -->
+<!--        WITH description  The galvanic rifle, modelled after the hunting flintlocks of Mars' distant colonial     -->
+<!--                            past, is a precision tool in the hands of a Skitarii Ranger. Its bodywork is that of  -->
+<!--                            an antique, with a polished wooden stock and curlicues that echo the sandy seas of    -->
+<!--                            Mars' desert. Yet the galvanic Servitor-bullets inside are incredibly advanced. When  -->
+<!--                            such a bullet strikes home, it causes all the potential energy of the target to burn  -->
+<!--                            out in a killing blast of electric force.                                             -->
+<!--                                                                                                                  -->
+<!--    + OGAM_Gun_GalvanicRifle recipeMaker REPLACE researchPrerequisites                                            -->
+<!--                                    WITH researchPrerequisites li  OG_Mechanicus_Tech_Weapons_AdvancedBallistics  -->
+<!--                                                               li  OG_Common_Tech_Weapons_Special                 -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_GalvanicRifle"]/label</xpath>
+                    <value>
+                        <label>galvanic rifle (Vanaheim pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_GalvanicRifle"]/description</xpath>
+                    <value>
+                        <description>The galvanic rifle, modelled after the hunting flintlocks of Mars' distant colonial past, is a precision tool in the hands of a Skitarii Ranger. Its bodywork is that of an antique, with a polished wooden stock and curlicues that echo the sandy seas of Mars' desert. Yet the galvanic Servitor-bullets inside are incredibly advanced. When such a bullet strikes home, it causes all the potential energy of the target to burn out in a killing blast of electric force.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_GalvanicRifle"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Mechanicus_Tech_Weapons_AdvancedBallistics</li>
+                            <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
