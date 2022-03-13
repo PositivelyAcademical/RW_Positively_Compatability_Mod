@@ -59,7 +59,7 @@
 <!--                                    WITH researchPrerequisites li  OG_Mechanicus_Tech_Weapons_AdvancedBallistics  -->
 <!--                                                               li  OG_Common_Tech_Weapons_Special                 -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  MechanicusGalvanicRifle                                                             -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusTransuranicArquebus                                                       -->
 <!--    + OGAM_Gun_TransuranicArquebus REPLACE label                                                                  -->
 <!--                                      WITH label  transuranic arquebus (Vanaheim pattern)                         -->
 <!--    + OGAM_Gun_TransuranicArquebus REPLACE description                                                            -->
@@ -233,6 +233,48 @@
                         <researchPrerequisites>
                             <li>OG_Mechanicus_Tech_Weapons_AdvancedBallistics</li>
                             <li>OG_Common_Tech_Weapons_Special</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusTransuranicArquebus                                                       -->
+<!--  ==============================================================================================================  -->
+<!--    + OGAM_Gun_TransuranicArquebus REPLACE label                                                                  -->
+<!--                                      WITH label  transuranic arquebus (Vanaheim pattern)                         -->
+<!--    + OGAM_Gun_TransuranicArquebus REPLACE description                                                            -->
+<!--        WITH description  The transuranic arquebus is a long-barrelled infantry weapon which epitomises the       -->
+<!--                             precision and inhuman efficiency that typify the cyborg Skitarii legions of the      -->
+<!--                             Mechanicum. Firing a shell of depleted transuranium, a transuranic arquebus can      -->
+<!--                             puncture a tank from one side to the other, the resultant pressure wave also         -->
+<!--                             pulping any biological creatures that may be sheltering inside.                      -->
+<!--                                                                                                                  -->
+<!--    + OGAM_Gun_TransuranicArquebus recipeMaker REPLACE researchPrerequisites                                      -->
+<!--                                    WITH researchPrerequisites li  OG_Mechanicus_Tech_Base_T3                     -->
+<!--                                                               li  OG_Mechanicus_Tech_Weapons_AdvancedBallistics  -->
+<!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_TransuranicArquebus"]/label</xpath>
+                    <value>
+                        <label>transuranic arquebus (Vanaheim pattern)</label>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_TransuranicArquebus"]/description</xpath>
+                    <value>
+                        <description>The transuranic arquebus is a long-barrelled infantry weapon which epitomises the precision and inhuman efficiency that typify the cyborg Skitarii legions of the Mechanicum. Firing a shell of depleted transuranium, a transuranic arquebus can puncture a tank from one side to the other, the resultant pressure wave also pulping any biological creatures that may be sheltering inside.</description>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="OGAM_Gun_TransuranicArquebus"]/recipeMaker/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>OG_Mechanicus_Tech_Base_T3</li>
+                            <li>OG_Mechanicus_Tech_Weapons_AdvancedBallistics</li>
+                            <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
                     </value>
                 </li>
