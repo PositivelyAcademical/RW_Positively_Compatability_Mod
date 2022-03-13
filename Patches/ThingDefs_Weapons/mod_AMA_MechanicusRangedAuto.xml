@@ -75,13 +75,89 @@
 <!--                                                               li  OG_Common_Tech_Weapons_Heavy                   -->
 <!--  ==============================================================================================================  -->
 <!--  + ALL_CASES  (ThingDef)  -  MechanicusHeavyStubber                                                              -->
-<!--    + ADD                                                                                                         -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Special                                                           -->
+<!--                   defName  POS_AMA_MechanicusHeavyStubber                                                        -->
+<!--                   label  heavy stubber (Vostroyan pattern)                                                       -->
+<!--                   description  Heavy stubber is the name given to a range of heavy-barrelled auto weapons used   -->
+<!--                                  for sustained fire. Like autoguns they are easily manufactured and maintained,  -->
+<!--                                  and are commonly used by forces across the Imperium. A mainstay support weapon  -->
+<!--                                  backwater planets that cannot maintain laser weapons in working order due to    -->
+<!--                                  technological or resource limitations, and also popular with outlaws and hive   -->
+<!--                                  gangers, the heavy stubber is ideal for fighting off large numbers of enemies   -->
+<!--                                  or even lightly armoured vehicles. Its high rate of fire makes up for its       -->
+<!--                                  modest strength and armour-piercing abilities.\n\n                              -->
+<!--                                The Vostroyan pattern heavy stubber is produced locally on the                    -->
+<!--                                  Mechanicum-aligned industrial world of Vostroya for use by the heavy weapons    -->
+<!--                                  teams in their Guard regiments.                                                 -->
 <!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/HeavyStubber                  -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.208,0.286,0.176)                                                         -->
+<!--                               drawSize  1.25                                                                     -->
+<!--                   equippedAngleOffset  45                                                                        -->
+<!--                   comps li @Class  OgsCompOversizedWeapon.CompProperties_OversizedWeapon                         -->
+<!--                            northOffset  0.0,0.0,0.0                                                              -->
+<!--                            eastOffset  0.0,1.0,0.0                                                               -->
+<!--                            westOffset  0.0,0.0,0.0                                                               -->
+<!--                            southOffset  0.0,1.0,0.0                                                              -->
+<!--                   soundInteract  Interact_Rifle                                                                  -->
+<!--                   statBases WorkToMake  48000                                                                    -->
+<!--                             Mass  6                                                                              -->
+<!--                             AccuracyTouch  0.60                                                                  -->
+<!--                             AccuracyShort  0.72                                                                  -->
+<!--                             AccuracyMedium  0.75                                                                 -->
+<!--                             AccuracyLong  0.72                                                                   -->
+<!--                             RangedWeapon_Cooldown  3.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  OG_Mechanicus_Tech_Base_T2                               -->
+<!--                                                     li  OG_Common_Tech_Weapons_Heavy                             -->
+<!--                   costList Steel  100                                                                            -->
+<!--                            Plasteel  40                                                                          -->
+<!--                            ComponentIndustrial  3                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  GunHeavy                                                                        -->
+<!--                              li  HeavyStubber                                                                    -->
+<!--                              li  GuevesaGun                                                                      -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets MoveSpeed  -0.25                                                           -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_HeavyStubber                                            -->
+<!--                            warmupTime  3                                                                         -->
+<!--                            range  36                                                                             -->
+<!--                            burstShotCount  12                                                                    -->
+<!--                            ticksBetweenBurstShots  6                                                             -->
+<!--                            soundCast  Shot_Minigun                                                               -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  1                                                                       -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  barrels                                                                        -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusAutocannon                                                                -->
+<!--    + ADD                                                                                                         -->
 <!--                                                                                                                  -->
 <!--  ==============================================================================================================  -->
-<!--  + ALL_CASES  (ThingDef)  -  MechanicusHeavyStubber                                                              -->
-<!--    + ADD                                                                                                         -->
-<!--                                                                                                                  -->
+<!--  + MATCH DualWield  (ThingDef)  -  MechanicusHeavyStubber                                                        -->
+<!--    + POS_AMA_MechanicusHeavyStubber ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings           -->
+<!--                                                      dualWield  false                                            -->
+<!--                                                      twoHand  true                                               -->
+<!--                                                   li @Class  DualWield.DefModextension_CustomRotation            -->
+<!--                                                      extraRotation  0                                            -->
+<!--  ==============================================================================================================  -->
+<!--  + MATCH DualWield  (ThingDef)  -  MechanicusAutocannon                                                          -->
+<!--    + POS_AMA_MechanicusAutocannon ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings             -->
+<!--                                                    dualWield  false                                              -->
+<!--                                                    twoHand  true                                                 -->
+<!--                                                 li @Class  DualWield.DefModextension_CustomRotation              -->
+<!--                                                    extraRotation  0                                              -->
 <!--  ==============================================================================================================  -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -277,6 +353,198 @@
                             <li>OG_Common_Tech_Weapons_Heavy</li>
                         </researchPrerequisites>
                     </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + ALL_CASES  (ThingDef)  -  MechanicusHeavyStubber                                                              -->
+<!--  ==============================================================================================================  -->
+<!--    + ADD ThingDef @ParentName  OG_Imperial_Gun_Special                                                           -->
+<!--                   defName  POS_AMA_MechanicusHeavyStubber                                                        -->
+<!--                   label  heavy stubber (Vostroyan pattern)                                                       -->
+<!--                   description  Heavy stubber is the name given to a range of heavy-barrelled auto weapons used   -->
+<!--                                  for sustained fire. Like autoguns they are easily manufactured and maintained,  -->
+<!--                                  and are commonly used by forces across the Imperium. A mainstay support weapon  -->
+<!--                                  backwater planets that cannot maintain laser weapons in working order due to    -->
+<!--                                  technological or resource limitations, and also popular with outlaws and hive   -->
+<!--                                  gangers, the heavy stubber is ideal for fighting off large numbers of enemies   -->
+<!--                                  or even lightly armoured vehicles. Its high rate of fire makes up for its       -->
+<!--                                  modest strength and armour-piercing abilities.\n\n                              -->
+<!--                                The Vostroyan pattern heavy stubber is produced locally on the                    -->
+<!--                                  Mechanicum-aligned industrial world of Vostroya for use by the heavy weapons    -->
+<!--                                  teams in their Guard regiments.                                                 -->
+<!--                                                                                                                  -->
+<!--                   graphicData texPath  Things/Item/Equipment/WeaponRanged/Imperial/HeavyStubber                  -->
+<!--                               graphicClass  Graphic_Single                                                       -->
+<!--                               shaderType  CutoutComplex                                                          -->
+<!--                               color  (0.208,0.286,0.176)                                                         -->
+<!--                               drawSize  1.25                                                                     -->
+<!--                   equippedAngleOffset  45                                                                        -->
+<!--                   comps li @Class  OgsCompOversizedWeapon.CompProperties_OversizedWeapon                         -->
+<!--                            northOffset  0.0,0.0,0.0                                                              -->
+<!--                            eastOffset  0.0,1.0,0.0                                                               -->
+<!--                            westOffset  0.0,0.0,0.0                                                               -->
+<!--                            southOffset  0.0,1.0,0.0                                                              -->
+<!--                   soundInteract  Interact_Rifle                                                                  -->
+<!--                   statBases WorkToMake  48000                                                                    -->
+<!--                             Mass  6                                                                              -->
+<!--                             AccuracyTouch  0.60                                                                  -->
+<!--                             AccuracyShort  0.72                                                                  -->
+<!--                             AccuracyMedium  0.75                                                                 -->
+<!--                             AccuracyLong  0.72                                                                   -->
+<!--                             RangedWeapon_Cooldown  3.00                                                          -->
+<!--                   recipeMaker researchPrerequisites li  OG_Mechanicus_Tech_Base_T2                               -->
+<!--                                                     li  OG_Common_Tech_Weapons_Heavy                             -->
+<!--                   costList Steel  100                                                                            -->
+<!--                            Plasteel  40                                                                          -->
+<!--                            ComponentIndustrial  3                                                                -->
+<!--                   techLevel  Spacer                                                                              -->
+<!--                   weaponTags li  GunHeavy                                                                        -->
+<!--                              li  HeavyStubber                                                                    -->
+<!--                              li  GuevesaGun                                                                      -->
+<!--                              li  OgsWeaponTestAuto                                                               -->
+<!--                   tradeTags li  OGIRanged                                                                        -->
+<!--                   generateCommonality  1.25                                                                      -->
+<!--                   equippedStatOffsets MoveSpeed  -0.25                                                           -->
+<!--                   verbs li @Class  AdeptusMechanicus.AdvancedVerbProperties                                      -->
+<!--                            verbClass  Verb_Shoot                                                                 -->
+<!--                            hasStandardCommand  true                                                              -->
+<!--                            defaultProjectile  OGI_Bullet_HeavyStubber                                            -->
+<!--                            warmupTime  3                                                                         -->
+<!--                            range  36                                                                             -->
+<!--                            burstShotCount  12                                                                    -->
+<!--                            ticksBetweenBurstShots  6                                                             -->
+<!--                            soundCast  Shot_Minigun                                                               -->
+<!--                            soundCastTail  GunTail_Heavy                                                          -->
+<!--                            muzzleFlashScale  14                                                                  -->
+<!--                            barrelLength  1                                                                       -->
+<!--                            barrelOffset  0.0                                                                     -->
+<!--                            targetParams canTargetLocations  true                                                 -->
+<!--                   tools li label  barrels                                                                        -->
+<!--                            capacities li  Blunt                                                                  -->
+<!--                            power  10                                                                             -->
+<!--                            cooldownTime  1.9                                                                     -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="OG_Imperial_Gun_Special">
+                    		<defName>POS_AMA_MechanicusHeavyStubber</defName>
+                    		<label>heavy stubber (Vostroyan pattern)</label>
+                            <description>Heavy stubber is the name given to a range of heavy-barrelled auto weapons used for sustained fire. Like autoguns they are easily manufactured and maintainedm and are commonly used by forces across the Imperium. A mainstay support weapon backwater planets that cannot maintain laser weapons in working order due to technological or resource limitations, and also popular with outlaws and hive gangers, the heavy stubber is ideal for fighting off large numbers of enemies or even lightly armoured vehicles. Its high rate of fire makes up for its modest strength and armour-piercing abilities.\n\nThe Vostroyan pattern heavy stubber is produced locally on the Mechanicum-aligned industrial world of Vostroya for use by the heavy weapons teams in their Guard regiments.</description>
+                    		<graphicData>
+                    			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/HeavyStubber</texPath>
+                    			<graphicClass>Graphic_Single</graphicClass>
+                    			<shaderType>CutoutComplex</shaderType>
+                    			<color>(0.208,0.286,0.176)</color>
+                    			<drawSize>1.15</drawSize>
+                    		</graphicData>
+                    		<equippedAngleOffset>45</equippedAngleOffset>
+                    		<comps>
+                    			<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
+                    				<northOffset>0.0,0.0,0.0</northOffset>
+                    				<eastOffset>0.0,1.0,0.0</eastOffset>
+                    				<westOffset>0.0,0.0,0.0</westOffset>
+                    				<southOffset>0.0,1.0,0.0</southOffset>
+                    			</li>
+                    		</comps>
+                    		<soundInteract>Interact_Rifle</soundInteract>
+                    		<statBases>
+                    			<WorkToMake>48000</WorkToMake>
+                    			<Mass>6</Mass>
+                    			<AccuracyTouch>0.60</AccuracyTouch>
+                    			<AccuracyShort>0.72</AccuracyShort>
+                    			<AccuracyMedium>0.75</AccuracyMedium>
+                    			<AccuracyLong>0.72</AccuracyLong>
+                    			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
+                    		</statBases>
+                    		<recipeMaker>
+                				<researchPrerequisites>
+                					<li>OG_Common_Tech_Weapons_Special</li>
+                				</researchPrerequisites>
+                    		</recipeMaker>
+                    		<costList>
+                    			<Steel>100</Steel>
+                    			<Plasteel>40</Plasteel>
+                    			<ComponentIndustrial>3</ComponentIndustrial>
+                    		</costList>
+                    		<techLevel>Spacer</techLevel>
+                    		<weaponTags>
+                    			<li>GunHeavy</li>
+                    			<li>HeavyStubber</li>
+                    			<li>GuevesaGun</li>
+                    			<li>OgsWeaponTestAuto</li>
+                    		</weaponTags>
+                    		<tradeTags>
+                    			<li>OGIRanged</li>
+                    		</tradeTags>
+                    		<generateCommonality>1.25</generateCommonality>
+                    		<equippedStatOffsets>
+                    			<MoveSpeed>-0.25</MoveSpeed>
+                    		</equippedStatOffsets>
+                    		<verbs>
+                    			<li Class="AdeptusMechanicus.AdvancedVerbProperties">
+                    				<verbClass>Verb_Shoot</verbClass>
+                    				<hasStandardCommand>true</hasStandardCommand>
+                    				<defaultProjectile>OGI_Bullet_HeavyStubber</defaultProjectile>
+                    				<warmupTime>3</warmupTime>
+                    				<range>36</range>
+                    				<burstShotCount>12</burstShotCount>
+                    				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                    				<soundCast>Shot_Minigun</soundCast>
+                    				<soundCastTail>GunTail_Heavy</soundCastTail>
+                    				<muzzleFlashScale>14</muzzleFlashScale>
+                    				<barrelLength>1</barrelLength>
+                    				<barrelOffset>0.0</barrelOffset>
+                    				<targetParams>
+                    					<canTargetLocations>true</canTargetLocations>
+                    				</targetParams>
+                    			</li>
+                    		</verbs>
+                    		<tools>
+                    			<li>
+                    				<label>barrels</label>
+                    				<capacities>
+                    					<li>Blunt</li>
+                    				</capacities>
+                    				<power>10</power>
+                    				<cooldownTime>1.9</cooldownTime>
+                    			</li>
+                    		</tools>
+                    	</ThingDef>
+                    </value>
+                </li>
+
+<!--  ==============================================================================================================  -->
+<!--  + MATCH DualWield  (ThingDef)  -  MechanicusHeavyStubber                                                        -->
+<!--  ==============================================================================================================  -->
+<!--    + POS_AMA_MechanicusHeavyStubber ADD_EXTENSION li @Class  DualWield.DefModextension_DefaultSettings           -->
+<!--                                                      dualWield  false                                            -->
+<!--                                                      twoHand  true                                               -->
+<!--                                                   li @Class  DualWield.DefModextension_CustomRotation            -->
+<!--                                                      extraRotation  0                                            -->
+<!--  ==============================================================================================================  -->
+                <li Class="PatchOperationFindModID">
+                    <mods>
+                        <li>Roolo.DualWield</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAddModExtension">
+                                <xpath>/Defs/ThingDef[defName="POS_AMA_MechanicusHeavyStubber"]</xpath>
+                                <value>
+                        			<li Class="DualWield.DefModextension_DefaultSettings">
+                        				<dualWield>false</dualWield>
+                        				<twoHand>true</twoHand>
+                        			</li>
+                                    <li Class="DualWield.DefModextension_CustomRotation">
+                    	     	    	<extraRotation>0</extraRotation>
+                    		    	</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
                 </li>
 
             </operations>
